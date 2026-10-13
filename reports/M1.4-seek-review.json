@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "ffmpeg_version": "7.1",
+  "review_method": "Manual inspection of extracted images on 2026-10-14; original ground truth retained",
+  "frames": [
+    {
+      "source": "tests/fixtures/sample_battle.mp4",
+      "requested_timestamp_seconds": 520,
+      "extraction_method": "FFmpeg input timestamp seek (-ss before -i); first frame at/after requested time; scaled to width 1311",
+      "command_arguments": [
+        "-ss",
+        "520",
+        "-i",
+        "tests/fixtures/sample_battle.mp4",
+        "-frames:v",
+        "1",
+        "-vf",
+        "scale=1311:-1"
+      ],
+      "fixture": "tests/fixtures/m14_target_selection_520.jpg",
+      "sha256": "c6dec2b26b9d9c0c70907509f2245def39280eb7b124dfec585cc13652bfc6f1",
+      "reviewed_phase": "unknown",
+      "review_note": "Four-card move target chooser"
+    },
+    {
+      "source": "tests/fixtures/sample_battle.mp4",
+      "requested_timestamp_seconds": 720,
+      "extraction_method": "FFmpeg input timestamp seek (-ss before -i); first frame at/after requested time; scaled to width 1311",
+      "command_arguments": [
+        "-ss",
+        "720",
+        "-i",
+        "tests/fixtures/sample_battle.mp4",
+        "-frames:v",
+        "1",
+        "-vf",
+        "scale=1311:-1"
+      ],
+      "fixture": "tests/fixtures/m14_device_overlay.jpg",
+      "sha256": "3b1ba428810dca1fd7b12d36d7d6768a6f1fb3de0a5d6d93efad73519f06e9d3",
+      "reviewed_phase": "unknown",
+      "review_note": "Device control overlay; battle phase unresolved"
+    }
+  ],
+  "preserved_boundary_evidence": [
+    {
+      "source": "tests/fixtures/sample_battle_1.mp4",
+      "requested_timestamp_seconds": 268,
+      "fixture": "reports/M1.4-evidence/m14_boundary_268.jpg",
+      "sha256": "49580b9d82661d7bb6f909dff5a867e2848bbccf01447516b816fa43e2621371",
+      "provenance": "Preserved boundary extraction from interrupted session; extraction command and exact frame timestamp were not recorded. Manually reviewed on resume."
+    },
+    {
+      "source": "tests/fixtures/sample_battle_1.mp4",
+      "requested_timestamp_seconds": 270,
+      "fixture": "reports/M1.4-evidence/m14_boundary_270.jpg",
+      "sha256": "8f5c3ae17820d67c29acd8d292789c8fff1fb580df12316f823e7cf9f2950d60",
+      "provenance": "Preserved boundary extraction from interrupted session; extraction command and exact frame timestamp were not recorded. Manually reviewed on resume."
+    },
+    {
+      "source": "tests/fixtures/sample_battle_1.mp4",
+      "requested_timestamp_seconds": 280,
+      "fixture": "reports/M1.4-evidence/m14_boundary_280.jpg",
+      "sha256": "44aaca797ebc656b46e735012c130dd9a1abf7f1272680f94e2c0a848d7aa3df",
+      "provenance": "Preserved boundary extraction from interrupted session; extraction command and exact frame timestamp were not recorded. Manually reviewed on resume."
+    },
+    {
+      "source": "tests/fixtures/sample_battle_1.mp4",
+      "requested_timestamp_seconds": 282,
+      "fixture": "reports/M1.4-evidence/m14_boundary_282.jpg",
+      "sha256": "34d00c61d700b11384b748064fd14e9a9d55d45e43066a958ef8ac078e0b3e2a",
+      "provenance": "Preserved boundary extraction from interrupted session; extraction command and exact frame timestamp were not recorded. Manually reviewed on resume."
+    }
+  ]
+}

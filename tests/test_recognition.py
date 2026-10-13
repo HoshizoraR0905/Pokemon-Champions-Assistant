@@ -21,12 +21,15 @@ class UnavailableOCR:
 
 
 @pytest.mark.parametrize('name', ['team_preview','battle_screen','move_selection',
-                                 'team_configuration_moves','team_configuration_stats'])
+                                 'team_configuration_moves','team_configuration_stats',
+                                 'unsupported_status'])
 @pytest.mark.parametrize('scale', [.5, 1, 1.25])
 def test_fixture_classification(name, scale):
     image = load_image(FIXTURES / f'{name}.png').image
     image = cv2.resize(image,None,fx=scale,fy=scale)
-    assert classify(image)[0] == ('team_configuration' if name.startswith('team_configuration') else name)
+    expected = ('team_configuration' if name.startswith('team_configuration') else
+                'switch_selection' if name == 'unsupported_status' else name)
+    assert classify(image)[0] == expected
 
 
 @pytest.mark.parametrize('shape',[(460,1000,3),(600,800,3)])
@@ -109,9 +112,9 @@ def test_live_ocr_hp():
     assert result.pokemon[3].hp.value in (None,100)
 
 
-def test_unsupported_menu_is_unknown():
+def test_pokemon_selection_status_view_is_switch_selection():
     frame = load_image(FIXTURES/'unsupported_status.png')
-    assert Recognizer(UnavailableOCR()).recognize(frame).screen == 'unknown'
+    assert Recognizer(UnavailableOCR()).recognize(frame).screen == 'switch_selection'
 
 
 def test_configuration_pipeline_unknown_fields():

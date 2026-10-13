@@ -106,3 +106,27 @@ For manual review, create a UTF-8 JSON array such as:
 ```
 
 Run `python main.py --team-corrections path/to/review.json --team-summary`. Species, ability, item, and move fields use IDs from `knowledge/data/entities.json`; identity uses a unique `pokeapi:pokemon:<id>` or `pokeapi:form:<id>` key from `knowledge/data/identity.json`. Numerical stats require positive integers. Corrections preserve the earlier observation and mark its conflict reviewed. Check [the field accuracy report](reports/M1.3-configuration.md) and [the canonical identity audit](reports/identity-follow-up.md) for fixture results and remaining unknowns.
+
+### M1.4: phase timelines
+
+The phase-only timeline records configuration, team preview, battle controls, move selection, Pokémon selection, replacement controls, move targeting, visible messages, probable battle animation, and unresolved frames. `pokemon_selection` names the brought-party list/detail view; `switch_selection` requires the replacement-control popover. `move_target_selection` requires the opponent/own target-grid layout and a visible selected-move banner, which can anchor on either side. Card count alone is insufficient. Ambiguous panels and unsupported device overlays remain `unknown`.
+
+```sh
+python phase_timeline.py --video path/to/recording.mp4 --interval 2 --output outputs/phases.json
+python phase_timeline.py --inspect reports/M1.4-final-sample-battle-1-timeline.json
+python scripts/benchmark_m14.py
+python -m pytest -q tests/test_phase_timeline.py tests/test_recognition.py
+```
+
+Segments retain source, frame index, timestamps, evidence, heuristic confidence, warnings, and capture metadata. Transition bounds span the last old-phase sample and first new-phase sample; sparse sampling cannot establish an exact boundary. `last_observed_timestamp` distinguishes observed evidence from estimated segment ends. Smoothing preserves known short-lived phases and explicitly ambiguous evidence.
+
+Selection purpose is separate from the visible phase: `voluntary`, `move_triggered`, `faint_replacement`, `revival_target_selection`, or `unknown`. `--context-annotations` accepts reviewed context with source ranges, supporting evidence, and provenance; the supplied voluntary-workflow annotation is in `tests/fixtures/m14_selection_context.json`. Optional `--context-ocr` can supply accepted Revival Blessing message evidence, with cached reads of unchanged message regions. These annotations generate no confirmed switch, revival, HP-restoration, or turn-boundary events. A battle view without controls may represent animation or waiting; its warning preserves that uncertainty.
+
+Both complete recordings were sampled once during the follow-up, and final predictions were then refreshed from verified lossless image caches. To repeat classification locally without decoding videos:
+
+```sh
+python scripts/refresh_m14.py --video sample_battle.mp4 --reuse-cache
+python scripts/refresh_m14.py --video sample_battle_1.mp4 --reuse-cache
+```
+
+The local caches in `.cache/m14-phases/` are optional and unbundled; reuse requires matching source metadata and frame checksums. The benchmark compares archived and final timelines against the same revised sparse annotations. See [the M1.4 final report](reports/M1.4-phases.md), [before/after evaluation](reports/M1.4-follow-up-accuracy.json), and [cached target-frame provenance](reports/M1.4-cached-target-review.json). Original reports and annotation history are preserved. No M1.5 or M2 implementation is included.

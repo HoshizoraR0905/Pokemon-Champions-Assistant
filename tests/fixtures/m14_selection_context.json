@@ -1,0 +1,23 @@
+[
+  {
+    "source": "tests/fixtures/sample_battle_1.mp4",
+    "start": 268,
+    "end": 282,
+    "purpose": "voluntary",
+    "timestamp_tolerance": 0.05,
+    "provenance": "user_manual_review",
+    "evidence": [
+      {
+        "annotation_source": "tests/fixtures/m14_phase_ground_truth.json",
+        "reviewer": "user",
+        "reference_points": [
+          268,
+          270,
+          280,
+          282
+        ],
+        "note": "Voluntary workflow within current turn; context only, no confirmed events."
+      }
+    ]
+  }
+]

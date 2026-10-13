@@ -51,11 +51,46 @@ def classify(image: np.ndarray) -> tuple[str,float,list[str]]:
     confirmation = color_fraction(image, (.16,.83,.31,.87), 'purple')
     if all(p > .45 or g > .45 for p,g in zip(preview,selected)) and min(opponents) > .3 and confirmation > .4:
         return 'team_preview', .9, ['team_preview']
+    # The Pokémon status view opened from selection has a broad violet detail
+    # panel, violet own-party list, and magenta opponent list. Four-card target
+    # menus carry a separate move banner and opponent/own target grid.
+    center = color_fraction(image, (.37,.15,.72,.85), 'purple')
+    center_pink = color_fraction(image, (.37,.15,.72,.85), 'pink')
+    left = color_fraction(image, (.12,.15,.34,.82), 'purple')
+    right = color_fraction(image, (.73,.15,.90,.82), 'pink')
+    if center > .55 and left > .38 and right > .3:
+        # A compact two-row popover obscures the party list only when
+        # replacement/exit controls are open. The broad detail panel alone
+        # is merely Pokémon selection.
+        # The popover follows the selected party row, so scan vertically.
+        popover = max(color_fraction(image, (.16,y,.35,y+.20), 'purple')
+                      for y in np.arange(.24,.72,.02))
+        if popover > .85:
+            return 'switch_selection', .86, ['pokemon_selection_ui', 'replacement_controls_popover']
+        return 'pokemon_selection', .82, ['pokemon_selection_ui']
+    if center > .38 and center_pink > .09:
+        # Require the selected-move banner as well as the two-sided target
+        # panel geometry. Card count alone cannot establish move targeting.
+        # The selected-move banner can anchor above either lower target.
+        # Require both a dark banner and visible glyphs at the same position.
+        visible_banner = False
+        for region in ((.355,.46,.475,.51), (.565,.46,.685,.51)):
+            x1, y1, x2, y2 = box(image, region)
+            banner = cv2.cvtColor(image[y1:y2, x1:x2], cv2.COLOR_BGR2HSV)
+            dark = float(np.mean(banner[:,:,2] < 100))
+            glyphs = float(np.mean((banner[:,:,1] < 90) & (banner[:,:,2] > 150)))
+            visible_banner |= dark > .60 and glyphs > .025
+        targets = [color_fraction(image, region, 'purple') for region in
+                   ((.32,.53,.48,.70), (.54,.53,.69,.70))]
+        if visible_banner and min(targets) > .4:
+            return 'move_target_selection', .84, ['four_card_target_selection', 'opponent_own_target_grid', 'selected_move_banner']
+        return 'unknown', 0.0, ['ambiguous_target_panel']
     own = color_fraction(image, (.15,.85,.24,.89), 'purple')
     enemy = color_fraction(image, (.64,.05,.72,.09), 'pink')
     if own > .3 and enemy > .3:
         moves = [color_fraction(image, (.70,.44+i*.118,.735,.49+i*.118), 'purple') for i in range(4)]
-        if min(moves) > .35:
+        highlights = [color_fraction(image, (.70,.44+i*.118,.735,.49+i*.118), 'green') for i in range(4)]
+        if all(p > .35 or g > .35 for p,g in zip(moves, highlights)):
             return 'move_selection', .85, ['battle_screen', 'move_selection']
         return 'battle_screen', .8, ['battle_screen']
     return 'unknown', 0.0, []
@@ -188,7 +223,7 @@ class Recognizer:
                 pp = read_ratio(f'move_pp_{i}',(.875,y-.006,.903,y+.031),
                                 (.897,y+.032,.910,y+.06))
                 result.moves.append(Move(i+1, name, pp))
-        if screen == 'unknown':
+        if screen == 'unknown' and 'ambiguous_target_panel' not in components:
             # The battle message uses white text over a translucent lower-left band.
             bounds = box(image, (.22,.685,.64,.797))
             x1,y1,x2,y2 = bounds

@@ -1,0 +1,228 @@
+{
+  "schema_version": 2,
+  "annotation_method": "Manual visual review of source video contact sheets and selected full-resolution frames; timestamps refer to nearest sampled frame and do not label every frame.",
+  "videos": {
+    "sample_battle.mp4": {
+      "reviewed_points": [
+        {
+          "second": 0,
+          "phase": "unknown",
+          "note": "pre-battle presentation"
+        },
+        {
+          "second": 20,
+          "phase": "unknown",
+          "note": "pre-battle transition"
+        },
+        {
+          "second": 40,
+          "phase": "team_preview"
+        },
+        {
+          "second": 60,
+          "phase": "team_preview"
+        },
+        {
+          "second": 80,
+          "phase": "team_preview"
+        },
+        {
+          "second": 100,
+          "phase": "team_preview"
+        },
+        {
+          "second": 120,
+          "phase": "unknown",
+          "note": "VS transition"
+        },
+        {
+          "second": 140,
+          "phase": "battle_screen",
+          "note": "battle HUD with action controls"
+        },
+        {
+          "second": 300,
+          "phase": "switch_selection",
+          "note": "own-party list and Pokémon detail panel"
+        },
+        {
+          "second": 380,
+          "phase": "move_target_selection",
+          "note": "four-card move target selection",
+          "evidence_files": [
+            "tests/fixtures/m14_target_selection_380.png",
+            "reports/M1.4-cached-target-review.json"
+          ],
+          "review_provenance": "manual_cached_image_review_on_2026-10-14; existing phase label confirmed, not changed"
+        },
+        {
+          "second": 520,
+          "phase": "move_target_selection",
+          "note": "four-card move target selection"
+        },
+        {
+          "second": 660,
+          "phase": "move_target_selection",
+          "note": "four-card move target selection",
+          "evidence_files": [
+            "tests/fixtures/m14_target_selection_660.png",
+            "reports/M1.4-cached-target-review.json"
+          ],
+          "review_provenance": "manual_cached_image_review_on_2026-10-14; existing phase label confirmed, not changed"
+        },
+        {
+          "second": 720,
+          "phase": "unknown",
+          "note": "recording ends in device overlay"
+        }
+      ],
+      "reviewed_intervals": [
+        {
+          "start": 40,
+          "end": 100,
+          "phase": "team_preview"
+        }
+      ]
+    },
+    "sample_battle_1.mp4": {
+      "reviewed_points": [
+        {
+          "second": 0,
+          "phase": "unknown",
+          "note": "pre-battle roster"
+        },
+        {
+          "second": 20,
+          "phase": "unknown",
+          "note": "pre-battle overlay"
+        },
+        {
+          "second": 40,
+          "phase": "team_preview"
+        },
+        {
+          "second": 60,
+          "phase": "team_preview"
+        },
+        {
+          "second": 80,
+          "phase": "team_preview"
+        },
+        {
+          "second": 100,
+          "phase": "team_preview"
+        },
+        {
+          "second": 140,
+          "phase": "move_selection"
+        },
+        {
+          "second": 180,
+          "phase": "battle_message",
+          "note": "visible lower message text"
+        },
+        {
+          "second": 200,
+          "phase": "move_target_selection",
+          "note": "four-card move target selection, confirmed by Dragon Pulse label"
+        },
+        {
+          "second": 268,
+          "phase": "move_selection",
+          "context": "voluntary",
+          "provenance": "user_manual_review",
+          "note": "Visible move controls before party list opens."
+        },
+        {
+          "second": 270,
+          "phase": "pokemon_selection",
+          "note": "Player opens brought-party list; no switch commitment established by the phase.",
+          "context": "voluntary",
+          "provenance": "user_manual_review"
+        },
+        {
+          "second": 280,
+          "phase": "switch_selection",
+          "note": "Replacement/Exit popover is open; replacement-selection UI.",
+          "context": "voluntary",
+          "provenance": "user_manual_review"
+        },
+        {
+          "second": 282,
+          "phase": "battle_animation",
+          "context": "voluntary",
+          "provenance": "user_manual_review",
+          "note": "User confirms voluntary switching workflow completed and current-turn resolution begins; UI label remains battle view without decision controls. No event or turn boundary asserted."
+        },
+        {
+          "second": 290,
+          "phase": "battle_animation",
+          "note": "battle view with no decision panel"
+        },
+        {
+          "second": 350,
+          "phase": "switch_selection",
+          "note": "own-party list; fainted member visible"
+        },
+        {
+          "second": 400,
+          "phase": "move_target_selection",
+          "note": "four-card move target selection"
+        },
+        {
+          "second": 460,
+          "phase": "battle_animation"
+        },
+        {
+          "second": 520,
+          "phase": "battle_animation"
+        }
+      ],
+      "reviewed_intervals": [
+        {
+          "start": 40,
+          "end": 100,
+          "phase": "team_preview"
+        }
+      ],
+      "reviewed_transitions": [
+        {
+          "from": "move_selection",
+          "to": "pokemon_selection",
+          "earliest_timestamp": 268,
+          "latest_timestamp": 270,
+          "provenance": "user_manual_review",
+          "evidence_files": [
+            "reports/M1.4-evidence/m14_boundary_268.jpg",
+            "reports/M1.4-evidence/m14_boundary_270.jpg"
+          ]
+        },
+        {
+          "from": "pokemon_selection",
+          "to": "switch_selection",
+          "earliest_timestamp": 270,
+          "latest_timestamp": 280,
+          "provenance": "user_manual_review",
+          "note": "Window bounded by reference points; exact popover-opening time is unlabelled.",
+          "evidence_files": [
+            "reports/M1.4-evidence/m14_boundary_270.jpg",
+            "reports/M1.4-evidence/m14_boundary_280.jpg"
+          ]
+        },
+        {
+          "from": "switch_selection",
+          "to": "battle_animation",
+          "earliest_timestamp": 280,
+          "latest_timestamp": 282,
+          "provenance": "user_manual_review",
+          "evidence_files": [
+            "reports/M1.4-evidence/m14_boundary_280.jpg",
+            "reports/M1.4-evidence/m14_boundary_282.jpg"
+          ]
+        }
+      ]
+    }
+  },
+  "previous_annotations": "reports/archive/M1.4-ground-truth-before-follow-up.json",
+  "revision_provenance": "User manual review in M1.4 follow-up on 2026-10-14; vocabulary refinement retains original labels in previous_annotations."
+}
