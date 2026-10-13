@@ -139,7 +139,8 @@ def test_supplied_pages_field_by_field(tmp_path):
     assert team.data['members'][4]['pokemon_id']==876
     assert team.data['members'][4]['canonical_identity']=='pokeapi:pokemon:876'
     assert team.data['members'][4]['form_id'] is None
-    assert team.data['members'][2]['identity_status']=='species_only'
+    assert team.data['members'][2]['identity_status']=='resolved_unique'
+    assert team.data['members'][2]['canonical_identity']=='pokeapi:pokemon:823'
     assert not team.data['complete']
     assert all(m['missing_fields'] for m in team.data['members'])
     path=tmp_path/'team.json'; team.save(path)
@@ -207,3 +208,48 @@ def test_v1_verified_form_migrates_to_pokemon_identity_with_history():
     assert migrated['fields']['form']['value'] is None
     assert migrated['fields']['identity']['status']=='manual_verified'
     assert migrated['legacy_form']['observations']==[{'source_id':0}]
+
+
+def test_existing_v2_species_only_backfill_preserves_evidence_and_verification():
+    old=json.loads((Path(__file__).parents[1]/'data/teams/my_team.json').read_text())
+    member=old['members'][2]
+    species_evidence=json.loads(json.dumps(member['fields']['species']['observations']))
+    sources=json.loads(json.dumps(old['sources']))
+    member['fields']['identity']={
+        'value':None,'canonical_id':None,'status':'unknown','confidence':0.0,
+        'observations':[],'conflicts':[]}
+    member['fields']['hp']['status']='manual_verified'
+    migrated=TeamConfiguration(data=old)
+    fixed=migrated.data['members'][2]
+    assert fixed['canonical_identity']=='pokeapi:pokemon:823'
+    assert fixed['pokemon_id']==823 and fixed['form_id'] is None
+    assert fixed['fields']['identity']['status']=='knowledge_resolved'
+    assert fixed['fields']['identity']['observations'][0]['excluded_source_form_ids']==[10381]
+    assert migrated.data['identity_scope_id']=='2026-10-13-M-C'
+    assert fixed['fields']['species']['observations']==species_evidence
+    assert fixed['fields']['hp']['status']=='manual_verified'
+    assert migrated.data['sources']==sources
+    assert not migrated.data['complete']
+    assert len(TeamConfiguration(data=migrated.data).data['members'][2]['fields']['identity']['observations'])==1
+
+
+def test_saved_regulation_controls_backfill_and_verified_identity_is_preserved():
+    old=json.loads((Path(__file__).parents[1]/'data/teams/my_team.json').read_text())
+    old['members'][2]['fields']['identity']['status']='manual_verified'
+    old['members'][2]['fields']['identity']['canonical_id']='pokeapi:pokemon:823'
+    old['members'][2]['fields']['identity']['value']='pokeapi:pokemon:823'
+    old['members'][2]['fields']['identity']['observations']=[{'reviewer':'trainer'}]
+    verified=TeamConfiguration(data=old)
+    assert verified.data['members'][2]['fields']['identity']['status']=='manual_verified'
+    assert verified.data['members'][2]['fields']['identity']['observations']==[{'reviewer':'trainer'}]
+    assert verified.data['members'][2]['instance_id']=='own_team_3'
+    old['members'][2]['fields']['identity']={
+        'value':None,'canonical_id':None,'status':'unknown','confidence':0.0,
+        'observations':[],'conflicts':[]}
+    other=TeamConfiguration(knowledge=KnowledgeBase(regulation='future'),data=old)
+    assert other.data['members'][2]['fields']['identity']['status']=='unknown'
+    assert other.data['members'][2]['identity_status']=='species_only'
+    assert other.data.get('identity_scope_id')=='2026-10-13-M-C'
+    old['identity_scope_id']='previous-M-C-rules'
+    previous=TeamConfiguration(data=old)
+    assert previous.data['members'][2]['fields']['identity']['status']=='unknown'

@@ -1,9 +1,11 @@
 """Pinned PokéAPI variant/form keys and identity conservatism."""
 from dataclasses import replace
+from copy import deepcopy
 import json
 from pathlib import Path
 
 from knowledge import KnowledgeBase
+from knowledge.identity import IdentityIndex
 from models import IconCandidate, IconEvidence, Observation
 from recognition.entities import EntityResolver
 from recognition.identity import combine_identity
@@ -41,13 +43,54 @@ def test_species_only_does_not_default_to_base_or_male():
         assert obs.resolution.pokemon_id is None
 
 
+def test_single_applicable_variant_resolves_from_species_without_icon():
+    kb=KnowledgeBase()
+    assert IdentityIndex(kb.identity).for_species(823)['identity_status']=='species_only'
+    assert [r['identifier'] for r in kb.identities.by_species[823]]==[
+        'corviknight','corviknight-gmax']
+    assert [r['identifier'] for r in kb.identities.applicable_forms(823)]==['corviknight']
+    base,gmax=kb.identities.by_species[823]
+    assert kb.identities.variant_applicability(base)['status']=='confirmed_applicable'
+    assert gmax['champions_availability']['status']=='unknown'
+    assert kb.identities.variant_applicability(gmax)['status']=='inferred_inapplicable'
+    assert IdentityIndex(kb.identity).variant_applicability(gmax)['status']=='indeterminate'
+    assert KnowledgeBase(regulation='future').identities.for_species(823)['identity_status']=='species_only'
+    assert KnowledgeBase(game_version='future',regulation='M-C').identities.for_species(823)['identity_status']=='species_only'
+    conflicting=deepcopy(kb.identity)
+    gmax=next(r for r in conflicting['forms'] if r['source_form_id']==10381)
+    gmax['champions_availability']['status']='confirmed_available'
+    assert IdentityIndex(conflicting,scope=kb.identities.scope).for_species(823)['identity_status']=='species_only'
+    assert IdentityIndex(conflicting,scope=kb.identities.scope).variant_applicability(gmax)['status']=='supported_applicable'
+    unknown=deepcopy(kb.identity)
+    other=next(r for r in unknown['forms'] if r['source_form_id']==10202)
+    other['champions_availability']={'status':'unknown','legality':'unknown'}
+    assert IdentityIndex(unknown,scope=kb.identities.scope).variant_applicability(other)['status']=='unknown'
+    assert other in IdentityIndex(unknown,scope=kb.identities.scope).applicable_forms(26)
+    explicit=deepcopy(kb.identity)
+    gmax=next(r for r in explicit['forms'] if r['source_form_id']==10381)
+    gmax['champions_availability'].update(legality='illegal',legality_source={'url':'test:official-rule'})
+    assert IdentityIndex(explicit,scope=kb.identities.scope).variant_applicability(gmax)['status']=='confirmed_inapplicable'
+    expected=kb.identities.for_species(823)
+    assert expected=={'species_id':823,'pokemon_id':823,'form_id':None,
+                      'canonical_identity':'pokeapi:pokemon:823','identity_status':'resolved_unique'}
+    result=EntityResolver(kb).resolve(Observation('钢铠鸦',.99,raw_text='钢铠鸦'),
+                                      'species',region_kind='species')
+    assert result.resolution.canonical_identity=='pokeapi:pokemon:823'
+    assert result.resolution.form_id is None
+    assert kb.identities.for_species(903)['canonical_identity']=='pokeapi:pokemon:903'
+    for sid in (6,26,876,373):
+        assert kb.identities.for_species(sid)['identity_status']=='species_only'
+        assert kb.identities.for_species(sid)['canonical_identity'] is None
+
+
 def test_identity_snapshot_unique_and_referentially_consistent():
     kb=KnowledgeBase()
+    unrestricted=IdentityIndex(kb.identity)
     forms=kb.identity['forms']
     keys=[r['canonical_identity'] for r in forms]
     assert len(keys)==len(set(keys))==len(forms)
     for row in forms:
-        expected=kb.identities.for_form(row['source_form_id'])
+        expected=unrestricted.for_form(row['source_form_id'])
         assert all(row[k]==expected[k] for k in ('species_id','pokemon_id','form_id',
                                                  'canonical_identity','identity_status'))
         assert f"pokeapi:species:{row['species_id']}" in kb.entities

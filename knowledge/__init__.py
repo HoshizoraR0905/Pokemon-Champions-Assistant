@@ -73,7 +73,19 @@ class KnowledgeBase:
             if hashlib.sha256(identity_raw).hexdigest() != self.manifest['files'].get('identity.json'):
                 raise ValueError('Identity snapshot checksum does not match manifest')
             self.identity = json.loads(identity_raw)
-        self.identities = IdentityIndex(self.identity)
+        scopes = {'scopes': []}
+        if 'identity_scopes.json' in self.manifest['files']:
+            scopes_raw = (directory/'identity_scopes.json').read_bytes()
+            if hashlib.sha256(scopes_raw).hexdigest() != self.manifest['files']['identity_scopes.json']:
+                raise ValueError('Identity scope checksum does not match manifest')
+            scopes = json.loads(scopes_raw)
+            if scopes.get('schema_version') != 1:
+                raise ValueError('Unsupported identity scope schema')
+        matching = [s for s in scopes['scopes'] if
+                    s['game_version'] == self.game_version and s['regulation'] == self.regulation]
+        if len(matching) > 1:
+            raise ValueError('Ambiguous identity scope')
+        self.identities = IdentityIndex(self.identity, scope=matching[0] if matching else None)
         self.radicals = data['radicals']
         self.relationships = data['relationships']
         self.version = self.manifest['champions']['metadata']['version']

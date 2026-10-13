@@ -51,7 +51,8 @@
     "LICENSE.champions.txt": "e4e8cd45e0acc57989fd62e952302279e1e241e3795c193287b7cd1cb1edc94a",
     "champions_facts.json": "c9203fdf1cdad92bb37e88c3f56763fc910ce03e566f851e3f8389cac5d3f93b",
     "visual_assets.json": "86f631801fb6bf0a374f58799145261f7919220ec65516a7a03774e75146f84d",
-    "identity.json": "bbd2d67cd4d6f01b3a738f3196e764d250528538ceb0036fa3378277fb2bd2db"
+    "identity.json": "bbd2d67cd4d6f01b3a738f3196e764d250528538ceb0036fa3378277fb2bd2db",
+    "identity_scopes.json": "33bb8f8e4959df26a2aa28ab356337b8bb81a9ade8d9c3565432e9c12e2ffea0"
   },
   "unmapped_champions_entries": [
     {

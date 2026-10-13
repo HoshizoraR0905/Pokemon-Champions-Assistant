@@ -216,7 +216,7 @@ def test_version_and_regulation_scoping(resolver,tmp_path):
     import hashlib
     import shutil
     source = Path(__file__).parents[1]/'knowledge/data'
-    for name in ('entities.json','manifest.json','champions_roster.json'):
+    for name in ('entities.json','manifest.json','champions_roster.json','identity_scopes.json'):
         shutil.copyfile(source/name,tmp_path/name)
     roster = json.loads((tmp_path/'champions_roster.json').read_text())
     snapshot = dict(roster['snapshots'][0], scope_id='test-build',game_version='test-build',

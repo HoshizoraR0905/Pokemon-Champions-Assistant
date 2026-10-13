@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "scopes": [
+    {
+      "scope_id": "2026-10-13-M-C",
+      "game_version": null,
+      "regulation": "M-C",
+      "as_of": "2026-10-13",
+      "mechanic_rules": [
+        {
+          "variant_identifier_suffix": "-gmax",
+          "status": "inferred_inapplicable",
+          "reason": "mechanic_not_listed_in_m_c",
+          "source": "https://champions-news.pokemon-home.com/en/page/816.html",
+          "evidence_note": "The official M-C mechanics section lists Mega Evolution and does not list Gigantamax; this is a scoped inference, not an explicit global unavailability assertion."
+        }
+      ]
+    }
+  ]
+}

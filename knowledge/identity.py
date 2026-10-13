@@ -3,7 +3,11 @@ from collections import defaultdict
 
 
 class IdentityIndex:
-    def __init__(self, payload):
+    def __init__(self, payload, *, scope=None):
+        if scope is not None and not isinstance(scope, dict):
+            raise ValueError('Identity scope must be a versioned rule record or None')
+        self.scope = scope
+        self.scope_id = scope['scope_id'] if scope else 'unrestricted'
         self.forms = {r.get('source_form_id', r['form_id']): r for r in payload.get('forms', [])}
         self.by_species = defaultdict(list)
         self.by_pokemon = defaultdict(list)
@@ -11,14 +15,44 @@ class IdentityIndex:
             self.by_species[row['species_id']].append(row)
             self.by_pokemon[row['pokemon_id']].append(row)
 
+    def variant_applicability(self, row):
+        """Current-scope candidate status; never alters source identity rows.
+
+        Unknown rows remain candidates. The G-Max rule is an inference from
+        the official M-C mechanics section, not a global availability claim.
+        """
+        if self.scope is None:
+            return {'status': 'indeterminate', 'reason': 'no_game_regulation_scope'}
+        availability = row.get('champions_availability', {})
+        if availability.get('legality') == 'illegal' and availability.get('legality_source'):
+            return {'status': 'confirmed_inapplicable', 'reason': 'explicit_regulation_illegality',
+                    'source': availability['legality_source']}
+        if (availability.get('legality') == 'legal' and availability.get('legality_source') or
+                availability.get('reason') == 'exact_official_default_form_row'):
+            return {'status': 'confirmed_applicable', 'reason': 'affirmative_form_evidence',
+                    'source': availability.get('legality_source') or availability.get('source')}
+        if availability.get('legality') == 'legal' or availability.get('status') == 'confirmed_available':
+            return {'status': 'supported_applicable', 'reason': 'community_form_evidence',
+                    'source': availability.get('source')}
+        for rule in self.scope.get('mechanic_rules', []):
+            if row['identifier'].endswith(rule['variant_identifier_suffix']):
+                return {k: rule[k] for k in ('status', 'reason', 'source')}
+        return {'status': 'unknown', 'reason': 'no_form_applicability_evidence'}
+
+    def applicable_forms(self, species_id):
+        return [r for r in self.by_species.get(species_id, []) if
+                self.variant_applicability(r)['status'] not in
+                ('confirmed_inapplicable', 'inferred_inapplicable')]
+
     def for_form(self, form_id):
         row = self.forms.get(form_id)
         if row is None:
             return self.unresolved()
         multiple = len(self.by_pokemon[row['pokemon_id']]) > 1
+        applicable = self.applicable_forms(row['species_id'])
         if multiple:
             status = 'resolved_form'
-        elif len(self.by_species[row['species_id']]) == 1:
+        elif row in applicable and len(applicable) == 1:
             status = 'resolved_unique'
         elif row['pokemon_id'] == row['species_id']:
             status = 'resolved_default'
@@ -31,7 +65,7 @@ class IdentityIndex:
                 'identity_status': status}
 
     def for_species(self, species_id):
-        rows = self.by_species.get(species_id, [])
+        rows = self.applicable_forms(species_id)
         if len(rows) == 1:
             return self.for_form(rows[0].get('source_form_id', rows[0]['form_id']))
         return {'species_id': species_id, 'pokemon_id': None, 'form_id': None,

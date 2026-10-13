@@ -1351,11 +1351,20 @@
           "conflicts": []
         },
         "identity": {
-          "value": null,
-          "canonical_id": null,
-          "status": "unknown",
-          "confidence": 0.0,
-          "observations": [],
+          "value": "pokeapi:pokemon:823",
+          "canonical_id": "pokeapi:pokemon:823",
+          "status": "knowledge_resolved",
+          "confidence": 0.999,
+          "observations": [
+            {
+              "method": "unique_applicable_variant",
+              "source_field": "species",
+              "scope": "2026-10-13-M-C",
+              "excluded_source_form_ids": [
+                10381
+              ]
+            }
+          ],
           "conflicts": []
         },
         "ability": {
@@ -1920,10 +1929,10 @@
       ],
       "conflicting_fields": [],
       "species_id": 823,
-      "pokemon_id": null,
+      "pokemon_id": 823,
       "form_id": null,
-      "canonical_identity": null,
-      "identity_status": "species_only",
+      "canonical_identity": "pokeapi:pokemon:823",
+      "identity_status": "resolved_unique",
       "names": {
         "zh-hans": "钢铠鸦",
         "en": "Corviknight"
@@ -3947,5 +3956,6 @@
     ]
   },
   "conflicts": {},
-  "updated_at_utc": "2026-10-13T14:27:11+00:00"
+  "updated_at_utc": "2026-10-13T14:51:40+00:00",
+  "identity_scope_id": "2026-10-13-M-C"
 }

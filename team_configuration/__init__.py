@@ -55,11 +55,16 @@ def _source(result, cache: dict[str, str | None]) -> dict:
 
 class TeamConfiguration:
     def __init__(self, knowledge: KnowledgeBase | None = None, *, team_id='my_team', data=None):
-        self.knowledge = knowledge or KnowledgeBase()
+        # A persisted team keeps its own regulation when the application
+        # default later advances. Explicitly supplied knowledge can still be
+        # used to inspect it, but may not silently rewrite its identity.
+        self.knowledge = knowledge or KnowledgeBase(
+            regulation=data['regulation'] if data and data.get('regulation') else None)
         self.data = data if data is not None else {
             'schema_version': 2, 'team_id': team_id, 'created_at_utc': _now(),
             'knowledge_snapshot_sha256': self.knowledge.snapshot_id,
-            'regulation': self.knowledge.regulation, 'sources': [],
+            'regulation': self.knowledge.regulation,
+            'identity_scope_id': self.knowledge.identities.scope_id, 'sources': [],
             'members': [_member(i) for i in range(1, 7)], 'complete': False,
             'missing_fields': {}, 'conflicts': {}}
         if self.data.get('schema_version') == 1:
@@ -67,7 +72,43 @@ class TeamConfiguration:
         if self.data.get('schema_version') != 2 or len(self.data.get('members', [])) != 6:
             raise ValueError('Unsupported team configuration schema')
         self._source_hashes: dict[str, str | None] = {}
+        if (self.data.get('regulation') == self.knowledge.regulation and
+                self.data.get('knowledge_snapshot_sha256') == self.knowledge.snapshot_id):
+            self.data.setdefault('identity_scope_id', self.knowledge.identities.scope_id)
+        self._backfill_unique_identities()
         self._report()
+
+    def _backfill_unique_identities(self):
+        """Upgrade species-only records when the current scope has one variant."""
+        if (self.data.get('regulation') != self.knowledge.regulation or
+                self.data.get('knowledge_snapshot_sha256') != self.knowledge.snapshot_id or
+                self.data.get('identity_scope_id') != self.knowledge.identities.scope_id):
+            return
+        for member in self.data['members']:
+            fields = member['fields']
+            identity_field = fields['identity']
+            species_field = fields['species']
+            if identity_field['status'] != 'unknown' or identity_field['conflicts']:
+                continue
+            if species_field['status'] not in ('knowledge_resolved', 'manual_verified'):
+                continue
+            canonical = species_field.get('canonical_id')
+            if not isinstance(canonical, str) or not canonical.startswith('pokeapi:species:'):
+                continue
+            inferred = self.knowledge.identities.for_key(canonical)
+            if inferred['identity_status'] != 'resolved_unique':
+                continue
+            excluded = [r.get('source_form_id', r['form_id'])
+                        for r in self.knowledge.identities.by_species[inferred['species_id']]
+                        if r not in self.knowledge.identities.applicable_forms(inferred['species_id'])]
+            identity_field.update(value=inferred['canonical_identity'],
+                canonical_id=inferred['canonical_identity'],status='knowledge_resolved',
+                confidence=species_field['confidence'])
+            evidence = {'method':'unique_applicable_variant','source_field':'species',
+                        'scope':self.knowledge.identities.scope_id,
+                        'excluded_source_form_ids':excluded}
+            if evidence not in identity_field['observations']:
+                identity_field['observations'].append(evidence)
 
     def _migrate_v1(self):
         self.data['schema_version'] = 2
