@@ -6,6 +6,7 @@ import time
 import cv2
 import numpy as np
 from models import IconCandidate, IconEvidence
+from knowledge import KnowledgeBase
 
 DEFAULT_CACHE=Path(__file__).resolve().parents[1]/'.cache/champions-icons'
 
@@ -17,6 +18,7 @@ class IconRecognizer:
         index_path=self.directory/'index.json'
         if not index_path.exists():raise ValueError('Icon cache missing; see scripts/retrieve_visuals.py')
         index=json.loads(index_path.read_text());self.source=index['source']
+        self.identities=KnowledgeBase().identities
         self.templates=[];self.banks={};self.warnings=[]
         for ref in index['assets']:
             path=self.directory/ref['file']
@@ -57,6 +59,12 @@ class IconRecognizer:
         if float(np.std(query,axis=(0,1)).max())<8:
             result.reason='insufficient_visual_detail';return result
         ranked=[]
+        def candidate(ref,score,scale,location):
+            source_form=ref.get('source_form_id',ref.get('form_id'))
+            identity=self.identities.for_form(source_form) if source_form else self.identities.unresolved()
+            return IconCandidate(ref['canonical_id'],ref['species_id'],identity['form_id'],
+                                 ref['file'],round(score,5),round(scale,3),location,
+                                 identity['pokemon_id'],identity['canonical_identity'])
         background=np.median(query.reshape(-1,3),axis=0)
         for ref,variants in self._bank(*query.shape[:2]):
             best=(-1.0,0.0,(0,0))
@@ -69,8 +77,7 @@ class IconRecognizer:
                 scores=np.nan_to_num(scores,nan=-1,posinf=-1,neginf=-1)
                 _,value,_,loc=cv2.minMaxLoc(scores)
                 if value>best[0]:best=(value,template_scale,loc)
-            ranked.append(IconCandidate(ref['canonical_id'],ref['species_id'],ref['form_id'],
-                                       ref['file'],round(best[0],5),round(best[1],3),best[2]))
+            ranked.append(candidate(ref,*best))
         ranked.sort(key=lambda c:c.similarity,reverse=True)
         # A coarse pass searches the complete library. Refine its shortlist at
         # capture resolution so dark/thin sprites aren't penalized by downsampling.
@@ -91,8 +98,7 @@ class IconRecognizer:
                 scores=np.nan_to_num(scores,nan=-1,posinf=-1,neginf=-1)
                 _,value,_,loc=cv2.minMaxLoc(scores)
                 if value>best[0]:best=(value,float(template_scale),loc)
-            refined.append(IconCandidate(ref['canonical_id'],ref['species_id'],ref['form_id'],
-                          ref['file'],round(best[0],5),round(best[1],3),best[2]))
+            refined.append(candidate(ref,*best))
         ranked=sorted(refined,key=lambda c:c.similarity,reverse=True)
         result.candidates=ranked[:5]
         result.latency_ms=round((time.perf_counter()-start)*1000,2)
@@ -105,11 +111,13 @@ class IconRecognizer:
         if len({c.species_id for c in near})!=1:
             result.status='ambiguous';result.reason='small_species_margin';return result
         result.species_id=winner.species_id
-        if len({c.form_id for c in near})==1:
-            result.form_id=winner.form_id;result.canonical_id=winner.canonical_id
-        else:
-            result.canonical_id=f'pokeapi:species:{winner.species_id}'
-            result.reason='species_only_forms_visually_ambiguous'
+        if len({c.canonical_identity for c in near})!=1 or not winner.canonical_identity:
+            result.status='ambiguous';result.identity_status='ambiguous_variant'
+            result.reason='forms_visually_ambiguous';return result
+        result.form_id=winner.form_id;result.pokemon_id=winner.pokemon_id
+        result.canonical_identity=winner.canonical_identity
+        result.identity_status=self.identities.for_key(winner.canonical_identity)['identity_status']
+        result.canonical_id=winner.canonical_id
         result.status='resolved'
         return result
 

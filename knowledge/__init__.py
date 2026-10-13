@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 import unicodedata
 from .roster import ChampionsRoster
+from .identity import IdentityIndex
 
 
 def normalize(text: str) -> str:
@@ -72,6 +73,7 @@ class KnowledgeBase:
             if hashlib.sha256(identity_raw).hexdigest() != self.manifest['files'].get('identity.json'):
                 raise ValueError('Identity snapshot checksum does not match manifest')
             self.identity = json.loads(identity_raw)
+        self.identities = IdentityIndex(self.identity)
         self.radicals = data['radicals']
         self.relationships = data['relationships']
         self.version = self.manifest['champions']['metadata']['version']

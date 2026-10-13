@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "team_id": "my_team",
-  "created_at_utc": "2026-10-13T09:20:45+00:00",
+  "created_at_utc": "2026-10-13T14:26:57+00:00",
   "knowledge_snapshot_sha256": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
   "regulation": "M-C",
   "sources": [
@@ -12,7 +12,7 @@
       "video_second": null,
       "screen": "team_configuration",
       "page": "configuration_moves",
-      "processed_at_utc": "2026-10-13T09:20:53+00:00"
+      "processed_at_utc": "2026-10-13T14:27:04+00:00"
     },
     {
       "path": "tests/fixtures/team_configuration_stats.png",
@@ -21,7 +21,7 @@
       "video_second": null,
       "screen": "team_configuration",
       "page": "configuration_stats",
-      "processed_at_utc": "2026-10-13T09:20:59+00:00"
+      "processed_at_utc": "2026-10-13T14:27:11+00:00"
     }
   ],
   "members": [
@@ -72,12 +72,25 @@
           ],
           "conflicts": []
         },
-        "form": {
-          "value": null,
-          "canonical_id": null,
-          "status": "unknown",
-          "confidence": 0.0,
-          "observations": [],
+        "identity": {
+          "value": "pokeapi:pokemon:373",
+          "canonical_id": "pokeapi:pokemon:373",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "暴飞龙",
+              "provenance": "multimodal_identity",
+              "identity_status": "resolved_default"
+            },
+            {
+              "source_id": 1,
+              "raw_text": "暴飞龙",
+              "provenance": "multimodal_identity",
+              "identity_status": "resolved_default"
+            }
+          ],
           "conflicts": []
         },
         "ability": {
@@ -400,6 +413,14 @@
           ],
           "conflicts": []
         },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
         "level": {
           "value": null,
           "canonical_id": null,
@@ -618,7 +639,7 @@
       },
       "missing_fields": [
         "species",
-        "form",
+        "identity",
         "ability",
         "held_item",
         "move_1",
@@ -634,7 +655,10 @@
       ],
       "conflicting_fields": [],
       "species_id": 373,
+      "pokemon_id": 373,
       "form_id": null,
+      "canonical_identity": "pokeapi:pokemon:373",
+      "identity_status": "resolved_default",
       "names": {
         "zh-hans": "暴飞龙",
         "en": "Salamence"
@@ -661,8 +685,8 @@
               ],
               "confidence": 1.0,
               "ocr_engine": "PP-OCRv6_medium_rec",
-              "provenance": "knowledge_resolved_ocr",
-              "resolution_method": "exact",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
               "candidate_ids": [
                 "pokeapi:species:248"
               ]
@@ -678,8 +702,8 @@
               ],
               "confidence": 1.0,
               "ocr_engine": "PP-OCRv6_medium_rec",
-              "provenance": "knowledge_resolved_ocr",
-              "resolution_method": "exact",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
               "candidate_ids": [
                 "pokeapi:species:248"
               ]
@@ -687,12 +711,25 @@
           ],
           "conflicts": []
         },
-        "form": {
-          "value": null,
-          "canonical_id": null,
-          "status": "unknown",
-          "confidence": 0.0,
-          "observations": [],
+        "identity": {
+          "value": "pokeapi:pokemon:248",
+          "canonical_id": "pokeapi:pokemon:248",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "班基拉斯",
+              "provenance": "multimodal_identity",
+              "identity_status": "resolved_default"
+            },
+            {
+              "source_id": 1,
+              "raw_text": "班基拉斯",
+              "provenance": "multimodal_identity",
+              "identity_status": "resolved_default"
+            }
+          ],
           "conflicts": []
         },
         "ability": {
@@ -1015,6 +1052,14 @@
           ],
           "conflicts": []
         },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
         "level": {
           "value": null,
           "canonical_id": null,
@@ -1233,7 +1278,7 @@
       },
       "missing_fields": [
         "species",
-        "form",
+        "identity",
         "ability",
         "held_item",
         "move_1",
@@ -1249,7 +1294,10 @@
       ],
       "conflicting_fields": [],
       "species_id": 248,
+      "pokemon_id": 248,
       "form_id": null,
+      "canonical_identity": "pokeapi:pokemon:248",
+      "identity_status": "resolved_default",
       "names": {
         "zh-hans": "班基拉斯",
         "en": "Tyranitar"
@@ -1302,7 +1350,7 @@
           ],
           "conflicts": []
         },
-        "form": {
+        "identity": {
           "value": null,
           "canonical_id": null,
           "status": "unknown",
@@ -1630,6 +1678,14 @@
           ],
           "conflicts": []
         },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
         "level": {
           "value": null,
           "canonical_id": null,
@@ -1848,7 +1904,7 @@
       },
       "missing_fields": [
         "species",
-        "form",
+        "identity",
         "ability",
         "held_item",
         "move_1",
@@ -1864,7 +1920,10 @@
       ],
       "conflicting_fields": [],
       "species_id": 823,
+      "pokemon_id": null,
       "form_id": null,
+      "canonical_identity": null,
+      "identity_status": "species_only",
       "names": {
         "zh-hans": "钢铠鸦",
         "en": "Corviknight"
@@ -1917,12 +1976,25 @@
           ],
           "conflicts": []
         },
-        "form": {
-          "value": null,
-          "canonical_id": null,
-          "status": "unknown",
-          "confidence": 0.0,
-          "observations": [],
+        "identity": {
+          "value": "pokeapi:pokemon:530",
+          "canonical_id": "pokeapi:pokemon:530",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "龙头地鼠",
+              "provenance": "multimodal_identity",
+              "identity_status": "resolved_default"
+            },
+            {
+              "source_id": 1,
+              "raw_text": "龙头地鼠",
+              "provenance": "multimodal_identity",
+              "identity_status": "resolved_default"
+            }
+          ],
           "conflicts": []
         },
         "ability": {
@@ -2245,6 +2317,14 @@
           ],
           "conflicts": []
         },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
         "level": {
           "value": null,
           "canonical_id": null,
@@ -2463,7 +2543,7 @@
       },
       "missing_fields": [
         "species",
-        "form",
+        "identity",
         "ability",
         "held_item",
         "move_1",
@@ -2479,7 +2559,10 @@
       ],
       "conflicting_fields": [],
       "species_id": 530,
+      "pokemon_id": 530,
       "form_id": null,
+      "canonical_identity": "pokeapi:pokemon:530",
+      "identity_status": "resolved_default",
       "names": {
         "zh-hans": "龙头地鼠",
         "en": "Excadrill"
@@ -2532,45 +2615,23 @@
           ],
           "conflicts": []
         },
-        "form": {
-          "value": 876,
-          "canonical_id": "pokeapi:form:876",
+        "identity": {
+          "value": "pokeapi:pokemon:876",
+          "canonical_id": "pokeapi:pokemon:876",
           "status": "knowledge_resolved",
           "confidence": 0.999,
           "observations": [
             {
               "source_id": 0,
               "raw_text": "爱管侍",
-              "region": [
-                267,
-                396,
-                393,
-                418
-              ],
-              "confidence": 0.999,
-              "ocr_engine": "PP-OCRv6_medium_rec",
               "provenance": "multimodal_identity",
-              "resolution_method": "text_icon_agreement",
-              "candidate_ids": [
-                "pokeapi:species:876"
-              ]
+              "identity_status": "resolved_default"
             },
             {
               "source_id": 1,
               "raw_text": "爱管侍",
-              "region": [
-                267,
-                396,
-                393,
-                418
-              ],
-              "confidence": 0.999,
-              "ocr_engine": "PP-OCRv6_medium_rec",
               "provenance": "multimodal_identity",
-              "resolution_method": "text_icon_agreement",
-              "candidate_ids": [
-                "pokeapi:species:876"
-              ]
+              "identity_status": "resolved_default"
             }
           ],
           "conflicts": []
@@ -2895,6 +2956,14 @@
           ],
           "conflicts": []
         },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
         "level": {
           "value": null,
           "canonical_id": null,
@@ -3113,7 +3182,7 @@
       },
       "missing_fields": [
         "species",
-        "form",
+        "identity",
         "ability",
         "held_item",
         "move_1",
@@ -3129,7 +3198,10 @@
       ],
       "conflicting_fields": [],
       "species_id": 876,
-      "form_id": 876,
+      "pokemon_id": 876,
+      "form_id": null,
+      "canonical_identity": "pokeapi:pokemon:876",
+      "identity_status": "resolved_default",
       "names": {
         "zh-hans": "爱管侍",
         "en": "Indeedee"
@@ -3182,12 +3254,25 @@
           ],
           "conflicts": []
         },
-        "form": {
-          "value": null,
-          "canonical_id": null,
-          "status": "unknown",
-          "confidence": 0.0,
-          "observations": [],
+        "identity": {
+          "value": "pokeapi:pokemon:903",
+          "canonical_id": "pokeapi:pokemon:903",
+          "status": "knowledge_resolved",
+          "confidence": 0.879,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "大狃拉",
+              "provenance": "multimodal_identity",
+              "identity_status": "resolved_unique"
+            },
+            {
+              "source_id": 1,
+              "raw_text": "大狃拉",
+              "provenance": "multimodal_identity",
+              "identity_status": "resolved_unique"
+            }
+          ],
           "conflicts": []
         },
         "ability": {
@@ -3510,6 +3595,14 @@
           ],
           "conflicts": []
         },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
         "level": {
           "value": null,
           "canonical_id": null,
@@ -3728,7 +3821,7 @@
       },
       "missing_fields": [
         "species",
-        "form",
+        "identity",
         "ability",
         "held_item",
         "move_1",
@@ -3744,7 +3837,10 @@
       ],
       "conflicting_fields": [],
       "species_id": 903,
+      "pokemon_id": 903,
       "form_id": null,
+      "canonical_identity": "pokeapi:pokemon:903",
+      "identity_status": "resolved_unique",
       "names": {
         "zh-hans": "大狃拉",
         "en": "Sneasler"
@@ -3755,7 +3851,7 @@
   "missing_fields": {
     "own_team_1": [
       "species",
-      "form",
+      "identity",
       "ability",
       "held_item",
       "move_1",
@@ -3771,7 +3867,7 @@
     ],
     "own_team_2": [
       "species",
-      "form",
+      "identity",
       "ability",
       "held_item",
       "move_1",
@@ -3787,7 +3883,7 @@
     ],
     "own_team_3": [
       "species",
-      "form",
+      "identity",
       "ability",
       "held_item",
       "move_1",
@@ -3803,7 +3899,7 @@
     ],
     "own_team_4": [
       "species",
-      "form",
+      "identity",
       "ability",
       "held_item",
       "move_1",
@@ -3819,7 +3915,7 @@
     ],
     "own_team_5": [
       "species",
-      "form",
+      "identity",
       "ability",
       "held_item",
       "move_1",
@@ -3835,7 +3931,7 @@
     ],
     "own_team_6": [
       "species",
-      "form",
+      "identity",
       "ability",
       "held_item",
       "move_1",
@@ -3851,5 +3947,5 @@
     ]
   },
   "conflicts": {},
-  "updated_at_utc": "2026-10-13T09:20:59+00:00"
+  "updated_at_utc": "2026-10-13T14:27:11+00:00"
 }

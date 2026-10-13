@@ -12,10 +12,11 @@ from knowledge import KnowledgeBase
 
 STATS = ('hp', 'attack', 'defense', 'special_attack', 'special_defense', 'speed')
 MOVES = tuple(f'move_{i}' for i in range(1, 5))
-REQUIRED = ('species', 'form', 'ability', 'held_item', *MOVES, *STATS)
-OPTIONAL = ('level', 'gender', 'nature', 'evs', 'ivs')
+REQUIRED = ('species', 'identity', 'ability', 'held_item', *MOVES, *STATS)
+OPTIONAL = ('form', 'level', 'gender', 'nature', 'evs', 'ivs')
 FIELDS = (*REQUIRED, *OPTIONAL, *(f'allocation_{s}_display' for s in STATS))
-KINDS = {'species': 'species', 'form': 'species', 'ability': 'ability', 'held_item': 'item',
+KINDS = {'species': 'species', 'form': 'species', 'identity': 'identity',
+         'ability': 'ability', 'held_item': 'item',
          **{m: 'move' for m in MOVES}}
 
 
@@ -56,15 +57,42 @@ class TeamConfiguration:
     def __init__(self, knowledge: KnowledgeBase | None = None, *, team_id='my_team', data=None):
         self.knowledge = knowledge or KnowledgeBase()
         self.data = data if data is not None else {
-            'schema_version': 1, 'team_id': team_id, 'created_at_utc': _now(),
+            'schema_version': 2, 'team_id': team_id, 'created_at_utc': _now(),
             'knowledge_snapshot_sha256': self.knowledge.snapshot_id,
             'regulation': self.knowledge.regulation, 'sources': [],
             'members': [_member(i) for i in range(1, 7)], 'complete': False,
             'missing_fields': {}, 'conflicts': {}}
-        if self.data.get('schema_version') != 1 or len(self.data.get('members', [])) != 6:
+        if self.data.get('schema_version') == 1:
+            self._migrate_v1()
+        if self.data.get('schema_version') != 2 or len(self.data.get('members', [])) != 6:
             raise ValueError('Unsupported team configuration schema')
         self._source_hashes: dict[str, str | None] = {}
         self._report()
+
+    def _migrate_v1(self):
+        self.data['schema_version'] = 2
+        for member in self.data['members']:
+            fields = member['fields']
+            fields.setdefault('identity', _field())
+            old_form = fields.get('form', {}).get('canonical_id')
+            species_id = member.get('species_id')
+            identity = (self.knowledge.identities.for_key(old_form) if old_form else
+                        self.knowledge.identities.for_species(species_id) if species_id else
+                        self.knowledge.identities.unresolved())
+            if identity['canonical_identity']:
+                source = fields['form'] if old_form else fields['species']
+                fields['identity'].update(value=identity['canonical_identity'],
+                    canonical_id=identity['canonical_identity'],
+                    status='manual_verified' if source['status']=='manual_verified' else 'knowledge_resolved',
+                    confidence=source.get('confidence',0.0),
+                    observations=[{'method':'v1_migration','source_field':'form' if old_form else 'species',
+                                   'source_status':source['status']}])
+            # Old form IDs represented every PokeAPI form, including default
+            # variant rows. v2 only keeps IDs needed to distinguish forms
+            # sharing the same Pokémon variant.
+            if old_form and identity['form_id'] is None:
+                member['legacy_form'] = fields['form']
+                fields['form'] = _field()
 
     @classmethod
     def load(cls, path: str | Path, knowledge: KnowledgeBase | None = None):
@@ -140,8 +168,6 @@ class TeamConfiguration:
             species = self._candidate(pokemon.species, source_id)
             identified = self.knowledge.entities.get(species['canonical_id']) if species else None
             if identified and identified.form_id is not None:
-                form = dict(species)
-                form['value'] = identified.form_id
                 species = dict(species)
                 base_id = f'pokeapi:species:{identified.species_id}'
                 base = self.knowledge.entities.get(base_id)
@@ -153,13 +179,34 @@ class TeamConfiguration:
                 self._put(member, 'species', species)
                 continue  # Team order may have changed; never attach this card's fields.
             self._put(member, 'species', species)
-            if identified and identified.form_id is not None:
-                old_form = member['fields']['form']['canonical_id']
-                if (old_form and old_form != form['canonical_id']) or (
-                    member['fields']['form']['status'] == 'manual_verified' and old_form is None):
+            resolution = pokemon.species.resolution
+            icon = pokemon.icon
+            if (icon and icon.status == 'ambiguous' and icon.reason == 'forms_visually_ambiguous'
+                    and identified and icon.species_id == identified.species_id):
+                alternatives = sorted({c.canonical_identity for c in icon.candidates
+                                       if c.species_id == identified.species_id and c.canonical_identity})
+                if len(alternatives) > 1:
+                    self._put(member, 'identity', {'value': None, 'canonical_id': None,
+                        'status': 'ambiguous', 'confidence': 0.0,
+                        'evidence': {'source_id': source_id, 'provenance': 'visual_candidates',
+                                     'candidate_ids': alternatives}})
+            if resolution and resolution.identity_status not in ('unresolved','species_only'):
+                identity = {'value': resolution.canonical_identity,
+                            'canonical_id': resolution.canonical_identity,
+                            'status': 'knowledge_resolved', 'confidence': pokemon.species.confidence,
+                            'evidence': {'source_id': source_id, 'raw_text': pokemon.species.raw_text,
+                                         'provenance': pokemon.species.provenance,
+                                         'identity_status': resolution.identity_status}}
+                old_identity = member['fields']['identity']['canonical_id']
+                if old_identity and old_identity != identity['canonical_id']:
+                    self._put(member, 'identity', identity)
+                    continue  # Form change or reordered team; preserve instance evidence.
+                self._put(member, 'identity', identity)
+                if resolution.form_id is not None:
+                    form = dict(identity)
+                    form['value'] = resolution.form_id
+                    form['canonical_id'] = f'pokeapi:form:{resolution.form_id}'
                     self._put(member, 'form', form)
-                    continue  # A different visible form can indicate a different instance.
-                self._put(member, 'form', form)
             for name, obs in pokemon.configuration.items():
                 if name in member['fields'] and name != 'form':
                     self._put(member, name, self._candidate(obs, source_id))
@@ -176,7 +223,15 @@ class TeamConfiguration:
         if instance_id not in members:
             raise ValueError(f'Unknown team instance: {instance_id}')
         kind = KINDS.get(field_name)
-        if field_name == 'form' and canonical_id is None and value == 'base':
+        if field_name == 'identity':
+            identity = self.knowledge.identities.for_key(canonical_id)
+            if identity['canonical_identity'] != canonical_id:
+                raise ValueError('identity requires a unique PokéAPI Pokémon or form key')
+            species = members[instance_id]['species_id']
+            if species is not None and identity['species_id'] != species:
+                raise ValueError('Identity belongs to a different species')
+            value = canonical_id
+        elif field_name == 'form' and canonical_id is None and value == 'base':
             # Explicit manual review can confirm an unnumbered base form.
             # Keep the canonical form ID null rather than inventing one.
             value = None
@@ -231,7 +286,17 @@ class TeamConfiguration:
             sid = fields['species']['canonical_id']
             entity = self.knowledge.entities.get(sid)
             member['species_id'] = entity.species_id if entity else None
-            member['form_id'] = fields['form']['value']
+            identity = self.knowledge.identities.for_key(fields['identity']['canonical_id'])
+            member['pokemon_id'] = identity['pokemon_id']
+            member['form_id'] = identity['form_id']
+            member['canonical_identity'] = identity['canonical_identity']
+            member['identity_status'] = identity['identity_status'] if identity['canonical_identity'] else (
+                'ambiguous_variant' if fields['identity']['status'] == 'ambiguous' else
+                'species_only' if member['species_id'] is not None else 'unresolved')
+            if member['species_id'] and identity['species_id'] and member['species_id'] != identity['species_id']:
+                member['conflicting_fields'].append('identity')
+            if 'identity' in member['conflicting_fields']:
+                member['identity_status'] = 'conflicting_variant'
             member['names'] = {'zh-hans': entity.names.get('zh-hans') if entity else None,
                                'en': entity.names.get('en') if entity else None}
             missing[member['instance_id']] = member['missing_fields']

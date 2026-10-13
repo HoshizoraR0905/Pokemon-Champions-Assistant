@@ -14,7 +14,9 @@ from recognition.identity import combine_identity
 def test_raichu_and_alolan_raichu_source_reference_forms():
     if not (DEFAULT_CACHE/'index.json').exists():pytest.skip('Pinned local icon cache not installed')
     classifier=IconRecognizer()
-    for file,sid,fid in [('raichu.png',26,26),('raichu-alola.png',26,10202)]:
+    for file,sid,pid in [('raichu.png',26,26),('raichu-alola.png',26,10100),
+                         ('charizard-mega-x.png',6,10034),('charizard-mega-y.png',6,10035),
+                         ('indeedee.png',876,876),('indeedee-female.png',876,10186)]:
         rgba=cv2.imread(str(DEFAULT_CACHE/file),cv2.IMREAD_UNCHANGED)
         image=np.full((110,140,3),(130,78,95),np.uint8)
         sprite=cv2.resize(rgba,(85,85),interpolation=cv2.INTER_AREA)
@@ -22,7 +24,8 @@ def test_raichu_and_alolan_raichu_source_reference_forms():
         image[10:95,27:112]=(sprite[:,:,:3]*alpha+image[10:95,27:112]*(1-alpha)).astype('uint8')
         evidence=classifier.identify(image,(0,0,140,110))
         assert evidence.status=='resolved'
-        assert (evidence.species_id,evidence.form_id)==(sid,fid)
+        assert (evidence.species_id,evidence.pokemon_id,evidence.form_id)==(sid,pid,None)
+        assert evidence.canonical_identity==f'pokeapi:pokemon:{pid}'
         assert evidence.candidates[0].asset==file
 
 
@@ -62,11 +65,13 @@ def test_identity_database_coverage_and_chinese_raichu():
     data=kb.identity
     assert data['coverage']['species']==1025
     assert data['coverage']['forms']==1579
-    raichu=next(x for x in data['forms'] if x['form_id']==26)
-    alolan=next(x for x in data['forms'] if x['form_id']==10202)
+    raichu=next(x for x in data['forms'] if x['source_form_id']==26)
+    alolan=next(x for x in data['forms'] if x['source_form_id']==10202)
     assert raichu['species_names']['zh-hans']==alolan['species_names']['zh-hans']=='雷丘'
     assert alolan['names']['zh-hans']=='雷丘（阿罗拉的样子）'
     assert raichu['canonical_id']!=alolan['canonical_id']
+    assert raichu['canonical_identity']=='pokeapi:pokemon:26'
+    assert alolan['canonical_identity']=='pokeapi:pokemon:10100'
     assert len(alolan['visual_assets'])==1
     assert alolan['visual_assets'][0]['file']=='raichu-alola.png'
     assert 'champions_availability' in raichu and 'champions_availability' in alolan

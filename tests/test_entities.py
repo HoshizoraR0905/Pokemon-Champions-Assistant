@@ -111,7 +111,10 @@ def test_bare_name_does_not_infer_form(resolver):
     result = identify(resolver,'爱管侍')
     assert result.resolution.species_id==876
     assert result.resolution.form_id is None
-    assert identify(resolver,'Female Indeedee').resolution.form_id==10355
+    female=identify(resolver,'Female Indeedee').resolution
+    assert female.pokemon_id==10186
+    assert female.canonical_identity=='pokeapi:pokemon:10186'
+    assert female.form_id is None
 
 
 def test_current_official_roster_entry_recognized(resolver):

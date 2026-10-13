@@ -9,14 +9,22 @@ from models import EntityResolution, Observation, Pokemon, Recognition
 from recognition import Recognizer
 from recognition.paddle_ocr import model_path, create_ocr
 from team_configuration import TeamConfiguration, REQUIRED, STATS
+from knowledge import KnowledgeBase
 
 
 FIXTURES = Path(__file__).parent / 'fixtures'
+TEST_KB = KnowledgeBase()
 
 
 def observed(value, canonical_id=None):
-    resolution = (EntityResolution(canonical_id=canonical_id,status='resolved',method='exact')
-                  if canonical_id else None)
+    mapped=TEST_KB.identities.for_key(canonical_id) if canonical_id and (
+        canonical_id.startswith('pokeapi:species:') or canonical_id.startswith('pokeapi:form:')) else None
+    resolution = (EntityResolution(canonical_id=canonical_id,status='resolved',method='exact',
+        species_id=mapped['species_id'] if mapped else None,
+        pokemon_id=mapped['pokemon_id'] if mapped else None,
+        form_id=mapped['form_id'] if mapped else None,
+        canonical_identity=mapped['canonical_identity'] if mapped else None,
+        identity_status=mapped['identity_status'] if mapped else 'unresolved') if canonical_id else None)
     return Observation(value,.9,raw_text=str(value),resolution=resolution)
 
 
@@ -66,8 +74,8 @@ def test_form_conflict_does_not_attach_other_configuration():
                          configuration={'hp':observed(155)})])
     team.ingest(male);team.ingest(female)
     fields=team.data['members'][0]['fields']
-    assert fields['form']['canonical_id']=='pokeapi:form:876'
-    assert fields['form']['status']=='conflicting'
+    assert fields['identity']['canonical_id']=='pokeapi:pokemon:876'
+    assert fields['identity']['status']=='conflicting'
     assert fields['hp']['value']==137
 
 
@@ -98,6 +106,15 @@ def test_supplied_pages_field_by_field(tmp_path):
             index=int(pokemon.slot.rsplit('_',1)[1])-1
             row,col=divmod(index,2)
             assert pokemon.species.raw_text==regions[f'config_name_{row}_{col}']['expected']
+            identity=pokemon.species.resolution
+            if identity.canonical_identity:
+                mapped=TEST_KB.identities.for_key(identity.canonical_identity)
+                assert identity.species_id==mapped['species_id']
+                assert identity.pokemon_id==mapped['pokemon_id']
+                assert identity.form_id==mapped['form_id']
+            if pokemon.icon and pokemon.icon.status=='resolved':
+                assert pokemon.icon.canonical_identity==TEST_KB.identities.for_key(
+                    pokemon.icon.canonical_identity)['canonical_identity']
             assert pokemon.configuration['gender'].value==[
                 'female','female','male','male','male','female'][index]
             if filename.endswith('moves.png'):
@@ -119,7 +136,10 @@ def test_supplied_pages_field_by_field(tmp_path):
     assert all(m['fields']['level']['value'] is None for m in team.data['members'])
     assert all(m['fields']['evs']['value'] is None for m in team.data['members'])
     assert all(m['fields']['nature']['value'] is None for m in team.data['members'])
-    assert team.data['members'][4]['form_id']==876
+    assert team.data['members'][4]['pokemon_id']==876
+    assert team.data['members'][4]['canonical_identity']=='pokeapi:pokemon:876'
+    assert team.data['members'][4]['form_id'] is None
+    assert team.data['members'][2]['identity_status']=='species_only'
     assert not team.data['complete']
     assert all(m['missing_fields'] for m in team.data['members'])
     path=tmp_path/'team.json'; team.save(path)
@@ -141,7 +161,7 @@ def test_complete_only_after_six_members_manual_review():
     for slot in range(1,7):
         instance=f'own_team_{slot}'
         team.correct(instance,'species',canonical_id='pokeapi:species:373',reviewer='trainer')
-        team.correct(instance,'form',value='base',reviewer='trainer')
+        team.correct(instance,'identity',canonical_id='pokeapi:pokemon:373',reviewer='trainer')
         team.correct(instance,'ability',canonical_id='pokeapi:ability:22',reviewer='trainer')
         team.correct(instance,'held_item',canonical_id='pokeapi:item:1',reviewer='trainer')
         for move in ('move_1','move_2','move_3','move_4'):
@@ -152,4 +172,38 @@ def test_complete_only_after_six_members_manual_review():
             assert not team.data['complete']
     assert team.data['complete']
     assert team.data['members'][0]['form_id'] is None
-    assert team.data['members'][0]['fields']['form']['status']=='manual_verified'
+    assert team.data['members'][0]['fields']['identity']['status']=='manual_verified'
+
+
+def test_v1_team_snapshot_migrates_without_defaulting_unresolved_variant():
+    old=TeamConfiguration().data
+    old['schema_version']=1
+    for member in old['members']:
+        member['fields'].pop('identity')
+    old['members'][0]['fields']['species'].update(
+        value='爱管侍',canonical_id='pokeapi:species:876',status='knowledge_resolved')
+    old['members'][0]['species_id']=876
+    migrated=TeamConfiguration(data=old)
+    member=migrated.data['members'][0]
+    assert migrated.data['schema_version']==2
+    assert member['identity_status']=='species_only'
+    assert member['pokemon_id'] is None
+    assert not migrated.data['complete']
+
+
+def test_v1_verified_form_migrates_to_pokemon_identity_with_history():
+    old=TeamConfiguration().data
+    old['schema_version']=1
+    member=old['members'][0]
+    member['fields'].pop('identity')
+    member['fields']['species'].update(value='爱管侍',canonical_id='pokeapi:species:876',
+                                        status='knowledge_resolved')
+    member['species_id']=876
+    member['fields']['form'].update(value=876,canonical_id='pokeapi:form:876',
+                                   status='manual_verified',observations=[{'source_id':0}])
+    migrated=TeamConfiguration(data=old).data['members'][0]
+    assert migrated['canonical_identity']=='pokeapi:pokemon:876'
+    assert migrated['pokemon_id']==876 and migrated['form_id'] is None
+    assert migrated['fields']['form']['value'] is None
+    assert migrated['fields']['identity']['status']=='manual_verified'
+    assert migrated['legacy_form']['observations']==[{'source_id':0}]

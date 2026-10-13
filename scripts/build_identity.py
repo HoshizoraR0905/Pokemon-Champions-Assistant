@@ -14,6 +14,7 @@ import subprocess
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from knowledge import normalize, KnowledgeBase
+from knowledge.identity import enrich_snapshots
 
 POKEAPI_COMMIT='81d20919845b6a445969b9265aab5cec6b04cece'
 SPRITES_COMMIT='0dc105d5b12416932f29b594078282ab4be045f5'
@@ -105,7 +106,6 @@ def build(csv_root,champions,cache,output):
              'commit':commit,'commit_date':subprocess.check_output(['git','-C',str(champions),'log','-1','--format=%cI'],text=True).strip(),
              'origin_claim':'Bulbapedia','license':'No license found; local retrieval only; not redistributed'},
            'assets':refs,'unmapped':unmapped}
-    write(output/'visual_assets.json',index);write(cache/'index.json',index)
     identity={'schema_version':1,'version':'2026-10-13-identity.1','localization_source':manifest['localization'],
         'sources':{'forms':{'commit':POKEAPI_COMMIT,'repository_head_date':'2026-10-13T00:08:32Z',
                 'file_commit_dates':{'pokemon_forms.csv':'2026-08-18T09:39:23Z',
@@ -121,6 +121,8 @@ def build(csv_root,champions,cache,output):
             'visual_files':len(refs),'visual_files_mapped':len(refs)-len(unmapped)},
         'limitations':['Names and form labels missing upstream remain missing; species Chinese names are available separately.',
                         'Visual coverage does not establish Champions availability or regulation legality.']}
+    identity,index=enrich_snapshots(identity,index)
+    write(output/'visual_assets.json',index);write(cache/'index.json',index)
     write(output/'identity.json',identity)
     for name in ['visual_assets.json','identity.json']:manifest['files'][name]=sha(output/name)
     manifest['identity_version']=identity['version'];write(output/'manifest.json',manifest)

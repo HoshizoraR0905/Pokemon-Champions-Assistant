@@ -152,7 +152,15 @@ class EntityResolver:
             resolution.confidence = 'moderate'
         resolution.status = 'resolved'
         resolution.canonical_id = chosen.canonical_id
-        resolution.species_id, resolution.form_id = chosen.species_id, chosen.form_id
+        if kind == 'species':
+            identity = kb.identities.for_entity(kb.entities[chosen.canonical_id])
+            resolution.species_id = identity['species_id']
+            resolution.pokemon_id = identity['pokemon_id']
+            resolution.form_id = identity['form_id']
+            resolution.canonical_identity = identity['canonical_identity']
+            resolution.identity_status = identity['identity_status']
+        else:
+            resolution.species_id, resolution.form_id = chosen.species_id, chosen.form_id
         if chosen.canonical_id==context.verified_id:
             resolution.verification_status = 'verified'
         elif chosen.canonical_id==context.previous_id and context.repeat_count>=2:

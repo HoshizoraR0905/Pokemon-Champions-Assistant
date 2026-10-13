@@ -33,6 +33,9 @@ class EntityResolution:
     canonical_id: str | None = None
     species_id: int | None = None
     form_id: int | None = None
+    pokemon_id: int | None = None
+    canonical_identity: str | None = None
+    identity_status: str = 'unresolved'
     status: str = 'unresolved'
     method: str = 'unknown'
     confidence: str = 'none'
@@ -75,6 +78,8 @@ class IconCandidate:
     similarity: float
     scale: float
     location: tuple[int, int]
+    pokemon_id: int | None = None
+    canonical_identity: str | None = None
 
 
 @dataclass
@@ -83,6 +88,9 @@ class IconEvidence:
     species_id: int | None = None
     form_id: int | None = None
     canonical_id: str | None = None
+    pokemon_id: int | None = None
+    canonical_identity: str | None = None
+    identity_status: str = 'unresolved'
     region: tuple[int, int, int, int] | None = None
     candidates: list[IconCandidate] = field(default_factory=list)
     method: str = 'masked_multiscale_template'
