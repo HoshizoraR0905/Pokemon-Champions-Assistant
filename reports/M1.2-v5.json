@@ -1,0 +1,3917 @@
+{
+  "platform": {
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.10.4"
+  },
+  "ground_truth_sha256": "0506da514c51bb7198e9dc8dba91582560c10614624f01a54a2f21b8700f6c5c",
+  "backend": "paddle-v5",
+  "metrics": {
+    "development": {
+      "ability": {
+        "count": 6,
+        "exact_accuracy": 0.8333333333333334,
+        "cer": 0.06666666666666667
+      },
+      "icon": {
+        "count": 24,
+        "evaluated": false
+      },
+      "item": {
+        "count": 6,
+        "exact_accuracy": 0.8333333333333334,
+        "cer": 0.034482758620689655
+      },
+      "move": {
+        "count": 24,
+        "exact_accuracy": 0.8333333333333334,
+        "cer": 0.06557377049180328
+      },
+      "numeric": {
+        "count": 36,
+        "exact_accuracy": 1.0,
+        "cer": 0.0
+      },
+      "species_text": {
+        "count": 18,
+        "exact_accuracy": 0.4444444444444444,
+        "cer": 0.5,
+        "text_species_accuracy": 0.6666666666666666,
+        "text_false_id_rate": 0.0,
+        "text_unresolved_rate": 0.3333333333333333,
+        "combined_species_accuracy": 0.6666666666666666,
+        "combined_false_id_rate": 0.0,
+        "combined_unresolved_rate": 0.3333333333333333
+      },
+      "latency_ms_per_region_median": 70.8,
+      "latency_ms_per_region_mean": 60.14
+    },
+    "held_out_screenshot": {
+      "icon": {
+        "count": 8,
+        "evaluated": false
+      },
+      "move": {
+        "count": 4,
+        "exact_accuracy": 1.0,
+        "cer": 0.0
+      },
+      "numeric": {
+        "count": 8,
+        "exact_accuracy": 1.0,
+        "cer": 0.0
+      },
+      "species_text": {
+        "count": 8,
+        "exact_accuracy": 0.5,
+        "cer": 0.6,
+        "text_species_accuracy": 0.625,
+        "text_false_id_rate": 0.0,
+        "text_unresolved_rate": 0.375,
+        "combined_species_accuracy": 0.625,
+        "combined_false_id_rate": 0.0,
+        "combined_unresolved_rate": 0.375
+      },
+      "latency_ms_per_region_median": 70.7,
+      "latency_ms_per_region_mean": 50.77
+    },
+    "held_out_video": {
+      "icon": {
+        "count": 12,
+        "evaluated": false
+      },
+      "numeric": {
+        "count": 36,
+        "exact_accuracy": 1.0,
+        "cer": 0.0
+      },
+      "species_text": {
+        "count": 6,
+        "exact_accuracy": 0.5,
+        "cer": 0.2,
+        "text_species_accuracy": 1.0,
+        "text_false_id_rate": 0.0,
+        "text_unresolved_rate": 0.0,
+        "combined_species_accuracy": 1.0,
+        "combined_false_id_rate": 0.0,
+        "combined_unresolved_rate": 0.0
+      },
+      "latency_ms_per_region_median": 70.59,
+      "latency_ms_per_region_mean": 55.1
+    }
+  },
+  "rows": [
+    {
+      "image": "team_preview.png",
+      "region": "team_name_0",
+      "kind": "species_text",
+      "expected": "暴飞龙",
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        396,
+        157,
+        690,
+        198
+      ],
+      "predicted": "暴飞龙",
+      "confidence": 0.693,
+      "latency_ms": 135.89,
+      "text_species_id": 373,
+      "text_form_id": null,
+      "combined_species_id": 373,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_0",
+      "kind": "icon",
+      "expected": 373,
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        145,
+        915,
+        271
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_preview.png",
+      "region": "team_name_1",
+      "kind": "species_text",
+      "expected": "班基拉斯",
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        396,
+        298,
+        690,
+        339
+      ],
+      "predicted": "[b_]",
+      "confidence": 0.633,
+      "latency_ms": 75.7,
+      "text_species_id": null,
+      "text_form_id": null,
+      "combined_species_id": null,
+      "combined_form_id": null,
+      "combined_status": "unresolved",
+      "combined_method": "ambiguous_fuzzy"
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_1",
+      "kind": "icon",
+      "expected": 248,
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        286,
+        915,
+        412
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_preview.png",
+      "region": "team_name_2",
+      "kind": "species_text",
+      "expected": "钢铠鸦",
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        396,
+        439,
+        690,
+        480
+      ],
+      "predicted": "[able]",
+      "confidence": 0.758,
+      "latency_ms": 76.13,
+      "text_species_id": null,
+      "text_form_id": null,
+      "combined_species_id": null,
+      "combined_form_id": null,
+      "combined_status": "unresolved",
+      "combined_method": "ambiguous_fuzzy"
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_2",
+      "kind": "icon",
+      "expected": 823,
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        427,
+        915,
+        554
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_preview.png",
+      "region": "team_name_3",
+      "kind": "species_text",
+      "expected": "龙头地鼠",
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        396,
+        580,
+        690,
+        621
+      ],
+      "predicted": "龙头地鼠",
+      "confidence": 0.954,
+      "latency_ms": 76.02,
+      "text_species_id": 530,
+      "text_form_id": null,
+      "combined_species_id": 530,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_3",
+      "kind": "icon",
+      "expected": 530,
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        568,
+        915,
+        695
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_preview.png",
+      "region": "team_name_4",
+      "kind": "species_text",
+      "expected": "爱管侍",
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        396,
+        721,
+        690,
+        762
+      ],
+      "predicted": "[ale_]",
+      "confidence": 0.648,
+      "latency_ms": 75.34,
+      "text_species_id": null,
+      "text_form_id": null,
+      "combined_species_id": null,
+      "combined_form_id": null,
+      "combined_status": "unresolved",
+      "combined_method": "ambiguous_fuzzy"
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_4",
+      "kind": "icon",
+      "expected": 876,
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        789,
+        709,
+        915,
+        836
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_preview.png",
+      "region": "team_name_5",
+      "kind": "species_text",
+      "expected": "大狃拉",
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        396,
+        862,
+        690,
+        903
+      ],
+      "predicted": "[al拉]",
+      "confidence": 0.611,
+      "latency_ms": 77.02,
+      "text_species_id": null,
+      "text_form_id": null,
+      "combined_species_id": null,
+      "combined_form_id": null,
+      "combined_status": "unresolved",
+      "combined_method": "ambiguous_fuzzy"
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_5",
+      "kind": "icon",
+      "expected": 903,
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        850,
+        915,
+        977
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_0_0",
+      "kind": "species_text",
+      "expected": "暴飞龙",
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        267,
+        152,
+        393,
+        174
+      ],
+      "predicted": "暴飞龙",
+      "confidence": 0.92,
+      "latency_ms": 71.94,
+      "text_species_id": 373,
+      "text_form_id": null,
+      "combined_species_id": 373,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_0_0",
+      "kind": "icon",
+      "expected": 373,
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        219,
+        127,
+        271,
+        175
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_0_0",
+      "kind": "ability",
+      "expected": "威吓",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        181,
+        456,
+        198
+      ],
+      "predicted": "威吓",
+      "confidence": 0.739,
+      "latency_ms": 107.29
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_0_0",
+      "kind": "item",
+      "expected": "暴飞龙进化石",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        207,
+        456,
+        225
+      ],
+      "predicted": "暴飞龙进化石",
+      "confidence": 0.831,
+      "latency_ms": 100.78
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_0_0",
+      "kind": "move",
+      "expected": "巨声",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        155,
+        608,
+        175
+      ],
+      "predicted": "巨声",
+      "confidence": 0.949,
+      "latency_ms": 71.21
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_0_1",
+      "kind": "move",
+      "expected": "流星群",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        180,
+        608,
+        200
+      ],
+      "predicted": "流星群",
+      "confidence": 0.854,
+      "latency_ms": 71.06
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_0_2",
+      "kind": "move",
+      "expected": "喷射火焰",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        206,
+        608,
+        226
+      ],
+      "predicted": "喷射火焰",
+      "confidence": 0.983,
+      "latency_ms": 70.84
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_0_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        231,
+        608,
+        251
+      ],
+      "predicted": "守住",
+      "confidence": 0.987,
+      "latency_ms": 70.67
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_0_1",
+      "kind": "species_text",
+      "expected": "班基拉斯",
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        152,
+        840,
+        174
+      ],
+      "predicted": "班基拉斯",
+      "confidence": 0.977,
+      "latency_ms": 70.54,
+      "text_species_id": 248,
+      "text_form_id": null,
+      "combined_species_id": 248,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_0_1",
+      "kind": "icon",
+      "expected": 248,
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        127,
+        718,
+        175
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_0_1",
+      "kind": "ability",
+      "expected": "扬沙",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        181,
+        903,
+        198
+      ],
+      "predicted": "扬沙",
+      "confidence": 0.525,
+      "latency_ms": 108.74
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_0_1",
+      "kind": "item",
+      "expected": "班基拉斯进化石",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        207,
+        903,
+        225
+      ],
+      "predicted": "班基拉斯进化石",
+      "confidence": 0.784,
+      "latency_ms": 101.48
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_1_0",
+      "kind": "move",
+      "expected": "岩崩",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        155,
+        1055,
+        175
+      ],
+      "predicted": "岩崩",
+      "confidence": 0.935,
+      "latency_ms": 70.93
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_1_1",
+      "kind": "move",
+      "expected": "拍落",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        180,
+        1055,
+        200
+      ],
+      "predicted": "拍落",
+      "confidence": 0.899,
+      "latency_ms": 70.97
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_1_2",
+      "kind": "move",
+      "expected": "踢倒",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        206,
+        1055,
+        226
+      ],
+      "predicted": "踢倒",
+      "confidence": 0.727,
+      "latency_ms": 70.54
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_1_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        231,
+        1055,
+        251
+      ],
+      "predicted": "守住",
+      "confidence": 0.983,
+      "latency_ms": 71.2
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_1_0",
+      "kind": "species_text",
+      "expected": "钢铠鸦",
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        267,
+        274,
+        393,
+        296
+      ],
+      "predicted": "钢b铠鸦]",
+      "confidence": 0.833,
+      "latency_ms": 72.05,
+      "text_species_id": 823,
+      "text_form_id": null,
+      "combined_species_id": 823,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "fuzzy"
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_1_0",
+      "kind": "icon",
+      "expected": 823,
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        219,
+        248,
+        271,
+        297
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_1_0",
+      "kind": "ability",
+      "expected": "镜甲",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        303,
+        456,
+        320
+      ],
+      "predicted": "镜甲",
+      "confidence": 0.895,
+      "latency_ms": 107.99
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_1_0",
+      "kind": "item",
+      "expected": "精神种子",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        329,
+        456,
+        347
+      ],
+      "predicted": "精神种",
+      "confidence": 0.348,
+      "latency_ms": 100.94
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_0_0",
+      "kind": "move",
+      "expected": "勇鸟猛攻",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        277,
+        608,
+        297
+      ],
+      "predicted": "勇鸟猛攻",
+      "confidence": 0.966,
+      "latency_ms": 71.26
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_0_1",
+      "kind": "move",
+      "expected": "嚣张",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        302,
+        608,
+        322
+      ],
+      "predicted": "器张",
+      "confidence": 0.726,
+      "latency_ms": 70.35
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_0_2",
+      "kind": "move",
+      "expected": "健美",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        327,
+        608,
+        347
+      ],
+      "predicted": "健美",
+      "confidence": 0.988,
+      "latency_ms": 69.47
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_0_3",
+      "kind": "move",
+      "expected": "羽栖",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        353,
+        608,
+        373
+      ],
+      "predicted": "羽栖",
+      "confidence": 0.919,
+      "latency_ms": 70.36
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_1_1",
+      "kind": "species_text",
+      "expected": "龙头地鼠",
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        274,
+        840,
+        296
+      ],
+      "predicted": "龙头地鼠",
+      "confidence": 0.993,
+      "latency_ms": 70.55,
+      "text_species_id": 530,
+      "text_form_id": null,
+      "combined_species_id": 530,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_1_1",
+      "kind": "icon",
+      "expected": 530,
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        248,
+        718,
+        297
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_1_1",
+      "kind": "ability",
+      "expected": "拔沙",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        303,
+        903,
+        320
+      ],
+      "predicted": "拔",
+      "confidence": 0.429,
+      "latency_ms": 107.74
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_1_1",
+      "kind": "item",
+      "expected": "气势披带",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        329,
+        903,
+        347
+      ],
+      "predicted": "气势披带",
+      "confidence": 0.758,
+      "latency_ms": 100.28
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_1_0",
+      "kind": "move",
+      "expected": "十万马力",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        277,
+        1055,
+        297
+      ],
+      "predicted": "十万马",
+      "confidence": 0.943,
+      "latency_ms": 70.63
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_1_1",
+      "kind": "move",
+      "expected": "岩崩",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        302,
+        1055,
+        322
+      ],
+      "predicted": "岩崩",
+      "confidence": 0.901,
+      "latency_ms": 70.57
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_1_2",
+      "kind": "move",
+      "expected": "铁头",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        327,
+        1055,
+        347
+      ],
+      "predicted": "铁头",
+      "confidence": 0.99,
+      "latency_ms": 71.32
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_1_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        353,
+        1055,
+        373
+      ],
+      "predicted": "守住",
+      "confidence": 0.992,
+      "latency_ms": 70.99
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_2_0",
+      "kind": "species_text",
+      "expected": "爱管侍",
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        267,
+        396,
+        393,
+        418
+      ],
+      "predicted": "[爱管]",
+      "confidence": 0.558,
+      "latency_ms": 71.23,
+      "text_species_id": null,
+      "text_form_id": null,
+      "combined_species_id": null,
+      "combined_form_id": null,
+      "combined_status": "unresolved",
+      "combined_method": "insufficient_text_evidence"
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_2_0",
+      "kind": "icon",
+      "expected": 876,
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        219,
+        370,
+        271,
+        418
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_2_0",
+      "kind": "ability",
+      "expected": "精神制造者",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        425,
+        456,
+        442
+      ],
+      "predicted": "精神制造者",
+      "confidence": 0.816,
+      "latency_ms": 106.86
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_2_0",
+      "kind": "item",
+      "expected": "讲究围巾",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        450,
+        456,
+        469
+      ],
+      "predicted": "讲究围巾",
+      "confidence": 0.742,
+      "latency_ms": 95.98
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_0_0",
+      "kind": "move",
+      "expected": "广域战力",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        399,
+        608,
+        418
+      ],
+      "predicted": "广域战",
+      "confidence": 0.843,
+      "latency_ms": 71.05
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_0_1",
+      "kind": "move",
+      "expected": "魔法火焰",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        424,
+        608,
+        444
+      ],
+      "predicted": "魔法火焰",
+      "confidence": 0.966,
+      "latency_ms": 70.38
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_0_2",
+      "kind": "move",
+      "expected": "戏法",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        449,
+        608,
+        469
+      ],
+      "predicted": "戏法",
+      "confidence": 0.914,
+      "latency_ms": 70.56
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_0_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        475,
+        608,
+        494
+      ],
+      "predicted": "守住",
+      "confidence": 0.991,
+      "latency_ms": 70.3
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_2_1",
+      "kind": "species_text",
+      "expected": "大狃拉",
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        396,
+        840,
+        418
+      ],
+      "predicted": "大纽拉",
+      "confidence": 0.73,
+      "latency_ms": 71.09,
+      "text_species_id": 903,
+      "text_form_id": null,
+      "combined_species_id": 903,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "fuzzy"
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_2_1",
+      "kind": "icon",
+      "expected": 903,
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        370,
+        718,
+        418
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_2_1",
+      "kind": "ability",
+      "expected": "轻装",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        425,
+        903,
+        442
+      ],
+      "predicted": "轻装",
+      "confidence": 0.452,
+      "latency_ms": 107.94
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_2_1",
+      "kind": "item",
+      "expected": "白色香草",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        450,
+        903,
+        469
+      ],
+      "predicted": "白色香草",
+      "confidence": 0.971,
+      "latency_ms": 96.63
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_1_0",
+      "kind": "move",
+      "expected": "克命爪",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        399,
+        1055,
+        418
+      ],
+      "predicted": "克命爪",
+      "confidence": 0.977,
+      "latency_ms": 71.42
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_1_1",
+      "kind": "move",
+      "expected": "近身战",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        424,
+        1055,
+        444
+      ],
+      "predicted": "近身战",
+      "confidence": 0.952,
+      "latency_ms": 71.07
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_1_2",
+      "kind": "move",
+      "expected": "指导",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        449,
+        1055,
+        469
+      ],
+      "predicted": "指",
+      "confidence": 0.373,
+      "latency_ms": 69.88
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_1_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        475,
+        1055,
+        494
+      ],
+      "predicted": "守住",
+      "confidence": 0.993,
+      "latency_ms": 70.94
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_0_0",
+      "kind": "species_text",
+      "expected": "暴飞龙",
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        267,
+        152,
+        393,
+        174
+      ],
+      "predicted": "暴飞龙",
+      "confidence": 0.92,
+      "latency_ms": 69.97,
+      "text_species_id": 373,
+      "text_form_id": null,
+      "combined_species_id": 373,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_0_0",
+      "kind": "icon",
+      "expected": 373,
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        219,
+        127,
+        271,
+        175
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_hp",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        180,
+        375,
+        198
+      ],
+      "predicted": "172",
+      "confidence": 0.999,
+      "latency_ms": 71.41
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_attack",
+      "kind": "numeric",
+      "expected": "139",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        205,
+        375,
+        223
+      ],
+      "predicted": "139",
+      "confidence": 0.998,
+      "latency_ms": 70.21
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        230,
+        375,
+        248
+      ],
+      "predicted": "100",
+      "confidence": 1.0,
+      "latency_ms": 71.56
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_special_attack",
+      "kind": "numeric",
+      "expected": "162",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        180,
+        572,
+        198
+      ],
+      "predicted": "162",
+      "confidence": 0.999,
+      "latency_ms": 70.95
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_special_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        205,
+        572,
+        223
+      ],
+      "predicted": "100",
+      "confidence": 0.999,
+      "latency_ms": 70.92
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_speed",
+      "kind": "numeric",
+      "expected": "167",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        230,
+        572,
+        248
+      ],
+      "predicted": "167",
+      "confidence": 0.998,
+      "latency_ms": 70.69
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_0_1",
+      "kind": "species_text",
+      "expected": "班基拉斯",
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        152,
+        840,
+        174
+      ],
+      "predicted": "班基拉斯",
+      "confidence": 0.974,
+      "latency_ms": 70.51,
+      "text_species_id": 248,
+      "text_form_id": null,
+      "combined_species_id": 248,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_0_1",
+      "kind": "icon",
+      "expected": 248,
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        127,
+        718,
+        175
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_hp",
+      "kind": "numeric",
+      "expected": "177",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        180,
+        822,
+        198
+      ],
+      "predicted": "177",
+      "confidence": 0.999,
+      "latency_ms": 70.2
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_attack",
+      "kind": "numeric",
+      "expected": "186",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        205,
+        822,
+        223
+      ],
+      "predicted": "186",
+      "confidence": 0.998,
+      "latency_ms": 70.93
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_defense",
+      "kind": "numeric",
+      "expected": "130",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        230,
+        822,
+        248
+      ],
+      "predicted": "130",
+      "confidence": 0.999,
+      "latency_ms": 70.95
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_special_attack",
+      "kind": "numeric",
+      "expected": "103",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        180,
+        1019,
+        198
+      ],
+      "predicted": "103",
+      "confidence": 0.999,
+      "latency_ms": 70.32
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_special_defense",
+      "kind": "numeric",
+      "expected": "120",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        205,
+        1019,
+        223
+      ],
+      "predicted": "120",
+      "confidence": 0.999,
+      "latency_ms": 70.82
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_speed",
+      "kind": "numeric",
+      "expected": "124",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        230,
+        1019,
+        248
+      ],
+      "predicted": "124",
+      "confidence": 0.999,
+      "latency_ms": 71.48
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_1_0",
+      "kind": "species_text",
+      "expected": "钢铠鸦",
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        267,
+        274,
+        393,
+        296
+      ],
+      "predicted": "钢b铠鸦]",
+      "confidence": 0.825,
+      "latency_ms": 70.61,
+      "text_species_id": 823,
+      "text_form_id": null,
+      "combined_species_id": 823,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "fuzzy"
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_1_0",
+      "kind": "icon",
+      "expected": 823,
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        219,
+        248,
+        271,
+        297
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_hp",
+      "kind": "numeric",
+      "expected": "173",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        302,
+        375,
+        320
+      ],
+      "predicted": "173",
+      "confidence": 0.998,
+      "latency_ms": 71.55
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_attack",
+      "kind": "numeric",
+      "expected": "139",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        327,
+        375,
+        345
+      ],
+      "predicted": "139",
+      "confidence": 0.998,
+      "latency_ms": 70.84
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_defense",
+      "kind": "numeric",
+      "expected": "125",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        352,
+        375,
+        370
+      ],
+      "predicted": "125",
+      "confidence": 0.999,
+      "latency_ms": 70.78
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_special_attack",
+      "kind": "numeric",
+      "expected": "65",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        302,
+        572,
+        320
+      ],
+      "predicted": "65",
+      "confidence": 0.998,
+      "latency_ms": 70.52
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_special_defense",
+      "kind": "numeric",
+      "expected": "117",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        327,
+        572,
+        345
+      ],
+      "predicted": "117",
+      "confidence": 0.999,
+      "latency_ms": 70.86
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_speed",
+      "kind": "numeric",
+      "expected": "119",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        352,
+        572,
+        370
+      ],
+      "predicted": "119",
+      "confidence": 0.998,
+      "latency_ms": 70.55
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_1_1",
+      "kind": "species_text",
+      "expected": "龙头地鼠",
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        274,
+        840,
+        296
+      ],
+      "predicted": "龙头地鼠",
+      "confidence": 0.993,
+      "latency_ms": 71.13,
+      "text_species_id": 530,
+      "text_form_id": null,
+      "combined_species_id": 530,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_1_1",
+      "kind": "icon",
+      "expected": 530,
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        248,
+        718,
+        297
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_hp",
+      "kind": "numeric",
+      "expected": "185",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        302,
+        822,
+        320
+      ],
+      "predicted": "185",
+      "confidence": 0.998,
+      "latency_ms": 70.96
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_attack",
+      "kind": "numeric",
+      "expected": "205",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        327,
+        822,
+        345
+      ],
+      "predicted": "205",
+      "confidence": 0.999,
+      "latency_ms": 71.03
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_defense",
+      "kind": "numeric",
+      "expected": "81",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        352,
+        822,
+        370
+      ],
+      "predicted": "81",
+      "confidence": 0.999,
+      "latency_ms": 70.19
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_special_attack",
+      "kind": "numeric",
+      "expected": "63",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        302,
+        1019,
+        320
+      ],
+      "predicted": "63",
+      "confidence": 0.998,
+      "latency_ms": 69.92
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_special_defense",
+      "kind": "numeric",
+      "expected": "86",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        327,
+        1019,
+        345
+      ],
+      "predicted": "86",
+      "confidence": 0.998,
+      "latency_ms": 70.51
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_speed",
+      "kind": "numeric",
+      "expected": "140",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        352,
+        1019,
+        370
+      ],
+      "predicted": "140",
+      "confidence": 0.999,
+      "latency_ms": 70.66
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_2_0",
+      "kind": "species_text",
+      "expected": "爱管侍",
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        267,
+        396,
+        393,
+        418
+      ],
+      "predicted": "[爱管]",
+      "confidence": 0.55,
+      "latency_ms": 70.62,
+      "text_species_id": null,
+      "text_form_id": null,
+      "combined_species_id": null,
+      "combined_form_id": null,
+      "combined_status": "unresolved",
+      "combined_method": "insufficient_text_evidence"
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_2_0",
+      "kind": "icon",
+      "expected": 876,
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        219,
+        370,
+        271,
+        418
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_hp",
+      "kind": "numeric",
+      "expected": "137",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        423,
+        375,
+        441
+      ],
+      "predicted": "137",
+      "confidence": 0.998,
+      "latency_ms": 71.28
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_attack",
+      "kind": "numeric",
+      "expected": "76",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        449,
+        375,
+        467
+      ],
+      "predicted": "76",
+      "confidence": 0.999,
+      "latency_ms": 70.67
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_defense",
+      "kind": "numeric",
+      "expected": "75",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        474,
+        375,
+        492
+      ],
+      "predicted": "75",
+      "confidence": 0.999,
+      "latency_ms": 70.86
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_special_attack",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        423,
+        572,
+        441
+      ],
+      "predicted": "172",
+      "confidence": 0.998,
+      "latency_ms": 69.85
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_special_defense",
+      "kind": "numeric",
+      "expected": "115",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        449,
+        572,
+        467
+      ],
+      "predicted": "115",
+      "confidence": 0.998,
+      "latency_ms": 70.15
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_speed",
+      "kind": "numeric",
+      "expected": "147",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        474,
+        572,
+        492
+      ],
+      "predicted": "147",
+      "confidence": 0.998,
+      "latency_ms": 71.52
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_2_1",
+      "kind": "species_text",
+      "expected": "大狃拉",
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        396,
+        840,
+        418
+      ],
+      "predicted": "大纽拉",
+      "confidence": 0.742,
+      "latency_ms": 70.9,
+      "text_species_id": 903,
+      "text_form_id": null,
+      "combined_species_id": 903,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "fuzzy"
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_2_1",
+      "kind": "icon",
+      "expected": 903,
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        370,
+        718,
+        418
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_hp",
+      "kind": "numeric",
+      "expected": "157",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        423,
+        822,
+        441
+      ],
+      "predicted": "157",
+      "confidence": 0.999,
+      "latency_ms": 71.06
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_attack",
+      "kind": "numeric",
+      "expected": "200",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        449,
+        822,
+        467
+      ],
+      "predicted": "200",
+      "confidence": 0.999,
+      "latency_ms": 69.78
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_defense",
+      "kind": "numeric",
+      "expected": "80",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        474,
+        822,
+        492
+      ],
+      "predicted": "80",
+      "confidence": 0.999,
+      "latency_ms": 70.9
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_special_attack",
+      "kind": "numeric",
+      "expected": "54",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        423,
+        1019,
+        441
+      ],
+      "predicted": "54",
+      "confidence": 0.999,
+      "latency_ms": 71.26
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_special_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        449,
+        1019,
+        467
+      ],
+      "predicted": "100",
+      "confidence": 0.999,
+      "latency_ms": 70.56
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_speed",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        474,
+        1019,
+        492
+      ],
+      "predicted": "172",
+      "confidence": 0.997,
+      "latency_ms": 71.25
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_0_0",
+      "kind": "species_text",
+      "expected": "暴飞龙",
+      "species_id": 373,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        535,
+        304,
+        787,
+        349
+      ],
+      "predicted": "暴飞龙",
+      "confidence": 0.975,
+      "latency_ms": 71.06,
+      "text_species_id": 373,
+      "text_form_id": null,
+      "combined_species_id": 373,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_0_0",
+      "kind": "icon",
+      "expected": 373,
+      "species_id": 373,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        438,
+        253,
+        543,
+        350
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_hp",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        359,
+        750,
+        396
+      ],
+      "predicted": "172",
+      "confidence": 0.998,
+      "latency_ms": 70.63
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_attack",
+      "kind": "numeric",
+      "expected": "139",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        410,
+        750,
+        446
+      ],
+      "predicted": "139",
+      "confidence": 0.998,
+      "latency_ms": 70.22
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        461,
+        750,
+        497
+      ],
+      "predicted": "100",
+      "confidence": 0.999,
+      "latency_ms": 70.78
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_special_attack",
+      "kind": "numeric",
+      "expected": "162",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        359,
+        1143,
+        396
+      ],
+      "predicted": "162",
+      "confidence": 0.998,
+      "latency_ms": 71.89
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_special_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        410,
+        1143,
+        446
+      ],
+      "predicted": "100",
+      "confidence": 0.998,
+      "latency_ms": 72.09
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_speed",
+      "kind": "numeric",
+      "expected": "167",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        461,
+        1143,
+        497
+      ],
+      "predicted": "167",
+      "confidence": 0.998,
+      "latency_ms": 72.42
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_0_1",
+      "kind": "species_text",
+      "expected": "班基拉斯",
+      "species_id": 248,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1429,
+        304,
+        1681,
+        349
+      ],
+      "predicted": "班基拉t",
+      "confidence": 0.654,
+      "latency_ms": 70.58,
+      "text_species_id": 248,
+      "text_form_id": null,
+      "combined_species_id": 248,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "fuzzy"
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_0_1",
+      "kind": "icon",
+      "expected": 248,
+      "species_id": 248,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1332,
+        253,
+        1437,
+        350
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_hp",
+      "kind": "numeric",
+      "expected": "177",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        359,
+        1644,
+        396
+      ],
+      "predicted": "177",
+      "confidence": 0.999,
+      "latency_ms": 71.54
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_attack",
+      "kind": "numeric",
+      "expected": "186",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        410,
+        1644,
+        446
+      ],
+      "predicted": "186",
+      "confidence": 0.998,
+      "latency_ms": 70.54
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_defense",
+      "kind": "numeric",
+      "expected": "130",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        461,
+        1644,
+        497
+      ],
+      "predicted": "130",
+      "confidence": 0.998,
+      "latency_ms": 71.1
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_special_attack",
+      "kind": "numeric",
+      "expected": "103",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        359,
+        2037,
+        396
+      ],
+      "predicted": "103",
+      "confidence": 0.999,
+      "latency_ms": 70.68
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_special_defense",
+      "kind": "numeric",
+      "expected": "120",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        410,
+        2037,
+        446
+      ],
+      "predicted": "120",
+      "confidence": 0.999,
+      "latency_ms": 71.41
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_speed",
+      "kind": "numeric",
+      "expected": "124",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        461,
+        2037,
+        497
+      ],
+      "predicted": "124",
+      "confidence": 0.999,
+      "latency_ms": 70.61
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_1_0",
+      "kind": "species_text",
+      "expected": "钢铠鸦",
+      "species_id": 823,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        535,
+        548,
+        787,
+        592
+      ],
+      "predicted": "钢b铠鸦]",
+      "confidence": 0.782,
+      "latency_ms": 70.84,
+      "text_species_id": 823,
+      "text_form_id": null,
+      "combined_species_id": 823,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "fuzzy"
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_1_0",
+      "kind": "icon",
+      "expected": 823,
+      "species_id": 823,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        438,
+        497,
+        543,
+        593
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_hp",
+      "kind": "numeric",
+      "expected": "173",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        603,
+        750,
+        639
+      ],
+      "predicted": "173",
+      "confidence": 0.998,
+      "latency_ms": 71.3
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_attack",
+      "kind": "numeric",
+      "expected": "139",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        654,
+        750,
+        690
+      ],
+      "predicted": "139",
+      "confidence": 0.998,
+      "latency_ms": 70.65
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_defense",
+      "kind": "numeric",
+      "expected": "125",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        704,
+        750,
+        740
+      ],
+      "predicted": "125",
+      "confidence": 0.999,
+      "latency_ms": 70.13
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_special_attack",
+      "kind": "numeric",
+      "expected": "65",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        603,
+        1143,
+        639
+      ],
+      "predicted": "65",
+      "confidence": 0.996,
+      "latency_ms": 70.09
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_special_defense",
+      "kind": "numeric",
+      "expected": "117",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        654,
+        1143,
+        690
+      ],
+      "predicted": "117",
+      "confidence": 0.998,
+      "latency_ms": 71.13
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_speed",
+      "kind": "numeric",
+      "expected": "119",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        704,
+        1143,
+        740
+      ],
+      "predicted": "119",
+      "confidence": 0.998,
+      "latency_ms": 70.91
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_1_1",
+      "kind": "species_text",
+      "expected": "龙头地鼠",
+      "species_id": 530,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1429,
+        548,
+        1681,
+        592
+      ],
+      "predicted": "龙头地鼠",
+      "confidence": 0.987,
+      "latency_ms": 70.28,
+      "text_species_id": 530,
+      "text_form_id": null,
+      "combined_species_id": 530,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_1_1",
+      "kind": "icon",
+      "expected": 530,
+      "species_id": 530,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1332,
+        497,
+        1437,
+        593
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_hp",
+      "kind": "numeric",
+      "expected": "185",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        603,
+        1644,
+        639
+      ],
+      "predicted": "185",
+      "confidence": 0.998,
+      "latency_ms": 71.45
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_attack",
+      "kind": "numeric",
+      "expected": "205",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        654,
+        1644,
+        690
+      ],
+      "predicted": "205",
+      "confidence": 0.999,
+      "latency_ms": 70.77
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_defense",
+      "kind": "numeric",
+      "expected": "81",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        704,
+        1644,
+        740
+      ],
+      "predicted": "81",
+      "confidence": 0.999,
+      "latency_ms": 70.02
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_special_attack",
+      "kind": "numeric",
+      "expected": "63",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        603,
+        2037,
+        639
+      ],
+      "predicted": "63",
+      "confidence": 0.997,
+      "latency_ms": 70.83
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_special_defense",
+      "kind": "numeric",
+      "expected": "86",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        654,
+        2037,
+        690
+      ],
+      "predicted": "86",
+      "confidence": 0.998,
+      "latency_ms": 69.92
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_speed",
+      "kind": "numeric",
+      "expected": "140",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        704,
+        2037,
+        740
+      ],
+      "predicted": "140",
+      "confidence": 0.999,
+      "latency_ms": 70.65
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_2_0",
+      "kind": "species_text",
+      "expected": "爱管侍",
+      "species_id": 876,
+      "form_id": 876,
+      "split": "held_out_video",
+      "box": [
+        535,
+        791,
+        787,
+        836
+      ],
+      "predicted": "爱管侍",
+      "confidence": 0.732,
+      "latency_ms": 71.46,
+      "text_species_id": 876,
+      "text_form_id": null,
+      "combined_species_id": 876,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_2_0",
+      "kind": "icon",
+      "expected": 876,
+      "species_id": 876,
+      "form_id": 876,
+      "split": "held_out_video",
+      "box": [
+        438,
+        740,
+        543,
+        837
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_hp",
+      "kind": "numeric",
+      "expected": "137",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        847,
+        750,
+        883
+      ],
+      "predicted": "137",
+      "confidence": 0.998,
+      "latency_ms": 71.05
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_attack",
+      "kind": "numeric",
+      "expected": "76",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        897,
+        750,
+        933
+      ],
+      "predicted": "76",
+      "confidence": 0.999,
+      "latency_ms": 70.88
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_defense",
+      "kind": "numeric",
+      "expected": "75",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        948,
+        750,
+        984
+      ],
+      "predicted": "75",
+      "confidence": 0.998,
+      "latency_ms": 70.36
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_special_attack",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        847,
+        1143,
+        883
+      ],
+      "predicted": "172",
+      "confidence": 0.998,
+      "latency_ms": 70.36
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_special_defense",
+      "kind": "numeric",
+      "expected": "115",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        897,
+        1143,
+        933
+      ],
+      "predicted": "115",
+      "confidence": 0.998,
+      "latency_ms": 70.49
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_speed",
+      "kind": "numeric",
+      "expected": "147",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        948,
+        1143,
+        984
+      ],
+      "predicted": "147",
+      "confidence": 0.998,
+      "latency_ms": 70.48
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_2_1",
+      "kind": "species_text",
+      "expected": "大狃拉",
+      "species_id": 903,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1429,
+        791,
+        1681,
+        836
+      ],
+      "predicted": "大纽拉",
+      "confidence": 0.65,
+      "latency_ms": 70.57,
+      "text_species_id": 903,
+      "text_form_id": null,
+      "combined_species_id": 903,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "fuzzy"
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_2_1",
+      "kind": "icon",
+      "expected": 903,
+      "species_id": 903,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1332,
+        740,
+        1437,
+        837
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_hp",
+      "kind": "numeric",
+      "expected": "157",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        847,
+        1644,
+        883
+      ],
+      "predicted": "157",
+      "confidence": 0.998,
+      "latency_ms": 71.01
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_attack",
+      "kind": "numeric",
+      "expected": "200",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        897,
+        1644,
+        933
+      ],
+      "predicted": "200",
+      "confidence": 0.999,
+      "latency_ms": 71.03
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_defense",
+      "kind": "numeric",
+      "expected": "80",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        948,
+        1644,
+        984
+      ],
+      "predicted": "80",
+      "confidence": 0.999,
+      "latency_ms": 70.33
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_special_attack",
+      "kind": "numeric",
+      "expected": "54",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        847,
+        2037,
+        883
+      ],
+      "predicted": "54",
+      "confidence": 0.998,
+      "latency_ms": 71.14
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_special_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        897,
+        2037,
+        933
+      ],
+      "predicted": "100",
+      "confidence": 0.999,
+      "latency_ms": 70.41
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_speed",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        948,
+        2037,
+        984
+      ],
+      "predicted": "172",
+      "confidence": 0.997,
+      "latency_ms": 71.09
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_0",
+      "kind": "icon",
+      "expected": 376,
+      "species_id": 376,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        145,
+        2182,
+        271
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_1",
+      "kind": "icon",
+      "expected": 1018,
+      "species_id": 1018,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        286,
+        2182,
+        412
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_2",
+      "kind": "icon",
+      "expected": 208,
+      "species_id": 208,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        427,
+        2182,
+        554
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_3",
+      "kind": "icon",
+      "expected": 1000,
+      "species_id": 1000,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        568,
+        2182,
+        695
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_4",
+      "kind": "icon",
+      "expected": 212,
+      "species_id": 212,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        709,
+        2182,
+        836
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_5",
+      "kind": "icon",
+      "expected": 395,
+      "species_id": 395,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        850,
+        2182,
+        977
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_0",
+      "kind": "icon",
+      "expected": 354,
+      "species_id": 354,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        145,
+        2182,
+        271
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_1",
+      "kind": "icon",
+      "expected": 1019,
+      "species_id": 1019,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        286,
+        2182,
+        412
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_2",
+      "kind": "icon",
+      "expected": 637,
+      "species_id": 637,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        427,
+        2182,
+        554
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_3",
+      "kind": "icon",
+      "expected": 981,
+      "species_id": 981,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        568,
+        2182,
+        695
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_4",
+      "kind": "icon",
+      "expected": 553,
+      "species_id": 553,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        709,
+        2182,
+        836
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_5",
+      "kind": "icon",
+      "expected": 691,
+      "species_id": 691,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        850,
+        2182,
+        977
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_name_0",
+      "kind": "species_text",
+      "expected": "龙头地鼠",
+      "species_id": 530,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        364,
+        1021,
+        593,
+        1070
+      ],
+      "predicted": "龙头地鼠",
+      "confidence": 0.993,
+      "latency_ms": 71.49,
+      "text_species_id": 530,
+      "text_form_id": null,
+      "combined_species_id": 530,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_icon_0",
+      "kind": "icon",
+      "expected": 530,
+      "species_id": 530,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        220,
+        1030,
+        354,
+        1157
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_name_1",
+      "kind": "species_text",
+      "expected": "大狃拉",
+      "species_id": 903,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        805,
+        1021,
+        1033,
+        1070
+      ],
+      "predicted": "大紐拉絲",
+      "confidence": 0.659,
+      "latency_ms": 70.52,
+      "text_species_id": null,
+      "text_form_id": null,
+      "combined_species_id": null,
+      "combined_form_id": null,
+      "combined_status": "unresolved",
+      "combined_method": "insufficient_text_evidence"
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_icon_1",
+      "kind": "icon",
+      "expected": 903,
+      "species_id": 903,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        661,
+        1030,
+        794,
+        1157
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "opponent_name_0",
+      "kind": "species_text",
+      "expected": "巨金怪",
+      "species_id": 376,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1636,
+        62,
+        1893,
+        101
+      ],
+      "predicted": "[T巨bleS]",
+      "confidence": 0.615,
+      "latency_ms": 70.7,
+      "text_species_id": null,
+      "text_form_id": null,
+      "combined_species_id": null,
+      "combined_form_id": null,
+      "combined_status": "unresolved",
+      "combined_method": "ambiguous_fuzzy"
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "opponent_icon_0",
+      "kind": "icon",
+      "expected": 376,
+      "species_id": 376,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1487,
+        74,
+        1628,
+        186
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "opponent_name_1",
+      "kind": "species_text",
+      "expected": "赛富豪",
+      "species_id": 1000,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        2071,
+        62,
+        2328,
+        101
+      ],
+      "predicted": "赛富豪",
+      "confidence": 0.983,
+      "latency_ms": 70.71,
+      "text_species_id": 1000,
+      "text_form_id": null,
+      "combined_species_id": 1000,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "opponent_icon_1",
+      "kind": "icon",
+      "expected": 1000,
+      "species_id": 1000,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1922,
+        74,
+        2064,
+        186
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_name_0",
+      "kind": "species_text",
+      "expected": "爱管侍",
+      "species_id": 876,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        364,
+        1021,
+        593,
+        1070
+      ],
+      "predicted": "爱管侍",
+      "confidence": 0.991,
+      "latency_ms": 70.07,
+      "text_species_id": 876,
+      "text_form_id": null,
+      "combined_species_id": 876,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_icon_0",
+      "kind": "icon",
+      "expected": 876,
+      "species_id": 876,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        220,
+        1030,
+        354,
+        1157
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_name_1",
+      "kind": "species_text",
+      "expected": "钢铠鸦",
+      "species_id": 823,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        805,
+        1021,
+        1033,
+        1070
+      ],
+      "predicted": "钢铠鸦焗",
+      "confidence": 0.78,
+      "latency_ms": 70.53,
+      "text_species_id": 823,
+      "text_form_id": null,
+      "combined_species_id": 823,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "fuzzy"
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_icon_1",
+      "kind": "icon",
+      "expected": 823,
+      "species_id": 823,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        661,
+        1030,
+        794,
+        1157
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "move_selection.png",
+      "region": "opponent_name_0",
+      "kind": "species_text",
+      "expected": "皮可西",
+      "species_id": 36,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1636,
+        62,
+        1893,
+        101
+      ],
+      "predicted": "皮可西",
+      "confidence": 0.843,
+      "latency_ms": 70.33,
+      "text_species_id": 36,
+      "text_form_id": null,
+      "combined_species_id": 36,
+      "combined_form_id": null,
+      "combined_status": "resolved",
+      "combined_method": "exact"
+    },
+    {
+      "image": "move_selection.png",
+      "region": "opponent_icon_0",
+      "kind": "icon",
+      "expected": 36,
+      "species_id": 36,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1487,
+        74,
+        1628,
+        186
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "move_selection.png",
+      "region": "opponent_name_1",
+      "kind": "species_text",
+      "expected": "君主蛇",
+      "species_id": 497,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        2071,
+        62,
+        2328,
+        101
+      ],
+      "predicted": "[TR_蛇]",
+      "confidence": 0.536,
+      "latency_ms": 71.3,
+      "text_species_id": null,
+      "text_form_id": null,
+      "combined_species_id": null,
+      "combined_form_id": null,
+      "combined_status": "unresolved",
+      "combined_method": "ambiguous_fuzzy"
+    },
+    {
+      "image": "move_selection.png",
+      "region": "opponent_icon_1",
+      "kind": "icon",
+      "expected": 497,
+      "species_id": 497,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1922,
+        74,
+        2064,
+        186
+      ],
+      "predicted": null,
+      "predicted_form_id": null,
+      "icon_status": "unavailable",
+      "candidates": [],
+      "latency_ms": 0
+    },
+    {
+      "image": "move_selection.png",
+      "region": "move_name_0",
+      "kind": "move",
+      "expected": "广域战力",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1966,
+        535,
+        2252,
+        593
+      ],
+      "predicted": "广域战力",
+      "confidence": 0.968,
+      "latency_ms": 70.71
+    },
+    {
+      "image": "move_selection.png",
+      "region": "move_name_1",
+      "kind": "move",
+      "expected": "魔法火焰",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1966,
+        678,
+        2252,
+        736
+      ],
+      "predicted": "魔法火焰",
+      "confidence": 0.975,
+      "latency_ms": 70.05
+    },
+    {
+      "image": "move_selection.png",
+      "region": "move_name_2",
+      "kind": "move",
+      "expected": "戏法",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1966,
+        820,
+        2252,
+        878
+      ],
+      "predicted": "戏法",
+      "confidence": 0.984,
+      "latency_ms": 71.16
+    },
+    {
+      "image": "move_selection.png",
+      "region": "move_name_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1966,
+        962,
+        2252,
+        1020
+      ],
+      "predicted": "守住",
+      "confidence": 0.989,
+      "latency_ms": 71.36
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_hp_0_current",
+      "kind": "numeric",
+      "expected": "185",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        464,
+        1103,
+        558,
+        1152
+      ],
+      "predicted": "185",
+      "confidence": 0.999,
+      "latency_ms": 72.03
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_hp_0_maximum",
+      "kind": "numeric",
+      "expected": "185",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        577,
+        1116,
+        637,
+        1152
+      ],
+      "predicted": "185",
+      "confidence": 0.998,
+      "latency_ms": 71.38
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_hp_1_current",
+      "kind": "numeric",
+      "expected": "157",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        905,
+        1103,
+        999,
+        1152
+      ],
+      "predicted": "157",
+      "confidence": 0.998,
+      "latency_ms": 71.76
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_hp_1_maximum",
+      "kind": "numeric",
+      "expected": "157",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1017,
+        1116,
+        1078,
+        1152
+      ],
+      "predicted": "157",
+      "confidence": 0.997,
+      "latency_ms": 72.9
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_hp_0_current",
+      "kind": "numeric",
+      "expected": "137",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        464,
+        1103,
+        558,
+        1152
+      ],
+      "predicted": "137",
+      "confidence": 0.999,
+      "latency_ms": 71.37
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_hp_0_maximum",
+      "kind": "numeric",
+      "expected": "137",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        577,
+        1116,
+        637,
+        1152
+      ],
+      "predicted": "137",
+      "confidence": 0.999,
+      "latency_ms": 70.79
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_hp_1_current",
+      "kind": "numeric",
+      "expected": "173",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        905,
+        1103,
+        999,
+        1152
+      ],
+      "predicted": "173",
+      "confidence": 0.999,
+      "latency_ms": 71.57
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_hp_1_maximum",
+      "kind": "numeric",
+      "expected": "173",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1017,
+        1116,
+        1078,
+        1152
+      ],
+      "predicted": "173",
+      "confidence": 0.998,
+      "latency_ms": 70.7
+    }
+  ],
+  "elapsed_s": 12.51,
+  "peak_rss_mb": 985.6,
+  "ocr_model": "PP-OCRv5_server_rec",
+  "warnings": []
+}

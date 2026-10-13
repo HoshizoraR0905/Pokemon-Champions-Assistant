@@ -7,6 +7,9 @@ import numpy as np
 from capture import Frame
 from models import Observation, Pokemon, Move, Recognition
 from recognition.ocr import OCR
+from recognition.paddle_ocr import create_ocr
+from recognition.icons import IconRecognizer, default_icons
+from recognition.identity import combine_identity
 from recognition.parsers import ratio, percentage
 from recognition.entities import EntityResolver
 from recognition.context import RecognitionContext
@@ -60,10 +63,13 @@ def classify(image: np.ndarray) -> tuple[str,float,list[str]]:
 
 class Recognizer:
     def __init__(self, ocr: OCR | None = None, *, knowledge: bool = True,
-                 resolver: EntityResolver | None = None, context: RecognitionContext | None = None):
-        self.ocr = ocr or OCR()
+                 resolver: EntityResolver | None = None, context: RecognitionContext | None = None,
+                 icons: IconRecognizer | bool | None = None):
+        self.ocr = ocr if ocr is not None else create_ocr('auto')
         self.resolver = (resolver or EntityResolver()) if knowledge else None
         self.context = context or RecognitionContext(self.resolver.knowledge if self.resolver else None)
+        self.icons = (default_icons() if icons is True or (icons is None and ocr is None)
+                      else None if icons is False or icons is None else icons)
 
     def recognize(self, frame: Frame) -> Recognition:
         self.context.begin_frame(frame.source,frame.index)
@@ -115,6 +121,7 @@ class Recognizer:
                     x, y = col*.341, row*.202
                     p = Pokemon(f'own_team_{row*2+col+1}',
                         read(f'config_name_{row}_{col}',(.204+x,.252+y,.3+x,.289+y)))
+                    result.regions[f'config_icon_{row}_{col}'] = box(image,(.167+x,.21+y,.207+x,.29+y))
                     p.configuration = {f:Observation() for f in fields}
                     p.configuration['gender'] = gender(f'config_gender_{row}_{col}',
                                                         (.304+x,.253+y,.32+x,.284+y))
@@ -142,10 +149,11 @@ class Recognizer:
             for i in range(6):
                 y = .13 + i*.117
                 p = Pokemon(f'own_team_{i+1}', read(f'team_name_{i}', (.151,y,.263,y+.034)))
+                result.regions[f'own_icon_{i}'] = box(image,(.301,y-.01,.349,y+.095))
                 p.configuration['held_item'] = read(f'team_item_{i}', (.17,y+.047,.293,y+.079))
                 p.configuration['gender'] = gender(f'team_gender_{i}',(.275,y+.003,.29,y+.035))
                 result.pokemon.append(p)
-                bounds = box(image, (.775,y,.835,y+.085))
+                bounds = box(image, (.778,y-.01,.832,y+.095))
                 result.regions[f'opponent_icon_{i}'] = bounds
                 result.pokemon.append(Pokemon(f'opponent_team_{i+1}',
                     Observation(region=bounds, provenance='unresolved_icon')))
@@ -159,6 +167,11 @@ class Recognizer:
                         name_roi = (.624+offset,.051,.722+offset,.084)
                         hp_roi = (.681+offset,.113,.727+offset,.154)
                     name = read(f'{side}_name_{i}', name_roi,italic=True)
+                    if side == 'own':
+                        icon_roi=(.084+offset,.854,.135+offset,.959)
+                    else:
+                        icon_roi=(.567+offset,.061,.621+offset,.154)
+                    result.regions[f'{side}_icon_{i}'] = box(image,icon_roi)
                     if side == 'own':
                         hp = read_ratio(f'{side}_hp_{i}',(.177+offset,.915,.213+offset,.955),
                                         (.220+offset,.925,.243+offset,.955))
@@ -191,6 +204,19 @@ class Recognizer:
                     result.message = message
                     result.screen, result.confidence = 'battle_message', message.confidence
                     result.components = ['battle_message']
+        if self.icons and self.resolver:
+            for p in result.pokemon:
+                if p.slot.startswith('own_team_') and screen=='team_preview':
+                    label=f'own_icon_{int(p.slot.split("_")[-1])-1}'
+                elif p.slot.startswith('opponent_team_') and screen=='team_preview':
+                    label=f'opponent_icon_{int(p.slot.split("_")[-1])-1}'
+                elif p.slot.startswith('own_team_') and screen=='team_configuration':
+                    n=int(p.slot.split('_')[-1])-1;label=f'config_icon_{n//2}_{n%2}'
+                elif '_active_' in p.slot:
+                    side,n=p.slot.split('_active_');label=f'{side}_icon_{int(n)-1}'
+                else:continue
+                bounds=result.regions.get(label)
+                if bounds:p.icon=self.icons.identify(image,bounds)
         if self.resolver:
             self.resolve_entities(result)
             self.context.remember(result)
@@ -205,10 +231,14 @@ class Recognizer:
         if resolver is None:
             return
         for p in result.pokemon:
+            field_context=self.context.for_field(p.slot,'species')
+            if p.species.provenance!='unresolved_icon':
+                p.species = resolver.resolve(p.species,'species',field_context,region_kind='species')
+            if p.icon:
+                p.species=combine_identity(p.species,p.icon,resolver.knowledge,field_context)
             if p.species.provenance=='unresolved_icon':
                 continue
-            p.species = resolver.resolve(p.species,'species',self.context.for_field(p.slot,'species'),region_kind='species')
-            identity = p.species.resolution.canonical_id
+            identity = p.species.resolution.canonical_id if p.species.resolution else None
             if p.slot.startswith('own_team_'):
                 p.team_instance_id = p.slot
             elif p.slot.startswith('own_active_') and identity:

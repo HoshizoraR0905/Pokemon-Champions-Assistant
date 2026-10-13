@@ -49,7 +49,9 @@
     "coverage.json": "0d2eedd8899f2f71a18cc3ec264cb65674edaaa0da38dffedf1bf6dca638cff8",
     "LICENSE.pokeapi.txt": "1c04595dc662981c20956ae4251dfa7b62b475c345eddf98bc9b904cb2373f2c",
     "LICENSE.champions.txt": "e4e8cd45e0acc57989fd62e952302279e1e241e3795c193287b7cd1cb1edc94a",
-    "champions_facts.json": "c9203fdf1cdad92bb37e88c3f56763fc910ce03e566f851e3f8389cac5d3f93b"
+    "champions_facts.json": "c9203fdf1cdad92bb37e88c3f56763fc910ce03e566f851e3f8389cac5d3f93b",
+    "visual_assets.json": "dc514bed109f9cd96b455575cd0fb8645e241fe49eb67646e533236b46adf103",
+    "identity.json": "fce2667283ba98a58abc39ae80fa66acfd21943b7ce341d66cee1e94afb830b1"
   },
   "unmapped_champions_entries": [
     {
@@ -543,5 +545,6 @@
     "as_of": "2026-10-13",
     "regulation": "M-C",
     "missing_is_unknown": true
-  }
+  },
+  "identity_version": "2026-10-13-identity.1"
 }

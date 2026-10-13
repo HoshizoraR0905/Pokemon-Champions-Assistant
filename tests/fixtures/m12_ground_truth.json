@@ -1,0 +1,2990 @@
+{
+  "schema_version": 1,
+  "annotation": "Manual visual transcription; see report for split limitations",
+  "images": {
+    "battle_screen.png": {
+      "sha256": "55f504d15f666a092f622dd412924f212b7b526a2ed8aa468bcfc338e19417cc",
+      "screen": "battle_screen",
+      "source": "supplied screenshot",
+      "video_second": null
+    },
+    "m12_video_preview.png": {
+      "sha256": "c268944b05dfb5faa654f487760ecb3732c243ac88e781e5484592d6865dfbc6",
+      "screen": "team_preview",
+      "source": "sample_battle.mp4",
+      "video_second": 60
+    },
+    "m12_video_stats.png": {
+      "sha256": "602e18b4b2cf906559f5fb8d94ad30ca0fe6895250f00c2c32bf19a84c8d0d7b",
+      "screen": "team_configuration",
+      "source": "sample_battle.mp4",
+      "video_second": 15
+    },
+    "move_selection.png": {
+      "sha256": "bab35d623143f0dd1b6322861199c5bbda89ce63d581179ad1bfe0b03adba8dd",
+      "screen": "move_selection",
+      "source": "supplied screenshot",
+      "video_second": null
+    },
+    "team_configuration_moves.png": {
+      "sha256": "225fddbb617e17e0a2d68ab5ca7c02205f45879df4ea98002cb3df10c6c5917c",
+      "screen": "team_configuration",
+      "source": "supplied screenshot",
+      "video_second": null
+    },
+    "team_configuration_stats.png": {
+      "sha256": "e8e1c060fc173a522dd7a9b426bd3b7f6c6aabc7502e94f645a293b76e2a34a6",
+      "screen": "team_configuration",
+      "source": "supplied screenshot",
+      "video_second": null
+    },
+    "team_preview.png": {
+      "sha256": "0c685f6c26a415fa5e549df81a3837cb85b58752f7dff955843ee493e3adaf0d",
+      "screen": "team_preview",
+      "source": "supplied screenshot",
+      "video_second": null
+    }
+  },
+  "regions": [
+    {
+      "image": "team_preview.png",
+      "region": "team_name_0",
+      "kind": "species_text",
+      "expected": "暴飞龙",
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        396,
+        157,
+        690,
+        198
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_0",
+      "kind": "icon",
+      "expected": 373,
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        145,
+        915,
+        271
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "team_name_1",
+      "kind": "species_text",
+      "expected": "班基拉斯",
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        396,
+        298,
+        690,
+        339
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_1",
+      "kind": "icon",
+      "expected": 248,
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        286,
+        915,
+        412
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "team_name_2",
+      "kind": "species_text",
+      "expected": "钢铠鸦",
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        396,
+        439,
+        690,
+        480
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_2",
+      "kind": "icon",
+      "expected": 823,
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        427,
+        915,
+        554
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "team_name_3",
+      "kind": "species_text",
+      "expected": "龙头地鼠",
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        396,
+        580,
+        690,
+        621
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_3",
+      "kind": "icon",
+      "expected": 530,
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        568,
+        915,
+        695
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "team_name_4",
+      "kind": "species_text",
+      "expected": "爱管侍",
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        396,
+        721,
+        690,
+        762
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_4",
+      "kind": "icon",
+      "expected": 876,
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        789,
+        709,
+        915,
+        836
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "team_name_5",
+      "kind": "species_text",
+      "expected": "大狃拉",
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        396,
+        862,
+        690,
+        903
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "own_icon_5",
+      "kind": "icon",
+      "expected": 903,
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        850,
+        915,
+        977
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_0_0",
+      "kind": "species_text",
+      "expected": "暴飞龙",
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        267,
+        152,
+        393,
+        174
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_0_0",
+      "kind": "icon",
+      "expected": 373,
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        219,
+        127,
+        271,
+        175
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_0_0",
+      "kind": "ability",
+      "expected": "威吓",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        181,
+        456,
+        198
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_0_0",
+      "kind": "item",
+      "expected": "暴飞龙进化石",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        207,
+        456,
+        225
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_0_0",
+      "kind": "move",
+      "expected": "巨声",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        155,
+        608,
+        175
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_0_1",
+      "kind": "move",
+      "expected": "流星群",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        180,
+        608,
+        200
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_0_2",
+      "kind": "move",
+      "expected": "喷射火焰",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        206,
+        608,
+        226
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_0_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        231,
+        608,
+        251
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_0_1",
+      "kind": "species_text",
+      "expected": "班基拉斯",
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        152,
+        840,
+        174
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_0_1",
+      "kind": "icon",
+      "expected": 248,
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        127,
+        718,
+        175
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_0_1",
+      "kind": "ability",
+      "expected": "扬沙",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        181,
+        903,
+        198
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_0_1",
+      "kind": "item",
+      "expected": "班基拉斯进化石",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        207,
+        903,
+        225
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_1_0",
+      "kind": "move",
+      "expected": "岩崩",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        155,
+        1055,
+        175
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_1_1",
+      "kind": "move",
+      "expected": "拍落",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        180,
+        1055,
+        200
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_1_2",
+      "kind": "move",
+      "expected": "踢倒",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        206,
+        1055,
+        226
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_1_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        231,
+        1055,
+        251
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_1_0",
+      "kind": "species_text",
+      "expected": "钢铠鸦",
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        267,
+        274,
+        393,
+        296
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_1_0",
+      "kind": "icon",
+      "expected": 823,
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        219,
+        248,
+        271,
+        297
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_1_0",
+      "kind": "ability",
+      "expected": "镜甲",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        303,
+        456,
+        320
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_1_0",
+      "kind": "item",
+      "expected": "精神种子",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        329,
+        456,
+        347
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_0_0",
+      "kind": "move",
+      "expected": "勇鸟猛攻",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        277,
+        608,
+        297
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_0_1",
+      "kind": "move",
+      "expected": "嚣张",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        302,
+        608,
+        322
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_0_2",
+      "kind": "move",
+      "expected": "健美",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        327,
+        608,
+        347
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_0_3",
+      "kind": "move",
+      "expected": "羽栖",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        353,
+        608,
+        373
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_1_1",
+      "kind": "species_text",
+      "expected": "龙头地鼠",
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        274,
+        840,
+        296
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_1_1",
+      "kind": "icon",
+      "expected": 530,
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        248,
+        718,
+        297
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_1_1",
+      "kind": "ability",
+      "expected": "拔沙",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        303,
+        903,
+        320
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_1_1",
+      "kind": "item",
+      "expected": "气势披带",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        329,
+        903,
+        347
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_1_0",
+      "kind": "move",
+      "expected": "十万马力",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        277,
+        1055,
+        297
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_1_1",
+      "kind": "move",
+      "expected": "岩崩",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        302,
+        1055,
+        322
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_1_2",
+      "kind": "move",
+      "expected": "铁头",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        327,
+        1055,
+        347
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_1_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        353,
+        1055,
+        373
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_2_0",
+      "kind": "species_text",
+      "expected": "爱管侍",
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        267,
+        396,
+        393,
+        418
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_2_0",
+      "kind": "icon",
+      "expected": 876,
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        219,
+        370,
+        271,
+        418
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_2_0",
+      "kind": "ability",
+      "expected": "精神制造者",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        425,
+        456,
+        442
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_2_0",
+      "kind": "item",
+      "expected": "讲究围巾",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        450,
+        456,
+        469
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_0_0",
+      "kind": "move",
+      "expected": "广域战力",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        399,
+        608,
+        418
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_0_1",
+      "kind": "move",
+      "expected": "魔法火焰",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        424,
+        608,
+        444
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_0_2",
+      "kind": "move",
+      "expected": "戏法",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        449,
+        608,
+        469
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_0_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        475,
+        608,
+        494
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_2_1",
+      "kind": "species_text",
+      "expected": "大狃拉",
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        396,
+        840,
+        418
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_icon_2_1",
+      "kind": "icon",
+      "expected": 903,
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        370,
+        718,
+        418
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_2_1",
+      "kind": "ability",
+      "expected": "轻装",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        425,
+        903,
+        442
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_2_1",
+      "kind": "item",
+      "expected": "白色香草",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        450,
+        903,
+        469
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_1_0",
+      "kind": "move",
+      "expected": "克命爪",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        399,
+        1055,
+        418
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_1_1",
+      "kind": "move",
+      "expected": "近身战",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        424,
+        1055,
+        444
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_1_2",
+      "kind": "move",
+      "expected": "指导",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        449,
+        1055,
+        469
+      ]
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_1_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        948,
+        475,
+        1055,
+        494
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_0_0",
+      "kind": "species_text",
+      "expected": "暴飞龙",
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        267,
+        152,
+        393,
+        174
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_0_0",
+      "kind": "icon",
+      "expected": 373,
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        219,
+        127,
+        271,
+        175
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_hp",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        180,
+        375,
+        198
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_attack",
+      "kind": "numeric",
+      "expected": "139",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        205,
+        375,
+        223
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        230,
+        375,
+        248
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_special_attack",
+      "kind": "numeric",
+      "expected": "162",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        180,
+        572,
+        198
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_special_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        205,
+        572,
+        223
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_speed",
+      "kind": "numeric",
+      "expected": "167",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        230,
+        572,
+        248
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_0_1",
+      "kind": "species_text",
+      "expected": "班基拉斯",
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        152,
+        840,
+        174
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_0_1",
+      "kind": "icon",
+      "expected": 248,
+      "species_id": 248,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        127,
+        718,
+        175
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_hp",
+      "kind": "numeric",
+      "expected": "177",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        180,
+        822,
+        198
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_attack",
+      "kind": "numeric",
+      "expected": "186",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        205,
+        822,
+        223
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_defense",
+      "kind": "numeric",
+      "expected": "130",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        230,
+        822,
+        248
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_special_attack",
+      "kind": "numeric",
+      "expected": "103",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        180,
+        1019,
+        198
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_special_defense",
+      "kind": "numeric",
+      "expected": "120",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        205,
+        1019,
+        223
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_1_speed",
+      "kind": "numeric",
+      "expected": "124",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        230,
+        1019,
+        248
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_1_0",
+      "kind": "species_text",
+      "expected": "钢铠鸦",
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        267,
+        274,
+        393,
+        296
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_1_0",
+      "kind": "icon",
+      "expected": 823,
+      "species_id": 823,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        219,
+        248,
+        271,
+        297
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_hp",
+      "kind": "numeric",
+      "expected": "173",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        302,
+        375,
+        320
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_attack",
+      "kind": "numeric",
+      "expected": "139",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        327,
+        375,
+        345
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_defense",
+      "kind": "numeric",
+      "expected": "125",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        352,
+        375,
+        370
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_special_attack",
+      "kind": "numeric",
+      "expected": "65",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        302,
+        572,
+        320
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_special_defense",
+      "kind": "numeric",
+      "expected": "117",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        327,
+        572,
+        345
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_0_speed",
+      "kind": "numeric",
+      "expected": "119",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        352,
+        572,
+        370
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_1_1",
+      "kind": "species_text",
+      "expected": "龙头地鼠",
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        274,
+        840,
+        296
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_1_1",
+      "kind": "icon",
+      "expected": 530,
+      "species_id": 530,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        248,
+        718,
+        297
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_hp",
+      "kind": "numeric",
+      "expected": "185",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        302,
+        822,
+        320
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_attack",
+      "kind": "numeric",
+      "expected": "205",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        327,
+        822,
+        345
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_defense",
+      "kind": "numeric",
+      "expected": "81",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        352,
+        822,
+        370
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_special_attack",
+      "kind": "numeric",
+      "expected": "63",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        302,
+        1019,
+        320
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_special_defense",
+      "kind": "numeric",
+      "expected": "86",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        327,
+        1019,
+        345
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_1_1_speed",
+      "kind": "numeric",
+      "expected": "140",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        352,
+        1019,
+        370
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_2_0",
+      "kind": "species_text",
+      "expected": "爱管侍",
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        267,
+        396,
+        393,
+        418
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_2_0",
+      "kind": "icon",
+      "expected": 876,
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        219,
+        370,
+        271,
+        418
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_hp",
+      "kind": "numeric",
+      "expected": "137",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        423,
+        375,
+        441
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_attack",
+      "kind": "numeric",
+      "expected": "76",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        449,
+        375,
+        467
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_defense",
+      "kind": "numeric",
+      "expected": "75",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        474,
+        375,
+        492
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_special_attack",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        423,
+        572,
+        441
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_special_defense",
+      "kind": "numeric",
+      "expected": "115",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        449,
+        572,
+        467
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_speed",
+      "kind": "numeric",
+      "expected": "147",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        539,
+        474,
+        572,
+        492
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_name_2_1",
+      "kind": "species_text",
+      "expected": "大狃拉",
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        714,
+        396,
+        840,
+        418
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_icon_2_1",
+      "kind": "icon",
+      "expected": 903,
+      "species_id": 903,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        666,
+        370,
+        718,
+        418
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_hp",
+      "kind": "numeric",
+      "expected": "157",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        423,
+        822,
+        441
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_attack",
+      "kind": "numeric",
+      "expected": "200",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        449,
+        822,
+        467
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_defense",
+      "kind": "numeric",
+      "expected": "80",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        789,
+        474,
+        822,
+        492
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_special_attack",
+      "kind": "numeric",
+      "expected": "54",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        423,
+        1019,
+        441
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_special_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        449,
+        1019,
+        467
+      ]
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_1_speed",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        986,
+        474,
+        1019,
+        492
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_0_0",
+      "kind": "species_text",
+      "expected": "暴飞龙",
+      "species_id": 373,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        535,
+        304,
+        787,
+        349
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_0_0",
+      "kind": "icon",
+      "expected": 373,
+      "species_id": 373,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        438,
+        253,
+        543,
+        350
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_hp",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        359,
+        750,
+        396
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_attack",
+      "kind": "numeric",
+      "expected": "139",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        410,
+        750,
+        446
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        461,
+        750,
+        497
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_special_attack",
+      "kind": "numeric",
+      "expected": "162",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        359,
+        1143,
+        396
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_special_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        410,
+        1143,
+        446
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_0_speed",
+      "kind": "numeric",
+      "expected": "167",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        461,
+        1143,
+        497
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_0_1",
+      "kind": "species_text",
+      "expected": "班基拉斯",
+      "species_id": 248,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1429,
+        304,
+        1681,
+        349
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_0_1",
+      "kind": "icon",
+      "expected": 248,
+      "species_id": 248,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1332,
+        253,
+        1437,
+        350
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_hp",
+      "kind": "numeric",
+      "expected": "177",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        359,
+        1644,
+        396
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_attack",
+      "kind": "numeric",
+      "expected": "186",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        410,
+        1644,
+        446
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_defense",
+      "kind": "numeric",
+      "expected": "130",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        461,
+        1644,
+        497
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_special_attack",
+      "kind": "numeric",
+      "expected": "103",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        359,
+        2037,
+        396
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_special_defense",
+      "kind": "numeric",
+      "expected": "120",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        410,
+        2037,
+        446
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_0_1_speed",
+      "kind": "numeric",
+      "expected": "124",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        461,
+        2037,
+        497
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_1_0",
+      "kind": "species_text",
+      "expected": "钢铠鸦",
+      "species_id": 823,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        535,
+        548,
+        787,
+        592
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_1_0",
+      "kind": "icon",
+      "expected": 823,
+      "species_id": 823,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        438,
+        497,
+        543,
+        593
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_hp",
+      "kind": "numeric",
+      "expected": "173",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        603,
+        750,
+        639
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_attack",
+      "kind": "numeric",
+      "expected": "139",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        654,
+        750,
+        690
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_defense",
+      "kind": "numeric",
+      "expected": "125",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        704,
+        750,
+        740
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_special_attack",
+      "kind": "numeric",
+      "expected": "65",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        603,
+        1143,
+        639
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_special_defense",
+      "kind": "numeric",
+      "expected": "117",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        654,
+        1143,
+        690
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_speed",
+      "kind": "numeric",
+      "expected": "119",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        704,
+        1143,
+        740
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_1_1",
+      "kind": "species_text",
+      "expected": "龙头地鼠",
+      "species_id": 530,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1429,
+        548,
+        1681,
+        592
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_1_1",
+      "kind": "icon",
+      "expected": 530,
+      "species_id": 530,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1332,
+        497,
+        1437,
+        593
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_hp",
+      "kind": "numeric",
+      "expected": "185",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        603,
+        1644,
+        639
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_attack",
+      "kind": "numeric",
+      "expected": "205",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        654,
+        1644,
+        690
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_defense",
+      "kind": "numeric",
+      "expected": "81",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        704,
+        1644,
+        740
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_special_attack",
+      "kind": "numeric",
+      "expected": "63",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        603,
+        2037,
+        639
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_special_defense",
+      "kind": "numeric",
+      "expected": "86",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        654,
+        2037,
+        690
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_1_speed",
+      "kind": "numeric",
+      "expected": "140",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        704,
+        2037,
+        740
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_2_0",
+      "kind": "species_text",
+      "expected": "爱管侍",
+      "species_id": 876,
+      "form_id": 876,
+      "split": "held_out_video",
+      "box": [
+        535,
+        791,
+        787,
+        836
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_2_0",
+      "kind": "icon",
+      "expected": 876,
+      "species_id": 876,
+      "form_id": 876,
+      "split": "held_out_video",
+      "box": [
+        438,
+        740,
+        543,
+        837
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_hp",
+      "kind": "numeric",
+      "expected": "137",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        847,
+        750,
+        883
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_attack",
+      "kind": "numeric",
+      "expected": "76",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        897,
+        750,
+        933
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_defense",
+      "kind": "numeric",
+      "expected": "75",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        684,
+        948,
+        750,
+        984
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_special_attack",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        847,
+        1143,
+        883
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_special_defense",
+      "kind": "numeric",
+      "expected": "115",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        897,
+        1143,
+        933
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_0_speed",
+      "kind": "numeric",
+      "expected": "147",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        948,
+        1143,
+        984
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_2_1",
+      "kind": "species_text",
+      "expected": "大狃拉",
+      "species_id": 903,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1429,
+        791,
+        1681,
+        836
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_icon_2_1",
+      "kind": "icon",
+      "expected": 903,
+      "species_id": 903,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1332,
+        740,
+        1437,
+        837
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_hp",
+      "kind": "numeric",
+      "expected": "157",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        847,
+        1644,
+        883
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_attack",
+      "kind": "numeric",
+      "expected": "200",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        897,
+        1644,
+        933
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_defense",
+      "kind": "numeric",
+      "expected": "80",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1578,
+        948,
+        1644,
+        984
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_special_attack",
+      "kind": "numeric",
+      "expected": "54",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        847,
+        2037,
+        883
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_special_defense",
+      "kind": "numeric",
+      "expected": "100",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        897,
+        2037,
+        933
+      ]
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_2_1_speed",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1972,
+        948,
+        2037,
+        984
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_0",
+      "kind": "icon",
+      "expected": 376,
+      "species_id": 376,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        145,
+        2182,
+        271
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_1",
+      "kind": "icon",
+      "expected": 1018,
+      "species_id": 1018,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        286,
+        2182,
+        412
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_2",
+      "kind": "icon",
+      "expected": 208,
+      "species_id": 208,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        427,
+        2182,
+        554
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_3",
+      "kind": "icon",
+      "expected": 1000,
+      "species_id": 1000,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        568,
+        2182,
+        695
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_4",
+      "kind": "icon",
+      "expected": 212,
+      "species_id": 212,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        709,
+        2182,
+        836
+      ]
+    },
+    {
+      "image": "team_preview.png",
+      "region": "opponent_icon_5",
+      "kind": "icon",
+      "expected": 395,
+      "species_id": 395,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        2040,
+        850,
+        2182,
+        977
+      ]
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_0",
+      "kind": "icon",
+      "expected": 354,
+      "species_id": 354,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        145,
+        2182,
+        271
+      ]
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_1",
+      "kind": "icon",
+      "expected": 1019,
+      "species_id": 1019,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        286,
+        2182,
+        412
+      ]
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_2",
+      "kind": "icon",
+      "expected": 637,
+      "species_id": 637,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        427,
+        2182,
+        554
+      ]
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_3",
+      "kind": "icon",
+      "expected": 981,
+      "species_id": 981,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        568,
+        2182,
+        695
+      ]
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_4",
+      "kind": "icon",
+      "expected": 553,
+      "species_id": 553,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        709,
+        2182,
+        836
+      ]
+    },
+    {
+      "image": "m12_video_preview.png",
+      "region": "opponent_icon_5",
+      "kind": "icon",
+      "expected": 691,
+      "species_id": 691,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        2040,
+        850,
+        2182,
+        977
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_name_0",
+      "kind": "species_text",
+      "expected": "龙头地鼠",
+      "species_id": 530,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        364,
+        1021,
+        593,
+        1070
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_icon_0",
+      "kind": "icon",
+      "expected": 530,
+      "species_id": 530,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        220,
+        1030,
+        354,
+        1157
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_name_1",
+      "kind": "species_text",
+      "expected": "大狃拉",
+      "species_id": 903,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        805,
+        1021,
+        1033,
+        1070
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_icon_1",
+      "kind": "icon",
+      "expected": 903,
+      "species_id": 903,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        661,
+        1030,
+        794,
+        1157
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "opponent_name_0",
+      "kind": "species_text",
+      "expected": "巨金怪",
+      "species_id": 376,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1636,
+        62,
+        1893,
+        101
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "opponent_icon_0",
+      "kind": "icon",
+      "expected": 376,
+      "species_id": 376,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1487,
+        74,
+        1628,
+        186
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "opponent_name_1",
+      "kind": "species_text",
+      "expected": "赛富豪",
+      "species_id": 1000,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        2071,
+        62,
+        2328,
+        101
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "opponent_icon_1",
+      "kind": "icon",
+      "expected": 1000,
+      "species_id": 1000,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1922,
+        74,
+        2064,
+        186
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_name_0",
+      "kind": "species_text",
+      "expected": "爱管侍",
+      "species_id": 876,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        364,
+        1021,
+        593,
+        1070
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_icon_0",
+      "kind": "icon",
+      "expected": 876,
+      "species_id": 876,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        220,
+        1030,
+        354,
+        1157
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_name_1",
+      "kind": "species_text",
+      "expected": "钢铠鸦",
+      "species_id": 823,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        805,
+        1021,
+        1033,
+        1070
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_icon_1",
+      "kind": "icon",
+      "expected": 823,
+      "species_id": 823,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        661,
+        1030,
+        794,
+        1157
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "opponent_name_0",
+      "kind": "species_text",
+      "expected": "皮可西",
+      "species_id": 36,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1636,
+        62,
+        1893,
+        101
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "opponent_icon_0",
+      "kind": "icon",
+      "expected": 36,
+      "species_id": 36,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1487,
+        74,
+        1628,
+        186
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "opponent_name_1",
+      "kind": "species_text",
+      "expected": "君主蛇",
+      "species_id": 497,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        2071,
+        62,
+        2328,
+        101
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "opponent_icon_1",
+      "kind": "icon",
+      "expected": 497,
+      "species_id": 497,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1922,
+        74,
+        2064,
+        186
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "move_name_0",
+      "kind": "move",
+      "expected": "广域战力",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1966,
+        535,
+        2252,
+        593
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "move_name_1",
+      "kind": "move",
+      "expected": "魔法火焰",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1966,
+        678,
+        2252,
+        736
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "move_name_2",
+      "kind": "move",
+      "expected": "戏法",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1966,
+        820,
+        2252,
+        878
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "move_name_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1966,
+        962,
+        2252,
+        1020
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_hp_0_current",
+      "kind": "numeric",
+      "expected": "185",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        464,
+        1103,
+        558,
+        1152
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_hp_0_maximum",
+      "kind": "numeric",
+      "expected": "185",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        577,
+        1116,
+        637,
+        1152
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_hp_1_current",
+      "kind": "numeric",
+      "expected": "157",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        905,
+        1103,
+        999,
+        1152
+      ]
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "own_hp_1_maximum",
+      "kind": "numeric",
+      "expected": "157",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1017,
+        1116,
+        1078,
+        1152
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_hp_0_current",
+      "kind": "numeric",
+      "expected": "137",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        464,
+        1103,
+        558,
+        1152
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_hp_0_maximum",
+      "kind": "numeric",
+      "expected": "137",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        577,
+        1116,
+        637,
+        1152
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_hp_1_current",
+      "kind": "numeric",
+      "expected": "173",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        905,
+        1103,
+        999,
+        1152
+      ]
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_hp_1_maximum",
+      "kind": "numeric",
+      "expected": "173",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1017,
+        1116,
+        1078,
+        1152
+      ]
+    }
+  ]
+}

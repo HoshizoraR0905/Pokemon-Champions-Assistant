@@ -60,3 +60,21 @@ Normalized regions tolerate scaling with the same composition; window chrome, le
 Recognition defaults to the audited `2026-10-13-M-C.1` snapshot. Official M-C species eligibility is separate from community dex facts, form legality and move availability. Missing catalog entries remain unknown; omitted official species are illegal in M-C without being declared unavailable in the game. The April 16 v1.1.0 snapshot is archived in `knowledge/archive/2026-04-16-v1.1.0`.
 
 See [the source audit and refresh instructions](reports/M1.1-data-audit.md), [version manifest](knowledge/data/manifest.json), [coverage and unresolved records](knowledge/data/coverage.json), and [real screenshot results](reports/M1.1-current-screenshots.json). Upstream MIT software licensing does not establish blanket redistribution rights for third-party data; the audit records the limits.
+
+### M1.2: OCR and Pokémon icons
+
+The default recognizer uses locally installed PP-OCRv6 recognition weights for Chinese and English text. If those weights are absent, it reports a Tesseract fallback. It uses a separately retrieved, checksum-verified Champions thumbnail cache for icon matching. The cache is optional and is never downloaded during recognition. Species and form names, Champion availability and M-C legality come from the local knowledge snapshot; icon matching ignores roster eligibility when ranking visual candidates.
+
+On Apple Silicon, install optional OCR dependencies and retrieve official weights explicitly:
+
+```sh
+python -m pip install -e '.[ocr,test]'
+python scripts/setup_ocr.py --backend all
+python scripts/retrieve_visuals.py
+python main.py --image tests/fixtures/battle_screen.png
+python main.py --image tests/fixtures/team_preview.png --verbose --json-out outputs/preview.jsonl
+```
+
+`--ocr paddle-v6`, `--ocr paddle-v5` and `--ocr tesseract` select a backend. `--no-icons` disables visual matching. Terminal output is concise by default; `--verbose` shows all diagnostics, and `--json-out` writes complete JSON lines. OCR and visual scores remain separate, and a disagreement yields a conflict instead of an identity.
+
+The identity index covers 1,025 National Pokédex species and 1,579 PokeAPI forms; the Champions thumbnail manifest lists 393 PNGs and 14 unmapped filenames. See [the M1.2 audit and benchmark](reports/M1.2-recognition.md), [form index](knowledge/data/identity.json), [visual asset manifest](knowledge/data/visual_assets.json), [ground truth](tests/fixtures/m12_ground_truth.json), and per-backend results in `reports/M1.2-*.json`. Captured thumbnails are kept in `.cache/champions-icons` and are not bundled.

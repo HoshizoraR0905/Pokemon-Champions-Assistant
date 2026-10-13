@@ -12,3 +12,6 @@ __pycache__/
 
 # Recorded gameplay videos
 tests/fixtures/*.mp4
+
+# Retrieved copyrighted visual assets and downloaded OCR weights
+.cache/

@@ -63,6 +63,33 @@ class Pokemon:
     hp: Observation = field(default_factory=Observation)
     configuration: dict[str, Observation] = field(default_factory=dict)
     team_instance_id: str | None = None
+    icon: 'IconEvidence | None' = None
+
+
+@dataclass
+class IconCandidate:
+    canonical_id: str | None
+    species_id: int | None
+    form_id: int | None
+    asset: str
+    similarity: float
+    scale: float
+    location: tuple[int, int]
+
+
+@dataclass
+class IconEvidence:
+    status: str = 'unresolved'
+    species_id: int | None = None
+    form_id: int | None = None
+    canonical_id: str | None = None
+    region: tuple[int, int, int, int] | None = None
+    candidates: list[IconCandidate] = field(default_factory=list)
+    method: str = 'masked_multiscale_template'
+    score_semantics: str = 'masked color correlation, not calibrated probability'
+    latency_ms: float = 0.0
+    source_commit: str = ''
+    reason: str = ''
 
 
 @dataclass

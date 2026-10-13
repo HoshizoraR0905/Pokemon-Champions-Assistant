@@ -65,6 +65,13 @@ class KnowledgeBase:
             if hashlib.sha256(facts_raw).hexdigest() != self.manifest['files'].get('champions_facts.json'):
                 raise ValueError('Champions facts checksum does not match manifest')
             self.facts = json.loads(facts_raw)
+        self.identity = {}
+        identity_path = directory/'identity.json'
+        if identity_path.exists():
+            identity_raw = identity_path.read_bytes()
+            if hashlib.sha256(identity_raw).hexdigest() != self.manifest['files'].get('identity.json'):
+                raise ValueError('Identity snapshot checksum does not match manifest')
+            self.identity = json.loads(identity_raw)
         self.radicals = data['radicals']
         self.relationships = data['relationships']
         self.version = self.manifest['champions']['metadata']['version']
