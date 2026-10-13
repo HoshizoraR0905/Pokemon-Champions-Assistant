@@ -1,0 +1,30 @@
+{
+  "checked_at_utc": "2026-10-13T06:58:42.012749+00:00",
+  "scope": "Species name spot checks only; no claim of complete translation verification",
+  "checks": [
+    {
+      "canonical_id": "pokeapi:species:373",
+      "source_name": "暴飞龙",
+      "official_name": "暴飞龙",
+      "matches": true,
+      "url": "https://dex.pokemon.cn/play/pokedex/0373",
+      "page_sha256": "ec28158948aa4d7382963f829ddae1f53dc362c373779ee5abba8f3b647655ea"
+    },
+    {
+      "canonical_id": "pokeapi:species:823",
+      "source_name": "钢铠鸦",
+      "official_name": "钢铠鸦",
+      "matches": true,
+      "url": "https://dex.pokemon.cn/play/pokedex/0823",
+      "page_sha256": "cd8fc453ecb38c45503fb970c1a72252bc9a73c5ca8a139a63096687e3301c5e"
+    },
+    {
+      "canonical_id": "pokeapi:species:903",
+      "source_name": "大狃拉",
+      "official_name": "大狃拉",
+      "matches": true,
+      "url": "https://dex.pokemon.cn/play/pokedex/0903",
+      "page_sha256": "6bccfb7ae261d88446167e8235092b0f4c0803d5ad5594c533b40c85d7a102f2"
+    }
+  ]
+}

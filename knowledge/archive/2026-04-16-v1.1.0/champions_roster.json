@@ -1,0 +1,3372 @@
+{
+  "schema_version": 1,
+  "default_scope": "upstream-unversioned",
+  "snapshots": [
+    {
+      "scope_id": "upstream-unversioned",
+      "game_version": null,
+      "dataset_version": "1.1.0",
+      "as_of": "2026-04-16",
+      "completeness": "unverified",
+      "authoritative": false,
+      "source": {
+        "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+        "commit": "cb874a3040174314f67642f382143cc8a401122a",
+        "commit_date": "2026-04-16T11:22:59+01:00",
+        "path": "pokemon/roster.json",
+        "dataset_version": "1.1.0"
+      },
+      "unmapped_entries": [
+        {
+          "kind": "species",
+          "name": "Paldean Tauros",
+          "reason": "no unique validated name/ID join"
+        }
+      ],
+      "entries": [
+        {
+          "canonical_id": "pokeapi:species:3",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:6",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:9",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:15",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:18",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:24",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:25",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:26",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:36",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:38",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:59",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:65",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:68",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:71",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:80",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:94",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:115",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:121",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:127",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:128",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:130",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:132",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:134",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:135",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:136",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:142",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:143",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:149",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:154",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:157",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:160",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:168",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:181",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:184",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:186",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:196",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:197",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:199",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:205",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:208",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:212",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:214",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:227",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:229",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:248",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:279",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:282",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:302",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:306",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:308",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:310",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:319",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:323",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:324",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:334",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:350",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:351",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:354",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:358",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:359",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:362",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:389",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:392",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:395",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:405",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:407",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:409",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:411",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:428",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:442",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:445",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:448",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:450",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:454",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:460",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:461",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:464",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:470",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:471",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:472",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:473",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:475",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:478",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:479",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:497",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:500",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:503",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:505",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:510",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:512",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:514",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:516",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:530",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:531",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:534",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:547",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:553",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:563",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:569",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:571",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:579",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:584",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:587",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:609",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:614",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:618",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:623",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:635",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:637",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:652",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:655",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:658",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:660",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:663",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:666",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:670",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:671",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:675",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:676",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:678",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:681",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:683",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:685",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:693",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:695",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:697",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:699",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:700",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:701",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:702",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:706",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:707",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:709",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:711",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:713",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:715",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:724",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:727",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:730",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:733",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:740",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:745",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:748",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:750",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:752",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:758",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:763",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:765",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:766",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:778",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:780",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:784",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:823",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:841",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:842",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:844",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:855",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:858",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:866",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:867",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:869",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:877",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:887",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:899",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:900",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:902",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:903",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:908",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:911",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:914",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:925",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:934",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:936",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:937",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:939",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:952",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:956",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:959",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:964",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:968",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:970",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:981",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:983",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:1013",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:1018",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:species:1019",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10133",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10134",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10135",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10136",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10137",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10138",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10139",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10140",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10141",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10142",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10145",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10146",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10147",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10148",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10149",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10151",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10153",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10154",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10155",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10156",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10157",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10158",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10159",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10160",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10168",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10169",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10170",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10171",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10172",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10173",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10174",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10175",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10176",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10189",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10190",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10192",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10202",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10206",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10324",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10331",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10339",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10399",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10402",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10405",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10408",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10411",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10412",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10413",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10503",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10504",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10505",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10506",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10507",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10508",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10509",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10510",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10511",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10512",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10516",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10517",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10518",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10519",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10521",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10525",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10527",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10531",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10538",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10540",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10545",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10546",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        },
+        {
+          "canonical_id": "pokeapi:form:10554",
+          "status": "confirmed_available",
+          "source": {
+            "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+            "commit": "cb874a3040174314f67642f382143cc8a401122a",
+            "commit_date": "2026-04-16T11:22:59+01:00",
+            "path": "pokemon/roster.json",
+            "dataset_version": "1.1.0"
+          },
+          "evidence_type": "community_roster_assertion",
+          "independently_verified": false
+        }
+      ],
+      "regulations": []
+    }
+  ]
+}

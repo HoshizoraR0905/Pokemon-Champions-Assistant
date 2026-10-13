@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "inspected_on": "2026-10-13",
+  "champions": {
+    "repository": "https://github.com/otterlyclueless/pokemon-champions-data",
+    "commit": "cb874a3040174314f67642f382143cc8a401122a",
+    "commit_date": "2026-04-16T11:22:59+01:00",
+    "license": "CC-BY-4.0",
+    "metadata": {
+      "version": "1.1.0",
+      "lastUpdated": "2026-04-16",
+      "gameVersion": "Pokemon Champions",
+      "dataFormat": "JSON",
+      "sources": [
+        "Pokemon Showdown (base stats, abilities, types — already updated for Champions)",
+        "Serebii.net Champions pages (move stats, PP, learnsets — scraped April 16 2026)",
+        "Serebii.net Champions updated attacks page (power/accuracy/effect changes)"
+      ],
+      "verification": {
+        "description": "All data has been cross-referenced against Serebii's Champions pages. The championsVerified flag is true for all entries. Moves include an inChampions field — 494 moves are available in Champions, 406 are not.",
+        "stats": {
+          "pokemon_verified": 258,
+          "pokemon_total": 258,
+          "abilities_verified": 191,
+          "abilities_total": 191,
+          "moves_verified": 900,
+          "moves_in_champions": 494,
+          "moves_total": 900,
+          "learnsets_verified": 258,
+          "learnsets_total": 258
+        },
+        "moveCorrectionSummary": {
+          "ppChanges": 399,
+          "powerChanges": 12,
+          "accuracyChanges": 2,
+          "notInChampions": 406
+        }
+      },
+      "counts": {
+        "pokemon": 258,
+        "movesInChampions": 494,
+        "movesTotal": 900,
+        "abilities": 191,
+        "items": 583,
+        "natures": 25,
+        "types": 18
+      }
+    },
+    "roster_audit": {
+      "checked_on": "2026-10-13",
+      "upstream_head": "cb874a3040174314f67642f382143cc8a401122a",
+      "upstream_matches_bundled": true,
+      "completeness": "unverified",
+      "authoritative": false,
+      "game_build": null,
+      "regulation": null,
+      "missing_is_unknown": true
+    }
+  },
+  "localization": {
+    "repository": "https://github.com/PokeAPI/pokeapi",
+    "commit": "81d20919845b6a445969b9265aab5cec6b04cece",
+    "commit_date": "2026-10-13T00:08:32Z",
+    "license": "BSD-3-Clause",
+    "languages": {
+      "9": "en",
+      "12": "zh-hans"
+    },
+    "validation": "Language IDs and canonical numeric joins validated; official-site species spot checks in validation.json. Not all translations independently verified."
+  },
+  "unihan": {
+    "source": "https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip",
+    "license": "Unicode-3.0",
+    "field": "kRSUnicode",
+    "sha256": "4c93ea9c1f636451729a840978f1667a53886af37ba854fdcce109721c63d43e"
+  },
+  "files": {
+    "champions/pokemon/roster.json": "64829ba2e67bef366e1c5e2e31fab0aa1accb7ffd7472be47fde18fc1158f346",
+    "champions/moves/moves.json": "bd1cf9462aca5cd2ac1705c5ce210bb3aec2135d6d7148681f28bd2838a80f9b",
+    "champions/abilities/abilities.json": "9636176df42763714ef316268616d639ec231bf9331004569b51e024aaf71b1c",
+    "champions/items/items.json": "3b78d284a7b116a8d306b8a07df63659e220e297a3eb2bbb303bfee34a506149",
+    "champions/learnsets/learnsets.json": "3bd88214f1a942d18572845a948a840af383f1559562ada96c85ea74be6abcc4",
+    "champions/meta/version.json": "fcc82e497309093de05b1d7800bc6e444d43fa659e5fa69aef4e93d1ed214fbc",
+    "pokeapi/abilities.csv": "74c3588ad48e08e54ff01f432899a4028c3e91508bbd53201df85e1f6b9e9ef3",
+    "pokeapi/ability_names.csv": "8acb80c42210f86ae747dc3347b060d69cd2574a9dbfaf74774ae632ca6348da",
+    "pokeapi/item_names.csv": "c4ad0b446e395c378d8ba75d6900f051cc9ebb99431d4000adeac35f492852f0",
+    "pokeapi/items.csv": "f08cd6dc30b447cb91cbe9232c79052e8521f32f6105bb1489b5bfabf4ca3241",
+    "pokeapi/languages.csv": "fbb60019a6a461783d5671a995d5f590db61792a273e90faa0ed630d102a19b8",
+    "pokeapi/move_names.csv": "99e23ee38ea53d1473474d463b87651deac3cd4928750f8186feae66da45c147",
+    "pokeapi/moves.csv": "8aafd37bf78f19471495c05b201545180f50f0a08a2a2a844d69f9837dd39ac9",
+    "pokeapi/pokemon.csv": "16c81c33188b0eac403aa2f759fcbe9e42c611f722d263f5b5a6a5bff9f8ce6b",
+    "pokeapi/pokemon_form_names.csv": "f496066d02fab12c18d10cce0af2f748d09cb7e296ecc784cc8682f8c4da8625",
+    "pokeapi/pokemon_forms.csv": "99bf8f7ad4dc1f2e291357a090cef6a575623ec3cbf9030d0e33656e6e608ae2",
+    "pokeapi/pokemon_species.csv": "e66e2eeb25fd3836b0ebab6bf87bbf01960aa3c0555e2bac495fa8393c5e0c45",
+    "pokeapi/pokemon_species_names.csv": "820cde17074cdb1c2b0595c997fb8f998e773bd5da3bb525dec85703c86c5fd9",
+    "entities.json": "4693fa7932c3a30b0e5cbc8dc68fbf533f8f09ef225ef0e88d46c25581000dda",
+    "champions_roster.json": "29a476df3808a67b1db9de6e8fdfa43c006c4af6fdf2e97679b05d531b0b25a9"
+  },
+  "unmapped_champions_entries": [
+    {
+      "kind": "species",
+      "name": "Paldean Tauros",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Befuddle",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Cannonade",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Centiferno",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Chi Strike",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Cuddle",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Depletion",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Drum Solo",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Finale",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Fireball",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Foam Burst",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Gold Rush",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Gravitas",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Hydrosnipe",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Malodor",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Meltdown",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max One Blow",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Rapid Flow",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Replenish",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Resonance",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Sandblast",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Smite",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Snooze",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Steelsurge",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Stonesurge",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Stun Shock",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Sweetness",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Tartness",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Terror",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Vine Lash",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Volcalith",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Volt Crash",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Wildfire",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "G-Max Wind Rage",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Bug",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Dark",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Dragon",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Electric",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Fighting",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Fire",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Flying",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Ghost",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Grass",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Ground",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Ice",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Poison",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Psychic",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Rock",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Steel",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Hidden Power Water",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Nihil Light",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Paleo Wave",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Polar Flare",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "move",
+      "name": "Shadow Strike",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Berry",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Berserk Gene",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Bitter Berry",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Burnt Berry",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Crucibellite",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Gold Berry",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Ice Berry",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Mail",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Mint Berry",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Miracle Berry",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Mystery Berry",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "PRZ Cure Berry",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "PSN Cure Berry",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Pink Bow",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Poke Ball",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Polkadot Bow",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Stick",
+      "reason": "no unique validated name/ID join"
+    },
+    {
+      "kind": "item",
+      "name": "Vile Vial",
+      "reason": "no unique validated name/ID join"
+    }
+  ],
+  "entity_counts": {
+    "species": 1643,
+    "move": 937,
+    "ability": 374,
+    "item": 2221
+  },
+  "limitations": [
+    "No automatic data refresh or guarantee of game availability.",
+    "Items lack game availability flags; forms and localization coverage are incomplete.",
+    "Source championsVerified flags are claims, not recognition verification."
+  ]
+}

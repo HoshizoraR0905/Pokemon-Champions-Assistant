@@ -1,0 +1,2626 @@
+[
+  {
+    "tag": "v0.7.15",
+    "target_commitish": "54a4856b63c65a59efc4424af3095eba0e90f8b1",
+    "published_at": "2026-10-12T13:53:09Z",
+    "updated_at": "2026-10-12T16:46:25Z",
+    "assets": [
+      {
+        "name": "M-7_20261011_double_en.png",
+        "size": 507413,
+        "created_at": "2026-10-12T16:44:54Z",
+        "updated_at": "2026-10-12T16:44:58Z",
+        "digest": "sha256:e86e78b2c3b2ff46b2cdd7e6a5b978d1920d17bd3a9bdbfa08be379a9b3aee04",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.15/M-7_20261011_double_en.png"
+      },
+      {
+        "name": "M-7_20261011_double_ja.png",
+        "size": 515619,
+        "created_at": "2026-10-12T16:45:01Z",
+        "updated_at": "2026-10-12T16:45:06Z",
+        "digest": "sha256:8ac7d4cfbe265975d1a8ffefbc1e633934ce760cdecf2e34692743ae12879d2a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.15/M-7_20261011_double_ja.png"
+      },
+      {
+        "name": "M-7_20261011_double_zh.png",
+        "size": 530154,
+        "created_at": "2026-10-12T16:45:09Z",
+        "updated_at": "2026-10-12T16:45:13Z",
+        "digest": "sha256:39ea23c258cf1664bfb2f909f671065dc9105ee721b5dbeec2a5d94e0b382d9d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.15/M-7_20261011_double_zh.png"
+      },
+      {
+        "name": "M-7_20261011_en.xlsx",
+        "size": 319629,
+        "created_at": "2026-10-12T16:45:16Z",
+        "updated_at": "2026-10-12T16:45:21Z",
+        "digest": "sha256:c873c3cb77d10e00e9cf6e18866341ced5bab5c3d942c2b6551a6cd5ccf693f3",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.15/M-7_20261011_en.xlsx"
+      },
+      {
+        "name": "M-7_20261011_ja.xlsx",
+        "size": 374355,
+        "created_at": "2026-10-12T16:45:24Z",
+        "updated_at": "2026-10-12T16:45:29Z",
+        "digest": "sha256:5af891fbdb8d4917a47a9a7c0c28576191d13f3b9e194226561216b2257aaccf",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.15/M-7_20261011_ja.xlsx"
+      },
+      {
+        "name": "M-7_20261011_single_en.png",
+        "size": 576844,
+        "created_at": "2026-10-12T16:45:31Z",
+        "updated_at": "2026-10-12T16:45:37Z",
+        "digest": "sha256:c9e25ca9f1a1f6bcd07da4e682c8abc97eb2e56a40464c4793eee936aa61c70d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.15/M-7_20261011_single_en.png"
+      },
+      {
+        "name": "M-7_20261011_single_ja.png",
+        "size": 595390,
+        "created_at": "2026-10-12T16:45:40Z",
+        "updated_at": "2026-10-12T16:45:44Z",
+        "digest": "sha256:9abe1f4f157434f8f3b864d0788c2b1ddebbee22eadb1fcb4a6e106acb8c81f2",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.15/M-7_20261011_single_ja.png"
+      },
+      {
+        "name": "M-7_20261011_single_zh.png",
+        "size": 601076,
+        "created_at": "2026-10-12T16:45:48Z",
+        "updated_at": "2026-10-12T16:45:52Z",
+        "digest": "sha256:145d8271ec3e609c6747e45ad764eb05ed0c703f59c366f355213904ba2e10be",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.15/M-7_20261011_single_zh.png"
+      },
+      {
+        "name": "M-7_20261011_zh.xlsx",
+        "size": 355699,
+        "created_at": "2026-10-12T16:45:55Z",
+        "updated_at": "2026-10-12T16:46:00Z",
+        "digest": "sha256:9128d5d2cbb7104f79c0b08c51690abb143a193f5e2581b1072b3a244a9646e7",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.15/M-7_20261011_zh.xlsx"
+      },
+      {
+        "name": "Quark_Drive_Web.zip",
+        "size": 47117316,
+        "created_at": "2026-10-12T16:46:03Z",
+        "updated_at": "2026-10-12T16:46:18Z",
+        "digest": "sha256:22a4a0e5232645a14fc19d0d7ba708869b93c80a29075fe6cec553caee27dae5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.15/Quark_Drive_Web.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.14",
+    "target_commitish": "2b651cf28925daf051ef76e47c9a742c7d54c46a",
+    "published_at": "2026-10-10T14:51:05Z",
+    "updated_at": "2026-10-10T14:51:05Z",
+    "assets": [
+      {
+        "name": "M-7_20261010_double_en.png",
+        "size": 430402,
+        "created_at": "2026-10-10T14:50:13Z",
+        "updated_at": "2026-10-10T14:50:13Z",
+        "digest": "sha256:02298cb56a9393513bed82a322b3860337a3d0392ce18cd57a908246f8986a4c",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.14/M-7_20261010_double_en.png"
+      },
+      {
+        "name": "M-7_20261010_double_ja.png",
+        "size": 433952,
+        "created_at": "2026-10-10T14:50:17Z",
+        "updated_at": "2026-10-10T14:50:17Z",
+        "digest": "sha256:8e178720480347bf659ae3277b1d44338f3e66bcbaa93f3193da31ba78b43bd5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.14/M-7_20261010_double_ja.png"
+      },
+      {
+        "name": "M-7_20261010_double_zh.png",
+        "size": 453578,
+        "created_at": "2026-10-10T14:50:21Z",
+        "updated_at": "2026-10-10T14:50:21Z",
+        "digest": "sha256:8ac51397367c79f2afb00dd8029832c04c75a821c40cfad5032a7fd9f3690ac8",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.14/M-7_20261010_double_zh.png"
+      },
+      {
+        "name": "M-7_20261010_en.xlsx",
+        "size": 299962,
+        "created_at": "2026-10-10T14:50:25Z",
+        "updated_at": "2026-10-10T14:50:26Z",
+        "digest": "sha256:9dc8a82ef9dd48a47a02798dfe0b636a2c62ca8f9ce09ddfb6a580aa3325fdec",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.14/M-7_20261010_en.xlsx"
+      },
+      {
+        "name": "M-7_20261010_ja.xlsx",
+        "size": 352815,
+        "created_at": "2026-10-10T14:50:29Z",
+        "updated_at": "2026-10-10T14:50:30Z",
+        "digest": "sha256:df455ce6ea777be2fa6e71dac1bc288a413a3f9ae56c5c4fd227a4fa0dcc41ac",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.14/M-7_20261010_ja.xlsx"
+      },
+      {
+        "name": "M-7_20261010_single_en.png",
+        "size": 429451,
+        "created_at": "2026-10-10T14:50:34Z",
+        "updated_at": "2026-10-10T14:50:35Z",
+        "digest": "sha256:7dd020086b21dff1d7c020ba08601419d187c02ad5243238607dbdc21435f199",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.14/M-7_20261010_single_en.png"
+      },
+      {
+        "name": "M-7_20261010_single_ja.png",
+        "size": 462215,
+        "created_at": "2026-10-10T14:50:38Z",
+        "updated_at": "2026-10-10T14:50:39Z",
+        "digest": "sha256:cb519cb24d90fc2b387b72c288fa6c64eb00c9fa2165a93ab90f61099ded08cf",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.14/M-7_20261010_single_ja.png"
+      },
+      {
+        "name": "M-7_20261010_single_zh.png",
+        "size": 473411,
+        "created_at": "2026-10-10T14:50:42Z",
+        "updated_at": "2026-10-10T14:50:43Z",
+        "digest": "sha256:cc3bc68cf4559e3b9e3433e8a2a6a19106dc2241116c51505d1308edaee3bcc6",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.14/M-7_20261010_single_zh.png"
+      },
+      {
+        "name": "M-7_20261010_zh.xlsx",
+        "size": 336065,
+        "created_at": "2026-10-10T14:50:47Z",
+        "updated_at": "2026-10-10T14:50:47Z",
+        "digest": "sha256:e96112d5cc3010898a5e63031db50bf7c96a30ee61713a0ec56dbc1e4c622250",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.14/M-7_20261010_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 44584753,
+        "created_at": "2026-10-10T14:50:51Z",
+        "updated_at": "2026-10-10T14:50:56Z",
+        "digest": "sha256:e8abe876c4728e177279cad8ec313ed33090a0c5ba4b0057ffae297fd5bbceb8",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.14/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.13",
+    "target_commitish": "5f9b738765064088104af5e7e41f46f038ec5999",
+    "published_at": "2026-10-08T07:07:06Z",
+    "updated_at": "2026-10-08T07:07:06Z",
+    "assets": [
+      {
+        "name": "M-7_20261008_double_en.png",
+        "size": 202361,
+        "created_at": "2026-10-08T07:06:08Z",
+        "updated_at": "2026-10-08T07:06:08Z",
+        "digest": "sha256:5e8f24ec754d3e4c8cacf4575b6cedb1818ec3c3f56bd04d9e7709518af38574",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.13/M-7_20261008_double_en.png"
+      },
+      {
+        "name": "M-7_20261008_double_ja.png",
+        "size": 187738,
+        "created_at": "2026-10-08T07:06:12Z",
+        "updated_at": "2026-10-08T07:06:13Z",
+        "digest": "sha256:565afe22872177b90f085e9367ade1b42f05bfa6964a22306681ede0b5791a72",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.13/M-7_20261008_double_ja.png"
+      },
+      {
+        "name": "M-7_20261008_double_zh.png",
+        "size": 216605,
+        "created_at": "2026-10-08T07:06:17Z",
+        "updated_at": "2026-10-08T07:06:17Z",
+        "digest": "sha256:6bf38533d38ca1d7a5d9d2cf1fcf51c9dae0f5b489a9343ea35149d5b1d67e1b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.13/M-7_20261008_double_zh.png"
+      },
+      {
+        "name": "M-7_20261008_en.xlsx",
+        "size": 263260,
+        "created_at": "2026-10-08T07:06:21Z",
+        "updated_at": "2026-10-08T07:06:22Z",
+        "digest": "sha256:6b964880fab0393ca5d03e8a6c2f6653ef42f93f311e921913da381d55b4088b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.13/M-7_20261008_en.xlsx"
+      },
+      {
+        "name": "M-7_20261008_ja.xlsx",
+        "size": 310762,
+        "created_at": "2026-10-08T07:06:26Z",
+        "updated_at": "2026-10-08T07:06:26Z",
+        "digest": "sha256:8b1d92b982264fd8717f51d1ee6675e0b035fd2b13e8cf71e91f6ed5f202671f",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.13/M-7_20261008_ja.xlsx"
+      },
+      {
+        "name": "M-7_20261008_single_en.png",
+        "size": 203952,
+        "created_at": "2026-10-08T07:06:30Z",
+        "updated_at": "2026-10-08T07:06:30Z",
+        "digest": "sha256:a6842c2f3a633cf34898fc938f8e74aa172ceccea45355754106ac139e0ed109",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.13/M-7_20261008_single_en.png"
+      },
+      {
+        "name": "M-7_20261008_single_ja.png",
+        "size": 185149,
+        "created_at": "2026-10-08T07:06:39Z",
+        "updated_at": "2026-10-08T07:06:39Z",
+        "digest": "sha256:3748d8fff96f58c0f4ec26d5d58da714b2e985ccfc4d6f296aa5312e5c704575",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.13/M-7_20261008_single_ja.png"
+      },
+      {
+        "name": "M-7_20261008_single_zh.png",
+        "size": 209684,
+        "created_at": "2026-10-08T07:06:44Z",
+        "updated_at": "2026-10-08T07:06:45Z",
+        "digest": "sha256:2f6b5706ffe2e3fb2ef679bbe29c9040e8241e27d1a6b75f6cc7d743f78e5de5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.13/M-7_20261008_single_zh.png"
+      },
+      {
+        "name": "M-7_20261008_zh.xlsx",
+        "size": 297622,
+        "created_at": "2026-10-08T07:06:49Z",
+        "updated_at": "2026-10-08T07:06:49Z",
+        "digest": "sha256:a6786c906b6e2741933eb85e9bbf83e94aecb3c942ac7282f5008ca0be85292d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.13/M-7_20261008_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 40041177,
+        "created_at": "2026-10-08T07:06:53Z",
+        "updated_at": "2026-10-08T07:06:57Z",
+        "digest": "sha256:fea7a069faaa816aad5bd77fab13bbe7a1cfd07e6b6851ccba625b0e29b09ca4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.13/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.12",
+    "target_commitish": "8af032b2970f984ed8b90f10d641497999850f24",
+    "published_at": "2026-10-05T15:52:31Z",
+    "updated_at": "2026-10-05T15:52:31Z",
+    "assets": [
+      {
+        "name": "M-6_20261005_double_en.png",
+        "size": 763800,
+        "created_at": "2026-10-05T15:51:41Z",
+        "updated_at": "2026-10-05T15:51:42Z",
+        "digest": "sha256:cd4cc65d626f163d674995f0a3b6ecf571aa98b67723aadc502b05f5d3041bea",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.12/M-6_20261005_double_en.png"
+      },
+      {
+        "name": "M-6_20261005_double_ja.png",
+        "size": 788431,
+        "created_at": "2026-10-05T15:51:46Z",
+        "updated_at": "2026-10-05T15:51:47Z",
+        "digest": "sha256:80f92aec9d2c8e15c31b796d39b676c11b5ca55f50e9fcf8c4ce1ec9126054ed",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.12/M-6_20261005_double_ja.png"
+      },
+      {
+        "name": "M-6_20261005_double_zh.png",
+        "size": 809751,
+        "created_at": "2026-10-05T15:51:51Z",
+        "updated_at": "2026-10-05T15:51:52Z",
+        "digest": "sha256:8b3585fe6921f99512538e039f644e1bf7d4f83ba06c3b517ffb3b68b52192f1",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.12/M-6_20261005_double_zh.png"
+      },
+      {
+        "name": "M-6_20261005_en.xlsx",
+        "size": 246095,
+        "created_at": "2026-10-05T15:51:56Z",
+        "updated_at": "2026-10-05T15:51:57Z",
+        "digest": "sha256:749d4fd17609746454a5017f150a98796fafa669ff61bf263ae39b2adaaa2a41",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.12/M-6_20261005_en.xlsx"
+      },
+      {
+        "name": "M-6_20261005_ja.xlsx",
+        "size": 302654,
+        "created_at": "2026-10-05T15:52:01Z",
+        "updated_at": "2026-10-05T15:52:01Z",
+        "digest": "sha256:c01219e816911f6aa1e943ad803c77c32c2783516bbbf27cdb7b5ce5d6be28aa",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.12/M-6_20261005_ja.xlsx"
+      },
+      {
+        "name": "M-6_20261005_single_en.png",
+        "size": 844765,
+        "created_at": "2026-10-05T15:52:05Z",
+        "updated_at": "2026-10-05T15:52:06Z",
+        "digest": "sha256:4016696c9eb32d1b1f19752a4cb8eaf253b8c8c7712b3b6f5f971c0109f44866",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.12/M-6_20261005_single_en.png"
+      },
+      {
+        "name": "M-6_20261005_single_ja.png",
+        "size": 849945,
+        "created_at": "2026-10-05T15:52:10Z",
+        "updated_at": "2026-10-05T15:52:10Z",
+        "digest": "sha256:43dd8de10033cd128401a118d4970057234693971bac5eee2219c9ef283eb3d0",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.12/M-6_20261005_single_ja.png"
+      },
+      {
+        "name": "M-6_20261005_single_zh.png",
+        "size": 849660,
+        "created_at": "2026-10-05T15:52:15Z",
+        "updated_at": "2026-10-05T15:52:15Z",
+        "digest": "sha256:823398759ac9fa7cac8c4e9c3d2941b7c3c43581131ca2a45c658ccd37d97133",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.12/M-6_20261005_single_zh.png"
+      },
+      {
+        "name": "M-6_20261005_zh.xlsx",
+        "size": 280977,
+        "created_at": "2026-10-05T15:52:20Z",
+        "updated_at": "2026-10-05T15:52:20Z",
+        "digest": "sha256:4c14e99e715b1c49cb5a587262d6ef9465235459d9d162bc5da347c96d432874",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.12/M-6_20261005_zh.xlsx"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.11",
+    "target_commitish": "c3a6909949a22b934ecbffdd1672c4209902d5b3",
+    "published_at": "2026-10-03T14:30:51Z",
+    "updated_at": "2026-10-03T14:30:51Z",
+    "assets": [
+      {
+        "name": "M-6_20261003_double_en.png",
+        "size": 813514,
+        "created_at": "2026-10-03T14:29:41Z",
+        "updated_at": "2026-10-03T14:29:41Z",
+        "digest": "sha256:23c3d3f932a8f3180972f80060836bfdd1afa1dabaed136f12b1a66d36ef4e16",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.11/M-6_20261003_double_en.png"
+      },
+      {
+        "name": "M-6_20261003_double_ja.png",
+        "size": 843791,
+        "created_at": "2026-10-03T14:29:45Z",
+        "updated_at": "2026-10-03T14:29:45Z",
+        "digest": "sha256:47c7f166fcf7a70d0edb577260431feed42cd9f0139f293c8abb3f4a2a3d9aa4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.11/M-6_20261003_double_ja.png"
+      },
+      {
+        "name": "M-6_20261003_double_zh.png",
+        "size": 862179,
+        "created_at": "2026-10-03T14:29:49Z",
+        "updated_at": "2026-10-03T14:29:50Z",
+        "digest": "sha256:7036cfc8c8cefbfe67d11047ce69d2073ddb4c567b0b98292538965a368bff37",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.11/M-6_20261003_double_zh.png"
+      },
+      {
+        "name": "M-6_20261003_en.xlsx",
+        "size": 246019,
+        "created_at": "2026-10-03T14:29:53Z",
+        "updated_at": "2026-10-03T14:29:54Z",
+        "digest": "sha256:5d584314cf16b27b8905be2dad8c5b63b3399e153f3bf4f7ad4430338a8f972c",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.11/M-6_20261003_en.xlsx"
+      },
+      {
+        "name": "M-6_20261003_ja.xlsx",
+        "size": 303376,
+        "created_at": "2026-10-03T14:29:57Z",
+        "updated_at": "2026-10-03T14:29:58Z",
+        "digest": "sha256:d1b825557ddd0e8bec792fd5dc3ca948d9ff62834e94b5599e3fe130bcfba749",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.11/M-6_20261003_ja.xlsx"
+      },
+      {
+        "name": "M-6_20261003_single_en.png",
+        "size": 916375,
+        "created_at": "2026-10-03T14:30:02Z",
+        "updated_at": "2026-10-03T14:30:02Z",
+        "digest": "sha256:7b3ddfbe98f37af3403cd53f7b26b5b6d8305b5998c7f2484b6f525b84c6dca4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.11/M-6_20261003_single_en.png"
+      },
+      {
+        "name": "M-6_20261003_single_ja.png",
+        "size": 911564,
+        "created_at": "2026-10-03T14:30:06Z",
+        "updated_at": "2026-10-03T14:30:06Z",
+        "digest": "sha256:74dc1e50b5e5e929477b2a5aa8f8d5a7d393e3b0489ac132b20f4b0476a39cfc",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.11/M-6_20261003_single_ja.png"
+      },
+      {
+        "name": "M-6_20261003_single_zh.png",
+        "size": 924400,
+        "created_at": "2026-10-03T14:30:10Z",
+        "updated_at": "2026-10-03T14:30:10Z",
+        "digest": "sha256:6e1fcf4ba2a8b33db67d9e6930007b2b7efe7ea4e3a7a13c20741a7b6706c8c1",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.11/M-6_20261003_single_zh.png"
+      },
+      {
+        "name": "M-6_20261003_zh.xlsx",
+        "size": 280702,
+        "created_at": "2026-10-03T14:30:14Z",
+        "updated_at": "2026-10-03T14:30:14Z",
+        "digest": "sha256:52bc545ef01e12d6f081c1c4d10676528d656d41df9653c750459d43c0fe905d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.11/M-6_20261003_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 44496571,
+        "created_at": "2026-10-03T14:30:18Z",
+        "updated_at": "2026-10-03T14:30:41Z",
+        "digest": "sha256:151269269d86e083e19f58e0f4aee45c436764cca33d1055d73c525a1d7cd8c9",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.11/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.10",
+    "target_commitish": "493844d991317078141899d9567e93ba70d7ac9d",
+    "published_at": "2026-09-30T12:12:53Z",
+    "updated_at": "2026-09-30T12:12:53Z",
+    "assets": [
+      {
+        "name": "M-6_20260930_double_en.png",
+        "size": 853425,
+        "created_at": "2026-09-30T12:11:59Z",
+        "updated_at": "2026-09-30T12:11:59Z",
+        "digest": "sha256:4e059bd16f7a6a68b0fbb618329acdd4668d8aca1d3ec6bd74792395b52aae13",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.10/M-6_20260930_double_en.png"
+      },
+      {
+        "name": "M-6_20260930_double_ja.png",
+        "size": 877968,
+        "created_at": "2026-09-30T12:12:03Z",
+        "updated_at": "2026-09-30T12:12:03Z",
+        "digest": "sha256:bf044f43c830c4557d49efcfbe3dd3baa5b740b0d61c9c6424cff6ff6df9df0a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.10/M-6_20260930_double_ja.png"
+      },
+      {
+        "name": "M-6_20260930_double_zh.png",
+        "size": 890856,
+        "created_at": "2026-09-30T12:12:07Z",
+        "updated_at": "2026-09-30T12:12:07Z",
+        "digest": "sha256:b3c1224fe6dedac17842c879317b7eac7cf59a7f52d06a33a8b4961788da0e23",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.10/M-6_20260930_double_zh.png"
+      },
+      {
+        "name": "M-6_20260930_en.xlsx",
+        "size": 246353,
+        "created_at": "2026-09-30T12:12:11Z",
+        "updated_at": "2026-09-30T12:12:11Z",
+        "digest": "sha256:0740cf87db8bb067964bbd3697139444ee03fff117f935f5953135816e746341",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.10/M-6_20260930_en.xlsx"
+      },
+      {
+        "name": "M-6_20260930_ja.xlsx",
+        "size": 303187,
+        "created_at": "2026-09-30T12:12:15Z",
+        "updated_at": "2026-09-30T12:12:15Z",
+        "digest": "sha256:5a104df18b29ea8cb4722a059752a56f6e200893c740c81cc24f9b0e0d271800",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.10/M-6_20260930_ja.xlsx"
+      },
+      {
+        "name": "M-6_20260930_single_en.png",
+        "size": 995030,
+        "created_at": "2026-09-30T12:12:19Z",
+        "updated_at": "2026-09-30T12:12:19Z",
+        "digest": "sha256:2452e028d51985c72c954bffc66b516e6f3865b18c1e366faf5d448367919a3b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.10/M-6_20260930_single_en.png"
+      },
+      {
+        "name": "M-6_20260930_single_ja.png",
+        "size": 979335,
+        "created_at": "2026-09-30T12:12:24Z",
+        "updated_at": "2026-09-30T12:12:24Z",
+        "digest": "sha256:9647eb2f9cd8a151c7fd8ec1a0dff1d7f445c8a07c060676b4d09db87f72d3f8",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.10/M-6_20260930_single_ja.png"
+      },
+      {
+        "name": "M-6_20260930_single_zh.png",
+        "size": 844034,
+        "created_at": "2026-09-30T12:12:28Z",
+        "updated_at": "2026-09-30T12:12:29Z",
+        "digest": "sha256:2cf540258dce5117f95b5b3cc03022fc5a0725740d7955dfdcc31b8870445e1c",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.10/M-6_20260930_single_zh.png"
+      },
+      {
+        "name": "M-6_20260930_zh.xlsx",
+        "size": 281333,
+        "created_at": "2026-09-30T12:12:33Z",
+        "updated_at": "2026-09-30T12:12:33Z",
+        "digest": "sha256:6a3cb9ff1796be43de056909e11fd99b6489879d0461553ba508dd84c08849d5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.10/M-6_20260930_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 43566502,
+        "created_at": "2026-09-30T12:12:38Z",
+        "updated_at": "2026-09-30T12:12:43Z",
+        "digest": "sha256:de2e5238a1b2464caa504bfb60b60fdbb6375aaafcffac02485b42a91b18828b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.10/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.9",
+    "target_commitish": "08deda95ad302b331c32ac965ab4de256e7476b4",
+    "published_at": "2026-09-28T08:44:19Z",
+    "updated_at": "2026-09-28T09:42:25Z",
+    "assets": [
+      {
+        "name": "M-6_20260928_double_en.png",
+        "size": 982263,
+        "created_at": "2026-09-28T08:42:59Z",
+        "updated_at": "2026-09-28T08:42:59Z",
+        "digest": "sha256:b6c81e0ccd274d97aead46720b08147097dafc9cd743adf00aa8fcb4d305c476",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.9/M-6_20260928_double_en.png"
+      },
+      {
+        "name": "M-6_20260928_double_ja.png",
+        "size": 997708,
+        "created_at": "2026-09-28T08:43:03Z",
+        "updated_at": "2026-09-28T08:43:04Z",
+        "digest": "sha256:018cad690a660ba47734aec0c011ad69f2e42bf2222f2f6e59b07aa26eca652b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.9/M-6_20260928_double_ja.png"
+      },
+      {
+        "name": "M-6_20260928_double_zh.png",
+        "size": 1021626,
+        "created_at": "2026-09-28T08:43:08Z",
+        "updated_at": "2026-09-28T08:43:08Z",
+        "digest": "sha256:36d5adb97c0df6c461b113e51f54c89ce27e6524dfaaf09901cc4c7c0ed90e19",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.9/M-6_20260928_double_zh.png"
+      },
+      {
+        "name": "M-6_20260928_en.xlsx",
+        "size": 249525,
+        "created_at": "2026-09-28T08:43:12Z",
+        "updated_at": "2026-09-28T08:43:12Z",
+        "digest": "sha256:37748ac2bd0a2e65e34ebea1e91dc2577545036cee1f24b23ec83a342d0a77ba",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.9/M-6_20260928_en.xlsx"
+      },
+      {
+        "name": "M-6_20260928_ja.xlsx",
+        "size": 306866,
+        "created_at": "2026-09-28T08:43:17Z",
+        "updated_at": "2026-09-28T08:43:17Z",
+        "digest": "sha256:8d469b5aa78d0a782c86dffb2a98dd3d35fa56f92bee217c2ce75b5aa11d92ce",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.9/M-6_20260928_ja.xlsx"
+      },
+      {
+        "name": "M-6_20260928_single_en.png",
+        "size": 994921,
+        "created_at": "2026-09-28T08:43:21Z",
+        "updated_at": "2026-09-28T08:43:22Z",
+        "digest": "sha256:f406215468fc51dbc008614fc855f6a0cf79336c006c003f9f637e5ba5838c5d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.9/M-6_20260928_single_en.png"
+      },
+      {
+        "name": "M-6_20260928_single_ja.png",
+        "size": 1042951,
+        "created_at": "2026-09-28T08:43:25Z",
+        "updated_at": "2026-09-28T08:43:26Z",
+        "digest": "sha256:10729b5be934f3bd00a163066377a15307e78a8d4bbe4ca772338abfcd9532b4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.9/M-6_20260928_single_ja.png"
+      },
+      {
+        "name": "M-6_20260928_single_zh.png",
+        "size": 1098687,
+        "created_at": "2026-09-28T08:43:29Z",
+        "updated_at": "2026-09-28T08:43:32Z",
+        "digest": "sha256:a991a43f81d0c7f14b4a6f4fd7b6b8d94a54b3846cde4d550e045e46e0b699ae",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.9/M-6_20260928_single_zh.png"
+      },
+      {
+        "name": "M-6_20260928_zh.xlsx",
+        "size": 284546,
+        "created_at": "2026-09-28T08:43:36Z",
+        "updated_at": "2026-09-28T08:43:36Z",
+        "digest": "sha256:8f730d6e1bf2089f45c3451259bfdfe77ba4cfd2cd1a306bd9debd9b417c50a2",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.9/M-6_20260928_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 44094023,
+        "created_at": "2026-09-28T08:43:40Z",
+        "updated_at": "2026-09-28T08:44:10Z",
+        "digest": "sha256:c144938d178602742af0b86cf48ca7da12fb11416e6d1e2cefb88fdd8adf2f01",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.9/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.8",
+    "target_commitish": "6a85e5dfeeb59e5a345d64d1b55965771a6f6d38",
+    "published_at": "2026-09-26T00:53:34Z",
+    "updated_at": "2026-09-26T00:53:34Z",
+    "assets": [
+      {
+        "name": "M-6_20260925_double_en.png",
+        "size": 918089,
+        "created_at": "2026-09-26T00:52:31Z",
+        "updated_at": "2026-09-26T00:52:32Z",
+        "digest": "sha256:09dcbb4d31cf89a8cca9d4d507114b5dadac31e7e5607b72b97c66d7d52eae3d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.8/M-6_20260925_double_en.png"
+      },
+      {
+        "name": "M-6_20260925_double_ja.png",
+        "size": 861432,
+        "created_at": "2026-09-26T00:52:36Z",
+        "updated_at": "2026-09-26T00:52:37Z",
+        "digest": "sha256:c60ba56deadb38ef57644d917ba3251658337ded5110c353aaf29360ced28452",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.8/M-6_20260925_double_ja.png"
+      },
+      {
+        "name": "M-6_20260925_double_zh.png",
+        "size": 970668,
+        "created_at": "2026-09-26T00:52:41Z",
+        "updated_at": "2026-09-26T00:52:42Z",
+        "digest": "sha256:66d1680eca87fc5b945abc5ee0dfc219003b124b60c2d8d069f75c5d20378dd5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.8/M-6_20260925_double_zh.png"
+      },
+      {
+        "name": "M-6_20260925_en.xlsx",
+        "size": 247223,
+        "created_at": "2026-09-26T00:52:45Z",
+        "updated_at": "2026-09-26T00:52:46Z",
+        "digest": "sha256:ce80e701549dc3256f3f98b6b11cb39caa02a75770985175a251c1d58d3296d4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.8/M-6_20260925_en.xlsx"
+      },
+      {
+        "name": "M-6_20260925_ja.xlsx",
+        "size": 305144,
+        "created_at": "2026-09-26T00:52:50Z",
+        "updated_at": "2026-09-26T00:52:51Z",
+        "digest": "sha256:3738ef46edabe063cde44204c3d9db50dde0d6566e2b85505a2680a73c8f93e4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.8/M-6_20260925_ja.xlsx"
+      },
+      {
+        "name": "M-6_20260925_single_en.png",
+        "size": 1020404,
+        "created_at": "2026-09-26T00:52:55Z",
+        "updated_at": "2026-09-26T00:52:56Z",
+        "digest": "sha256:4427577d4894509f699ad697b09f0fdc647fbd148c3b481254a2983dc4c6eec5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.8/M-6_20260925_single_en.png"
+      },
+      {
+        "name": "M-6_20260925_single_ja.png",
+        "size": 1034102,
+        "created_at": "2026-09-26T00:53:00Z",
+        "updated_at": "2026-09-26T00:53:00Z",
+        "digest": "sha256:8a5e595e6cb52f0e64d4972d5ebcaaf16202fa3d12bc3336e3ceaa09dbd1cdb6",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.8/M-6_20260925_single_ja.png"
+      },
+      {
+        "name": "M-6_20260925_single_zh.png",
+        "size": 1048626,
+        "created_at": "2026-09-26T00:53:06Z",
+        "updated_at": "2026-09-26T00:53:07Z",
+        "digest": "sha256:a63de839a8da79d29b681c161e60b9ea4a6adab9418391c5257290f494f4ff74",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.8/M-6_20260925_single_zh.png"
+      },
+      {
+        "name": "M-6_20260925_zh.xlsx",
+        "size": 282554,
+        "created_at": "2026-09-26T00:53:11Z",
+        "updated_at": "2026-09-26T00:53:11Z",
+        "digest": "sha256:91422862d7347b60f1e56a95a52dc9c7629d941af81bbf09218c9f63744b7273",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.8/M-6_20260925_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 41894002,
+        "created_at": "2026-09-26T00:53:15Z",
+        "updated_at": "2026-09-26T00:53:24Z",
+        "digest": "sha256:31c743c86e4e8dc23631213356c3dcb91b0800a85f94647455a3799eceb8ac51",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.8/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.7",
+    "target_commitish": "78e660ce8a3a128cb05edf49dc75d1da8ddff9ad",
+    "published_at": "2026-09-23T13:55:09Z",
+    "updated_at": "2026-09-23T14:59:03Z",
+    "assets": [
+      {
+        "name": "M-6_20260923_double_en.png",
+        "size": 873792,
+        "created_at": "2026-09-23T13:53:41Z",
+        "updated_at": "2026-09-23T13:53:42Z",
+        "digest": "sha256:0289f81341cc260525f88e8337c07c6c7c03275ea70b7d4d33a17835a414bfe4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.7/M-6_20260923_double_en.png"
+      },
+      {
+        "name": "M-6_20260923_double_ja.png",
+        "size": 896286,
+        "created_at": "2026-09-23T13:53:46Z",
+        "updated_at": "2026-09-23T13:53:47Z",
+        "digest": "sha256:7f04811c813ef1afff71a25b1afed2b831883a84d14272b6dd1e55f7d280f1b5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.7/M-6_20260923_double_ja.png"
+      },
+      {
+        "name": "M-6_20260923_double_zh.png",
+        "size": 916503,
+        "created_at": "2026-09-23T13:53:51Z",
+        "updated_at": "2026-09-23T13:53:52Z",
+        "digest": "sha256:7982b4a392e9851561c01e0d2cf1347bdf0beb07364d524ce56d63e9a1b7a3e9",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.7/M-6_20260923_double_zh.png"
+      },
+      {
+        "name": "M-6_20260923_en.xlsx",
+        "size": 247607,
+        "created_at": "2026-09-23T13:53:55Z",
+        "updated_at": "2026-09-23T13:53:56Z",
+        "digest": "sha256:661d2e485d6691e53d2e402c4da5506b19802447080c49b85cfef626e657c24d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.7/M-6_20260923_en.xlsx"
+      },
+      {
+        "name": "M-6_20260923_ja.xlsx",
+        "size": 305808,
+        "created_at": "2026-09-23T13:54:00Z",
+        "updated_at": "2026-09-23T13:54:00Z",
+        "digest": "sha256:24b5d86edfb9eef855032e6fec12f05633c0f19c6f99489efbe4b55c0039aef9",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.7/M-6_20260923_ja.xlsx"
+      },
+      {
+        "name": "M-6_20260923_single_en.png",
+        "size": 913158,
+        "created_at": "2026-09-23T13:54:04Z",
+        "updated_at": "2026-09-23T13:54:05Z",
+        "digest": "sha256:a7d2371d3a45e5866f651a61e07900302095c636c6b1215b208a0b9e00274b32",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.7/M-6_20260923_single_en.png"
+      },
+      {
+        "name": "M-6_20260923_single_ja.png",
+        "size": 926252,
+        "created_at": "2026-09-23T13:54:09Z",
+        "updated_at": "2026-09-23T13:54:10Z",
+        "digest": "sha256:d900cf0bfd0fee19e28bb229a9607eb340ead266c5381b224826fc9ca73ee67e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.7/M-6_20260923_single_ja.png"
+      },
+      {
+        "name": "M-6_20260923_single_zh.png",
+        "size": 938131,
+        "created_at": "2026-09-23T13:54:13Z",
+        "updated_at": "2026-09-23T13:54:14Z",
+        "digest": "sha256:9a8ed29216798fd43b5cfa632557e31e8d16ab49a2c3d9dfd7a11f4d34a22015",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.7/M-6_20260923_single_zh.png"
+      },
+      {
+        "name": "M-6_20260923_zh.xlsx",
+        "size": 283180,
+        "created_at": "2026-09-23T13:54:17Z",
+        "updated_at": "2026-09-23T13:54:18Z",
+        "digest": "sha256:e010c1643dc8f6f7f9d05da2926211db320180021a5446fab7f628234d7800d9",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.7/M-6_20260923_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 41196378,
+        "created_at": "2026-09-23T14:58:10Z",
+        "updated_at": "2026-09-23T14:58:28Z",
+        "digest": "sha256:16829c3025b8eceb8e960350f95ed92257216e56bb2989ced9dd07f4e61c0578",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.7/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.6",
+    "target_commitish": "abdbabdbb728866583ca9baa09ada30873b7abfe",
+    "published_at": "2026-09-21T13:43:47Z",
+    "updated_at": "2026-09-21T13:43:47Z",
+    "assets": [
+      {
+        "name": "M-6_20260921_double_en.png",
+        "size": 800825,
+        "created_at": "2026-09-21T13:42:57Z",
+        "updated_at": "2026-09-21T13:42:58Z",
+        "digest": "sha256:874d49e729bbc192872ec9ccaaf368e155a22acf6fa36330944f6f35f451b1a7",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.6/M-6_20260921_double_en.png"
+      },
+      {
+        "name": "M-6_20260921_double_ja.png",
+        "size": 816513,
+        "created_at": "2026-09-21T13:43:01Z",
+        "updated_at": "2026-09-21T13:43:02Z",
+        "digest": "sha256:6275304504216ec4cfbbee103d57f06f10367d785a757dadcb0f116e91832721",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.6/M-6_20260921_double_ja.png"
+      },
+      {
+        "name": "M-6_20260921_double_zh.png",
+        "size": 832405,
+        "created_at": "2026-09-21T13:43:05Z",
+        "updated_at": "2026-09-21T13:43:05Z",
+        "digest": "sha256:640e1ed4da1059f4439745129bbf3a39f6eb44eb7ac35a3cc60e3256b334aef9",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.6/M-6_20260921_double_zh.png"
+      },
+      {
+        "name": "M-6_20260921_en.xlsx",
+        "size": 248166,
+        "created_at": "2026-09-21T13:43:09Z",
+        "updated_at": "2026-09-21T13:43:10Z",
+        "digest": "sha256:10062a114ab971c96eff3a16615ed6b8d8c1e729bde60f02ed7f75b9dd2be96e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.6/M-6_20260921_en.xlsx"
+      },
+      {
+        "name": "M-6_20260921_ja.xlsx",
+        "size": 306396,
+        "created_at": "2026-09-21T13:43:13Z",
+        "updated_at": "2026-09-21T13:43:14Z",
+        "digest": "sha256:2eb13e436ea4979bc534c06da915599d1008e343e266366429f64326f09a4c22",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.6/M-6_20260921_ja.xlsx"
+      },
+      {
+        "name": "M-6_20260921_single_en.png",
+        "size": 852920,
+        "created_at": "2026-09-21T13:43:17Z",
+        "updated_at": "2026-09-21T13:43:17Z",
+        "digest": "sha256:6247dd99548d7c9d2ff4bce2067e14c9b993d8569148623057a3aa30830d432b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.6/M-6_20260921_single_en.png"
+      },
+      {
+        "name": "M-6_20260921_single_ja.png",
+        "size": 870300,
+        "created_at": "2026-09-21T13:43:21Z",
+        "updated_at": "2026-09-21T13:43:21Z",
+        "digest": "sha256:e06011fb9758c4bd37891300261a0942c1edd55a95a7b3af49e1012cee0226bc",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.6/M-6_20260921_single_ja.png"
+      },
+      {
+        "name": "M-6_20260921_single_zh.png",
+        "size": 882360,
+        "created_at": "2026-09-21T13:43:25Z",
+        "updated_at": "2026-09-21T13:43:25Z",
+        "digest": "sha256:307ffc3fcdc21d09fcdb12a1fabb959b7d7fe9af65dd18e4a6340542ca09405f",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.6/M-6_20260921_single_zh.png"
+      },
+      {
+        "name": "M-6_20260921_zh.xlsx",
+        "size": 283925,
+        "created_at": "2026-09-21T13:43:28Z",
+        "updated_at": "2026-09-21T13:43:28Z",
+        "digest": "sha256:160cca124901bc4103e9b63ac58cdf061e6a47c83ff32b2611db832aca05d4a0",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.6/M-6_20260921_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 40300835,
+        "created_at": "2026-09-21T13:43:32Z",
+        "updated_at": "2026-09-21T13:43:36Z",
+        "digest": "sha256:14c3bf05e4acd80bdad98a763e163e86f61b359330e42405cc5db95ff6c4b76d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.6/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.5",
+    "target_commitish": "dc06edb7def12c262047ee0a22649dcd3500257a",
+    "published_at": "2026-09-19T01:55:06Z",
+    "updated_at": "2026-09-19T03:43:57Z",
+    "assets": [
+      {
+        "name": "M-6_20260918_double_en.png",
+        "size": 716579,
+        "created_at": "2026-09-19T01:54:18Z",
+        "updated_at": "2026-09-19T01:54:18Z",
+        "digest": "sha256:05b734313c6b5408d967cc8cd0e171756c3531825757526920f569cc107d6da0",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.5/M-6_20260918_double_en.png"
+      },
+      {
+        "name": "M-6_20260918_double_ja.png",
+        "size": 732913,
+        "created_at": "2026-09-19T01:54:22Z",
+        "updated_at": "2026-09-19T01:54:22Z",
+        "digest": "sha256:b23ce4f57d64f13ae099d23a328e16ca4dd0eb16a72dc39815ca52a6c9b15e44",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.5/M-6_20260918_double_ja.png"
+      },
+      {
+        "name": "M-6_20260918_double_zh.png",
+        "size": 744750,
+        "created_at": "2026-09-19T01:54:25Z",
+        "updated_at": "2026-09-19T01:54:26Z",
+        "digest": "sha256:bca2317cc07a8e0f3293f32b56f99a099ed333310fc76311f997dc236c6a4416",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.5/M-6_20260918_double_zh.png"
+      },
+      {
+        "name": "M-6_20260918_en.xlsx",
+        "size": 249581,
+        "created_at": "2026-09-19T01:54:29Z",
+        "updated_at": "2026-09-19T01:54:29Z",
+        "digest": "sha256:ff51523dedd790f04a75c9b659d474692ce21fca68eca5dd660918ae4ef63543",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.5/M-6_20260918_en.xlsx"
+      },
+      {
+        "name": "M-6_20260918_ja.xlsx",
+        "size": 308673,
+        "created_at": "2026-09-19T01:54:33Z",
+        "updated_at": "2026-09-19T01:54:33Z",
+        "digest": "sha256:9adc5fb082eb02393cc2779e280b884c1a5d5ccab2209129e595d9654d8ac2f3",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.5/M-6_20260918_ja.xlsx"
+      },
+      {
+        "name": "M-6_20260918_single_en.png",
+        "size": 769521,
+        "created_at": "2026-09-19T01:54:36Z",
+        "updated_at": "2026-09-19T01:54:37Z",
+        "digest": "sha256:623e00756adff3fd8b9f3f3c03a72ddf08b7769af123138f337349a62855e2e7",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.5/M-6_20260918_single_en.png"
+      },
+      {
+        "name": "M-6_20260918_single_ja.png",
+        "size": 735388,
+        "created_at": "2026-09-19T01:54:40Z",
+        "updated_at": "2026-09-19T01:54:40Z",
+        "digest": "sha256:93ba4cc80d089767e2d2bf795387d0c866278ed7fac1a9d6734bcd8839752d24",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.5/M-6_20260918_single_ja.png"
+      },
+      {
+        "name": "M-6_20260918_single_zh.png",
+        "size": 742931,
+        "created_at": "2026-09-19T01:54:43Z",
+        "updated_at": "2026-09-19T01:54:44Z",
+        "digest": "sha256:d6051d82fd1e58f6ce2182ad1521d8b64b3eecf1ba656fddfdf1bda72f6f1c2a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.5/M-6_20260918_single_zh.png"
+      },
+      {
+        "name": "M-6_20260918_zh.xlsx",
+        "size": 285148,
+        "created_at": "2026-09-19T01:54:47Z",
+        "updated_at": "2026-09-19T01:54:47Z",
+        "digest": "sha256:6a4b9b73e38904399eedbff988b056ed5058d3d743a42b8bfc45ca022d0411a5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.5/M-6_20260918_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 38022410,
+        "created_at": "2026-09-19T03:35:55Z",
+        "updated_at": "2026-09-19T03:36:01Z",
+        "digest": "sha256:ed3e9d77fcc173045f8396963eb46719f85cc24d5d8cf66185cb9a021e0e03e9",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.5/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.4",
+    "target_commitish": "f42039921e8838710c5e628dc81ba7c604343a24",
+    "published_at": "2026-09-18T23:49:05Z",
+    "updated_at": "2026-09-18T23:49:05Z",
+    "assets": [
+      {
+        "name": "M-6_20260918_double_en.png",
+        "size": 716579,
+        "created_at": "2026-09-18T23:48:06Z",
+        "updated_at": "2026-09-18T23:48:06Z",
+        "digest": "sha256:05b734313c6b5408d967cc8cd0e171756c3531825757526920f569cc107d6da0",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.4/M-6_20260918_double_en.png"
+      },
+      {
+        "name": "M-6_20260918_double_ja.png",
+        "size": 732913,
+        "created_at": "2026-09-18T23:48:09Z",
+        "updated_at": "2026-09-18T23:48:11Z",
+        "digest": "sha256:b23ce4f57d64f13ae099d23a328e16ca4dd0eb16a72dc39815ca52a6c9b15e44",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.4/M-6_20260918_double_ja.png"
+      },
+      {
+        "name": "M-6_20260918_double_zh.png",
+        "size": 744750,
+        "created_at": "2026-09-18T23:48:14Z",
+        "updated_at": "2026-09-18T23:48:15Z",
+        "digest": "sha256:bca2317cc07a8e0f3293f32b56f99a099ed333310fc76311f997dc236c6a4416",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.4/M-6_20260918_double_zh.png"
+      },
+      {
+        "name": "M-6_20260918_en.xlsx",
+        "size": 249581,
+        "created_at": "2026-09-18T23:48:18Z",
+        "updated_at": "2026-09-18T23:48:19Z",
+        "digest": "sha256:9ac2487e38ec52353931626c10b18303b454b133980e5f1fb8e40a8a62e32ce6",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.4/M-6_20260918_en.xlsx"
+      },
+      {
+        "name": "M-6_20260918_ja.xlsx",
+        "size": 308677,
+        "created_at": "2026-09-18T23:48:22Z",
+        "updated_at": "2026-09-18T23:48:23Z",
+        "digest": "sha256:ebed78f612b169debbfd293e54e2c2252b53eec12e8312279a0dac9f0c15dd2d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.4/M-6_20260918_ja.xlsx"
+      },
+      {
+        "name": "M-6_20260918_single_en.png",
+        "size": 769521,
+        "created_at": "2026-09-18T23:48:27Z",
+        "updated_at": "2026-09-18T23:48:28Z",
+        "digest": "sha256:623e00756adff3fd8b9f3f3c03a72ddf08b7769af123138f337349a62855e2e7",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.4/M-6_20260918_single_en.png"
+      },
+      {
+        "name": "M-6_20260918_single_ja.png",
+        "size": 735388,
+        "created_at": "2026-09-18T23:48:31Z",
+        "updated_at": "2026-09-18T23:48:32Z",
+        "digest": "sha256:93ba4cc80d089767e2d2bf795387d0c866278ed7fac1a9d6734bcd8839752d24",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.4/M-6_20260918_single_ja.png"
+      },
+      {
+        "name": "M-6_20260918_single_zh.png",
+        "size": 742931,
+        "created_at": "2026-09-18T23:48:36Z",
+        "updated_at": "2026-09-18T23:48:36Z",
+        "digest": "sha256:d6051d82fd1e58f6ce2182ad1521d8b64b3eecf1ba656fddfdf1bda72f6f1c2a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.4/M-6_20260918_single_zh.png"
+      },
+      {
+        "name": "M-6_20260918_zh.xlsx",
+        "size": 285145,
+        "created_at": "2026-09-18T23:48:39Z",
+        "updated_at": "2026-09-18T23:48:40Z",
+        "digest": "sha256:89a19334659fe268dacd13269419efa52b33b4713e1f200ec686cc580cf2851c",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.4/M-6_20260918_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 38021628,
+        "created_at": "2026-09-18T23:48:43Z",
+        "updated_at": "2026-09-18T23:48:56Z",
+        "digest": "sha256:b106eb1ce385260156a571a389da4ff2765e350f68e4ef39cfbbb532668bc17a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.4/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.3",
+    "target_commitish": "a23f773464db7f1c84bbfe1366135758631de6a7",
+    "published_at": "2026-09-16T18:08:55Z",
+    "updated_at": "2026-09-16T18:08:55Z",
+    "assets": [
+      {
+        "name": "M-6_20260916_double_en.png",
+        "size": 606481,
+        "created_at": "2026-09-16T18:08:02Z",
+        "updated_at": "2026-09-16T18:08:04Z",
+        "digest": "sha256:d3634b9c8891eda7c338a18921db68c7e5411374145d225b0763d52dae8ffc5c",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.3/M-6_20260916_double_en.png"
+      },
+      {
+        "name": "M-6_20260916_double_ja.png",
+        "size": 622882,
+        "created_at": "2026-09-16T18:08:08Z",
+        "updated_at": "2026-09-16T18:08:08Z",
+        "digest": "sha256:effacc5d9ccb530fa0bb520aae2480f4c55abb73096ecee43514307361f1ef0e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.3/M-6_20260916_double_ja.png"
+      },
+      {
+        "name": "M-6_20260916_double_zh.png",
+        "size": 641747,
+        "created_at": "2026-09-16T18:08:13Z",
+        "updated_at": "2026-09-16T18:08:14Z",
+        "digest": "sha256:9b0b20eb05f386e5002395af86368fcc43cf0468f62c0a84c68fb324823b80ca",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.3/M-6_20260916_double_zh.png"
+      },
+      {
+        "name": "M-6_20260916_en.xlsx",
+        "size": 251427,
+        "created_at": "2026-09-16T18:08:17Z",
+        "updated_at": "2026-09-16T18:08:18Z",
+        "digest": "sha256:6ffe7fd435160634012dcabd110d8a1646b9e2ee099fd5fc17e754268a678c45",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.3/M-6_20260916_en.xlsx"
+      },
+      {
+        "name": "M-6_20260916_ja.xlsx",
+        "size": 310403,
+        "created_at": "2026-09-16T18:08:21Z",
+        "updated_at": "2026-09-16T18:08:21Z",
+        "digest": "sha256:063bc429adb6ed31bcfe12d586b16731995e3274fb49a5beacb99038c6ad40be",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.3/M-6_20260916_ja.xlsx"
+      },
+      {
+        "name": "M-6_20260916_single_en.png",
+        "size": 661879,
+        "created_at": "2026-09-16T18:08:25Z",
+        "updated_at": "2026-09-16T18:08:25Z",
+        "digest": "sha256:425cf3c668d9412ed786d6323f445d206b364619a7002c502042b40d141f3faa",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.3/M-6_20260916_single_en.png"
+      },
+      {
+        "name": "M-6_20260916_single_ja.png",
+        "size": 670266,
+        "created_at": "2026-09-16T18:08:28Z",
+        "updated_at": "2026-09-16T18:08:28Z",
+        "digest": "sha256:07067de0a6dda5cb42899281616083a882b90afccd67a7b66e433bf3af1ebf3b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.3/M-6_20260916_single_ja.png"
+      },
+      {
+        "name": "M-6_20260916_single_zh.png",
+        "size": 681085,
+        "created_at": "2026-09-16T18:08:32Z",
+        "updated_at": "2026-09-16T18:08:32Z",
+        "digest": "sha256:ee92c0c66174522505510cdd8de847554c783bb38f27ff0eda6b8d1b57e63598",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.3/M-6_20260916_single_zh.png"
+      },
+      {
+        "name": "M-6_20260916_zh.xlsx",
+        "size": 287647,
+        "created_at": "2026-09-16T18:08:36Z",
+        "updated_at": "2026-09-16T18:08:36Z",
+        "digest": "sha256:5d495e76de1b8038b95ba3a236d78aef689c31b8fed86a5c8100bc05f04d7164",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.3/M-6_20260916_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 45474618,
+        "created_at": "2026-09-16T18:08:39Z",
+        "updated_at": "2026-09-16T18:08:47Z",
+        "digest": "sha256:ad02195d676fd598eb61b034fd6c665b2e411f3781706a117de4fc226be4164d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.3/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.2",
+    "target_commitish": "168645463c9115866ce423956f2c57b4557c009e",
+    "published_at": "2026-09-14T11:44:37Z",
+    "updated_at": "2026-09-14T11:44:37Z",
+    "assets": [
+      {
+        "name": "M-6_20260914_double_en.png",
+        "size": 436767,
+        "created_at": "2026-09-14T11:43:41Z",
+        "updated_at": "2026-09-14T11:43:42Z",
+        "digest": "sha256:8ae0239916dde8508fe9339311d306b7b8e268d8b7ca9800e8b888afe025d2d3",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.2/M-6_20260914_double_en.png"
+      },
+      {
+        "name": "M-6_20260914_double_ja.png",
+        "size": 443898,
+        "created_at": "2026-09-14T11:43:46Z",
+        "updated_at": "2026-09-14T11:43:47Z",
+        "digest": "sha256:df9a62e7d304ca21d5bc0615118c3ad8bff5a9fd9fe00dd9cfca89553dc5ec68",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.2/M-6_20260914_double_ja.png"
+      },
+      {
+        "name": "M-6_20260914_double_zh.png",
+        "size": 455524,
+        "created_at": "2026-09-14T11:43:50Z",
+        "updated_at": "2026-09-14T11:43:51Z",
+        "digest": "sha256:f3c312bc7c5204dbfe671e39ed04cc2670f0be834bbcf45685fdf72144f45ac1",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.2/M-6_20260914_double_zh.png"
+      },
+      {
+        "name": "M-6_20260914_en.xlsx",
+        "size": 248553,
+        "created_at": "2026-09-14T11:43:55Z",
+        "updated_at": "2026-09-14T11:43:56Z",
+        "digest": "sha256:6371db6538b14158b7e9793d684b73319e083101974eb1ac72de18637d21b4d4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.2/M-6_20260914_en.xlsx"
+      },
+      {
+        "name": "M-6_20260914_ja.xlsx",
+        "size": 305883,
+        "created_at": "2026-09-14T11:44:00Z",
+        "updated_at": "2026-09-14T11:44:00Z",
+        "digest": "sha256:e12c4a8c8d050d766356afc4a1d0f92edcebbab848fc8fe912d4efcd493a576b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.2/M-6_20260914_ja.xlsx"
+      },
+      {
+        "name": "M-6_20260914_single_en.png",
+        "size": 492702,
+        "created_at": "2026-09-14T11:44:04Z",
+        "updated_at": "2026-09-14T11:44:04Z",
+        "digest": "sha256:221f3e1db6a9c1a285cf05a5460f81be090da4a908f9d496fc1338db2cd2ddc8",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.2/M-6_20260914_single_en.png"
+      },
+      {
+        "name": "M-6_20260914_single_ja.png",
+        "size": 518839,
+        "created_at": "2026-09-14T11:44:09Z",
+        "updated_at": "2026-09-14T11:44:10Z",
+        "digest": "sha256:82e8136b51cb57ef715dd253e771c0987763459a88926cd372e7bc0a3b91b05d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.2/M-6_20260914_single_ja.png"
+      },
+      {
+        "name": "M-6_20260914_single_zh.png",
+        "size": 540485,
+        "created_at": "2026-09-14T11:44:14Z",
+        "updated_at": "2026-09-14T11:44:14Z",
+        "digest": "sha256:cc56f2b7ad1348e43bb0d505d42a6d756f8b63860103e1bf2da7fb518ac1fd30",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.2/M-6_20260914_single_zh.png"
+      },
+      {
+        "name": "M-6_20260914_zh.xlsx",
+        "size": 285065,
+        "created_at": "2026-09-14T11:44:18Z",
+        "updated_at": "2026-09-14T11:44:18Z",
+        "digest": "sha256:cefa742c79c3953c1454907ddfcad826ba889f85bb7f7acd28465a9603741015",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.2/M-6_20260914_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 37541969,
+        "created_at": "2026-09-14T11:44:22Z",
+        "updated_at": "2026-09-14T11:44:27Z",
+        "digest": "sha256:10c4e4895996dde9c4f34b526c564532a5513efd841d7c90554953d9b79884e7",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.2/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.1",
+    "target_commitish": "dffaefee3e52684535e92ede4a5c5fcdc72798bb",
+    "published_at": "2026-09-13T18:50:29Z",
+    "updated_at": "2026-09-13T18:50:29Z",
+    "assets": [
+      {
+        "name": "M-6_20260912_double_en.png",
+        "size": 355761,
+        "created_at": "2026-09-13T18:49:28Z",
+        "updated_at": "2026-09-13T18:49:29Z",
+        "digest": "sha256:9be031b39998023d3330a14d1b5bf3d2b0be225bb353bba22367f76abb25b126",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.1/M-6_20260912_double_en.png"
+      },
+      {
+        "name": "M-6_20260912_double_ja.png",
+        "size": 356335,
+        "created_at": "2026-09-13T18:49:32Z",
+        "updated_at": "2026-09-13T18:49:33Z",
+        "digest": "sha256:a392206ff48266ec4e8562277a98b1a7b5a9f738c20d8319bbd7c5f95865b49e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.1/M-6_20260912_double_ja.png"
+      },
+      {
+        "name": "M-6_20260912_double_zh.png",
+        "size": 378537,
+        "created_at": "2026-09-13T18:49:36Z",
+        "updated_at": "2026-09-13T18:49:37Z",
+        "digest": "sha256:9d2eda268d4e2e2092a3feef541009ca640af29d948aa9a4ab5a2248626fbf6b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.1/M-6_20260912_double_zh.png"
+      },
+      {
+        "name": "M-6_20260912_en.xlsx",
+        "size": 247976,
+        "created_at": "2026-09-13T18:49:40Z",
+        "updated_at": "2026-09-13T18:49:41Z",
+        "digest": "sha256:7c8f2e9c25562b9a909ca2ade58500aa3a5a54e8eea011d91fbca9434f398619",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.1/M-6_20260912_en.xlsx"
+      },
+      {
+        "name": "M-6_20260912_ja.xlsx",
+        "size": 304578,
+        "created_at": "2026-09-13T18:49:44Z",
+        "updated_at": "2026-09-13T18:49:45Z",
+        "digest": "sha256:4167d7771af9f1f0b15c0020fac046b9a369bdfb9a5a5df60ab576012b8a509f",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.1/M-6_20260912_ja.xlsx"
+      },
+      {
+        "name": "M-6_20260912_single_en.png",
+        "size": 387490,
+        "created_at": "2026-09-13T18:49:49Z",
+        "updated_at": "2026-09-13T18:49:49Z",
+        "digest": "sha256:cf95604037df1a0e1aff7ba12fe0bb1e9d107ca7988f960c6d684065fca60d98",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.1/M-6_20260912_single_en.png"
+      },
+      {
+        "name": "M-6_20260912_single_ja.png",
+        "size": 382984,
+        "created_at": "2026-09-13T18:49:52Z",
+        "updated_at": "2026-09-13T18:49:53Z",
+        "digest": "sha256:2b23d8501f0a63ed8896262a2c4248537d9f343502ec5b2122804f65f3dc12bd",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.1/M-6_20260912_single_ja.png"
+      },
+      {
+        "name": "M-6_20260912_single_zh.png",
+        "size": 415060,
+        "created_at": "2026-09-13T18:49:57Z",
+        "updated_at": "2026-09-13T18:49:57Z",
+        "digest": "sha256:26749893a8a30080b27773595fe9a62127d6d7c89c709d1d91bf9373415ba731",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.1/M-6_20260912_single_zh.png"
+      },
+      {
+        "name": "M-6_20260912_zh.xlsx",
+        "size": 284386,
+        "created_at": "2026-09-13T18:50:00Z",
+        "updated_at": "2026-09-13T18:50:01Z",
+        "digest": "sha256:0097a4295aba71609d21dd3158f6119c0a86290141ce5bbe01c3a9aafb539261",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.1/M-6_20260912_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 36097496,
+        "created_at": "2026-09-13T18:50:04Z",
+        "updated_at": "2026-09-13T18:50:19Z",
+        "digest": "sha256:f3e25bafb603714ed86fd17f5d000131986d7a678e4344f3593138903f90be6a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.1/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.7.0",
+    "target_commitish": "6608665d66b04e92509bacd89797a8c4a91bacf5",
+    "published_at": "2026-09-12T07:58:03Z",
+    "updated_at": "2026-09-12T07:58:03Z",
+    "assets": [
+      {
+        "name": "M-6_20260911_double_en.png",
+        "size": 200510,
+        "created_at": "2026-09-12T07:57:16Z",
+        "updated_at": "2026-09-12T07:57:16Z",
+        "digest": "sha256:83b172273c289cac02821d5ad9eb931ec71117761440257412de9a9401b14f47",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.0/M-6_20260911_double_en.png"
+      },
+      {
+        "name": "M-6_20260911_double_ja.png",
+        "size": 185210,
+        "created_at": "2026-09-12T07:57:20Z",
+        "updated_at": "2026-09-12T07:57:20Z",
+        "digest": "sha256:571e92159461c8c266ef60ec6ab9fae89b6a41d4af84a1d7e56c8de7fb249ed4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.0/M-6_20260911_double_ja.png"
+      },
+      {
+        "name": "M-6_20260911_double_zh.png",
+        "size": 219948,
+        "created_at": "2026-09-12T07:57:23Z",
+        "updated_at": "2026-09-12T07:57:23Z",
+        "digest": "sha256:7891e90d29fa69f37220e9f6661edd332172585b1030d2e3ddf19b6e2771de51",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.0/M-6_20260911_double_zh.png"
+      },
+      {
+        "name": "M-6_20260911_en.xlsx",
+        "size": 308303,
+        "created_at": "2026-09-12T07:57:27Z",
+        "updated_at": "2026-09-12T07:57:27Z",
+        "digest": "sha256:f10b106ed5b5147130bdd69eea8320d7b510d5e7d0719b7c45eff45f34cb796a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.0/M-6_20260911_en.xlsx"
+      },
+      {
+        "name": "M-6_20260911_ja.xlsx",
+        "size": 365860,
+        "created_at": "2026-09-12T07:57:30Z",
+        "updated_at": "2026-09-12T07:57:30Z",
+        "digest": "sha256:961edeec2d050855d7ea02ad8370f083fb131806b00cde36427a563c02f7103a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.0/M-6_20260911_ja.xlsx"
+      },
+      {
+        "name": "M-6_20260911_single_en.png",
+        "size": 208900,
+        "created_at": "2026-09-12T07:57:33Z",
+        "updated_at": "2026-09-12T07:57:34Z",
+        "digest": "sha256:de150ba122e022c4919c90060313f5e7a98e6b725a5a718e4d1ef5c9a14d8624",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.0/M-6_20260911_single_en.png"
+      },
+      {
+        "name": "M-6_20260911_single_ja.png",
+        "size": 185006,
+        "created_at": "2026-09-12T07:57:37Z",
+        "updated_at": "2026-09-12T07:57:38Z",
+        "digest": "sha256:a968d2f9b26961a6c47d45c08e182a762e290f08f773a17b6eb94d95c173d858",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.0/M-6_20260911_single_ja.png"
+      },
+      {
+        "name": "M-6_20260911_single_zh.png",
+        "size": 215375,
+        "created_at": "2026-09-12T07:57:41Z",
+        "updated_at": "2026-09-12T07:57:41Z",
+        "digest": "sha256:928043481739d1223fb356f90bd6f8ebc61dd41ecba7eb306c0f078ba265eb3c",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.0/M-6_20260911_single_zh.png"
+      },
+      {
+        "name": "M-6_20260911_zh.xlsx",
+        "size": 348384,
+        "created_at": "2026-09-12T07:57:44Z",
+        "updated_at": "2026-09-12T07:57:45Z",
+        "digest": "sha256:017f1dbf06f862e0309785a370f6101607929b497aea31a614b46bbe64843fa7",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.0/M-6_20260911_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 29963482,
+        "created_at": "2026-09-12T07:57:48Z",
+        "updated_at": "2026-09-12T07:57:54Z",
+        "digest": "sha256:61e41433b5914f45fc6a77ef7b65a7ed74806b46fc05c566296543bea38d1185",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.7.0/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.19",
+    "target_commitish": "62950b61d4611d97ddb59e5b5be17ab9c331918c",
+    "published_at": "2026-09-07T10:05:03Z",
+    "updated_at": "2026-09-07T10:05:03Z",
+    "assets": [
+      {
+        "name": "M-5_20260907_double_en.png",
+        "size": 526210,
+        "created_at": "2026-09-07T10:04:18Z",
+        "updated_at": "2026-09-07T10:04:19Z",
+        "digest": "sha256:02b41c2be2e21195c54cbac5278d0047dd6c0618365ef8bf2029b7edb7e9b65e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.19/M-5_20260907_double_en.png"
+      },
+      {
+        "name": "M-5_20260907_double_ja.png",
+        "size": 530143,
+        "created_at": "2026-09-07T10:04:23Z",
+        "updated_at": "2026-09-07T10:04:23Z",
+        "digest": "sha256:5e8e0d3ea704d9d2eb46f5d4fd4e7b98698e5c815662994fe6d4466a147f047b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.19/M-5_20260907_double_ja.png"
+      },
+      {
+        "name": "M-5_20260907_double_zh.png",
+        "size": 551264,
+        "created_at": "2026-09-07T10:04:26Z",
+        "updated_at": "2026-09-07T10:04:26Z",
+        "digest": "sha256:6e71275a775244ac3e2a127bab74a959640ca95b99c14d25a80304d562deb7de",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.19/M-5_20260907_double_zh.png"
+      },
+      {
+        "name": "M-5_20260907_en.xlsx",
+        "size": 221631,
+        "created_at": "2026-09-07T10:04:29Z",
+        "updated_at": "2026-09-07T10:04:30Z",
+        "digest": "sha256:9ab43f54d80702ee5594771c21b074e5b647f1909649885ac517705eb1532ab6",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.19/M-5_20260907_en.xlsx"
+      },
+      {
+        "name": "M-5_20260907_ja.xlsx",
+        "size": 272274,
+        "created_at": "2026-09-07T10:04:33Z",
+        "updated_at": "2026-09-07T10:04:33Z",
+        "digest": "sha256:7a5f32d5a0016353e7f649b08b6e7e75e27acc5ec646bf9aa1c585f755e87ac5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.19/M-5_20260907_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260907_single_en.png",
+        "size": 570628,
+        "created_at": "2026-09-07T10:04:36Z",
+        "updated_at": "2026-09-07T10:04:37Z",
+        "digest": "sha256:b0e99ae7015cf1fe43f65f6549f359fad4721949ae4081aeda91004fd4850b5c",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.19/M-5_20260907_single_en.png"
+      },
+      {
+        "name": "M-5_20260907_single_ja.png",
+        "size": 576173,
+        "created_at": "2026-09-07T10:04:40Z",
+        "updated_at": "2026-09-07T10:04:40Z",
+        "digest": "sha256:fed24a64965b85f7d340583aa6f2c06b54e515488738b97157d9538e196debad",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.19/M-5_20260907_single_ja.png"
+      },
+      {
+        "name": "M-5_20260907_single_zh.png",
+        "size": 585258,
+        "created_at": "2026-09-07T10:04:44Z",
+        "updated_at": "2026-09-07T10:04:44Z",
+        "digest": "sha256:477e62ce8621471171fa35ef0b1d6b2987f623f053dd97d0bc316b6b31e5e53b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.19/M-5_20260907_single_zh.png"
+      },
+      {
+        "name": "M-5_20260907_zh.xlsx",
+        "size": 252957,
+        "created_at": "2026-09-07T10:04:47Z",
+        "updated_at": "2026-09-07T10:04:48Z",
+        "digest": "sha256:c2757d171f03ea640a85bfcb0376fa8bc35a890e80ce28546c25abec3f8bb2cd",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.19/M-5_20260907_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 31456617,
+        "created_at": "2026-09-07T10:04:52Z",
+        "updated_at": "2026-09-07T10:04:55Z",
+        "digest": "sha256:0d21af026637bbb01703f065985ffc230d481e711fb0998d9881f8582565164e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.19/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.18",
+    "target_commitish": "d5f10ff85368b4b1ea80af96bcef68b7d811c37e",
+    "published_at": "2026-09-04T08:08:13Z",
+    "updated_at": "2026-09-04T08:08:13Z",
+    "assets": [
+      {
+        "name": "M-5_20260904_double_en.png",
+        "size": 521440,
+        "created_at": "2026-09-04T08:07:25Z",
+        "updated_at": "2026-09-04T08:07:26Z",
+        "digest": "sha256:7afeb911d78cc19e037548c36765b83f0ac92c1e1b2909f48bdc96681a6f7b37",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.18/M-5_20260904_double_en.png"
+      },
+      {
+        "name": "M-5_20260904_double_ja.png",
+        "size": 523351,
+        "created_at": "2026-09-04T08:07:29Z",
+        "updated_at": "2026-09-04T08:07:29Z",
+        "digest": "sha256:6afe5212fa7a15e1d8dcf9dd1f015741bdff953661a820b54daa284b36d10e69",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.18/M-5_20260904_double_ja.png"
+      },
+      {
+        "name": "M-5_20260904_double_zh.png",
+        "size": 545723,
+        "created_at": "2026-09-04T08:07:33Z",
+        "updated_at": "2026-09-04T08:07:33Z",
+        "digest": "sha256:e81818f30935dd3cf1f7c8d071b1ddb2677c968c3728e47c22a86a2ff4bcbf15",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.18/M-5_20260904_double_zh.png"
+      },
+      {
+        "name": "M-5_20260904_en.xlsx",
+        "size": 222437,
+        "created_at": "2026-09-04T08:07:37Z",
+        "updated_at": "2026-09-04T08:07:37Z",
+        "digest": "sha256:d1cc2bd6bab44d61bc41826cf1b4723ce665b9f89b54d5f137b51518fb71e30c",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.18/M-5_20260904_en.xlsx"
+      },
+      {
+        "name": "M-5_20260904_ja.xlsx",
+        "size": 273382,
+        "created_at": "2026-09-04T08:07:40Z",
+        "updated_at": "2026-09-04T08:07:40Z",
+        "digest": "sha256:bb24ccdd8bef228f80c0273e6872e52e0285256c69843fec2afdf2acead921b7",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.18/M-5_20260904_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260904_single_en.png",
+        "size": 589358,
+        "created_at": "2026-09-04T08:07:44Z",
+        "updated_at": "2026-09-04T08:07:44Z",
+        "digest": "sha256:397b36dd2651ef2026c3eb601a74cc20b43d5a8de78ce9fbdeb9b5540a5b5fa2",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.18/M-5_20260904_single_en.png"
+      },
+      {
+        "name": "M-5_20260904_single_ja.png",
+        "size": 594359,
+        "created_at": "2026-09-04T08:07:47Z",
+        "updated_at": "2026-09-04T08:07:48Z",
+        "digest": "sha256:bc15c96fe867b2fd108f05ea99f89c9ce2dbb21dbee170b2393775d7048d6dc6",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.18/M-5_20260904_single_ja.png"
+      },
+      {
+        "name": "M-5_20260904_single_zh.png",
+        "size": 604937,
+        "created_at": "2026-09-04T08:07:52Z",
+        "updated_at": "2026-09-04T08:07:53Z",
+        "digest": "sha256:518d0af4da23fda9583eb3c60fa4681aa9c2966a8275878f69ef05acdc314adc",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.18/M-5_20260904_single_zh.png"
+      },
+      {
+        "name": "M-5_20260904_zh.xlsx",
+        "size": 253547,
+        "created_at": "2026-09-04T08:07:56Z",
+        "updated_at": "2026-09-04T08:07:57Z",
+        "digest": "sha256:34e4071be8f45ae785cc0ec75962a45ffb52a2944c76b81fb26444dbe42caf67",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.18/M-5_20260904_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 31294310,
+        "created_at": "2026-09-04T08:08:00Z",
+        "updated_at": "2026-09-04T08:08:04Z",
+        "digest": "sha256:abb16d273eb37af7d0d3a17039f74804bb12e8bac2718fab0fbd2e133374b1ec",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.18/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.17",
+    "target_commitish": "036f1c42be0f517cb9de6bf74ea1a781439cef2e",
+    "published_at": "2026-09-02T14:27:27Z",
+    "updated_at": "2026-09-02T14:27:27Z",
+    "assets": [
+      {
+        "name": "M-5_20260902_double_en.png",
+        "size": 625090,
+        "created_at": "2026-09-02T14:26:36Z",
+        "updated_at": "2026-09-02T14:26:36Z",
+        "digest": "sha256:0dcaf77e5f70da13ee3f13d7e413f70d218fca40fef568c0fa52f329c428ec66",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.17/M-5_20260902_double_en.png"
+      },
+      {
+        "name": "M-5_20260902_double_ja.png",
+        "size": 631285,
+        "created_at": "2026-09-02T14:26:40Z",
+        "updated_at": "2026-09-02T14:26:40Z",
+        "digest": "sha256:bd90af2d3fc0c5829979b07e2127c88beb64e36dc3f1f7dcb37f7f920163e8ba",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.17/M-5_20260902_double_ja.png"
+      },
+      {
+        "name": "M-5_20260902_double_zh.png",
+        "size": 660355,
+        "created_at": "2026-09-02T14:26:44Z",
+        "updated_at": "2026-09-02T14:26:44Z",
+        "digest": "sha256:aa4008cda73e6ccc9811ccb5207d91da22c81212370f694769b7cd45ddc263a5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.17/M-5_20260902_double_zh.png"
+      },
+      {
+        "name": "M-5_20260902_en.xlsx",
+        "size": 222336,
+        "created_at": "2026-09-02T14:26:47Z",
+        "updated_at": "2026-09-02T14:26:48Z",
+        "digest": "sha256:3e7441d0c9e5b639484fb46f2110efd7dcbf2fcf0ba1da3af5651e4d7aa563a3",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.17/M-5_20260902_en.xlsx"
+      },
+      {
+        "name": "M-5_20260902_ja.xlsx",
+        "size": 273040,
+        "created_at": "2026-09-02T14:26:51Z",
+        "updated_at": "2026-09-02T14:26:51Z",
+        "digest": "sha256:d6ac394adb7c70fe46e7a94fc1a30736b8d45eb07093f341dccb8549102c8268",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.17/M-5_20260902_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260902_single_en.png",
+        "size": 620293,
+        "created_at": "2026-09-02T14:26:55Z",
+        "updated_at": "2026-09-02T14:26:55Z",
+        "digest": "sha256:90070ecab47b29e884f3b161bc9718c9218a397ce4bcbf1c31aac5b094ba8cf2",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.17/M-5_20260902_single_en.png"
+      },
+      {
+        "name": "M-5_20260902_single_ja.png",
+        "size": 626583,
+        "created_at": "2026-09-02T14:26:58Z",
+        "updated_at": "2026-09-02T14:26:58Z",
+        "digest": "sha256:172a199f35c0052c9f09c4424cbd9f255da68f5b34c8fcb97bfbcae8041873d7",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.17/M-5_20260902_single_ja.png"
+      },
+      {
+        "name": "M-5_20260902_single_zh.png",
+        "size": 641172,
+        "created_at": "2026-09-02T14:27:02Z",
+        "updated_at": "2026-09-02T14:27:02Z",
+        "digest": "sha256:47845eb03d6a7d9b659145ed2bb6a323f3036d14dce2c8d3fd4906ae4caaa1cb",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.17/M-5_20260902_single_zh.png"
+      },
+      {
+        "name": "M-5_20260902_zh.xlsx",
+        "size": 253256,
+        "created_at": "2026-09-02T14:27:06Z",
+        "updated_at": "2026-09-02T14:27:06Z",
+        "digest": "sha256:0fb3cd0388107d20bd6da5298bbb5f8b067ea31f74f857cbda62bccc03390d75",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.17/M-5_20260902_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 31354559,
+        "created_at": "2026-09-02T14:27:10Z",
+        "updated_at": "2026-09-02T14:27:17Z",
+        "digest": "sha256:1d430150f8e50208cf2ee720442d4afca25e47e9e4de785d7384fcf446b3a2da",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.17/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.16",
+    "target_commitish": "593a220853cbca49177e6eec4bc1da6374b5ae41",
+    "published_at": "2026-08-31T05:26:56Z",
+    "updated_at": "2026-08-31T05:26:56Z",
+    "assets": [
+      {
+        "name": "M-5_20260831_double_en.png",
+        "size": 696111,
+        "created_at": "2026-08-31T05:26:04Z",
+        "updated_at": "2026-08-31T05:26:04Z",
+        "digest": "sha256:9fb08bbc924db8a33cb29e3b2205b8ff6f7f77e6985d6a53fdc3b13f00da5b80",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.16/M-5_20260831_double_en.png"
+      },
+      {
+        "name": "M-5_20260831_double_ja.png",
+        "size": 705018,
+        "created_at": "2026-08-31T05:26:08Z",
+        "updated_at": "2026-08-31T05:26:08Z",
+        "digest": "sha256:8c8cd3b26e5789bb8dd65ad69f6fc837c5fca2f233a7422fb8018279509d17f4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.16/M-5_20260831_double_ja.png"
+      },
+      {
+        "name": "M-5_20260831_double_zh.png",
+        "size": 732012,
+        "created_at": "2026-08-31T05:26:11Z",
+        "updated_at": "2026-08-31T05:26:12Z",
+        "digest": "sha256:154df07d17168785016d785165d9d88da6311b1c23956a9bdd72200818a4d1aa",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.16/M-5_20260831_double_zh.png"
+      },
+      {
+        "name": "M-5_20260831_en.xlsx",
+        "size": 222503,
+        "created_at": "2026-08-31T05:26:15Z",
+        "updated_at": "2026-08-31T05:26:15Z",
+        "digest": "sha256:bcdeecc7a470411e51c590df96a82cb34afd2d7cf8ab846faefa60f16f92843e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.16/M-5_20260831_en.xlsx"
+      },
+      {
+        "name": "M-5_20260831_ja.xlsx",
+        "size": 273364,
+        "created_at": "2026-08-31T05:26:19Z",
+        "updated_at": "2026-08-31T05:26:19Z",
+        "digest": "sha256:ff99d13168fd494cc48134d7de7915135fe1fc1629ccd5b58c2e903a66117398",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.16/M-5_20260831_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260831_single_en.png",
+        "size": 685940,
+        "created_at": "2026-08-31T05:26:23Z",
+        "updated_at": "2026-08-31T05:26:23Z",
+        "digest": "sha256:cc00f1e81c641fe17ecde9fd47bd52960cb141df08b4d59691fe17680bb46237",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.16/M-5_20260831_single_en.png"
+      },
+      {
+        "name": "M-5_20260831_single_ja.png",
+        "size": 689538,
+        "created_at": "2026-08-31T05:26:27Z",
+        "updated_at": "2026-08-31T05:26:27Z",
+        "digest": "sha256:563adecd4179616ca0679cbf17857945b701a5b3f3ce279c3790aac3b9dc1d56",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.16/M-5_20260831_single_ja.png"
+      },
+      {
+        "name": "M-5_20260831_single_zh.png",
+        "size": 706331,
+        "created_at": "2026-08-31T05:26:31Z",
+        "updated_at": "2026-08-31T05:26:31Z",
+        "digest": "sha256:6d0bb299e84d55add99e2989a444eeef9684833c4aa5c243e0235032ca9f44c6",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.16/M-5_20260831_single_zh.png"
+      },
+      {
+        "name": "M-5_20260831_zh.xlsx",
+        "size": 253689,
+        "created_at": "2026-08-31T05:26:35Z",
+        "updated_at": "2026-08-31T05:26:36Z",
+        "digest": "sha256:2c3242b9f2361238165333ed8d86032297904e875ac139ed3d140d7d3958eaff",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.16/M-5_20260831_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 31345173,
+        "created_at": "2026-08-31T05:26:39Z",
+        "updated_at": "2026-08-31T05:26:47Z",
+        "digest": "sha256:6b58fa1ca8c277e57cdaf4c6cb0896136174f75923c1d8fc6bd86f7a30138aad",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.16/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.15",
+    "target_commitish": "60f4e592f40426729e3b95c7074373e1e11be320",
+    "published_at": "2026-08-28T08:45:57Z",
+    "updated_at": "2026-08-28T08:45:57Z",
+    "assets": [
+      {
+        "name": "M-5_20260828_double_en.png",
+        "size": 793890,
+        "created_at": "2026-08-28T08:45:09Z",
+        "updated_at": "2026-08-28T08:45:10Z",
+        "digest": "sha256:afad2548acef625204efd16089e2f221c231b857f893fe6439e344f99a456e8f",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.15/M-5_20260828_double_en.png"
+      },
+      {
+        "name": "M-5_20260828_double_ja.png",
+        "size": 804239,
+        "created_at": "2026-08-28T08:45:13Z",
+        "updated_at": "2026-08-28T08:45:14Z",
+        "digest": "sha256:816f52748a1e369c821c32f91a51417f4c6c25e8526779a45516306f0600d599",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.15/M-5_20260828_double_ja.png"
+      },
+      {
+        "name": "M-5_20260828_double_zh.png",
+        "size": 828362,
+        "created_at": "2026-08-28T08:45:17Z",
+        "updated_at": "2026-08-28T08:45:18Z",
+        "digest": "sha256:9647926887831a8e8072dd9ccf345632fe47f17e42c0138576ed48da46221bcf",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.15/M-5_20260828_double_zh.png"
+      },
+      {
+        "name": "M-5_20260828_en.xlsx",
+        "size": 222558,
+        "created_at": "2026-08-28T08:45:21Z",
+        "updated_at": "2026-08-28T08:45:21Z",
+        "digest": "sha256:5eef4cb38e108915748a9753ecf6c7a7c154af30c110f65630d054ea6c704dd8",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.15/M-5_20260828_en.xlsx"
+      },
+      {
+        "name": "M-5_20260828_ja.xlsx",
+        "size": 273323,
+        "created_at": "2026-08-28T08:45:25Z",
+        "updated_at": "2026-08-28T08:45:25Z",
+        "digest": "sha256:eb76177c6e474aa0a1ebcf3a8649dde2359fecd181a983adf245f6a7dddeddd3",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.15/M-5_20260828_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260828_single_en.png",
+        "size": 734392,
+        "created_at": "2026-08-28T08:45:28Z",
+        "updated_at": "2026-08-28T08:45:29Z",
+        "digest": "sha256:d8fa603a14947da86a47ceb2a682f69ad4c23271e96ecd92c3111208ce00e75c",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.15/M-5_20260828_single_en.png"
+      },
+      {
+        "name": "M-5_20260828_single_ja.png",
+        "size": 739017,
+        "created_at": "2026-08-28T08:45:32Z",
+        "updated_at": "2026-08-28T08:45:33Z",
+        "digest": "sha256:9055065c9b1a4ebd2d2bc7c62bea6ba1c1ffea5de04ad07bdcdf5bd2944c5bd6",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.15/M-5_20260828_single_ja.png"
+      },
+      {
+        "name": "M-5_20260828_single_zh.png",
+        "size": 754831,
+        "created_at": "2026-08-28T08:45:36Z",
+        "updated_at": "2026-08-28T08:45:37Z",
+        "digest": "sha256:31f4257a0c942d374aace2ae94b2e19c104a83db2d1d93f2f68bd1a8de723d91",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.15/M-5_20260828_single_zh.png"
+      },
+      {
+        "name": "M-5_20260828_zh.xlsx",
+        "size": 253478,
+        "created_at": "2026-08-28T08:45:40Z",
+        "updated_at": "2026-08-28T08:45:40Z",
+        "digest": "sha256:8c1f4b61a7c7201fc27e54c55e171feed1e63abd9fb4f9bf453b1d6041f1c3b4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.15/M-5_20260828_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 31506322,
+        "created_at": "2026-08-28T08:45:43Z",
+        "updated_at": "2026-08-28T08:45:48Z",
+        "digest": "sha256:96906fa9ea5964b4d96467ab9f1f5b7c043653af35d057cef787ac71bc0474d9",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.15/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.14",
+    "target_commitish": "c1f5ef12f1ee00674d37ac08df9565ead158627d",
+    "published_at": "2026-08-26T08:43:37Z",
+    "updated_at": "2026-08-26T08:43:37Z",
+    "assets": [
+      {
+        "name": "M-5_20260826_double_en.png",
+        "size": 851400,
+        "created_at": "2026-08-26T08:42:52Z",
+        "updated_at": "2026-08-26T08:42:52Z",
+        "digest": "sha256:290532ef34d1a5d189a2a2aaf90aad43de38311d16b53b7cf3e99b4fe6c9409c",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.14/M-5_20260826_double_en.png"
+      },
+      {
+        "name": "M-5_20260826_double_ja.png",
+        "size": 864022,
+        "created_at": "2026-08-26T08:42:55Z",
+        "updated_at": "2026-08-26T08:42:55Z",
+        "digest": "sha256:b3fc44c67af8a9797d7ee7799a3525318a2d075f9dcedfd4809ffc4b36719fc2",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.14/M-5_20260826_double_ja.png"
+      },
+      {
+        "name": "M-5_20260826_double_zh.png",
+        "size": 889083,
+        "created_at": "2026-08-26T08:42:59Z",
+        "updated_at": "2026-08-26T08:42:59Z",
+        "digest": "sha256:b3ad77bb4cb3f39d5eef6da1055065e699e1759e55dfaf9530264d1b8a9df97f",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.14/M-5_20260826_double_zh.png"
+      },
+      {
+        "name": "M-5_20260826_en.xlsx",
+        "size": 223205,
+        "created_at": "2026-08-26T08:43:02Z",
+        "updated_at": "2026-08-26T08:43:02Z",
+        "digest": "sha256:70e3ca02a43e92e1ba3782eb3fdeb68f8366c2f40f4f3f4aa61152fe7235cedb",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.14/M-5_20260826_en.xlsx"
+      },
+      {
+        "name": "M-5_20260826_ja.xlsx",
+        "size": 274068,
+        "created_at": "2026-08-26T08:43:06Z",
+        "updated_at": "2026-08-26T08:43:06Z",
+        "digest": "sha256:32fe50b11e90b3dbe63dc2beba3188b54f1149f781332a34c27833d7cd38927d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.14/M-5_20260826_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260826_single_en.png",
+        "size": 772871,
+        "created_at": "2026-08-26T08:43:09Z",
+        "updated_at": "2026-08-26T08:43:10Z",
+        "digest": "sha256:90667dd158899490854335b7caa884d5bef3a8d4d876a128fef34d87b2a229f5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.14/M-5_20260826_single_en.png"
+      },
+      {
+        "name": "M-5_20260826_single_ja.png",
+        "size": 776076,
+        "created_at": "2026-08-26T08:43:13Z",
+        "updated_at": "2026-08-26T08:43:13Z",
+        "digest": "sha256:2f0a9f201a7932e42f6f8af8eb82cfe562103a2c9992daa92b9efafbef4bb10e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.14/M-5_20260826_single_ja.png"
+      },
+      {
+        "name": "M-5_20260826_single_zh.png",
+        "size": 788973,
+        "created_at": "2026-08-26T08:43:17Z",
+        "updated_at": "2026-08-26T08:43:18Z",
+        "digest": "sha256:c5bef7f8777ee3e17aee4b815581b902efe70a36e2e915cbc9acde24711d41ab",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.14/M-5_20260826_single_zh.png"
+      },
+      {
+        "name": "M-5_20260826_zh.xlsx",
+        "size": 254057,
+        "created_at": "2026-08-26T08:43:21Z",
+        "updated_at": "2026-08-26T08:43:21Z",
+        "digest": "sha256:6709a985db4ab831c360beac855d7266b1a67f152b8156d780b9f516d369ccc8",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.14/M-5_20260826_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 31570173,
+        "created_at": "2026-08-26T08:43:25Z",
+        "updated_at": "2026-08-26T08:43:28Z",
+        "digest": "sha256:4c19c07a0510f08dc28cb2d78598adb952dc07087c4377e2bed332a95e50d063",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.14/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.13",
+    "target_commitish": "c183a0cad45ddbe63299b2df076db22445b5e6e1",
+    "published_at": "2026-08-24T08:54:42Z",
+    "updated_at": "2026-08-24T08:54:42Z",
+    "assets": [
+      {
+        "name": "M-5_20260824_double_en.png",
+        "size": 924894,
+        "created_at": "2026-08-24T08:53:57Z",
+        "updated_at": "2026-08-24T08:53:57Z",
+        "digest": "sha256:a9aee434cf882fa4df0874eefabbf6186044a85e4c0b2ecc5a3028e0483bc8d2",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.13/M-5_20260824_double_en.png"
+      },
+      {
+        "name": "M-5_20260824_double_ja.png",
+        "size": 933471,
+        "created_at": "2026-08-24T08:54:00Z",
+        "updated_at": "2026-08-24T08:54:00Z",
+        "digest": "sha256:882feac7e47a3b025a1fc4ddab31bfa063269ccab968bddc1632e77d47f4e8c4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.13/M-5_20260824_double_ja.png"
+      },
+      {
+        "name": "M-5_20260824_double_zh.png",
+        "size": 952891,
+        "created_at": "2026-08-24T08:54:04Z",
+        "updated_at": "2026-08-24T08:54:04Z",
+        "digest": "sha256:2ce79222c6d39016f2004e1d41a111cdd66f0155840e388163f8f7763ff1cbfd",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.13/M-5_20260824_double_zh.png"
+      },
+      {
+        "name": "M-5_20260824_en.xlsx",
+        "size": 223058,
+        "created_at": "2026-08-24T08:54:08Z",
+        "updated_at": "2026-08-24T08:54:08Z",
+        "digest": "sha256:137ab9a72f185c84eddcd3c4d8534aff99ab4dcce1e676b456acda761bd5d3ff",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.13/M-5_20260824_en.xlsx"
+      },
+      {
+        "name": "M-5_20260824_ja.xlsx",
+        "size": 274205,
+        "created_at": "2026-08-24T08:54:11Z",
+        "updated_at": "2026-08-24T08:54:11Z",
+        "digest": "sha256:0ad7a1c236340c7956d8e551144b577586f5f9ca9296a68e5da0b57b86aca8df",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.13/M-5_20260824_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260824_single_en.png",
+        "size": 881801,
+        "created_at": "2026-08-24T08:54:14Z",
+        "updated_at": "2026-08-24T08:54:15Z",
+        "digest": "sha256:7d4e517083bcb0a6d6ed1f28d798c9a69dbf133f6a36117d72388046116accf6",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.13/M-5_20260824_single_en.png"
+      },
+      {
+        "name": "M-5_20260824_single_ja.png",
+        "size": 896255,
+        "created_at": "2026-08-24T08:54:19Z",
+        "updated_at": "2026-08-24T08:54:19Z",
+        "digest": "sha256:387a19e7fe0e64bbcbfd0efa6d5b441282a738bb6dd63e3d969428783aa56c21",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.13/M-5_20260824_single_ja.png"
+      },
+      {
+        "name": "M-5_20260824_single_zh.png",
+        "size": 899215,
+        "created_at": "2026-08-24T08:54:22Z",
+        "updated_at": "2026-08-24T08:54:23Z",
+        "digest": "sha256:39cd0fc0fca5a8086ab35ff042d12ecc270661e32ae214bcced8bc05ee8bded5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.13/M-5_20260824_single_zh.png"
+      },
+      {
+        "name": "M-5_20260824_zh.xlsx",
+        "size": 254393,
+        "created_at": "2026-08-24T08:54:26Z",
+        "updated_at": "2026-08-24T08:54:26Z",
+        "digest": "sha256:929f88287ba4883a772dbc82a355fc4dc77dfb575d3d79d4de0b5965285f4afe",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.13/M-5_20260824_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 31494042,
+        "created_at": "2026-08-24T08:54:29Z",
+        "updated_at": "2026-08-24T08:54:33Z",
+        "digest": "sha256:316d06725d4a99ff9955d85138f1f4d2c8d773a4c8c53427ad3c241a630a4eef",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.13/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.12",
+    "target_commitish": "ffb8f9b2481be56ab6a8d47326ab9cb8b65a0d24",
+    "published_at": "2026-08-20T07:56:58Z",
+    "updated_at": "2026-08-20T07:56:58Z",
+    "assets": [
+      {
+        "name": "M-5_20260820_double_en.png",
+        "size": 844784,
+        "created_at": "2026-08-20T07:55:49Z",
+        "updated_at": "2026-08-20T07:55:50Z",
+        "digest": "sha256:f0178dec694c109d6b1047043e3c507812910f6257ba9b6e9157a15a9016ea50",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.12/M-5_20260820_double_en.png"
+      },
+      {
+        "name": "M-5_20260820_double_ja.png",
+        "size": 845563,
+        "created_at": "2026-08-20T07:55:53Z",
+        "updated_at": "2026-08-20T07:55:54Z",
+        "digest": "sha256:76fce60e5a6de12368fdc5b2cfd817a1e0bcf0cebb0a58e606998f0abb59f03e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.12/M-5_20260820_double_ja.png"
+      },
+      {
+        "name": "M-5_20260820_double_zh.png",
+        "size": 868310,
+        "created_at": "2026-08-20T07:55:57Z",
+        "updated_at": "2026-08-20T07:55:59Z",
+        "digest": "sha256:b909f4e590cb17ba4ba12c4de3bee9a02102fa46e1818a7f79f0ba4a6a0a848a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.12/M-5_20260820_double_zh.png"
+      },
+      {
+        "name": "M-5_20260820_en.xlsx",
+        "size": 224018,
+        "created_at": "2026-08-20T07:56:03Z",
+        "updated_at": "2026-08-20T07:56:03Z",
+        "digest": "sha256:497d354b4f4976558114818d5d9946e8e68da273cefced098be6054edf580ef7",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.12/M-5_20260820_en.xlsx"
+      },
+      {
+        "name": "M-5_20260820_ja.xlsx",
+        "size": 275369,
+        "created_at": "2026-08-20T07:56:06Z",
+        "updated_at": "2026-08-20T07:56:07Z",
+        "digest": "sha256:3f0c84641e7ceaf9a88a0c033de611baca2995ce3a933e921f321a8ed217c4af",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.12/M-5_20260820_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260820_single_en.png",
+        "size": 836909,
+        "created_at": "2026-08-20T07:56:10Z",
+        "updated_at": "2026-08-20T07:56:11Z",
+        "digest": "sha256:01ac663d0f91dcb843f60bec1cab1c55aefb0495f4fd2e6cecf7f2ff13c6852f",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.12/M-5_20260820_single_en.png"
+      },
+      {
+        "name": "M-5_20260820_single_ja.png",
+        "size": 840416,
+        "created_at": "2026-08-20T07:56:14Z",
+        "updated_at": "2026-08-20T07:56:15Z",
+        "digest": "sha256:a766e53d9fc9238a6e420a87dc2a4a1d481057a0b1a866f7c02f477af9a68772",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.12/M-5_20260820_single_ja.png"
+      },
+      {
+        "name": "M-5_20260820_single_zh.png",
+        "size": 853630,
+        "created_at": "2026-08-20T07:56:18Z",
+        "updated_at": "2026-08-20T07:56:19Z",
+        "digest": "sha256:48337756b95d468252c75b8433e47d396fcd781554e7a2bf97357b44ba03206e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.12/M-5_20260820_single_zh.png"
+      },
+      {
+        "name": "M-5_20260820_zh.xlsx",
+        "size": 255767,
+        "created_at": "2026-08-20T07:56:22Z",
+        "updated_at": "2026-08-20T07:56:22Z",
+        "digest": "sha256:bf5dbf33c5ef7d96c1dbedc966c2b3f3a8015b354810cf1f24cacad23c3567a5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.12/M-5_20260820_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 31086769,
+        "created_at": "2026-08-20T07:56:25Z",
+        "updated_at": "2026-08-20T07:56:48Z",
+        "digest": "sha256:dba965f766e21d459bf632b93827e70e78b79b4e4eaacc185e3c41100b5d6a1a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.12/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.11",
+    "target_commitish": "bddd256d5143c19e10d4307c66082d0f679951bb",
+    "published_at": "2026-08-19T08:42:32Z",
+    "updated_at": "2026-08-19T08:42:32Z",
+    "assets": [
+      {
+        "name": "M-5_20260819_double_en.png",
+        "size": 791775,
+        "created_at": "2026-08-19T08:41:19Z",
+        "updated_at": "2026-08-19T08:41:20Z",
+        "digest": "sha256:d89e836be3f774c10ba2fdd8e9e242fa375276d0242fe83c5cd77a17bbdebfa2",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.11/M-5_20260819_double_en.png"
+      },
+      {
+        "name": "M-5_20260819_double_ja.png",
+        "size": 694904,
+        "created_at": "2026-08-19T08:41:23Z",
+        "updated_at": "2026-08-19T08:41:23Z",
+        "digest": "sha256:813e8ac84b7a39fa8d0e663244ed2be47d02d2664d7f8505f18a1fe9d6c654ea",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.11/M-5_20260819_double_ja.png"
+      },
+      {
+        "name": "M-5_20260819_double_zh.png",
+        "size": 829508,
+        "created_at": "2026-08-19T08:41:26Z",
+        "updated_at": "2026-08-19T08:41:28Z",
+        "digest": "sha256:cc8fe021f13fa109072ef302af42e93ed806f240b45b0f18e0f50b577123adf1",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.11/M-5_20260819_double_zh.png"
+      },
+      {
+        "name": "M-5_20260819_en.xlsx",
+        "size": 224056,
+        "created_at": "2026-08-19T08:41:31Z",
+        "updated_at": "2026-08-19T08:41:32Z",
+        "digest": "sha256:6adc16b80c6f974807420e8a03ed69290eb338b2d7d589a440124bf44bc77321",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.11/M-5_20260819_en.xlsx"
+      },
+      {
+        "name": "M-5_20260819_ja.xlsx",
+        "size": 275872,
+        "created_at": "2026-08-19T08:41:35Z",
+        "updated_at": "2026-08-19T08:41:35Z",
+        "digest": "sha256:462607e060bb7548137d6eda42593ba736f5273e37af12aad666010ddf3586ed",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.11/M-5_20260819_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260819_single_en.png",
+        "size": 606585,
+        "created_at": "2026-08-19T08:41:39Z",
+        "updated_at": "2026-08-19T08:41:40Z",
+        "digest": "sha256:7212017baf5720a2a13ab7a605a20f4bbc4b8aba02063aac83f5e2d42c381490",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.11/M-5_20260819_single_en.png"
+      },
+      {
+        "name": "M-5_20260819_single_ja.png",
+        "size": 792943,
+        "created_at": "2026-08-19T08:41:43Z",
+        "updated_at": "2026-08-19T08:41:44Z",
+        "digest": "sha256:ecb494ecfc8d8460d22e7730f6ae56654c42b1553293be674c6447bdfcd287f2",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.11/M-5_20260819_single_ja.png"
+      },
+      {
+        "name": "M-5_20260819_single_zh.png",
+        "size": 818698,
+        "created_at": "2026-08-19T08:41:47Z",
+        "updated_at": "2026-08-19T08:41:48Z",
+        "digest": "sha256:45b0f974b0221aa3345773490c76780ffefd0ea2f5279436361f94957a208a0d",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.11/M-5_20260819_single_zh.png"
+      },
+      {
+        "name": "M-5_20260819_zh.xlsx",
+        "size": 255862,
+        "created_at": "2026-08-19T08:41:51Z",
+        "updated_at": "2026-08-19T08:41:51Z",
+        "digest": "sha256:72185b10ea98b1e08560248860034a00d5084042830924993a9ee9537c6ecd0a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.11/M-5_20260819_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 30934491,
+        "created_at": "2026-08-19T08:41:55Z",
+        "updated_at": "2026-08-19T08:42:23Z",
+        "digest": "sha256:9c8219ff3db5e010bd1e5a31408578aaf82d152894fe912dc56496edb65a428b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.11/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.10",
+    "target_commitish": "6e50c26bcaf7e1ac9d2b3e8467b675b6d76fdb46",
+    "published_at": "2026-08-17T10:32:30Z",
+    "updated_at": "2026-08-17T10:32:30Z",
+    "assets": [
+      {
+        "name": "M-5_20260817_double_en.png",
+        "size": 765106,
+        "created_at": "2026-08-17T10:29:45Z",
+        "updated_at": "2026-08-17T10:29:46Z",
+        "digest": "sha256:d9486c9dbdbe46685172eb8b8ac360ddde26526e7a48b686fc8437bcac278588",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.10/M-5_20260817_double_en.png"
+      },
+      {
+        "name": "M-5_20260817_double_ja.png",
+        "size": 775245,
+        "created_at": "2026-08-17T10:29:50Z",
+        "updated_at": "2026-08-17T10:29:51Z",
+        "digest": "sha256:3f888cea8f85b3a4b685262d8ee190a36c7d063a195b66e44ac3b209412a083e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.10/M-5_20260817_double_ja.png"
+      },
+      {
+        "name": "M-5_20260817_double_zh.png",
+        "size": 799157,
+        "created_at": "2026-08-17T10:29:54Z",
+        "updated_at": "2026-08-17T10:29:55Z",
+        "digest": "sha256:21497f8f1fa1e90339542f248914f173fa4de31e82f9bc78c872185eec715492",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.10/M-5_20260817_double_zh.png"
+      },
+      {
+        "name": "M-5_20260817_en.xlsx",
+        "size": 225226,
+        "created_at": "2026-08-17T10:29:59Z",
+        "updated_at": "2026-08-17T10:29:59Z",
+        "digest": "sha256:1e79972cb671f87b759be662d0060638ab7c51431db62d8bfbcb767467777efe",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.10/M-5_20260817_en.xlsx"
+      },
+      {
+        "name": "M-5_20260817_ja.xlsx",
+        "size": 245697,
+        "created_at": "2026-08-17T10:30:03Z",
+        "updated_at": "2026-08-17T10:30:04Z",
+        "digest": "sha256:f3fd13bb9526d03a97226dc995b343a3f80483cdd19273b6720b0e9141e537ec",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.10/M-5_20260817_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260817_single_en.png",
+        "size": 723070,
+        "created_at": "2026-08-17T10:30:08Z",
+        "updated_at": "2026-08-17T10:30:09Z",
+        "digest": "sha256:e2e1e11ee341635fcd0d5fd9db729696a36d4791228f8469d1cb636384f2d29f",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.10/M-5_20260817_single_en.png"
+      },
+      {
+        "name": "M-5_20260817_single_ja.png",
+        "size": 737142,
+        "created_at": "2026-08-17T10:30:13Z",
+        "updated_at": "2026-08-17T10:30:14Z",
+        "digest": "sha256:8a517ea2c7ee74d45885335f9e5f619984a6bd3fb3fbda3d625719be66d407d5",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.10/M-5_20260817_single_ja.png"
+      },
+      {
+        "name": "M-5_20260817_single_zh.png",
+        "size": 745039,
+        "created_at": "2026-08-17T10:30:17Z",
+        "updated_at": "2026-08-17T10:30:19Z",
+        "digest": "sha256:92e6f72a00385a377b153fa8de8f6fa0fef6329a404f59d270413abb657b33b0",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.10/M-5_20260817_single_zh.png"
+      },
+      {
+        "name": "M-5_20260817_zh.xlsx",
+        "size": 242542,
+        "created_at": "2026-08-17T10:30:22Z",
+        "updated_at": "2026-08-17T10:30:23Z",
+        "digest": "sha256:95acb136609d057197032c640f0912b1172cb9eb94ef97219168afb6b71a8e02",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.10/M-5_20260817_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 30808182,
+        "created_at": "2026-08-17T10:30:27Z",
+        "updated_at": "2026-08-17T10:30:58Z",
+        "digest": "sha256:f8b2d465202809aa588e9322d393b59e8c63273cc6e1abd121d8f0ee93ce6b2f",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.10/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.9",
+    "target_commitish": "315ba5897711f8fe4fb1ff86edafe741fc8c8f3a",
+    "published_at": "2026-08-12T11:55:02Z",
+    "updated_at": "2026-08-12T11:55:02Z",
+    "assets": [
+      {
+        "name": "M-5_20260812_double_en.png",
+        "size": 634844,
+        "created_at": "2026-08-12T11:54:11Z",
+        "updated_at": "2026-08-12T11:54:13Z",
+        "digest": "sha256:956a114b5dd5953593c32bdd42c2aa6eb5208491a20e9577fe58f46cd1071d4c",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.9/M-5_20260812_double_en.png"
+      },
+      {
+        "name": "M-5_20260812_double_ja.png",
+        "size": 626559,
+        "created_at": "2026-08-12T11:54:17Z",
+        "updated_at": "2026-08-12T11:54:17Z",
+        "digest": "sha256:6f167ccfee56354398f2d2686c68ec317c7afe8190b2e0f7f9a0e476288bf3a9",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.9/M-5_20260812_double_ja.png"
+      },
+      {
+        "name": "M-5_20260812_double_zh.png",
+        "size": 644858,
+        "created_at": "2026-08-12T11:54:21Z",
+        "updated_at": "2026-08-12T11:54:28Z",
+        "digest": "sha256:842f6d2583059f63a2144ad2422d2f1d19001f8a8db96a07ffc7d56fb02489da",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.9/M-5_20260812_double_zh.png"
+      },
+      {
+        "name": "M-5_20260812_en.xlsx",
+        "size": 227836,
+        "created_at": "2026-08-12T11:54:31Z",
+        "updated_at": "2026-08-12T11:54:32Z",
+        "digest": "sha256:5ec0a950dfaa6f87b4f8d23ce29b1ccc2dda7050225000d7e975b4b20c51ce24",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.9/M-5_20260812_en.xlsx"
+      },
+      {
+        "name": "M-5_20260812_ja.xlsx",
+        "size": 248327,
+        "created_at": "2026-08-12T11:54:35Z",
+        "updated_at": "2026-08-12T11:54:36Z",
+        "digest": "sha256:c7e715e506a3446ee7941e2a9657bac5317a7f8f7f2033b9fa940f18ae1863d9",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.9/M-5_20260812_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260812_single_en.png",
+        "size": 598583,
+        "created_at": "2026-08-12T11:54:39Z",
+        "updated_at": "2026-08-12T11:54:40Z",
+        "digest": "sha256:77829834157450e6bbd276c1511438e96a3bf6fb0f1a5ffc9af8b3beaf151daa",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.9/M-5_20260812_single_en.png"
+      },
+      {
+        "name": "M-5_20260812_single_ja.png",
+        "size": 583073,
+        "created_at": "2026-08-12T11:54:44Z",
+        "updated_at": "2026-08-12T11:54:46Z",
+        "digest": "sha256:78a15ca93ef5e6b9502e2a5b83c115383e355663e97674a2c6efb130d6e6b86a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.9/M-5_20260812_single_ja.png"
+      },
+      {
+        "name": "M-5_20260812_single_zh.png",
+        "size": 621447,
+        "created_at": "2026-08-12T11:54:50Z",
+        "updated_at": "2026-08-12T11:54:50Z",
+        "digest": "sha256:f58a78126a0048ca7298a2fff9b5aec5bc8d7a2799faa82cd74d8f2baa0603a0",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.9/M-5_20260812_single_zh.png"
+      },
+      {
+        "name": "M-5_20260812_zh.xlsx",
+        "size": 245217,
+        "created_at": "2026-08-12T11:54:53Z",
+        "updated_at": "2026-08-12T11:54:54Z",
+        "digest": "sha256:f906b772142d247039c5c7c3ad6d518d1c92b614766afcbcffbcb6d9541fd43b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.9/M-5_20260812_zh.xlsx"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.8",
+    "target_commitish": "7a19de293fbd3b2fae19f76a1607377611d8cf55",
+    "published_at": "2026-08-10T16:10:40Z",
+    "updated_at": "2026-08-10T16:10:40Z",
+    "assets": [
+      {
+        "name": "M-5_20260810_double_en.png",
+        "size": 517398,
+        "created_at": "2026-08-10T16:06:35Z",
+        "updated_at": "2026-08-10T16:06:36Z",
+        "digest": "sha256:f74655ec812038b6e7a20f04a72d7f5811a1c19a4c18257bda20722320ddd987",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.8/M-5_20260810_double_en.png"
+      },
+      {
+        "name": "M-5_20260810_double_ja.png",
+        "size": 522387,
+        "created_at": "2026-08-10T16:06:44Z",
+        "updated_at": "2026-08-10T16:06:45Z",
+        "digest": "sha256:0aed8cc25dec6341e520e0d78a58a7cb123ba45000482b6534daef3f3f6cf9fc",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.8/M-5_20260810_double_ja.png"
+      },
+      {
+        "name": "M-5_20260810_double_zh.png",
+        "size": 551336,
+        "created_at": "2026-08-10T16:06:51Z",
+        "updated_at": "2026-08-10T16:06:52Z",
+        "digest": "sha256:bf4f9c7827948a3dd39ad99bac98739231c72f2014e827f5d54e239dbdda2db4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.8/M-5_20260810_double_zh.png"
+      },
+      {
+        "name": "M-5_20260810_en.xlsx",
+        "size": 228064,
+        "created_at": "2026-08-10T16:06:59Z",
+        "updated_at": "2026-08-10T16:07:00Z",
+        "digest": "sha256:f1d01ec47b75e2223a3c92f118eadcb98e06c7bfe85f33bd9df02891dc9ccf00",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.8/M-5_20260810_en.xlsx"
+      },
+      {
+        "name": "M-5_20260810_ja.xlsx",
+        "size": 248401,
+        "created_at": "2026-08-10T16:07:06Z",
+        "updated_at": "2026-08-10T16:07:07Z",
+        "digest": "sha256:bea50fcdda9049436f5b25de201812d2adb58362d9b8463e69491295fcb454e2",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.8/M-5_20260810_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260810_single_en.png",
+        "size": 545375,
+        "created_at": "2026-08-10T16:07:14Z",
+        "updated_at": "2026-08-10T16:07:15Z",
+        "digest": "sha256:bd84f1e9b9cef3969569ca266f7fd081387c547aaef71e170282077ab3a6043e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.8/M-5_20260810_single_en.png"
+      },
+      {
+        "name": "M-5_20260810_single_ja.png",
+        "size": 549417,
+        "created_at": "2026-08-10T16:07:21Z",
+        "updated_at": "2026-08-10T16:07:24Z",
+        "digest": "sha256:8a42f33d080cbba78ab84e08fcba41982bf61d3e67f99ffde186614a5e3eaa1b",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.8/M-5_20260810_single_ja.png"
+      },
+      {
+        "name": "M-5_20260810_single_zh.png",
+        "size": 562773,
+        "created_at": "2026-08-10T16:07:31Z",
+        "updated_at": "2026-08-10T16:07:32Z",
+        "digest": "sha256:0ff0aff32bbf79a19b6b8c8fc6ba4961181ea89ea2379edea54a52ef4bd9dbee",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.8/M-5_20260810_single_zh.png"
+      },
+      {
+        "name": "M-5_20260810_zh.xlsx",
+        "size": 245151,
+        "created_at": "2026-08-10T16:07:38Z",
+        "updated_at": "2026-08-10T16:07:39Z",
+        "digest": "sha256:68f534a90bb062b01d3da9cc6593505a1808cf42990ee9eee0911c50cf33bef4",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.8/M-5_20260810_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 29550772,
+        "created_at": "2026-08-10T16:07:46Z",
+        "updated_at": "2026-08-10T16:08:06Z",
+        "digest": "sha256:206de763bd5624389fc60006899eb9e4369658c75098d4e97cc6983f75f3ddba",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.8/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.7",
+    "target_commitish": "85da3794c492bb9d3b32b88c9da393c6d8d1b90b",
+    "published_at": "2026-08-08T17:24:02Z",
+    "updated_at": "2026-08-08T17:24:02Z",
+    "assets": [
+      {
+        "name": "M-5_20260808_double_en.png",
+        "size": 399595,
+        "created_at": "2026-08-08T17:23:10Z",
+        "updated_at": "2026-08-08T17:23:10Z",
+        "digest": "sha256:724029c91fea563bab0093a5c794da2b5393bfc9cee0a26175038e8269b8f8ce",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.7/M-5_20260808_double_en.png"
+      },
+      {
+        "name": "M-5_20260808_double_ja.png",
+        "size": 406413,
+        "created_at": "2026-08-08T17:23:13Z",
+        "updated_at": "2026-08-08T17:23:13Z",
+        "digest": "sha256:db8e914d1c9f6eb3829e42a478354e5796483914a5c7fc5b69bfba439e4f8264",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.7/M-5_20260808_double_ja.png"
+      },
+      {
+        "name": "M-5_20260808_double_zh.png",
+        "size": 430805,
+        "created_at": "2026-08-08T17:23:16Z",
+        "updated_at": "2026-08-08T17:23:17Z",
+        "digest": "sha256:5df4f85232e6d12edd291766a7e94315601d7297eb9d60fad8a1701741e049e0",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.7/M-5_20260808_double_zh.png"
+      },
+      {
+        "name": "M-5_20260808_en.xlsx",
+        "size": 220778,
+        "created_at": "2026-08-08T17:23:19Z",
+        "updated_at": "2026-08-08T17:23:20Z",
+        "digest": "sha256:83f382e87a4b7bde69d1bef75e55fe8e0695d0b96a090ec0c8e44fc8e7312383",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.7/M-5_20260808_en.xlsx"
+      },
+      {
+        "name": "M-5_20260808_ja.xlsx",
+        "size": 240331,
+        "created_at": "2026-08-08T17:23:22Z",
+        "updated_at": "2026-08-08T17:23:23Z",
+        "digest": "sha256:347be1636932894cc2b35105dcfd0cbe73fb4f130977cd13f7fabed71d6252f9",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.7/M-5_20260808_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260808_single_en.png",
+        "size": 452747,
+        "created_at": "2026-08-08T17:23:25Z",
+        "updated_at": "2026-08-08T17:23:26Z",
+        "digest": "sha256:369d82fc974825f8d26b8e86304cdbef3dbf481cacbe390eabee843b3f2e8466",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.7/M-5_20260808_single_en.png"
+      },
+      {
+        "name": "M-5_20260808_single_ja.png",
+        "size": 454938,
+        "created_at": "2026-08-08T17:23:29Z",
+        "updated_at": "2026-08-08T17:23:29Z",
+        "digest": "sha256:9cdb0165a0b70ed905dccaf3bc8baa7766b8fedce0027fc872708bffaae1adaf",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.7/M-5_20260808_single_ja.png"
+      },
+      {
+        "name": "M-5_20260808_single_zh.png",
+        "size": 467463,
+        "created_at": "2026-08-08T17:23:32Z",
+        "updated_at": "2026-08-08T17:23:32Z",
+        "digest": "sha256:eaaf45d9a14f6440341992f4a49d1e5532487ce5072d02abde2827d704a39e19",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.7/M-5_20260808_single_zh.png"
+      },
+      {
+        "name": "M-5_20260808_zh.xlsx",
+        "size": 237601,
+        "created_at": "2026-08-08T17:23:35Z",
+        "updated_at": "2026-08-08T17:23:36Z",
+        "digest": "sha256:13cf77b8fa6743cd2035ee82b272c2ac3c7e37fe100eaf0bd02204d0287ee6ea",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.7/M-5_20260808_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 29082685,
+        "created_at": "2026-08-08T17:23:39Z",
+        "updated_at": "2026-08-08T17:23:54Z",
+        "digest": "sha256:45ddb67bd5f30e75eb54895ad53a77e48cecc39d33d43c8f69de2c8c5740a657",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.7/pokemon-champions-ui.zip"
+      }
+    ]
+  },
+  {
+    "tag": "v0.6.6",
+    "target_commitish": "e7a43bf511a7b19f69211dad841656f0d16cca6c",
+    "published_at": "2026-08-07T12:44:14Z",
+    "updated_at": "2026-08-07T12:44:14Z",
+    "assets": [
+      {
+        "name": "M-5_20260807_double_en.png",
+        "size": 322175,
+        "created_at": "2026-08-07T12:43:27Z",
+        "updated_at": "2026-08-07T12:43:27Z",
+        "digest": "sha256:c093018eb3a2c2da7b89cc174d15c16e354ecc964aba2a8641ea7ebde859d233",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.6/M-5_20260807_double_en.png"
+      },
+      {
+        "name": "M-5_20260807_double_ja.png",
+        "size": 322060,
+        "created_at": "2026-08-07T12:43:30Z",
+        "updated_at": "2026-08-07T12:43:31Z",
+        "digest": "sha256:d3e88e4aed3b76cd164b142bee135ed9d7e44a0473f02a04dc45540be99696c7",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.6/M-5_20260807_double_ja.png"
+      },
+      {
+        "name": "M-5_20260807_double_zh.png",
+        "size": 351572,
+        "created_at": "2026-08-07T12:43:33Z",
+        "updated_at": "2026-08-07T12:43:34Z",
+        "digest": "sha256:6d0cc6174b34d67dd61662ef5a520ec8dc7e9afb844aa5aa7e390b44bda46690",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.6/M-5_20260807_double_zh.png"
+      },
+      {
+        "name": "M-5_20260807_en.xlsx",
+        "size": 205623,
+        "created_at": "2026-08-07T12:43:40Z",
+        "updated_at": "2026-08-07T12:43:41Z",
+        "digest": "sha256:915a1f1a72c8a729d36d2a05f8cea1f0c6416827a8b52eaa44c60849f318db0f",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.6/M-5_20260807_en.xlsx"
+      },
+      {
+        "name": "M-5_20260807_ja.xlsx",
+        "size": 224388,
+        "created_at": "2026-08-07T12:43:43Z",
+        "updated_at": "2026-08-07T12:43:44Z",
+        "digest": "sha256:5994b6f4467d78155c203131f128105766d5850b602163222d929595bf5e576a",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.6/M-5_20260807_ja.xlsx"
+      },
+      {
+        "name": "M-5_20260807_single_en.png",
+        "size": 359026,
+        "created_at": "2026-08-07T12:43:46Z",
+        "updated_at": "2026-08-07T12:43:47Z",
+        "digest": "sha256:cb959ae53000bcc2b5fbf8e8ca0095ce744aa1ad90d803ecba3a59a0046b6844",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.6/M-5_20260807_single_en.png"
+      },
+      {
+        "name": "M-5_20260807_single_ja.png",
+        "size": 358219,
+        "created_at": "2026-08-07T12:43:50Z",
+        "updated_at": "2026-08-07T12:43:50Z",
+        "digest": "sha256:e6c7f21fefc7709aa6e3dfd87760662583bcd712d7b373291ef127dc0faa830e",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.6/M-5_20260807_single_ja.png"
+      },
+      {
+        "name": "M-5_20260807_single_zh.png",
+        "size": 373678,
+        "created_at": "2026-08-07T12:43:53Z",
+        "updated_at": "2026-08-07T12:43:53Z",
+        "digest": "sha256:7f727bc6df1f06a4e4f9f488a414bc2ab37af31e4409af43eef09deaaebfa224",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.6/M-5_20260807_single_zh.png"
+      },
+      {
+        "name": "M-5_20260807_zh.xlsx",
+        "size": 222305,
+        "created_at": "2026-08-07T12:43:56Z",
+        "updated_at": "2026-08-07T12:43:57Z",
+        "digest": "sha256:9eca9b11dd91d2b6e9f3a6565e09d049cdbaa00693e3d6c73bcbfd6f6fda5337",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.6/M-5_20260807_zh.xlsx"
+      },
+      {
+        "name": "pokemon-champions-ui.zip",
+        "size": 28173657,
+        "created_at": "2026-08-07T12:43:59Z",
+        "updated_at": "2026-08-07T12:44:06Z",
+        "digest": "sha256:cd027be459504933145fd15cb8222e0d6560693b7400a18b3d503b2c33d44dae",
+        "browser_download_url": "https://github.com/pmwl0128/Quark_Drive_Skills/releases/download/v0.6.6/pokemon-champions-ui.zip"
+      }
+    ]
+  }
+]

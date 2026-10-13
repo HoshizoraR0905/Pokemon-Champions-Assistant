@@ -1,0 +1,60 @@
+{
+  "fixture": "battle_screen.png",
+  "sha256": "55f504d15f666a092f622dd412924f212b7b526a2ed8aa468bcfc338e19417cc",
+  "source": "Actual supplied gameplay screenshot; OCR captured with existing Tesseract pipeline",
+  "game_version": null,
+  "cases": [
+    {
+      "slot": "own_active_1",
+      "visible_species_id": 530,
+      "raw_text": "龙头地鼠",
+      "confidence": 0.893,
+      "region": [
+        364,
+        1021,
+        593,
+        1070
+      ],
+      "expected_canonical_id": "pokeapi:species:530"
+    },
+    {
+      "slot": "own_active_2",
+      "visible_species_id": 903,
+      "raw_text": "大狙拉",
+      "confidence": 0.617,
+      "region": [
+        805,
+        1021,
+        1033,
+        1070
+      ],
+      "expected_canonical_id": "pokeapi:species:903"
+    },
+    {
+      "slot": "opponent_active_1",
+      "visible_species_id": 376,
+      "raw_text": "巨金怪",
+      "confidence": 0.917,
+      "region": [
+        1636,
+        62,
+        1893,
+        101
+      ],
+      "expected_canonical_id": "pokeapi:species:376"
+    },
+    {
+      "slot": "opponent_active_2",
+      "visible_species_id": 1000,
+      "raw_text": "于富囊",
+      "confidence": 0.207,
+      "region": [
+        2071,
+        62,
+        2328,
+        101
+      ],
+      "expected_canonical_id": null
+    }
+  ]
+}

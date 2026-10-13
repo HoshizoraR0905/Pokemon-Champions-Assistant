@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pokemon-champions-assistant"
+version = "0.1.0"
+description = "Public screenshot and video recognition for Pokemon Champions"
+requires-python = ">=3.10"
+dependencies = ["opencv-python-headless>=4.8,<6", "pytesseract>=0.3.10,<0.4"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["capture*", "recognition*", "models*", "tracking*", "damage*", "api*", "knowledge*"]
+
+[tool.setuptools.package-data]
+knowledge = ["data/*.json", "data/*.txt", "archive/*/*.json", "archive/*/*.txt"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
