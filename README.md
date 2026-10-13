@@ -78,3 +78,31 @@ python main.py --image tests/fixtures/team_preview.png --verbose --json-out outp
 `--ocr paddle-v6`, `--ocr paddle-v5` and `--ocr tesseract` select a backend. `--no-icons` disables visual matching. Terminal output is concise by default; `--verbose` shows all diagnostics, and `--json-out` writes complete JSON lines. OCR and visual scores remain separate, and a disagreement yields a conflict instead of an identity.
 
 The identity index covers 1,025 National Pokédex species and 1,579 PokeAPI forms; the Champions thumbnail manifest lists 393 PNGs and 14 unmapped filenames. See [the M1.2 audit and benchmark](reports/M1.2-recognition.md), [form index](knowledge/data/identity.json), [visual asset manifest](knowledge/data/visual_assets.json), [ground truth](tests/fixtures/m12_ground_truth.json), and per-backend results in `reports/M1.2-*.json`. Captured thumbnails are kept in `.cache/champions-icons` and are not bundled.
+
+### M1.3: persistent own-team configuration
+
+Use the PaddleOCR pipeline and the existing entity database to collect the two configuration tabs into [the versioned team snapshot](data/teams/my_team.json):
+
+```sh
+python main.py --images tests/fixtures/team_configuration_moves.png tests/fixtures/team_configuration_stats.png --ocr paddle-v6
+python main.py --image path/to/new_configuration.png --collect-team --ocr paddle-v6
+python main.py --video path/to/recording.mp4 --interval 1 --collect-team --ocr paddle-v6
+python main.py --team-summary
+python -m pytest -q tests/test_team_configuration.py
+```
+
+`--team-out` selects another team file; `--team-id` names a new team. Collection saves after every configuration frame, so interrupted videos retain observations. Reprocessing the same screenshot/frame does not duplicate evidence. Other recognized screens do not enter the persistent team. The six card positions supply stable `own_team_1` through `own_team_6` instance IDs. Duplicate species remain separate by slot; a different species in an occupied slot creates a conflict and its other fields are not merged. If the team is reordered, review the conflict rather than assuming the slot still represents the same Pokémon.
+
+The JSON contains per-field `value`, `canonical_id`, `status`, `confidence`, source observations, and preserved conflicts. `observed` means the UI value was read, `knowledge_resolved` means a canonical entity matched, `ambiguous` means review is needed, and `manual_verified` records an explicit correction or confirmation. The six final numerical stats are read from the stats tab. The nearby allocation numbers have separate `allocation_*_display` fields; they are not treated as final stats or EVs. Form IDs remain null when the form is not established. Level, nature, EVs, and IVs are unknown on these pages. `complete` requires all 14 required fields for all six members to be manually verified and every active conflict resolved.
+
+For manual review, create a UTF-8 JSON array such as:
+
+```json
+[
+  {"instance_id":"own_team_1","field":"hp","value":172,"reviewer":"trainer","note":"checked stats tab"},
+  {"instance_id":"own_team_1","field":"ability","canonical_id":"pokeapi:ability:22","reviewer":"trainer","note":"checked moves tab"},
+  {"instance_id":"own_team_1","field":"form","value":"base","reviewer":"trainer","note":"checked base form icon"}
+]
+```
+
+Run `python main.py --team-corrections path/to/review.json --team-summary`. Entity fields require IDs from `knowledge/data/entities.json`; numerical stats require positive integers. A manually checked unnumbered base form uses `"value":"base"` and retains a null form ID. Corrections preserve the earlier observation and mark its conflict reviewed. Check [the field accuracy report](reports/M1.3-configuration.md) for fixture results and remaining unknowns.

@@ -620,7 +620,7 @@
       "image": "team_configuration_moves.png",
       "region": "ability_1_1",
       "kind": "ability",
-      "expected": "拔沙",
+      "expected": "拨沙",
       "species_id": null,
       "form_id": null,
       "split": "development",

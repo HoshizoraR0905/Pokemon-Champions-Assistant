@@ -1,0 +1,3855 @@
+{
+  "schema_version": 1,
+  "team_id": "my_team",
+  "created_at_utc": "2026-10-13T09:20:45+00:00",
+  "knowledge_snapshot_sha256": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+  "regulation": "M-C",
+  "sources": [
+    {
+      "path": "tests/fixtures/team_configuration_moves.png",
+      "sha256": "225fddbb617e17e0a2d68ab5ca7c02205f45879df4ea98002cb3df10c6c5917c",
+      "frame_index": 0,
+      "video_second": null,
+      "screen": "team_configuration",
+      "page": "configuration_moves",
+      "processed_at_utc": "2026-10-13T09:20:53+00:00"
+    },
+    {
+      "path": "tests/fixtures/team_configuration_stats.png",
+      "sha256": "e8e1c060fc173a522dd7a9b426bd3b7f6c6aabc7502e94f645a293b76e2a34a6",
+      "frame_index": 0,
+      "video_second": null,
+      "screen": "team_configuration",
+      "page": "configuration_stats",
+      "processed_at_utc": "2026-10-13T09:20:59+00:00"
+    }
+  ],
+  "members": [
+    {
+      "instance_id": "own_team_1",
+      "slot": 1,
+      "fields": {
+        "species": {
+          "value": "暴飞龙",
+          "canonical_id": "pokeapi:species:373",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "暴飞龙",
+              "region": [
+                267,
+                152,
+                393,
+                174
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
+              "candidate_ids": [
+                "pokeapi:species:373"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "暴飞龙",
+              "region": [
+                267,
+                152,
+                393,
+                174
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
+              "candidate_ids": [
+                "pokeapi:species:373"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "威吓",
+          "canonical_id": "pokeapi:ability:22",
+          "status": "knowledge_resolved",
+          "confidence": 0.994,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "威吓",
+              "region": [
+                273,
+                181,
+                456,
+                198
+              ],
+              "confidence": 0.994,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:ability:22"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "暴飞龙进化石",
+          "canonical_id": "pokeapi:item:810",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "暴飞龙进化石",
+              "region": [
+                273,
+                207,
+                456,
+                225
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:item:810"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "巨声",
+          "canonical_id": "pokeapi:move:304",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "巨声",
+              "region": [
+                501,
+                155,
+                608,
+                175
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:304"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "流星群",
+          "canonical_id": "pokeapi:move:434",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "流星群",
+              "region": [
+                501,
+                180,
+                608,
+                200
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:434"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "喷射火焰",
+          "canonical_id": "pokeapi:move:53",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "喷射火焰",
+              "region": [
+                501,
+                206,
+                608,
+                226
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:53"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "守住",
+          "canonical_id": "pokeapi:move:182",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "守住",
+              "region": [
+                501,
+                231,
+                608,
+                251
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:182"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 172,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "172",
+              "region": [
+                342,
+                180,
+                375,
+                198
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 139,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "139",
+              "region": [
+                342,
+                205,
+                375,
+                223
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 100,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "100",
+              "region": [
+                342,
+                230,
+                375,
+                248
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 162,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "162",
+              "region": [
+                539,
+                180,
+                572,
+                198
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 100,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "100",
+              "region": [
+                539,
+                205,
+                572,
+                223
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 167,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "167",
+              "region": [
+                539,
+                230,
+                572,
+                248
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "female",
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.8,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "",
+              "region": [
+                399,
+                153,
+                420,
+                171
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": [
+                399,
+                153,
+                420,
+                171
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 2,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "2",
+              "region": [
+                401,
+                180,
+                417,
+                198
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.997,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                401,
+                205,
+                417,
+                223
+              ],
+              "confidence": 0.997,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.996,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                401,
+                230,
+                417,
+                248
+              ],
+              "confidence": 0.996,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                598,
+                180,
+                614,
+                198
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.999,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                598,
+                205,
+                614,
+                223
+              ],
+              "confidence": 0.999,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                598,
+                230,
+                614,
+                248
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [
+        "species",
+        "form",
+        "ability",
+        "held_item",
+        "move_1",
+        "move_2",
+        "move_3",
+        "move_4",
+        "hp",
+        "attack",
+        "defense",
+        "special_attack",
+        "special_defense",
+        "speed"
+      ],
+      "conflicting_fields": [],
+      "species_id": 373,
+      "form_id": null,
+      "names": {
+        "zh-hans": "暴飞龙",
+        "en": "Salamence"
+      }
+    },
+    {
+      "instance_id": "own_team_2",
+      "slot": 2,
+      "fields": {
+        "species": {
+          "value": "班基拉斯",
+          "canonical_id": "pokeapi:species:248",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "班基拉斯",
+              "region": [
+                714,
+                152,
+                840,
+                174
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:species:248"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "班基拉斯",
+              "region": [
+                714,
+                152,
+                840,
+                174
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:species:248"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "扬沙",
+          "canonical_id": "pokeapi:ability:45",
+          "status": "knowledge_resolved",
+          "confidence": 0.999,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "扬沙",
+              "region": [
+                720,
+                181,
+                903,
+                198
+              ],
+              "confidence": 0.999,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:ability:45"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "班基拉斯进化石",
+          "canonical_id": "pokeapi:item:708",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "班基拉斯进化石",
+              "region": [
+                720,
+                207,
+                903,
+                225
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:item:708"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "岩崩",
+          "canonical_id": "pokeapi:move:157",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "岩崩",
+              "region": [
+                948,
+                155,
+                1055,
+                175
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:157"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "拍落",
+          "canonical_id": "pokeapi:move:282",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "拍落",
+              "region": [
+                948,
+                180,
+                1055,
+                200
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:282"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "踢倒",
+          "canonical_id": "pokeapi:move:67",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "踢倒",
+              "region": [
+                948,
+                206,
+                1055,
+                226
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:67"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "守住",
+          "canonical_id": "pokeapi:move:182",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "守住",
+              "region": [
+                948,
+                231,
+                1055,
+                251
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:182"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 177,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "177",
+              "region": [
+                789,
+                180,
+                822,
+                198
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 186,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "186",
+              "region": [
+                789,
+                205,
+                822,
+                223
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 130,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "130",
+              "region": [
+                789,
+                230,
+                822,
+                248
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 103,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "103",
+              "region": [
+                986,
+                180,
+                1019,
+                198
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 120,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "120",
+              "region": [
+                986,
+                205,
+                1019,
+                223
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 124,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "124",
+              "region": [
+                986,
+                230,
+                1019,
+                248
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "female",
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.8,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "",
+              "region": [
+                846,
+                153,
+                867,
+                171
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": [
+                846,
+                153,
+                867,
+                171
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 2,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "2",
+              "region": [
+                848,
+                180,
+                864,
+                198
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                848,
+                205,
+                864,
+                223
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.998,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                848,
+                230,
+                864,
+                248
+              ],
+              "confidence": 0.998,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.997,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                1045,
+                180,
+                1061,
+                198
+              ],
+              "confidence": 0.997,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.997,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                1045,
+                205,
+                1061,
+                223
+              ],
+              "confidence": 0.997,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                1045,
+                230,
+                1061,
+                248
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [
+        "species",
+        "form",
+        "ability",
+        "held_item",
+        "move_1",
+        "move_2",
+        "move_3",
+        "move_4",
+        "hp",
+        "attack",
+        "defense",
+        "special_attack",
+        "special_defense",
+        "speed"
+      ],
+      "conflicting_fields": [],
+      "species_id": 248,
+      "form_id": null,
+      "names": {
+        "zh-hans": "班基拉斯",
+        "en": "Tyranitar"
+      }
+    },
+    {
+      "instance_id": "own_team_3",
+      "slot": 3,
+      "fields": {
+        "species": {
+          "value": "钢铠鸦",
+          "canonical_id": "pokeapi:species:823",
+          "status": "knowledge_resolved",
+          "confidence": 0.999,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "钢铠鸦",
+              "region": [
+                267,
+                274,
+                393,
+                296
+              ],
+              "confidence": 0.999,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:species:823"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "钢铠鸦",
+              "region": [
+                267,
+                274,
+                393,
+                296
+              ],
+              "confidence": 0.999,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:species:823"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "镜甲",
+          "canonical_id": "pokeapi:ability:240",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "镜甲",
+              "region": [
+                273,
+                303,
+                456,
+                320
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:ability:240"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "精神种子",
+          "canonical_id": "pokeapi:item:899",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "精神种子",
+              "region": [
+                273,
+                329,
+                456,
+                347
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:item:899"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "勇鸟猛攻",
+          "canonical_id": "pokeapi:move:413",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "勇鸟猛攻",
+              "region": [
+                501,
+                277,
+                608,
+                297
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:413"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "嚣张",
+          "canonical_id": "pokeapi:move:681",
+          "status": "knowledge_resolved",
+          "confidence": 0.82,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "嚣张",
+              "region": [
+                501,
+                302,
+                608,
+                322
+              ],
+              "confidence": 0.82,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:681"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "健美",
+          "canonical_id": "pokeapi:move:339",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "健美",
+              "region": [
+                501,
+                327,
+                608,
+                347
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:339"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "羽栖",
+          "canonical_id": "pokeapi:move:355",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "羽栖",
+              "region": [
+                501,
+                353,
+                608,
+                373
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:355"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 173,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "173",
+              "region": [
+                342,
+                302,
+                375,
+                320
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 139,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "139",
+              "region": [
+                342,
+                327,
+                375,
+                345
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 125,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "125",
+              "region": [
+                342,
+                352,
+                375,
+                370
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 65,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "65",
+              "region": [
+                539,
+                302,
+                572,
+                320
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 117,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "117",
+              "region": [
+                539,
+                327,
+                572,
+                345
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 119,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "119",
+              "region": [
+                539,
+                352,
+                572,
+                370
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "male",
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.8,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "",
+              "region": [
+                399,
+                274,
+                420,
+                293
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": [
+                399,
+                274,
+                420,
+                293
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.997,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                401,
+                302,
+                417,
+                320
+              ],
+              "confidence": 0.997,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                401,
+                327,
+                417,
+                345
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.997,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                401,
+                352,
+                417,
+                370
+              ],
+              "confidence": 0.997,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.999,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                598,
+                302,
+                614,
+                320
+              ],
+              "confidence": 0.999,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 2,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "2",
+              "region": [
+                598,
+                327,
+                614,
+                345
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                598,
+                352,
+                614,
+                370
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [
+        "species",
+        "form",
+        "ability",
+        "held_item",
+        "move_1",
+        "move_2",
+        "move_3",
+        "move_4",
+        "hp",
+        "attack",
+        "defense",
+        "special_attack",
+        "special_defense",
+        "speed"
+      ],
+      "conflicting_fields": [],
+      "species_id": 823,
+      "form_id": null,
+      "names": {
+        "zh-hans": "钢铠鸦",
+        "en": "Corviknight"
+      }
+    },
+    {
+      "instance_id": "own_team_4",
+      "slot": 4,
+      "fields": {
+        "species": {
+          "value": "龙头地鼠",
+          "canonical_id": "pokeapi:species:530",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "龙头地鼠",
+              "region": [
+                714,
+                274,
+                840,
+                296
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
+              "candidate_ids": [
+                "pokeapi:species:530"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "龙头地鼠",
+              "region": [
+                714,
+                274,
+                840,
+                296
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
+              "candidate_ids": [
+                "pokeapi:species:530"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "拨沙",
+          "canonical_id": "pokeapi:ability:146",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "拨沙",
+              "region": [
+                720,
+                303,
+                903,
+                320
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:ability:146"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "气势披带",
+          "canonical_id": "pokeapi:item:252",
+          "status": "knowledge_resolved",
+          "confidence": 0.998,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "气势披带",
+              "region": [
+                720,
+                329,
+                903,
+                347
+              ],
+              "confidence": 0.998,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:item:252"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "十万马力",
+          "canonical_id": "pokeapi:move:667",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "十万马力",
+              "region": [
+                948,
+                277,
+                1055,
+                297
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:667"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "岩崩",
+          "canonical_id": "pokeapi:move:157",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "岩崩",
+              "region": [
+                948,
+                302,
+                1055,
+                322
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:157"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "铁头",
+          "canonical_id": "pokeapi:move:442",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "铁头",
+              "region": [
+                948,
+                327,
+                1055,
+                347
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:442"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "守住",
+          "canonical_id": "pokeapi:move:182",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "守住",
+              "region": [
+                948,
+                353,
+                1055,
+                373
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:182"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 185,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "185",
+              "region": [
+                789,
+                302,
+                822,
+                320
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 205,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "205",
+              "region": [
+                789,
+                327,
+                822,
+                345
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 81,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "81",
+              "region": [
+                789,
+                352,
+                822,
+                370
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 63,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "63",
+              "region": [
+                986,
+                302,
+                1019,
+                320
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 86,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "86",
+              "region": [
+                986,
+                327,
+                1019,
+                345
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 140,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "140",
+              "region": [
+                986,
+                352,
+                1019,
+                370
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "male",
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.8,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "",
+              "region": [
+                846,
+                274,
+                867,
+                293
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": [
+                846,
+                274,
+                867,
+                293
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.998,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                848,
+                302,
+                864,
+                320
+              ],
+              "confidence": 0.998,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                848,
+                327,
+                864,
+                345
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 1,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "1",
+              "region": [
+                848,
+                352,
+                864,
+                370
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.998,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                1045,
+                302,
+                1061,
+                320
+              ],
+              "confidence": 0.998,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 1,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "1",
+              "region": [
+                1045,
+                327,
+                1061,
+                345
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                1045,
+                352,
+                1061,
+                370
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [
+        "species",
+        "form",
+        "ability",
+        "held_item",
+        "move_1",
+        "move_2",
+        "move_3",
+        "move_4",
+        "hp",
+        "attack",
+        "defense",
+        "special_attack",
+        "special_defense",
+        "speed"
+      ],
+      "conflicting_fields": [],
+      "species_id": 530,
+      "form_id": null,
+      "names": {
+        "zh-hans": "龙头地鼠",
+        "en": "Excadrill"
+      }
+    },
+    {
+      "instance_id": "own_team_5",
+      "slot": 5,
+      "fields": {
+        "species": {
+          "value": "爱管侍",
+          "canonical_id": "pokeapi:species:876",
+          "status": "knowledge_resolved",
+          "confidence": 0.999,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "爱管侍",
+              "region": [
+                267,
+                396,
+                393,
+                418
+              ],
+              "confidence": 0.999,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
+              "candidate_ids": [
+                "pokeapi:species:876"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "爱管侍",
+              "region": [
+                267,
+                396,
+                393,
+                418
+              ],
+              "confidence": 0.999,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
+              "candidate_ids": [
+                "pokeapi:species:876"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": 876,
+          "canonical_id": "pokeapi:form:876",
+          "status": "knowledge_resolved",
+          "confidence": 0.999,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "爱管侍",
+              "region": [
+                267,
+                396,
+                393,
+                418
+              ],
+              "confidence": 0.999,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
+              "candidate_ids": [
+                "pokeapi:species:876"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "爱管侍",
+              "region": [
+                267,
+                396,
+                393,
+                418
+              ],
+              "confidence": 0.999,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
+              "candidate_ids": [
+                "pokeapi:species:876"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "精神制造者",
+          "canonical_id": "pokeapi:ability:227",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "精神制造者",
+              "region": [
+                273,
+                425,
+                456,
+                442
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:ability:227"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "讲究围巾",
+          "canonical_id": "pokeapi:item:264",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "讲究围巾",
+              "region": [
+                273,
+                450,
+                456,
+                469
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:item:264"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "广域战力",
+          "canonical_id": "pokeapi:move:797",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "广域战力",
+              "region": [
+                501,
+                399,
+                608,
+                418
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:797"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "魔法火焰",
+          "canonical_id": "pokeapi:move:595",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "魔法火焰",
+              "region": [
+                501,
+                424,
+                608,
+                444
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:595"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "戏法",
+          "canonical_id": "pokeapi:move:271",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "戏法",
+              "region": [
+                501,
+                449,
+                608,
+                469
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:271"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "守住",
+          "canonical_id": "pokeapi:move:182",
+          "status": "knowledge_resolved",
+          "confidence": 0.999,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "守住",
+              "region": [
+                501,
+                475,
+                608,
+                494
+              ],
+              "confidence": 0.999,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:182"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 137,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "137",
+              "region": [
+                342,
+                423,
+                375,
+                441
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 76,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "76",
+              "region": [
+                342,
+                449,
+                375,
+                467
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 75,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "75",
+              "region": [
+                342,
+                474,
+                375,
+                492
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 172,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "172",
+              "region": [
+                539,
+                423,
+                572,
+                441
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 115,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "115",
+              "region": [
+                539,
+                449,
+                572,
+                467
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 147,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "147",
+              "region": [
+                539,
+                474,
+                572,
+                492
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "male",
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.8,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "",
+              "region": [
+                399,
+                396,
+                420,
+                415
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": [
+                399,
+                396,
+                420,
+                415
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 2,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "2",
+              "region": [
+                401,
+                423,
+                417,
+                441
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.996,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                401,
+                449,
+                417,
+                467
+              ],
+              "confidence": 0.996,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.998,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                401,
+                474,
+                417,
+                492
+              ],
+              "confidence": 0.998,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                598,
+                423,
+                614,
+                441
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.998,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                598,
+                449,
+                614,
+                467
+              ],
+              "confidence": 0.998,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                598,
+                474,
+                614,
+                492
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [
+        "species",
+        "form",
+        "ability",
+        "held_item",
+        "move_1",
+        "move_2",
+        "move_3",
+        "move_4",
+        "hp",
+        "attack",
+        "defense",
+        "special_attack",
+        "special_defense",
+        "speed"
+      ],
+      "conflicting_fields": [],
+      "species_id": 876,
+      "form_id": 876,
+      "names": {
+        "zh-hans": "爱管侍",
+        "en": "Indeedee"
+      }
+    },
+    {
+      "instance_id": "own_team_6",
+      "slot": 6,
+      "fields": {
+        "species": {
+          "value": "大狃拉",
+          "canonical_id": "pokeapi:species:903",
+          "status": "knowledge_resolved",
+          "confidence": 0.879,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "大狃拉",
+              "region": [
+                714,
+                396,
+                840,
+                418
+              ],
+              "confidence": 0.875,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
+              "candidate_ids": [
+                "pokeapi:species:903"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "大狃拉",
+              "region": [
+                714,
+                396,
+                840,
+                418
+              ],
+              "confidence": 0.879,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "multimodal_identity",
+              "resolution_method": "text_icon_agreement",
+              "candidate_ids": [
+                "pokeapi:species:903"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "轻装",
+          "canonical_id": "pokeapi:ability:84",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "轻装",
+              "region": [
+                720,
+                425,
+                903,
+                442
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:ability:84"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "白色香草",
+          "canonical_id": "pokeapi:item:191",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "白色香草",
+              "region": [
+                720,
+                450,
+                903,
+                469
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:item:191"
+              ]
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": null,
+              "confidence": 0.0,
+              "ocr_engine": null,
+              "provenance": "visible_ocr",
+              "resolution_method": "empty_ocr",
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "克命爪",
+          "canonical_id": "pokeapi:move:827",
+          "status": "knowledge_resolved",
+          "confidence": 0.995,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "克命爪",
+              "region": [
+                948,
+                399,
+                1055,
+                418
+              ],
+              "confidence": 0.995,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:827"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "近身战",
+          "canonical_id": "pokeapi:move:370",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "近身战",
+              "region": [
+                948,
+                424,
+                1055,
+                444
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:370"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "指导",
+          "canonical_id": "pokeapi:move:811",
+          "status": "knowledge_resolved",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "指导",
+              "region": [
+                948,
+                449,
+                1055,
+                469
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:811"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "守住",
+          "canonical_id": "pokeapi:move:182",
+          "status": "knowledge_resolved",
+          "confidence": 0.999,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "守住",
+              "region": [
+                948,
+                475,
+                1055,
+                494
+              ],
+              "confidence": 0.999,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "knowledge_resolved_ocr",
+              "resolution_method": "exact",
+              "candidate_ids": [
+                "pokeapi:move:182"
+              ]
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 157,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "157",
+              "region": [
+                789,
+                423,
+                822,
+                441
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 200,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "200",
+              "region": [
+                789,
+                449,
+                822,
+                467
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 80,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "80",
+              "region": [
+                789,
+                474,
+                822,
+                492
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 54,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "54",
+              "region": [
+                986,
+                423,
+                1019,
+                441
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 100,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "100",
+              "region": [
+                986,
+                449,
+                1019,
+                467
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 172,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "172",
+              "region": [
+                986,
+                474,
+                1019,
+                492
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "female",
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.8,
+          "observations": [
+            {
+              "source_id": 0,
+              "raw_text": "",
+              "region": [
+                846,
+                396,
+                867,
+                415
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            },
+            {
+              "source_id": 1,
+              "raw_text": "",
+              "region": [
+                846,
+                396,
+                867,
+                415
+              ],
+              "confidence": 0.8,
+              "ocr_engine": null,
+              "provenance": "visible_gender_icon",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 2,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "2",
+              "region": [
+                848,
+                423,
+                864,
+                441
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                848,
+                449,
+                864,
+                467
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.998,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                848,
+                474,
+                864,
+                492
+              ],
+              "confidence": 0.998,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.998,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                1045,
+                423,
+                1061,
+                441
+              ],
+              "confidence": 0.998,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 0.996,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "0",
+              "region": [
+                1045,
+                449,
+                1061,
+                467
+              ],
+              "confidence": 0.996,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "raw_text": "32",
+              "region": [
+                1045,
+                474,
+                1061,
+                492
+              ],
+              "confidence": 1.0,
+              "ocr_engine": "PP-OCRv6_medium_rec",
+              "provenance": "visible_ocr",
+              "resolution_method": null,
+              "candidate_ids": []
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [
+        "species",
+        "form",
+        "ability",
+        "held_item",
+        "move_1",
+        "move_2",
+        "move_3",
+        "move_4",
+        "hp",
+        "attack",
+        "defense",
+        "special_attack",
+        "special_defense",
+        "speed"
+      ],
+      "conflicting_fields": [],
+      "species_id": 903,
+      "form_id": null,
+      "names": {
+        "zh-hans": "大狃拉",
+        "en": "Sneasler"
+      }
+    }
+  ],
+  "complete": false,
+  "missing_fields": {
+    "own_team_1": [
+      "species",
+      "form",
+      "ability",
+      "held_item",
+      "move_1",
+      "move_2",
+      "move_3",
+      "move_4",
+      "hp",
+      "attack",
+      "defense",
+      "special_attack",
+      "special_defense",
+      "speed"
+    ],
+    "own_team_2": [
+      "species",
+      "form",
+      "ability",
+      "held_item",
+      "move_1",
+      "move_2",
+      "move_3",
+      "move_4",
+      "hp",
+      "attack",
+      "defense",
+      "special_attack",
+      "special_defense",
+      "speed"
+    ],
+    "own_team_3": [
+      "species",
+      "form",
+      "ability",
+      "held_item",
+      "move_1",
+      "move_2",
+      "move_3",
+      "move_4",
+      "hp",
+      "attack",
+      "defense",
+      "special_attack",
+      "special_defense",
+      "speed"
+    ],
+    "own_team_4": [
+      "species",
+      "form",
+      "ability",
+      "held_item",
+      "move_1",
+      "move_2",
+      "move_3",
+      "move_4",
+      "hp",
+      "attack",
+      "defense",
+      "special_attack",
+      "special_defense",
+      "speed"
+    ],
+    "own_team_5": [
+      "species",
+      "form",
+      "ability",
+      "held_item",
+      "move_1",
+      "move_2",
+      "move_3",
+      "move_4",
+      "hp",
+      "attack",
+      "defense",
+      "special_attack",
+      "special_defense",
+      "speed"
+    ],
+    "own_team_6": [
+      "species",
+      "form",
+      "ability",
+      "held_item",
+      "move_1",
+      "move_2",
+      "move_3",
+      "move_4",
+      "hp",
+      "attack",
+      "defense",
+      "special_attack",
+      "special_defense",
+      "speed"
+    ]
+  },
+  "conflicts": {},
+  "updated_at_utc": "2026-10-13T09:20:59+00:00"
+}
