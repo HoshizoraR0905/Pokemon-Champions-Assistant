@@ -1,0 +1,81 @@
+{
+  "battle_id": "sample_battle_2",
+  "input_hash": "c4793005b38bad34b449278c27e01e93ca02cedd7d977bb5bc78c0ab28860ec7",
+  "streams": {
+    "video": {
+      "events": 23,
+      "statuses": {
+        "deferred": 23
+      },
+      "reasons": {
+        "low_ocr_confidence": 5,
+        "unresolved_candidate_fields": 18
+      },
+      "states": 24,
+      "deterministic": true,
+      "idempotent": true,
+      "timeline_roundtrip": true
+    },
+    "log": {
+      "events": 9,
+      "statuses": {
+        "deferred": 7,
+        "applied_candidate": 2
+      },
+      "reasons": {
+        "unresolved_candidate_fields": 4,
+        "ambiguous_or_missing_active_instance": 2,
+        "active_slot_ambiguous": 1
+      },
+      "states": 10,
+      "deterministic": true,
+      "idempotent": true,
+      "timeline_roundtrip": true
+    }
+  },
+  "evidence": {
+    "log_views": 4,
+    "log_times": [
+      374.013333,
+      376.013333,
+      378.013333,
+      380.013333
+    ],
+    "log_turns": [
+      2
+    ],
+    "overlap_issues": [
+      {
+        "source_id": "tests/fixtures/sample_battle_2.mp4#380.013333",
+        "reason": "countdown_overlay",
+        "rows": [
+          "log-row:988325bb2a056282b4b00a1f",
+          "log-row:13ebc5465440116aacb9b22a",
+          "log-row:f146ca7d2e604a7a7150e04e",
+          "log-row:abad5d3ec55f57fa5f3a6307",
+          "log-row:55f45466c0913361d17e1884",
+          "log-row:83953d91e7560edfd0bae3e1"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_2.mp4#378.013333",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:193aa5f41f1b94deec3b2a9c",
+          "log-row:242c9a5fd329f253646defdb",
+          "log-row:6473013e49f9c8e815ad5f1c",
+          "log-row:afce662abfbf03f9071bcb8d",
+          "log-row:4dca83ae4a929f7e08b48933",
+          "log-row:d130776dc615579363ebc5d2"
+        ]
+      }
+    ],
+    "raw_observations": 211,
+    "snapshot_checkpoints": 8,
+    "initial_hud_time": 344.008333,
+    "initial_hud_instances": 2
+  },
+  "recognition_calls": 0,
+  "rules_profile": "champions-evidence-only-v1",
+  "coverage": "partial; independent semantic validation pending; structural checks passed"
+}

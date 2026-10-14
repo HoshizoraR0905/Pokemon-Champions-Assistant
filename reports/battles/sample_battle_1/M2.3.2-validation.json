@@ -1,0 +1,42 @@
+{
+  "battle_id": "sample_battle_1",
+  "input_hash": "36b3618f1308453e738a47c5676cf2e96f4c9f80b6312f44a05cb7aba0c51344",
+  "streams": {
+    "video": {
+      "events": 15,
+      "statuses": {
+        "deferred": 15
+      },
+      "reasons": {
+        "low_ocr_confidence": 3,
+        "unresolved_candidate_fields": 12
+      },
+      "states": 16,
+      "deterministic": true,
+      "idempotent": true,
+      "timeline_roundtrip": true
+    },
+    "log": {
+      "events": 0,
+      "statuses": {},
+      "reasons": {},
+      "states": 1,
+      "deterministic": true,
+      "idempotent": true,
+      "timeline_roundtrip": true
+    }
+  },
+  "evidence": {
+    "log_views": 0,
+    "log_times": [],
+    "log_turns": [],
+    "overlap_issues": [],
+    "raw_observations": 268,
+    "snapshot_checkpoints": 10,
+    "initial_hud_time": 268.01166666666666,
+    "initial_hud_instances": 1
+  },
+  "recognition_calls": 0,
+  "rules_profile": "champions-evidence-only-v1",
+  "coverage": "partial; independent semantic validation pending; structural checks passed"
+}

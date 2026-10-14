@@ -1,0 +1,67 @@
+{
+  "battle_id": "sample_battle_4",
+  "input_hash": "469575e7d6920d75e72217f022898fc3b860d15457e39765e96ac176ea202d7a",
+  "streams": {
+    "video": {
+      "events": 12,
+      "statuses": {
+        "deferred": 12
+      },
+      "reasons": {
+        "unresolved_candidate_fields": 10,
+        "low_ocr_confidence": 1,
+        "ambiguous_or_missing_active_instance": 1
+      },
+      "states": 13,
+      "deterministic": true,
+      "idempotent": true,
+      "timeline_roundtrip": true
+    },
+    "log": {
+      "events": 12,
+      "statuses": {
+        "deferred": 12
+      },
+      "reasons": {
+        "unresolved_candidate_fields": 12
+      },
+      "states": 13,
+      "deterministic": true,
+      "idempotent": true,
+      "timeline_roundtrip": true
+    }
+  },
+  "evidence": {
+    "log_views": 3,
+    "log_times": [
+      272.028333,
+      274.03,
+      276.03
+    ],
+    "log_turns": [
+      1,
+      2
+    ],
+    "overlap_issues": [
+      {
+        "source_id": "tests/fixtures/sample_battle_4.mp4#276.03",
+        "reason": "countdown_overlay",
+        "rows": [
+          "log-row:be90d8db73af0586852b425c",
+          "log-row:6268aaedfeff8949557894fc",
+          "log-row:c577d78510a39f275f5521c7",
+          "log-row:0e170efed18c4e1a2f933c8d",
+          "log-row:761da0c40f423ff314a39827",
+          "log-row:6bd6082828f7e6119732dd6b"
+        ]
+      }
+    ],
+    "raw_observations": 307,
+    "snapshot_checkpoints": 17,
+    "initial_hud_time": 160.043333,
+    "initial_hud_instances": 2
+  },
+  "recognition_calls": 0,
+  "rules_profile": "champions-evidence-only-v1",
+  "coverage": "partial; independent semantic validation pending; structural checks passed"
+}

@@ -1,0 +1,500 @@
+{
+  "battle_id": "sample_battle_3",
+  "input_hash": "0b9ac019d4842d0bb9903765523a90c5a670dc25977ecb7479ff64734ad049eb",
+  "streams": {
+    "video": {
+      "events": 271,
+      "statuses": {
+        "deferred": 256,
+        "applied_candidate": 6,
+        "recorded_observation": 9
+      },
+      "reasons": {
+        "low_ocr_confidence": 169,
+        "unresolved_candidate_fields": 76,
+        "active_slot_ambiguous": 4,
+        "ambiguous_or_missing_active_instance": 7
+      },
+      "states": 272,
+      "deterministic": true,
+      "idempotent": true,
+      "timeline_roundtrip": true
+    },
+    "log": {
+      "events": 92,
+      "statuses": {
+        "deferred": 81,
+        "applied_candidate": 6,
+        "recorded_observation": 5
+      },
+      "reasons": {
+        "unresolved_candidate_fields": 69,
+        "active_slot_ambiguous": 3,
+        "ambiguous_or_missing_active_instance": 8,
+        "low_ocr_confidence": 1
+      },
+      "states": 93,
+      "deterministic": true,
+      "idempotent": true,
+      "timeline_roundtrip": true
+    }
+  },
+  "evidence": {
+    "log_views": 120,
+    "log_times": [
+      181.346667,
+      181.613333,
+      181.863333,
+      182.146667,
+      182.296667,
+      182.413333,
+      182.68,
+      182.93,
+      183.18,
+      183.448333,
+      183.731667,
+      183.981667,
+      184.248333,
+      184.315,
+      184.515,
+      184.781667,
+      185.048333,
+      185.315,
+      185.581667,
+      185.848333,
+      186.115,
+      186.315,
+      186.381667,
+      186.648333,
+      292.066667,
+      292.333333,
+      292.433333,
+      292.6,
+      292.866667,
+      293.133333,
+      293.383333,
+      293.633333,
+      293.9,
+      294.166667,
+      294.416667,
+      294.433333,
+      294.666667,
+      294.933333,
+      295.183333,
+      295.433333,
+      295.7,
+      295.966667,
+      296.233333,
+      296.433333,
+      296.5,
+      296.766667,
+      297.033333,
+      297.3,
+      297.566667,
+      297.833333,
+      298.1,
+      298.35,
+      298.45,
+      298.616667,
+      298.883333,
+      299.15,
+      299.416667,
+      299.683333,
+      299.95,
+      300.216667,
+      300.466667,
+      300.716667,
+      300.983333,
+      301.25,
+      367.261667,
+      367.511667,
+      367.778333,
+      368.045,
+      368.311667,
+      368.545,
+      368.578333,
+      368.861667,
+      369.111667,
+      369.378333,
+      369.645,
+      369.911667,
+      370.178333,
+      460.361667,
+      460.595,
+      460.628333,
+      460.895,
+      461.161667,
+      461.428333,
+      461.695,
+      461.961667,
+      462.228333,
+      462.478333,
+      462.611667,
+      462.728333,
+      462.995,
+      463.245,
+      463.495,
+      463.778333,
+      512.57,
+      512.703333,
+      512.836667,
+      513.103333,
+      513.37,
+      513.62,
+      513.87,
+      514.136667,
+      514.403333,
+      514.67,
+      612.336667,
+      612.586667,
+      612.82,
+      612.853333,
+      613.103333,
+      613.353333,
+      613.62,
+      613.886667,
+      614.153333,
+      614.42,
+      614.6866669999999,
+      614.82,
+      614.953333,
+      615.22,
+      615.486667,
+      615.753333,
+      616.02
+    ],
+    "log_turns": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "overlap_issues": [
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#461.428333",
+        "reason": "countdown_overlay",
+        "rows": [
+          "log-row:86c85e730ceae1339d126e8f",
+          "log-row:4b0bbf44e74b126be4afaf6f",
+          "log-row:e1d3807254c583c75a6be1e4",
+          "log-row:00f01033c990e7e963121038",
+          "log-row:94bb3f9182ad6337d8a398a0",
+          "log-row:0842d8d7c409f57bfe71b450"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#461.695",
+        "reason": "countdown_overlay",
+        "rows": [
+          "log-row:057caf6b8b0a16168559eaa3",
+          "log-row:1d6630b240c95c323e4a5a81",
+          "log-row:a95aebf9bd526e9e18189381",
+          "log-row:9e5d960d4d94496b35a85014",
+          "log-row:6e4aa45aea3db89e3eeaff7e",
+          "log-row:8c29f59d73884b513e296bad"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#461.961667",
+        "reason": "countdown_overlay",
+        "rows": [
+          "log-row:607b9c3cc0fb07bb15cc1707",
+          "log-row:9e9ad2ffd207b52ba0737f42",
+          "log-row:3aa0f2a5ac142888c90cec23",
+          "log-row:1b17289106720f18c40d4c84",
+          "log-row:19969bb0c8fd51ab6d7a9f7d",
+          "log-row:bb922f13e3f9fb5b667264a2"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#462.228333",
+        "reason": "countdown_overlay",
+        "rows": [
+          "log-row:8161c6b72f717e247d9f8e54",
+          "log-row:838e42c32ba50e137291876d",
+          "log-row:b6e3b72490682486bf1566a8",
+          "log-row:dba55772038bc00dcaa41aef",
+          "log-row:6d3a0d9dec1316f474e7e16b",
+          "log-row:e12fba19de275dff0849169a"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#462.478333",
+        "reason": "countdown_overlay",
+        "rows": [
+          "log-row:0615af5734f5322a259e8efe",
+          "log-row:1641a33aab7c3689e4b1e545",
+          "log-row:ff0615466d058d6480af1aae",
+          "log-row:9b9ab9372b44b0c8e3c95836",
+          "log-row:1c2a82bb4a7e26e12b3677c6",
+          "log-row:3d41c5afb1d9352f4306e6f2"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#183.731667",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:fe1599825fc3f7f11193494a",
+          "log-row:186653ae41ce38dede4b705f",
+          "log-row:f749fb89d8df751693086b4a",
+          "log-row:152a009a16e1d88b7d7364a1",
+          "log-row:0924dc852764c0bc5cc4b32c",
+          "log-row:8476a8eda7a7880ac731b736"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#293.383333",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:78dedd86ac8b0f12c15f37e2",
+          "log-row:a10f2c682bdef7af7e4d58b9",
+          "log-row:f643b30e676d4982fe9990d4",
+          "log-row:b05e636744e42148996644ad",
+          "log-row:b88dd7fa5f328eb0bdbbe517"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#368.545",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:c5aafe82a2cbbcf8079c1d16",
+          "log-row:2007dc946177a5cf97ad9324",
+          "log-row:11992fc1e84f31a5c6067ead",
+          "log-row:8f7a92bf826012629983bbac",
+          "log-row:a11a953219e590218c7c530e"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#463.245",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:48478bc2f66cfb3af6b451c4",
+          "log-row:98780fccc848ce1704ec7ad7",
+          "log-row:97167f30551af2b214d8a67a",
+          "log-row:70ddb6af1e57592b7db34dc8",
+          "log-row:21b38590df7b9646231ab28d",
+          "log-row:3418d285d6362c1e053a46ed"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#462.611667",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:e32017c7b79445a05d62469a",
+          "log-row:0158de7fbb01c584bfc55a8f",
+          "log-row:12000074f772c5553f9b6ae2",
+          "log-row:6b6fc22c07a5371ea79972dd"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#461.161667",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:dccec2ceccc8d7e008dcba9d",
+          "log-row:b2e1be8fa1fb6b34f18e2676",
+          "log-row:332e0262f5e8c68d795857b3",
+          "log-row:da217e3e6376e78acb56b185",
+          "log-row:4cb5bdc6655ebd016a4631c2",
+          "log-row:df764fd5ac3314372f11b04e"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#460.895",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:b59a17b8358200a50d17dc7a",
+          "log-row:ce3b321cfdd62ac5f613ad4d",
+          "log-row:5d3b3e30c0ae14b932b16803",
+          "log-row:75ee96bc040e3873cd737257",
+          "log-row:245828f9031d2faab28d2277",
+          "log-row:7144ed7d0fcd5354f9cfd8fb"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#460.361667",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:0854701b63ee5eaf09e92299",
+          "log-row:915d088b8d307c84193f42b6",
+          "log-row:9c6e5d1abad83cdda2b44abb",
+          "log-row:603da3d2bd7417cc2deb4fbc",
+          "log-row:3c3484a7a055529f79ba7871",
+          "log-row:8ef61dac6d3e289362be5dff"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#460.595",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:e4a0b0af761b263dcb73da1c",
+          "log-row:34044d984b73341c1545eec5",
+          "log-row:d5936321b6362429a9432458",
+          "log-row:d178fd927dfa8a32cfa4f738",
+          "log-row:ab2df2ea2f5e3e40a032fe2c"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#460.628333",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:f58d7cfc7608253c085c28e8",
+          "log-row:c867a5d6a22ef1add71c6a84",
+          "log-row:c5197f445cc36c6db0e7dc78",
+          "log-row:0b65505efac61fddab695eec",
+          "log-row:251c13d6eda7c05c87fe98a9",
+          "log-row:132dddc44125285b7c44ae0a"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.82",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:ac39fb2753a5a764952ef911",
+          "log-row:8e12c16fbedfa041e6561ad3",
+          "log-row:ee957e72f5625763ef74cd37",
+          "log-row:bc3f3d2ffa29a32d43e19973",
+          "log-row:eeb8a4ae2b62a5d02c6cbcb9"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.953333",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:4db3a7e1dd148fb8458ccbca",
+          "log-row:86d9b11bc983420647338138",
+          "log-row:06c023a46e92486ccfdda5a1",
+          "log-row:6956affcd1c62641e33340b1",
+          "log-row:fe8ce28b15a22fba6b6142c9",
+          "log-row:aa8fe63079f354895b94d4a5"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.6866669999999",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:a4cc396c53dc0090a9d566de",
+          "log-row:5a15a304e58558ebb525a209",
+          "log-row:0f9d245806b9d3369aa1c74e",
+          "log-row:c5c497a95974685153781dc4",
+          "log-row:4adbccf9ec89875b5a47802f"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.42",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:a0135542a7c6c09ae8971b94",
+          "log-row:686a430ee8a8751060bb9010",
+          "log-row:fed8db4c638f79f20b8ba6be",
+          "log-row:a857d0a4e0ea1c383220bc11",
+          "log-row:65abffa598fd78152c3df62d",
+          "log-row:f0d9c47d6282bcfedf74697d"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.153333",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:76718d9903738f34e6b45055",
+          "log-row:63603175ae0e1595b704d05c",
+          "log-row:a44e3186cbccd6dc9a1d77a3",
+          "log-row:a650d759f193411624d07526",
+          "log-row:a285a318af932787d7ccd0e7",
+          "log-row:32671bf5a0b8727ce811a602"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.886667",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:ccd13a8fa555f5a55460c595",
+          "log-row:26f67b9d14a3999e555a0246",
+          "log-row:ed00180f1ad649f72d86e32b",
+          "log-row:d0319016340abfccfd99fb6d",
+          "log-row:5d36562874f90435554551c5"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.62",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:a60e0d3ffba5c48e06ce114e",
+          "log-row:9c6ad3405b3a6f10d65aea38",
+          "log-row:6539f14c05610789a32a21c2",
+          "log-row:68aaeea97ad3e3f7ba76edab",
+          "log-row:fe23e7c8888395de627b489b",
+          "log-row:89928d7ba796bff8a4ca7ce8"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.353333",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:6091aa7f7cdb7d264445f459",
+          "log-row:86a32138931e8d3eebc5f783",
+          "log-row:250165db1f1a053efbc1d8d7",
+          "log-row:f1020164097005232cadfc54",
+          "log-row:250089b5daaace9b9e44a1e4",
+          "log-row:8e9d7d12d9be42563d4a8191"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.103333",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:ffa76fca9dc0bc68af53c4d4",
+          "log-row:c81af0f77c4e9782578ae593",
+          "log-row:db1c8400237bdd9307152ac9",
+          "log-row:ad16d3bb03cab640b2807135",
+          "log-row:6e1f04bb4f98907816b9a004",
+          "log-row:0417c4608304d6ed903c123d"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#612.586667",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:f2a0c3f340424e3009cba7b8",
+          "log-row:62827e60af23a415b3a657d0",
+          "log-row:8e30ea76ae35eab2c56c9177",
+          "log-row:939e23dc9049c9a0520277cd",
+          "log-row:4cca58713aabab3b80e99541",
+          "log-row:77ccd342d5372107e3a885f6"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#612.82",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:31974dad597eb8d7e6ea9f71",
+          "log-row:705e6b435e3a68e78ed55034",
+          "log-row:e56c27c5ea84d1a1ffc89c01",
+          "log-row:86b55dcd86a65e731a1c555b",
+          "log-row:6dd37457fb6abfbd2a746a14"
+        ]
+      },
+      {
+        "source_id": "tests/fixtures/sample_battle_3.mp4#612.853333",
+        "reason": "no_reliable_scroll_overlap",
+        "rows": [
+          "log-row:0aa32b761a7b06a2f997a4be",
+          "log-row:92ffa7212d7c01d919bea583",
+          "log-row:7b7b954cd0bf4b1719fde2f0",
+          "log-row:ada9fc2162099fd7318b2775",
+          "log-row:7af4a123a9b37f8c92afd243",
+          "log-row:72656f77d5ed550d26414224"
+        ]
+      }
+    ],
+    "raw_observations": 611,
+    "snapshot_checkpoints": 0,
+    "initial_hud_time": null,
+    "initial_hud_instances": 0
+  },
+  "recognition_calls": 0,
+  "rules_profile": "champions-evidence-only-v1",
+  "coverage": "partial; independent semantic validation pending; structural checks passed"
+}

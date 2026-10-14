@@ -39,3 +39,7 @@ tests/fixtures/*.mp4
 !/reports/battles/sample_battle_3/M2.3.1-provisional-validation.json
 !/reports/battles/sample_battle_3/M2.3.1-test-results.json
 !/reports/battles/sample_battle_3/M2.3.1-validation.json
+
+# Compact M2.3.2 multi-recording validation summaries.
+!/reports/M2.3.2-cross-battle-validation.json
+!/reports/battles/*/M2.3.2-validation.json
