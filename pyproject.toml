@@ -14,7 +14,7 @@ test = ["pytest>=7"]
 ocr = ["paddleocr==3.7.0", "paddlepaddle==3.3.1"]
 
 [tool.setuptools.packages.find]
-include = ["capture*", "recognition*", "models*", "tracking*", "damage*", "api*", "knowledge*"]
+include = ["capture*", "recognition*", "models*", "tracking*", "damage*", "api*", "knowledge*", "streaming*"]
 
 [tool.setuptools.package-data]
 knowledge = ["data/*.json", "data/*.txt", "archive/*/*.json", "archive/*/*.txt"]

@@ -129,4 +129,10 @@ python scripts/refresh_m14.py --video sample_battle.mp4 --reuse-cache
 python scripts/refresh_m14.py --video sample_battle_1.mp4 --reuse-cache
 ```
 
-The local caches in `.cache/m14-phases/` are optional and unbundled; reuse requires matching source metadata and frame checksums. The benchmark compares archived and final timelines against the same revised sparse annotations. See [the M1.4 final report](reports/M1.4-phases.md), [before/after evaluation](reports/M1.4-follow-up-accuracy.json), and [cached target-frame provenance](reports/M1.4-cached-target-review.json). Original reports and annotation history are preserved. No M1.5 or M2 implementation is included.
+The local caches in `.cache/m14-phases/` are optional and unbundled; reuse requires matching source metadata and frame checksums. The benchmark compares archived and final timelines against the same revised sparse annotations. See [the M1.4 final report](reports/M1.4-phases.md), [before/after evaluation](reports/M1.4-follow-up-accuracy.json), and [cached target-frame provenance](reports/M1.4-cached-target-review.json). Original reports and annotation history are preserved. M1.5 now provides incremental captured-evidence streaming; M2 reconstruction and strategy are not implemented.
+
+### M1.5 streaming validation
+
+The captured-evidence streaming architecture is functionally complete for the supported layout, but the 1-second processing target is not met. The saved latest 5 fps paced replay achieves 2.637 fps with 18.506-second P95 decision processing completion; all settled decisions remain uncertain. See [the M1.5 validation report](reports/M1.5-streaming.md) for ordering, readiness, message-filter corrections, measurements, and limitations.
+
+Replay supports recorded frames or cached manifests through `stream_replay.py`; icons are opt-in. Run `.venv/bin/python scripts/validate_m15.py` to audit saved traces without OCR or video processing, and `.venv/bin/python -m pytest -q tests/test_streaming.py` for focused regressions. Historical traces are preserved; no M2 battle-state or strategy layer is provided.

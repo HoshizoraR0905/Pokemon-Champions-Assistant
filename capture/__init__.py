@@ -14,6 +14,7 @@ class Frame:
     index: int = 0
     timestamp: float | None = None
     metadata: dict[str, Any] = field(default_factory=dict)
+    capture_monotonic: float | None = None
 
 
 def load_image(path: str | Path) -> Frame:

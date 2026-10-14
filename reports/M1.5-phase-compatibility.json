@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "scope": "Online phase classification only; cached two-second samples, sparse M1.4 labels. No OCR accuracy or capture completeness claim.",
+  "videos": {
+    "sample_battle.mp4": {
+      "sample_count": 362,
+      "correct": 13,
+      "reviewed_count": 13,
+      "points": [
+        {
+          "second": 0,
+          "phase": "unknown",
+          "note": "pre-battle presentation",
+          "prediction": {
+            "timestamp": 0.0,
+            "frame_index": 0,
+            "phase": "unknown"
+          },
+          "correct": true
+        },
+        {
+          "second": 20,
+          "phase": "unknown",
+          "note": "pre-battle transition",
+          "prediction": {
+            "timestamp": 20.02,
+            "frame_index": 782,
+            "phase": "unknown"
+          },
+          "correct": true
+        },
+        {
+          "second": 40,
+          "phase": "team_preview",
+          "prediction": {
+            "timestamp": 40.02333333333333,
+            "frame_index": 1593,
+            "phase": "team_preview"
+          },
+          "correct": true
+        },
+        {
+          "second": 60,
+          "phase": "team_preview",
+          "prediction": {
+            "timestamp": 60.02666666666667,
+            "frame_index": 2193,
+            "phase": "team_preview"
+          },
+          "correct": true
+        },
+        {
+          "second": 80,
+          "phase": "team_preview",
+          "prediction": {
+            "timestamp": 80.03,
+            "frame_index": 2793,
+            "phase": "team_preview"
+          },
+          "correct": true
+        },
+        {
+          "second": 100,
+          "phase": "team_preview",
+          "prediction": {
+            "timestamp": 100.0,
+            "frame_index": 3393,
+            "phase": "team_preview"
+          },
+          "correct": true
+        },
+        {
+          "second": 120,
+          "phase": "unknown",
+          "note": "VS transition",
+          "prediction": {
+            "timestamp": 120.02000000000001,
+            "frame_index": 3993,
+            "phase": "unknown"
+          },
+          "correct": true
+        },
+        {
+          "second": 140,
+          "phase": "battle_screen",
+          "note": "battle HUD with action controls",
+          "prediction": {
+            "timestamp": 140.0066666666667,
+            "frame_index": 4591,
+            "phase": "battle_screen"
+          },
+          "correct": true
+        },
+        {
+          "second": 300,
+          "phase": "switch_selection",
+          "note": "own-party list and Pokémon detail panel",
+          "prediction": {
+            "timestamp": 300.0,
+            "frame_index": 9683,
+            "phase": "switch_selection"
+          },
+          "correct": true
+        },
+        {
+          "second": 380,
+          "phase": "move_target_selection",
+          "note": "four-card move target selection",
+          "evidence_files": [
+            "tests/fixtures/m14_target_selection_380.png",
+            "reports/M1.4-cached-target-review.json"
+          ],
+          "review_provenance": "manual_cached_image_review_on_2026-10-14; existing phase label confirmed, not changed",
+          "prediction": {
+            "timestamp": 380.0133333333334,
+            "frame_index": 12122,
+            "phase": "move_target_selection"
+          },
+          "correct": true
+        },
+        {
+          "second": 520,
+          "phase": "move_target_selection",
+          "note": "four-card move target selection",
+          "prediction": {
+            "timestamp": 520.005,
+            "frame_index": 16933,
+            "phase": "move_target_selection"
+          },
+          "correct": true
+        },
+        {
+          "second": 660,
+          "phase": "move_target_selection",
+          "note": "four-card move target selection",
+          "evidence_files": [
+            "tests/fixtures/m14_target_selection_660.png",
+            "reports/M1.4-cached-target-review.json"
+          ],
+          "review_provenance": "manual_cached_image_review_on_2026-10-14; existing phase label confirmed, not changed",
+          "prediction": {
+            "timestamp": 660.0283333333334,
+            "frame_index": 21666,
+            "phase": "move_target_selection"
+          },
+          "correct": true
+        },
+        {
+          "second": 720,
+          "phase": "unknown",
+          "note": "recording ends in device overlay",
+          "prediction": {
+            "timestamp": 720.005,
+            "frame_index": 24419,
+            "phase": "unknown"
+          },
+          "correct": true
+        }
+      ],
+      "reviewed_transitions": []
+    },
+    "sample_battle_1.mp4": {
+      "sample_count": 268,
+      "correct": 18,
+      "reviewed_count": 18,
+      "points": [
+        {
+          "second": 0,
+          "phase": "unknown",
+          "note": "pre-battle roster",
+          "prediction": {
+            "timestamp": 0.0,
+            "frame_index": 0,
+            "phase": "unknown"
+          },
+          "correct": true
+        },
+        {
+          "second": 20,
+          "phase": "unknown",
+          "note": "pre-battle overlay",
+          "prediction": {
+            "timestamp": 20.02,
+            "frame_index": 798,
+            "phase": "unknown"
+          },
+          "correct": true
+        },
+        {
+          "second": 40,
+          "phase": "team_preview",
+          "prediction": {
+            "timestamp": 40.02333333333333,
+            "frame_index": 1408,
+            "phase": "team_preview"
+          },
+          "correct": true
+        },
+        {
+          "second": 60,
+          "phase": "team_preview",
+          "prediction": {
+            "timestamp": 60.02666666666667,
+            "frame_index": 2026,
+            "phase": "team_preview"
+          },
+          "correct": true
+        },
+        {
+          "second": 80,
+          "phase": "team_preview",
+          "prediction": {
+            "timestamp": 80.03,
+            "frame_index": 2654,
+            "phase": "team_preview"
+          },
+          "correct": true
+        },
+        {
+          "second": 100,
+          "phase": "team_preview",
+          "prediction": {
+            "timestamp": 100.0,
+            "frame_index": 3283,
+            "phase": "team_preview"
+          },
+          "correct": true
+        },
+        {
+          "second": 140,
+          "phase": "move_selection",
+          "prediction": {
+            "timestamp": 140.0066666666667,
+            "frame_index": 4540,
+            "phase": "move_selection"
+          },
+          "correct": true
+        },
+        {
+          "second": 180,
+          "phase": "battle_message",
+          "note": "visible lower message text",
+          "prediction": {
+            "timestamp": 180.01333333333335,
+            "frame_index": 5770,
+            "phase": "battle_message"
+          },
+          "correct": true
+        },
+        {
+          "second": 200,
+          "phase": "move_target_selection",
+          "note": "four-card move target selection, confirmed by Dragon Pulse label",
+          "prediction": {
+            "timestamp": 200.01666666666668,
+            "frame_index": 6390,
+            "phase": "move_target_selection"
+          },
+          "correct": true
+        },
+        {
+          "second": 268,
+          "phase": "move_selection",
+          "context": "voluntary",
+          "provenance": "user_manual_review",
+          "note": "Visible move controls before party list opens.",
+          "prediction": {
+            "timestamp": 268.01166666666666,
+            "frame_index": 9461,
+            "phase": "move_selection"
+          },
+          "correct": true
+        },
+        {
+          "second": 270,
+          "phase": "pokemon_selection",
+          "note": "Player opens brought-party list; no switch commitment established by the phase.",
+          "context": "voluntary",
+          "provenance": "user_manual_review",
+          "prediction": {
+            "timestamp": 270.01166666666666,
+            "frame_index": 9581,
+            "phase": "pokemon_selection"
+          },
+          "correct": true
+        },
+        {
+          "second": 280,
+          "phase": "switch_selection",
+          "note": "Replacement/Exit popover is open; replacement-selection UI.",
+          "context": "voluntary",
+          "provenance": "user_manual_review",
+          "prediction": {
+            "timestamp": 280.0133333333334,
+            "frame_index": 10052,
+            "phase": "switch_selection"
+          },
+          "correct": true
+        },
+        {
+          "second": 282,
+          "phase": "battle_animation",
+          "context": "voluntary",
+          "provenance": "user_manual_review",
+          "note": "User confirms voluntary switching workflow completed and current-turn resolution begins; UI label remains battle view without decision controls. No event or turn boundary asserted.",
+          "prediction": {
+            "timestamp": 282.0300000000001,
+            "frame_index": 10115,
+            "phase": "battle_animation"
+          },
+          "correct": true
+        },
+        {
+          "second": 290,
+          "phase": "battle_animation",
+          "note": "battle view with no decision panel",
+          "prediction": {
+            "timestamp": 290.01500000000004,
+            "frame_index": 10499,
+            "phase": "battle_animation"
+          },
+          "correct": true
+        },
+        {
+          "second": 350,
+          "phase": "switch_selection",
+          "note": "own-party list; fainted member visible",
+          "prediction": {
+            "timestamp": 350.0083333333334,
+            "frame_index": 12625,
+            "phase": "switch_selection"
+          },
+          "correct": true
+        },
+        {
+          "second": 400,
+          "phase": "move_target_selection",
+          "note": "four-card move target selection",
+          "prediction": {
+            "timestamp": 400.0166666666667,
+            "frame_index": 14130,
+            "phase": "move_target_selection"
+          },
+          "correct": true
+        },
+        {
+          "second": 460,
+          "phase": "battle_animation",
+          "prediction": {
+            "timestamp": 460.0266666666667,
+            "frame_index": 15934,
+            "phase": "battle_animation"
+          },
+          "correct": true
+        },
+        {
+          "second": 520,
+          "phase": "battle_animation",
+          "prediction": {
+            "timestamp": 520.005,
+            "frame_index": 17739,
+            "phase": "battle_animation"
+          },
+          "correct": true
+        }
+      ],
+      "reviewed_transitions": [
+        {
+          "from": "move_selection",
+          "to": "pokemon_selection",
+          "earliest_timestamp": 268,
+          "latest_timestamp": 270,
+          "provenance": "user_manual_review",
+          "evidence_files": [
+            "reports/M1.4-evidence/m14_boundary_268.jpg",
+            "reports/M1.4-evidence/m14_boundary_270.jpg"
+          ],
+          "matched": true
+        },
+        {
+          "from": "pokemon_selection",
+          "to": "switch_selection",
+          "earliest_timestamp": 270,
+          "latest_timestamp": 280,
+          "provenance": "user_manual_review",
+          "note": "Window bounded by reference points; exact popover-opening time is unlabelled.",
+          "evidence_files": [
+            "reports/M1.4-evidence/m14_boundary_270.jpg",
+            "reports/M1.4-evidence/m14_boundary_280.jpg"
+          ],
+          "matched": true
+        },
+        {
+          "from": "switch_selection",
+          "to": "battle_animation",
+          "earliest_timestamp": 280,
+          "latest_timestamp": 282,
+          "provenance": "user_manual_review",
+          "evidence_files": [
+            "reports/M1.4-evidence/m14_boundary_280.jpg",
+            "reports/M1.4-evidence/m14_boundary_282.jpg"
+          ],
+          "matched": true
+        }
+      ]
+    }
+  }
+}
