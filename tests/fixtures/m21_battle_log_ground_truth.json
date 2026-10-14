@@ -1,0 +1,1020 @@
+{
+  "schema_version": 1,
+  "reference_source": "reports/M2-battle-log-alignment.json",
+  "reference_sha256": "3c4a44c916bc93a11e4651f8542a4f31a6ba619dd311a8cced78759ca978d472",
+  "annotation_method": "manual event transcription from completed M2; manually reviewed viewport row positions; event field labels use schema definitions",
+  "expected_ui_timestamps": [
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380
+  ],
+  "expected_no_ui_timestamps": [
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399
+  ],
+  "events": [
+    {
+      "order": 1,
+      "raw_text": "训练家换下了雷丘！",
+      "event_type": "switch_out",
+      "side": "opponent",
+      "actor": "pokeapi:species:26",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000031.png",
+        "timestamp": 281,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 2,
+      "raw_text": "训练家派出了爱管侍！",
+      "event_type": "send_out",
+      "side": "opponent",
+      "actor": "pokeapi:species:876",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000037.png",
+        "timestamp": 284,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 3,
+      "raw_text": "爱管侍的精神制造者",
+      "event_type": "ability_activation",
+      "side": "opponent",
+      "actor": "pokeapi:species:876",
+      "target": null,
+      "canonical_references": {
+        "ability": "pokeapi:ability:227"
+      },
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000045.png",
+        "timestamp": 288,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 4,
+      "raw_text": "脚下传来了奇妙的感觉！",
+      "event_type": "terrain_change",
+      "side": "field",
+      "actor": null,
+      "target": null,
+      "canonical_references": {},
+      "attributes": {
+        "terrain": "psychic",
+        "change": "start"
+      },
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000047.png",
+        "timestamp": 289,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 5,
+      "raw_text": "轰擂金刚猩，回来！",
+      "event_type": "switch_out",
+      "side": "self",
+      "actor": "pokeapi:species:812",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000049.png",
+        "timestamp": 290,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 6,
+      "raw_text": "上吧！蚊香蛙皇！",
+      "event_type": "send_out",
+      "side": "self",
+      "actor": "pokeapi:species:186",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000057.png",
+        "timestamp": 294,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 7,
+      "raw_text": "蚊香蛙皇的降雨",
+      "event_type": "ability_activation",
+      "side": "self",
+      "actor": "pokeapi:species:186",
+      "target": null,
+      "canonical_references": {
+        "ability": "pokeapi:ability:2"
+      },
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000062.png",
+        "timestamp": 296.5,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 8,
+      "raw_text": "开始下雨了！",
+      "event_type": "weather_change",
+      "side": "field",
+      "actor": null,
+      "target": null,
+      "canonical_references": {},
+      "attributes": {
+        "weather": "rain",
+        "change": "start"
+      },
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000063.png",
+        "timestamp": 297,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 9,
+      "raw_text": "对手的红莲铠骑使出了铠农炮！",
+      "event_type": "move_execution",
+      "side": "opponent",
+      "actor": "pokeapi:species:936",
+      "target": "pokeapi:species:186",
+      "canonical_references": {
+        "move": "pokeapi:move:890"
+      },
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000066.png",
+        "timestamp": 298.5,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 10,
+      "raw_text": "蚊香蛙皇 HP 197 → 173",
+      "event_type": "hp_change",
+      "side": "self",
+      "actor": "pokeapi:species:186",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {
+        "before": 197,
+        "after": 173,
+        "unit": "absolute"
+      },
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000075.png",
+        "timestamp": 303,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 11,
+      "raw_text": "对蚊香蛙皇效果不好。",
+      "event_type": "effectiveness",
+      "side": "self",
+      "actor": null,
+      "target": "pokeapi:species:186",
+      "canonical_references": {},
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000078.png",
+        "timestamp": 304.5,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 12,
+      "raw_text": "对手的红莲铠骑的防御、特防降低了！",
+      "event_type": "stat_change",
+      "side": "opponent",
+      "actor": "pokeapi:species:936",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {
+        "stats": [
+          "special_defense",
+          "defense"
+        ],
+        "direction": "down",
+        "stages": null
+      },
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000082.png",
+        "timestamp": 306.5,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 13,
+      "raw_text": "铝钢桥龙使出了电光束！",
+      "event_type": "move_execution",
+      "side": "self",
+      "actor": "pokeapi:species:1018",
+      "target": "pokeapi:species:936",
+      "canonical_references": {
+        "move": "pokeapi:move:905"
+      },
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000089.png",
+        "timestamp": 310,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 14,
+      "raw_text": "铝钢桥龙吸收了电力！",
+      "event_type": "move_effect",
+      "side": "self",
+      "actor": "pokeapi:species:1018",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000101.png",
+        "timestamp": 316,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 15,
+      "raw_text": "铝钢桥龙的特攻提高了！",
+      "event_type": "stat_change",
+      "side": "self",
+      "actor": "pokeapi:species:1018",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {
+        "stats": [
+          "special_attack"
+        ],
+        "direction": "up",
+        "stages": null
+      },
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000106.png",
+        "timestamp": 318.5,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 16,
+      "raw_text": "红莲铠骑 HP 30% → 0%",
+      "event_type": "hp_change",
+      "side": "opponent",
+      "actor": "pokeapi:species:936",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {
+        "before": 30,
+        "after": 0,
+        "unit": "displayed_percent"
+      },
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000117.png",
+        "timestamp": 324,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 17,
+      "raw_text": "对手的红莲铠骑倒下了！",
+      "event_type": "faint",
+      "side": "opponent",
+      "actor": "pokeapi:species:936",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000120.png",
+        "timestamp": 325.5,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 18,
+      "raw_text": "训练家派出了大狃拉！",
+      "event_type": "send_out",
+      "side": "opponent",
+      "actor": "pokeapi:species:903",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000139.png",
+        "timestamp": 335,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 19,
+      "raw_text": "大狃拉的精神种子",
+      "event_type": "item_activation",
+      "side": "opponent",
+      "actor": "pokeapi:species:903",
+      "target": null,
+      "canonical_references": {
+        "item": "pokeapi:item:899"
+      },
+      "attributes": {},
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000146.png",
+        "timestamp": 338.5,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    },
+    {
+      "order": 20,
+      "raw_text": "对手的大狃拉的特防提高了！",
+      "event_type": "stat_change",
+      "side": "opponent",
+      "actor": "pokeapi:species:903",
+      "target": null,
+      "canonical_references": {},
+      "attributes": {
+        "stats": [
+          "special_defense"
+        ],
+        "direction": "up",
+        "stages": null
+      },
+      "video_evidence": {
+        "source": ".cache/m2-alignment-266-360/000153.png",
+        "timestamp": 342,
+        "method": "manual_reference_alignment",
+        "not_used_for_recognition": true
+      }
+    }
+  ],
+  "views": [
+    {
+      "timestamp": 372,
+      "ui_visible": true,
+      "overlay": false,
+      "rows": [
+        {
+          "order": 15,
+          "box": [
+            508,
+            49,
+            1035,
+            118
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 16,
+          "box": [
+            508,
+            118,
+            1035,
+            199
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 17,
+          "box": [
+            508,
+            199,
+            1035,
+            280
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 18,
+          "box": [
+            508,
+            280,
+            1035,
+            360
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 19,
+          "box": [
+            508,
+            360,
+            1035,
+            440
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 20,
+          "box": [
+            508,
+            440,
+            1035,
+            521
+          ],
+          "readability": "readable"
+        }
+      ]
+    },
+    {
+      "timestamp": 373,
+      "ui_visible": true,
+      "overlay": false,
+      "rows": [
+        {
+          "order": 11,
+          "box": [
+            508,
+            49,
+            1035,
+            113
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 12,
+          "box": [
+            508,
+            113,
+            1035,
+            193
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 13,
+          "box": [
+            508,
+            193,
+            1035,
+            274
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 14,
+          "box": [
+            508,
+            274,
+            1035,
+            354
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 15,
+          "box": [
+            508,
+            354,
+            1035,
+            434
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 16,
+          "box": [
+            508,
+            434,
+            1035,
+            515
+          ],
+          "readability": "readable"
+        }
+      ]
+    },
+    {
+      "timestamp": 374,
+      "ui_visible": true,
+      "overlay": false,
+      "rows": [
+        {
+          "order": 1,
+          "box": [
+            508,
+            49,
+            1035,
+            140
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 2,
+          "box": [
+            508,
+            140,
+            1035,
+            221
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 3,
+          "box": [
+            508,
+            221,
+            1035,
+            301
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 4,
+          "box": [
+            508,
+            301,
+            1035,
+            382
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 5,
+          "box": [
+            508,
+            382,
+            1035,
+            462
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 6,
+          "box": [
+            508,
+            462,
+            1035,
+            521
+          ],
+          "readability": "readable"
+        }
+      ]
+    },
+    {
+      "timestamp": 375,
+      "ui_visible": true,
+      "overlay": false,
+      "rows": [
+        {
+          "order": 3,
+          "box": [
+            508,
+            49,
+            1035,
+            134
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 4,
+          "box": [
+            508,
+            134,
+            1035,
+            214
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 5,
+          "box": [
+            508,
+            214,
+            1035,
+            295
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 6,
+          "box": [
+            508,
+            295,
+            1035,
+            375
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 7,
+          "box": [
+            508,
+            375,
+            1035,
+            455
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 8,
+          "box": [
+            508,
+            455,
+            1035,
+            521
+          ],
+          "readability": "readable"
+        }
+      ]
+    },
+    {
+      "timestamp": 376,
+      "ui_visible": true,
+      "overlay": false,
+      "rows": [
+        {
+          "order": 5,
+          "box": [
+            508,
+            49,
+            1035,
+            134
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 6,
+          "box": [
+            508,
+            134,
+            1035,
+            215
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 7,
+          "box": [
+            508,
+            215,
+            1035,
+            296
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 8,
+          "box": [
+            508,
+            296,
+            1035,
+            376
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 9,
+          "box": [
+            508,
+            376,
+            1035,
+            456
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 10,
+          "box": [
+            508,
+            456,
+            1035,
+            521
+          ],
+          "readability": "readable"
+        }
+      ]
+    },
+    {
+      "timestamp": 377,
+      "ui_visible": true,
+      "overlay": false,
+      "rows": [
+        {
+          "order": 8,
+          "box": [
+            508,
+            49,
+            1035,
+            118
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 9,
+          "box": [
+            508,
+            118,
+            1035,
+            198
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 10,
+          "box": [
+            508,
+            198,
+            1035,
+            279
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 11,
+          "box": [
+            508,
+            279,
+            1035,
+            359
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 12,
+          "box": [
+            508,
+            359,
+            1035,
+            439
+          ],
+          "readability": "readable"
+        },
+        {
+          "order": 13,
+          "box": [
+            508,
+            439,
+            1035,
+            519
+          ],
+          "readability": "readable"
+        }
+      ]
+    },
+    {
+      "timestamp": 378,
+      "ui_visible": true,
+      "overlay": true,
+      "rows": [
+        {
+          "order": 11,
+          "box": [
+            508,
+            49,
+            1035,
+            111
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 12,
+          "box": [
+            508,
+            111,
+            1035,
+            191
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 13,
+          "box": [
+            508,
+            191,
+            1035,
+            272
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 14,
+          "box": [
+            508,
+            272,
+            1035,
+            352
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 15,
+          "box": [
+            508,
+            352,
+            1035,
+            433
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 16,
+          "box": [
+            508,
+            433,
+            1035,
+            513
+          ],
+          "readability": "occluded_duplicate"
+        }
+      ]
+    },
+    {
+      "timestamp": 379,
+      "ui_visible": true,
+      "overlay": true,
+      "rows": [
+        {
+          "order": 14,
+          "box": [
+            508,
+            49,
+            1035,
+            125
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 15,
+          "box": [
+            508,
+            125,
+            1035,
+            206
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 16,
+          "box": [
+            508,
+            206,
+            1035,
+            286
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 17,
+          "box": [
+            508,
+            286,
+            1035,
+            367
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 18,
+          "box": [
+            508,
+            367,
+            1035,
+            447
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 19,
+          "box": [
+            508,
+            447,
+            1035,
+            521
+          ],
+          "readability": "occluded_duplicate"
+        }
+      ]
+    },
+    {
+      "timestamp": 380,
+      "ui_visible": true,
+      "overlay": true,
+      "rows": [
+        {
+          "order": 16,
+          "box": [
+            508,
+            82,
+            1035,
+            163
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 17,
+          "box": [
+            508,
+            163,
+            1035,
+            243
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 18,
+          "box": [
+            508,
+            243,
+            1035,
+            324
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 19,
+          "box": [
+            508,
+            324,
+            1035,
+            404
+          ],
+          "readability": "occluded_duplicate"
+        },
+        {
+          "order": 20,
+          "box": [
+            508,
+            404,
+            1035,
+            485
+          ],
+          "readability": "occluded_duplicate"
+        }
+      ]
+    }
+  ],
+  "participants": {
+    "self": {
+      "display_name": "Hoshi",
+      "unique_trainer_id": null
+    },
+    "opponent": {
+      "display_name": "训练家",
+      "unique_trainer_id": null
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "command": [
+    "/Users/yyi/Pokemon-Champions-Assistant/.venv/lib/python3.10/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-ss",
+    "0",
+    "-i",
+    "tests/fixtures/sample_battle_2.mp4",
+    "-t",
+    "40",
+    "-vf",
+    "fps=0.5,scale=1311:-1",
+    ".cache/m21-trainer-survey/%06d.png"
+  ],
+  "uncertainty_seconds": 2,
+  "frames": [
+    {
+      "image": "000001.png",
+      "timestamp": 0
+    },
+    {
+      "image": "000002.png",
+      "timestamp": 2
+    },
+    {
+      "image": "000003.png",
+      "timestamp": 4
+    },
+    {
+      "image": "000004.png",
+      "timestamp": 6
+    },
+    {
+      "image": "000005.png",
+      "timestamp": 8
+    },
+    {
+      "image": "000006.png",
+      "timestamp": 10
+    },
+    {
+      "image": "000007.png",
+      "timestamp": 12
+    },
+    {
+      "image": "000008.png",
+      "timestamp": 14
+    },
+    {
+      "image": "000009.png",
+      "timestamp": 16
+    },
+    {
+      "image": "000010.png",
+      "timestamp": 18
+    },
+    {
+      "image": "000011.png",
+      "timestamp": 20
+    },
+    {
+      "image": "000012.png",
+      "timestamp": 22
+    },
+    {
+      "image": "000013.png",
+      "timestamp": 24
+    },
+    {
+      "image": "000014.png",
+      "timestamp": 26
+    },
+    {
+      "image": "000015.png",
+      "timestamp": 28
+    },
+    {
+      "image": "000016.png",
+      "timestamp": 30
+    },
+    {
+      "image": "000017.png",
+      "timestamp": 32
+    },
+    {
+      "image": "000018.png",
+      "timestamp": 34
+    },
+    {
+      "image": "000019.png",
+      "timestamp": 36
+    },
+    {
+      "image": "000020.png",
+      "timestamp": 38
+    }
+  ]
+}

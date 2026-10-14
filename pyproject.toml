@@ -15,7 +15,7 @@ ocr = ["paddleocr==3.7.0", "paddlepaddle==3.3.1"]
 ocr_experimental = ["onnxruntime==1.23.2", "onnx==1.23.2", "PyYAML>=6,<7"]
 
 [tool.setuptools.packages.find]
-include = ["capture*", "recognition*", "models*", "tracking*", "damage*", "api*", "knowledge*", "streaming*"]
+include = ["capture*", "recognition*", "models*", "tracking*", "damage*", "api*", "knowledge*", "streaming*", "battle_events*"]
 
 [tool.setuptools.package-data]
 knowledge = ["data/*.json", "data/*.txt", "archive/*/*.json", "archive/*/*.txt"]

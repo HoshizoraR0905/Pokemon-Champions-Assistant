@@ -1,0 +1,3122 @@
+{
+  "schema_version": 1,
+  "model": {
+    "model": "PP-OCRv6_medium_rec",
+    "source": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_rec_onnx",
+    "revision": "50c7eacafc52fa7bcf4194e8cd08e46f8558504b",
+    "files": {
+      "inference.onnx": "9c09abf0957f7968c7586464b7397b84ad2387a0497a351af40e9acc71b673ba",
+      "inference.yml": "991b700facf5b50a7de193468207d5f4255b538dde0d312ae3b7c7a9b6873129"
+    }
+  },
+  "runtime": {
+    "onnxruntime": "1.23.2",
+    "numpy": "2.2.6",
+    "opencv-python-headless": "5.0.0.93"
+  },
+  "backend": "PP-OCRv6_medium_rec-onnx-cpu",
+  "provider": "CPUExecutionProvider",
+  "input_manifest": {
+    "path": "/Users/yyi/Pokemon-Champions-Assistant/.cache/m2-log-survey-360-400/frames.json",
+    "sha256": "8068f01216711e083a0c50060d5d311093c930733edb1085aabda496ff532a1f",
+    "extraction_command": [
+      "/Users/yyi/Pokemon-Champions-Assistant/.venv/lib/python3.10/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-ss",
+      "360.0",
+      "-i",
+      "tests/fixtures/sample_battle_2.mp4",
+      "-t",
+      "40.0",
+      "-vf",
+      "fps=1.0,scale=1311:-1",
+      ".cache/m2-log-survey-360-400/%06d.png"
+    ],
+    "timestamp_uncertainty_seconds": 1.0
+  },
+  "views": [
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#360.0",
+      "timestamp": 360.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000001.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#361.0",
+      "timestamp": 361.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000002.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#362.0",
+      "timestamp": 362.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000003.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#363.0",
+      "timestamp": 363.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000004.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#364.0",
+      "timestamp": 364.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000005.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#365.0",
+      "timestamp": 365.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000006.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#366.0",
+      "timestamp": 366.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000007.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#367.0",
+      "timestamp": 367.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000008.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#368.0",
+      "timestamp": 368.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000009.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#369.0",
+      "timestamp": 369.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000010.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#370.0",
+      "timestamp": 370.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000011.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#371.0",
+      "timestamp": 371.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000012.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#372.0",
+      "timestamp": 372.0,
+      "detected": true,
+      "geometry": {
+        "panel": [
+          200,
+          5,
+          1111,
+          534
+        ],
+        "separators": [
+          118,
+          199,
+          280,
+          360,
+          440
+        ],
+        "scroll_top": 389,
+        "scroll_height": 132,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "score": 0.9426459573945607
+      },
+      "turn": 2,
+      "header_ocr": {
+        "raw_text": "回合2",
+        "confidence": 0.952
+      },
+      "observations": [
+        {
+          "observation_id": "log-row:8c4670178e159bfacb17dfb4",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#372.0",
+          "timestamp": 372.0,
+          "frame_sha256": "725bd4a15ea2636975d27ca56b8c89e0600a7ae8bb41b209fd54f067849dc7ea",
+          "box": [
+            508,
+            49,
+            1035,
+            118
+          ],
+          "raw_text": "铝钢桥龙的\n特攻提高了！",
+          "ocr_confidence": 0.9901818181818182,
+          "lines": [
+            {
+              "raw_text": "铝钢桥龙的",
+              "confidence": 1.0,
+              "box": [
+                508,
+                61,
+                587,
+                78
+              ],
+              "tokens": [
+                {
+                  "text": "铝钢桥龙的",
+                  "confidence": 0.9998520612716675
+                }
+              ]
+            },
+            {
+              "raw_text": "特攻提高了！",
+              "confidence": 0.982,
+              "box": [
+                508,
+                79,
+                593,
+                97
+              ],
+              "tokens": [
+                {
+                  "text": "特攻提高了！",
+                  "confidence": 0.9821414947509766
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": true
+        },
+        {
+          "observation_id": "log-row:6f1514e2e13f83cea23b21fd",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#372.0",
+          "timestamp": 372.0,
+          "frame_sha256": "725bd4a15ea2636975d27ca56b8c89e0600a7ae8bb41b209fd54f067849dc7ea",
+          "box": [
+            508,
+            118,
+            1035,
+            199
+          ],
+          "raw_text": "红莲铠骑\nHP 30% → 0%",
+          "ocr_confidence": 0.9970666666666667,
+          "lines": [
+            {
+              "raw_text": "红莲铠骑",
+              "confidence": 1.0,
+              "box": [
+                508,
+                142,
+                572,
+                159
+              ],
+              "tokens": [
+                {
+                  "text": "红莲铠骑",
+                  "confidence": 0.9995095729827881
+                }
+              ]
+            },
+            {
+              "raw_text": "HP 30% → 0%",
+              "confidence": 0.996,
+              "box": [
+                508,
+                160,
+                618,
+                176
+              ],
+              "tokens": [
+                {
+                  "text": "HP 30% → 0%",
+                  "confidence": 0.9961698055267334
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:f04032c3841e1dd83c467edc",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#372.0",
+          "timestamp": 372.0,
+          "frame_sha256": "725bd4a15ea2636975d27ca56b8c89e0600a7ae8bb41b209fd54f067849dc7ea",
+          "box": [
+            508,
+            199,
+            1035,
+            280
+          ],
+          "raw_text": "对手的红莲铠骑倒下了！",
+          "ocr_confidence": 0.988,
+          "lines": [
+            {
+              "raw_text": "对手的红莲铠骑倒下了！",
+              "confidence": 0.988,
+              "box": [
+                508,
+                231,
+                668,
+                248
+              ],
+              "tokens": [
+                {
+                  "text": "对手的红莲铠骑倒下了！",
+                  "confidence": 0.9878230690956116
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:65877da7246a5500a92eb5de",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#372.0",
+          "timestamp": 372.0,
+          "frame_sha256": "725bd4a15ea2636975d27ca56b8c89e0600a7ae8bb41b209fd54f067849dc7ea",
+          "box": [
+            508,
+            280,
+            1035,
+            360
+          ],
+          "raw_text": "训练家\n派出了大狃拉！",
+          "ocr_confidence": 0.9608000000000001,
+          "lines": [
+            {
+              "raw_text": "训练家",
+              "confidence": 1.0,
+              "box": [
+                508,
+                303,
+                557,
+                319
+              ],
+              "tokens": [
+                {
+                  "text": "训练家",
+                  "confidence": 0.9999855160713196
+                }
+              ]
+            },
+            {
+              "raw_text": "派出了大狃拉！",
+              "confidence": 0.944,
+              "box": [
+                508,
+                320,
+                608,
+                338
+              ],
+              "tokens": [
+                {
+                  "text": "派出了大狃拉！",
+                  "confidence": 0.9443120956420898
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:bac7834baa96a7eb2d642825",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#372.0",
+          "timestamp": 372.0,
+          "frame_sha256": "725bd4a15ea2636975d27ca56b8c89e0600a7ae8bb41b209fd54f067849dc7ea",
+          "box": [
+            508,
+            360,
+            1035,
+            440
+          ],
+          "raw_text": "大狃拉的\n精神种子",
+          "ocr_confidence": 0.927,
+          "lines": [
+            {
+              "raw_text": "大狃拉的",
+              "confidence": 0.854,
+              "box": [
+                508,
+                383,
+                572,
+                400
+              ],
+              "tokens": [
+                {
+                  "text": "大狃拉的",
+                  "confidence": 0.8539657592773438
+                }
+              ]
+            },
+            {
+              "raw_text": "精神种子",
+              "confidence": 1.0,
+              "box": [
+                508,
+                401,
+                572,
+                418
+              ],
+              "tokens": [
+                {
+                  "text": "精神种子",
+                  "confidence": 0.9999740719795227
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:03bd9145d06e34f67de26408",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#372.0",
+          "timestamp": 372.0,
+          "frame_sha256": "725bd4a15ea2636975d27ca56b8c89e0600a7ae8bb41b209fd54f067849dc7ea",
+          "box": [
+            508,
+            440,
+            1035,
+            521
+          ],
+          "raw_text": "对手的大狃拉的\n特防提高了！",
+          "ocr_confidence": 0.940846153846154,
+          "lines": [
+            {
+              "raw_text": "对手的大狃拉的",
+              "confidence": 0.909,
+              "box": [
+                508,
+                463,
+                617,
+                480
+              ],
+              "tokens": [
+                {
+                  "text": "对手的大狃拉的",
+                  "confidence": 0.9091690182685852
+                }
+              ]
+            },
+            {
+              "raw_text": "特防提高了！",
+              "confidence": 0.978,
+              "box": [
+                508,
+                481,
+                593,
+                499
+              ],
+              "tokens": [
+                {
+                  "text": "特防提高了！",
+                  "confidence": 0.9776759147644043
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": true
+        }
+      ],
+      "detection_uncertainty": [],
+      "path": ".cache/m2-log-survey-360-400/000013.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#373.0",
+      "timestamp": 373.0,
+      "detected": true,
+      "geometry": {
+        "panel": [
+          200,
+          5,
+          1111,
+          534
+        ],
+        "separators": [
+          113,
+          193,
+          274,
+          354,
+          434,
+          515
+        ],
+        "scroll_top": 298,
+        "scroll_height": 133,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "score": 0.9637939713917367
+      },
+      "turn": 2,
+      "header_ocr": {
+        "raw_text": "回合2",
+        "confidence": 0.969
+      },
+      "observations": [
+        {
+          "observation_id": "log-row:e1e91a97b762874f2a587916",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#373.0",
+          "timestamp": 373.0,
+          "frame_sha256": "6415c132ef8b826b259851550d5c421189e91841ab493d5165edff45c6187d27",
+          "box": [
+            508,
+            49,
+            1035,
+            113
+          ],
+          "raw_text": "对蚁香蛙皇\n效果不好",
+          "ocr_confidence": 0.8955555555555557,
+          "lines": [
+            {
+              "raw_text": "对蚁香蛙皇",
+              "confidence": 0.812,
+              "box": [
+                508,
+                59,
+                587,
+                73
+              ],
+              "tokens": [
+                {
+                  "text": "对蚁香蛙皇",
+                  "confidence": 0.8115013837814331
+                }
+              ]
+            },
+            {
+              "raw_text": "效果不好",
+              "confidence": 1.0,
+              "box": [
+                508,
+                74,
+                572,
+                91
+              ],
+              "tokens": [
+                {
+                  "text": "效果不好",
+                  "confidence": 0.9999688863754272
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": true
+        },
+        {
+          "observation_id": "log-row:63536b15670af264ae534b77",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#373.0",
+          "timestamp": 373.0,
+          "frame_sha256": "6415c132ef8b826b259851550d5c421189e91841ab493d5165edff45c6187d27",
+          "box": [
+            508,
+            113,
+            1035,
+            193
+          ],
+          "raw_text": "对手的红莲铠骑的\n防御、特防降低了！",
+          "ocr_confidence": 0.9952941176470589,
+          "lines": [
+            {
+              "raw_text": "对手的红莲铠骑的",
+              "confidence": 0.999,
+              "box": [
+                508,
+                136,
+                917,
+                153
+              ],
+              "tokens": [
+                {
+                  "text": "对手的红莲铠骑的",
+                  "confidence": 0.9988555312156677
+                }
+              ]
+            },
+            {
+              "raw_text": "防御、特防降低了！",
+              "confidence": 0.992,
+              "box": [
+                508,
+                154,
+                638,
+                171
+              ],
+              "tokens": [
+                {
+                  "text": "防御、特防降低了！",
+                  "confidence": 0.9922847747802734
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:c4b6e14054aeb0e5798872fb",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#373.0",
+          "timestamp": 373.0,
+          "frame_sha256": "6415c132ef8b826b259851550d5c421189e91841ab493d5165edff45c6187d27",
+          "box": [
+            508,
+            193,
+            1035,
+            274
+          ],
+          "raw_text": "铝钢桥龙使出了\n电光束！",
+          "ocr_confidence": 0.9759090909090908,
+          "lines": [
+            {
+              "raw_text": "铝钢桥龙使出了",
+              "confidence": 0.997,
+              "box": [
+                508,
+                216,
+                924,
+                234
+              ],
+              "tokens": [
+                {
+                  "text": "铝钢桥龙使出了",
+                  "confidence": 0.9971567988395691
+                }
+              ]
+            },
+            {
+              "raw_text": "电光束！",
+              "confidence": 0.939,
+              "box": [
+                509,
+                235,
+                563,
+                252
+              ],
+              "tokens": [
+                {
+                  "text": "电光束！",
+                  "confidence": 0.9388436675071716
+                }
+              ]
+            }
+          ],
+          "color": "purple",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:26c1ccf034dabab47a4b9d18",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#373.0",
+          "timestamp": 373.0,
+          "frame_sha256": "6415c132ef8b826b259851550d5c421189e91841ab493d5165edff45c6187d27",
+          "box": [
+            508,
+            274,
+            1035,
+            354
+          ],
+          "raw_text": "铝钢桥龙\n吸收了电力！",
+          "ocr_confidence": 0.9964000000000001,
+          "lines": [
+            {
+              "raw_text": "铝钢桥龙",
+              "confidence": 1.0,
+              "box": [
+                508,
+                297,
+                572,
+                314
+              ],
+              "tokens": [
+                {
+                  "text": "铝钢桥龙",
+                  "confidence": 0.9998586177825928
+                }
+              ]
+            },
+            {
+              "raw_text": "吸收了电力！",
+              "confidence": 0.994,
+              "box": [
+                508,
+                315,
+                593,
+                332
+              ],
+              "tokens": [
+                {
+                  "text": "吸收了电力！",
+                  "confidence": 0.9940465092658997
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:68a5178ffe63499e34959094",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#373.0",
+          "timestamp": 373.0,
+          "frame_sha256": "6415c132ef8b826b259851550d5c421189e91841ab493d5165edff45c6187d27",
+          "box": [
+            508,
+            354,
+            1035,
+            434
+          ],
+          "raw_text": "铝钢桥龙的\n特攻提高了！",
+          "ocr_confidence": 0.992909090909091,
+          "lines": [
+            {
+              "raw_text": "铝钢桥龙的",
+              "confidence": 1.0,
+              "box": [
+                508,
+                377,
+                587,
+                394
+              ],
+              "tokens": [
+                {
+                  "text": "铝钢桥龙的",
+                  "confidence": 0.9998420476913452
+                }
+              ]
+            },
+            {
+              "raw_text": "特攻提高了！",
+              "confidence": 0.987,
+              "box": [
+                508,
+                395,
+                593,
+                413
+              ],
+              "tokens": [
+                {
+                  "text": "特攻提高了！",
+                  "confidence": 0.9872172474861145
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:550feb3867a7cef4d2267f9c",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#373.0",
+          "timestamp": 373.0,
+          "frame_sha256": "6415c132ef8b826b259851550d5c421189e91841ab493d5165edff45c6187d27",
+          "box": [
+            508,
+            434,
+            1035,
+            515
+          ],
+          "raw_text": "红莲铠骑\nHP 30% → 0%",
+          "ocr_confidence": 0.9963333333333334,
+          "lines": [
+            {
+              "raw_text": "红莲铠骑",
+              "confidence": 1.0,
+              "box": [
+                508,
+                458,
+                572,
+                475
+              ],
+              "tokens": [
+                {
+                  "text": "红莲铠骑",
+                  "confidence": 0.9996052980422974
+                }
+              ]
+            },
+            {
+              "raw_text": "HP 30% → 0%",
+              "confidence": 0.995,
+              "box": [
+                508,
+                476,
+                618,
+                492
+              ],
+              "tokens": [
+                {
+                  "text": "HP 30% → 0%",
+                  "confidence": 0.9952118396759033
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        }
+      ],
+      "detection_uncertainty": [],
+      "path": ".cache/m2-log-survey-360-400/000014.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#374.0",
+      "timestamp": 374.0,
+      "detected": true,
+      "geometry": {
+        "panel": [
+          200,
+          5,
+          1111,
+          534
+        ],
+        "separators": [
+          140,
+          221,
+          301,
+          382,
+          462
+        ],
+        "scroll_top": 60,
+        "scroll_height": 132,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "score": 0.970343176376696
+      },
+      "turn": 2,
+      "header_ocr": {
+        "raw_text": "回合2",
+        "confidence": 0.935
+      },
+      "observations": [
+        {
+          "observation_id": "log-row:0bbb880fc070699a0c57b073",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#374.0",
+          "timestamp": 374.0,
+          "frame_sha256": "1af4952460ffc1aa4f621a8d5de8cdb289939c375979369f92a64335b33df17d",
+          "box": [
+            508,
+            49,
+            1035,
+            140
+          ],
+          "raw_text": "训练家换下了\n雷丘!",
+          "ocr_confidence": 0.9969999999999999,
+          "lines": [
+            {
+              "raw_text": "训练家换下了",
+              "confidence": 1.0,
+              "box": [
+                508,
+                83,
+                602,
+                101
+              ],
+              "tokens": [
+                {
+                  "text": "训练家换下了",
+                  "confidence": 0.9999348521232605
+                }
+              ]
+            },
+            {
+              "raw_text": "雷丘!",
+              "confidence": 0.991,
+              "box": [
+                508,
+                102,
+                548,
+                118
+              ],
+              "tokens": [
+                {
+                  "text": "雷丘!",
+                  "confidence": 0.9906198382377625
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": true
+        },
+        {
+          "observation_id": "log-row:cee6eedb8c988ed57c2ec5d8",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#374.0",
+          "timestamp": 374.0,
+          "frame_sha256": "1af4952460ffc1aa4f621a8d5de8cdb289939c375979369f92a64335b33df17d",
+          "box": [
+            508,
+            140,
+            1035,
+            221
+          ],
+          "raw_text": "训练家\n派出了爱管侍！",
+          "ocr_confidence": 0.9894999999999999,
+          "lines": [
+            {
+              "raw_text": "训练家",
+              "confidence": 1.0,
+              "box": [
+                508,
+                163,
+                557,
+                181
+              ],
+              "tokens": [
+                {
+                  "text": "训练家",
+                  "confidence": 0.9999925494194031
+                }
+              ]
+            },
+            {
+              "raw_text": "派出了爱管侍！",
+              "confidence": 0.985,
+              "box": [
+                508,
+                181,
+                608,
+                199
+              ],
+              "tokens": [
+                {
+                  "text": "派出了爱管侍！",
+                  "confidence": 0.9846085906028748
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:3df86dd74df1e4357ff81714",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#374.0",
+          "timestamp": 374.0,
+          "frame_sha256": "1af4952460ffc1aa4f621a8d5de8cdb289939c375979369f92a64335b33df17d",
+          "box": [
+            508,
+            221,
+            1035,
+            301
+          ],
+          "raw_text": "爱管侍的\n精神制造者",
+          "ocr_confidence": 1.0,
+          "lines": [
+            {
+              "raw_text": "爱管侍的",
+              "confidence": 1.0,
+              "box": [
+                508,
+                244,
+                572,
+                261
+              ],
+              "tokens": [
+                {
+                  "text": "爱管侍的",
+                  "confidence": 0.9995368719100952
+                }
+              ]
+            },
+            {
+              "raw_text": "精神制造者",
+              "confidence": 1.0,
+              "box": [
+                508,
+                262,
+                587,
+                279
+              ],
+              "tokens": [
+                {
+                  "text": "精神制造者",
+                  "confidence": 0.999988853931427
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:b5893c9a0e9a60ef394a0d4c",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#374.0",
+          "timestamp": 374.0,
+          "frame_sha256": "1af4952460ffc1aa4f621a8d5de8cdb289939c375979369f92a64335b33df17d",
+          "box": [
+            508,
+            301,
+            1035,
+            382
+          ],
+          "raw_text": "脚下传来了奇妙的感觉！",
+          "ocr_confidence": 0.998,
+          "lines": [
+            {
+              "raw_text": "脚下传来了奇妙的感觉！",
+              "confidence": 0.998,
+              "box": [
+                508,
+                333,
+                668,
+                350
+              ],
+              "tokens": [
+                {
+                  "text": "脚下传来了奇妙的感觉！",
+                  "confidence": 0.9983522891998291
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:0be60890c797fb3cb354669c",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#374.0",
+          "timestamp": 374.0,
+          "frame_sha256": "1af4952460ffc1aa4f621a8d5de8cdb289939c375979369f92a64335b33df17d",
+          "box": [
+            508,
+            382,
+            1035,
+            462
+          ],
+          "raw_text": "轰擂金刚猩，\n回来！",
+          "ocr_confidence": 0.9600000000000001,
+          "lines": [
+            {
+              "raw_text": "轰擂金刚猩，",
+              "confidence": 0.997,
+              "box": [
+                508,
+                405,
+                593,
+                422
+              ],
+              "tokens": [
+                {
+                  "text": "轰擂金刚猩，",
+                  "confidence": 0.9971370697021484
+                }
+              ]
+            },
+            {
+              "raw_text": "回来！",
+              "confidence": 0.886,
+              "box": [
+                508,
+                423,
+                548,
+                439
+              ],
+              "tokens": [
+                {
+                  "text": "回来！",
+                  "confidence": 0.8861346244812012
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:c784a7d780a68dea2e94d09e",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#374.0",
+          "timestamp": 374.0,
+          "frame_sha256": "1af4952460ffc1aa4f621a8d5de8cdb289939c375979369f92a64335b33df17d",
+          "box": [
+            508,
+            462,
+            1035,
+            521
+          ],
+          "raw_text": "上吧！蚊香蛙皇！",
+          "ocr_confidence": 0.997,
+          "lines": [
+            {
+              "raw_text": "上吧！蚊香蛙皇！",
+              "confidence": 0.997,
+              "box": [
+                508,
+                494,
+                623,
+                511
+              ],
+              "tokens": [
+                {
+                  "text": "上吧！蚊香蛙皇！",
+                  "confidence": 0.9971455335617065
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": true
+        }
+      ],
+      "detection_uncertainty": [],
+      "path": ".cache/m2-log-survey-360-400/000015.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#375.0",
+      "timestamp": 375.0,
+      "detected": true,
+      "geometry": {
+        "panel": [
+          200,
+          5,
+          1111,
+          534
+        ],
+        "separators": [
+          134,
+          214,
+          295,
+          375,
+          455
+        ],
+        "scroll_top": 108,
+        "scroll_height": 132,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "score": 0.9675339185953711
+      },
+      "turn": 2,
+      "header_ocr": {
+        "raw_text": "回合2",
+        "confidence": 0.886
+      },
+      "observations": [
+        {
+          "observation_id": "log-row:39bc2b985af87cd257df5846",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#375.0",
+          "timestamp": 375.0,
+          "frame_sha256": "8f6923367f7522688c23bd4aea9e533e9e6cca8d4a56253933f6817d2f5083a8",
+          "box": [
+            508,
+            49,
+            1035,
+            134
+          ],
+          "raw_text": "爱管侍的\n精神制造者",
+          "ocr_confidence": 1.0,
+          "lines": [
+            {
+              "raw_text": "爱管侍的",
+              "confidence": 1.0,
+              "box": [
+                508,
+                76,
+                572,
+                93
+              ],
+              "tokens": [
+                {
+                  "text": "爱管侍的",
+                  "confidence": 0.9995764493942261
+                }
+              ]
+            },
+            {
+              "raw_text": "精神制造者",
+              "confidence": 1.0,
+              "box": [
+                508,
+                94,
+                587,
+                112
+              ],
+              "tokens": [
+                {
+                  "text": "精神制造者",
+                  "confidence": 0.9999901652336121
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": true
+        },
+        {
+          "observation_id": "log-row:02756165283029c3310d91ba",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#375.0",
+          "timestamp": 375.0,
+          "frame_sha256": "8f6923367f7522688c23bd4aea9e533e9e6cca8d4a56253933f6817d2f5083a8",
+          "box": [
+            508,
+            134,
+            1035,
+            214
+          ],
+          "raw_text": "脚下传来了奇妙的感觉！",
+          "ocr_confidence": 0.9990000000000001,
+          "lines": [
+            {
+              "raw_text": "脚下传来了奇妙的感觉！",
+              "confidence": 0.999,
+              "box": [
+                508,
+                165,
+                668,
+                183
+              ],
+              "tokens": [
+                {
+                  "text": "脚下传来了奇妙的感觉！",
+                  "confidence": 0.9988658428192139
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:043628ae96673233e912ab69",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#375.0",
+          "timestamp": 375.0,
+          "frame_sha256": "8f6923367f7522688c23bd4aea9e533e9e6cca8d4a56253933f6817d2f5083a8",
+          "box": [
+            508,
+            214,
+            1035,
+            295
+          ],
+          "raw_text": "轰擂金刚猩，\n回来！",
+          "ocr_confidence": 0.9646666666666667,
+          "lines": [
+            {
+              "raw_text": "轰擂金刚猩，",
+              "confidence": 0.997,
+              "box": [
+                508,
+                237,
+                593,
+                254
+              ],
+              "tokens": [
+                {
+                  "text": "轰擂金刚猩，",
+                  "confidence": 0.9971120953559875
+                }
+              ]
+            },
+            {
+              "raw_text": "回来！",
+              "confidence": 0.9,
+              "box": [
+                508,
+                255,
+                548,
+                272
+              ],
+              "tokens": [
+                {
+                  "text": "回来！",
+                  "confidence": 0.900290310382843
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:7112b52a4e4cb2d8230772aa",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#375.0",
+          "timestamp": 375.0,
+          "frame_sha256": "8f6923367f7522688c23bd4aea9e533e9e6cca8d4a56253933f6817d2f5083a8",
+          "box": [
+            508,
+            295,
+            1035,
+            375
+          ],
+          "raw_text": "上吧！蚊香蛙皇！",
+          "ocr_confidence": 0.998,
+          "lines": [
+            {
+              "raw_text": "上吧！蚊香蛙皇！",
+              "confidence": 0.998,
+              "box": [
+                508,
+                326,
+                623,
+                344
+              ],
+              "tokens": [
+                {
+                  "text": "上吧！蚊香蛙皇！",
+                  "confidence": 0.9983593225479126
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:b2b6c4c386c2868962a66e0f",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#375.0",
+          "timestamp": 375.0,
+          "frame_sha256": "8f6923367f7522688c23bd4aea9e533e9e6cca8d4a56253933f6817d2f5083a8",
+          "box": [
+            508,
+            375,
+            1035,
+            455
+          ],
+          "raw_text": "蚊香蛙皇的\n降雨",
+          "ocr_confidence": 0.9978571428571429,
+          "lines": [
+            {
+              "raw_text": "蚊香蛙皇的",
+              "confidence": 0.997,
+              "box": [
+                508,
+                398,
+                587,
+                415
+              ],
+              "tokens": [
+                {
+                  "text": "蚊香蛙皇的",
+                  "confidence": 0.9974382519721985
+                }
+              ]
+            },
+            {
+              "raw_text": "降雨",
+              "confidence": 1.0,
+              "box": [
+                508,
+                416,
+                542,
+                433
+              ],
+              "tokens": [
+                {
+                  "text": "降雨",
+                  "confidence": 0.9999716281890869
+                }
+              ]
+            }
+          ],
+          "color": "purple",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:16ef992d56aa77da4a842f49",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#375.0",
+          "timestamp": 375.0,
+          "frame_sha256": "8f6923367f7522688c23bd4aea9e533e9e6cca8d4a56253933f6817d2f5083a8",
+          "box": [
+            508,
+            455,
+            1035,
+            521
+          ],
+          "raw_text": "开始下雨了！",
+          "ocr_confidence": 0.988,
+          "lines": [
+            {
+              "raw_text": "开始下雨了！",
+              "confidence": 0.988,
+              "box": [
+                508,
+                487,
+                593,
+                505
+              ],
+              "tokens": [
+                {
+                  "text": "开始下雨了！",
+                  "confidence": 0.9883318543434143
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": true
+        }
+      ],
+      "detection_uncertainty": [],
+      "path": ".cache/m2-log-survey-360-400/000016.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#376.0",
+      "timestamp": 376.0,
+      "detected": true,
+      "geometry": {
+        "panel": [
+          200,
+          5,
+          1111,
+          534
+        ],
+        "separators": [
+          134,
+          215,
+          296,
+          376,
+          456
+        ],
+        "scroll_top": 154,
+        "scroll_height": 132,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "score": 0.9656136042728222
+      },
+      "turn": 2,
+      "header_ocr": {
+        "raw_text": "回合2",
+        "confidence": 0.976
+      },
+      "observations": [
+        {
+          "observation_id": "log-row:2432de722dd1f77fc6b9d17e",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#376.0",
+          "timestamp": 376.0,
+          "frame_sha256": "1d7257a855f21e33b7a1654d669304430d944e6dae09a0eb90cce883a9420567",
+          "box": [
+            508,
+            49,
+            1035,
+            134
+          ],
+          "raw_text": "轰擂金刚猩，\n回来!",
+          "ocr_confidence": 0.9586666666666667,
+          "lines": [
+            {
+              "raw_text": "轰擂金刚猩，",
+              "confidence": 0.999,
+              "box": [
+                508,
+                77,
+                593,
+                95
+              ],
+              "tokens": [
+                {
+                  "text": "轰擂金刚猩，",
+                  "confidence": 0.9990095496177673
+                }
+              ]
+            },
+            {
+              "raw_text": "回来!",
+              "confidence": 0.878,
+              "box": [
+                509,
+                96,
+                548,
+                112
+              ],
+              "tokens": [
+                {
+                  "text": "回来!",
+                  "confidence": 0.8775794506072998
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": true
+        },
+        {
+          "observation_id": "log-row:6fee87b7463d144d0dc648ea",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#376.0",
+          "timestamp": 376.0,
+          "frame_sha256": "1d7257a855f21e33b7a1654d669304430d944e6dae09a0eb90cce883a9420567",
+          "box": [
+            508,
+            134,
+            1035,
+            215
+          ],
+          "raw_text": "上吧！蚊香蛙皇！",
+          "ocr_confidence": 0.997,
+          "lines": [
+            {
+              "raw_text": "上吧！蚊香蛙皇！",
+              "confidence": 0.997,
+              "box": [
+                508,
+                167,
+                623,
+                184
+              ],
+              "tokens": [
+                {
+                  "text": "上吧！蚊香蛙皇！",
+                  "confidence": 0.9971296191215515
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:db111557353fe6466c727ce5",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#376.0",
+          "timestamp": 376.0,
+          "frame_sha256": "1d7257a855f21e33b7a1654d669304430d944e6dae09a0eb90cce883a9420567",
+          "box": [
+            508,
+            215,
+            1035,
+            296
+          ],
+          "raw_text": "蚊香蛙皇的\n降雨",
+          "ocr_confidence": 0.9978571428571429,
+          "lines": [
+            {
+              "raw_text": "蚊香蛙皇的",
+              "confidence": 0.997,
+              "box": [
+                508,
+                238,
+                587,
+                255
+              ],
+              "tokens": [
+                {
+                  "text": "蚊香蛙皇的",
+                  "confidence": 0.9965418577194214
+                }
+              ]
+            },
+            {
+              "raw_text": "降雨",
+              "confidence": 1.0,
+              "box": [
+                508,
+                256,
+                542,
+                273
+              ],
+              "tokens": [
+                {
+                  "text": "降雨",
+                  "confidence": 0.9999651312828064
+                }
+              ]
+            }
+          ],
+          "color": "purple",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:c463b462f7f5a66769d3d0a0",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#376.0",
+          "timestamp": 376.0,
+          "frame_sha256": "1d7257a855f21e33b7a1654d669304430d944e6dae09a0eb90cce883a9420567",
+          "box": [
+            508,
+            296,
+            1035,
+            376
+          ],
+          "raw_text": "开始下雨了！",
+          "ocr_confidence": 0.996,
+          "lines": [
+            {
+              "raw_text": "开始下雨了！",
+              "confidence": 0.996,
+              "box": [
+                508,
+                327,
+                593,
+                345
+              ],
+              "tokens": [
+                {
+                  "text": "开始下雨了！",
+                  "confidence": 0.9959892630577087
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:989ba04c1c5edf0f75aa91f0",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#376.0",
+          "timestamp": 376.0,
+          "frame_sha256": "1d7257a855f21e33b7a1654d669304430d944e6dae09a0eb90cce883a9420567",
+          "box": [
+            508,
+            376,
+            1035,
+            456
+          ],
+          "raw_text": "对手的红莲铠骑使出了\n铠农炮！",
+          "ocr_confidence": 0.9925714285714287,
+          "lines": [
+            {
+              "raw_text": "对手的红莲铠骑使出了",
+              "confidence": 1.0,
+              "box": [
+                508,
+                399,
+                662,
+                416
+              ],
+              "tokens": [
+                {
+                  "text": "对手的红莲铠骑使出了",
+                  "confidence": 0.9997056722640991
+                }
+              ]
+            },
+            {
+              "raw_text": "铠农炮！",
+              "confidence": 0.974,
+              "box": [
+                508,
+                417,
+                563,
+                434
+              ],
+              "tokens": [
+                {
+                  "text": "铠农炮！",
+                  "confidence": 0.9739988446235657
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:f671c80e97ac03d03292fab0",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#376.0",
+          "timestamp": 376.0,
+          "frame_sha256": "1d7257a855f21e33b7a1654d669304430d944e6dae09a0eb90cce883a9420567",
+          "box": [
+            508,
+            456,
+            1035,
+            521
+          ],
+          "raw_text": "蚊香蛙皇\nHP 197 → 173",
+          "ocr_confidence": 0.9815,
+          "lines": [
+            {
+              "raw_text": "蚊香蛙皇",
+              "confidence": 0.995,
+              "box": [
+                508,
+                479,
+                572,
+                496
+              ],
+              "tokens": [
+                {
+                  "text": "蚊香蛙皇",
+                  "confidence": 0.9948412179946899
+                }
+              ]
+            },
+            {
+              "raw_text": "HP 197 → 173",
+              "confidence": 0.977,
+              "box": [
+                508,
+                498,
+                622,
+                513
+              ],
+              "tokens": [
+                {
+                  "text": "HP 197 → 173",
+                  "confidence": 0.977078914642334
+                }
+              ]
+            }
+          ],
+          "color": "purple",
+          "partial": true
+        }
+      ],
+      "detection_uncertainty": [],
+      "path": ".cache/m2-log-survey-360-400/000017.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#377.0",
+      "timestamp": 377.0,
+      "detected": true,
+      "geometry": {
+        "panel": [
+          200,
+          5,
+          1111,
+          534
+        ],
+        "separators": [
+          118,
+          198,
+          279,
+          359,
+          439,
+          519
+        ],
+        "scroll_top": 228,
+        "scroll_height": 132,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "score": 0.9624777457179692
+      },
+      "turn": 2,
+      "header_ocr": {
+        "raw_text": "回合2",
+        "confidence": 0.928
+      },
+      "observations": [
+        {
+          "observation_id": "log-row:007c4830205bdce0c8336075",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#377.0",
+          "timestamp": 377.0,
+          "frame_sha256": "c869e84a3b962c06c3d9f9c11bbf9e6697b9ac8deca0eb10d5b0d68ce1a35848",
+          "box": [
+            508,
+            49,
+            1035,
+            118
+          ],
+          "raw_text": "开始下雨了！",
+          "ocr_confidence": 0.991,
+          "lines": [
+            {
+              "raw_text": "开始下雨了！",
+              "confidence": 0.991,
+              "box": [
+                508,
+                70,
+                593,
+                87
+              ],
+              "tokens": [
+                {
+                  "text": "开始下雨了！",
+                  "confidence": 0.9908745884895325
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": true
+        },
+        {
+          "observation_id": "log-row:80d03d67d54e12a76a16f717",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#377.0",
+          "timestamp": 377.0,
+          "frame_sha256": "c869e84a3b962c06c3d9f9c11bbf9e6697b9ac8deca0eb10d5b0d68ce1a35848",
+          "box": [
+            508,
+            118,
+            1035,
+            198
+          ],
+          "raw_text": "对手的红莲铠骑使出了\n铠农炮！",
+          "ocr_confidence": 0.9902857142857143,
+          "lines": [
+            {
+              "raw_text": "对手的红莲铠骑使出了",
+              "confidence": 1.0,
+              "box": [
+                508,
+                141,
+                662,
+                158
+              ],
+              "tokens": [
+                {
+                  "text": "对手的红莲铠骑使出了",
+                  "confidence": 0.9997209310531616
+                }
+              ]
+            },
+            {
+              "raw_text": "铠农炮！",
+              "confidence": 0.966,
+              "box": [
+                508,
+                159,
+                563,
+                176
+              ],
+              "tokens": [
+                {
+                  "text": "铠农炮！",
+                  "confidence": 0.9657316207885742
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:370f7eaa2f269bfc656cbb3d",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#377.0",
+          "timestamp": 377.0,
+          "frame_sha256": "c869e84a3b962c06c3d9f9c11bbf9e6697b9ac8deca0eb10d5b0d68ce1a35848",
+          "box": [
+            508,
+            198,
+            1035,
+            279
+          ],
+          "raw_text": "蚊香蛙皇\nHP 197 → 173",
+          "ocr_confidence": 0.99575,
+          "lines": [
+            {
+              "raw_text": "蚊香蛙皇",
+              "confidence": 0.995,
+              "box": [
+                508,
+                221,
+                572,
+                238
+              ],
+              "tokens": [
+                {
+                  "text": "蚊香蛙皇",
+                  "confidence": 0.9947749972343445
+                }
+              ]
+            },
+            {
+              "raw_text": "HP 197 → 173",
+              "confidence": 0.996,
+              "box": [
+                508,
+                240,
+                622,
+                256
+              ],
+              "tokens": [
+                {
+                  "text": "HP 197 → 173",
+                  "confidence": 0.9957895278930664
+                }
+              ]
+            }
+          ],
+          "color": "purple",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:e973fa3e6befc656d814b66e",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#377.0",
+          "timestamp": 377.0,
+          "frame_sha256": "c869e84a3b962c06c3d9f9c11bbf9e6697b9ac8deca0eb10d5b0d68ce1a35848",
+          "box": [
+            508,
+            279,
+            1035,
+            359
+          ],
+          "raw_text": "对蚊香蛙皇\n效果不好",
+          "ocr_confidence": 0.9972222222222222,
+          "lines": [
+            {
+              "raw_text": "对蚊香蛙皇",
+              "confidence": 0.995,
+              "box": [
+                508,
+                302,
+                587,
+                319
+              ],
+              "tokens": [
+                {
+                  "text": "对蚊香蛙皇",
+                  "confidence": 0.9953702688217163
+                }
+              ]
+            },
+            {
+              "raw_text": "效果不好",
+              "confidence": 1.0,
+              "box": [
+                508,
+                320,
+                572,
+                337
+              ],
+              "tokens": [
+                {
+                  "text": "效果不好",
+                  "confidence": 0.9999755620956421
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:ab290dd5cde67401a62bc942",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#377.0",
+          "timestamp": 377.0,
+          "frame_sha256": "c869e84a3b962c06c3d9f9c11bbf9e6697b9ac8deca0eb10d5b0d68ce1a35848",
+          "box": [
+            508,
+            359,
+            1035,
+            439
+          ],
+          "raw_text": "对手的红莲铠骑的\n防御、特防降低了！",
+          "ocr_confidence": 0.9973529411764704,
+          "lines": [
+            {
+              "raw_text": "对手的红莲铠骑的",
+              "confidence": 1.0,
+              "box": [
+                508,
+                382,
+                632,
+                399
+              ],
+              "tokens": [
+                {
+                  "text": "对手的红莲铠骑的",
+                  "confidence": 0.9997440576553345
+                }
+              ]
+            },
+            {
+              "raw_text": "防御、特防降低了！",
+              "confidence": 0.995,
+              "box": [
+                508,
+                400,
+                638,
+                417
+              ],
+              "tokens": [
+                {
+                  "text": "防御、特防降低了！",
+                  "confidence": 0.9949419498443604
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:120b58dc6142f13e4c717cbb",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#377.0",
+          "timestamp": 377.0,
+          "frame_sha256": "c869e84a3b962c06c3d9f9c11bbf9e6697b9ac8deca0eb10d5b0d68ce1a35848",
+          "box": [
+            508,
+            439,
+            1035,
+            519
+          ],
+          "raw_text": "铝钢桥龙使出了\n电光束！",
+          "ocr_confidence": 0.98,
+          "lines": [
+            {
+              "raw_text": "铝钢桥龙使出了",
+              "confidence": 1.0,
+              "box": [
+                508,
+                463,
+                617,
+                480
+              ],
+              "tokens": [
+                {
+                  "text": "铝钢桥龙使出了",
+                  "confidence": 0.9997662901878357
+                }
+              ]
+            },
+            {
+              "raw_text": "电光束！",
+              "confidence": 0.945,
+              "box": [
+                509,
+                481,
+                563,
+                498
+              ],
+              "tokens": [
+                {
+                  "text": "电光束！",
+                  "confidence": 0.9449120163917542
+                }
+              ]
+            }
+          ],
+          "color": "purple",
+          "partial": false
+        }
+      ],
+      "detection_uncertainty": [],
+      "path": ".cache/m2-log-survey-360-400/000018.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#378.0",
+      "timestamp": 378.0,
+      "detected": true,
+      "geometry": {
+        "panel": [
+          200,
+          5,
+          1111,
+          534
+        ],
+        "separators": [
+          111,
+          191,
+          272,
+          352,
+          433,
+          513
+        ],
+        "scroll_top": 299,
+        "scroll_height": 132,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "score": 0.9502781017864816
+      },
+      "turn": 2,
+      "header_ocr": {
+        "raw_text": "回合2",
+        "confidence": 0.924
+      },
+      "observations": [
+        {
+          "observation_id": "log-row:92a98ef2ca07409d2d66f7dc",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#378.0",
+          "timestamp": 378.0,
+          "frame_sha256": "e5efa55f4be6da48b5a4828e238e11616d52e924b7523453e70063af48e7aa95",
+          "box": [
+            508,
+            49,
+            1035,
+            111
+          ],
+          "raw_text": "对蚁香蛙呈\n效果不好。",
+          "ocr_confidence": 0.8504999999999999,
+          "lines": [
+            {
+              "raw_text": "对蚁香蛙呈",
+              "confidence": 0.701,
+              "box": [
+                508,
+                59,
+                587,
+                71
+              ],
+              "tokens": [
+                {
+                  "text": "对蚁香蛙呈",
+                  "confidence": 0.700958251953125
+                }
+              ]
+            },
+            {
+              "raw_text": "效果不好。",
+              "confidence": 1.0,
+              "box": [
+                508,
+                72,
+                578,
+                89
+              ],
+              "tokens": [
+                {
+                  "text": "效果不好。",
+                  "confidence": 0.9999796152114868
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": true
+        },
+        {
+          "observation_id": "log-row:e4d4d5318ada0ef7cad2387d",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#378.0",
+          "timestamp": 378.0,
+          "frame_sha256": "e5efa55f4be6da48b5a4828e238e11616d52e924b7523453e70063af48e7aa95",
+          "box": [
+            508,
+            111,
+            1035,
+            191
+          ],
+          "raw_text": "对手的红莲铠骑的\n防御、特防降低了！",
+          "ocr_confidence": 0.9968235294117646,
+          "lines": [
+            {
+              "raw_text": "对手的红莲铠骑的",
+              "confidence": 1.0,
+              "box": [
+                508,
+                134,
+                632,
+                151
+              ],
+              "tokens": [
+                {
+                  "text": "对手的红莲铠骑的",
+                  "confidence": 0.9997442960739136
+                }
+              ]
+            },
+            {
+              "raw_text": "防御、特防降低了！",
+              "confidence": 0.994,
+              "box": [
+                508,
+                152,
+                638,
+                169
+              ],
+              "tokens": [
+                {
+                  "text": "防御、特防降低了！",
+                  "confidence": 0.9942241311073303
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:2b53a8d9dc494546a24df26a",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#378.0",
+          "timestamp": 378.0,
+          "frame_sha256": "e5efa55f4be6da48b5a4828e238e11616d52e924b7523453e70063af48e7aa95",
+          "box": [
+            508,
+            191,
+            1035,
+            272
+          ],
+          "raw_text": "铝钢桥龙使出了\n电光束！",
+          "ocr_confidence": 0.9709090909090908,
+          "lines": [
+            {
+              "raw_text": "铝钢桥龙使出了",
+              "confidence": 1.0,
+              "box": [
+                508,
+                215,
+                617,
+                232
+              ],
+              "tokens": [
+                {
+                  "text": "铝钢桥龙使出了",
+                  "confidence": 0.9998132586479187
+                }
+              ]
+            },
+            {
+              "raw_text": "电光束！",
+              "confidence": 0.92,
+              "box": [
+                509,
+                233,
+                563,
+                250
+              ],
+              "tokens": [
+                {
+                  "text": "电光束！",
+                  "confidence": 0.9196084141731262
+                }
+              ]
+            }
+          ],
+          "color": "purple",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:de70658bde11053333e233e6",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#378.0",
+          "timestamp": 378.0,
+          "frame_sha256": "e5efa55f4be6da48b5a4828e238e11616d52e924b7523453e70063af48e7aa95",
+          "box": [
+            508,
+            272,
+            1035,
+            352
+          ],
+          "raw_text": "铝钢桥龙\n吸收",
+          "ocr_confidence": 0.9973333333333333,
+          "lines": [
+            {
+              "raw_text": "铝钢桥龙",
+              "confidence": 0.996,
+              "box": [
+                508,
+                295,
+                570,
+                312
+              ],
+              "tokens": [
+                {
+                  "text": "铝钢桥龙",
+                  "confidence": 0.9962645769119263
+                }
+              ]
+            },
+            {
+              "raw_text": "吸收",
+              "confidence": 1.0,
+              "box": [
+                508,
+                313,
+                538,
+                330
+              ],
+              "tokens": [
+                {
+                  "text": "吸收",
+                  "confidence": 0.9998745918273926
+                }
+              ]
+            }
+          ],
+          "color": "purple",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:73fc0ba00c706be9adf1ea21",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#378.0",
+          "timestamp": 378.0,
+          "frame_sha256": "e5efa55f4be6da48b5a4828e238e11616d52e924b7523453e70063af48e7aa95",
+          "box": [
+            508,
+            352,
+            1035,
+            433
+          ],
+          "raw_text": "铝钢桥龙的 COMMAND TIME\n特攻提高了！",
+          "ocr_confidence": 0.9777499999999999,
+          "lines": [
+            {
+              "raw_text": "铝钢桥龙的 COMMAND TIME",
+              "confidence": 0.972,
+              "box": [
+                508,
+                372,
+                721,
+                392
+              ],
+              "tokens": [
+                {
+                  "text": "铝钢桥龙的 COMMAND TIME",
+                  "confidence": 0.9716764092445374
+                }
+              ]
+            },
+            {
+              "raw_text": "特攻提高了！",
+              "confidence": 0.995,
+              "box": [
+                508,
+                394,
+                593,
+                411
+              ],
+              "tokens": [
+                {
+                  "text": "特攻提高了！",
+                  "confidence": 0.9953003525733948
+                }
+              ]
+            }
+          ],
+          "color": "purple",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:d2d3d79120039c0cf41357ed",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#378.0",
+          "timestamp": 378.0,
+          "frame_sha256": "e5efa55f4be6da48b5a4828e238e11616d52e924b7523453e70063af48e7aa95",
+          "box": [
+            508,
+            433,
+            1035,
+            513
+          ],
+          "raw_text": "红莲铠骑\nHP 30% → 0%",
+          "ocr_confidence": 0.9963333333333334,
+          "lines": [
+            {
+              "raw_text": "红莲铠骑",
+              "confidence": 1.0,
+              "box": [
+                508,
+                456,
+                572,
+                473
+              ],
+              "tokens": [
+                {
+                  "text": "红莲铠骑",
+                  "confidence": 0.999598503112793
+                }
+              ]
+            },
+            {
+              "raw_text": "HP 30% → 0%",
+              "confidence": 0.995,
+              "box": [
+                508,
+                474,
+                618,
+                490
+              ],
+              "tokens": [
+                {
+                  "text": "HP 30% → 0%",
+                  "confidence": 0.9949682354927063
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        }
+      ],
+      "detection_uncertainty": [],
+      "path": ".cache/m2-log-survey-360-400/000019.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#379.0",
+      "timestamp": 379.0,
+      "detected": true,
+      "geometry": {
+        "panel": [
+          200,
+          5,
+          1111,
+          534
+        ],
+        "separators": [
+          125,
+          206,
+          286,
+          367,
+          447
+        ],
+        "scroll_top": 364,
+        "scroll_height": 132,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "score": 0.9276689790656271
+      },
+      "turn": 2,
+      "header_ocr": {
+        "raw_text": "回合2",
+        "confidence": 0.934
+      },
+      "observations": [
+        {
+          "observation_id": "log-row:eaeb98bb0d57ab97a5a6b8b4",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#379.0",
+          "timestamp": 379.0,
+          "frame_sha256": "6916649ccddb4fa91999a3575f6c28da99a4f5eb27180529853a3e7d8f56d121",
+          "box": [
+            508,
+            49,
+            1035,
+            125
+          ],
+          "raw_text": "铝钢桥龙\n吸收了电力！",
+          "ocr_confidence": 0.9969999999999999,
+          "lines": [
+            {
+              "raw_text": "铝钢桥龙",
+              "confidence": 1.0,
+              "box": [
+                508,
+                68,
+                572,
+                85
+              ],
+              "tokens": [
+                {
+                  "text": "铝钢桥龙",
+                  "confidence": 0.9998553991317749
+                }
+              ]
+            },
+            {
+              "raw_text": "吸收了电力！",
+              "confidence": 0.995,
+              "box": [
+                508,
+                86,
+                593,
+                103
+              ],
+              "tokens": [
+                {
+                  "text": "吸收了电力！",
+                  "confidence": 0.9945634007453918
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": true
+        },
+        {
+          "observation_id": "log-row:d1227d31fa314a644cf88565",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#379.0",
+          "timestamp": 379.0,
+          "frame_sha256": "6916649ccddb4fa91999a3575f6c28da99a4f5eb27180529853a3e7d8f56d121",
+          "box": [
+            508,
+            125,
+            1035,
+            206
+          ],
+          "raw_text": "铝钢桥龙的\n特攻提高了！",
+          "ocr_confidence": 0.9918181818181818,
+          "lines": [
+            {
+              "raw_text": "铝钢桥龙的",
+              "confidence": 1.0,
+              "box": [
+                508,
+                148,
+                587,
+                165
+              ],
+              "tokens": [
+                {
+                  "text": "铝钢桥龙的",
+                  "confidence": 0.999851405620575
+                }
+              ]
+            },
+            {
+              "raw_text": "特攻提高了！",
+              "confidence": 0.985,
+              "box": [
+                508,
+                166,
+                593,
+                184
+              ],
+              "tokens": [
+                {
+                  "text": "特攻提高了！",
+                  "confidence": 0.984651505947113
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:317a6196f86f878ecb117973",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#379.0",
+          "timestamp": 379.0,
+          "frame_sha256": "6916649ccddb4fa91999a3575f6c28da99a4f5eb27180529853a3e7d8f56d121",
+          "box": [
+            508,
+            206,
+            1035,
+            286
+          ],
+          "raw_text": "红莲铠骑\nHP 30% → 0%",
+          "ocr_confidence": 0.9924000000000001,
+          "lines": [
+            {
+              "raw_text": "红莲铠骑",
+              "confidence": 0.999,
+              "box": [
+                508,
+                229,
+                572,
+                246
+              ],
+              "tokens": [
+                {
+                  "text": "红莲铠骑",
+                  "confidence": 0.9994669556617737
+                }
+              ]
+            },
+            {
+              "raw_text": "HP 30% → 0%",
+              "confidence": 0.99,
+              "box": [
+                508,
+                247,
+                618,
+                263
+              ],
+              "tokens": [
+                {
+                  "text": "HP 30% → 0%",
+                  "confidence": 0.9901378154754639
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:a2ab05e762db64b02e43e16a",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#379.0",
+          "timestamp": 379.0,
+          "frame_sha256": "6916649ccddb4fa91999a3575f6c28da99a4f5eb27180529853a3e7d8f56d121",
+          "box": [
+            508,
+            286,
+            1035,
+            367
+          ],
+          "raw_text": "对手",
+          "ocr_confidence": 1.0,
+          "lines": [
+            {
+              "raw_text": "对手",
+              "confidence": 1.0,
+              "box": [
+                508,
+                318,
+                537,
+                335
+              ],
+              "tokens": [
+                {
+                  "text": "对手",
+                  "confidence": 0.9999446272850037
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:9e813d0c3578be2016a7040b",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#379.0",
+          "timestamp": 379.0,
+          "frame_sha256": "6916649ccddb4fa91999a3575f6c28da99a4f5eb27180529853a3e7d8f56d121",
+          "box": [
+            508,
+            367,
+            1035,
+            447
+          ],
+          "raw_text": "COMMAND TIME\n训练家\n派出了大狃拉！",
+          "ocr_confidence": 0.9831363636363636,
+          "lines": [
+            {
+              "raw_text": "COMMAND TIME",
+              "confidence": 1.0,
+              "box": [
+                590,
+                372,
+                721,
+                388
+              ],
+              "tokens": [
+                {
+                  "text": "COMMAND TIME",
+                  "confidence": 0.9998230934143066
+                }
+              ]
+            },
+            {
+              "raw_text": "训练家",
+              "confidence": 1.0,
+              "box": [
+                508,
+                390,
+                557,
+                406
+              ],
+              "tokens": [
+                {
+                  "text": "训练家",
+                  "confidence": 0.9998407363891602
+                }
+              ]
+            },
+            {
+              "raw_text": "派出了大狃拉！",
+              "confidence": 0.947,
+              "box": [
+                508,
+                407,
+                608,
+                425
+              ],
+              "tokens": [
+                {
+                  "text": "派出了大狃拉！",
+                  "confidence": 0.9471693634986877
+                }
+              ]
+            }
+          ],
+          "color": "purple",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:bef034091e9511b1ae374e47",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#379.0",
+          "timestamp": 379.0,
+          "frame_sha256": "6916649ccddb4fa91999a3575f6c28da99a4f5eb27180529853a3e7d8f56d121",
+          "box": [
+            508,
+            447,
+            1035,
+            521
+          ],
+          "raw_text": "大狃拉的\n精神种子",
+          "ocr_confidence": 0.9215,
+          "lines": [
+            {
+              "raw_text": "大狃拉的",
+              "confidence": 0.843,
+              "box": [
+                508,
+                470,
+                572,
+                487
+              ],
+              "tokens": [
+                {
+                  "text": "大狃拉的",
+                  "confidence": 0.8428695201873779
+                }
+              ]
+            },
+            {
+              "raw_text": "精神种子",
+              "confidence": 1.0,
+              "box": [
+                508,
+                488,
+                572,
+                505
+              ],
+              "tokens": [
+                {
+                  "text": "精神种子",
+                  "confidence": 0.9999769330024719
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": true
+        }
+      ],
+      "detection_uncertainty": [],
+      "path": ".cache/m2-log-survey-360-400/000020.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#380.0",
+      "timestamp": 380.0,
+      "detected": true,
+      "geometry": {
+        "panel": [
+          200,
+          5,
+          1111,
+          534
+        ],
+        "separators": [
+          82,
+          163,
+          243,
+          324,
+          404,
+          485
+        ],
+        "scroll_top": 389,
+        "scroll_height": 132,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "score": 0.9279833016145865
+      },
+      "turn": 2,
+      "header_ocr": {
+        "raw_text": "回合2",
+        "confidence": 0.902
+      },
+      "observations": [
+        {
+          "observation_id": "log-row:8493c4717aa7733600aa5419",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#380.0",
+          "timestamp": 380.0,
+          "frame_sha256": "3558b99b047caff75fcbc768051ce3730e736068aebbe4b59fd0253294b89eb7",
+          "box": [
+            508,
+            82,
+            1035,
+            163
+          ],
+          "raw_text": "红莲铠骑\nHP 30% → 0%",
+          "ocr_confidence": 0.9970666666666667,
+          "lines": [
+            {
+              "raw_text": "红莲铠骑",
+              "confidence": 1.0,
+              "box": [
+                508,
+                106,
+                572,
+                123
+              ],
+              "tokens": [
+                {
+                  "text": "红莲铠骑",
+                  "confidence": 0.9996140599250793
+                }
+              ]
+            },
+            {
+              "raw_text": "HP 30% → 0%",
+              "confidence": 0.996,
+              "box": [
+                508,
+                124,
+                618,
+                140
+              ],
+              "tokens": [
+                {
+                  "text": "HP 30% → 0%",
+                  "confidence": 0.9958704113960266
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:39081d3a2b843553f2043e9c",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#380.0",
+          "timestamp": 380.0,
+          "frame_sha256": "3558b99b047caff75fcbc768051ce3730e736068aebbe4b59fd0253294b89eb7",
+          "box": [
+            508,
+            163,
+            1035,
+            243
+          ],
+          "raw_text": "对手的红莲铠骑倒下了！",
+          "ocr_confidence": 0.9900000000000001,
+          "lines": [
+            {
+              "raw_text": "对手的红莲铠骑倒下了！",
+              "confidence": 0.99,
+              "box": [
+                508,
+                195,
+                668,
+                213
+              ],
+              "tokens": [
+                {
+                  "text": "对手的红莲铠骑倒下了！",
+                  "confidence": 0.9903350472450256
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:6ed3088c3885974459291ff9",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#380.0",
+          "timestamp": 380.0,
+          "frame_sha256": "3558b99b047caff75fcbc768051ce3730e736068aebbe4b59fd0253294b89eb7",
+          "box": [
+            508,
+            243,
+            1035,
+            324
+          ],
+          "raw_text": "训练家\n派出了大狃拉！",
+          "ocr_confidence": 0.9657,
+          "lines": [
+            {
+              "raw_text": "训练家",
+              "confidence": 1.0,
+              "box": [
+                508,
+                267,
+                557,
+                284
+              ],
+              "tokens": [
+                {
+                  "text": "训练家",
+                  "confidence": 0.9999864101409912
+                }
+              ]
+            },
+            {
+              "raw_text": "派出了大狃拉！",
+              "confidence": 0.951,
+              "box": [
+                508,
+                285,
+                608,
+                301
+              ],
+              "tokens": [
+                {
+                  "text": "派出了大狃拉！",
+                  "confidence": 0.9506844282150269
+                }
+              ]
+            }
+          ],
+          "color": null,
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:58d9ada6f8c77f3694ff4e2a",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#380.0",
+          "timestamp": 380.0,
+          "frame_sha256": "3558b99b047caff75fcbc768051ce3730e736068aebbe4b59fd0253294b89eb7",
+          "box": [
+            508,
+            324,
+            1035,
+            404
+          ],
+          "raw_text": "大狂\n精神种子 COMMAND TIME",
+          "ocr_confidence": 0.9945263157894737,
+          "lines": [
+            {
+              "raw_text": "大狂",
+              "confidence": 0.999,
+              "box": [
+                508,
+                347,
+                538,
+                364
+              ],
+              "tokens": [
+                {
+                  "text": "大狂",
+                  "confidence": 0.9992759823799133
+                }
+              ]
+            },
+            {
+              "raw_text": "精神种子 COMMAND TIME",
+              "confidence": 0.994,
+              "box": [
+                508,
+                365,
+                721,
+                388
+              ],
+              "tokens": [
+                {
+                  "text": "精神种子 COMMAND TIME",
+                  "confidence": 0.9939015507698059
+                }
+              ]
+            }
+          ],
+          "color": "red",
+          "partial": false
+        },
+        {
+          "observation_id": "log-row:5a50afc7ddaab0ead14d6368",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#380.0",
+          "timestamp": 380.0,
+          "frame_sha256": "3558b99b047caff75fcbc768051ce3730e736068aebbe4b59fd0253294b89eb7",
+          "box": [
+            508,
+            404,
+            1035,
+            485
+          ],
+          "raw_text": "对手的大狃拉的\n特防提高了！",
+          "ocr_confidence": 0.9643846153846153,
+          "lines": [
+            {
+              "raw_text": "对手的大狃拉的",
+              "confidence": 0.951,
+              "box": [
+                508,
+                427,
+                617,
+                445
+              ],
+              "tokens": [
+                {
+                  "text": "对手的大狃拉的",
+                  "confidence": 0.950891375541687
+                }
+              ]
+            },
+            {
+              "raw_text": "特防提高了！",
+              "confidence": 0.98,
+              "box": [
+                508,
+                445,
+                593,
+                463
+              ],
+              "tokens": [
+                {
+                  "text": "特防提高了！",
+                  "confidence": 0.979503333568573
+                }
+              ]
+            }
+          ],
+          "color": "purple",
+          "partial": false
+        }
+      ],
+      "detection_uncertainty": [],
+      "path": ".cache/m2-log-survey-360-400/000021.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#381.0",
+      "timestamp": 381.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000022.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#382.0",
+      "timestamp": 382.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000023.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#383.0",
+      "timestamp": 383.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000024.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#384.0",
+      "timestamp": 384.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000025.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#385.0",
+      "timestamp": 385.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000026.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#386.0",
+      "timestamp": 386.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000027.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#387.0",
+      "timestamp": 387.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000028.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#388.0",
+      "timestamp": 388.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000029.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#389.0",
+      "timestamp": 389.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000030.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#390.0",
+      "timestamp": 390.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000031.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#391.0",
+      "timestamp": 391.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000032.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#392.0",
+      "timestamp": 392.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000033.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#393.0",
+      "timestamp": 393.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000034.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#394.0",
+      "timestamp": 394.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000035.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#395.0",
+      "timestamp": 395.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000036.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#396.0",
+      "timestamp": 396.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000037.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#397.0",
+      "timestamp": 397.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000038.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#398.0",
+      "timestamp": 398.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000039.png"
+    },
+    {
+      "source_id": "tests/fixtures/sample_battle_2.mp4#399.0",
+      "timestamp": 399.0,
+      "detected": false,
+      "observations": [],
+      "path": ".cache/m2-log-survey-360-400/000040.png"
+    }
+  ],
+  "trainer_observations": {
+    "self": {
+      "display_name": "Hoshi",
+      "raw_text": "Hoshi",
+      "unique_trainer_id": null,
+      "ocr_confidence": 0.999,
+      "evidence": [
+        {
+          "source": "reports/M2.1-battle-log-evidence/team-preview-28.png",
+          "sha256": "8d65d4f50319aae4f6ed716e92bf3aa693ea09ae5f1cb50534fd61a66f1f8bec",
+          "box": [
+            216,
+            35,
+            400,
+            66
+          ],
+          "timestamp": 28,
+          "timestamp_uncertainty_seconds": 2,
+          "color": "purple",
+          "basis": "visible_team_preview_panel"
+        }
+      ]
+    },
+    "opponent": {
+      "display_name": "训练家",
+      "raw_text": "训练家",
+      "unique_trainer_id": null,
+      "ocr_confidence": 1.0,
+      "evidence": [
+        {
+          "source": "reports/M2.1-battle-log-evidence/team-preview-28.png",
+          "sha256": "8d65d4f50319aae4f6ed716e92bf3aa693ea09ae5f1cb50534fd61a66f1f8bec",
+          "box": [
+            977,
+            35,
+            1164,
+            66
+          ],
+          "timestamp": 28,
+          "timestamp_uncertainty_seconds": 2,
+          "color": "red",
+          "basis": "visible_team_preview_panel"
+        }
+      ]
+    }
+  }
+}
