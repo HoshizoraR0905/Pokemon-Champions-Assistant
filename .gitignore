@@ -15,3 +15,4 @@ tests/fixtures/*.mp4
 
 # Retrieved copyrighted visual assets and downloaded OCR weights
 .cache/
+/reports/m15live-cached-camera-v2.jsonl

@@ -1,0 +1,807 @@
+{
+  "schema_version": 1,
+  "backend": "PP-OCRv6_medium_rec",
+  "requested_provider": "cpu",
+  "active_providers": null,
+  "initialization_seconds": 2.4962391669978388,
+  "batch_size": 1,
+  "single_region_calls": 26,
+  "service_seconds": 3.03507600298326,
+  "regions_per_second": 8.56650705763015,
+  "latency": {
+    "count": 26,
+    "median_seconds": 0.06365845850814367,
+    "p95_seconds": 0.3563448330096435,
+    "worst_seconds": 0.35898954200092703
+  },
+  "peak_process_rss_bytes": 978272256,
+  "metrics": {
+    "ability": {
+      "count": 4,
+      "exact_accuracy": 1.0,
+      "cer": 0.0,
+      "latency": {
+        "count": 4,
+        "median_seconds": 0.079653041997517,
+        "p95_seconds": 0.08000529199489392,
+        "worst_seconds": 0.08000529199489392
+      }
+    },
+    "item": {
+      "count": 4,
+      "exact_accuracy": 1.0,
+      "cer": 0.0,
+      "latency": {
+        "count": 4,
+        "median_seconds": 0.07278208349453053,
+        "p95_seconds": 0.07443158299429342,
+        "worst_seconds": 0.07443158299429342
+      }
+    },
+    "message": {
+      "count": 5,
+      "exact_accuracy": 1.0,
+      "cer": 0.0,
+      "latency": {
+        "count": 5,
+        "median_seconds": 0.3480454169912264,
+        "p95_seconds": 0.35898954200092703,
+        "worst_seconds": 0.35898954200092703
+      }
+    },
+    "move": {
+      "count": 4,
+      "exact_accuracy": 1.0,
+      "cer": 0.0,
+      "latency": {
+        "count": 4,
+        "median_seconds": 0.052229520995751955,
+        "p95_seconds": 0.053646583008230664,
+        "worst_seconds": 0.053646583008230664
+      }
+    },
+    "numeric": {
+      "count": 4,
+      "exact_accuracy": 1.0,
+      "cer": 0.0,
+      "latency": {
+        "count": 4,
+        "median_seconds": 0.05243372950644698,
+        "p95_seconds": 0.05353354201361071,
+        "worst_seconds": 0.05353354201361071
+      }
+    },
+    "species_text": {
+      "count": 5,
+      "exact_accuracy": 1.0,
+      "cer": 0.0,
+      "latency": {
+        "count": 5,
+        "median_seconds": 0.05217899999115616,
+        "p95_seconds": 0.056483042004401796,
+        "worst_seconds": 0.056483042004401796
+      }
+    }
+  },
+  "rows": [
+    {
+      "image": "team_preview.png",
+      "region": "team_name_0",
+      "kind": "species_text",
+      "expected": "暴飞龙",
+      "species_id": 373,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        396,
+        157,
+        690,
+        198
+      ],
+      "multiline": false,
+      "bounds": [
+        396,
+        157,
+        690,
+        198
+      ],
+      "raw_text": "暴飞龙",
+      "accepted": "暴飞龙",
+      "confidence": 1.0,
+      "seconds": 0.056483042004401796,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 3
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_name_2_0",
+      "kind": "species_text",
+      "expected": "爱管侍",
+      "species_id": 876,
+      "form_id": 876,
+      "split": "development",
+      "box": [
+        267,
+        396,
+        393,
+        418
+      ],
+      "multiline": false,
+      "bounds": [
+        267,
+        396,
+        393,
+        418
+      ],
+      "raw_text": "爱管侍",
+      "accepted": "爱管侍",
+      "confidence": 0.999,
+      "seconds": 0.05217200001061428,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 3
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_name_1_1",
+      "kind": "species_text",
+      "expected": "龙头地鼠",
+      "species_id": 530,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1429,
+        548,
+        1681,
+        592
+      ],
+      "multiline": false,
+      "bounds": [
+        1429,
+        548,
+        1681,
+        592
+      ],
+      "raw_text": "龙头地鼠",
+      "accepted": "龙头地鼠",
+      "confidence": 1.0,
+      "seconds": 0.05217899999115616,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 4
+    },
+    {
+      "image": "move_selection.png",
+      "region": "opponent_name_1",
+      "kind": "species_text",
+      "expected": "君主蛇",
+      "species_id": 497,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        2071,
+        62,
+        2328,
+        101
+      ],
+      "multiline": false,
+      "bounds": [
+        2071,
+        62,
+        2328,
+        101
+      ],
+      "raw_text": "君主蛇",
+      "accepted": "君主蛇",
+      "confidence": 1.0,
+      "seconds": 0.051946291991043836,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 3
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_0_0",
+      "kind": "ability",
+      "expected": "威吓",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        181,
+        456,
+        198
+      ],
+      "multiline": false,
+      "bounds": [
+        273,
+        181,
+        456,
+        198
+      ],
+      "raw_text": "威吓",
+      "accepted": "威吓",
+      "confidence": 0.994,
+      "seconds": 0.07970891699369531,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 2
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_1_0",
+      "kind": "ability",
+      "expected": "镜甲",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        303,
+        456,
+        320
+      ],
+      "multiline": false,
+      "bounds": [
+        273,
+        303,
+        456,
+        320
+      ],
+      "raw_text": "镜甲",
+      "accepted": "镜甲",
+      "confidence": 1.0,
+      "seconds": 0.08000529199489392,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 2
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_2_0",
+      "kind": "ability",
+      "expected": "精神制造者",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        425,
+        456,
+        442
+      ],
+      "multiline": false,
+      "bounds": [
+        273,
+        425,
+        456,
+        442
+      ],
+      "raw_text": "精神制造者",
+      "accepted": "精神制造者",
+      "confidence": 1.0,
+      "seconds": 0.07959716700133868,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 5
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "ability_2_1",
+      "kind": "ability",
+      "expected": "轻装",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        425,
+        903,
+        442
+      ],
+      "multiline": false,
+      "bounds": [
+        720,
+        425,
+        903,
+        442
+      ],
+      "raw_text": "轻装",
+      "accepted": "轻装",
+      "confidence": 1.0,
+      "seconds": 0.07897079200483859,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 2
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_0_0",
+      "kind": "item",
+      "expected": "暴飞龙进化石",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        207,
+        456,
+        225
+      ],
+      "multiline": false,
+      "bounds": [
+        273,
+        207,
+        456,
+        225
+      ],
+      "raw_text": "暴飞龙进化石",
+      "accepted": "暴飞龙进化石",
+      "confidence": 1.0,
+      "seconds": 0.07443158299429342,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 6
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_1_0",
+      "kind": "item",
+      "expected": "精神种子",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        329,
+        456,
+        347
+      ],
+      "multiline": false,
+      "bounds": [
+        273,
+        329,
+        456,
+        347
+      ],
+      "raw_text": "精神种子",
+      "accepted": "精神种子",
+      "confidence": 1.0,
+      "seconds": 0.07401229199604131,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 4
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_2_0",
+      "kind": "item",
+      "expected": "讲究围巾",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        273,
+        450,
+        456,
+        469
+      ],
+      "multiline": false,
+      "bounds": [
+        273,
+        450,
+        456,
+        469
+      ],
+      "raw_text": "讲究围巾",
+      "accepted": "讲究围巾",
+      "confidence": 1.0,
+      "seconds": 0.07155187499301974,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 4
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "item_2_1",
+      "kind": "item",
+      "expected": "白色香草",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        720,
+        450,
+        903,
+        469
+      ],
+      "multiline": false,
+      "bounds": [
+        720,
+        450,
+        903,
+        469
+      ],
+      "raw_text": "白色香草",
+      "accepted": "白色香草",
+      "confidence": 1.0,
+      "seconds": 0.07083387501188554,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 4
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_0_0_0",
+      "kind": "move",
+      "expected": "巨声",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        155,
+        608,
+        175
+      ],
+      "multiline": false,
+      "bounds": [
+        501,
+        155,
+        608,
+        175
+      ],
+      "raw_text": "巨声",
+      "accepted": "巨声",
+      "confidence": 1.0,
+      "seconds": 0.053646583008230664,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 2
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_1_0_1",
+      "kind": "move",
+      "expected": "嚣张",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        302,
+        608,
+        322
+      ],
+      "multiline": false,
+      "bounds": [
+        501,
+        302,
+        608,
+        322
+      ],
+      "raw_text": "嚣张",
+      "accepted": "嚣张",
+      "confidence": 0.82,
+      "seconds": 0.051867041998775676,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 2
+    },
+    {
+      "image": "team_configuration_moves.png",
+      "region": "config_move_2_0_2",
+      "kind": "move",
+      "expected": "戏法",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        501,
+        449,
+        608,
+        469
+      ],
+      "multiline": false,
+      "bounds": [
+        501,
+        449,
+        608,
+        469
+      ],
+      "raw_text": "戏法",
+      "accepted": "戏法",
+      "confidence": 1.0,
+      "seconds": 0.05259199999272823,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 2
+    },
+    {
+      "image": "move_selection.png",
+      "region": "move_name_3",
+      "kind": "move",
+      "expected": "守住",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1966,
+        962,
+        2252,
+        1020
+      ],
+      "multiline": false,
+      "bounds": [
+        1966,
+        962,
+        2252,
+        1020
+      ],
+      "raw_text": "守住",
+      "accepted": "守住",
+      "confidence": 0.995,
+      "seconds": 0.05175333400256932,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 2
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_0_0_hp",
+      "kind": "numeric",
+      "expected": "172",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        180,
+        375,
+        198
+      ],
+      "multiline": false,
+      "bounds": [
+        342,
+        180,
+        375,
+        198
+      ],
+      "raw_text": "172",
+      "accepted": "172",
+      "confidence": 1.0,
+      "seconds": 0.051937167008873075,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 3
+    },
+    {
+      "image": "team_configuration_stats.png",
+      "region": "config_2_0_defense",
+      "kind": "numeric",
+      "expected": "75",
+      "species_id": null,
+      "form_id": null,
+      "split": "development",
+      "box": [
+        342,
+        474,
+        375,
+        492
+      ],
+      "multiline": false,
+      "bounds": [
+        342,
+        474,
+        375,
+        492
+      ],
+      "raw_text": "75",
+      "accepted": "75",
+      "confidence": 1.0,
+      "seconds": 0.05179995798971504,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 2
+    },
+    {
+      "image": "m12_video_stats.png",
+      "region": "config_1_0_speed",
+      "kind": "numeric",
+      "expected": "119",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_video",
+      "box": [
+        1078,
+        704,
+        1143,
+        740
+      ],
+      "multiline": false,
+      "bounds": [
+        1078,
+        704,
+        1143,
+        740
+      ],
+      "raw_text": "119",
+      "accepted": "119",
+      "confidence": 1.0,
+      "seconds": 0.05353354201361071,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 3
+    },
+    {
+      "image": "move_selection.png",
+      "region": "own_hp_1_maximum",
+      "kind": "numeric",
+      "expected": "173",
+      "species_id": null,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        1017,
+        1116,
+        1078,
+        1152
+      ],
+      "multiline": false,
+      "bounds": [
+        1017,
+        1116,
+        1078,
+        1152
+      ],
+      "raw_text": "173",
+      "accepted": "173",
+      "confidence": 1.0,
+      "seconds": 0.052930292004020885,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 3
+    },
+    {
+      "image": "battle_screen.png",
+      "region": "opponent_name_1",
+      "kind": "species_text",
+      "expected": "赛富豪",
+      "species_id": 1000,
+      "form_id": null,
+      "split": "held_out_screenshot",
+      "box": [
+        2071,
+        62,
+        2328,
+        101
+      ],
+      "multiline": false,
+      "bounds": [
+        2071,
+        62,
+        2328,
+        101
+      ],
+      "raw_text": "赛富豪",
+      "accepted": "赛富豪",
+      "confidence": 0.999,
+      "seconds": 0.05225349999091122,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 3
+    },
+    {
+      "image": "tests/fixtures/m15_message_transformation.png",
+      "kind": "message",
+      "expected": "对手的大力鳄超级进化成了超级大力鳄！",
+      "multiline": true,
+      "timestamp": 178.0,
+      "bounds": [
+        288,
+        413,
+        839,
+        481
+      ],
+      "raw_text": "对手的大力鳄超级进化成了超级大力鳄！",
+      "accepted": "对手的大力鳄超级进化成了超级大力鳄！",
+      "confidence": 0.982,
+      "seconds": 0.3563448330096435,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 18
+    },
+    {
+      "image": "tests/fixtures/m15_message_move.png",
+      "kind": "message",
+      "expected": "炽焰咆哮虎使出了击掌奇袭！",
+      "multiline": true,
+      "timestamp": 180.0,
+      "bounds": [
+        288,
+        413,
+        839,
+        481
+      ],
+      "raw_text": "炽焰咆哮虎使出了击掌奇袭！",
+      "accepted": "炽焰咆哮虎使出了击掌奇袭！",
+      "confidence": 0.961,
+      "seconds": 0.3384058749943506,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 13
+    },
+    {
+      "image": "tests/fixtures/m15_message_flinch.png",
+      "kind": "message",
+      "expected": "对手的流氓鳄畏缩了，无法使出招式！",
+      "multiline": true,
+      "timestamp": 182.4,
+      "bounds": [
+        288,
+        413,
+        839,
+        481
+      ],
+      "raw_text": "对手的流氓鳄畏缩了，无法使出招式！",
+      "accepted": "对手的流氓鳄畏缩了，无法使出招式！",
+      "confidence": 0.988,
+      "seconds": 0.3480454169912264,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 17
+    },
+    {
+      "image": "tests/fixtures/m15_message_dragon-dance.png",
+      "kind": "message",
+      "expected": "对手的大力鳄使出了龙之舞！",
+      "multiline": true,
+      "timestamp": 187.0,
+      "bounds": [
+        288,
+        413,
+        839,
+        481
+      ],
+      "raw_text": "对手的大力鳄使出了龙之舞！",
+      "accepted": "对手的大力鳄使出了龙之舞！",
+      "confidence": 0.93,
+      "seconds": 0.35898954200092703,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 13
+    },
+    {
+      "image": "tests/fixtures/m15_message_stat-increase.png",
+      "kind": "message",
+      "expected": "对手的大力鳄的攻击、速度提高了！",
+      "multiline": true,
+      "timestamp": 191.0,
+      "bounds": [
+        288,
+        413,
+        839,
+        481
+      ],
+      "raw_text": "对手的大力鳄的攻击、速度提高了！",
+      "accepted": "对手的大力鳄的攻击、速度提高了！",
+      "confidence": 0.99,
+      "seconds": 0.3390847909904551,
+      "exact": true,
+      "edit_distance": 0,
+      "expected_length": 16
+    }
+  ],
+  "cross_region_batch": null,
+  "profile_file": null,
+  "provider_events": {},
+  "model_manifest": null,
+  "limitations": [
+    "Small deterministic development subset, not a holdout corpus.",
+    "One warm trial; initialization/cache policy differs by runtime.",
+    "Provider assignment alone is not proof of GPU/ANE dispatch.",
+    "RSS is process-wide high-water mark, not incremental model memory."
+  ]
+}

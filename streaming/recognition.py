@@ -16,7 +16,8 @@ class PlanningOCR:
 
 
 class RegionPlanner:
-    def __init__(self):
+    def __init__(self, *, decision_regions=False):
+        self.decision_regions = decision_regions
         self.recorder = PlanningOCR()
         self.geometry = Recognizer(self.recorder, knowledge=False, icons=False)
 
@@ -37,9 +38,29 @@ class RegionPlanner:
                 if 'icon' in label:
                     regions.append({'label':label, 'bounds':bounds, 'kind':'icon',
                                     'priority':2, 'required':True})
+        if self.decision_regions:
+            # Geometry checked on M1.4 target and party-selection fixtures.
+            # These remain displayed text/selection evidence, not selected actions.
+            extra = []
+            if phase == 'move_target_selection':
+                for side, y in [('opponent',.256), ('own',.589)]:
+                    for i,x in enumerate([.374,.586]):
+                        extra.extend([(f'target_{side}_name_{i}',(x,y,x+.09,y+.052),False),
+                                      (f'target_{side}_hp_{i}',(x+.025,y+.067,x+.09,y+.11),True)])
+                extra.extend([(f'target_move_{i}',roi,False) for i,roi in enumerate(
+                    [(.355,.46,.475,.51),(.565,.46,.685,.51)])])
+            if phase in {'pokemon_selection','switch_selection'}:
+                for i in range(6):
+                    y = .203+i*.116
+                    extra.extend([(f'party_name_{i}',(.145,y,.275,y+.037),False),
+                                  (f'party_hp_{i}',(.145,y+.042,.24,y+.08),True)])
+            regions.extend({'label':label, 'bounds':box(frame.image,roi), 'kind':'ocr',
+                            'priority':1, 'numeric':numeric, 'multiline':False,
+                            'italic':numeric, 'required':not label.startswith('target_move'),
+                            'cache_policy':'raw'} for label,roi,numeric in extra)
         # Probe resolution even when the phase heuristic misses the message.
         # Exact region changes schedule reads; scene similarity never deduplicates text.
-        if phase in {'battle_message','battle_animation','unknown','battle_screen'}:
+        if self.decision_regions or phase in {'battle_message','battle_animation','unknown','battle_screen'}:
             regions.insert(0, {'label':'battle_message', 'bounds':box(frame.image,(.22,.685,.64,.797)),
                               'kind':'ocr', 'priority':0, 'numeric':False, 'multiline':True,
                               'italic':False, 'required':phase == 'battle_message' or _message_glyphs(frame.image) >= 4})

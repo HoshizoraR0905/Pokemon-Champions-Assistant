@@ -136,3 +136,11 @@ The local caches in `.cache/m14-phases/` are optional and unbundled; reuse requi
 The captured-evidence streaming architecture is functionally complete for the supported layout, but the 1-second processing target is not met. The saved latest 5 fps paced replay achieves 2.637 fps with 18.506-second P95 decision processing completion; all settled decisions remain uncertain. See [the M1.5 validation report](reports/M1.5-streaming.md) for ordering, readiness, message-filter corrections, measurements, and limitations.
 
 Replay supports recorded frames or cached manifests through `stream_replay.py`; icons are opt-in. Run `.venv/bin/python scripts/validate_m15.py` to audit saved traces without OCR or video processing, and `.venv/bin/python -m pytest -q tests/test_streaming.py` for focused regressions. Historical traces are preserved; no M2 battle-state or strategy layer is provided.
+
+### M1.5 adaptive and live follow-up
+
+Opt-in adaptive ROI monitoring, phase-aware field reuse, unresolved candidate preservation, and a bounded live acquisition adapter are available. The default OCR backend remains Paddle CPU. The [optimization report](reports/M1.5-optimization.md) compares fixed 2 fps, adaptive CPU, ONNX CPU, and Core ML, including accuracy and live-adapter losses. The expanded CPU replay reaches 2.806 fps with 15.281-second P95 processing completion; the one-second production target remains unmet.
+
+`stream_replay.py --adaptive` exposes separate acquisition, phase, message, routine, and icon rates. The experimental `--message-ocr-fps 2.5` budget retains deferred PNG crops as uncertain observations; its default is 5. Live sources use `streaming.live.run_live(acquire, pipeline, sink)` so acquisition/monitoring can continue during recognition backpressure. Sinks must promptly archive candidate evidence and loss records. Phone transport is not implemented or validated.
+
+Use `scripts/evaluate_m15_adaptive.py` to audit saved traces without OCR/video processing. Optional ONNX/Core ML experiments use `scripts/setup_m15_onnx.py`, `scripts/benchmark_m15_ocr.py`, and the isolated `ocr_experimental` dependency extra; no experimental backend is automatically selected. Reproduction commands and remaining limitations are in the report.

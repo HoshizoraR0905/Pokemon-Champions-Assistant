@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scope": "Five reviewed message text points in one development clip; does not establish exhaustive message recall.",
+  "messages": [
+    {
+      "fixture": "tests/fixtures/m15_message_transformation.png",
+      "timestamp": 178.0,
+      "expected_text": "对手的大力鳄超级进化成了\n超级大力鳄！",
+      "sha256": "75367253057ba7eb467b5293c09ff2801e538646c4178978f7ffaa762012b461",
+      "source": "tests/fixtures/sample_battle_1.mp4",
+      "timestamp_method": "ffmpeg_5fps_resampled_interval_grid",
+      "timestamp_uncertainty_seconds": 0.2,
+      "annotation_method": "Manual visual transcription on 2026-10-14; this labels visible text only, not confirmed gameplay events."
+    },
+    {
+      "fixture": "tests/fixtures/m15_message_move.png",
+      "timestamp": 180.0,
+      "expected_text": "炽焰咆哮虎使出了\n击掌奇袭！",
+      "sha256": "2f61cbed53de786980d4c00a0dd63337d508f9f9a1704a827d3a74b4d64034d9",
+      "source": "tests/fixtures/sample_battle_1.mp4",
+      "timestamp_method": "ffmpeg_5fps_resampled_interval_grid",
+      "timestamp_uncertainty_seconds": 0.2,
+      "annotation_method": "Manual visual transcription on 2026-10-14; this labels visible text only, not confirmed gameplay events."
+    },
+    {
+      "fixture": "tests/fixtures/m15_message_flinch.png",
+      "timestamp": 182.4,
+      "expected_text": "对手的流氓鳄\n畏缩了，无法使出招式！",
+      "sha256": "ff87b7dc839b4cf9f08fd72dfc52082bbd1874da8d2473c356c6c8774b3a0fc4",
+      "source": "tests/fixtures/sample_battle_1.mp4",
+      "timestamp_uncertainty_seconds": 0.2,
+      "timestamp_method": "ffmpeg_5fps_resampled_interval_grid",
+      "annotation_method": "Manual cached-image visual transcription on 2026-10-14; visible text only, no confirmed gameplay event."
+    },
+    {
+      "fixture": "tests/fixtures/m15_message_dragon-dance.png",
+      "timestamp": 187.0,
+      "expected_text": "对手的大力鳄使出了\n龙之舞！",
+      "sha256": "3d6c87ba22280112d6bae078e5afb526af2765da3322613f73f4f0ce18e15cc0",
+      "source": "tests/fixtures/sample_battle_1.mp4",
+      "timestamp_uncertainty_seconds": 0.2,
+      "timestamp_method": "ffmpeg_5fps_resampled_interval_grid",
+      "annotation_method": "Manual cached-image visual transcription on 2026-10-14; visible text only, no confirmed gameplay event."
+    },
+    {
+      "fixture": "tests/fixtures/m15_message_stat-increase.png",
+      "timestamp": 191.0,
+      "expected_text": "对手的大力鳄的\n攻击、速度提高了！",
+      "sha256": "12161c06e835b4aed5f03db7981d47588867ff8e62e36b242605177da9d7b9d5",
+      "source": "tests/fixtures/sample_battle_1.mp4",
+      "timestamp_uncertainty_seconds": 0.2,
+      "timestamp_method": "ffmpeg_5fps_resampled_interval_grid",
+      "annotation_method": "Manual cached-image visual transcription on 2026-10-14; visible text only, no confirmed gameplay event."
+    }
+  ]
+}

@@ -1,0 +1,690 @@
+{
+  "schema_version": 1,
+  "initialization_seconds": 2.6253096669970546,
+  "runs": [
+    {
+      "name": "C-final-budget",
+      "backend": "PP-OCRv6_medium_rec",
+      "adaptive": true,
+      "decision_regions": true,
+      "acquisition_fps": 5.0,
+      "replay_speed": 1.0,
+      "processing_seconds": 41.37155912499293,
+      "throughput_fps": 2.6588313886760924,
+      "candidate_versions": 50,
+      "service_throughput_fps": 2.7397092210795586,
+      "ocr_service_seconds": 40.15024629389518,
+      "recognition_calls": {
+        "battle_message": 60,
+        "target_opponent_hp_0": 10,
+        "target_opponent_name_1": 10,
+        "target_move_1": 10,
+        "target_own_hp_0": 10,
+        "target_own_name_0": 10,
+        "target_own_name_1": 10,
+        "target_move_0": 10,
+        "target_opponent_hp_1": 10,
+        "target_own_hp_1": 10,
+        "target_opponent_name_0": 10,
+        "own_hp_0_maximum": 19,
+        "condition_banner": 26,
+        "opponent_name_1": 7,
+        "own_name_0": 9,
+        "own_hp_0_current": 15,
+        "opponent_hp_1": 16,
+        "own_hp_1_maximum": 14,
+        "opponent_hp_0": 20,
+        "own_name_1": 12,
+        "own_hp_1_current": 13,
+        "opponent_name_0": 9,
+        "move_name_3": 6,
+        "move_pp_1_maximum": 4,
+        "move_name_2": 7,
+        "move_pp_0_maximum": 2,
+        "move_name_1": 7,
+        "move_pp_2_maximum": 5,
+        "move_pp_0_current": 3,
+        "move_pp_3_maximum": 6,
+        "move_pp_1_current": 8,
+        "move_pp_2_current": 7,
+        "move_pp_3_current": 6,
+        "move_name_0": 8
+      },
+      "latencies": {
+        "classification_service": {
+          "count": 110,
+          "median_seconds": 0.3482203750027111,
+          "p95_seconds": 0.6485352919989964,
+          "worst_seconds": 0.8795295409945538
+        },
+        "capture_to_classification": {
+          "count": 110,
+          "median_seconds": 1.294810958497692,
+          "p95_seconds": 15.16017020799336,
+          "worst_seconds": 17.479338707984425
+        },
+        "ocr": {
+          "count": 389,
+          "median_seconds": 0.057706583000253886,
+          "p95_seconds": 0.38532991700049024,
+          "worst_seconds": 0.8934358330006944
+        },
+        "ordered_availability": {
+          "count": 110,
+          "median_seconds": 1.5282063749909867,
+          "p95_seconds": 17.258138874996803,
+          "worst_seconds": 20.16158912499668
+        },
+        "message_availability": {
+          "count": 110,
+          "median_seconds": 1.528203666988702,
+          "p95_seconds": 15.6469567919994,
+          "worst_seconds": 17.788464541983558
+        },
+        "decision_completion": {
+          "count": 4,
+          "median_seconds": 7.234717979488778,
+          "p95_seconds": 13.563887832991895,
+          "worst_seconds": 13.563887832991895
+        },
+        "dispatch_lateness": {
+          "count": 110,
+          "median_seconds": 1.0835641874873545,
+          "p95_seconds": 14.579868874992826,
+          "worst_seconds": 16.948023624994676
+        },
+        "worker_wait": {
+          "count": 389,
+          "median_seconds": 9.810175374994287,
+          "p95_seconds": 18.774910416992498,
+          "worst_seconds": 19.50978187499277
+        }
+      },
+      "metrics": {
+        "captured_frames": 110,
+        "accepted_frames": 110,
+        "duplicate_frames": 0,
+        "rejected_frames": 0,
+        "coalesced_regions": 177,
+        "submitted_jobs": 389,
+        "completed_jobs": 389,
+        "max_inflight_frames": 4,
+        "max_queue_depth": 37,
+        "timestamp_gaps": 0,
+        "diagnostic_overflow": 0
+      },
+      "monitoring_metrics": {
+        "roi_checks": 110,
+        "message_checks": 110,
+        "phase_checks": 110,
+        "routine_checks": 110,
+        "icon_checks": 110,
+        "candidate_evictions": 34,
+        "message_monitor_gaps": 0,
+        "blank_message_probes_avoided": 4,
+        "deferred_message_versions": 46
+      },
+      "readiness": {
+        "decision_id": "tests/fixtures/sample_battle_1.mp4#interval:178.0:22.0:fps:5.0:97",
+        "capture_watermark": 97,
+        "timestamp": 197.4,
+        "capture_monotonic": 123861.476908083,
+        "settled_monotonic": 123875.040795916,
+        "status": "uncertain",
+        "pending_jobs": 0,
+        "unordered_frames": 0,
+        "coverage_uncertain": true,
+        "processing_watermark_sequence": 109,
+        "captured_frame_count": 110,
+        "readiness_latency_seconds": 13.563887832991895,
+        "target_seconds": 1.0,
+        "processing_target_met": false,
+        "semantics": "ready covers captured evidence through this watermark, not all gameplay events"
+      },
+      "decisions": [
+        {
+          "decision_id": "tests/fixtures/sample_battle_1.mp4#interval:178.0:22.0:fps:5.0:75",
+          "capture_watermark": 75,
+          "timestamp": 193.0,
+          "capture_monotonic": 123857.076908083,
+          "settled_monotonic": 123859.76453875,
+          "status": "uncertain",
+          "pending_jobs": 0,
+          "coverage_uncertain": true,
+          "readiness_latency_seconds": 2.6876306669873884,
+          "processing_target_met": false
+        },
+        {
+          "decision_id": "tests/fixtures/sample_battle_1.mp4#interval:178.0:22.0:fps:5.0:80",
+          "capture_watermark": 80,
+          "timestamp": 194.0,
+          "capture_monotonic": 123858.076908083,
+          "settled_monotonic": 123862.565045375,
+          "status": "uncertain",
+          "pending_jobs": 0,
+          "coverage_uncertain": true,
+          "readiness_latency_seconds": 4.488137291991734,
+          "processing_target_met": false
+        },
+        {
+          "decision_id": "tests/fixtures/sample_battle_1.mp4#interval:178.0:22.0:fps:5.0:89",
+          "capture_watermark": 89,
+          "timestamp": 195.8,
+          "capture_monotonic": 123859.87690808301,
+          "settled_monotonic": 123869.85820675,
+          "status": "uncertain",
+          "pending_jobs": 0,
+          "coverage_uncertain": true,
+          "readiness_latency_seconds": 9.981298666985822,
+          "processing_target_met": false
+        },
+        {
+          "decision_id": "tests/fixtures/sample_battle_1.mp4#interval:178.0:22.0:fps:5.0:97",
+          "capture_watermark": 97,
+          "timestamp": 197.4,
+          "capture_monotonic": 123861.476908083,
+          "settled_monotonic": 123875.040795916,
+          "status": "uncertain",
+          "pending_jobs": 0,
+          "coverage_uncertain": true,
+          "readiness_latency_seconds": 13.563887832991895,
+          "processing_target_met": false
+        }
+      ],
+      "reviewed_messages": [
+        {
+          "reviewed_timestamp": 178.0,
+          "reviewed_frame_recognized": true,
+          "same_text_timestamps": [
+            178.0
+          ]
+        },
+        {
+          "reviewed_timestamp": 180.0,
+          "reviewed_frame_recognized": true,
+          "same_text_timestamps": [
+            179.2,
+            179.6,
+            180.0
+          ]
+        },
+        {
+          "reviewed_timestamp": 182.4,
+          "reviewed_frame_recognized": false,
+          "same_text_timestamps": [
+            182.6,
+            182.8,
+            183.2,
+            183.6
+          ]
+        },
+        {
+          "reviewed_timestamp": 187.0,
+          "reviewed_frame_recognized": true,
+          "same_text_timestamps": [
+            186.6,
+            187.0,
+            187.2,
+            187.6
+          ]
+        },
+        {
+          "reviewed_timestamp": 191.0,
+          "reviewed_frame_recognized": true,
+          "same_text_timestamps": [
+            190.8,
+            191.0,
+            191.4,
+            191.8
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "timestamp": 178.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 178.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 178.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 178.6,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 178.8,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 179.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 179.2,
+          "phase": "battle_message"
+        },
+        {
+          "timestamp": 179.4,
+          "phase": "battle_message"
+        },
+        {
+          "timestamp": 179.6,
+          "phase": "battle_message"
+        },
+        {
+          "timestamp": 179.8,
+          "phase": "battle_message"
+        },
+        {
+          "timestamp": 180.0,
+          "phase": "battle_message"
+        },
+        {
+          "timestamp": 180.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 180.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 180.6,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 180.8,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 181.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 181.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 181.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 181.6,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 181.8,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 182.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 182.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 182.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 182.6,
+          "phase": "battle_message"
+        },
+        {
+          "timestamp": 182.8,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 183.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 183.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 183.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 183.6,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 183.8,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 184.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 184.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 184.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 184.6,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 184.8,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 185.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 185.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 185.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 185.6,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 185.8,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 186.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 186.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 186.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 186.6,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 186.8,
+          "phase": "battle_message"
+        },
+        {
+          "timestamp": 187.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 187.2,
+          "phase": "unknown"
+        },
+        {
+          "timestamp": 187.4,
+          "phase": "unknown"
+        },
+        {
+          "timestamp": 187.6,
+          "phase": "unknown"
+        },
+        {
+          "timestamp": 187.8,
+          "phase": "unknown"
+        },
+        {
+          "timestamp": 188.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 188.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 188.4,
+          "phase": "unknown"
+        },
+        {
+          "timestamp": 188.6,
+          "phase": "move_target_selection"
+        },
+        {
+          "timestamp": 188.8,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 189.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 189.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 189.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 189.6,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 189.8,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 190.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 190.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 190.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 190.6,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 190.8,
+          "phase": "battle_message"
+        },
+        {
+          "timestamp": 191.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 191.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 191.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 191.6,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 191.8,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 192.0,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 192.2,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 192.4,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 192.6,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 192.8,
+          "phase": "battle_animation"
+        },
+        {
+          "timestamp": 193.0,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 193.2,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 193.4,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 193.6,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 193.8,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 194.0,
+          "phase": "move_selection"
+        },
+        {
+          "timestamp": 194.2,
+          "phase": "move_selection"
+        },
+        {
+          "timestamp": 194.4,
+          "phase": "move_selection"
+        },
+        {
+          "timestamp": 194.6,
+          "phase": "move_selection"
+        },
+        {
+          "timestamp": 194.8,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 195.0,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 195.2,
+          "phase": "move_target_selection"
+        },
+        {
+          "timestamp": 195.4,
+          "phase": "move_target_selection"
+        },
+        {
+          "timestamp": 195.6,
+          "phase": "move_target_selection"
+        },
+        {
+          "timestamp": 195.8,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 196.0,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 196.2,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 196.4,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 196.6,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 196.8,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 197.0,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 197.2,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 197.4,
+          "phase": "move_selection"
+        },
+        {
+          "timestamp": 197.6,
+          "phase": "move_selection"
+        },
+        {
+          "timestamp": 197.8,
+          "phase": "move_selection"
+        },
+        {
+          "timestamp": 198.0,
+          "phase": "move_selection"
+        },
+        {
+          "timestamp": 198.2,
+          "phase": "move_selection"
+        },
+        {
+          "timestamp": 198.4,
+          "phase": "move_selection"
+        },
+        {
+          "timestamp": 198.6,
+          "phase": "battle_screen"
+        },
+        {
+          "timestamp": 198.8,
+          "phase": "move_target_selection"
+        },
+        {
+          "timestamp": 199.0,
+          "phase": "move_target_selection"
+        },
+        {
+          "timestamp": 199.2,
+          "phase": "move_target_selection"
+        },
+        {
+          "timestamp": 199.4,
+          "phase": "move_target_selection"
+        },
+        {
+          "timestamp": 199.6,
+          "phase": "move_target_selection"
+        },
+        {
+          "timestamp": 199.8,
+          "phase": "move_target_selection"
+        }
+      ],
+      "trace": "reports/m15opt-C-final-budget.jsonl",
+      "peak_process_rss_bytes": 1419083776
+    }
+  ],
+  "scope": "110 existing 5fps cached frames, 22 seconds; no video decoding, no 10fps claim; one warm model, sequential trials, no icons.",
+  "model_directory": null
+}

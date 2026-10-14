@@ -9,6 +9,31 @@ import time
 from capture import Frame, load_image
 
 
+def acquire_at_rate(frames, fps, *, on_gap=None):
+    """Timestamp-grid acquisition adapter. Reports intentional unsampled inputs.
+
+    This cannot manufacture intermediate frames from a lower-frequency cache.
+    A live adapter should timestamp acquisition and report upstream losses too.
+    """
+    if not math.isfinite(fps) or fps <= 0:
+        raise ValueError('Acquisition rate must be positive and finite')
+    target = None
+    skipped = 0
+    for frame in frames:
+        if target is None:
+            target = frame.timestamp
+        if frame.timestamp+1e-6 < target:
+            skipped += 1
+            continue
+        yield replace(frame,metadata={**frame.metadata,'acquisition_fps':fps,
+                                      'unsampled_input_frames':skipped})
+        skipped = 0
+        while target <= frame.timestamp+1e-6:
+            target += 1/fps
+    if skipped and on_gap:
+        on_gap({'unsampled_input_frames':skipped,'position':'source_end'})
+
+
 def cached_frames(manifest_path, *, start=None, end=None):
     """Read only selected cached samples. No video decoding or future-frame classification."""
     manifest_path = Path(manifest_path)
@@ -57,6 +82,10 @@ def replay(frames, pipeline, sink, *, speed=None, poll_interval=.01):
     first = None
     try:
         for frame in frames:
+            if frame.metadata.get('unsampled_input_frames'):
+                pipeline.mark_interruption('acquisition_subsampling',
+                    evidence={'unsampled_input_frames':frame.metadata['unsampled_input_frames'],
+                              'next_timestamp':frame.timestamp})
             if first is None:
                 first = frame.timestamp
             target = time.monotonic() if speed is None else origin+(frame.timestamp-first)/speed
@@ -69,9 +98,11 @@ def replay(frames, pipeline, sink, *, speed=None, poll_interval=.01):
                     sink({'type':'decision_settled','data':update})
                 time.sleep(min(poll_interval,max(0,target-time.monotonic())))
             dispatched = time.monotonic()
-            frame = replace(frame,capture_monotonic=target,
+            captured = frame.capture_monotonic if speed is None and frame.capture_monotonic is not None else target
+            frame = replace(frame,capture_monotonic=captured,
                             metadata={**frame.metadata,'replay_speed':speed,
-                                      'dispatch_lateness_seconds':max(0,dispatched-target)})
+                                      'capture_clock_origin':'live_acquisition' if frame.capture_monotonic is not None and speed is None else 'simulated_replay',
+                                      'dispatch_lateness_seconds':max(0,dispatched-captured)})
             result = pipeline.process_frame(frame)
             sink({'type':'capture_update','data':{k:v for k,v in result.items() if k!='completed'}})
             for bundle in result['completed']:

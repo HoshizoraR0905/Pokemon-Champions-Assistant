@@ -235,7 +235,7 @@ class Recognizer:
                          and cv2.contourArea(c) > 10)
             if glyphs >= 8:
                 message = read('battle_message',(.22,.685,.64,.797),multiline=True)
-                if message.value and message.confidence >= .8 and len(re.findall(r'[\u4e00-\u9fff]',message.value)) >= 5:
+                if message.value and message.confidence >= .8:
                     result.message = message
                     result.screen, result.confidence = 'battle_message', message.confidence
                     result.components = ['battle_message']

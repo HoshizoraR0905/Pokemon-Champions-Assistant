@@ -67,7 +67,7 @@ def recognition_signature(image, region):
 
 
 def decision_visible(image, phase):
-    if phase == 'move_selection':
+    if phase in {'move_selection','move_target_selection','pokemon_selection','switch_selection'}:
         return True
     # A battle HUD alone can appear during resolution. Require command controls.
     return phase == 'battle_screen' and min(color_fraction(image,r,'purple') for r in
@@ -83,11 +83,15 @@ class StreamingPipeline:
     The producer/capture adapter must report upstream loss via mark_interruption.
     """
     def __init__(self, backend, *, asynchronous=True, icons=False, limits=None,
-                 planner=None, phase_classifier=classify_phase, clock=time.monotonic):
+                 planner=None, phase_classifier=classify_phase, clock=time.monotonic,
+                 monitoring=None):
         self.backend, self.asynchronous, self.icons = backend, asynchronous, icons
         self.limits = limits or Limits()
-        self.planner = planner or RegionPlanner()
+        self.planner = planner or RegionPlanner(decision_regions=monitoring is not None)
         self.classifier, self.clock = phase_classifier, clock
+        self.monitoring = monitoring
+        self.last_classification = None
+        self.last_plan = None
         self.lock = threading.Condition()
         self.queues = {kind:queue.PriorityQueue(self.limits.queue_jobs) for kind in
                        (['ocr','icon'] if icons else ['ocr'])}
@@ -131,6 +135,9 @@ class StreamingPipeline:
             self._diagnose('potentially_missed_observations',reason=reason,
                            affected_regions=list(affected_regions),evidence=evidence)
             self.region_cache.clear(); self.last_regions.clear()
+            if self.monitoring:
+                self.monitoring.reset()
+                self.last_plan = None
 
     def _worker(self, kind):
         jobs = self.queues[kind]
@@ -299,8 +306,17 @@ class StreamingPipeline:
                     return {'accepted':False,'completed':completed,'readiness':self.readiness()}
                 self.lock.wait(.01)
         began = self.clock()
-        phase, confidence, evidence, warnings = self.classifier(frame.image)
-        regions = self.planner.plan(frame,phase,include_icons=self.icons)
+        monitor = self.monitoring.inspect(frame) if self.monitoring else None
+        if monitor is None or monitor['phase_check'] or self.last_classification is None:
+            self.last_classification = self.classifier(frame.image)
+        phase, confidence, evidence, warnings = self.last_classification
+        if monitor and monitor['message_monitor_gap']:
+            self.mark_interruption('message_monitor_cadence_gap', affected_regions=('messages',),
+                                   evidence={'timestamp':frame.timestamp})
+        if (monitor is None or monitor['routine_check'] or monitor['icon_check'] or
+                self.last_plan is None):
+            self.last_plan = self.planner.plan(frame,phase,include_icons=self.icons)
+        regions = self.last_plan
         if len(regions) > self.limits.max_regions_per_frame:
             self.metrics['rejected_frames'] += 1
             self.mark_interruption('region_plan_exceeds_limit',evidence={'index':frame.index})
@@ -316,6 +332,9 @@ class StreamingPipeline:
                 'capture_metadata':frame.metadata.copy(),'coalesced_regions':[],
                 'recognition_scope':{'ocr':'existing supported text regions plus high-recall message probes',
                                      'icons_enabled':self.icons,'gameplay_events':False}}
+        if monitor:
+            info['monitoring'] = monitor
+            info['candidate_evidence'] = []
         with self.lock:
             if self.last_timestamp is not None and frame.timestamp-self.last_timestamp > self.limits.max_capture_gap:
                 self.metrics['timestamp_gaps'] += 1; self.coverage_uncertain = True
@@ -352,16 +371,61 @@ class StreamingPipeline:
                 key = region['kind'],region['label']
                 digest,raw_digest,cache_method = recognition_signature(frame.image,region)
                 previous = self.region_cache.get(key)
-                if (previous and previous[0]==digest and phase==self.previous_phase
-                        and (cache_method=='raw_pixels' or frame.timestamp-previous[2]<self.limits.field_recheck_seconds)):
+                refresh = (self.monitoring.rates.stable_refresh_seconds if self.monitoring
+                           else self.limits.field_recheck_seconds)
+                compatible = phase==self.previous_phase or (self.monitoring and region['priority']!=0)
+                if (previous and previous[0]==digest and compatible
+                        and (cache_method=='raw_pixels' or frame.timestamp-previous[2]<refresh)):
                     info['coalesced_regions'].append({'label':region['label'],'evidence_observation_id':previous[1],
                                                        'cache_method':cache_method,'raw_region_sha256':raw_digest})
                     self.metrics['coalesced_regions'] += 1
                     continue
+                if self.monitoring and region['label']=='battle_message':
+                    has_candidate = self.monitoring.message_has_candidate(frame.image,region)
+                    due = self.monitoring.message_ocr_due(frame.timestamp,
+                                                         phase_entry=phase!=self.previous_phase)
+                else:
+                    has_candidate, due = True, True
+                if self.monitoring and region['label']=='battle_message' and (not has_candidate or not due):
+                    # A dark/occluded message could evade the white-text monitor.
+                    # Preserve the crop and explicit uncertainty, never claim absence.
+                    reason = 'no_white_foreground' if not has_candidate else 'message_ocr_budget'
+                    candidate, evicted = self.monitoring.preserve_candidate(frame,region,reason)
+                    candidate['capture_monotonic'] = captured
+                    candidate['observation_id'] = hashlib.sha256(
+                        f'{frame.source}:{frame.index}:candidate:{candidate["sha256"]}'.encode()).hexdigest()
+                    info['candidate_evidence'].append(candidate)
+                    metric = 'blank_message_probes_avoided' if not has_candidate else 'deferred_message_versions'
+                    self.monitoring.metrics[metric] += 1
+                    self.coverage_uncertain = True
+                    self.region_cache.pop((region['kind'],region['label']),None)
+                    if evicted:
+                        self._diagnose('candidate_buffer_eviction',
+                            evidence={k:v for k,v in evicted.items() if k!='png_base64'})
+                    continue
                 oid = hashlib.sha256(f'{frame.source}:{frame.index}:{key}:{digest}'.encode()).hexdigest()
+                if self.monitoring and region['label']=='battle_message':
+                    self.monitoring.last_message_ocr_time = frame.timestamp
                 self.region_cache[key] = digest,oid,frame.timestamp
                 jobs.append((seq,frame,region,oid,captured))
-            self.pending[seq] = PendingFrame(seq,info,len(jobs),message_remaining=sum(j[2]['priority']==0 for j in jobs))
+            candidate_rows = []
+            for candidate in info.get('candidate_evidence',[]):
+                available = self.clock()
+                candidate_rows.append({
+                    'observation_id':candidate['observation_id'], 'source':frame.source,
+                    'frame_index':frame.index, 'timestamp':frame.timestamp,
+                    'capture_monotonic':captured, 'started_monotonic':available,
+                    'completed_monotonic':available, 'recognition_seconds':0.,
+                    'availability_seconds':available-captured, 'region':candidate['region'],
+                    'category':'candidate', 'label':'battle_message',
+                    'observation':{'value':None,'raw_text':'','confidence':0.,
+                                   'message_validation':{'status':'unresolved','reason':candidate['reason']},
+                                   'candidate_evidence':candidate},
+                    'provenance':'unresolved_captured_message_candidate'})
+            self.pending[seq] = PendingFrame(seq,info,len(jobs),observations=candidate_rows,
+                uncertainty=[{'label':'battle_message','reason':c['reason'],
+                              'candidate_observation_id':c['observation_id']} for c in info.get('candidate_evidence',[])],
+                message_remaining=sum(j[2]['priority']==0 for j in jobs))
             self.sequence += 1
             self.metrics['accepted_frames'] += 1
             self.metrics['max_inflight_frames'] = max(self.metrics['max_inflight_frames'],len(self.pending))
@@ -401,6 +465,7 @@ class StreamingPipeline:
                 jobs.join()
         result = self.poll()
         return {'completed':result,'readiness':self.readiness(),'metrics':dict(self.metrics),
+                **({'monitoring_metrics':dict(self.monitoring.metrics)} if self.monitoring else {}),
                 'diagnostics':list(self.diagnostics),
                 'final_segment':{**self.segment,'finalized':True,'end_reason':'source_end'} if self.segment else None}
 
