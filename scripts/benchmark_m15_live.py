@@ -17,6 +17,7 @@ from streaming.recognition import RegionBackend
 from streaming.monitoring import ROIMonitor, MonitoringRates
 from streaming.replay import recorded_frames
 from streaming.live import run_live
+from battle_artifacts import BattleArtifacts, add_arguments, manifest_battle
 from stream_replay import distribution
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -24,10 +25,17 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--trace',type=Path,default=ROOT/'reports/m15live-cached-camera-v2.jsonl')
-    parser.add_argument('--output',type=Path,default=ROOT/'reports/M1.5-live-adapter-v2.json')
-    args=parser.parse_args()
-    frames=list(recorded_frames(ROOT/'.cache/m15-resolution-178-200/frames.json'))
+    parser.add_argument('--trace',type=Path,default=None)
+    parser.add_argument('--output',type=Path,default=None)
+    parser.add_argument('--frames',type=Path)
+    add_arguments(parser)
+    args=parser.parse_args();owner=manifest_battle(args.frames) if args.frames else 'sample_battle_1'
+    paths=BattleArtifacts.select(args.battle_id,args.video,default=owner).prepare()
+    args.frames=args.frames or paths.cache('m15-resolution-178-200/frames.json')
+    paths.check_identity(manifest_battle(args.frames))
+    args.trace=paths.guard_output(args.trace or paths.report('m15live-cached-camera-v2.jsonl'))
+    args.output=paths.guard_output(args.output or paths.report('M1.5-live-adapter-v2.json'))
+    frames=list(recorded_frames(args.frames))
     source=iter(frames)
     ocr=create_ocr('paddle-v6')
     ocr.read(frames[0].image,box(frames[0].image,(.22,.685,.64,.797)),multiline=True)

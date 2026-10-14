@@ -1,0 +1,58 @@
+{
+  "video_metadata": {
+    "fps": 32.627615668669904,
+    "frame_count": 22531.0,
+    "width": 2622.0,
+    "height": 1206.0,
+    "duration_seconds": 690.55
+  },
+  "survey_frames": 345,
+  "log_views": 107,
+  "automatic_entries": 92,
+  "checked_entries": 124,
+  "assembly_issues": {
+    "countdown_overlay": 5,
+    "no_reliable_scroll_overlap": 21
+  },
+  "entries_by_turn": {
+    "1": 14,
+    "2": 18,
+    "3": 16,
+    "4": 16,
+    "5": 21,
+    "6": 12,
+    "7": 27
+  },
+  "alignment_categories": {
+    "log_only_or_ambiguous_video": 50,
+    "video_text_match_candidate": 75,
+    "video_only_HP_observation": 2,
+    "video_only": 10
+  },
+  "event_count": 196,
+  "application_statuses": {
+    "applied_confirmed": 166,
+    "recorded_observation": 30
+  },
+  "transition_categories": {
+    "knowledge": 44,
+    "gameplay": 118,
+    "observation_only": 30,
+    "no_change": 4
+  },
+  "final_hash": "4696ae0b62d98dbcfda1ad3595046b7997d638ef493ea33adda6ecb50b88bdbc",
+  "conflicts": [],
+  "deferred": [],
+  "automatic_unresolved": {
+    "side_unknown": 6,
+    "unrecognized_message": 6,
+    "low_ocr_confidence": 1,
+    "actor_variant_unresolved": 12,
+    "target_not_in_entry": 18,
+    "actor_unresolved": 10,
+    "side_evidence_conflict": 1,
+    "target_associated_from_sequence": 3
+  },
+  "deterministic_replay": true,
+  "duplicate_delivery_idempotent": true
+}

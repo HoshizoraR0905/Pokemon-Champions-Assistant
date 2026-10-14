@@ -12,6 +12,7 @@ from streaming import StreamingPipeline
 from streaming.recognition import RegionBackend, RegionPlanner
 from streaming.monitoring import ROIMonitor, MonitoringRates
 from streaming.replay import recorded_frames, acquire_at_rate, replay
+from battle_artifacts import BattleArtifacts, add_arguments, manifest_battle
 from stream_replay import distribution
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -78,15 +79,22 @@ def trial(ocr, name, frames, *, adaptive=False, fps=5., decision_regions=False, 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--frames',type=Path,default=ROOT/'.cache/m15-resolution-178-200/frames.json')
-    parser.add_argument('--output',type=Path,default=ROOT/'reports/M1.5-adaptive-performance.json')
+    parser.add_argument('--frames',type=Path,default=None)
+    parser.add_argument('--output',type=Path,default=None)
     parser.add_argument('--onnx-directory',type=Path)
     parser.add_argument('--provider',choices=['cpu','coreml'],default='cpu')
     parser.add_argument('--budget-only',action='store_true')
     parser.add_argument('--single-budget',action='store_true')
     parser.add_argument('--acceleration-only',action='store_true')
     parser.add_argument('--trace-directory',type=Path)
-    args=parser.parse_args()
+    add_arguments(parser)
+    args=parser.parse_args();owner=manifest_battle(args.frames) if args.frames else 'sample_battle_1'
+    paths=BattleArtifacts.select(args.battle_id,args.video,default=owner).prepare()
+    args.frames=args.frames or paths.cache('m15-resolution-178-200/frames.json')
+    paths.check_identity(manifest_battle(args.frames))
+    args.output=paths.guard_output(args.output or paths.report('M1.5-adaptive-performance.json'))
+    args.trace_directory=paths.guard_output(args.trace_directory or paths.report_dir)
+    args.trace_directory.mkdir(parents=True,exist_ok=True)
     frames=list(recorded_frames(args.frames))
     start=time.monotonic()
     if args.onnx_directory:

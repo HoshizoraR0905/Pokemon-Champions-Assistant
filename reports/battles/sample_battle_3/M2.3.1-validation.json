@@ -1,0 +1,12 @@
+{
+  "events": 196,
+  "states": 197,
+  "hp_checkpoints": 28,
+  "identity_checkpoints": 28,
+  "all_observable_prefixes_unchanged": true,
+  "hidden_replay_deterministic": true,
+  "observable_source": "M2.2.4-enriched",
+  "observable_rule_profile": "champions-evidence-only-v1",
+  "html_bytes": 1703910,
+  "rule_profile": "champions-evidence-only-v1"
+}

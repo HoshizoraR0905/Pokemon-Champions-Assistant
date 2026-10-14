@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "dataset_id": "m231-hidden-rules-v1",
+  "transformations": [
+    {
+      "rule_id": "m231:mega-salamence-required-item:v1",
+      "species_id": 373,
+      "target_identity": "pokeapi:pokemon:10089",
+      "profiles": [
+        "showdown-champions-reference-v1"
+      ],
+      "verification": "simulator_reference_only",
+      "prerequisite_options": [
+        {
+          "held_item": "pokeapi:item:810"
+        }
+      ],
+      "prerequisites": [
+        "observed_mega_evolution",
+        "unambiguous_target_form",
+        "correct_species_and_side"
+      ],
+      "provenance": [
+        "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/items.ts",
+        "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/mods/champions/scripts.ts"
+      ],
+      "consumes_item": false
+    },
+    {
+      "rule_id": "m231:mega-froslass-required-item:v1",
+      "species_id": 478,
+      "target_identity": "pokeapi:pokemon:10285",
+      "profiles": [
+        "showdown-champions-reference-v1"
+      ],
+      "verification": "simulator_reference_only",
+      "prerequisite_options": [
+        {
+          "held_item": "pokeapi:item:2240"
+        }
+      ],
+      "prerequisites": [
+        "observed_mega_evolution",
+        "unambiguous_target_form",
+        "correct_species_and_side"
+      ],
+      "provenance": [
+        "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/items.ts",
+        "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/mods/champions/scripts.ts"
+      ],
+      "consumes_item": false
+    }
+  ]
+}

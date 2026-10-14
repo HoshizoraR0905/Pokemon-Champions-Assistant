@@ -9,6 +9,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import cv2
 from recognition.battle_log import extract_view, assemble_views
 from recognition.trainers import recognize_preview_trainers
+from battle_artifacts import BattleArtifacts
 from battle_events import EventParser, BattleContext, Participant
 from battle_events.evaluation import evaluate
 
@@ -41,16 +42,23 @@ def recognize(args):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--frames',type=Path,default=ROOT/'.cache/m2-log-survey-360-400')
+    p.add_argument('--frames',type=Path,default=None)
     p.add_argument('--model-directory',type=Path,default=ROOT/'.cache/m15-onnx-medium')
-    p.add_argument('--ocr-output',type=Path,default=ROOT/'reports/M2.1-battle-log-raw-ocr.json')
+    p.add_argument('--ocr-output',type=Path,default=None)
     p.add_argument('--reuse-ocr',action='store_true')
-    p.add_argument('--battle-id',default='sample_battle_2')
-    p.add_argument('--trainer-image',type=Path,default=ROOT/'reports/M2.1-battle-log-evidence/team-preview-28.png')
-    p.add_argument('--reference',type=Path,default=ROOT/'tests/fixtures/m21_battle_log_ground_truth.json')
-    p.add_argument('--evaluation-output',type=Path,default=ROOT/'reports/M2.1-battle-log-evaluation.json')
-    p.add_argument('--output',type=Path,default=ROOT/'reports/M2.1-battle-log-events.json')
-    args=p.parse_args();raw=json.loads(args.ocr_output.read_text()) if args.reuse_ocr else recognize(args)
+    p.add_argument('--battle-id',default=None)
+    p.add_argument('--video',type=Path)
+    p.add_argument('--trainer-image',type=Path,default=None)
+    p.add_argument('--reference',type=Path,default=None)
+    p.add_argument('--evaluation-output',type=Path,default=None)
+    p.add_argument('--output',type=Path,default=None)
+    args=p.parse_args();paths=BattleArtifacts.select(args.battle_id,args.video,default='sample_battle_2').prepare();args.battle_id=paths.battle_id
+    args.reference=args.reference or paths.input('m21_battle_log_ground_truth.json')
+    args.frames=args.frames or paths.cache('m2-log-survey-360-400')
+    args.trainer_image=args.trainer_image or paths.report('M2.1-battle-log-evidence/team-preview-28.png')
+    args.ocr_output=paths.guard_output(args.ocr_output or paths.report('M2.1-battle-log-raw-ocr.json'))
+    args.evaluation_output=paths.guard_output(args.evaluation_output or paths.report('M2.1-battle-log-evaluation.json'))
+    args.output=paths.guard_output(args.output or paths.report('M2.1-battle-log-events.json'));raw=json.loads(args.ocr_output.read_text()) if args.reuse_ocr else recognize(args)
     entries,issues=assemble_views(raw['views']);c=BattleContext()
     for s,v in raw.get('trainer_observations',{}).items():
         c.participants[s]=Participant(s,v['display_name'],None,v['evidence'])

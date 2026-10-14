@@ -1,0 +1,4624 @@
+{
+  "schema_version": 1,
+  "method": "manual video initialization; neutral fresh-battle stages are derived; no hidden opponent configurations",
+  "observation_window_seconds": [
+    68.1,
+    106.2
+  ],
+  "state_time": "first decision, before turn-1 actions; bench HP context from pre-action menu",
+  "state": {
+    "battle_id": "sample_battle_3",
+    "mechanics": {},
+    "turn": {
+      "value": 1,
+      "knowledge": "observed",
+      "provenance": [
+        {
+          "image": ".cache/m223-survey/000048.jpg",
+          "timestamp": 94.15,
+          "timestamp_uncertainty_seconds": 2,
+          "source_pts_relative_to_seek": 94.15,
+          "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+          "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+          "source_type": "manual_video_annotation",
+          "basis": "first battle decision screen, before any action"
+        }
+      ],
+      "alternatives": []
+    },
+    "phase": {
+      "value": "battle_screen",
+      "knowledge": "observed",
+      "provenance": [
+        {
+          "image": ".cache/m223-survey/000048.jpg",
+          "timestamp": 94.15,
+          "timestamp_uncertainty_seconds": 2,
+          "source_pts_relative_to_seek": 94.15,
+          "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+          "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+          "source_type": "manual_video_annotation",
+          "basis": "first battle decision screen, before any action"
+        }
+      ],
+      "alternatives": []
+    },
+    "weather": {
+      "active": {
+        "value": false,
+        "knowledge": "observed",
+        "provenance": [
+          {
+            "image": ".cache/m223-survey/000048.jpg",
+            "timestamp": 94.15,
+            "timestamp_uncertainty_seconds": 2,
+            "source_pts_relative_to_seek": 94.15,
+            "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+            "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+            "source_type": "manual_video_annotation",
+            "basis": "first battle decision screen, before any action"
+          }
+        ],
+        "alternatives": []
+      },
+      "kind": {
+        "value": "none",
+        "knowledge": "observed",
+        "provenance": [
+          {
+            "image": ".cache/m223-survey/000048.jpg",
+            "timestamp": 94.15,
+            "timestamp_uncertainty_seconds": 2,
+            "source_pts_relative_to_seek": 94.15,
+            "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+            "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+            "source_type": "manual_video_annotation",
+            "basis": "first battle decision screen, before any action"
+          }
+        ],
+        "alternatives": []
+      },
+      "duration": {
+        "remaining": {
+          "value": 0,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "expires_at_turn": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "timing": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "modifiers": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "last_tick": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        }
+      },
+      "initiated_by": {
+        "value": null,
+        "knowledge": "unknown",
+        "provenance": [],
+        "alternatives": []
+      }
+    },
+    "terrain": {
+      "active": {
+        "value": false,
+        "knowledge": "observed",
+        "provenance": [
+          {
+            "image": ".cache/m223-survey/000048.jpg",
+            "timestamp": 94.15,
+            "timestamp_uncertainty_seconds": 2,
+            "source_pts_relative_to_seek": 94.15,
+            "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+            "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+            "source_type": "manual_video_annotation",
+            "basis": "first battle decision screen, before any action"
+          }
+        ],
+        "alternatives": []
+      },
+      "kind": {
+        "value": "none",
+        "knowledge": "observed",
+        "provenance": [
+          {
+            "image": ".cache/m223-survey/000048.jpg",
+            "timestamp": 94.15,
+            "timestamp_uncertainty_seconds": 2,
+            "source_pts_relative_to_seek": 94.15,
+            "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+            "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+            "source_type": "manual_video_annotation",
+            "basis": "first battle decision screen, before any action"
+          }
+        ],
+        "alternatives": []
+      },
+      "duration": {
+        "remaining": {
+          "value": 0,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "expires_at_turn": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "timing": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "modifiers": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "last_tick": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        }
+      },
+      "initiated_by": {
+        "value": null,
+        "knowledge": "unknown",
+        "provenance": [],
+        "alternatives": []
+      }
+    },
+    "trick_room": {
+      "active": {
+        "value": false,
+        "knowledge": "observed",
+        "provenance": [
+          {
+            "image": ".cache/m223-survey/000048.jpg",
+            "timestamp": 94.15,
+            "timestamp_uncertainty_seconds": 2,
+            "source_pts_relative_to_seek": 94.15,
+            "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+            "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+            "source_type": "manual_video_annotation",
+            "basis": "first battle decision screen, before any action"
+          }
+        ],
+        "alternatives": []
+      },
+      "kind": {
+        "value": "trick_room",
+        "knowledge": "observed",
+        "provenance": [
+          {
+            "image": ".cache/m223-survey/000048.jpg",
+            "timestamp": 94.15,
+            "timestamp_uncertainty_seconds": 2,
+            "source_pts_relative_to_seek": 94.15,
+            "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+            "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+            "source_type": "manual_video_annotation",
+            "basis": "first battle decision screen, before any action"
+          }
+        ],
+        "alternatives": []
+      },
+      "duration": {
+        "remaining": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "expires_at_turn": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "timing": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "modifiers": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "last_tick": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        }
+      },
+      "initiated_by": {
+        "value": null,
+        "knowledge": "unknown",
+        "provenance": [],
+        "alternatives": []
+      }
+    },
+    "global_effects": {},
+    "sides": {
+      "self": {
+        "side_id": "self",
+        "mechanics": {},
+        "trainer": {
+          "display_name": "Hoshi",
+          "unique_trainer_id": null,
+          "evidence": [
+            {
+              "source": ".cache/m223-survey/000021.jpg",
+              "sha256": "ea2c47d27e630abb310a1a788dd6bc8579070fb99c027d9b1d5c6f76ba60e71e",
+              "box": [
+                216,
+                35,
+                400,
+                66
+              ],
+              "timestamp": 40.09,
+              "timestamp_uncertainty_seconds": 2,
+              "color": "purple",
+              "basis": "visible_team_preview_panel"
+            }
+          ]
+        },
+        "party_instance_ids": [
+          "sample_battle_3:self:preview:6",
+          "sample_battle_3:self:preview:3",
+          "sample_battle_3:self:preview:5",
+          "sample_battle_3:self:preview:2"
+        ],
+        "party_complete": {
+          "value": true,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000035.jpg",
+              "timestamp": 68.128333,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 68.128333,
+              "sha256": "05abf897dc7080748bf00c7811b57df761d3692b54ff919b2445446ed908b9da",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#68.128333",
+              "source_type": "manual_video_annotation",
+              "basis": "visible selected four, numbered 1–4"
+            }
+          ],
+          "alternatives": []
+        },
+        "active_slots": {
+          "left": "sample_battle_3:self:preview:6",
+          "right": "sample_battle_3:self:preview:3"
+        },
+        "vacant_slots": [],
+        "fainted_instance_ids": [],
+        "remaining_available": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "conditions": {
+          "tailwind": {
+            "active": {
+              "value": false,
+              "knowledge": "observed",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action"
+                }
+              ],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "reflect": {
+            "active": {
+              "value": false,
+              "knowledge": "observed",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action"
+                }
+              ],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "light_screen": {
+            "active": {
+              "value": false,
+              "knowledge": "observed",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action"
+                }
+              ],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "aurora_veil": {
+            "active": {
+              "value": false,
+              "knowledge": "observed",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action"
+                }
+              ],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          }
+        },
+        "hazards": {},
+        "temporary_effects": {},
+        "resources": {
+          "mega_evolution": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "opponent": {
+        "side_id": "opponent",
+        "mechanics": {},
+        "trainer": {
+          "display_name": "willbnguyn",
+          "unique_trainer_id": null,
+          "evidence": [
+            {
+              "source": ".cache/m223-survey/000021.jpg",
+              "sha256": "ea2c47d27e630abb310a1a788dd6bc8579070fb99c027d9b1d5c6f76ba60e71e",
+              "box": [
+                977,
+                35,
+                1164,
+                66
+              ],
+              "timestamp": 40.09,
+              "timestamp_uncertainty_seconds": 2,
+              "color": "red",
+              "basis": "visible_team_preview_panel"
+            }
+          ]
+        },
+        "party_instance_ids": [
+          "sample_battle_3:opponent:preview:3",
+          "sample_battle_3:opponent:preview:5"
+        ],
+        "party_complete": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "active_slots": {
+          "left": "sample_battle_3:opponent:preview:3",
+          "right": "sample_battle_3:opponent:preview:5"
+        },
+        "vacant_slots": [],
+        "fainted_instance_ids": [],
+        "remaining_available": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "conditions": {
+          "tailwind": {
+            "active": {
+              "value": false,
+              "knowledge": "observed",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action"
+                }
+              ],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "reflect": {
+            "active": {
+              "value": false,
+              "knowledge": "observed",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action"
+                }
+              ],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "light_screen": {
+            "active": {
+              "value": false,
+              "knowledge": "observed",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action"
+                }
+              ],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "aurora_veil": {
+            "active": {
+              "value": false,
+              "knowledge": "observed",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action"
+                }
+              ],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          }
+        },
+        "hazards": {},
+        "temporary_effects": {},
+        "resources": {
+          "mega_evolution": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      }
+    },
+    "pokemon": {
+      "sample_battle_3:self:preview:6": {
+        "pokemon_instance_id": "sample_battle_3:self:preview:6",
+        "side_id": "self",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:478",
+            "kind": "species",
+            "name": "雪妖女",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 478,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:478",
+            "kind": "species",
+            "name": "雪妖女",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 478,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "active",
+            "slot": "left"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": false,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": 177,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": 177,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "absolute",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": "none",
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:item:2240",
+              "kind": "item",
+              "name": "雪妖女进化石",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000021.jpg",
+                "timestamp": 40.09,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 40.09,
+                "sha256": "ea2c47d27e630abb310a1a788dd6bc8579070fb99c027d9b1d5c6f76ba60e71e",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#40.09",
+                "source_type": "manual_video_annotation",
+                "basis": "visible own preview held-item name"
+              }
+            ],
+            "alternatives": []
+          },
+          "status": {
+            "value": "known",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000021.jpg",
+                "timestamp": 40.09,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 40.09,
+                "sha256": "ea2c47d27e630abb310a1a788dd6bc8579070fb99c027d9b1d5c6f76ba60e71e",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#40.09",
+                "source_type": "manual_video_annotation",
+                "basis": "visible own preview held-item name"
+              }
+            ],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "current_types": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "mechanics": {},
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "sample_battle_3:self:preview:3": {
+        "pokemon_instance_id": "sample_battle_3:self:preview:3",
+        "side_id": "self",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "active",
+            "slot": "right"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": false,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": 197,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": 197,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "absolute",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": "none",
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:item:211",
+              "kind": "item",
+              "name": "吃剩的东西",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000021.jpg",
+                "timestamp": 40.09,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 40.09,
+                "sha256": "ea2c47d27e630abb310a1a788dd6bc8579070fb99c027d9b1d5c6f76ba60e71e",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#40.09",
+                "source_type": "manual_video_annotation",
+                "basis": "visible own preview held-item name"
+              }
+            ],
+            "alternatives": []
+          },
+          "status": {
+            "value": "known",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000021.jpg",
+                "timestamp": 40.09,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 40.09,
+                "sha256": "ea2c47d27e630abb310a1a788dd6bc8579070fb99c027d9b1d5c6f76ba60e71e",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#40.09",
+                "source_type": "manual_video_annotation",
+                "basis": "visible own preview held-item name"
+              }
+            ],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "current_types": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "mechanics": {},
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "sample_battle_3:self:preview:5": {
+        "pokemon_instance_id": "sample_battle_3:self:preview:5",
+        "side_id": "self",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:186",
+            "kind": "species",
+            "name": "蚊香蛙皇",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 186,
+            "pokemon_id": 186,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:186",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:186",
+            "kind": "species",
+            "name": "蚊香蛙皇",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 186,
+            "pokemon_id": 186,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:186",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "bench",
+            "slot": null
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000054.jpg",
+              "timestamp": 106.185,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 106.185,
+              "sha256": "dde6d0c722ce661854935c4e84e5392b1980cef8d4ba12711b4da7bc253e59ef",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#106.185",
+              "source_type": "manual_video_annotation",
+              "basis": "enabled selected-party rows"
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": false,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": 197,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000054.jpg",
+                "timestamp": 106.185,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 106.185,
+                "sha256": "dde6d0c722ce661854935c4e84e5392b1980cef8d4ba12711b4da7bc253e59ef",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#106.185",
+                "source_type": "manual_video_annotation",
+                "basis": "visible selected-party HP ratio"
+              }
+            ],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": 197,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000054.jpg",
+                "timestamp": 106.185,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 106.185,
+                "sha256": "dde6d0c722ce661854935c4e84e5392b1980cef8d4ba12711b4da7bc253e59ef",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#106.185",
+                "source_type": "manual_video_annotation",
+                "basis": "visible selected-party HP ratio"
+              }
+            ],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "absolute",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": "none",
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000054.jpg",
+              "timestamp": 106.185,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 106.185,
+              "sha256": "dde6d0c722ce661854935c4e84e5392b1980cef8d4ba12711b4da7bc253e59ef",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#106.185",
+              "source_type": "manual_video_annotation",
+              "basis": "selected party rows: no status icon"
+            }
+          ],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:item:135",
+              "kind": "item",
+              "name": "文柚果",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000021.jpg",
+                "timestamp": 40.09,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 40.09,
+                "sha256": "ea2c47d27e630abb310a1a788dd6bc8579070fb99c027d9b1d5c6f76ba60e71e",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#40.09",
+                "source_type": "manual_video_annotation",
+                "basis": "visible own preview held-item name"
+              }
+            ],
+            "alternatives": []
+          },
+          "status": {
+            "value": "known",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000021.jpg",
+                "timestamp": 40.09,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 40.09,
+                "sha256": "ea2c47d27e630abb310a1a788dd6bc8579070fb99c027d9b1d5c6f76ba60e71e",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#40.09",
+                "source_type": "manual_video_annotation",
+                "basis": "visible own preview held-item name"
+              }
+            ],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "current_types": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "mechanics": {},
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "sample_battle_3:self:preview:2": {
+        "pokemon_instance_id": "sample_battle_3:self:preview:2",
+        "side_id": "self",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:812",
+            "kind": "species",
+            "name": "轰擂金刚猩",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 812,
+            "pokemon_id": 812,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:812",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:812",
+            "kind": "species",
+            "name": "轰擂金刚猩",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 812,
+            "pokemon_id": 812,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:812",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "bench",
+            "slot": null
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000054.jpg",
+              "timestamp": 106.185,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 106.185,
+              "sha256": "dde6d0c722ce661854935c4e84e5392b1980cef8d4ba12711b4da7bc253e59ef",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#106.185",
+              "source_type": "manual_video_annotation",
+              "basis": "enabled selected-party rows"
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": false,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": 207,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000054.jpg",
+                "timestamp": 106.185,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 106.185,
+                "sha256": "dde6d0c722ce661854935c4e84e5392b1980cef8d4ba12711b4da7bc253e59ef",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#106.185",
+                "source_type": "manual_video_annotation",
+                "basis": "visible selected-party HP ratio"
+              }
+            ],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": 207,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000054.jpg",
+                "timestamp": 106.185,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 106.185,
+                "sha256": "dde6d0c722ce661854935c4e84e5392b1980cef8d4ba12711b4da7bc253e59ef",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#106.185",
+                "source_type": "manual_video_annotation",
+                "basis": "visible selected-party HP ratio"
+              }
+            ],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "absolute",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": "none",
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000054.jpg",
+              "timestamp": 106.185,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 106.185,
+              "sha256": "dde6d0c722ce661854935c4e84e5392b1980cef8d4ba12711b4da7bc253e59ef",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#106.185",
+              "source_type": "manual_video_annotation",
+              "basis": "selected party rows: no status icon"
+            }
+          ],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:item:590",
+              "kind": "item",
+              "name": "逃脱按键",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000021.jpg",
+                "timestamp": 40.09,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 40.09,
+                "sha256": "ea2c47d27e630abb310a1a788dd6bc8579070fb99c027d9b1d5c6f76ba60e71e",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#40.09",
+                "source_type": "manual_video_annotation",
+                "basis": "visible own preview held-item name"
+              }
+            ],
+            "alternatives": []
+          },
+          "status": {
+            "value": "known",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000021.jpg",
+                "timestamp": 40.09,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 40.09,
+                "sha256": "ea2c47d27e630abb310a1a788dd6bc8579070fb99c027d9b1d5c6f76ba60e71e",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#40.09",
+                "source_type": "manual_video_annotation",
+                "basis": "visible own preview held-item name"
+              }
+            ],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "current_types": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "mechanics": {},
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "sample_battle_3:opponent:preview:3": {
+        "pokemon_instance_id": "sample_battle_3:opponent:preview:3",
+        "side_id": "opponent",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:983",
+            "kind": "species",
+            "name": "仆刀将军",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 983,
+            "pokemon_id": 983,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:983",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:983",
+            "kind": "species",
+            "name": "仆刀将军",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 983,
+            "pokemon_id": 983,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:983",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "active",
+            "slot": "left"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": false,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": 100,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "displayed_percent",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": "none",
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "current_types": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "mechanics": {},
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "sample_battle_3:opponent:preview:5": {
+        "pokemon_instance_id": "sample_battle_3:opponent:preview:5",
+        "side_id": "opponent",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:903",
+            "kind": "species",
+            "name": "大狃拉",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 903,
+            "pokemon_id": 903,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:903",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:903",
+            "kind": "species",
+            "name": "大狃拉",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 903,
+            "pokemon_id": 903,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:903",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "active",
+            "slot": "right"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": false,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": 100,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "displayed_percent",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "image": ".cache/m223-survey/000048.jpg",
+                "timestamp": 94.15,
+                "timestamp_uncertainty_seconds": 2,
+                "source_pts_relative_to_seek": 94.15,
+                "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                "source_type": "manual_video_annotation",
+                "basis": "first battle decision screen, before any action"
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": "none",
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "image": ".cache/m223-survey/000048.jpg",
+              "timestamp": 94.15,
+              "timestamp_uncertainty_seconds": 2,
+              "source_pts_relative_to_seek": 94.15,
+              "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+              "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+              "source_type": "manual_video_annotation",
+              "basis": "first battle decision screen, before any action"
+            }
+          ],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "provenance": [
+                {
+                  "image": ".cache/m223-survey/000048.jpg",
+                  "timestamp": 94.15,
+                  "timestamp_uncertainty_seconds": 2,
+                  "source_pts_relative_to_seek": 94.15,
+                  "sha256": "c15e3316d0fc4d06bd2b26105f12b17cc42018f5daff055d080996f8c83462eb",
+                  "source_id": "tests/fixtures/sample_battle_3.mp4#94.15",
+                  "source_type": "manual_video_annotation",
+                  "basis": "first battle decision screen, before any action",
+                  "initialization_rule": "fresh recorded battle before any stage-changing event",
+                  "verification": "recording_start_and_complete_turn_1_log"
+                }
+              ],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "current_types": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "mechanics": {},
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      }
+    },
+    "observations": [
+      {
+        "kind": "team_preview",
+        "self_species_ids": [
+          727,
+          812,
+          1018,
+          373,
+          186,
+          478
+        ],
+        "opponent_species_ids": [
+          373,
+          812,
+          983,
+          815,
+          903,
+          900
+        ],
+        "selected_self_preview_indices": [
+          6,
+          3,
+          5,
+          2
+        ],
+        "opponent_selected_party": "only initial active two established at initialization",
+        "evidence": [
+          {
+            "image": ".cache/m223-survey/000021.jpg",
+            "timestamp": 40.09,
+            "timestamp_uncertainty_seconds": 2,
+            "source_pts_relative_to_seek": 40.09,
+            "sha256": "ea2c47d27e630abb310a1a788dd6bc8579070fb99c027d9b1d5c6f76ba60e71e",
+            "source_id": "tests/fixtures/sample_battle_3.mp4#40.09",
+            "source_type": "manual_video_annotation",
+            "basis": "manual icon annotation for opponent preview"
+          },
+          {
+            "image": ".cache/m223-survey/000035.jpg",
+            "timestamp": 68.128333,
+            "timestamp_uncertainty_seconds": 2,
+            "source_pts_relative_to_seek": 68.128333,
+            "sha256": "05abf897dc7080748bf00c7811b57df761d3692b54ff919b2445446ed908b9da",
+            "source_id": "tests/fixtures/sample_battle_3.mp4#68.128333",
+            "source_type": "manual_video_annotation",
+            "basis": "own numbered selection display"
+          }
+        ]
+      }
+    ],
+    "conflicts": []
+  }
+}

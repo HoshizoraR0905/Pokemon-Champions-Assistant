@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "dataset_id": "m224-move-mechanics-v1",
+  "stage_bounds": [
+    -6,
+    6
+  ],
+  "rules": [
+    {
+      "rule_id": "m224:move:14:v1",
+      "move_id": "pokeapi:move:14",
+      "names": {
+        "en": "Swords Dance",
+        "zh-hans": "剑舞"
+      },
+      "category": "Status",
+      "target": "self",
+      "effect_target": "self",
+      "stage_changes": {
+        "attack": 2
+      },
+      "timing": "on_effect",
+      "requires_success": true,
+      "preconditions": [
+        "effect_result_confirmed",
+        "affected_instance_resolved"
+      ],
+      "exceptions": [
+        "Contrary, Simple, suppression, caps and other interactions require direct outcome evidence; do not infer from announcement"
+      ],
+      "profiles": [
+        "showdown-champions-reference-v1"
+      ],
+      "verification": "simulator_reference_only",
+      "confidence": "provisional_for_champions",
+      "provenance": {
+        "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/moves.ts",
+        "commit": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+        "kind": "simulator_implementation"
+      }
+    },
+    {
+      "rule_id": "m224:move:349:v1",
+      "move_id": "pokeapi:move:349",
+      "names": {
+        "en": "Dragon Dance",
+        "zh-hans": "龙之舞"
+      },
+      "category": "Status",
+      "target": "self",
+      "effect_target": "self",
+      "stage_changes": {
+        "attack": 1,
+        "speed": 1
+      },
+      "timing": "on_effect",
+      "requires_success": true,
+      "preconditions": [
+        "effect_result_confirmed",
+        "affected_instance_resolved"
+      ],
+      "exceptions": [
+        "Contrary, Simple, suppression, caps and other interactions require direct outcome evidence; do not infer from announcement"
+      ],
+      "profiles": [
+        "showdown-champions-reference-v1"
+      ],
+      "verification": "simulator_reference_only",
+      "confidence": "provisional_for_champions",
+      "provenance": {
+        "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/moves.ts",
+        "commit": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+        "kind": "simulator_implementation"
+      }
+    },
+    {
+      "rule_id": "m224:move:347:v1",
+      "move_id": "pokeapi:move:347",
+      "names": {
+        "en": "Calm Mind",
+        "zh-hans": "冥想"
+      },
+      "category": "Status",
+      "target": "self",
+      "effect_target": "self",
+      "stage_changes": {
+        "special_attack": 1,
+        "special_defense": 1
+      },
+      "timing": "on_effect",
+      "requires_success": true,
+      "preconditions": [
+        "effect_result_confirmed",
+        "affected_instance_resolved"
+      ],
+      "exceptions": [
+        "Contrary, Simple, suppression, caps and other interactions require direct outcome evidence; do not infer from announcement"
+      ],
+      "profiles": [
+        "showdown-champions-reference-v1"
+      ],
+      "verification": "simulator_reference_only",
+      "confidence": "provisional_for_champions",
+      "provenance": {
+        "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/moves.ts",
+        "commit": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+        "kind": "simulator_implementation"
+      }
+    },
+    {
+      "rule_id": "m224:move:334:v1",
+      "move_id": "pokeapi:move:334",
+      "names": {
+        "en": "Iron Defense",
+        "zh-hans": "铁壁"
+      },
+      "category": "Status",
+      "target": "self",
+      "effect_target": "self",
+      "stage_changes": {
+        "defense": 2
+      },
+      "timing": "on_effect",
+      "requires_success": true,
+      "preconditions": [
+        "effect_result_confirmed",
+        "affected_instance_resolved"
+      ],
+      "exceptions": [
+        "Contrary, Simple, suppression, caps and other interactions require direct outcome evidence; do not infer from announcement"
+      ],
+      "profiles": [
+        "showdown-champions-reference-v1"
+      ],
+      "verification": "simulator_reference_only",
+      "confidence": "provisional_for_champions",
+      "provenance": {
+        "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/moves.ts",
+        "commit": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+        "kind": "simulator_implementation"
+      }
+    },
+    {
+      "rule_id": "m224:move:45:v1",
+      "move_id": "pokeapi:move:45",
+      "names": {
+        "en": "Growl",
+        "zh-hans": "叫声"
+      },
+      "category": "Status",
+      "target": "allAdjacentFoes",
+      "effect_target": "opponent",
+      "stage_changes": {
+        "attack": -1
+      },
+      "timing": "on_effect",
+      "requires_success": true,
+      "preconditions": [
+        "effect_result_confirmed",
+        "affected_instance_resolved"
+      ],
+      "exceptions": [
+        "Contrary, Simple, suppression, caps and other interactions require direct outcome evidence; do not infer from announcement"
+      ],
+      "profiles": [
+        "showdown-champions-reference-v1"
+      ],
+      "verification": "simulator_reference_only",
+      "confidence": "provisional_for_champions",
+      "provenance": {
+        "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/moves.ts",
+        "commit": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+        "kind": "simulator_implementation"
+      }
+    },
+    {
+      "rule_id": "m224:move:370:v1",
+      "move_id": "pokeapi:move:370",
+      "names": {
+        "en": "Close Combat",
+        "zh-hans": "近身战"
+      },
+      "category": "Physical",
+      "target": "normal",
+      "effect_target": "self",
+      "stage_changes": {
+        "defense": -1,
+        "special_defense": -1
+      },
+      "timing": "after_successful_hit",
+      "requires_success": true,
+      "preconditions": [
+        "effect_result_confirmed",
+        "affected_instance_resolved"
+      ],
+      "exceptions": [
+        "Contrary, Simple, suppression, caps and other interactions require direct outcome evidence; do not infer from announcement"
+      ],
+      "profiles": [
+        "showdown-champions-reference-v1"
+      ],
+      "verification": "simulator_reference_only",
+      "confidence": "provisional_for_champions",
+      "provenance": {
+        "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/moves.ts",
+        "commit": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+        "kind": "simulator_implementation"
+      }
+    },
+    {
+      "rule_id": "m224:move:905:v1",
+      "move_id": "pokeapi:move:905",
+      "names": {
+        "en": "Electro Shot",
+        "zh-hans": "电光束"
+      },
+      "category": "Special",
+      "target": "normal",
+      "effect_target": "self",
+      "stage_changes": {
+        "special_attack": 1
+      },
+      "timing": "charge_preparation",
+      "requires_success": true,
+      "preconditions": [
+        "effect_result_confirmed",
+        "affected_instance_resolved"
+      ],
+      "exceptions": [
+        "Contrary, Simple, suppression, caps and other interactions require direct outcome evidence; do not infer from announcement"
+      ],
+      "profiles": [
+        "showdown-champions-reference-v1"
+      ],
+      "verification": "simulator_reference_only",
+      "confidence": "provisional_for_champions",
+      "provenance": {
+        "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/moves.ts",
+        "commit": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+        "kind": "simulator_implementation"
+      }
+    }
+  ],
+  "passive_rules": [
+    {
+      "rule_id": "m224:ability:192:v1",
+      "names": {
+        "en": "Stamina",
+        "zh-hans": "持久力"
+      },
+      "category": "ability",
+      "target": "self",
+      "effect_target": "self",
+      "stage_changes": {
+        "defense": 1
+      },
+      "timing": "after_damaging_hit",
+      "requires_success": true,
+      "preconditions": [
+        "effect_result_confirmed",
+        "affected_instance_resolved"
+      ],
+      "exceptions": [
+        "Contrary, Simple, suppression, caps and other interactions require direct outcome evidence; do not infer from announcement"
+      ],
+      "profiles": [
+        "showdown-champions-reference-v1"
+      ],
+      "verification": "simulator_reference_only",
+      "confidence": "provisional_for_champions",
+      "provenance": {
+        "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/abilities.ts",
+        "commit": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+        "kind": "simulator_implementation"
+      },
+      "trigger_id": "pokeapi:ability:192"
+    }
+  ]
+}

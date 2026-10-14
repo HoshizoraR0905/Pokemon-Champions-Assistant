@@ -19,7 +19,7 @@ Python 3.10 or newer is required. OpenCV and pytesseract are the only direct run
 ```sh
 python main.py --image tests/fixtures/battle_screen.png
 python main.py --image tests/fixtures/move_selection.png --annotated outputs/move_selection.png
-python main.py --video tests/fixtures/sample_battle.mp4 --interval 1 --max-frames 30 --annotated outputs/video > outputs/battle.jsonl
+python main.py --video tests/fixtures/sample_battle_0.mp4 --interval 1 --max-frames 30 --annotated outputs/video > outputs/battle.jsonl
 python -m pytest -q
 ```
 
@@ -125,7 +125,7 @@ Selection purpose is separate from the visible phase: `voluntary`, `move_trigger
 Both complete recordings were sampled once during the follow-up, and final predictions were then refreshed from verified lossless image caches. To repeat classification locally without decoding videos:
 
 ```sh
-python scripts/refresh_m14.py --video sample_battle.mp4 --reuse-cache
+python scripts/refresh_m14.py --video sample_battle_0.mp4 --reuse-cache
 python scripts/refresh_m14.py --video sample_battle_1.mp4 --reuse-cache
 ```
 
@@ -144,3 +144,29 @@ Opt-in adaptive ROI monitoring, phase-aware field reuse, unresolved candidate pr
 `stream_replay.py --adaptive` exposes separate acquisition, phase, message, routine, and icon rates. The experimental `--message-ocr-fps 2.5` budget retains deferred PNG crops as uncertain observations; its default is 5. Live sources use `streaming.live.run_live(acquire, pipeline, sink)` so acquisition/monitoring can continue during recognition backpressure. Sinks must promptly archive candidate evidence and loss records. Phone transport is not implemented or validated.
 
 Use `scripts/evaluate_m15_adaptive.py` to audit saved traces without OCR/video processing. Optional ONNX/Core ML experiments use `scripts/setup_m15_onnx.py`, `scripts/benchmark_m15_ocr.py`, and the isolated `ocr_experimental` dependency extra; no experimental backend is automatically selected. Reproduction commands and remaining limitations are in the report.
+
+
+### Per-recording artifacts
+
+Use the recording stem as `battle_id`. Cached frames/OCR live in `.cache/battles/<battle_id>/`; events, inputs, replays, timelines and metrics live in `reports/battles/<battle_id>/`. Shared knowledge/model assets remain outside these namespaces. Historical paths are relative compatibility symlinks; saved source/event IDs are immutable.
+
+```sh
+python scripts/replay_m22.py --battle-id sample_battle_2
+python scripts/build_m223.py --battle-id sample_battle_3
+python scripts/replay_m224.py --battle-id sample_battle_3
+python scripts/replay_m231.py --battle-id sample_battle_3
+python scripts/reconstruct_m223.py --video tests/fixtures/sample_battle_4.mp4 --stage survey
+```
+
+The last command performs new processing when requested; migration and cached replay do not run it. M2.2.3 focused annotations belong to recording 3; another recording requires its own inputs. See `reports/battle-artifact-migration.md` for the migration inventory and compatibility policy.
+
+
+### Git tracking and clean clones
+
+Source, tests, shared knowledge databases, curated screenshot fixtures and manual annotations/configuration stay in Git. Generated reports are ignored by default: HTML viewers, complete state/snapshot JSON, OCR output, JSONL traces and extracted frames stay local. `reports/battles/<battle_id>/inputs/*.json` is an explicit curated-input exception; Markdown reports and explicitly listed small validation summaries are also tracked. Do not put generated dumps in `inputs/`.
+
+After cloning, run `python scripts/setup_battle_workspace.py` to recreate historical compatibility aliases **only for targets that exist**. It does not decode videos, run OCR, overwrite data or create dangling links. Curated input and documentation aliases are already version-controlled with their targets. For an existing pre-migration checkout with local recordings/artifacts, use `python scripts/migrate_battle_artifacts.py` once, then the setup command. Do not run the migration to download or reconstruct missing evidence.
+
+Install test dependencies with `python -m pip install -e '.[test]'` and run `python -m pytest`. Portable unit/replay tests use reviewed small event oracles and curated initialization fixtures, reconstructing timeline states in memory. Tests marked `local_artifacts` exercise optional historical recording/OCR/cache integrations; missing prerequisites produce explicit skips in a clean clone. They run automatically when the local evidence is available. `pytest -m 'not local_artifacts'` selects only portable tests. This distinction does not skip failures for artifacts that are present.
+
+No media or generated replay data is required for the portable M2.3.1 hidden-state, projection or quantitative-mechanics regression tests. Full 197-prefix comparisons require the local cached M2.2.4 reports and preserve their rule profiles; those reports are intentionally not distributed in Git.

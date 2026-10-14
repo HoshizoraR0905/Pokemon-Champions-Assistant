@@ -1,0 +1,2330 @@
+{
+  "schema_version": 2,
+  "team_id": "sample_battle_3_opening",
+  "created_at_utc": "2026-10-14T09:36:26+00:00",
+  "knowledge_snapshot_sha256": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+  "regulation": "M-C",
+  "identity_scope_id": "2026-10-13-M-C",
+  "sources": [
+    {
+      "image": ".cache/m223-survey/000004.jpg",
+      "timestamp": 6.018333,
+      "timestamp_uncertainty_seconds": 2,
+      "source_pts_relative_to_seek": 6.018333,
+      "sha256": "1b62476d8bd334e8230c8bdff9480bff9a536a0af04a08f7d847ed7c1de971fd",
+      "source_id": "tests/fixtures/sample_battle_3.mp4#6.018333",
+      "method": "manual_cached_frame_transcription"
+    },
+    {
+      "image": ".cache/m223-survey/000005.jpg",
+      "timestamp": 8.018333,
+      "timestamp_uncertainty_seconds": 2,
+      "source_pts_relative_to_seek": 8.018333,
+      "sha256": "e1730a3d457102a1facb83f873c0f67f3dec67162f42939c826117d11bbd3738",
+      "source_id": "tests/fixtures/sample_battle_3.mp4#8.018333",
+      "method": "manual_cached_frame_transcription"
+    }
+  ],
+  "members": [
+    {
+      "instance_id": "own_team_1",
+      "slot": 1,
+      "fields": {
+        "species": {
+          "value": "炽焰咆哮虎",
+          "canonical_id": "pokeapi:species:727",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "炽焰咆哮虎"
+            }
+          ],
+          "conflicts": []
+        },
+        "identity": {
+          "value": "pokeapi:pokemon:727",
+          "canonical_id": "pokeapi:pokemon:727",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "canonical_identity_mapping"
+            }
+          ],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "威吓",
+          "canonical_id": "pokeapi:ability:22",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "威吓"
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "千香果",
+          "canonical_id": "pokeapi:item:162",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "千香果"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "闪焰冲锋",
+          "canonical_id": "pokeapi:move:394",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "闪焰冲锋"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "击掌奇袭",
+          "canonical_id": "pokeapi:move:252",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "击掌奇袭"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "地下狠活",
+          "canonical_id": null,
+          "status": "observed",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "地下狠活"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "守住",
+          "canonical_id": "pokeapi:move:182",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "守住"
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 201,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "201"
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 135,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "135"
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 125,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "125"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 100,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "100"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 143,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "143"
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 72,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "72"
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "male",
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "visible_gender_icon"
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 31,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "31",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 15,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "15",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 20,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "20",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [],
+      "conflicting_fields": [],
+      "species_id": 727,
+      "pokemon_id": 727,
+      "form_id": null,
+      "canonical_identity": "pokeapi:pokemon:727",
+      "identity_status": "resolved_unique",
+      "names": {
+        "zh-hans": "炽焰咆哮虎",
+        "en": "Incineroar"
+      },
+      "species_reference": {
+        "base_stats": {
+          "hp": 95,
+          "at": 115,
+          "df": 90,
+          "sa": 80,
+          "sd": 90,
+          "sp": 60
+        },
+        "types": [
+          "Fire",
+          "Dark"
+        ],
+        "provenance": {
+          "repository": "https://github.com/pmwl0128/Quark_Drive_Skills",
+          "commit": "8673c506b1ead3e66a436764e12fc066367ca283",
+          "commit_date": "2026-10-13T00:40:42+08:00",
+          "path": ".agents/skills/pokemon-champions-dex/data/champions_dex.sqlite",
+          "sha256": "35a08585f980f859dc721cf128762d1c62f3a34928bd6ed8db4fc459551b5413",
+          "file_commit": "f42039921e8838710c5e628dc81ba7c604343a24",
+          "file_commit_date": "2026-09-19T07:46:01+08:00"
+        },
+        "verification": "community_catalog_assertion",
+        "species_id": 727,
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "identity_status": "resolved_unique"
+      }
+    },
+    {
+      "instance_id": "own_team_2",
+      "slot": 2,
+      "fields": {
+        "species": {
+          "value": "轰擂金刚猩",
+          "canonical_id": "pokeapi:species:812",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "轰擂金刚猩"
+            }
+          ],
+          "conflicts": []
+        },
+        "identity": {
+          "value": "pokeapi:pokemon:812",
+          "canonical_id": "pokeapi:pokemon:812",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "canonical_identity_mapping"
+            }
+          ],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "青草制造者",
+          "canonical_id": "pokeapi:ability:229",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "青草制造者"
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "逃脱按键",
+          "canonical_id": "pokeapi:item:590",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "逃脱按键"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "守住",
+          "canonical_id": "pokeapi:move:182",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "守住"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "青草滑梯",
+          "canonical_id": "pokeapi:move:803",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "青草滑梯"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "急速折返",
+          "canonical_id": "pokeapi:move:369",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "急速折返"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "击掌奇袭",
+          "canonical_id": "pokeapi:move:252",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "击掌奇袭"
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 207,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "207"
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 145,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "145"
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 114,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "114"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 80,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "80"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 132,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "132"
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 94,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "94"
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "male",
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "visible_gender_icon"
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "32",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 4,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "4",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 30,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "30",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [],
+      "conflicting_fields": [],
+      "species_id": 812,
+      "pokemon_id": 812,
+      "form_id": null,
+      "canonical_identity": "pokeapi:pokemon:812",
+      "identity_status": "resolved_unique",
+      "names": {
+        "zh-hans": "轰擂金刚猩",
+        "en": "Rillaboom"
+      },
+      "species_reference": {
+        "base_stats": {
+          "hp": 100,
+          "at": 125,
+          "df": 90,
+          "sa": 60,
+          "sd": 70,
+          "sp": 85
+        },
+        "types": [
+          "Grass"
+        ],
+        "provenance": {
+          "repository": "https://github.com/pmwl0128/Quark_Drive_Skills",
+          "commit": "8673c506b1ead3e66a436764e12fc066367ca283",
+          "commit_date": "2026-10-13T00:40:42+08:00",
+          "path": ".agents/skills/pokemon-champions-dex/data/champions_dex.sqlite",
+          "sha256": "35a08585f980f859dc721cf128762d1c62f3a34928bd6ed8db4fc459551b5413",
+          "file_commit": "f42039921e8838710c5e628dc81ba7c604343a24",
+          "file_commit_date": "2026-09-19T07:46:01+08:00"
+        },
+        "verification": "community_catalog_assertion",
+        "species_id": 812,
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "identity_status": "resolved_unique"
+      }
+    },
+    {
+      "instance_id": "own_team_3",
+      "slot": 3,
+      "fields": {
+        "species": {
+          "value": "铝钢桥龙",
+          "canonical_id": "pokeapi:species:1018",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "铝钢桥龙"
+            }
+          ],
+          "conflicts": []
+        },
+        "identity": {
+          "value": "pokeapi:pokemon:1018",
+          "canonical_id": "pokeapi:pokemon:1018",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "canonical_identity_mapping"
+            }
+          ],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "持久力",
+          "canonical_id": "pokeapi:ability:192",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "持久力"
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "吃剩的东西",
+          "canonical_id": "pokeapi:item:211",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "吃剩的东西"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "守住",
+          "canonical_id": "pokeapi:move:182",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "守住"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "电光束",
+          "canonical_id": "pokeapi:move:905",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "电光束"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "加农光炮",
+          "canonical_id": "pokeapi:move:430",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "加农光炮"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "龙之波动",
+          "canonical_id": "pokeapi:move:406",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "龙之波动"
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 197,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "197"
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 112,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "112"
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 166,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "166"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 146,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "146"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 117,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "117"
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 105,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "105"
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "male",
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "visible_gender_icon"
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "32",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 1,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "1",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 1,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "1",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "32",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [],
+      "conflicting_fields": [],
+      "species_id": 1018,
+      "pokemon_id": 1018,
+      "form_id": null,
+      "canonical_identity": "pokeapi:pokemon:1018",
+      "identity_status": "resolved_unique",
+      "names": {
+        "zh-hans": "铝钢桥龙",
+        "en": "Archaludon"
+      },
+      "species_reference": {
+        "base_stats": {
+          "hp": 90,
+          "at": 105,
+          "df": 130,
+          "sa": 125,
+          "sd": 65,
+          "sp": 85
+        },
+        "types": [
+          "Steel",
+          "Dragon"
+        ],
+        "provenance": {
+          "repository": "https://github.com/pmwl0128/Quark_Drive_Skills",
+          "commit": "8673c506b1ead3e66a436764e12fc066367ca283",
+          "commit_date": "2026-10-13T00:40:42+08:00",
+          "path": ".agents/skills/pokemon-champions-dex/data/champions_dex.sqlite",
+          "sha256": "35a08585f980f859dc721cf128762d1c62f3a34928bd6ed8db4fc459551b5413",
+          "file_commit": "f42039921e8838710c5e628dc81ba7c604343a24",
+          "file_commit_date": "2026-09-19T07:46:01+08:00"
+        },
+        "verification": "community_catalog_assertion",
+        "species_id": 1018,
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "identity_status": "resolved_unique"
+      }
+    },
+    {
+      "instance_id": "own_team_4",
+      "slot": 4,
+      "fields": {
+        "species": {
+          "value": "暴飞龙",
+          "canonical_id": "pokeapi:species:373",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "暴飞龙"
+            }
+          ],
+          "conflicts": []
+        },
+        "identity": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "威吓",
+          "canonical_id": "pokeapi:ability:22",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "威吓"
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "暴飞龙进化石",
+          "canonical_id": "pokeapi:item:810",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "暴飞龙进化石"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "巨声",
+          "canonical_id": "pokeapi:move:304",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "巨声"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "守住",
+          "canonical_id": "pokeapi:move:182",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "守住"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "顺风",
+          "canonical_id": "pokeapi:move:366",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "顺风"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "流星群",
+          "canonical_id": "pokeapi:move:434",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "流星群"
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 172,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "172"
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 139,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "139"
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 100,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "100"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 162,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "162"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 100,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "100"
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 167,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "167"
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "male",
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "visible_gender_icon"
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 2,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "2",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "32",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "32",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [
+        "identity"
+      ],
+      "conflicting_fields": [],
+      "species_id": 373,
+      "pokemon_id": null,
+      "form_id": null,
+      "canonical_identity": null,
+      "identity_status": "species_only",
+      "names": {
+        "zh-hans": "暴飞龙",
+        "en": "Salamence"
+      },
+      "species_reference": {
+        "base_stats": {
+          "hp": 95,
+          "at": 135,
+          "df": 80,
+          "sa": 110,
+          "sd": 80,
+          "sp": 100
+        },
+        "types": [
+          "Dragon",
+          "Flying"
+        ],
+        "provenance": {
+          "repository": "https://github.com/pmwl0128/Quark_Drive_Skills",
+          "commit": "8673c506b1ead3e66a436764e12fc066367ca283",
+          "commit_date": "2026-10-13T00:40:42+08:00",
+          "path": ".agents/skills/pokemon-champions-dex/data/champions_dex.sqlite",
+          "sha256": "35a08585f980f859dc721cf128762d1c62f3a34928bd6ed8db4fc459551b5413",
+          "file_commit": "f42039921e8838710c5e628dc81ba7c604343a24",
+          "file_commit_date": "2026-09-19T07:46:01+08:00"
+        },
+        "verification": "community_catalog_assertion",
+        "species_id": 373,
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "identity_status": "species_only"
+      }
+    },
+    {
+      "instance_id": "own_team_5",
+      "slot": 5,
+      "fields": {
+        "species": {
+          "value": "蚊香蛙皇",
+          "canonical_id": "pokeapi:species:186",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "蚊香蛙皇"
+            }
+          ],
+          "conflicts": []
+        },
+        "identity": {
+          "value": "pokeapi:pokemon:186",
+          "canonical_id": "pokeapi:pokemon:186",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "canonical_identity_mapping"
+            }
+          ],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "降雨",
+          "canonical_id": "pokeapi:ability:2",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "降雨"
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "文柚果",
+          "canonical_id": "pokeapi:item:135",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "文柚果"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "守住",
+          "canonical_id": "pokeapi:move:182",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "守住"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "再来一次",
+          "canonical_id": "pokeapi:move:227",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "再来一次"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "终焉之歌",
+          "canonical_id": "pokeapi:move:195",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "终焉之歌"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "气象球",
+          "canonical_id": "pokeapi:move:311",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "气象球"
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 197,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "197"
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 85,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "85"
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 116,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "116"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 110,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "110"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 143,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "143"
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 93,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "93"
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "female",
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "visible_gender_icon"
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "32",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 21,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "21",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 10,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "10",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 3,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "3",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [],
+      "conflicting_fields": [],
+      "species_id": 186,
+      "pokemon_id": 186,
+      "form_id": null,
+      "canonical_identity": "pokeapi:pokemon:186",
+      "identity_status": "resolved_unique",
+      "names": {
+        "zh-hans": "蚊香蛙皇",
+        "en": "Politoed"
+      },
+      "species_reference": {
+        "base_stats": {
+          "hp": 90,
+          "at": 75,
+          "df": 75,
+          "sa": 90,
+          "sd": 100,
+          "sp": 70
+        },
+        "types": [
+          "Water"
+        ],
+        "provenance": {
+          "repository": "https://github.com/pmwl0128/Quark_Drive_Skills",
+          "commit": "8673c506b1ead3e66a436764e12fc066367ca283",
+          "commit_date": "2026-10-13T00:40:42+08:00",
+          "path": ".agents/skills/pokemon-champions-dex/data/champions_dex.sqlite",
+          "sha256": "35a08585f980f859dc721cf128762d1c62f3a34928bd6ed8db4fc459551b5413",
+          "file_commit": "f42039921e8838710c5e628dc81ba7c604343a24",
+          "file_commit_date": "2026-09-19T07:46:01+08:00"
+        },
+        "verification": "community_catalog_assertion",
+        "species_id": 186,
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "identity_status": "resolved_unique"
+      }
+    },
+    {
+      "instance_id": "own_team_6",
+      "slot": 6,
+      "fields": {
+        "species": {
+          "value": "雪妖女",
+          "canonical_id": "pokeapi:species:478",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "雪妖女"
+            }
+          ],
+          "conflicts": []
+        },
+        "identity": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ability": {
+          "value": "诅咒之躯",
+          "canonical_id": "pokeapi:ability:130",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "诅咒之躯"
+            }
+          ],
+          "conflicts": []
+        },
+        "held_item": {
+          "value": "雪妖女进化石",
+          "canonical_id": "pokeapi:item:2240",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "雪妖女进化石"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_1": {
+          "value": "守住",
+          "canonical_id": "pokeapi:move:182",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "守住"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_2": {
+          "value": "求雨",
+          "canonical_id": "pokeapi:move:240",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "求雨"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_3": {
+          "value": "极光幕",
+          "canonical_id": "pokeapi:move:694",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "极光幕"
+            }
+          ],
+          "conflicts": []
+        },
+        "move_4": {
+          "value": "暴风雪",
+          "canonical_id": "pokeapi:move:59",
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "暴风雪"
+            }
+          ],
+          "conflicts": []
+        },
+        "hp": {
+          "value": 177,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "177"
+            }
+          ],
+          "conflicts": []
+        },
+        "attack": {
+          "value": 90,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "90"
+            }
+          ],
+          "conflicts": []
+        },
+        "defense": {
+          "value": 92,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "92"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_attack": {
+          "value": 85,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "85"
+            }
+          ],
+          "conflicts": []
+        },
+        "special_defense": {
+          "value": 90,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "90"
+            }
+          ],
+          "conflicts": []
+        },
+        "speed": {
+          "value": 178,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "178"
+            }
+          ],
+          "conflicts": []
+        },
+        "form": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "level": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "gender": {
+          "value": "female",
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 0,
+              "method": "visible_gender_icon"
+            }
+          ],
+          "conflicts": []
+        },
+        "nature": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "evs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "ivs": {
+          "value": null,
+          "canonical_id": null,
+          "status": "unknown",
+          "confidence": 0.0,
+          "observations": [],
+          "conflicts": []
+        },
+        "allocation_hp_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "32",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_defense_display": {
+          "value": 2,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "2",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_attack_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_special_defense_display": {
+          "value": 0,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "0",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        },
+        "allocation_speed_display": {
+          "value": 32,
+          "canonical_id": null,
+          "status": "manual_verified",
+          "confidence": 1.0,
+          "observations": [
+            {
+              "source_id": 1,
+              "method": "manual_cached_frame_transcription",
+              "raw_text": "32",
+              "semantics": "displayed_allocation_only; not interpreted as EVs"
+            }
+          ],
+          "conflicts": []
+        }
+      },
+      "missing_fields": [
+        "identity"
+      ],
+      "conflicting_fields": [],
+      "species_id": 478,
+      "pokemon_id": null,
+      "form_id": null,
+      "canonical_identity": null,
+      "identity_status": "species_only",
+      "names": {
+        "zh-hans": "雪妖女",
+        "en": "Froslass"
+      },
+      "species_reference": {
+        "base_stats": {
+          "hp": 70,
+          "at": 80,
+          "df": 70,
+          "sa": 80,
+          "sd": 70,
+          "sp": 110
+        },
+        "types": [
+          "Ice",
+          "Ghost"
+        ],
+        "provenance": {
+          "repository": "https://github.com/pmwl0128/Quark_Drive_Skills",
+          "commit": "8673c506b1ead3e66a436764e12fc066367ca283",
+          "commit_date": "2026-10-13T00:40:42+08:00",
+          "path": ".agents/skills/pokemon-champions-dex/data/champions_dex.sqlite",
+          "sha256": "35a08585f980f859dc721cf128762d1c62f3a34928bd6ed8db4fc459551b5413",
+          "file_commit": "f42039921e8838710c5e628dc81ba7c604343a24",
+          "file_commit_date": "2026-09-19T07:46:01+08:00"
+        },
+        "verification": "community_catalog_assertion",
+        "species_id": 478,
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "identity_status": "species_only"
+      }
+    }
+  ],
+  "complete": false,
+  "missing_fields": {
+    "own_team_1": [],
+    "own_team_2": [],
+    "own_team_3": [],
+    "own_team_4": [
+      "identity"
+    ],
+    "own_team_5": [],
+    "own_team_6": [
+      "identity"
+    ]
+  },
+  "conflicts": {},
+  "updated_at_utc": "2026-10-14T09:36:26+00:00",
+  "annotation_method": "Manual inspection of existing cached opening frames; canonical names normalized with existing KnowledgeBase. Nature arrows and allocation numbers do not establish a full nature/EV build."
+}

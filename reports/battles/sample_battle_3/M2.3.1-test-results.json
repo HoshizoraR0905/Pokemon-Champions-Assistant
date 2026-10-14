@@ -1,0 +1,39 @@
+{
+  "regression_run": {
+    "passed": 151,
+    "seconds": 165.82,
+    "suites": [
+      "hidden_state",
+      "knowledge_grounding",
+      "full_battle",
+      "battle_state",
+      "stateful_mechanics",
+      "state_timeline"
+    ]
+  },
+  "final_hidden_and_timeline": {
+    "passed": 50,
+    "seconds": 54.54
+  },
+  "final_non_media_hidden_unit_checks": {
+    "passed": 34,
+    "deselected_cached_replays": 2
+  },
+  "browser_open_exit_code": 0,
+  "diff_check": true,
+  "benchmarks": {
+    "conservative": {
+      "html_bytes": 1683956,
+      "startup_ms": 29.2,
+      "navigation_lazy_debug_ms": 56.42,
+      "states": 197
+    },
+    "reference": {
+      "html_bytes": 1690658,
+      "startup_ms": 29.21,
+      "navigation_lazy_debug_ms": 54.46,
+      "states": 197
+    }
+  },
+  "benchmark_limit": "Node minimal DOM, not browser layout timing"
+}

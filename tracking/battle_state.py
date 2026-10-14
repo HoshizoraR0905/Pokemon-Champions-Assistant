@@ -75,6 +75,27 @@ class MoveState:
     unrevealed_slots: Fact = field(default_factory=Fact)
     hit_observations: list[dict] = field(default_factory=list)
 
+MECHANIC_SCOPES = {'per_action', 'per_turn', 'per_entry', 'per_instance', 'per_side', 'global'}
+
+@dataclass
+class MechanicState:
+    mechanic_id: str
+    scope: str
+    current: dict[str, Fact] = field(default_factory=dict)
+    trigger_event_ids: list[str] = field(default_factory=list)
+    provenance: list[dict] = field(default_factory=list)
+    activation_conditions: list[str] = field(default_factory=list)
+    persistence_conditions: list[str] = field(default_factory=list)
+    reset_conditions: list[str] = field(default_factory=list)
+    expiration: Duration = field(default_factory=Duration)
+
+    def __post_init__(self):
+        if self.scope not in MECHANIC_SCOPES:
+            raise ValueError('Invalid mechanic scope')
+        if not self.mechanic_id:
+            raise ValueError('Empty mechanic identifier')
+
+
 @dataclass
 class PokemonState:
     pokemon_instance_id: str
@@ -93,6 +114,8 @@ class PokemonState:
     moves: MoveState = field(default_factory=MoveState)
     volatile: dict[str, Effect] = field(default_factory=dict)
     transformations: list[dict] = field(default_factory=list)
+    current_types: Fact = field(default_factory=Fact)
+    mechanics: dict[str, MechanicState] = field(default_factory=dict)
     # Reserved, never populated with invented configurations or probabilities.
     hidden_configuration: dict[str, Fact] = field(default_factory=lambda:{s:Fact() for s in
         ('held_item','ability','moveset','ev_allocation','nature','ivs','possible_transformation')})
@@ -100,6 +123,7 @@ class PokemonState:
 @dataclass
 class SideState:
     side_id: str
+    mechanics: dict[str, MechanicState] = field(default_factory=dict)
     trainer: dict = field(default_factory=dict)
     party_instance_ids: list[str] = field(default_factory=list)
     party_complete: Fact = field(default_factory=Fact)
@@ -116,6 +140,7 @@ class SideState:
 @dataclass
 class BattleState:
     battle_id: str
+    mechanics: dict[str, MechanicState] = field(default_factory=dict)
     turn: Fact = field(default_factory=Fact)
     phase: Fact = field(default_factory=Fact)
     weather: Effect = field(default_factory=Effect)
@@ -127,7 +152,12 @@ class BattleState:
     observations: list[dict] = field(default_factory=list)
     conflicts: list[dict] = field(default_factory=list)
 
-    def to_dict(self): return asdict(self)
+    knowledge: dict = field(default_factory=dict)
+
+    def to_dict(self):
+        result = asdict(self)
+        if not self.knowledge: result.pop("knowledge")
+        return result
 
 
 def fact(value, provenance, knowledge='observed'):

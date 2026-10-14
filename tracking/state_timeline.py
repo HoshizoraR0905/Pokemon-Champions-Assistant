@@ -38,6 +38,9 @@ def semantic_diff(before, after, path=()):
             knowledge_field = False
         gameplay_field = any(k in path for k in ('location', 'fainted', 'active', 'active_slots',
             'hp', 'major_status', 'turn', 'phase', 'kind', 'resources', 'hazards', 'stages'))
+        if 'mechanics' in path:
+            gameplay_field = path[-1] in {'success_count','activated','effect_active','speed_multiplier','trigger_latched','expired','active'}
+            knowledge_field = not gameplay_field
         category = 'gameplay' if gameplay_field and not knowledge_field else 'knowledge'
         if a['value'] == b['value'] or a['knowledge'] == 'conflicting' or b['knowledge'] == 'conflicting':
             category = 'knowledge'
@@ -48,7 +51,7 @@ def semantic_diff(before, after, path=()):
         result = []
         for key in sorted(b.keys() | a.keys()):
             if key in {'provenance', 'alternatives', 'pokemon_instance_id', 'side_id', 'battle_id',
-                       'party_instance_ids', 'fainted_instance_ids', 'vacant_slots', 'initiated_by', 'last_tick'}:
+                       'party_instance_ids', 'fainted_instance_ids', 'vacant_slots', 'initiated_by', 'last_tick', 'trigger_event_ids'}:
                 continue
             result.extend(semantic_diff(b.get(key, MISSING), a.get(key, MISSING), path + (key,)))
         return result
@@ -130,9 +133,58 @@ def build_timeline(history, initial, snapshots, final=None):
                       'Unordered events appear after ordered events in delivery order.']}
 
 
-def render_html(timeline):
+def render_html(timeline, *, artifact_root=None):
+    if artifact_root is not None: timeline = {**timeline, 'artifact_root': artifact_root}
     template = (Path(__file__).parent / 'templates/state_timeline.html').read_text()
     # Escaping prevents embedded text from closing the inert JSON script element.
-    data = json.dumps(timeline, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+    data = json.dumps(pack_timeline(timeline), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
     data = data.replace('&', '\\u0026').replace('<', '\\u003c').replace('>', '\\u003e')
     return template.replace('__TIMELINE_DATA__', data)
+
+
+def pack_timeline(timeline):
+    """Lossless structural interning: shared snapshots/evidence stored once.
+
+    References live only in the transport envelope, so original user data cannot
+    be confused with a reference. Browser reconstruction shares immutable nodes.
+    """
+    pool, indices = [], {}
+
+    def encode(value):
+        if isinstance(value, dict):
+            node = ['object', {k: encode(v) for k, v in sorted(value.items())}]
+        elif isinstance(value, list):
+            node = ['array', [encode(v) for v in value]]
+        elif isinstance(value, str) and len(value) > 80:
+            node = ['string', value]
+        else:
+            return ['literal', value]
+        key = json.dumps(node, ensure_ascii=False, separators=(',', ':'))
+        index = indices.get(key)
+        if index is None:
+            index = len(pool)
+            indices[key] = index
+            pool.append(node)
+        return ['ref', index]
+
+    root = encode(timeline)
+    return {'format': 'interned-timeline-v1', 'pool': pool, 'root': root}
+
+
+def unpack_timeline(payload):
+    """Decode transport data for lossless regression checks and other consumers."""
+    if payload.get('format') != 'interned-timeline-v1':
+        return payload
+    cache = {}
+
+    def decode(value):
+        tag, data = value
+        if tag == 'literal':
+            return data
+        if data not in cache:
+            kind, node = payload['pool'][data]
+            cache[data] = ({k: decode(v) for k, v in node.items()} if kind == 'object'
+                           else [decode(v) for v in node] if kind == 'array' else node)
+        return cache[data]
+
+    return decode(payload['root'])

@@ -119,6 +119,7 @@ def test_stable_event_id(parser):
 
 
 @pytest.mark.parametrize('scale',[.75,1.,1.5])
+@pytest.mark.local_artifacts('reports/M2.1-battle-log-evidence/log-full-374.png')
 def test_log_positive_geometry(scale):
     full=cv2.imread(str(ROOT/'reports/M2.1-battle-log-evidence/log-full-374.png'))
     full=cv2.resize(full,None,fx=scale,fy=scale)
@@ -126,6 +127,7 @@ def test_log_positive_geometry(scale):
     assert geometry is not None and len(geometry['separators'])==5
 
 
+@pytest.mark.local_artifacts('reports/M2-battle-log-evidence/log-374.png','reports/M2.1-battle-log-evidence/team-preview-28.png')
 def test_log_geometry_and_negative_fixture():
     image=cv2.imread(str(ROOT/'reports/M2-battle-log-evidence/log-374.png'))
     # Saved log crops intentionally do not carry the whole-screen geometry.
@@ -136,6 +138,7 @@ def test_log_geometry_and_negative_fixture():
     assert detect_log(preview) is None
 
 
+@pytest.mark.local_artifacts('reports/M2.1-battle-log-raw-ocr.json','reports/M2.1-battle-log-events.json')
 def test_saved_automatic_predictions_and_reference_evaluation():
     raw=json.loads((ROOT/'reports/M2.1-battle-log-raw-ocr.json').read_text())
     output=json.loads((ROOT/'reports/M2.1-battle-log-events.json').read_text())
@@ -174,6 +177,7 @@ def test_terrain_does_not_use_stale_ability(parser):
     assert events[2].attributes['terrain'] is None
 
 
+@pytest.mark.local_artifacts('reports/M2.1-battle-log-evidence/team-preview-28.png')
 def test_preview_names_are_observations():
     from recognition.trainers import recognize_preview_trainers
     from models import Observation

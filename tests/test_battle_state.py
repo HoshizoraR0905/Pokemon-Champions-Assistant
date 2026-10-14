@@ -11,7 +11,7 @@ from tracking.state_engine import ApplicationPolicy, StateEngine, hash_state
 from scripts.replay_m22 import run
 
 ROOT = Path(__file__).resolve().parents[1]
-EVENTS = ROOT / 'reports/M2.1-battle-log-events.json'
+EVENTS = ROOT / 'tests/fixtures/battles/sample_battle_2/reviewed_events.json'
 INITIAL = ROOT / 'tests/fixtures/m22_initial_context.json'
 
 
@@ -43,9 +43,6 @@ def synthetic(events, kind, attrs, *, side='self', species=1018, number=1):
 
 
 def test_cached_context_checksums_and_unknown_baselines(initial):
-    fixture = json.loads(INITIAL.read_text())
-    for source in fixture['annotations']['source_frames'].values():
-        assert hashlib.sha256((ROOT / source['image']).read_bytes()).hexdigest() == source['sha256']
     assert all(stage.value.knowledge == 'unknown' for p in initial.pokemon.values()
                for stage in p.stages.values())
     assert initial.weather.kind.value == 'snow'
@@ -171,7 +168,7 @@ def test_conservative_policy(initial, events, mode, reason):
     if mode == 'no_evidence': e['evidence'] = []
     engine = StateEngine(initial)
     assert engine.apply(e, sequence=1 if mode == 'no_evidence' else None).reason == reason
-    assert engine.state.to_dict() == initial.to_dict()
+    assert engine.state.to_dict() == engine.initial.to_dict()
 
 
 def test_ties_and_mixed_order_domains(initial, events):
@@ -184,7 +181,7 @@ def test_ties_and_mixed_order_domains(initial, events):
     engine = StateEngine(initial)
     engine.apply(events[0]); engine.apply(events[1], sequence=2)
     assert all(r.reason == 'incomparable_order_domains' for r in engine.history)
-    assert engine.state.to_dict() == initial.to_dict()
+    assert engine.state.to_dict() == engine.initial.to_dict()
 
 
 def test_hp_rejection_is_atomic_and_animation_not_endpoint(initial, events):
@@ -345,3 +342,10 @@ def test_candidate_disabled_and_fact_validation(initial, events):
         Fact(None, 'invented')
     assert Fact(0, 'observed').known and Fact(False, 'derived').known
     assert not Fact(1, 'conflicting', alternatives=[{'value': 2}]).known
+
+
+@pytest.mark.local_artifacts('reports/M2.2-context-evidence/party-266.png','reports/M2.2-context-evidence/active-267.5.png')
+def test_local_source_frame_checksums():
+    fixture = json.loads(INITIAL.read_text())
+    for source in fixture['annotations']['source_frames'].values():
+        assert hashlib.sha256((ROOT / source['image']).read_bytes()).hexdigest() == source['sha256']

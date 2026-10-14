@@ -83,7 +83,7 @@ for image in sorted({r['image'] for r in records}):
     path=ROOT/image
     result=recognizer.recognize(load_image(path))
     images[image]={'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),
-                   'screen':result.screen,'source':'supplied screenshot' if not image.startswith('m12_video_') else 'sample_battle.mp4',
+                   'screen':result.screen,'source':'supplied screenshot' if not image.startswith('m12_video_') else 'sample_battle_0.mp4',
                    'video_second':15 if image=='m12_video_stats.png' else 60 if image=='m12_video_preview.png' else None}
     for r in records:
         if r['image']==image:

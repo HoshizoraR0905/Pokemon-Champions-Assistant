@@ -124,6 +124,7 @@ def test_monitor_gap_is_explicit_even_when_less_than_old_gap_threshold():
 
 @pytest.mark.parametrize('phase,file', [('pokemon_selection','../reports/M1.4-evidence/m14_boundary_270.jpg'),
                                       ('move_target_selection','fixtures/m14_target_selection_380.png')])
+@pytest.mark.local_artifacts('reports/M1.4-evidence/m14_boundary_270.jpg')
 def test_extra_decision_rois_are_inside_reviewed_images(phase,file):
     path=Path(__file__).parent/file
     frame=load_image(path)

@@ -94,6 +94,7 @@ def test_manual_correction_requires_known_id_and_preserves_old_evidence():
 
 
 @pytest.mark.skipif(not model_path('paddle-v6').exists(),reason='PaddleOCR model not installed')
+@pytest.mark.local_artifacts('.cache/champions-icons/index.json')
 def test_supplied_pages_field_by_field(tmp_path):
     truth=json.loads((FIXTURES/'m12_ground_truth.json').read_text())
     recognizer=Recognizer(create_ocr('paddle-v6'),icons=True)

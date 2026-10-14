@@ -1,0 +1,35 @@
+{
+  "format": "interned-timeline-v1",
+  "lossless_round_trip": true,
+  "profiles": {
+    "enriched": {
+      "before_bytes": 186692505,
+      "after_bytes": 1470677,
+      "states": 197,
+      "node_startup_ms": 34.26,
+      "node_navigation_and_lazy_debug_ms": 49.28
+    },
+    "provisional": {
+      "before_bytes": 241910506,
+      "after_bytes": 1527978,
+      "states": 197,
+      "node_startup_ms": 26.62,
+      "node_navigation_and_lazy_debug_ms": 45.13
+    }
+  },
+  "benchmark_environment": "Node minimal DOM; not browser layout timing",
+  "original_battle_snapshots_modified": false,
+  "regression": {
+    "timeline_and_knowledge": {
+      "passed": 43
+    },
+    "full_battle_and_stateful_mechanics": {
+      "passed": 53
+    },
+    "final_timeline_including_lazy_panel_test": {
+      "passed": 15
+    },
+    "unique_tests_passed": 97,
+    "diff_check": true
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "battle_id": "sample_battle_0",
+  "legacy_recording_key": "sample_battle.mp4",
+  "annotations": {
+    "reviewed_points": [
+      {
+        "second": 0,
+        "phase": "unknown",
+        "note": "pre-battle presentation"
+      },
+      {
+        "second": 20,
+        "phase": "unknown",
+        "note": "pre-battle transition"
+      },
+      {
+        "second": 40,
+        "phase": "team_preview"
+      },
+      {
+        "second": 60,
+        "phase": "team_preview"
+      },
+      {
+        "second": 80,
+        "phase": "team_preview"
+      },
+      {
+        "second": 100,
+        "phase": "team_preview"
+      },
+      {
+        "second": 120,
+        "phase": "unknown",
+        "note": "VS transition"
+      },
+      {
+        "second": 140,
+        "phase": "battle_screen",
+        "note": "battle HUD with action controls"
+      },
+      {
+        "second": 300,
+        "phase": "switch_selection",
+        "note": "own-party list and Pokémon detail panel"
+      },
+      {
+        "second": 380,
+        "phase": "move_target_selection",
+        "note": "four-card move target selection",
+        "evidence_files": [
+          "tests/fixtures/m14_target_selection_380.png",
+          "reports/M1.4-cached-target-review.json"
+        ],
+        "review_provenance": "manual_cached_image_review_on_2026-10-14; existing phase label confirmed, not changed"
+      },
+      {
+        "second": 520,
+        "phase": "move_target_selection",
+        "note": "four-card move target selection"
+      },
+      {
+        "second": 660,
+        "phase": "move_target_selection",
+        "note": "four-card move target selection",
+        "evidence_files": [
+          "tests/fixtures/m14_target_selection_660.png",
+          "reports/M1.4-cached-target-review.json"
+        ],
+        "review_provenance": "manual_cached_image_review_on_2026-10-14; existing phase label confirmed, not changed"
+      },
+      {
+        "second": 720,
+        "phase": "unknown",
+        "note": "recording ends in device overlay"
+      }
+    ],
+    "reviewed_intervals": [
+      {
+        "start": 40,
+        "end": 100,
+        "phase": "team_preview"
+      }
+    ]
+  },
+  "source_fixture": "tests/fixtures/m14_phase_ground_truth.json"
+}

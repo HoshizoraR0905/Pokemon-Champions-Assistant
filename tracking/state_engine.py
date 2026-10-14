@@ -8,6 +8,9 @@ from battle_events.schema import BattleEvent, Evidence
 from .battle_state import (BattleState, PokemonState, Fact, Effect, Duration, fact,
                            STATS, WEATHER, TERRAIN, MAJOR_STATUS, from_dict)
 
+from .mechanics import MechanicRegistry
+from .mechanic_rules import MechanicRules
+
 class Deferred(Exception): pass
 class Contradiction(Exception): pass
 
@@ -79,10 +82,14 @@ def ordering(event,sequence=None):
 
 
 class StateEngine:
-    def __init__(self,initial,policy=None):
+    def __init__(self,initial,policy=None,*,mechanic_rules=None,mechanic_registry=None):
         self.initial=deepcopy(initial);self.state=deepcopy(initial)
         self.policy=policy or ApplicationPolicy();self.history=[]
+        self.mechanic_rules=mechanic_rules or MechanicRules()
+        self.mechanic_registry=mechanic_registry or MechanicRegistry()
         self._validate_initial()
+        self.mechanic_registry.initialize(self.initial)
+        self.state=deepcopy(self.initial)
 
     def _validate_initial(self):
         seen=set()
@@ -131,7 +138,7 @@ class StateEngine:
                                  'retracted':record.retracted,'reason':reason})
         record.retracted=True;self.replay()
 
-    def replay(self):
+    def replay(self, *, snapshot_callback=None):
         self.state=deepcopy(self.initial)
         active=[r for r in self.history if not r.retracted and r.ordering]
         domains={r.ordering['domain'] for r in active}
@@ -156,6 +163,7 @@ class StateEngine:
                 if len(turns)==1 and event.event_type!='turn_boundary':
                     self._set_turn(trial,next(iter(turns)),event,tick=False)
                 recorded=self._transition(trial,event,record)
+                self.mechanic_registry.after_event(trial,self.state,event,record,self.mechanic_rules)
                 self._available(trial,event)
                 self.state=trial
                 record.application_status='recorded_observation' if recorded else ('applied_candidate' if event.status=='candidate' else 'applied_confirmed')
@@ -165,16 +173,26 @@ class StateEngine:
                 record.application_status='rejected';record.reason=str(exc);record.bindings={}
                 self.state.conflicts.append({'event_id':event.event_id,'reason':str(exc),'proposed_event':event.to_dict(),'state_unchanged':True})
             record.state_hash=hash_state(self.state)
+            if snapshot_callback is not None:
+                snapshot_callback(record,self.state)
         return self.state
 
+    def decision_state(self,hidden_engine=None):
+        from .decision_state import decision_state
+        return decision_state(self.state,self.mechanic_rules,hidden_engine=hidden_engine)
+
     def to_dict(self):
-        return {'schema_version':1,'policy':asdict(self.policy),'initial_state':self.initial.to_dict(),
+        return {'schema_version':2,'policy':asdict(self.policy),'mechanic_rules':self.mechanic_rules.to_dict(),'mechanic_handlers':[h.mechanic_id for h in self.mechanic_registry.handlers],'initial_state':self.initial.to_dict(),
                 'history':[asdict(r) for r in self.history],'state':self.state.to_dict(),'state_hash':hash_state(self.state)}
 
     @classmethod
-    def from_dict(cls,value):
+    def from_dict(cls,value,*,mechanic_registry=None):
         config=deepcopy(value['policy']);config['allowed_uncertainties']=tuple(config['allowed_uncertainties'])
-        engine=cls(from_dict(value['initial_state']),ApplicationPolicy(**config))
+        engine=cls(from_dict(value['initial_state']),ApplicationPolicy(**config),
+                   mechanic_rules=MechanicRules(**value.get('mechanic_rules',{})),mechanic_registry=mechanic_registry)
+        expected=value.get('mechanic_handlers')
+        if expected is not None and expected != [h.mechanic_id for h in engine.mechanic_registry.handlers]:
+            raise ValueError('Serialized mechanic handlers require a matching registry')
         engine.history=[EventRecord(**deepcopy(r)) for r in value['history']]
         engine.replay();return engine
 
@@ -231,6 +249,12 @@ class StateEngine:
 
     def _transition(self,state,e,record):
         kind=e.event_type;a=e.attributes
+        if state.knowledge.get('move_grounding') and kind=='turn_boundary':
+            state.knowledge['association_boundary']=len(state.knowledge.get('causal_actions',[]))
+        if state.knowledge.get('move_grounding') and kind=='move_effect' and a.get('effect_of'):
+            actions=[x for x in state.knowledge.get('causal_actions',[]) if x['event_id']==a['effect_of']]
+            if len(actions)==1 and a.get('outcome') in {'failed','blocked','uncertain'}:
+                actions[0]['outcome']=a['outcome']
         if kind in {'effectiveness','move_effect','critical_hit','multi_hit'}:
             observation={'event_id':e.event_id,'event_type':kind,'attributes':deepcopy(a),'evidence':evidence_link(e)}
             state.observations.append(observation)
@@ -249,10 +273,24 @@ class StateEngine:
             return False
         if kind in {'weather_change','terrain_change','trick_room_change','side_condition_change'}:
             self._field_event(state,e);return False
+        if kind in {'mechanic_observation','mechanic_reset'} and a.get('scope') in {'global','per_side'}:
+            return False
+        if kind=='party_observation':
+            team=self._side(state,e.side)
+            identifiers=a.get('selected_instance_ids')
+            if not isinstance(identifiers,list) or len(set(identifiers))!=len(identifiers) or set(identifiers)!=set(team.party_instance_ids):
+                raise Contradiction('selected_party_observation_mismatch')
+            if a.get('complete') is not True:raise Deferred('selected_party_completeness_unresolved')
+            self._assign(team,'party_complete',True,e)
+            return False
         if kind=='hp_change' and (a.get('intermediate') is True or a.get('observation_kind')=='animation'):
             state.observations.append({'event_id':e.event_id,'kind':'intermediate_hp_sample','attributes':deepcopy(a),'evidence':evidence_link(e)});return True
         p=self._resolve(state,e,record,sending=kind=='send_out',allow_identity_change=kind=='transformation')
         team=state.sides[p.side_id]
+        from .knowledge_grounding import ground_event
+        if ground_event(self,state,p,e,record): return False
+        if kind in {'protection_attempt','protection_outcome','mechanic_observation','mechanic_reset','type_change','ability_attempt'}:
+            return False
         if kind=='send_out':
             if p.fainted.known and p.fainted.value:raise Contradiction('send_out_of_fainted_instance')
             if p.pokemon_instance_id in team.active_slots.values():raise Contradiction('already_active_instance')
@@ -274,8 +312,25 @@ class StateEngine:
             self._assign(p,'location',{'kind':'fainted' if kind=='faint' else 'bench','slot':None},e)
             if kind=='faint':
                 self._assign(p,'fainted',True,e)
+                # A prior positive HP display is no longer current. Preserve
+                # the observation ledger; don't invent an unseen endpoint.
+                for name in ('current','displayed_percent'):
+                    observed=getattr(p.hp,name)
+                    if observed.known and observed.value>0:
+                        setattr(p.hp,name,Fact(provenance=[evidence_link(e)]))
+                        p.hp.percent_interval=Fact(provenance=[evidence_link(e)])
                 if p.pokemon_instance_id not in team.fainted_instance_ids:team.fainted_instance_ids.append(p.pokemon_instance_id)
-            # Do not guess stat-reset/volatile persistence mechanics on withdrawal.
+            # Reset rules are unverified in the default profile. Do not carry
+            # modified stages as current facts through an uncertain withdrawal.
+            if kind=='switch_out' and a.get('invalidate_unverified_persistence') is True:
+                for stage in p.stages.values():
+                    if stage.changes:
+                        stage.value=Fact(provenance=[evidence_link(e)])
+                        stage.interval=Fact(provenance=[evidence_link(e)])
+                for effect in p.volatile.values():
+                    if effect.active.known and effect.active.value:
+                        effect.active=Fact(provenance=[evidence_link(e)])
+                        effect.duration=Duration()
         elif kind=='hp_change':self._hp(p,e)
         elif kind=='move_execution':
             ref=e.canonical_references.get('move')
@@ -287,6 +342,17 @@ class StateEngine:
             p.moves.executed.append(execution)
             if a.get('move_slot') is not None:p.moves.known_slots[str(a['move_slot'])]=fact(ref,evidence_link(e))
             if a.get('pp') is not None:p.moves.pp[ref['canonical_id']]=fact(a['pp'],evidence_link(e))
+        elif kind=='move_observation':
+            ref=e.canonical_references.get('move')
+            if not ref:raise Deferred('move_identity_unknown')
+            slot=a.get('move_slot')
+            if not isinstance(slot,int) or isinstance(slot,bool) or not 1<=slot<=4:raise Contradiction('invalid_move_slot')
+            p.moves.known_slots[str(slot)]=fact(ref,evidence_link(e))
+            if 'pp' in a:
+                value=a['pp']
+                if not isinstance(value,dict) or set(value)!={'current','maximum'} or any(not isinstance(v,int) or isinstance(v,bool) for v in value.values()) or not 0<=value['current']<=value['maximum']:
+                    raise Contradiction('invalid_observed_pp')
+                p.moves.pp[ref['canonical_id']]=fact(value,evidence_link(e))
         elif kind=='stat_change':self._stats(p,e)
         elif kind=='status_change':self._status(p,e)
         elif kind=='ability_activation':
@@ -432,12 +498,17 @@ class StateEngine:
         before=deepcopy(p.species.value) if p.species.known else None
         self._assign(p,'species',identity,e);self._assign(p,'current_variant',identity['canonical_identity'],e)
         p.transformations.append({'mechanic':mechanic,'before':before,'after':deepcopy(identity),'evidence':evidence_link(e)})
+        p.current_types=Fact(provenance=[evidence_link(e)])
         # Original identity, instance ID, item history, HP and location survive.
         team=state.sides[p.side_id]
         if mechanic=='mega_evolution':
             if team.resources['mega_evolution'].known and team.resources['mega_evolution'].value is True:
                 raise Contradiction('mega_resource_already_observed_used')
             team.resources['mega_evolution']=fact(True,evidence_link(e))
+            # A newly observed form cannot establish that the prior ability
+            # persists. Keep its revelation history, await the new observation.
+            p.ability.current=Fact(provenance=[evidence_link(e)])
+            p.ability.suppressed=Fact(provenance=[evidence_link(e)])
         # Transformation is not evidence for a hidden stone or alternate choice.
 
     def _field_event(self,state,e):
@@ -474,14 +545,17 @@ class StateEngine:
             self._assign(effect,'kind','none' if effect is state.weather or effect is state.terrain else name,event)
             effect.duration=Duration()
             self._assign(effect.duration,'remaining',0,event)
-        elif change in {'start','change','replace','suppress','resume'}:
+        elif change in {'start','change','replace','suppress','resume','observe'}:
+            if change=='observe' and (effect.kind.known and effect.kind.value!=name or effect.active.known and not effect.active.value):
+                raise Contradiction('observed_effect_conflicts_with_current_state')
             if name=='unknown':
                 effect.active=Fact(provenance=[evidence_link(event)]);effect.kind=Fact(provenance=[evidence_link(event)])
             else:
                 self._assign(effect,'active',name not in {'none','disabled'},event)
                 self._assign(effect,'kind',name,event)
-            self._assign(effect,'initiated_by',{'event_id':event.event_id,'turn':state.turn.value if state.turn.known else None},event)
-            effect.duration=Duration()
+            if change!='observe':
+                self._assign(effect,'initiated_by',{'event_id':event.event_id,'turn':state.turn.value if state.turn.known else None},event)
+                effect.duration=Duration()
             duration=a.get('duration',{})
             if not isinstance(duration,dict):raise Contradiction('invalid_duration')
             for key,value in duration.items():

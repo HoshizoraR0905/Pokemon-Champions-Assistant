@@ -1,0 +1,8 @@
+{
+  "hp_checkpoints": 28,
+  "identity_checkpoints": 28,
+  "all_prefix_locations_faints_hp_preserved": true,
+  "deterministic_replay": true,
+  "events": 196,
+  "conflicts": []
+}

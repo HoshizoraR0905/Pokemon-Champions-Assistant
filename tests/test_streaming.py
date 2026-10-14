@@ -140,6 +140,7 @@ def test_recognition_failure_preserves_order_and_uncertainty():
     p.close()
 
 
+@pytest.mark.local_artifacts('reports/M1.4-evidence/m14_boundary_270.jpg','reports/M1.4-evidence/m14_boundary_282.jpg')
 def test_real_m14_workflow_matches_online_without_future_frames():
     backend=Backend();p=StreamingPipeline(backend,asynchronous=False,icons=False)
     root=FIXTURES.parent.parent
@@ -330,6 +331,7 @@ def test_unresolved_required_icons_do_not_become_ready(status):
     p.close()
 
 
+@pytest.mark.local_artifacts('reports/m15-message-first-paced.jsonl')
 def test_existing_replay_traces_preserve_reviewed_messages_in_capture_order():
     root = FIXTURES.parent.parent
     truth = json.loads((FIXTURES/'m15_message_ground_truth.json').read_text())['messages']

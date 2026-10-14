@@ -1,0 +1,593 @@
+{
+  "schema_version": 1,
+  "aliases": [
+    {
+      "legacy": ".cache/m223-auto-assembly.json",
+      "canonical": ".cache/battles/sample_battle_3/m223-auto-assembly.json"
+    },
+    {
+      "legacy": ".cache/m21-ocr-run.log",
+      "canonical": ".cache/battles/sample_battle_2/m21-ocr-run.log"
+    },
+    {
+      "legacy": ".cache/m223-build-validated.log",
+      "canonical": ".cache/battles/sample_battle_3/m223-build-validated.log"
+    },
+    {
+      "legacy": ".cache/m223-ocr-log-291",
+      "canonical": ".cache/battles/sample_battle_3/m223-ocr-log-291"
+    },
+    {
+      "legacy": ".cache/m223-resolution-ocr.log",
+      "canonical": ".cache/battles/sample_battle_3/m223-resolution-ocr.log"
+    },
+    {
+      "legacy": ".cache/m15-resolution-178-200",
+      "canonical": ".cache/battles/sample_battle_1/m15-resolution-178-200"
+    },
+    {
+      "legacy": ".cache/m21-trainer-survey",
+      "canonical": ".cache/battles/sample_battle_2/m21-trainer-survey"
+    },
+    {
+      "legacy": ".cache/m223-resolution-648",
+      "canonical": ".cache/battles/sample_battle_3/m223-resolution-648"
+    },
+    {
+      "legacy": ".cache/m223-log-611",
+      "canonical": ".cache/battles/sample_battle_3/m223-log-611"
+    },
+    {
+      "legacy": ".cache/m223-ocr-log-459",
+      "canonical": ".cache/battles/sample_battle_3/m223-ocr-log-459"
+    },
+    {
+      "legacy": ".cache/m223-build.log",
+      "canonical": ".cache/battles/sample_battle_3/m223-build.log"
+    },
+    {
+      "legacy": ".cache/m21-final-evaluation.log",
+      "canonical": ".cache/battles/sample_battle_2/m21-final-evaluation.log"
+    },
+    {
+      "legacy": ".cache/m223-focused-reuse.log",
+      "canonical": ".cache/battles/sample_battle_3/m223-focused-reuse.log"
+    },
+    {
+      "legacy": ".cache/m223-build-final.log",
+      "canonical": ".cache/battles/sample_battle_3/m223-build-final.log"
+    },
+    {
+      "legacy": ".cache/m21-final-run.log",
+      "canonical": ".cache/battles/sample_battle_2/m21-final-run.log"
+    },
+    {
+      "legacy": ".cache/m2-log-survey-contact.jpg",
+      "canonical": ".cache/battles/sample_battle_2/m2-log-survey-contact.jpg"
+    },
+    {
+      "legacy": ".cache/m223-log-180",
+      "canonical": ".cache/battles/sample_battle_3/m223-log-180"
+    },
+    {
+      "legacy": ".cache/m223-ocr-resolution-82",
+      "canonical": ".cache/battles/sample_battle_3/m223-ocr-resolution-82"
+    },
+    {
+      "legacy": ".cache/m223-log-511",
+      "canonical": ".cache/battles/sample_battle_3/m223-log-511"
+    },
+    {
+      "legacy": ".cache/m223-ocr-logs.log",
+      "canonical": ".cache/battles/sample_battle_3/m223-ocr-logs.log"
+    },
+    {
+      "legacy": ".cache/m223-ocr-log-367",
+      "canonical": ".cache/battles/sample_battle_3/m223-ocr-log-367"
+    },
+    {
+      "legacy": ".cache/m223-snapshots",
+      "canonical": ".cache/battles/sample_battle_3/m223-snapshots"
+    },
+    {
+      "legacy": ".cache/m223-survey",
+      "canonical": ".cache/battles/sample_battle_3/m223-survey"
+    },
+    {
+      "legacy": ".cache/m223-ocr-resolution-648",
+      "canonical": ".cache/battles/sample_battle_3/m223-ocr-resolution-648"
+    },
+    {
+      "legacy": ".cache/m223-ocr-log-180",
+      "canonical": ".cache/battles/sample_battle_3/m223-ocr-log-180"
+    },
+    {
+      "legacy": ".cache/m223-log-367",
+      "canonical": ".cache/battles/sample_battle_3/m223-log-367"
+    },
+    {
+      "legacy": ".cache/m223-resolution-82",
+      "canonical": ".cache/battles/sample_battle_3/m223-resolution-82"
+    },
+    {
+      "legacy": ".cache/m21-evaluation.log",
+      "canonical": ".cache/battles/sample_battle_2/m21-evaluation.log"
+    },
+    {
+      "legacy": ".cache/m223-build-reconciled.log",
+      "canonical": ".cache/battles/sample_battle_3/m223-build-reconciled.log"
+    },
+    {
+      "legacy": ".cache/m223-ocr-log-511",
+      "canonical": ".cache/battles/sample_battle_3/m223-ocr-log-511"
+    },
+    {
+      "legacy": ".cache/m2-log-survey-360-400",
+      "canonical": ".cache/battles/sample_battle_2/m2-log-survey-360-400"
+    },
+    {
+      "legacy": ".cache/m223-ocr-survey",
+      "canonical": ".cache/battles/sample_battle_3/m223-ocr-survey"
+    },
+    {
+      "legacy": ".cache/m223-log-291",
+      "canonical": ".cache/battles/sample_battle_3/m223-log-291"
+    },
+    {
+      "legacy": ".cache/m2-alignment-266-360",
+      "canonical": ".cache/battles/sample_battle_2/m2-alignment-266-360"
+    },
+    {
+      "legacy": ".cache/m223-log-459",
+      "canonical": ".cache/battles/sample_battle_3/m223-log-459"
+    },
+    {
+      "legacy": ".cache/m223-ocr-log-611",
+      "canonical": ".cache/battles/sample_battle_3/m223-ocr-log-611"
+    },
+    {
+      "legacy": ".cache/m223-snapshot-ocr.log",
+      "canonical": ".cache/battles/sample_battle_3/m223-snapshot-ocr.log"
+    },
+    {
+      "legacy": ".cache/m223-ocr-survey.log",
+      "canonical": ".cache/battles/sample_battle_3/m223-ocr-survey.log"
+    },
+    {
+      "legacy": ".cache/m14-phases/sample_battle",
+      "canonical": ".cache/battles/sample_battle_0/m14-phases"
+    },
+    {
+      "legacy": ".cache/m14-phases/sample_battle_1",
+      "canonical": ".cache/battles/sample_battle_1/m14-phases"
+    },
+    {
+      "legacy": "reports/M2.3.1-test-results.json",
+      "canonical": "reports/battles/sample_battle_3/M2.3.1-test-results.json"
+    },
+    {
+      "legacy": "reports/m15roi-resolution-5fps.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15roi-resolution-5fps.jsonl"
+    },
+    {
+      "legacy": "reports/M2.2.3-full-battle-validation.md",
+      "canonical": "reports/battles/sample_battle_3/M2.2.3-full-battle-validation.md"
+    },
+    {
+      "legacy": "reports/m15-workers-paced.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15-workers-paced.jsonl"
+    },
+    {
+      "legacy": "reports/M2.2.3-state-snapshots.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.3-state-snapshots.json"
+    },
+    {
+      "legacy": "reports/m15opt-C-final-budget.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15opt-C-final-budget.jsonl"
+    },
+    {
+      "legacy": "reports/M2.2.4-enriched-validation.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.4-enriched-validation.json"
+    },
+    {
+      "legacy": "reports/M2-battle-log-evidence",
+      "canonical": "reports/battles/sample_battle_2/M2-battle-log-evidence"
+    },
+    {
+      "legacy": "reports/M2.2.1-state-timeline.json",
+      "canonical": "reports/battles/sample_battle_2/M2.2.1-state-timeline.json"
+    },
+    {
+      "legacy": "reports/M1.4-final-sample-battle-timeline.json",
+      "canonical": "reports/battles/sample_battle_0/M1.4-final-sample-battle-timeline.json"
+    },
+    {
+      "legacy": "reports/m15live-cached-camera.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15live-cached-camera.jsonl"
+    },
+    {
+      "legacy": "reports/M2.2.4-timeline-optimization.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.4-timeline-optimization.json"
+    },
+    {
+      "legacy": "reports/M2.2.4-enriched-battle-state.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.4-enriched-battle-state.json"
+    },
+    {
+      "legacy": "reports/m15opt-C-budget.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15opt-C-budget.jsonl"
+    },
+    {
+      "legacy": "reports/m15-workers-burst.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15-workers-burst.jsonl"
+    },
+    {
+      "legacy": "reports/M2.3.1-hidden-state-tracking.md",
+      "canonical": "reports/battles/sample_battle_3/M2.3.1-hidden-state-tracking.md"
+    },
+    {
+      "legacy": "reports/M2.2.3-full-battle-timeline.html",
+      "canonical": "reports/battles/sample_battle_3/M2.2.3-full-battle-timeline.html"
+    },
+    {
+      "legacy": "reports/M1.4-cached-target-review.json",
+      "canonical": "reports/battles/sample_battle_0/M1.4-cached-target-review.json"
+    },
+    {
+      "legacy": "reports/M1.5-performance.json",
+      "canonical": "reports/battles/sample_battle_1/M1.5-performance.json"
+    },
+    {
+      "legacy": "reports/M2.2.3-reconciled-events.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.3-reconciled-events.json"
+    },
+    {
+      "legacy": "reports/M1.5-adaptive-final-v2.json",
+      "canonical": "reports/battles/sample_battle_1/M1.5-adaptive-final-v2.json"
+    },
+    {
+      "legacy": "reports/M2.2.2-stateful-mechanics.md",
+      "canonical": "reports/battles/sample_battle_2/M2.2.2-stateful-mechanics.md"
+    },
+    {
+      "legacy": "reports/M2.2.4-provisional-battle-state.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.4-provisional-battle-state.json"
+    },
+    {
+      "legacy": "reports/M1.4-final-sample-battle-1-timeline.json",
+      "canonical": "reports/battles/sample_battle_1/M1.4-final-sample-battle-1-timeline.json"
+    },
+    {
+      "legacy": "reports/m15opt-A-baseline.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15opt-A-baseline.jsonl"
+    },
+    {
+      "legacy": "reports/m15opt-B-fixed2.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15opt-B-fixed2.jsonl"
+    },
+    {
+      "legacy": "reports/M2.2.3-battle-state.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.3-battle-state.json"
+    },
+    {
+      "legacy": "reports/M2.3.1-hidden-state.json",
+      "canonical": "reports/battles/sample_battle_3/M2.3.1-hidden-state.json"
+    },
+    {
+      "legacy": "reports/M2.3.1-provisional-hidden-state.json",
+      "canonical": "reports/battles/sample_battle_3/M2.3.1-provisional-hidden-state.json"
+    },
+    {
+      "legacy": "reports/M2.2.2-state-snapshots.json",
+      "canonical": "reports/battles/sample_battle_2/M2.2.2-state-snapshots.json"
+    },
+    {
+      "legacy": "reports/M2-battle-log-alignment.md",
+      "canonical": "reports/battles/sample_battle_2/M2-battle-log-alignment.md"
+    },
+    {
+      "legacy": "reports/M2.2-state-snapshots.json",
+      "canonical": "reports/battles/sample_battle_2/M2.2-state-snapshots.json"
+    },
+    {
+      "legacy": "reports/m15opt-E-coreml-budget.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15opt-E-coreml-budget.jsonl"
+    },
+    {
+      "legacy": "reports/M1.5-validation.json",
+      "canonical": "reports/battles/sample_battle_1/M1.5-validation.json"
+    },
+    {
+      "legacy": "reports/m15roi-resolution-3fps.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15roi-resolution-3fps.jsonl"
+    },
+    {
+      "legacy": "reports/M1.5-adaptive-final.json",
+      "canonical": "reports/battles/sample_battle_1/M1.5-adaptive-final.json"
+    },
+    {
+      "legacy": "reports/M2.2-context-evidence",
+      "canonical": "reports/battles/sample_battle_2/M2.2-context-evidence"
+    },
+    {
+      "legacy": "reports/M2.2.3-cross-source-validation.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.3-cross-source-validation.json"
+    },
+    {
+      "legacy": "reports/M2.3.1-validation.json",
+      "canonical": "reports/battles/sample_battle_3/M2.3.1-validation.json"
+    },
+    {
+      "legacy": "reports/M1.5-live-adapter.json",
+      "canonical": "reports/battles/sample_battle_1/M1.5-live-adapter.json"
+    },
+    {
+      "legacy": "reports/M2.2.2-battle-state.json",
+      "canonical": "reports/battles/sample_battle_2/M2.2.2-battle-state.json"
+    },
+    {
+      "legacy": "reports/m15-message-first-paced.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15-message-first-paced.jsonl"
+    },
+    {
+      "legacy": "reports/M2.1-battle-log-evidence",
+      "canonical": "reports/battles/sample_battle_2/M2.1-battle-log-evidence"
+    },
+    {
+      "legacy": "reports/M2.2.4-enriched-timeline.html",
+      "canonical": "reports/battles/sample_battle_3/M2.2.4-enriched-timeline.html"
+    },
+    {
+      "legacy": "reports/m15-serial-burst.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15-serial-burst.jsonl"
+    },
+    {
+      "legacy": "reports/M2.1-battle-log-events.json",
+      "canonical": "reports/battles/sample_battle_2/M2.1-battle-log-events.json"
+    },
+    {
+      "legacy": "reports/M2.2.4-knowledge-grounded-state.md",
+      "canonical": "reports/battles/sample_battle_3/M2.2.4-knowledge-grounded-state.md"
+    },
+    {
+      "legacy": "reports/M1.5-adaptive-performance.json",
+      "canonical": "reports/battles/sample_battle_1/M1.5-adaptive-performance.json"
+    },
+    {
+      "legacy": "reports/m15roi-party-workflow.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15roi-party-workflow.jsonl"
+    },
+    {
+      "legacy": "reports/M2.2.2-decision-state.json",
+      "canonical": "reports/battles/sample_battle_2/M2.2.2-decision-state.json"
+    },
+    {
+      "legacy": "reports/M2.2-battle-state.md",
+      "canonical": "reports/battles/sample_battle_2/M2.2-battle-state.md"
+    },
+    {
+      "legacy": "reports/M2.3.1-hidden-state-timeline.html",
+      "canonical": "reports/battles/sample_battle_3/M2.3.1-hidden-state-timeline.html"
+    },
+    {
+      "legacy": "reports/M2.2.4-provisional-validation.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.4-provisional-validation.json"
+    },
+    {
+      "legacy": "reports/m15live-cached-camera-v2.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15live-cached-camera-v2.jsonl"
+    },
+    {
+      "legacy": "reports/m15roi-target-window.jsonl",
+      "canonical": "reports/battles/sample_battle_0/m15roi-target-window.jsonl"
+    },
+    {
+      "legacy": "reports/m15opt-C-final-budget-v2.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15opt-C-final-budget-v2.jsonl"
+    },
+    {
+      "legacy": "reports/M2.2.3-video-survey.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.3-video-survey.json"
+    },
+    {
+      "legacy": "reports/M1.4-sample-battle-1-timeline.json",
+      "canonical": "reports/battles/sample_battle_1/M1.4-sample-battle-1-timeline.json"
+    },
+    {
+      "legacy": "reports/M2.2-battle-state.txt",
+      "canonical": "reports/battles/sample_battle_2/M2.2-battle-state.txt"
+    },
+    {
+      "legacy": "reports/m15opt-D-coreml-existing.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15opt-D-coreml-existing.jsonl"
+    },
+    {
+      "legacy": "reports/M1.5-adaptive-validation.json",
+      "canonical": "reports/battles/sample_battle_1/M1.5-adaptive-validation.json"
+    },
+    {
+      "legacy": "reports/M2.2.4-provisional-timeline.html",
+      "canonical": "reports/battles/sample_battle_3/M2.2.4-provisional-timeline.html"
+    },
+    {
+      "legacy": "reports/M2.2.3-ocr-provenance.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.3-ocr-provenance.json"
+    },
+    {
+      "legacy": "reports/M2.2.1-state-timeline.md",
+      "canonical": "reports/battles/sample_battle_2/M2.2.1-state-timeline.md"
+    },
+    {
+      "legacy": "reports/M1.5-message-first-paced.json",
+      "canonical": "reports/battles/sample_battle_1/M1.5-message-first-paced.json"
+    },
+    {
+      "legacy": "reports/M2.1-battle-log-evaluation.json",
+      "canonical": "reports/battles/sample_battle_2/M2.1-battle-log-evaluation.json"
+    },
+    {
+      "legacy": "reports/M2-battle-log-alignment.json",
+      "canonical": "reports/battles/sample_battle_2/M2-battle-log-alignment.json"
+    },
+    {
+      "legacy": "reports/M2.2.1-state-timeline.html",
+      "canonical": "reports/battles/sample_battle_2/M2.2.1-state-timeline.html"
+    },
+    {
+      "legacy": "reports/M2.1-battle-log-raw-ocr.json",
+      "canonical": "reports/battles/sample_battle_2/M2.1-battle-log-raw-ocr.json"
+    },
+    {
+      "legacy": "reports/M1.5-adaptive-budget.json",
+      "canonical": "reports/battles/sample_battle_1/M1.5-adaptive-budget.json"
+    },
+    {
+      "legacy": "reports/m15opt-C-budget-integrated.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15opt-C-budget-integrated.jsonl"
+    },
+    {
+      "legacy": "reports/M2.2-battle-state.json",
+      "canonical": "reports/battles/sample_battle_2/M2.2-battle-state.json"
+    },
+    {
+      "legacy": "reports/m15opt-C-integrated.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15opt-C-integrated.jsonl"
+    },
+    {
+      "legacy": "reports/m15roi-move-window.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15roi-move-window.jsonl"
+    },
+    {
+      "legacy": "reports/M1.4-sample-battle-timeline.json",
+      "canonical": "reports/battles/sample_battle_0/M1.4-sample-battle-timeline.json"
+    },
+    {
+      "legacy": "reports/M2.2.4-provisional-snapshots.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.4-provisional-snapshots.json"
+    },
+    {
+      "legacy": "reports/M1.5-coreml-performance.json",
+      "canonical": "reports/battles/sample_battle_1/M1.5-coreml-performance.json"
+    },
+    {
+      "legacy": "reports/M2.3.1-provisional-hidden-state-timeline.html",
+      "canonical": "reports/battles/sample_battle_3/M2.3.1-provisional-hidden-state-timeline.html"
+    },
+    {
+      "legacy": "reports/M2.1-battle-log-ocr.md",
+      "canonical": "reports/battles/sample_battle_2/M2.1-battle-log-ocr.md"
+    },
+    {
+      "legacy": "reports/M2.2.4-enriched-snapshots.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.4-enriched-snapshots.json"
+    },
+    {
+      "legacy": "reports/M2.2.3-evidence",
+      "canonical": "reports/battles/sample_battle_3/M2.2.3-evidence"
+    },
+    {
+      "legacy": "reports/M2.2.3-validation-metrics.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.3-validation-metrics.json"
+    },
+    {
+      "legacy": "reports/M2.3.1-provisional-validation.json",
+      "canonical": "reports/battles/sample_battle_3/M2.3.1-provisional-validation.json"
+    },
+    {
+      "legacy": "reports/M1.5-live-adapter-v2.json",
+      "canonical": "reports/battles/sample_battle_1/M1.5-live-adapter-v2.json"
+    },
+    {
+      "legacy": "reports/M2.2.2-state-timeline.html",
+      "canonical": "reports/battles/sample_battle_2/M2.2.2-state-timeline.html"
+    },
+    {
+      "legacy": "reports/m15opt-C-scheduling.jsonl",
+      "canonical": "reports/battles/sample_battle_1/m15opt-C-scheduling.jsonl"
+    },
+    {
+      "legacy": "reports/M2.2.3-automatic-log-events.json",
+      "canonical": "reports/battles/sample_battle_3/M2.2.3-automatic-log-events.json"
+    },
+    {
+      "legacy": "tests/fixtures/m22_initial_context.json",
+      "canonical": "reports/battles/sample_battle_2/inputs/m22_initial_context.json"
+    },
+    {
+      "legacy": "tests/fixtures/m223_initial_context.json",
+      "canonical": "reports/battles/sample_battle_3/inputs/m223_initial_context.json"
+    },
+    {
+      "legacy": "tests/fixtures/m223_annotations.json",
+      "canonical": "reports/battles/sample_battle_3/inputs/m223_annotations.json"
+    },
+    {
+      "legacy": "data/teams/sample_battle_3_opening.json",
+      "canonical": "reports/battles/sample_battle_3/inputs/opening_team.json"
+    },
+    {
+      "legacy": ".cache/m15-live-adapter-v2.log",
+      "canonical": ".cache/battles/sample_battle_1/m15-live-adapter-v2.log"
+    },
+    {
+      "legacy": ".cache/m15-adaptive-benchmark.log",
+      "canonical": ".cache/battles/sample_battle_1/m15-adaptive-benchmark.log"
+    },
+    {
+      "legacy": ".cache/m15-adaptive-final.log",
+      "canonical": ".cache/battles/sample_battle_1/m15-adaptive-final.log"
+    },
+    {
+      "legacy": ".cache/m15-coreml-streaming.log",
+      "canonical": ".cache/battles/sample_battle_1/m15-coreml-streaming.log"
+    },
+    {
+      "legacy": ".cache/m15-adaptive-final-v2.log",
+      "canonical": ".cache/battles/sample_battle_1/m15-adaptive-final-v2.log"
+    },
+    {
+      "legacy": ".cache/m15-live-adapter.log",
+      "canonical": ".cache/battles/sample_battle_1/m15-live-adapter.log"
+    },
+    {
+      "legacy": ".cache/m15-adaptive-budget.log",
+      "canonical": ".cache/battles/sample_battle_1/m15-adaptive-budget.log"
+    },
+    {
+      "legacy": "tests/fixtures/m21_battle_log_ground_truth.json",
+      "canonical": "reports/battles/sample_battle_2/inputs/m21_battle_log_ground_truth.json"
+    },
+    {
+      "legacy": "reports/M1.4-evidence",
+      "canonical": "reports/battles/sample_battle_1/M1.4-evidence"
+    },
+    {
+      "legacy": "reports/M1.5-roi-evidence/targets.png",
+      "canonical": "reports/battles/sample_battle_0/M1.5-roi-evidence/targets.png"
+    },
+    {
+      "legacy": "reports/M1.5-roi-evidence/moves.png",
+      "canonical": "reports/battles/sample_battle_1/M1.5-roi-evidence/moves.png"
+    },
+    {
+      "legacy": "reports/M1.5-roi-evidence/party.png",
+      "canonical": "reports/battles/sample_battle_1/M1.5-roi-evidence/party.png"
+    },
+    {
+      "legacy": "reports/M1.5-roi-evidence/replacement.png",
+      "canonical": "reports/battles/sample_battle_1/M1.5-roi-evidence/replacement.png"
+    },
+    {
+      "legacy": "tests/fixtures/m14_selection_context.json",
+      "canonical": "reports/battles/sample_battle_1/inputs/m14_selection_context.json"
+    },
+    {
+      "legacy": "reports/archive/M1.4-final-sample-battle-timeline-before-banner-review.json",
+      "canonical": "reports/battles/sample_battle_0/archive/M1.4-final-sample-battle-timeline-before-banner-review.json"
+    },
+    {
+      "legacy": "reports/archive/M1.4-final-sample-battle-1-timeline-before-banner-review.json",
+      "canonical": "reports/battles/sample_battle_1/archive/M1.4-final-sample-battle-1-timeline-before-banner-review.json"
+    }
+  ]
+}

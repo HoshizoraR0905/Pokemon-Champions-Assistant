@@ -13,6 +13,8 @@ class BattleContext:
     pending_send_side: str = 'unknown'
     previous_move: dict | None = None
     previous_subject: dict | None = None
+    # Explicit display-name bindings from independently observed Pokémon icons.
+    display_aliases: dict = field(default_factory=dict)
 
 class EventParser:
     def __init__(self, knowledge=None): self.kb = knowledge or KnowledgeBase()
@@ -46,7 +48,12 @@ class EventParser:
             c=deepcopy(c)  # Low-confidence candidates cannot seed later attribution.
         raw=entry['raw_text'];text=re.sub(r'\s+','',raw)
         subject=None;target=None;refs={};attrs={};unc=[];typ='unknown';basis=[]
-        mentions=[m for m in self.species_mentions(text) if m]
+        identity_text=text
+        for alias,binding in sorted(c.display_aliases.items(),key=lambda kv:-len(kv[0])):
+            if alias and alias in identity_text and binding.get('evidence'):
+                identity_text=identity_text.replace(alias,binding['identity']['name'])
+                attrs.setdefault('display_alias_evidence',[]).append(binding)
+        mentions=[m for m in self.species_mentions(identity_text) if m]
         subject=mentions[0] if mentions else None
         hint=entry.get('side_hint','unknown')
         color=c.color_sides.get(entry.get('color'),'unknown')
@@ -75,9 +82,34 @@ class EventParser:
             c.previous_move={'actor':subject,'side':side,'move':refs['move']}
         elif re.search(r'HP\d+%?[→➡➜>-]+\d+%?',text):
             typ='hp_change';m=re.search(r'HP(\d+)(%?)[→➡➜>-]+(\d+)(%?)',text)
-            attrs={'before':int(m[1]),'after':int(m[3]),'unit':'displayed_percent' if m[2] or m[4] else 'absolute'}
+            attrs.update(before=int(m[1]),after=int(m[3]),unit='displayed_percent' if m[2] or m[4] else 'absolute')
             if c.previous_move:attrs['associated_move']=c.previous_move['move']
         elif '倒下了' in text:typ='faint'
+        elif '超级进化成了' in text:
+            typ='transformation'
+            name=text.split('超级进化成了',1)[1].rstrip('！!。.')
+            attrs.update(mechanic='mega_evolution',identity=self.identity(name,'species'))
+            if not attrs['identity']:unc.append('transformation_identity_unknown')
+        elif '摆出了防守的架势' in text:
+            typ='move_effect';attrs['effect']='protection_established'
+        elif '在攻击中守护住了自己' in text:
+            typ='move_effect';attrs['effect']='protected_from_attack'
+        elif '没有起到效果' in text:
+            typ='move_effect';attrs['effect']='failed_action'
+        elif '体力回复了' in text:
+            typ='move_effect';attrs['effect']='healing_announcement'
+        elif '反作用力造成的伤害' in text:
+            typ='move_effect';attrs['effect']='recoil_announcement'
+        elif '极光幕使我方' in text:
+            typ='side_condition_change';side='self';attrs.update(condition='aurora_veil',change='start')
+        elif '我方的极光幕消失' in text:
+            typ='side_condition_change';side='self';attrs.update(condition='aurora_veil',change='end')
+        elif '脚下青草如茵' in text:
+            typ='terrain_change';side='field';attrs.update(terrain='grassy',change='start')
+        elif '脚下的青草消失' in text:
+            typ='terrain_change';side='field';attrs.update(terrain='grassy',change='end')
+        elif '开始下雪' in text:
+            typ='weather_change';side='field';attrs.update(weather='snow',change='start')
         elif '吸收了电力' in text:typ='move_effect';attrs['effect']='absorbed_electricity'
         elif '效果不好' in text or '效果绝佳' in text or '没有效果' in text:
             typ='effectiveness';target=subject;subject=None
@@ -87,10 +119,10 @@ class EventParser:
             typ='multi_hit';attrs['hits']=int(re.search(r'([0-9]+)次',text)[1])
         elif any(s in text for s in ('提高了','降低了','大幅提高','大幅降低')):
             typ='stat_change';stats={'特攻':'special_attack','特防':'special_defense','攻击':'attack','防御':'defense','速度':'speed','命中率':'accuracy','闪避率':'evasion'}
-            attrs={'stats':[v for k,v in stats.items() if k in text], 'direction':'down' if '降低' in text else 'up','stages':None}
+            attrs.update(stats=[v for k,v in stats.items() if k in text], direction='down' if '降低' in text else 'up',stages=None)
         elif any(s in text for s in ('中毒了','麻痹了','睡着了','灼伤了','冰冻了','解除了')):
             typ='status_change';statuses={'中毒':'poison','麻痹':'paralysis','睡着':'sleep','灼伤':'burn','冰冻':'freeze'}
-            attrs={'status':next((v for k,v in statuses.items() if k in text),None),'change':'remove' if '解除了' in text else 'apply'}
+            attrs.update(status=next((v for k,v in statuses.items() if k in text),None),change='remove' if '解除了' in text else 'apply')
         elif '开始下雨' in text:typ='weather_change';side='field';attrs={'weather':'rain','change':'start'}
         elif '奇妙的感觉' in text:
             typ='terrain_change';side='field';attrs={'terrain':None,'change':'start'}
@@ -121,7 +153,7 @@ class EventParser:
         elif typ!='terrain_change':c.previous_subject=None
         if typ not in {'weather_change','terrain_change'} and side=='unknown':unc.append('side_unknown')
         if typ=='unknown':unc.append('unrecognized_message')
-        if subject is None and typ in {'switch_out','send_out','move_execution','hp_change','ability_activation','item_activation','stat_change','faint'}:unc.append('actor_unresolved')
+        if subject is None and typ in {'switch_out','send_out','move_execution','hp_change','ability_activation','item_activation','stat_change','faint','transformation'}:unc.append('actor_unresolved')
         # A move announcement alone does not name its target. Later HP messages
         # are separate evidence and do not silently rewrite an earlier candidate.
         if typ=='move_execution':unc.append('target_not_in_entry')

@@ -1,0 +1,2965 @@
+{
+  "schema_version": 1,
+  "method": "manual checked transcription and scroll ordering from cached screenshots; NOT independent ground truth",
+  "turns": {
+    "1": [
+      {
+        "entry_id": "m223:checked-log:1:1",
+        "turn": 1,
+        "log_order": 1,
+        "raw_text": "willbnguyn 派出了大狃拉\n和GreatGeneral!",
+        "checked_text": "willbnguyn派出了大狃拉和GreatGeneral！",
+        "ocr_confidence": 0.9758709677419355,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#184.248333",
+        "observation_ids": [
+          "log-row:bbb736c8851871d0c29c3eae"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-180/000017.jpg",
+        "timestamp": 184.248333,
+        "box": [
+          508,
+          49,
+          1035,
+          117
+        ],
+        "text_similarity": 0.9666666666666667,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:2",
+        "turn": 1,
+        "log_order": 2,
+        "raw_text": "上吧！雪妖女！\n慌慌张张的铝钢桥龙！",
+        "checked_text": "上吧！雪妖女！慌慌张张的铝钢桥龙！",
+        "ocr_confidence": 0.9985882352941176,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#185.315",
+        "observation_ids": [
+          "log-row:d19e94b0b50b09cf9059234f"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-180/000021.jpg",
+        "timestamp": 185.315,
+        "box": [
+          508,
+          141,
+          1035,
+          221
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:3",
+        "turn": 1,
+        "log_order": 3,
+        "raw_text": "雪妖女的雪妖女进化石和\nHoshi的全一环起了反应！",
+        "checked_text": "雪妖女的雪妖女进化石和Hoshi的全一环起了反应！",
+        "ocr_confidence": 0.9899199999999999,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#183.981667",
+        "observation_ids": [
+          "log-row:ad8b973768a7dd320a0a87d4"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-180/000016.jpg",
+        "timestamp": 183.981667,
+        "box": [
+          508,
+          105,
+          1035,
+          186
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:4",
+        "turn": 1,
+        "log_order": 4,
+        "raw_text": "雪妖女超级进化成了\n超级雪妖女！",
+        "checked_text": "雪妖女超级进化成了超级雪妖女！",
+        "ocr_confidence": 0.9915999999999999,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#183.448333",
+        "observation_ids": [
+          "log-row:49943697d0dc4a03557eb70a"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-180/000014.jpg",
+        "timestamp": 183.448333,
+        "box": [
+          508,
+          78,
+          1035,
+          159
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:5",
+        "turn": 1,
+        "log_order": 5,
+        "raw_text": "雪妖女的\n降雪",
+        "checked_text": "雪妖女的降雪",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#183.18",
+        "observation_ids": [
+          "log-row:5d912e2f117dbb8f9e895123"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-180/000013.jpg",
+        "timestamp": 183.18,
+        "box": [
+          508,
+          67,
+          1035,
+          148
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:6",
+        "turn": 1,
+        "log_order": 6,
+        "raw_text": "开始下雪了！",
+        "checked_text": "开始下雪了！",
+        "ocr_confidence": 0.959,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#183.18",
+        "observation_ids": [
+          "log-row:b6d01482b1300eb54b844818"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-180/000013.jpg",
+        "timestamp": 183.18,
+        "box": [
+          508,
+          148,
+          1035,
+          229
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:7",
+        "turn": 1,
+        "log_order": 7,
+        "raw_text": "铝钢桥龙使出了\n守住！",
+        "checked_text": "铝钢桥龙使出了守住！",
+        "ocr_confidence": 0.9640000000000001,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#183.18",
+        "observation_ids": [
+          "log-row:0ec65adc5d409e7cc911954f"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-180/000013.jpg",
+        "timestamp": 183.18,
+        "box": [
+          508,
+          229,
+          1035,
+          309
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:8",
+        "turn": 1,
+        "log_order": 8,
+        "raw_text": "铝钢桥龙\n摆出了防守的架势！",
+        "checked_text": "铝钢桥龙摆出了防守的架势！",
+        "ocr_confidence": 0.9958461538461538,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#182.68",
+        "observation_ids": [
+          "log-row:e4ddf2c08b028fc763be3d55"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-180/000011.jpg",
+        "timestamp": 182.68,
+        "box": [
+          508,
+          129,
+          1035,
+          209
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:9",
+        "turn": 1,
+        "log_order": 9,
+        "raw_text": "雪妖女使出了\n极光幕！",
+        "checked_text": "雪妖女使出了极光幕！",
+        "ocr_confidence": 0.9852000000000001,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#182.413333",
+        "observation_ids": [
+          "log-row:b5ff4e438369b142198e542e"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-180/000010.jpg",
+        "timestamp": 182.413333,
+        "box": [
+          508,
+          111,
+          1035,
+          192
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:10",
+        "turn": 1,
+        "log_order": 10,
+        "raw_text": "极光幕使我方的\n物理和特殊抗性提高了！",
+        "checked_text": "极光幕使我方的物理和特殊抗性提高了！",
+        "ocr_confidence": 0.9963333333333332,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#182.93",
+        "observation_ids": [
+          "log-row:ba6eefe64b14ecad5bc7a770"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-180/000012.jpg",
+        "timestamp": 182.93,
+        "box": [
+          508,
+          363,
+          1035,
+          444
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:11",
+        "turn": 1,
+        "log_order": 11,
+        "raw_text": "对手的大狃拉使出了\n近身战！",
+        "checked_text": "对手的大狃拉使出了近身战！",
+        "ocr_confidence": 0.9627692307692306,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#182.68",
+        "observation_ids": [
+          "log-row:ed2de5e1dec3b60811b0a2f0"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-180/000011.jpg",
+        "timestamp": 182.68,
+        "box": [
+          508,
+          370,
+          1035,
+          451
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:12",
+        "turn": 1,
+        "log_order": 12,
+        "raw_text": "铝钢桥龙\n在攻击中守护住了自己!",
+        "checked_text": "铝钢桥龙在攻击中守护住了自己！",
+        "ocr_confidence": 0.9765333333333334,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#181.613333",
+        "observation_ids": [
+          "log-row:1be963b1f8d67b7baf7ad8a0"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-180/000007.jpg",
+        "timestamp": 181.613333,
+        "box": [
+          508,
+          280,
+          1035,
+          360
+        ],
+        "text_similarity": 0.9333333333333333,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:13",
+        "turn": 1,
+        "log_order": 13,
+        "raw_text": "对手的GreatGeneral使出了\n剑舞!",
+        "checked_text": "对手的GreatGeneral使出了剑舞！",
+        "ocr_confidence": 0.9871428571428572,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#182.413333",
+        "observation_ids": [
+          "log-row:732939bba4d10274eb741edc"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-180/000010.jpg",
+        "timestamp": 182.413333,
+        "box": [
+          508,
+          433,
+          1035,
+          513
+        ],
+        "text_similarity": 0.9523809523809523,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:1:14",
+        "turn": 1,
+        "log_order": 14,
+        "raw_text": "对手的GreatGeneral的\n攻击大幅提高了！",
+        "checked_text": "对手的GreatGeneral的攻击大幅提高了！",
+        "ocr_confidence": 0.992,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#181.613333",
+        "observation_ids": [
+          "log-row:e4a12e6a6fa5913041d01f3d"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-180/000007.jpg",
+        "timestamp": 181.613333,
+        "box": [
+          508,
+          441,
+          1035,
+          521
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      }
+    ],
+    "2": [
+      {
+        "entry_id": "m223:checked-log:2:1",
+        "turn": 2,
+        "log_order": 1,
+        "raw_text": "对手的GreatGeneral使出了\n突袭!",
+        "checked_text": "对手的GreatGeneral使出了突袭！",
+        "ocr_confidence": 0.9958571428571429,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#300.216667",
+        "observation_ids": [
+          "log-row:54e00c12fa1ae7e26a6f55f7"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-291/000036.jpg",
+        "timestamp": 300.216667,
+        "box": [
+          508,
+          49,
+          1035,
+          140
+        ],
+        "text_similarity": 0.9523809523809523,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:2",
+        "turn": 2,
+        "log_order": 2,
+        "raw_text": "但是，没有起到效果！！",
+        "checked_text": "但是，没有起到效果！！",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#299.683333",
+        "observation_ids": [
+          "log-row:8419a4b5dad62d32d345ad3d"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000034.jpg",
+        "timestamp": 299.683333,
+        "box": [
+          508,
+          72,
+          1035,
+          153
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:3",
+        "turn": 2,
+        "log_order": 3,
+        "raw_text": "雪妖女使出了\n求雨！",
+        "checked_text": "雪妖女使出了求雨！",
+        "ocr_confidence": 0.9716666666666668,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#300.983333",
+        "observation_ids": [
+          "log-row:2330b830a09db08b1d5cfa3e"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-291/000039.jpg",
+        "timestamp": 300.983333,
+        "box": [
+          508,
+          221,
+          1035,
+          301
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:4",
+        "turn": 2,
+        "log_order": 4,
+        "raw_text": "开始下雨了！",
+        "checked_text": "开始下雨了！",
+        "ocr_confidence": 0.993,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#299.416667",
+        "observation_ids": [
+          "log-row:7ce71708db23d595fcfbeded"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000033.jpg",
+        "timestamp": 299.416667,
+        "box": [
+          508,
+          49,
+          1035,
+          138
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:5",
+        "turn": 2,
+        "log_order": 5,
+        "raw_text": "对手的大狃拉使出了\n近身战！",
+        "checked_text": "对手的大狃拉使出了近身战！",
+        "ocr_confidence": 0.9520000000000001,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#299.683333",
+        "observation_ids": [
+          "log-row:dccb9c425a2f24ca4ce4bb17"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-291/000034.jpg",
+        "timestamp": 299.683333,
+        "box": [
+          508,
+          314,
+          1035,
+          395
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:6",
+        "turn": 2,
+        "log_order": 6,
+        "raw_text": "铝钢桥龙\nHP 197 → 84",
+        "checked_text": "铝钢桥龙 HP 197 → 84",
+        "ocr_confidence": 0.9978,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#299.416667",
+        "observation_ids": [
+          "log-row:8146561a64dcbc62138ebe9d"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-291/000033.jpg",
+        "timestamp": 299.416667,
+        "box": [
+          508,
+          219,
+          1035,
+          299
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:7",
+        "turn": 2,
+        "log_order": 7,
+        "raw_text": "对铝钢桥龙\n效果绝佳！",
+        "checked_text": "对铝钢桥龙效果绝佳！",
+        "ocr_confidence": 0.9715,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#299.15",
+        "observation_ids": [
+          "log-row:da6c86f2eaad34ea9ab4f70c"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000032.jpg",
+        "timestamp": 299.15,
+        "box": [
+          508,
+          192,
+          1035,
+          272
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:8",
+        "turn": 2,
+        "log_order": 8,
+        "raw_text": "对手的大狃拉的\n防御、特防降低了！",
+        "checked_text": "对手的大狃拉的防御、特防降低了！",
+        "ocr_confidence": 0.9771875,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#298.616667",
+        "observation_ids": [
+          "log-row:26c9b4d297809e69b967f9c7"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000030.jpg",
+        "timestamp": 298.616667,
+        "box": [
+          508,
+          106,
+          1035,
+          187
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:9",
+        "turn": 2,
+        "log_order": 9,
+        "raw_text": "铝钢桥龙的\n持久力",
+        "checked_text": "铝钢桥龙的持久力",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#298.35",
+        "observation_ids": [
+          "log-row:e105cd55f198217bae7a354d"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-291/000029.jpg",
+        "timestamp": 298.35,
+        "box": [
+          508,
+          101,
+          1035,
+          181
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:10",
+        "turn": 2,
+        "log_order": 10,
+        "raw_text": "铝钢桥龙的\n防御提高了！",
+        "checked_text": "铝钢桥龙的防御提高了！",
+        "ocr_confidence": 0.9705454545454546,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#298.35",
+        "observation_ids": [
+          "log-row:c76e3f3f1c2c256c691b5970"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000029.jpg",
+        "timestamp": 298.35,
+        "box": [
+          508,
+          181,
+          1035,
+          262
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:11",
+        "turn": 2,
+        "log_order": 11,
+        "raw_text": "大狃拉的\n白色香草",
+        "checked_text": "大狃拉的白色香草",
+        "ocr_confidence": 0.9555,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#298.35",
+        "observation_ids": [
+          "log-row:6871c859455685f914e07892"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-291/000029.jpg",
+        "timestamp": 298.35,
+        "box": [
+          508,
+          262,
+          1035,
+          343
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:12",
+        "turn": 2,
+        "log_order": 12,
+        "raw_text": "对手的大狃拉用白色香草\n复原了能力！",
+        "checked_text": "对手的大狃拉用白色香草复原了能力！",
+        "ocr_confidence": 0.9489411764705881,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#297.833333",
+        "observation_ids": [
+          "log-row:e64641a57325ef27c0305d39"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000027.jpg",
+        "timestamp": 297.833333,
+        "box": [
+          508,
+          90,
+          1035,
+          171
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:13",
+        "turn": 2,
+        "log_order": 13,
+        "raw_text": "铝钢桥龙使出了\n电光束！",
+        "checked_text": "铝钢桥龙使出了电光束！",
+        "ocr_confidence": 0.9647272727272728,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#297.833333",
+        "observation_ids": [
+          "log-row:c7468158ebc48914923ed0c1"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-291/000027.jpg",
+        "timestamp": 297.833333,
+        "box": [
+          508,
+          171,
+          1035,
+          251
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:14",
+        "turn": 2,
+        "log_order": 14,
+        "raw_text": "铝钢桥龙\n吸收了电力！",
+        "checked_text": "铝钢桥龙吸收了电力！",
+        "ocr_confidence": 0.994,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#298.1",
+        "observation_ids": [
+          "log-row:82168fb0c9d2ef0fd1aa9a82"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000028.jpg",
+        "timestamp": 298.1,
+        "box": [
+          508,
+          391,
+          1035,
+          472
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:15",
+        "turn": 2,
+        "log_order": 15,
+        "raw_text": "铝钢桥龙的\n特攻提高了！",
+        "checked_text": "铝钢桥龙的特攻提高了！",
+        "ocr_confidence": 0.9765454545454546,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#297.833333",
+        "observation_ids": [
+          "log-row:8986d012603f21e6441ec07a"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000027.jpg",
+        "timestamp": 297.833333,
+        "box": [
+          508,
+          332,
+          1035,
+          412
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:16",
+        "turn": 2,
+        "log_order": 16,
+        "raw_text": "GreatGeneral\nHP 100% → 42%",
+        "checked_text": "GreatGeneral HP 100% → 42%",
+        "ocr_confidence": 0.99896,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#297.033333",
+        "observation_ids": [
+          "log-row:1083470206ee6ac346604a10"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-291/000024.jpg",
+        "timestamp": 297.033333,
+        "box": [
+          508,
+          280,
+          1035,
+          360
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:17",
+        "turn": 2,
+        "log_order": 17,
+        "raw_text": "铝钢桥龙的\n吃剩的东西",
+        "checked_text": "铝钢桥龙的吃剩的东西",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#297.033333",
+        "observation_ids": [
+          "log-row:6ce6dc766f41337d76ff20dd"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-291/000024.jpg",
+        "timestamp": 297.033333,
+        "box": [
+          508,
+          360,
+          1035,
+          441
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:2:18",
+        "turn": 2,
+        "log_order": 18,
+        "raw_text": "铝钢桥龙\nHP 84 → 96",
+        "checked_text": "铝钢桥龙 HP 84 → 96",
+        "ocr_confidence": 0.9978571428571429,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#297.033333",
+        "observation_ids": [
+          "log-row:325b52d2fc0c0fda7eae89b8"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-291/000024.jpg",
+        "timestamp": 297.033333,
+        "box": [
+          508,
+          441,
+          1035,
+          521
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      }
+    ],
+    "3": [
+      {
+        "entry_id": "m223:checked-log:3:1",
+        "turn": 3,
+        "log_order": 1,
+        "raw_text": "雪妖女，\n回来!",
+        "checked_text": "雪妖女，回来！",
+        "ocr_confidence": 0.9588571428571429,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#295.7",
+        "observation_ids": [
+          "log-row:25c222019b7fa56256c8780e"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000019.jpg",
+        "timestamp": 295.7,
+        "box": [
+          508,
+          49,
+          1035,
+          145
+        ],
+        "text_similarity": 0.8571428571428571,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:2",
+        "turn": 3,
+        "log_order": 2,
+        "raw_text": "上吧！轰擂金刚猩！",
+        "checked_text": "上吧！轰擂金刚猩！",
+        "ocr_confidence": 0.9979999999999999,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#296.233333",
+        "observation_ids": [
+          "log-row:5f19d9b982f54df4c461da27"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000021.jpg",
+        "timestamp": 296.233333,
+        "box": [
+          508,
+          140,
+          1035,
+          221
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:3",
+        "turn": 3,
+        "log_order": 3,
+        "raw_text": "轰擂金刚猩的\n青草制造者",
+        "checked_text": "轰擂金刚猩的青草制造者",
+        "ocr_confidence": 0.9994545454545455,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#294.933333",
+        "observation_ids": [
+          "log-row:ebcce997150a859c3235a0bf"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-291/000016.jpg",
+        "timestamp": 294.933333,
+        "box": [
+          508,
+          49,
+          1035,
+          128
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:4",
+        "turn": 3,
+        "log_order": 4,
+        "raw_text": "脚下青草如茵！",
+        "checked_text": "脚下青草如茵！",
+        "ocr_confidence": 0.997,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#295.183333",
+        "observation_ids": [
+          "log-row:3039910dfe92b3495d5626ac"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000017.jpg",
+        "timestamp": 295.183333,
+        "box": [
+          508,
+          203,
+          1035,
+          283
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:5",
+        "turn": 3,
+        "log_order": 5,
+        "raw_text": "铝钢桥龙使出了\n守住！",
+        "checked_text": "铝钢桥龙使出了守住！",
+        "ocr_confidence": 0.958,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#295.183333",
+        "observation_ids": [
+          "log-row:bf9679f26d1bc764ab96bba2"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-291/000017.jpg",
+        "timestamp": 295.183333,
+        "box": [
+          508,
+          283,
+          1035,
+          363
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:6",
+        "turn": 3,
+        "log_order": 6,
+        "raw_text": "铝钢桥龙\n摆出了防守的架势！",
+        "checked_text": "铝钢桥龙摆出了防守的架势！",
+        "ocr_confidence": 0.9958461538461538,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#294.666667",
+        "observation_ids": [
+          "log-row:0175058ea2a02b05a81567c7"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000015.jpg",
+        "timestamp": 294.666667,
+        "box": [
+          508,
+          161,
+          1035,
+          241
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:7",
+        "turn": 3,
+        "log_order": 7,
+        "raw_text": "对手的GreatGeneral使出了\n突袭!",
+        "checked_text": "对手的GreatGeneral使出了突袭！",
+        "ocr_confidence": 0.9958571428571429,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#294.933333",
+        "observation_ids": [
+          "log-row:9e6b5f025673c65031b3bf4a"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-291/000016.jpg",
+        "timestamp": 294.933333,
+        "box": [
+          508,
+          369,
+          1035,
+          450
+        ],
+        "text_similarity": 0.9523809523809523,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:8",
+        "turn": 3,
+        "log_order": 8,
+        "raw_text": "但是，没有起到效果！！",
+        "checked_text": "但是，没有起到效果！！",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#293.9",
+        "observation_ids": [
+          "log-row:3fdb16a04069d7b30de5bea3"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000012.jpg",
+        "timestamp": 293.9,
+        "box": [
+          508,
+          49,
+          1035,
+          121
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:9",
+        "turn": 3,
+        "log_order": 9,
+        "raw_text": "对手的大狃拉使出了\n近身战！",
+        "checked_text": "对手的大狃拉使出了近身战！",
+        "ocr_confidence": 0.9693076923076922,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#293.9",
+        "observation_ids": [
+          "log-row:abb1bc412fe1efc370ae41cb"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-291/000012.jpg",
+        "timestamp": 293.9,
+        "box": [
+          508,
+          121,
+          1035,
+          202
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:10",
+        "turn": 3,
+        "log_order": 10,
+        "raw_text": "铝钢桥龙\n在攻击中守护住了自己！",
+        "checked_text": "铝钢桥龙在攻击中守护住了自己！",
+        "ocr_confidence": 0.9882666666666666,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#293.633333",
+        "observation_ids": [
+          "log-row:45f4ddf68453e71e8a458095"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000011.jpg",
+        "timestamp": 293.633333,
+        "box": [
+          508,
+          69,
+          1035,
+          150
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:11",
+        "turn": 3,
+        "log_order": 11,
+        "raw_text": "铝钢桥龙的\n体力回复了！",
+        "checked_text": "铝钢桥龙的体力回复了！",
+        "ocr_confidence": 0.9787272727272728,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#292.066667",
+        "observation_ids": [
+          "log-row:9a885c910742b22a5d8b463b"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000005.jpg",
+        "timestamp": 292.066667,
+        "box": [
+          508,
+          49,
+          1035,
+          119
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:12",
+        "turn": 3,
+        "log_order": 12,
+        "raw_text": "铝钢桥龙\nHP 96 → 108",
+        "checked_text": "铝钢桥龙 HP 96 → 108",
+        "ocr_confidence": 0.9882666666666666,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#293.9",
+        "observation_ids": [
+          "log-row:79446a8f2f8a4fb906badc43"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-291/000012.jpg",
+        "timestamp": 293.9,
+        "box": [
+          508,
+          363,
+          1035,
+          443
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:13",
+        "turn": 3,
+        "log_order": 13,
+        "raw_text": "对手的GreatGeneral的\n体力回复了！",
+        "checked_text": "对手的GreatGeneral的体力回复了！",
+        "ocr_confidence": 0.988,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#292.066667",
+        "observation_ids": [
+          "log-row:0860c80cc12880bf6f09bf92"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-291/000005.jpg",
+        "timestamp": 292.066667,
+        "box": [
+          508,
+          199,
+          1035,
+          280
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:14",
+        "turn": 3,
+        "log_order": 14,
+        "raw_text": "GreatGeneral\nHP 42% → 48%",
+        "checked_text": "GreatGeneral HP 42% → 48%",
+        "ocr_confidence": 0.997,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#292.333333",
+        "observation_ids": [
+          "log-row:393ca8f5b8cf8dce7c8dbc7b"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-291/000006.jpg",
+        "timestamp": 292.333333,
+        "box": [
+          508,
+          280,
+          1035,
+          360
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:15",
+        "turn": 3,
+        "log_order": 15,
+        "raw_text": "铝钢桥龙的\n吃剩的东西",
+        "checked_text": "铝钢桥龙的吃剩的东西",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#292.066667",
+        "observation_ids": [
+          "log-row:11e4cc2b642ccdda2870efed"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-291/000005.jpg",
+        "timestamp": 292.066667,
+        "box": [
+          508,
+          360,
+          1035,
+          441
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:3:16",
+        "turn": 3,
+        "log_order": 16,
+        "raw_text": "铝钢桥龙\nHP 108 → 120",
+        "checked_text": "铝钢桥龙 HP 108 → 120",
+        "ocr_confidence": 0.994,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#292.333333",
+        "observation_ids": [
+          "log-row:e45bcedc4908ed80850b4844"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-291/000006.jpg",
+        "timestamp": 292.333333,
+        "box": [
+          508,
+          441,
+          1035,
+          521
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      }
+    ],
+    "4": [
+      {
+        "entry_id": "m223:checked-log:4:1",
+        "turn": 4,
+        "log_order": 1,
+        "raw_text": "willbnguyn 换下了\nGreatGeneral!",
+        "checked_text": "willbnguyn换下了GreatGeneral！",
+        "ocr_confidence": 0.9922222222222222,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#369.911667",
+        "observation_ids": [
+          "log-row:a84241c874634faaccca08bf"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-367/000012.jpg",
+        "timestamp": 369.911667,
+        "box": [
+          508,
+          49,
+          1035,
+          143
+        ],
+        "text_similarity": 0.9615384615384616,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:2",
+        "turn": 4,
+        "log_order": 2,
+        "raw_text": "wilbnguynl!ly!",
+        "checked_text": "willbnguyn派出了Sally！",
+        "ocr_confidence": 0.8229999999999998,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#369.911667",
+        "observation_ids": [
+          "log-row:060d870ce2226fc612bda65e"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-367/000012.jpg",
+        "timestamp": 369.911667,
+        "box": [
+          508,
+          143,
+          1035,
+          223
+        ],
+        "text_similarity": 0.7272727272727273,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:3",
+        "turn": 4,
+        "log_order": 3,
+        "raw_text": "Sally的\n威吓",
+        "checked_text": "Sally的威吓",
+        "ocr_confidence": 0.9984999999999999,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#369.378333",
+        "observation_ids": [
+          "log-row:5d37bfb93572e2f3d2dc6b73"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-367/000010.jpg",
+        "timestamp": 369.378333,
+        "box": [
+          508,
+          49,
+          1035,
+          126
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:4",
+        "turn": 4,
+        "log_order": 4,
+        "raw_text": "轰擂金刚猩和铝钢桥龙的\n攻击降低了！",
+        "checked_text": "轰擂金刚猩和铝钢桥龙的攻击降低了！",
+        "ocr_confidence": 0.993,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#369.378333",
+        "observation_ids": [
+          "log-row:69395d0dad19d3b9c1c10987"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-367/000010.jpg",
+        "timestamp": 369.378333,
+        "box": [
+          508,
+          126,
+          1035,
+          207
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:5",
+        "turn": 4,
+        "log_order": 5,
+        "raw_text": "对手的大狃拉使出了\n守住！",
+        "checked_text": "对手的大狃拉使出了守住！",
+        "ocr_confidence": 0.911,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#369.378333",
+        "observation_ids": [
+          "log-row:20903875072fa24619b69c3a"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-367/000010.jpg",
+        "timestamp": 369.378333,
+        "box": [
+          508,
+          207,
+          1035,
+          287
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:6",
+        "turn": 4,
+        "log_order": 6,
+        "raw_text": "对手的大狃拉\n摆出了防守的架势！",
+        "checked_text": "对手的大狃拉摆出了防守的架势！",
+        "ocr_confidence": 0.9705999999999999,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#369.111667",
+        "observation_ids": [
+          "log-row:6e660e8b39a22f69099099ad"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-367/000009.jpg",
+        "timestamp": 369.111667,
+        "box": [
+          508,
+          193,
+          1035,
+          274
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:7",
+        "turn": 4,
+        "log_order": 7,
+        "raw_text": "轰擂金刚猩使出了\n击掌奇袭！",
+        "checked_text": "轰擂金刚猩使出了击掌奇袭！",
+        "ocr_confidence": 0.9701538461538461,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#368.861667",
+        "observation_ids": [
+          "log-row:6c81c49589116c40a053cbec"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-367/000008.jpg",
+        "timestamp": 368.861667,
+        "box": [
+          508,
+          156,
+          1035,
+          237
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:8",
+        "turn": 4,
+        "log_order": 8,
+        "raw_text": "对手的大狃拉\n在攻击中守护住了自己！",
+        "checked_text": "对手的大狃拉在攻击中守护住了自己！",
+        "ocr_confidence": 0.933470588235294,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#367.778333",
+        "observation_ids": [
+          "log-row:d317e7ae28858d129f6b8ed9"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-367/000004.jpg",
+        "timestamp": 367.778333,
+        "box": [
+          508,
+          119,
+          1035,
+          199
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:9",
+        "turn": 4,
+        "log_order": 9,
+        "raw_text": "铝钢桥龙使出了\n电光束！",
+        "checked_text": "铝钢桥龙使出了电光束！",
+        "ocr_confidence": 0.968,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#368.578333",
+        "observation_ids": [
+          "log-row:9d78c721eef8e3474e07eb10"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-367/000007.jpg",
+        "timestamp": 368.578333,
+        "box": [
+          508,
+          233,
+          1035,
+          313
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:10",
+        "turn": 4,
+        "log_order": 10,
+        "raw_text": "铝钢桥龙\n吸收了电力！",
+        "checked_text": "铝钢桥龙吸收了电力！",
+        "ocr_confidence": 0.9916,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#368.045",
+        "observation_ids": [
+          "log-row:cbf098d0b8e640a5136da503"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-367/000005.jpg",
+        "timestamp": 368.045,
+        "box": [
+          508,
+          73,
+          1035,
+          154
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:11",
+        "turn": 4,
+        "log_order": 11,
+        "raw_text": "铝钢桥龙的\n特攻提高了！",
+        "checked_text": "铝钢桥龙的特攻提高了！",
+        "ocr_confidence": 0.982,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#367.511667",
+        "observation_ids": [
+          "log-row:34e8fe10a5e0ce2d6021acca"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-367/000003.jpg",
+        "timestamp": 367.511667,
+        "box": [
+          508,
+          49,
+          1035,
+          119
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:12",
+        "turn": 4,
+        "log_order": 12,
+        "raw_text": "对手的大狃拉\n在攻击中守护住了自己！",
+        "checked_text": "对手的大狃拉在攻击中守护住了自己！",
+        "ocr_confidence": 0.933470588235294,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#367.778333",
+        "observation_ids": [
+          "log-row:d317e7ae28858d129f6b8ed9"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-367/000004.jpg",
+        "timestamp": 367.778333,
+        "box": [
+          508,
+          119,
+          1035,
+          199
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:13",
+        "turn": 4,
+        "log_order": 13,
+        "raw_text": "铝钢桥龙的\n体力回复了！",
+        "checked_text": "铝钢桥龙的体力回复了！",
+        "ocr_confidence": 0.9754545454545455,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#367.511667",
+        "observation_ids": [
+          "log-row:a8469f7629eff5141fa08b4e"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-367/000003.jpg",
+        "timestamp": 367.511667,
+        "box": [
+          508,
+          199,
+          1035,
+          279
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:14",
+        "turn": 4,
+        "log_order": 14,
+        "raw_text": "铝钢桥龙\nHP 120 → 132",
+        "checked_text": "铝钢桥龙 HP 120 → 132",
+        "ocr_confidence": 0.99625,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#367.511667",
+        "observation_ids": [
+          "log-row:d642e0c411217ce906f39dd3"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-367/000003.jpg",
+        "timestamp": 367.511667,
+        "box": [
+          508,
+          279,
+          1035,
+          360
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:15",
+        "turn": 4,
+        "log_order": 15,
+        "raw_text": "铝钢桥龙的\n吃剩的东西",
+        "checked_text": "铝钢桥龙的吃剩的东西",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#367.511667",
+        "observation_ids": [
+          "log-row:661453be97b27a8dd8bac244"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-367/000003.jpg",
+        "timestamp": 367.511667,
+        "box": [
+          508,
+          360,
+          1035,
+          441
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:4:16",
+        "turn": 4,
+        "log_order": 16,
+        "raw_text": "铝钢桥龙\nHP 132 → 144",
+        "checked_text": "铝钢桥龙 HP 132 → 144",
+        "ocr_confidence": 0.99625,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#367.511667",
+        "observation_ids": [
+          "log-row:54f4a1f546a9fdf6930db7be"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-367/000003.jpg",
+        "timestamp": 367.511667,
+        "box": [
+          508,
+          441,
+          1035,
+          521
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      }
+    ],
+    "5": [
+      {
+        "entry_id": "m223:checked-log:5:1",
+        "turn": 5,
+        "log_order": 1,
+        "raw_text": "轰擂金刚猩，\n回来!",
+        "checked_text": "轰擂金刚猩，回来！",
+        "ocr_confidence": 0.9713333333333333,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#463.245",
+        "observation_ids": [
+          "log-row:48478bc2f66cfb3af6b451c4"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-459/000017.jpg",
+        "timestamp": 463.245,
+        "box": [
+          508,
+          49,
+          1035,
+          131
+        ],
+        "text_similarity": 0.8888888888888888,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:2",
+        "turn": 5,
+        "log_order": 2,
+        "raw_text": "上吧！雪妖女！",
+        "checked_text": "上吧！雪妖女！",
+        "ocr_confidence": 0.998,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#463.778333",
+        "observation_ids": [
+          "log-row:6457dca45cc3ab74e612e84f"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-459/000019.jpg",
+        "timestamp": 463.778333,
+        "box": [
+          508,
+          140,
+          1035,
+          221
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:3",
+        "turn": 5,
+        "log_order": 3,
+        "raw_text": "雪妖女的\n降雪",
+        "checked_text": "雪妖女的降雪",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#462.995",
+        "observation_ids": [
+          "log-row:596577e2125e26aab684ab44"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-459/000016.jpg",
+        "timestamp": 462.995,
+        "box": [
+          508,
+          125,
+          1035,
+          206
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:4",
+        "turn": 5,
+        "log_order": 4,
+        "raw_text": "开始下雪了！",
+        "checked_text": "开始下雪了！",
+        "ocr_confidence": 0.9739999999999999,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#462.728333",
+        "observation_ids": [
+          "log-row:5c71317677cc404b54aa7e73"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-459/000015.jpg",
+        "timestamp": 462.728333,
+        "box": [
+          508,
+          49,
+          1035,
+          140
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:5",
+        "turn": 5,
+        "log_order": 5,
+        "raw_text": "对手的Sally的暴飞龙进化石和\nwillbnguyn的全一环起了反应！",
+        "checked_text": "对手的Sally的暴飞龙进化石和willbnguyn的全一环起了反应！",
+        "ocr_confidence": 0.9994571428571429,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#462.995",
+        "observation_ids": [
+          "log-row:bc4aab3431dcac11db706430"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-459/000016.jpg",
+        "timestamp": 462.995,
+        "box": [
+          508,
+          286,
+          1035,
+          367
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:6",
+        "turn": 5,
+        "log_order": 6,
+        "raw_text": "对手的Sally超级进化成了\n超级暴飞龙！",
+        "checked_text": "对手的Sally超级进化成了超级暴飞龙！",
+        "ocr_confidence": 0.9865,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#462.728333",
+        "observation_ids": [
+          "log-row:880701eeff3a2dbfbb9dec86"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-459/000015.jpg",
+        "timestamp": 462.728333,
+        "box": [
+          508,
+          220,
+          1035,
+          301
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:7",
+        "turn": 5,
+        "log_order": 7,
+        "raw_text": "对手的Sally使出了\n守住!",
+        "checked_text": "对手的Sally使出了守住！",
+        "ocr_confidence": 0.9854285714285714,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#462.728333",
+        "observation_ids": [
+          "log-row:11279f6256ffa269fd654810"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-459/000015.jpg",
+        "timestamp": 462.728333,
+        "box": [
+          508,
+          301,
+          1035,
+          381
+        ],
+        "text_similarity": 0.9285714285714286,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:8",
+        "turn": 5,
+        "log_order": 8,
+        "raw_text": "对手的Sally\n摆出了防守的架势！",
+        "checked_text": "对手的Sally摆出了防守的架势！",
+        "ocr_confidence": 0.9989411764705882,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#462.478333",
+        "observation_ids": [
+          "log-row:1641a33aab7c3689e4b1e545"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-459/000014.jpg",
+        "timestamp": 462.478333,
+        "box": [
+          508,
+          130,
+          1035,
+          211
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:9",
+        "turn": 5,
+        "log_order": 9,
+        "raw_text": "对手的大狃拉使出了\n近身战！",
+        "checked_text": "对手的大狃拉使出了近身战！",
+        "ocr_confidence": 0.9670769230769231,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#462.228333",
+        "observation_ids": [
+          "log-row:838e42c32ba50e137291876d"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-459/000013.jpg",
+        "timestamp": 462.228333,
+        "box": [
+          508,
+          98,
+          1035,
+          179
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:10",
+        "turn": 5,
+        "log_order": 10,
+        "raw_text": "铝钢桥龙\nHP 144 → 63",
+        "checked_text": "铝钢桥龙 HP 144 → 63",
+        "ocr_confidence": 0.9977333333333332,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#461.961667",
+        "observation_ids": [
+          "log-row:607b9c3cc0fb07bb15cc1707"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-459/000012.jpg",
+        "timestamp": 461.961667,
+        "box": [
+          508,
+          49,
+          1035,
+          114
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:11",
+        "turn": 5,
+        "log_order": 11,
+        "raw_text": "对铝钢桥龙\n效果绝佳！",
+        "checked_text": "对铝钢桥龙效果绝佳！",
+        "ocr_confidence": 0.977,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#461.695",
+        "observation_ids": [
+          "log-row:057caf6b8b0a16168559eaa3"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-459/000011.jpg",
+        "timestamp": 461.695,
+        "box": [
+          508,
+          63,
+          1035,
+          144
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:12",
+        "turn": 5,
+        "log_order": 12,
+        "raw_text": "对手的大狃拉的\n防御、特防降低了！",
+        "checked_text": "对手的大狃拉的防御、特防降低了！",
+        "ocr_confidence": 0.9763125,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#461.695",
+        "observation_ids": [
+          "log-row:1d6630b240c95c323e4a5a81"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-459/000011.jpg",
+        "timestamp": 461.695,
+        "box": [
+          508,
+          144,
+          1035,
+          224
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:13",
+        "turn": 5,
+        "log_order": 13,
+        "raw_text": "铝钢桥龙的\n持久力",
+        "checked_text": "铝钢桥龙的持久力",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#461.428333",
+        "observation_ids": [
+          "log-row:4b0bbf44e74b126be4afaf6f"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-459/000010.jpg",
+        "timestamp": 461.428333,
+        "box": [
+          508,
+          113,
+          1035,
+          193
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:14",
+        "turn": 5,
+        "log_order": 14,
+        "raw_text": "铝钢桥龙的\n防御提高了！",
+        "checked_text": "铝钢桥龙的防御提高了！",
+        "ocr_confidence": 0.9596363636363637,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#461.161667",
+        "observation_ids": [
+          "log-row:dccec2ceccc8d7e008dcba9d"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-459/000009.jpg",
+        "timestamp": 461.161667,
+        "box": [
+          508,
+          49,
+          1035,
+          136
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:15",
+        "turn": 5,
+        "log_order": 15,
+        "raw_text": "铝钢桥龙使出了\n龙之波动！",
+        "checked_text": "铝钢桥龙使出了龙之波动！",
+        "ocr_confidence": 0.99125,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#461.161667",
+        "observation_ids": [
+          "log-row:b2e1be8fa1fb6b34f18e2676"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-459/000009.jpg",
+        "timestamp": 461.161667,
+        "box": [
+          508,
+          136,
+          1035,
+          217
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:16",
+        "turn": 5,
+        "log_order": 16,
+        "raw_text": "对手的Sally\n在攻击中守护住了自己！",
+        "checked_text": "对手的Sally在攻击中守护住了自己！",
+        "ocr_confidence": 0.9855263157894738,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#460.361667",
+        "observation_ids": [
+          "log-row:0854701b63ee5eaf09e92299"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-459/000006.jpg",
+        "timestamp": 460.361667,
+        "box": [
+          508,
+          49,
+          1035,
+          119
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:17",
+        "turn": 5,
+        "log_order": 17,
+        "raw_text": "铝钢桥龙的\n体力回复了！",
+        "checked_text": "铝钢桥龙的体力回复了！",
+        "ocr_confidence": 0.9732727272727272,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#460.628333",
+        "observation_ids": [
+          "log-row:c867a5d6a22ef1add71c6a84"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-459/000007.jpg",
+        "timestamp": 460.628333,
+        "box": [
+          508,
+          119,
+          1035,
+          199
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:18",
+        "turn": 5,
+        "log_order": 18,
+        "raw_text": "铝钢桥龙\nHP 63 → 75",
+        "checked_text": "铝钢桥龙 HP 63 → 75",
+        "ocr_confidence": 0.9907142857142857,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#460.895",
+        "observation_ids": [
+          "log-row:5d3b3e30c0ae14b932b16803"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-459/000008.jpg",
+        "timestamp": 460.895,
+        "box": [
+          508,
+          218,
+          1035,
+          298
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:19",
+        "turn": 5,
+        "log_order": 19,
+        "raw_text": "铝钢桥龙的\n吃剩的东西",
+        "checked_text": "铝钢桥龙的吃剩的东西",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#460.361667",
+        "observation_ids": [
+          "log-row:603da3d2bd7417cc2deb4fbc"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-459/000006.jpg",
+        "timestamp": 460.361667,
+        "box": [
+          508,
+          280,
+          1035,
+          360
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:20",
+        "turn": 5,
+        "log_order": 20,
+        "raw_text": "铝钢桥龙\nHP 75 → 87",
+        "checked_text": "铝钢桥龙 HP 75 → 87",
+        "ocr_confidence": 0.9628571428571429,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#460.628333",
+        "observation_ids": [
+          "log-row:251c13d6eda7c05c87fe98a9"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-459/000007.jpg",
+        "timestamp": 460.628333,
+        "box": [
+          508,
+          360,
+          1035,
+          441
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:5:21",
+        "turn": 5,
+        "log_order": 21,
+        "raw_text": "我方的极光幕消失了！",
+        "checked_text": "我方的极光幕消失了！",
+        "ocr_confidence": 0.969,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#460.628333",
+        "observation_ids": [
+          "log-row:132dddc44125285b7c44ae0a"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-459/000007.jpg",
+        "timestamp": 460.628333,
+        "box": [
+          508,
+          441,
+          1035,
+          521
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      }
+    ],
+    "6": [
+      {
+        "entry_id": "m223:checked-log:6:1",
+        "turn": 6,
+        "log_order": 1,
+        "raw_text": "willbnguyn 换下了\nSally!",
+        "checked_text": "willbnguyn换下了Sally！",
+        "ocr_confidence": 0.993,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#514.403333",
+        "observation_ids": [
+          "log-row:24e853bbe7dc1dea08c0aab3"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-511/000014.jpg",
+        "timestamp": 514.403333,
+        "box": [
+          508,
+          49,
+          1035,
+          141
+        ],
+        "text_similarity": 0.9473684210526315,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:6:2",
+        "turn": 6,
+        "log_order": 2,
+        "raw_text": "wil出了肚子饿扁了的轰擂金刚猩！",
+        "checked_text": "willbnguyn派出了肚子饿扁了的轰擂金刚猩！",
+        "ocr_confidence": 0.886,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#514.403333",
+        "observation_ids": [
+          "log-row:15ee151d6a15784f51a1c7e9"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-511/000014.jpg",
+        "timestamp": 514.403333,
+        "box": [
+          508,
+          141,
+          1035,
+          222
+        ],
+        "text_similarity": 0.8095238095238095,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:6:3",
+        "turn": 6,
+        "log_order": 3,
+        "raw_text": "铝钢桥龙使出了\n守住！",
+        "checked_text": "铝钢桥龙使出了守住！",
+        "ocr_confidence": 0.9592,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#514.136667",
+        "observation_ids": [
+          "log-row:42e38ea07f494bda15e7d15c"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-511/000013.jpg",
+        "timestamp": 514.136667,
+        "box": [
+          508,
+          236,
+          1035,
+          317
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:6:4",
+        "turn": 6,
+        "log_order": 4,
+        "raw_text": "铝钢桥龙\n摆出了防守的架势！",
+        "checked_text": "铝钢桥龙摆出了防守的架势！",
+        "ocr_confidence": 0.9958461538461538,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#514.136667",
+        "observation_ids": [
+          "log-row:0755c7d037516658df653f23"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-511/000013.jpg",
+        "timestamp": 514.136667,
+        "box": [
+          508,
+          317,
+          1035,
+          397
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:6:5",
+        "turn": 6,
+        "log_order": 5,
+        "raw_text": "对手的大狃拉使出了\n近身战！",
+        "checked_text": "对手的大狃拉使出了近身战！",
+        "ocr_confidence": 0.9654615384615384,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#513.62",
+        "observation_ids": [
+          "log-row:76ff7409a1be6b7d8128f80f"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-511/000011.jpg",
+        "timestamp": 513.62,
+        "box": [
+          508,
+          89,
+          1035,
+          170
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:6:6",
+        "turn": 6,
+        "log_order": 6,
+        "raw_text": "铝钢桥龙\n在攻击中守护住了自己！",
+        "checked_text": "铝钢桥龙在攻击中守护住了自己！",
+        "ocr_confidence": 0.9735999999999999,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#513.37",
+        "observation_ids": [
+          "log-row:4eb851d35073a6499dbac6be"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-511/000010.jpg",
+        "timestamp": 513.37,
+        "box": [
+          508,
+          49,
+          1035,
+          127
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:6:7",
+        "turn": 6,
+        "log_order": 7,
+        "raw_text": "雪妖女使出了\n极光幕！",
+        "checked_text": "雪妖女使出了极光幕！",
+        "ocr_confidence": 0.9843999999999999,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#512.836667",
+        "observation_ids": [
+          "log-row:ce0104e31c589ff13bcea9d3"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-511/000008.jpg",
+        "timestamp": 512.836667,
+        "box": [
+          508,
+          49,
+          1035,
+          119
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:6:8",
+        "turn": 6,
+        "log_order": 8,
+        "raw_text": "极光幕使我方的\n物理和特殊抗性提高了！",
+        "checked_text": "极光幕使我方的物理和特殊抗性提高了！",
+        "ocr_confidence": 0.9920555555555555,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#513.37",
+        "observation_ids": [
+          "log-row:f17824fac4219cd464192665"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-511/000010.jpg",
+        "timestamp": 513.37,
+        "box": [
+          508,
+          208,
+          1035,
+          288
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:6:9",
+        "turn": 6,
+        "log_order": 9,
+        "raw_text": "铝钢桥龙的\n体力回复了！",
+        "checked_text": "铝钢桥龙的体力回复了！",
+        "ocr_confidence": 0.982,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#512.57",
+        "observation_ids": [
+          "log-row:f2c288ab074893ab111781a2"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-511/000007.jpg",
+        "timestamp": 512.57,
+        "box": [
+          508,
+          199,
+          1035,
+          280
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:6:10",
+        "turn": 6,
+        "log_order": 10,
+        "raw_text": "铝钢桥龙\nHP 87 → 99",
+        "checked_text": "铝钢桥龙 HP 87 → 99",
+        "ocr_confidence": 0.9928571428571429,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#513.37",
+        "observation_ids": [
+          "log-row:1402d55281ca1a4d1dc3e686"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-511/000010.jpg",
+        "timestamp": 513.37,
+        "box": [
+          508,
+          369,
+          1035,
+          449
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:6:11",
+        "turn": 6,
+        "log_order": 11,
+        "raw_text": "铝钢桥龙的\n吃剩的东西",
+        "checked_text": "铝钢桥龙的吃剩的东西",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#512.57",
+        "observation_ids": [
+          "log-row:2819b6c239a7d05513a843c3"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-511/000007.jpg",
+        "timestamp": 512.57,
+        "box": [
+          508,
+          360,
+          1035,
+          441
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:6:12",
+        "turn": 6,
+        "log_order": 12,
+        "raw_text": "铝钢桥龙\nHP 99 → 111",
+        "checked_text": "铝钢桥龙 HP 99 → 111",
+        "ocr_confidence": 0.9926666666666667,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#512.836667",
+        "observation_ids": [
+          "log-row:ef6ddeeeb52b0225aa731242"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-511/000008.jpg",
+        "timestamp": 512.836667,
+        "box": [
+          508,
+          441,
+          1035,
+          521
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      }
+    ],
+    "7": [
+      {
+        "entry_id": "m223:checked-log:7:1",
+        "turn": 7,
+        "log_order": 1,
+        "raw_text": "对手的大狃拉使出了\n近身战！",
+        "checked_text": "对手的大狃拉使出了近身战！",
+        "ocr_confidence": 0.9676923076923075,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#615.486667",
+        "observation_ids": [
+          "log-row:f99d05883e5de51f6f8366b8"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-611/000018.jpg",
+        "timestamp": 615.486667,
+        "box": [
+          508,
+          49,
+          1035,
+          147
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:2",
+        "turn": 7,
+        "log_order": 2,
+        "raw_text": "铝钢桥龙\nHP 111 → 51",
+        "checked_text": "铝钢桥龙 HP 111 → 51",
+        "ocr_confidence": 0.9838666666666666,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#615.22",
+        "observation_ids": [
+          "log-row:a6339510c22d4ed3982b5e11"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-611/000017.jpg",
+        "timestamp": 615.22,
+        "box": [
+          508,
+          65,
+          1035,
+          145
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:3",
+        "turn": 7,
+        "log_order": 3,
+        "raw_text": "对铝钢桥龙\n效果绝佳！",
+        "checked_text": "对铝钢桥龙效果绝佳！",
+        "ocr_confidence": 0.967,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#615.22",
+        "observation_ids": [
+          "log-row:92213435dad1fba3833ac2f8"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-611/000017.jpg",
+        "timestamp": 615.22,
+        "box": [
+          508,
+          145,
+          1035,
+          226
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:4",
+        "turn": 7,
+        "log_order": 4,
+        "raw_text": "对手的大狃拉的\n防御、特防降低了！",
+        "checked_text": "对手的大狃拉的防御、特防降低了！",
+        "ocr_confidence": 0.968375,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#615.753333",
+        "observation_ids": [
+          "log-row:84f00054e34a87c475f07a6c"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-611/000019.jpg",
+        "timestamp": 615.753333,
+        "box": [
+          508,
+          301,
+          1035,
+          382
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:5",
+        "turn": 7,
+        "log_order": 5,
+        "raw_text": "铝钢桥龙的\n持久力",
+        "checked_text": "铝钢桥龙的持久力",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.953333",
+        "observation_ids": [
+          "log-row:4db3a7e1dd148fb8458ccbca"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-611/000016.jpg",
+        "timestamp": 614.953333,
+        "box": [
+          508,
+          79,
+          1035,
+          160
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:6",
+        "turn": 7,
+        "log_order": 6,
+        "raw_text": "铝钢桥龙的\n防御提高了！",
+        "checked_text": "铝钢桥龙的防御提高了！",
+        "ocr_confidence": 0.9694545454545455,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.6866669999999",
+        "observation_ids": [
+          "log-row:a4cc396c53dc0090a9d566de"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-611/000015.jpg",
+        "timestamp": 614.6866669999999,
+        "box": [
+          508,
+          87,
+          1035,
+          168
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:7",
+        "turn": 7,
+        "log_order": 7,
+        "raw_text": "雪妖女使出了\n求雨！",
+        "checked_text": "雪妖女使出了求雨！",
+        "ocr_confidence": 0.9750000000000001,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.6866669999999",
+        "observation_ids": [
+          "log-row:5a15a304e58558ebb525a209"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-611/000015.jpg",
+        "timestamp": 614.6866669999999,
+        "box": [
+          508,
+          168,
+          1035,
+          249
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:8",
+        "turn": 7,
+        "log_order": 8,
+        "raw_text": "开始下雨了！",
+        "checked_text": "开始下雨了！",
+        "ocr_confidence": 0.9899999999999999,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.42",
+        "observation_ids": [
+          "log-row:a0135542a7c6c09ae8971b94"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-611/000014.jpg",
+        "timestamp": 614.42,
+        "box": [
+          508,
+          49,
+          1035,
+          120
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:9",
+        "turn": 7,
+        "log_order": 9,
+        "raw_text": "对手的轰擂金刚猩使出了\n木槌!",
+        "checked_text": "对手的轰擂金刚猩使出了木槌！",
+        "ocr_confidence": 0.9920714285714285,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.953333",
+        "observation_ids": [
+          "log-row:fe8ce28b15a22fba6b6142c9"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-611/000016.jpg",
+        "timestamp": 614.953333,
+        "box": [
+          508,
+          401,
+          1035,
+          482
+        ],
+        "text_similarity": 0.9285714285714286,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:10",
+        "turn": 7,
+        "log_order": 10,
+        "raw_text": "雪妖女\nHP 177 → 36",
+        "checked_text": "雪妖女 HP 177 → 36",
+        "ocr_confidence": 0.9968571428571428,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.6866669999999",
+        "observation_ids": [
+          "log-row:4adbccf9ec89875b5a47802f"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-611/000015.jpg",
+        "timestamp": 614.6866669999999,
+        "box": [
+          508,
+          410,
+          1035,
+          490
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:11",
+        "turn": 7,
+        "log_order": 11,
+        "raw_text": "对手的轰擂金刚猩\n受到了反作用力造成的伤害！",
+        "checked_text": "对手的轰擂金刚猩受到了反作用力造成的伤害！",
+        "ocr_confidence": 0.996904761904762,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#614.153333",
+        "observation_ids": [
+          "log-row:a44e3186cbccd6dc9a1d77a3"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-611/000013.jpg",
+        "timestamp": 614.153333,
+        "box": [
+          508,
+          235,
+          1035,
+          316
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:12",
+        "turn": 7,
+        "log_order": 12,
+        "raw_text": "轰擂金刚猩\nHP 100% → 75%",
+        "checked_text": "轰擂金刚猩 HP 100% → 75%",
+        "ocr_confidence": 0.9972777777777778,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.886667",
+        "observation_ids": [
+          "log-row:ccd13a8fa555f5a55460c595"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-611/000012.jpg",
+        "timestamp": 613.886667,
+        "box": [
+          508,
+          79,
+          1035,
+          160
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:13",
+        "turn": 7,
+        "log_order": 13,
+        "raw_text": "铝钢桥龙使出了\n电光束！",
+        "checked_text": "铝钢桥龙使出了电光束！",
+        "ocr_confidence": 0.956,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.886667",
+        "observation_ids": [
+          "log-row:26f67b9d14a3999e555a0246"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-611/000012.jpg",
+        "timestamp": 613.886667,
+        "box": [
+          508,
+          160,
+          1035,
+          240
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:14",
+        "turn": 7,
+        "log_order": 14,
+        "raw_text": "铝钢桥龙\n吸收了电力！",
+        "checked_text": "铝钢桥龙吸收了电力！",
+        "ocr_confidence": 0.9904,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.886667",
+        "observation_ids": [
+          "log-row:ed00180f1ad649f72d86e32b"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-611/000012.jpg",
+        "timestamp": 613.886667,
+        "box": [
+          508,
+          240,
+          1035,
+          321
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:15",
+        "turn": 7,
+        "log_order": 15,
+        "raw_text": "铝钢桥龙的\n特攻提高了！",
+        "checked_text": "铝钢桥龙的特攻提高了！",
+        "ocr_confidence": 0.9585454545454546,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.62",
+        "observation_ids": [
+          "log-row:9c6ad3405b3a6f10d65aea38"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-611/000011.jpg",
+        "timestamp": 613.62,
+        "box": [
+          508,
+          129,
+          1035,
+          209
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:16",
+        "turn": 7,
+        "log_order": 16,
+        "raw_text": "大狃拉\nHP 100% → 0%",
+        "checked_text": "大狃拉 HP 100% → 0%",
+        "ocr_confidence": 0.955,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.62",
+        "observation_ids": [
+          "log-row:6539f14c05610789a32a21c2"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-611/000011.jpg",
+        "timestamp": 613.62,
+        "box": [
+          508,
+          209,
+          1035,
+          290
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:17",
+        "turn": 7,
+        "log_order": 17,
+        "raw_text": "对手的大狃拉倒下了！",
+        "checked_text": "对手的大狃拉倒下了！",
+        "ocr_confidence": 0.929,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.353333",
+        "observation_ids": [
+          "log-row:6091aa7f7cdb7d264445f459"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-611/000010.jpg",
+        "timestamp": 613.353333,
+        "box": [
+          508,
+          49,
+          1035,
+          122
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:18",
+        "turn": 7,
+        "log_order": 18,
+        "raw_text": "雪妖女的\n体力回复了！",
+        "checked_text": "雪妖女的体力回复了！",
+        "ocr_confidence": 0.9843999999999999,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.353333",
+        "observation_ids": [
+          "log-row:86a32138931e8d3eebc5f783"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-611/000010.jpg",
+        "timestamp": 613.353333,
+        "box": [
+          508,
+          122,
+          1035,
+          203
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:19",
+        "turn": 7,
+        "log_order": 19,
+        "raw_text": "雪妖女\nHP 36 → 47",
+        "checked_text": "雪妖女 HP 36 → 47",
+        "ocr_confidence": 0.9907692307692307,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.353333",
+        "observation_ids": [
+          "log-row:250165db1f1a053efbc1d8d7"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-611/000010.jpg",
+        "timestamp": 613.353333,
+        "box": [
+          508,
+          203,
+          1035,
+          283
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:20",
+        "turn": 7,
+        "log_order": 20,
+        "raw_text": "对手的轰擂金刚猩的\n体力回复了！",
+        "checked_text": "对手的轰擂金刚猩的体力回复了！",
+        "ocr_confidence": 0.9762,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.353333",
+        "observation_ids": [
+          "log-row:f1020164097005232cadfc54"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-611/000010.jpg",
+        "timestamp": 613.353333,
+        "box": [
+          508,
+          283,
+          1035,
+          363
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:21",
+        "turn": 7,
+        "log_order": 21,
+        "raw_text": "轰擂金刚猩\nHP 75% → 82%",
+        "checked_text": "轰擂金刚猩 HP 75% → 82%",
+        "ocr_confidence": 0.9608823529411765,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.353333",
+        "observation_ids": [
+          "log-row:250089b5daaace9b9e44a1e4"
+        ],
+        "color": "red",
+        "image": ".cache/m223-log-611/000010.jpg",
+        "timestamp": 613.353333,
+        "box": [
+          508,
+          363,
+          1035,
+          444
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:22",
+        "turn": 7,
+        "log_order": 22,
+        "raw_text": "铝钢桥龙的\n体力回复了！",
+        "checked_text": "铝钢桥龙的体力回复了！",
+        "ocr_confidence": 0.9825454545454545,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#613.103333",
+        "observation_ids": [
+          "log-row:ffa76fca9dc0bc68af53c4d4"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-611/000009.jpg",
+        "timestamp": 613.103333,
+        "box": [
+          508,
+          64,
+          1035,
+          145
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:23",
+        "turn": 7,
+        "log_order": 23,
+        "raw_text": "铝钢桥龙\nHP 51 → 63",
+        "checked_text": "铝钢桥龙 HP 51 → 63",
+        "ocr_confidence": 0.9942857142857143,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#612.586667",
+        "observation_ids": [
+          "log-row:62827e60af23a415b3a657d0"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-611/000007.jpg",
+        "timestamp": 612.586667,
+        "box": [
+          508,
+          119,
+          1035,
+          199
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:24",
+        "turn": 7,
+        "log_order": 24,
+        "raw_text": "铝钢桥龙的\n吃剩的东西",
+        "checked_text": "铝钢桥龙的吃剩的东西",
+        "ocr_confidence": 1.0,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#612.586667",
+        "observation_ids": [
+          "log-row:8e30ea76ae35eab2c56c9177"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-611/000007.jpg",
+        "timestamp": 612.586667,
+        "box": [
+          508,
+          199,
+          1035,
+          280
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:25",
+        "turn": 7,
+        "log_order": 25,
+        "raw_text": "铝钢桥龙\nHP 63 → 75",
+        "checked_text": "铝钢桥龙 HP 63 → 75",
+        "ocr_confidence": 0.99,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#612.586667",
+        "observation_ids": [
+          "log-row:939e23dc9049c9a0520277cd"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-611/000007.jpg",
+        "timestamp": 612.586667,
+        "box": [
+          508,
+          280,
+          1035,
+          360
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:26",
+        "turn": 7,
+        "log_order": 26,
+        "raw_text": "脚下的青草消失不见了！",
+        "checked_text": "脚下的青草消失不见了！",
+        "ocr_confidence": 0.9830000000000001,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#612.853333",
+        "observation_ids": [
+          "log-row:7af4a123a9b37f8c92afd243"
+        ],
+        "color": "purple",
+        "image": ".cache/m223-log-611/000008.jpg",
+        "timestamp": 612.853333,
+        "box": [
+          508,
+          360,
+          1035,
+          441
+        ],
+        "text_similarity": 1.0,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      },
+      {
+        "entry_id": "m223:checked-log:7:27",
+        "turn": 7,
+        "log_order": 27,
+        "raw_text": "wilnguynly!ly!",
+        "checked_text": "willbnguyn派出了Sally！",
+        "ocr_confidence": 0.8790000000000001,
+        "source_id": "tests/fixtures/sample_battle_3.mp4#612.586667",
+        "observation_ids": [
+          "log-row:77ccd342d5372107e3a885f6"
+        ],
+        "color": null,
+        "image": ".cache/m223-log-611/000007.jpg",
+        "timestamp": 612.586667,
+        "box": [
+          508,
+          441,
+          1035,
+          521
+        ],
+        "text_similarity": 0.6896551724137931,
+        "annotation_basis": "manual checked text and ordering; retained raw OCR"
+      }
+    ]
+  },
+  "limitations": [
+    "No Turn 8 Battle Log view exists in the recording",
+    "No absolute opponent HP reconstructed",
+    "OCR predictions preserved separately"
+  ],
+  "extraction_intervals": [
+    {
+      "cache_name": "m223-log-180",
+      "ocr_cache_name": "m223-ocr-log-180",
+      "start": 180,
+      "duration": 9,
+      "step": 0.25
+    },
+    {
+      "cache_name": "m223-log-291",
+      "ocr_cache_name": "m223-ocr-log-291",
+      "start": 291,
+      "duration": 12,
+      "step": 0.25
+    },
+    {
+      "cache_name": "m223-log-367",
+      "ocr_cache_name": "m223-ocr-log-367",
+      "start": 367,
+      "duration": 4,
+      "step": 0.25
+    },
+    {
+      "cache_name": "m223-log-459",
+      "ocr_cache_name": "m223-ocr-log-459",
+      "start": 459,
+      "duration": 6,
+      "step": 0.25
+    },
+    {
+      "cache_name": "m223-log-511",
+      "ocr_cache_name": "m223-ocr-log-511",
+      "start": 511,
+      "duration": 5,
+      "step": 0.25
+    },
+    {
+      "cache_name": "m223-log-611",
+      "ocr_cache_name": "m223-ocr-log-611",
+      "start": 611,
+      "duration": 6,
+      "step": 0.25
+    },
+    {
+      "cache_name": "m223-resolution-82",
+      "ocr_cache_name": "m223-ocr-resolution-82",
+      "start": 82,
+      "duration": 12,
+      "step": 0.5
+    },
+    {
+      "cache_name": "m223-resolution-648",
+      "ocr_cache_name": "m223-ocr-resolution-648",
+      "start": 648,
+      "duration": 42.5,
+      "step": 0.5
+    }
+  ],
+  "snapshot_times": [
+    40,
+    68,
+    94,
+    102,
+    106,
+    176,
+    194,
+    248,
+    250,
+    254,
+    290,
+    302,
+    356,
+    364,
+    374,
+    384,
+    444,
+    446,
+    458,
+    504,
+    508,
+    510,
+    608,
+    628,
+    636,
+    638,
+    680,
+    688
+  ]
+}

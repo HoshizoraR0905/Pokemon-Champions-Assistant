@@ -1,3 +1,4 @@
+import pytest
 """Phase evidence and timeline regressions; no battle-event assertions."""
 from pathlib import Path
 import cv2
@@ -107,6 +108,7 @@ def test_timeline_validates_order_and_tracks_last_observation():
         build_timeline(frames, interval=2., duration=1.)
 
 
+@pytest.mark.local_artifacts('reports/M1.4-sample-battle-timeline.json','reports/M1.4-sample-battle-1-timeline.json')
 def test_preserved_timeline_structure_and_sparse_accuracy():
     import copy
     import json
@@ -134,6 +136,7 @@ def test_seeked_target_and_device_overlay():
             assert classify_phase(image)[0] == expected
 
 
+@pytest.mark.local_artifacts('reports/M1.4-evidence/m14_boundary_270.jpg','reports/M1.4-evidence/m14_boundary_268.jpg','reports/M1.4-evidence/m14_boundary_280.jpg','reports/M1.4-evidence/m14_boundary_282.jpg')
 def test_reviewed_workflow_and_manual_context():
     import json
     root = FIXTURES.parent.parent
@@ -158,6 +161,7 @@ def test_reviewed_workflow_and_manual_context():
     assert independent['segments'][1]['observations'][0]['selection_purpose'] == 'unknown'
 
 
+@pytest.mark.local_artifacts('reports/M1.4-evidence/m14_boundary_270.jpg','reports/M1.4-evidence/m14_boundary_268.jpg','reports/M1.4-evidence/m14_boundary_280.jpg','reports/M1.4-evidence/m14_boundary_282.jpg')
 def test_highlighted_move_row_and_party_list_at_multiple_resolutions():
     root = FIXTURES.parent.parent
     for second, expected in [(268,'move_selection'), (270,'pokemon_selection'), (280,'switch_selection')]:
@@ -175,6 +179,7 @@ def test_target_like_grid_without_move_banner_is_unresolved():
     assert 'ambiguous_target_panel' in classify_phase(image)[2]
 
 
+@pytest.mark.local_artifacts('reports/M1.4-evidence/m14_boundary_270.jpg','reports/M1.4-evidence/m14_boundary_268.jpg','reports/M1.4-evidence/m14_boundary_280.jpg','reports/M1.4-evidence/m14_boundary_282.jpg')
 def test_context_purposes_do_not_change_ui_or_create_events():
     image = load_image(FIXTURES.parent.parent/'reports/M1.4-evidence/m14_boundary_270.jpg').image
     for purpose in ['voluntary','move_triggered','faint_replacement','revival_target_selection','unknown']:
@@ -210,6 +215,7 @@ def test_smoothing_changes_only_unsupported_near_identical_frame(monkeypatch):
     assert 'near_identical_neighbor_frames' in observation['evidence']
 
 
+@pytest.mark.local_artifacts('reports/M1.4-evidence/m14_boundary_270.jpg','reports/M1.4-evidence/m14_boundary_268.jpg','reports/M1.4-evidence/m14_boundary_280.jpg','reports/M1.4-evidence/m14_boundary_282.jpg')
 def test_same_message_avoids_repeated_ocr_and_revival_context_expires():
     image = load_image(FIXTURES/'battle_message.png').image
     party = load_image(FIXTURES.parent.parent/'reports/M1.4-evidence/m14_boundary_270.jpg').image

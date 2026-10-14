@@ -26,7 +26,11 @@ def detect_log(image):
     if roi.mean()<.85:return None
     x1,x2=round(220*sx),round(1050*sx)
     profile=np.median(image[round(50*sy):round(520*sy),x1:x2,0],axis=1)
-    peaks=[round(50*sy)+(a+b)//2 for a,b in runs(profile>165)]
+    # Divider brightness changes with the scene behind the translucent panel.
+    # Local prominence finds the thin lines without joining adjacent entries.
+    window=max(3,round(11*sy)) | 1
+    baseline=cv2.medianBlur(profile.astype('uint8')[:,None],window)[:,0]
+    peaks=[round(50*sy)+(a+b)//2 for a,b in runs(profile-baseline>18)]
     if len(peaks)<3:return None
     gaps=np.diff(peaks)
     if np.median(gaps)<60*sy or np.median(gaps)>90*sy:return None
@@ -77,7 +81,7 @@ def extract_view(image, backend, source_id, timestamp, sha256):
         key=f'{sha256}:{top}:{bottom}'
         observations.append({'observation_id':'log-row:'+digest(key),'source_id':source_id,'timestamp':timestamp,
             'frame_sha256':sha256,'box':[x1,top,x2,bottom],'raw_text':raw,'ocr_confidence':conf,
-            'lines':lines,'color':color,'partial':top==bounds[0] or bottom==bounds[-1]})
+            'lines':lines,'color':color,'partial':(top==bounds[0] or bottom==bounds[-1]) and bottom-top<65*sy})
     # Header OCR validates geometry and supplies observed turn; no fixed Turn 2.
     header=backend.read(image,(round(618*sx),round(12*sy),round(708*sx),round(42*sy)))
     import re
@@ -87,7 +91,7 @@ def extract_view(image, backend, source_id, timestamp, sha256):
             'observations':observations,'detection_uncertainty':[] if m and header.confidence>=.75 else ['unverified_turn_heading']}
 
 
-def assemble_views(views):
+def assemble_views(views, *, ignore_partial_overlap=False):
     """Align ordered scroll overlaps; repeated text at distinct positions survives.
 
     Requires at least two consecutive matching rows for an overlap. Ambiguous
@@ -112,8 +116,9 @@ def assemble_views(views):
                 comparisons=[]
                 for j,r in enumerate(rows):
                     k=offset+j
-                    if 0<=k<len(assembled):
-                        score=max(SequenceMatcher(None,compact(r['raw_text']),compact(a['raw_text'])).ratio() for a in assembled[k])
+                    complete=[a for a in assembled[k] if not ignore_partial_overlap or not a['partial']] if 0<=k<len(assembled) else []
+                    if complete and (not ignore_partial_overlap or not r['partial']):
+                        score=max(SequenceMatcher(None,compact(r['raw_text']),compact(a['raw_text'])).ratio() for a in complete)
                         comparisons.append(score)
                 if len(comparisons)>=2 and all(s>=.78 for s in comparisons):
                     candidates.append((sum(comparisons),len(comparisons),offset))

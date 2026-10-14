@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "recordings": [
+    {
+      "battle_id": "sample_battle_0",
+      "video": "tests/fixtures/sample_battle_0.mp4"
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "video": "tests/fixtures/sample_battle_1.mp4"
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "video": "tests/fixtures/sample_battle_2.mp4"
+    },
+    {
+      "battle_id": "sample_battle_3",
+      "video": "tests/fixtures/sample_battle_3.mp4"
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "video": "tests/fixtures/sample_battle_4.mp4"
+    }
+  ],
+  "migrated_paths": 147,
+  "non_html_payloads_byte_identical": true,
+  "source_fingerprint_preserved": true,
+  "recording_2_events_replayed": 20,
+  "recording_3_events_reconstructed": 196,
+  "hp_checkpoints": 28,
+  "identity_checkpoints": 28,
+  "final_hash": "4696ae0b62d98dbcfda1ad3595046b7997d638ef493ea33adda6ecb50b88bdbc",
+  "regression_suites_passed": 109,
+  "organization_viewer_full_battle_passed": 44,
+  "final_organization_viewer_passed": 31,
+  "phase_organization_passed": 32,
+  "video_adapter_tests_deselected": 1,
+  "no_video_decode_or_ocr": true,
+  "git_diff_check": true,
+  "html_sizes": {
+    "M2.2.3-full-battle-timeline.html": 1379021,
+    "M2.2.4-enriched-timeline.html": 1475117,
+    "M2.3.1-hidden-state-timeline.html": 1684297,
+    "M2.2.4-provisional-timeline.html": 1532418,
+    "M2.3.1-provisional-hidden-state-timeline.html": 1690999
+  },
+  "final_organization_unit_tests": {
+    "passed": 18,
+    "seconds": 3.53
+  },
+  "cached_extraction_reuse_without_decode_test": true,
+  "canonical_m223_node_smoke": {
+    "startup_ms": 27.81,
+    "navigation_lazy_debug_ms": 34.0,
+    "states": 197
+  }
+}

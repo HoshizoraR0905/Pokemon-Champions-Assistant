@@ -13,6 +13,7 @@ from streaming.roi_experiment import (FocusedROIMonitor,fields_for,anchored_text
 ROOT=Path(__file__).resolve().parents[1]
 
 
+@pytest.mark.local_artifacts('reports/M1.4-evidence/m14_boundary_270.jpg','reports/M1.4-evidence/m14_boundary_282.jpg')
 def test_verified_party_and_replacement_interfaces_are_separate():
     monitor=FocusedROIMonitor();rows={}
     for second in [268,270,280,282]:
@@ -124,6 +125,7 @@ def test_bar_color_change_with_same_fill_geometry_is_preserved():
     assert yellow_level['dominant_color_candidate']=='yellow'
 
 
+@pytest.mark.local_artifacts('reports/M1.4-evidence/m14_boundary_268.jpg')
 def test_verified_move_highlight_is_a_separate_field():
     frame=load_image(ROOT/'reports/M1.4-evidence/m14_boundary_268.jpg')
     from streaming.roi_experiment import crop,highlight_signature

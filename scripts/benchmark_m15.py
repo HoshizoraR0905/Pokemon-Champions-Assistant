@@ -14,6 +14,7 @@ from recognition.icons import default_icons
 from streaming import StreamingPipeline, Limits
 from streaming.recognition import RegionBackend
 from streaming.replay import recorded_frames, replay
+from battle_artifacts import BattleArtifacts, add_arguments, manifest_battle
 from stream_replay import distribution
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -29,7 +30,7 @@ def run(backend,name,serial,speed,manifest):
     samples={k:[] for k in ['capture_to_classification','ocr','icon','recognition_availability',
                            'ordered_availability','decision_readiness','replay_dispatch_lateness']}
     phases=[];messages=[];decisions=[];final={}
-    path=ROOT/f'reports/m15-{name}.jsonl'
+    path=BattleArtifacts(manifest_battle(manifest)).prepare().report(f'm15-{name}.jsonl')
     began=time.monotonic()
     with path.open('w') as output:
         def sink(row):
@@ -73,9 +74,14 @@ def run(backend,name,serial,speed,manifest):
 def main():
     import argparse
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--frames',type=Path,default=ROOT/'.cache/m15-resolution-178-200/frames.json')
-    parser.add_argument('--output',type=Path,default=ROOT/'reports/M1.5-performance.json')
-    args=parser.parse_args()
+    parser.add_argument('--frames',type=Path,default=None)
+    parser.add_argument('--output',type=Path,default=None)
+    add_arguments(parser)
+    args=parser.parse_args();owner=manifest_battle(args.frames) if args.frames else 'sample_battle_1'
+    paths=BattleArtifacts.select(args.battle_id,args.video,default=owner).prepare()
+    args.frames=args.frames or paths.cache('m15-resolution-178-200/frames.json')
+    paths.check_identity(manifest_battle(args.frames))
+    args.output=paths.guard_output(args.output or paths.report('M1.5-performance.json'))
     began=time.monotonic()
     ocr=create_ocr('paddle-v6');icons=default_icons();backend=RegionBackend(ocr,icons)
     initialization=time.monotonic()-began

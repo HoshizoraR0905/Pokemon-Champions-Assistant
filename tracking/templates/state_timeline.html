@@ -6,18 +6,30 @@
 :root{color-scheme:light;--ink:#17283b;--muted:#526479;--line:#d7e0e9;--accent:#126858}*{box-sizing:border-box}body{margin:0;background:#f4f7fa;color:var(--ink);font:15px/1.55 system-ui,sans-serif}header{padding:18px 24px;background:#17283b;color:white}h1{font-size:22px;margin:0}h2{font-size:19px;margin:0 0 12px}h3{font-size:16px;margin:0 0 8px}p{margin:6px 0}.muted{color:var(--muted);font-size:13px}.layout{display:grid;grid-template-columns:300px minmax(0,1fr);max-width:1600px;margin:auto}nav{position:sticky;top:0;height:100vh;overflow:auto;border-right:1px solid var(--line);padding:16px;background:white}.controls{display:flex;gap:8px;margin-bottom:12px}button{font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:6px;padding:8px;background:white;color:var(--ink)}button:focus-visible{outline:3px solid #50a4f4}button:disabled{opacity:.4;cursor:default}.event{display:block;width:100%;text-align:left;margin:6px 0;padding:10px}.event[aria-current=true]{border-color:var(--accent);background:#e5f4ef;box-shadow:inset 4px 0 var(--accent)}.event small{display:block;color:var(--muted)}main{padding:20px;min-width:0}.panel{padding:18px;border:1px solid var(--line);border-radius:10px;background:white;margin-bottom:16px}.summary{position:sticky;top:0;z-index:2;background:#eff5f8;padding:12px;border:1px solid var(--line);border-radius:8px;margin-bottom:16px;box-shadow:0 3px 10px #17283b12}.sides{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pill{display:inline-block;padding:2px 7px;background:#eef2f6;border-radius:4px;font-size:12px;margin:2px}.gameplay{border-left:4px solid #167862}.knowledge{border-left:4px solid #be7d10}.observation{border-left:4px solid #66748b}.change{margin:8px 0;padding:10px;background:#f7f9fb;overflow-wrap:anywhere}.change strong{display:block}.after{color:#09624e;font-weight:650}.pokemon{padding:12px;border:1px solid var(--line);border-radius:7px;margin:10px 0}.changed{background:#eaf7f0;border-color:#67a990}.facts{font-size:13px}.facts div{margin:3px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.5 ui-monospace,monospace;background:#f0f3f6;padding:12px;max-height:500px;overflow:auto}summary{cursor:pointer;font-weight:600;padding:7px 0}details{margin:7px 0}select{font:inherit;padding:6px;border:1px solid var(--line);border-radius:5px}a{color:#126858}@media(max-width:850px){.layout{grid-template-columns:1fr}nav{position:static;height:auto;max-height:300px;border-bottom:1px solid var(--line)}.sides{grid-template-columns:1fr}.summary{position:static}main{padding:12px}}
 </style></head>
 <body><header><h1>Battle State Timeline <span class="pill">M2.2.1</span></h1><p id="battle"></p></header>
-<div class="layout"><nav aria-label="事件导航"><div class="controls"><button id="prev" aria-label="上一个事件">← 上一个</button><button id="next" aria-label="下一个事件">下一个 →</button></div><p class="muted">键盘 ← / → · Event 0 为初始状态</p><div id="events"></div></nav>
+<div class="layout"><nav aria-label="事件导航"><div class="controls"><button id="prev" aria-label="上一个事件">← 上一个</button><button id="next" aria-label="下一个事件">下一个 →</button></div><label>跳到回合 <select id="turn-selector" aria-label="回合选择"></select></label><p class="muted">键盘 ← / → · Event 0 为初始状态</p><div id="events"></div></nav>
 <main><div id="persistent" class="summary" aria-label="当前场上状态"></div><section class="panel"><h2 id="heading" aria-live="polite"></h2><div id="metadata"></div><p id="classification"></p><p class="muted">绿色：对战状态 · 黄色：知识/证据 · 灰色：观察记录。未知值保持未知；HP 为最后一次证据。</p><label>显示变化 <select id="filter"><option value="all">全部</option><option value="gameplay">对战状态</option><option value="knowledge">知识 / 证据</option><option value="observation">观察记录</option></select></label><div id="changes"></div></section>
 <section class="panel"><h2>事件后的 Battle State</h2><div id="globals"></div><div id="sides" class="sides"></div></section>
 <section class="panel"><h2>证据与调试</h2><details><summary>原始事件、来源、置信度与绑定</summary><pre id="event-json"></pre></details><details><summary>事件前结构化状态</summary><pre id="before-json"></pre></details><details><summary>事件后结构化状态（含未知 / 推导 / 冲突及来源）</summary><pre id="after-json"></pre></details><details><summary>全部原始字段差异（包含证据与记录字段）</summary><pre id="raw-json"></pre></details></section></main></div>
 <script type="application/json" id="timeline-data">__TIMELINE_DATA__</script>
 <script>
 'use strict';
-const timeline=JSON.parse(document.getElementById('timeline-data').textContent), entries=timeline.entries;
+function unpackTimeline(payload){
+ if(payload.format!=='interned-timeline-v1')return payload;
+ const cache=new Map();
+ function decode(value){const [tag,data]=value;if(tag==='literal')return data;
+ if(!cache.has(data)){const [kind,node]=payload.pool[data];let result;
+ if(kind==='object'){result={};for(const [k,v]of Object.entries(node))Object.defineProperty(result,k,{value:decode(v),enumerable:true,writable:true,configurable:true});}
+ else if(kind==='array')result=node.map(decode);else result=node;
+ cache.set(data,result);}return cache.get(data);}
+ return decode(payload.root);
+}
+const timeline=unpackTimeline(JSON.parse(document.getElementById('timeline-data').textContent)), entries=timeline.entries;
 let selected=0;
 const $=id=>document.getElementById(id);
 const words={self:'己方',opponent:'对手',left:'左位',right:'右位',active_slots:'场上位置',weather:'天气',terrain:'场地',trick_room:'戏法空间',pokemon:'宝可梦',sides:'队伍',hp:'HP',current:'当前值',maximum:'最大值',displayed_percent:'显示百分比',percent_interval:'百分比区间',unit:'单位',location:'位置',fainted:'倒下',major_status:'主要状态',stages:'能力阶级',special_defense:'特防',special_attack:'特攻',attack:'攻击',defense:'防御',speed:'速度',accuracy:'命中',evasion:'闪避',value:'数值',interval:'可能范围',changes:'变化记录',item:'道具',ability:'特性',identity:'身份',activations:'发动次数',revealed:'揭示记录',executed:'招式执行',moves:'招式',observations:'观察记录',original_identity:'原始身份',species:'种类',kind:'类型',active:'生效',duration:'持续时间',remaining:'剩余',expires_at_turn:'到期回合',timing:'计时边界',modifiers:'修正条件',status:'持有状态',current_variant:'当前形态',party_complete:'队伍完整',remaining_available:'剩余可用',conditions:'队伍效果',hazards:'入场危害',temporary_effects:'临时效果',volatile:'临时状态',resources:'对战资源',turn:'回合',phase:'阶段',suppressed:'特性被抑制',conflicts:'冲突记录'};
 const values={rain:'雨',snow:'雪',sun:'晴天',sandstorm:'沙暴',psychic:'精神场地',grassy:'青草场地',electric:'电气场地',misty:'薄雾场地',none:'无',unknown:'未知',bench:'后备',active:'场上',fainted:'已倒下',burn:'灼伤',poison:'中毒',bad_poison:'剧毒',paralysis:'麻痹',sleep:'睡眠',freeze:'冰冻',absolute:'绝对 HP',displayed_percent:'显示百分比',known:'已知持有',consumed:'已消耗',transferred:'已转移',increment:'提高',decrement:'降低',reset:'重置',replace:'替换'};
+Object.assign(words,{mechanics:'历史依赖机制',field_entry:'场上入场',protect_chain:'连续保护',protean:'变幻自如',unburden:'轻装',entry_triggers:'入场特性',current:'当前值',success_count:'连续成功次数',activated:'本次入场已发动',eligibility:'发动资格',entry_id:'入场标识',observed_entry_count:'观察到的入场次数',effect_active:'机制效果生效',speed_multiplier:'速度倍率（非能力阶级）',trigger_latched:'物品丢失触发保持',condition_established:'触发条件已建立',has_item:'持有道具',ability_established:'特性已建立',last_item_change:'道具变化',pending:'等待结果',attempted:'已尝试执行',last_outcome:'最近结果',activation_count:'观察到的发动次数',current_types:'当前属性',resulting_types:'发动后属性',expiration:'到期信息',expired:'已到期'});
+Object.assign(words,{knowledge:'知识',hidden_configuration:'隐藏配置',fields:'配置字段',held_item:'已观察道具',item_at_start:'开战时道具',native_ability:'原始特性',observed_ability:'曾观察到的特性',mega_eligibility:'超级进化历史能力',observed_transformation:'观察到的变身',max_hp:'最大 HP',nature:'性格',training_allocation:'培养分配',ivs:'IV'});
 const knowledge={unknown:'未知',observed:'观察',derived:'推导',conflicting:'冲突',hypothesis:'假设'};
 const categories={gameplay:'对战状态变化',knowledge:'知识 / 证据变化',observation:'观察记录',observation_only:'仅观察：无对战状态变化（证据记录可变化）',no_change:'无状态变化',initial:'初始状态'};
 function known(f){return f&&['observed','derived'].includes(f.knowledge)}
@@ -33,45 +45,110 @@ function format(v,state){
 }
 function name(p){return known(p?.species)?p.species.value.name||p.species.value.canonical_id:'未知宝可梦'}
 function hp(p){const h=p.hp;if(known(h.unit)&&h.unit.value==='absolute')return `${format(h.current)}/${format(h.maximum)} HP`;if(known(h.unit)&&h.unit.value==='displayed_percent')return `${format(h.displayed_percent)}%（显示值；绝对 HP 未知）`;return 'HP 未知'}
-function label(path,state){return path.map(k=>state.pokemon[k]?name(state.pokemon[k]):words[k]||k).join(' › ')}
+function label(path,state){return path.map(k=>state.pokemon[k]?name(state.pokemon[k]):(k.startsWith('item_before_transformation:')?'变身前道具':words[k]||k)).join(' › ')}
 function el(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n}
 function put(id,text){$(id).textContent=text}
-function json(id,value){put(id,JSON.stringify(value,null,2))}
+function json(id,value){
+ const node=$(id),parent=node.parentElement;
+ let loaded=false;node.textContent='';
+ node.loadJson=()=>{if(!loaded){node.textContent=JSON.stringify(value,null,2);loaded=true;}};
+ if(parent&&parent.tagName==='DETAILS'){parent.ontoggle=()=>{if(parent.open)node.loadJson();};if(parent.open)node.loadJson();}
+}
+function lazyDetails(title,value){const detail=el('details'),pre=el('pre');detail.append(el('summary',title),pre);let loaded=false;
+ detail.ontoggle=()=>{if(detail.open&&!loaded){pre.textContent=JSON.stringify(value,null,2);loaded=true;}};return detail;}
+
 function stage(p,stat){const s=p.stages[stat];if(known(s.value))return format(s.value);if(s.changes.length){const last=s.changes.at(-1);return `先前阶级 ${last.prior_known_value??'未知'} → ${values[last.change]||last.change}，幅度 ${last.amount??'未知'}；当前精确阶级未知；范围 ${format(s.interval)}`;}return format(s.value)}
 function changed(path,entry){return entry.changes.some(c=>c.path.slice(0,path.length).join('/')===path.join('/'))}
 function effect(effect){return `${format(effect.kind)} · 生效 ${format(effect.active)} · 剩余 ${format(effect.duration.remaining)} · 到期 ${format(effect.duration.expires_at_turn)}`}
+
+function evidenceHref(path){
+ if(document.baseURI){const base=new URL(document.baseURI),index=base.pathname.lastIndexOf('/reports/');
+ if(index>=0){base.pathname=base.pathname.slice(0,index+1);base.search='';base.hash='';return new URL(path,base).href;}}
+ return (timeline.artifact_root||'../')+path;
+}
+
+function renderMechanics(owner,parent){
+ const mechanisms=Object.entries(owner.mechanics||{});
+ if(!mechanisms.length){parent.append(el('p','历史依赖机制：尚无支持证据 / 未记录','muted'));return;}
+ for(const [key,m]of mechanisms){const block=el('details');block.open=true;block.append(el('summary',`${words[key]||key} · ${m.scope}`));
+ for(const [field,f]of Object.entries(m.current))block.append(el('div',`${words[field]||field}：${format(f)}`,'facts'));
+ if(!Object.keys(m.current).length)block.append(el('p','当前机制状态未知','muted'));
+ if(m.expiration&&Object.values(m.expiration).some(known))block.append(el('p',`到期剩余 ${format(m.expiration.remaining)} · 边界 ${format(m.expiration.timing)}`));
+ const debug=lazyDetails('机制来源、规则与生命周期',m);block.append(debug);parent.append(block);}
+}
+
+function renderHidden(hidden,pid,parent){
+ const p=hidden?.pokemon?.[pid];if(!p)return;
+ const labels=hidden.labels||{};const labelValue=v=>Array.isArray(v)?v.map(labelValue).join('、'):v===true?'已观察到':v===false?'否':labels[v]||(typeof v==='string'&&v.startsWith('pokeapi:')?'未解析名称':String(v));
+ const statuses={confirmed:'已确认',constrained:'已约束',possible:'合法可能',unknown:'未知',conflicting:'冲突',provisional_inference:'暂定推导'};
+ const describe=d=>{if(!d)return '未知';let text=statuses[d.status]||d.status;
+ if(d.value!==null)text+='：'+labelValue(d.value);else if(d.candidates)text+='：'+labelValue(d.candidates);else if(d.interval)text+='：'+d.interval.join('–');
+ if(d.provisional)text+='；参考配置 '+describe(d.provisional);if(d.unresolved?.length)text+=`；未解析 ${d.unresolved.length} 项`;return text;};
+ const block=el('details');block.append(el('summary',p.side==='opponent'?'隐藏配置 · 对手（持续保留）':'变身前提 · 己方（与已知队伍配置分开）'));
+ const fields=p.fields;
+ if(p.side==='opponent'){
+ for(const [key,title]of [['species','种类'],['original_form','原始形态'],['held_item','已观察道具身份（不等于仍持有）'],['item_at_start','开战时道具'],['native_ability','原始配置特性'],['observed_ability','曾观察到的有效特性'],['mega_eligibility','超级进化能力（历史观察）'],['observed_transformation','观察到的变身']])block.append(el('p',title+'：'+describe(fields[key])));
+ const moves=fields.moves?.members||[];block.append(el('p','已揭示配置招式：'+(moves.length?labelValue(moves):'未知')));
+ block.append(el('p','未揭示招式槽：'+(hidden.move_capacity===null?'未知（槽位上限规则未验证）':Math.max(0,hidden.move_capacity-moves.length)+'（参考规则）')));
+ block.append(el('p','个体数值：'+['max_hp','attack','defense','special_attack','special_defense','speed'].map(k=>(k==='max_hp'?'最大 HP':words[k])+' '+describe(fields[k])).join(' · ')));
+ block.append(el('p','性格 '+describe(fields.nature)+' · 培养分配 '+describe(fields.training_allocation)+' · IV '+describe(fields.ivs)));
+ }else{block.append(el('p','已知队伍配置见上方；此处仅记录变身证据与前提。'));block.append(el('p','观察到的变身：'+describe(fields.observed_transformation)));}
+ for(const [key,d]of Object.entries(fields))if(key.startsWith('item_before_transformation:'))block.append(el('p','变身前道具：'+describe(d)));
+ const conflicts=Object.values(fields).flatMap(d=>[...(d.conflicts||[]),...(d.provisional?.conflicts||[])]);if(conflicts.length)block.append(el('p',`存在 ${conflicts.length} 项约束冲突，展开来源查看`));
+ block.append(lazyDetails('约束、候选排除、观察与规则来源',p));parent.append(block);
+}
+
 function render(){
  const entry=entries[selected],s=entry.after,e=entry.event;
- put('battle',`${timeline.battle_id} · ${entries.length-1} 个事件 · 离线快照查看器`);
+ put('battle',`${timeline.battle_id} · ${entries.length-1} 个事件 · 离线快照查看器${timeline.mechanic_rules?' · 规则 '+timeline.mechanic_rules.profile_id+'（'+timeline.mechanic_rules.verification+'）':''}`);
  $('prev').disabled=selected===0;$('next').disabled=selected===entries.length-1;
  [...$('events').children].forEach((b,i)=>b.setAttribute('aria-current',String(i===selected)));
  put('heading',selected?`Event ${selected} · ${e.original_text}`:'Event 0 · 初始状态');
  put('classification',categories[entry.classification]);
+ $('turn-selector').value=String(entry.turn??'unknown');
  const meta=$('metadata');meta.replaceChildren();
  if(e){meta.append(el('p',`回合 ${entry.turn??'未知'} · ${e.event_type} · ${entry.application_status}${entry.reason?' · '+entry.reason:''}`));meta.append(el('p',`行动方：${words[e.side]||e.side} · Actor：${e.actor?.name||'未知'} · Target：${e.target?.name||'未知'}${e.uncertainty.includes('target_associated_from_sequence')?'（目标为序列关联候选）':''}`));meta.append(el('p',`OCR：${e.ocr_confidence??'未知'} · 解析：${e.parsing_confidence} · 不确定项：${e.uncertainty.join(', ')||'未标记'}`,'muted'));}else meta.append(el('p',`回合 ${entry.turn??'未知'} · 使用已有初始状态证据`));
+ if(e){const sources=[...e.evidence.map(v=>v.details),...e.associated_video_evidence];const seen=new Set();for(const source of sources){const path=source?.image;if(typeof path!=='string'||!path.startsWith('reports/')||path.includes('..')||seen.has(path))continue;seen.add(path);const link=el('a',`证据截图 · ${source.timestamp??'未知'}s（采样不确定度 ${source.timestamp_uncertainty_seconds??'未知'}s）`);link.href=evidenceHref(path);link.target='_blank';link.rel='noopener';const line=el('p');line.append(link);meta.append(line);}}
  const summary=$('persistent');summary.replaceChildren();
  const line=Object.entries(s.sides).map(([side,team])=>`${words[side]}：`+Object.entries(team.active_slots).map(([slot,pid])=>`${words[slot]||slot} ${name(s.pokemon[pid])} · ${hp(s.pokemon[pid])}`).join(' / ')+(team.vacant_slots.length?' · 空位 '+team.vacant_slots.map(x=>words[x]||x).join(', '):''));
  summary.append(el('strong',`回合 ${format(s.turn)} · ${line.join(' ｜ ')}`));summary.append(el('div',`天气 ${format(s.weather.kind)} · 场地 ${format(s.terrain.kind)} · 戏法空间 ${format(s.trick_room.active)}`));
  const changes=$('changes');changes.replaceChildren();const filter=$('filter').value;
  entry.changes.filter(c=>filter==='all'||filter===c.category).forEach(c=>{const card=el('div',undefined,'change '+c.category);card.append(el('strong',label(c.path,s)+' · '+categories[c.category]));let b=c.before,a=c.after;
- if(c.path.includes('stages')&&c.path.at(-1)==='changes'){const pid=c.path[1],stat=c.path[3];b=entry.before.pokemon[pid]?stage(entry.before.pokemon[pid],stat):'未知';a=stage(s.pokemon[pid],stat);}
+ if(c.path.includes('hidden_configuration')){const hidden=s.knowledge.hidden_configuration;const describe=d=>{if(!d)return '未记录';const v=d.provisional||d;const status={confirmed:'已确认',constrained:'已约束',unknown:'未知',conflicting:'冲突',provisional_inference:'暂定推导',possible:'合法可能'};const value=v.members?.length?v.members:v.value;return (status[v.status]||v.status)+(value!==null?'：'+(Array.isArray(value)?value.map(x=>hidden.labels[x]||(typeof x==='string'&&x.startsWith('pokeapi:')?'未解析名称':String(x))).join('、'):hidden.labels[value]||(typeof value==='string'&&value.startsWith('pokeapi:')?'未解析名称':String(value))):'');};b=describe(b);a=describe(a);}
+ else if(c.path.includes('stages')&&c.path.at(-1)==='changes'){const pid=c.path[1],stat=c.path[3];b=entry.before.pokemon[pid]?stage(entry.before.pokemon[pid],stat):'未知';a=stage(s.pokemon[pid],stat);}
  else if(c.path.at(-1)==='executed'){b=Array.isArray(b)&&b.length?b.map(x=>x.move.name||x.move.canonical_id).join('、'):'无执行记录';a=a.map(x=>x.move.name||x.move.canonical_id).join('、');}
  else if(Array.isArray(b)||Array.isArray(a)){b=Array.isArray(b)?b.length:0;a=Array.isArray(a)?a.length:0;card.append(el('span','记录数量：'));}
  card.append(el('span',format(b,entry.before)),el('span',' → '),el('span',format(a,s),'after'));
  if(c.path.includes('stages')&&c.path.at(-1)==='changes'){const p=s.pokemon[c.path[1]];card.append(el('p',stage(p,c.path[3]),'muted'));}
  if(c.path.includes('hp')){const pid=c.path[1];card.append(el('p',`${entry.before.pokemon[pid]?hp(entry.before.pokemon[pid]):'HP 未知'} → ${hp(s.pokemon[pid])}`));}
- const detail=el('details');detail.append(el('summary','值与来源'),el('pre',JSON.stringify(c,null,2)));card.append(detail);changes.append(card);});
+ const detail=lazyDetails('值与来源',c);card.append(detail);changes.append(card);});
  if(!changes.children.length)changes.append(el('p',selected?'该筛选下没有变化。':'初始状态没有前序事件。','muted'));
  const globals=$('globals');globals.replaceChildren();for(const [title,key]of [['天气','weather'],['场地','terrain'],['戏法空间','trick_room']])globals.append(el('p',`${title}：${effect(s[key])}`,changed([key],entry)?'changed':''));
  if(Object.keys(s.global_effects).length)globals.append(el('p','全局效果：'+JSON.stringify(s.global_effects)));
+ renderMechanics(s,globals);
+ if(s.knowledge){const detail=lazyDetails('知识来源、预览阵容、配置匹配与观察—规则因果关联',s.knowledge);globals.append(detail);}
  const sides=$('sides');sides.replaceChildren();
  for(const [side,team]of Object.entries(s.sides)){const section=el('section');section.append(el('h3',`${words[side]} · ${team.trainer.display_name||'训练家未知'}`));section.append(el('p',`完整队伍 ${format(team.party_complete)} · 可用 ${format(team.remaining_available)}`,'muted'));
  const effects=Object.entries({...team.conditions,...team.temporary_effects});for(const [key,v]of effects)section.append(el('p',`${words[key]||key}：${effect(v)}`));for(const [key,v]of Object.entries(team.hazards))section.append(el('p',`${key}：${format(v)}`));
+ renderMechanics(team,section);
  const order=[...team.party_instance_ids].sort((a,b)=>Number(s.pokemon[b].location.value?.kind==='active')-Number(s.pokemon[a].location.value?.kind==='active'));
- for(const pid of order){const p=s.pokemon[pid],card=el('article',undefined,'pokemon'+(changed(['pokemon',pid],entry)?' changed':''));card.append(el('h3',`${name(p)} · ${format(p.location)}`));const facts=el('div',undefined,'facts');facts.append(el('div',`${hp(p)} · 倒下 ${format(p.fainted)} · 主要状态 ${format(p.major_status)}`));facts.append(el('div',`道具 ${format(p.item.identity)} · 持有 ${format(p.item.status)} · 发动 ${p.item.activations.length} 次`));facts.append(el('div',`特性 ${format(p.ability.current)} · 抑制 ${format(p.ability.suppressed)}`));
- for(const stat of Object.keys(p.stages))facts.append(el('div',`${words[stat]||stat}：${stage(p,stat)}`));if(p.moves.executed.length)facts.append(el('div','已执行招式：'+p.moves.executed.map(x=>x.move.name||x.move.canonical_id).join('、')));for(const [key,v]of Object.entries(p.volatile))facts.append(el('div',`${key}：${effect(v)}`));card.append(facts);section.append(card);}sides.append(section);}
+ for(const pid of order){const p=s.pokemon[pid],card=el('article',undefined,'pokemon'+(changed(['pokemon',pid],entry)?' changed':''));card.append(el('h3',`${name(p)} · ${format(p.location)}`));const facts=el('div',undefined,'facts');facts.append(el('div',`${hp(p)} · 倒下 ${format(p.fainted)} · 主要状态 ${format(p.major_status)}`));facts.append(el('div',`道具 ${format(p.item.identity)} · 持有 ${format(p.item.status)} · 发动 ${p.item.activations.length} 次`));facts.append(el('div',`当前属性 ${format(p.current_types)}`));facts.append(el('div',`特性 ${format(p.ability.current)} · 抑制 ${format(p.ability.suppressed)}`));
+ const cfg=s.knowledge?.team?.instances?.[pid];
+ if(cfg){const block=el('details');block.open=true;block.append(el('summary','己方已知配置（开场，不随战斗变化）'));
+ const fields=cfg.fields;block.append(el('p','实际个体数值：'+['hp','attack','defense','special_attack','special_defense','speed'].map(k=>`${words[k]||k} ${fields[k]?.value??'未知'}`).join(' · ')));
+ block.append(el('p','种族基础数值（独立参考）：'+JSON.stringify(cfg.species_reference?.base_stats??'未知')));
+ block.append(el('p','配置招式：'+[1,2,3,4].map(n=>fields['move_'+n]?.value??'未知').join('、')));
+ block.append(el('p',`配置特性 ${fields.ability?.value??'未知'} · 配置道具 ${fields.held_item?.value??'未知'}`));
+ for(const source of cfg.sources||[]){if(typeof source.image==='string'&&/^\.cache\/m223-survey\/[0-9]+\.jpg$/.test(source.image)){const link=el('a',`开场证据截图 · ${source.timestamp}s`);link.href=evidenceHref(source.image);link.target='_blank';link.rel='noopener';block.append(el('p'));block.lastChild.append(link);}}
+ block.append(lazyDetails('完整配置与来源',cfg));card.append(block);}
+ const view=s.knowledge?.pokemon_projection?.[pid];
+ if(view){facts.append(el('div','已确认／揭示招式：'+(view.revealed_moves.map(m=>s.knowledge?.hidden_configuration?.labels?.[m.canonical_id]||m.name).join('、')||'尚未揭示')));facts.append(el('div','未揭示招式数：'+(view.unrevealed_count===null?'未知（容量规则未验证）':view.unrevealed_count+'（参考规则）')));card.append(lazyDetails('精确招式槽、来源与不确定性',view));}
+ else facts.append(el('div','当前已知招式槽：'+(Object.entries(p.moves.known_slots).map(([n,f])=>`${n}: ${format(f)}`).join('、')||'未知')));
+ for(const stat of Object.keys(p.stages))facts.append(el('div',`${words[stat]||stat}：${stage(p,stat)}`));if(p.moves.executed.length)facts.append(el('div','已执行招式：'+p.moves.executed.map(x=>x.move.name||x.move.canonical_id).join('、')));for(const [key,v]of Object.entries(p.volatile))facts.append(el('div',`${key}：${effect(v)}`));card.append(facts);renderMechanics(p,card);renderHidden(s.knowledge?.hidden_configuration,pid,card);section.append(card);}sides.append(section);}
  json('event-json',{event:e,bindings:entry.bindings,application_status:entry.application_status,reason:entry.reason});json('before-json',entry.before);json('after-json',s);json('raw-json',entry.raw_changes);
 }
+for(const turn of [...new Set(entries.map(e=>e.turn??'unknown'))]){const option=el('option',turn==='unknown'?'未知':`回合 ${turn}`);option.value=String(turn);$('turn-selector').append(option);}
+$('turn-selector').onchange=()=>{const index=entries.findIndex(e=>String(e.turn??'unknown')===$('turn-selector').value);if(index>=0){selected=index;render();}};
 entries.forEach((entry,i)=>{const b=el('button',undefined,'event');b.append(el('span',i?`${i}. ${entry.event.original_text}`:'0. 初始状态'));b.append(el('small',`回合 ${entry.turn??'未知'} · ${categories[entry.classification]}`));b.onclick=()=>{selected=i;render()};$('events').append(b)});
 $('prev').onclick=()=>{if(selected>0){selected--;render()}};$('next').onclick=()=>{if(selected<entries.length-1){selected++;render()}};$('filter').onchange=render;
 document.addEventListener('keydown',e=>{if(['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName)||e.altKey||e.ctrlKey||e.metaKey)return;if(e.key==='ArrowLeft'&&selected>0){selected--;e.preventDefault();render()}if(e.key==='ArrowRight'&&selected<entries.length-1){selected++;e.preventDefault();render()}});
