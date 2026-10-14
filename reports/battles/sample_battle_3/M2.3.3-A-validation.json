@@ -1,0 +1,87 @@
+{
+  "battle_id": "sample_battle_3",
+  "input_hash": "2c2a4e030917ce8785f1a95b465b50659aa24cc02e8b5e02081f4699db2ef58d",
+  "hud_observations_eligible": 56,
+  "hud_identity_status": {
+    "deferred": 13,
+    "accepted": 43
+  },
+  "hud_hp_status": {
+    "deferred": 13,
+    "accepted": 28,
+    "accepted_percent": 15
+  },
+  "observed_initial_occupancies": 4,
+  "observed_slot_identity_changes": 2,
+  "slot_identity_change_semantics": "different species in successive accepted HUDs for the same side/slot; action timing and cause unknown",
+  "hp_absolute_observations_applied": 28,
+  "hp_percent_observations_applied": 15,
+  "move_revelation_observations": 14,
+  "distinct_instance_move_revelations": 9,
+  "move_effects_applied_from_revelation": 0,
+  "standalone_effect_messages_applied": 8,
+  "message_status": {
+    "deferred": 215,
+    "applied_candidate": 17,
+    "recorded_observation": 25,
+    "applied_partial": 14
+  },
+  "unresolved_actor_or_policy_cases": 215,
+  "unresolved_targets_retained": 27,
+  "semantic_gameplay_entries": 43,
+  "endpoint_identity_comparisons": [
+    {
+      "side": "opponent",
+      "slot": "left",
+      "timestamp": 638.891667,
+      "observed_species": 812,
+      "replayed_species": 812,
+      "final_species": null,
+      "later_accepted_vacancy_events": [
+        "event:83b4e10b82621b67bc6f8954"
+      ],
+      "status": "accepted",
+      "match": true
+    },
+    {
+      "side": "self",
+      "slot": "right",
+      "timestamp": 638.891667,
+      "observed_species": 1018,
+      "replayed_species": 1018,
+      "final_species": 1018,
+      "later_accepted_vacancy_events": [],
+      "status": "accepted",
+      "match": true
+    },
+    {
+      "side": "opponent",
+      "slot": "right",
+      "timestamp": 638.891667,
+      "observed_species": null,
+      "replayed_species": null,
+      "final_species": null,
+      "later_accepted_vacancy_events": [],
+      "status": "deferred",
+      "match": null
+    },
+    {
+      "side": "self",
+      "slot": "left",
+      "timestamp": 638.891667,
+      "observed_species": 478,
+      "replayed_species": 478,
+      "final_species": 478,
+      "later_accepted_vacancy_events": [],
+      "status": "accepted",
+      "match": true
+    }
+  ],
+  "endpoint_checks_are_fused_input_consistency": true,
+  "deterministic_replay": true,
+  "repeated_delivery_idempotent": true,
+  "hidden_roundtrip": true,
+  "rules_profile": "champions-evidence-only-v1",
+  "new_ocr_calls": 0,
+  "new_decoded_frames": 0
+}

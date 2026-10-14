@@ -1,0 +1,692 @@
+{
+  "sample_battle_0": {
+    "interval": [
+      408,
+      416
+    ],
+    "basis": "Manual review of original-source cached ROI contact sheets; ambiguous fades excluded from binary precision/recall",
+    "frames": [
+      {
+        "sha256": "bd6196049beeeb7de9ceb5bdefb548dadf2ce93f352ac94bd1779198aa0af44d",
+        "timestamp": 408.00166667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "a108faabcc5d3dac8b6338c9002c9a4ae5ccacd93265f8a4991d79979a511662",
+        "timestamp": 408.351667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "c65c01fd448f12aa73b787b78dd7cc1503ca05d7297543e40374fc63dc0543db",
+        "timestamp": 408.518333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "9bf6f1013cccd91192cef66786a74e52e061741267ef17d258e7acf72b94cad6",
+        "timestamp": 408.668333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "93b37309ca25cdb55a7e07b6abb5dbeed15c8ebbc8ff8d1e216318dc45e1df0e",
+        "timestamp": 409.018333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "91a6383188537813288ee446a6ac2c4469b728e4ddbe24c44957ea295181fef7",
+        "timestamp": 409.351667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "f1c211b1313fcd52944d6deb1ba2bb95ad34761a5dc1e64eb48e3d93c325518d",
+        "timestamp": 409.518333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "c6210519f76bc10d07f136cfb05a9e6ef85a942bfe522ed69795f5f5c44cf405",
+        "timestamp": 409.685,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "22de2937b9f6aa7961a46b1dd373a9381d54e218b841e11025d026b8ac6ad3d2",
+        "timestamp": 410.00166667,
+        "label": "ambiguous_fade",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "861b86a02fe89410a57f6f2510af56e548b3aac127064728593788f26ae9d0b8",
+        "timestamp": 410.351667,
+        "label": "visible_message",
+        "occurrence": "corviknight_effect",
+        "expected_token": "效果不好"
+      },
+      {
+        "sha256": "f1833445e6f61c7c1239e01a5844cc2515104e57dcf7f556e803936319f1e179",
+        "timestamp": 410.535,
+        "label": "visible_message",
+        "occurrence": "corviknight_effect",
+        "expected_token": "效果不好"
+      },
+      {
+        "sha256": "e0b7b2ba922cec845c8d3bead699631a4fdf70aef22d820b28b1c852a23729ba",
+        "timestamp": 410.686667,
+        "label": "visible_message",
+        "occurrence": "corviknight_effect",
+        "expected_token": "效果不好"
+      },
+      {
+        "sha256": "1c6d8e0655661122ec8b3437959870977e565c7499cef693b5507d84e85792b9",
+        "timestamp": 411.02,
+        "label": "visible_message",
+        "occurrence": "corviknight_effect",
+        "expected_token": "效果不好"
+      },
+      {
+        "sha256": "ceb29749bd47601cba761d3ec070e664a35b70edc2f07975188ed045557a8c43",
+        "timestamp": 411.353333,
+        "label": "visible_message",
+        "occurrence": "corviknight_effect",
+        "expected_token": "效果不好"
+      },
+      {
+        "sha256": "b58f06825518b0badc33e891f24bbc3f98d2eb70cf347ca5c8859d32635fe78c",
+        "timestamp": 411.503333,
+        "label": "visible_message",
+        "occurrence": "corviknight_effect",
+        "expected_token": "效果不好"
+      },
+      {
+        "sha256": "8b7369f93991f417c2518c3ee793797720c4f676aa2a2cac164bbcb7cbae74f6",
+        "timestamp": 411.686667,
+        "label": "visible_message",
+        "occurrence": "corviknight_effect",
+        "expected_token": "效果不好"
+      },
+      {
+        "sha256": "1967d46155c9eab1c450f5dae9465579d1351411b6c5d9fd19bce752f3779a86",
+        "timestamp": 412.003333,
+        "label": "visible_message",
+        "occurrence": "indeedee_faint",
+        "expected_token": "倒下"
+      },
+      {
+        "sha256": "19d9b0cb88e1fa9d60c2e789ac584fb374526ed836743ae4ee809b2598cd349c",
+        "timestamp": 412.353333,
+        "label": "visible_message",
+        "occurrence": "indeedee_faint",
+        "expected_token": "倒下"
+      },
+      {
+        "sha256": "95a72ad45b74789e06fd77d16502d5c65005d83e34496939ec3ae35600cc85df",
+        "timestamp": 412.52,
+        "label": "visible_message",
+        "occurrence": "indeedee_faint",
+        "expected_token": "倒下"
+      },
+      {
+        "sha256": "cb75b13fff5991c76a1deffe00aa6c0348f4dc9b7ed28f90f0cd491db775579a",
+        "timestamp": 412.686667,
+        "label": "visible_message",
+        "occurrence": "indeedee_faint",
+        "expected_token": "倒下"
+      },
+      {
+        "sha256": "ce4ea181ecf594db21c99708b72bce3a9e6ddfe59e4254e4d3e7d0f0f51c37de",
+        "timestamp": 413.02,
+        "label": "visible_message",
+        "occurrence": "indeedee_faint",
+        "expected_token": "倒下"
+      },
+      {
+        "sha256": "2be4731184e40f3465d9333fd13756db534f66464e22195daa3785a85d5013b8",
+        "timestamp": 413.353333,
+        "label": "visible_message",
+        "occurrence": "indeedee_faint",
+        "expected_token": "倒下"
+      },
+      {
+        "sha256": "4d796faa69111cf82d59629fbb3f22e2cbb498f6baf2bff0bba97c54be7c8d70",
+        "timestamp": 413.52,
+        "label": "visible_message",
+        "occurrence": "indeedee_faint",
+        "expected_token": "倒下"
+      },
+      {
+        "sha256": "d740a365732e0d8c5151998194b06d46931970aefe1620208267811f3c503560",
+        "timestamp": 413.686667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "f84dc3d97daeabd4abd4ac6578c0f67beff54103e2682930c744743f1f482672",
+        "timestamp": 414.02,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "baf83ab9ab6181b58e966644bac73866694706932c56ae02d2a1cd92ed32dac6",
+        "timestamp": 414.353333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "b0c933225eaf59d6fa341797d01e86e858a39a50e58babf1850c7cf8dc5266fa",
+        "timestamp": 414.52,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "be27c57862e5ffe5318aa24c5ddb549d2e68b7b7a17dd679690ea66802fd81bb",
+        "timestamp": 414.686667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "0ff6fdc47663d845e134aac9b2d7ee7be0249edffdfc43245927b9de7678f891",
+        "timestamp": 415.02,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "54d02eb89b85e77bdb0e9a07404d17b2fab1981a913139da6d8630088d958026",
+        "timestamp": 415.353333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "5d51cbde3919656bc205ed69e740849b1945a007573719e8b0e8ecf8291765b9",
+        "timestamp": 415.52,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "acb1ee20ff5468f819f1876fe110713ee629af27da78ed26ba611006d44b2837",
+        "timestamp": 415.67,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      }
+    ]
+  },
+  "sample_battle_1": {
+    "interval": [
+      214,
+      230
+    ],
+    "basis": "Manual review of original-source cached ROI contact sheets; ambiguous fades excluded from binary precision/recall",
+    "frames": [
+      {
+        "sha256": "a2f3d1d6f8f000b08526c3d22de97fe9d45c061eab79a432df5385bad6c55c34",
+        "timestamp": 214.02,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "62d355065c4a463ea6e9291edc115b2b953fc777ebe63dcef7488d5af228f917",
+        "timestamp": 214.353333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "9cbe27ac3fad2009b9ccbcdf894f2f7754bab2967057261078d5c62b09219aef",
+        "timestamp": 214.52,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "87c5540c2cf5218ea09348110c7d61cdc896f21c03a5c9082bd14b20b9e7c448",
+        "timestamp": 214.703333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "19c9cc113101344a8db11722fa67f60b392d4e5e146c3733f61b298fc27d2aae",
+        "timestamp": 215.02,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "23952f0a151749c98a0a74f27e22d285e70344771b7dae4d8f32a389699c796b",
+        "timestamp": 215.353333,
+        "label": "visible_message",
+        "occurrence": "liquidation",
+        "expected_token": "水流裂破"
+      },
+      {
+        "sha256": "949bd43b311d0ef97a385963a0a74a0a890655b3206779120f4cdfeaa27df3ab",
+        "timestamp": 215.52,
+        "label": "visible_message",
+        "occurrence": "liquidation",
+        "expected_token": "水流裂破"
+      },
+      {
+        "sha256": "14c5ed238579e58031f322916e71ffcb36ff8421aea34420ab71331f62d24727",
+        "timestamp": 215.686667,
+        "label": "visible_message",
+        "occurrence": "liquidation",
+        "expected_token": "水流裂破"
+      },
+      {
+        "sha256": "824e09d442099110e132e18a2d4834ea024d820cf7c76cbbbeb22482a4bb0a78",
+        "timestamp": 216.02,
+        "label": "visible_message",
+        "occurrence": "liquidation",
+        "expected_token": "水流裂破"
+      },
+      {
+        "sha256": "90ae9d81137642b6f418c94e1102b4be83bd9f9893d0fcbab6d37117ba8a058e",
+        "timestamp": 216.353333,
+        "label": "visible_message",
+        "occurrence": "liquidation",
+        "expected_token": "水流裂破"
+      },
+      {
+        "sha256": "fd869fbd6ca3ce18e8e92847e6ec12173e0a23c85ca290fe0d9e3d4112f6531c",
+        "timestamp": 216.52,
+        "label": "visible_message",
+        "occurrence": "liquidation",
+        "expected_token": "水流裂破"
+      },
+      {
+        "sha256": "84ea044c296e83d75c38336b504d11665a0a7fedd2cdab194f454653d8234ff0",
+        "timestamp": 216.686667,
+        "label": "visible_message",
+        "occurrence": "liquidation",
+        "expected_token": "水流裂破"
+      },
+      {
+        "sha256": "61628f45410d01016a6a508137d71774038ee070cf23bce746566099eba860bc",
+        "timestamp": 217.02,
+        "label": "ambiguous_fade",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "68d24b3bc84fb188074b2013cd0ecdb47f6703cbe14d51c4b9274c0c58e85882",
+        "timestamp": 217.353333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "f270d63a52587a5454f562f47a03a8584837ba206eaf909fe7d2b72118d8790e",
+        "timestamp": 217.52,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "53e7d51a0b2f7afb7479192e92c5c14962440ab52a144de2521c463ac8ec1969",
+        "timestamp": 217.67,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "3ddf0c0d7d2c597954eb9b4dea96267954521497318ce0f3ec69a7b9eb8cd434",
+        "timestamp": 218.02,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "853cdbc7e4af6487ccc71041d042114f1377965c1527c118ce4cb6507f4035b8",
+        "timestamp": 218.336667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "0386405419b58504fd779a9515f47626ff4a97210497bfe7d2661bb4218794db",
+        "timestamp": 218.52,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "258af97adde5148ceb9fcc27dc1a45409277d2d854596531bf99de06f93413ac",
+        "timestamp": 218.686667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "86fd407e81417edd58bd972cdb967abfdded4c380038b6c51e4b0889da4c21da",
+        "timestamp": 219.02,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "ffe29e5991f4d51b61cb2053b9ca2aa5acb4bf8754b9e86282f468b36006947e",
+        "timestamp": 219.353333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "9346c00647714a0f11a3bc0630ef50ae4db31ce3e6c123017e5dd33b5305aaed",
+        "timestamp": 219.52,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "f274950e4d5f296171a3b0f271f7340185092a30701b80d291706c4a242672da",
+        "timestamp": 219.686667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "550e411c90f83b90e859a2168d5be16b142884d3a096b9cdca6e7fe1450f70f5",
+        "timestamp": 220.02,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "1cb0850e38742bfa72cc54d8221adcaaf196e9701ce0e2f6b8295d34721cd10a",
+        "timestamp": 220.336667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "d481c544f90ba9ed8b65781a061666c6439c5d2ebd40e28a4558a11792547a53",
+        "timestamp": 220.503333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "595574db8a45437dd71dc74770ec4e565a039dc6767b91ee2a644084f8b381be",
+        "timestamp": 220.67,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "6b932007b33f8742a464cecf170a03acec749202722d036bff7b06850e15edc1",
+        "timestamp": 221.003333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "a64c3bff0888c49ceb4189cc69ea69fa51add46189ea3035712a03f3f6f8e949",
+        "timestamp": 221.336667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "f7d7bbd8291d651700a7b24a521f4ce4b866dec0d99d85abaf0ff15beb58d24c",
+        "timestamp": 221.503333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "b551a3f985a8347662aabd0f99d58516b02152ec828f30dba1235ac7c2d568ef",
+        "timestamp": 221.67,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "52b0ad22ff276dff3544eacbefd31a149a66302ff38ee64ae4ffe2398dc1f449",
+        "timestamp": 222.003333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "99cbd0d2345081035985de87a888826f5a4b8ee1195d8551d7a8321c11d266f2",
+        "timestamp": 222.336667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "b39bd6a0770d9dbf9b440bc45d64103e22f5623bcaf520d92893d7a51c469245",
+        "timestamp": 222.503333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "7d5995c30c4bac609faacc2b355f98fe50fece274aec550eaee20aaf59c8f535",
+        "timestamp": 222.67,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "36bcbeee4dde4a78ba278fc68fdb1b1c400f4218b36b0c4c5b062d1c21e397ec",
+        "timestamp": 223.005,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "f14cf1130e368e2cc56967c6c54e8361ce5e26f205142e55b371822db12be7b4",
+        "timestamp": 223.338333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "6e2d79f4c45aad62a458454c3c99699cf6b74a36c6c708c6f4687f7ecc8387c7",
+        "timestamp": 223.505,
+        "label": "visible_message",
+        "occurrence": "super_effective",
+        "expected_token": "效果绝佳"
+      },
+      {
+        "sha256": "6abc1e1c4c98f5a9b5c35d85706bbdde8797c48a4ca79d693ea2bd996683f93d",
+        "timestamp": 223.671667,
+        "label": "visible_message",
+        "occurrence": "super_effective",
+        "expected_token": "效果绝佳"
+      },
+      {
+        "sha256": "7214b2c1c51b33263251bb444d337509929526dc37ad2f76f42380d8af81255c",
+        "timestamp": 224.005,
+        "label": "visible_message",
+        "occurrence": "super_effective",
+        "expected_token": "效果绝佳"
+      },
+      {
+        "sha256": "047bd16acde7a67e137cb22ec6ae4a8deb809604dc3f3a8a0ab052a2b2f04454",
+        "timestamp": 224.338333,
+        "label": "visible_message",
+        "occurrence": "super_effective",
+        "expected_token": "效果绝佳"
+      },
+      {
+        "sha256": "0b257b02b127713fc4755032e226f1872a7625da24c099d440e3db725cf17f19",
+        "timestamp": 224.505,
+        "label": "visible_message",
+        "occurrence": "super_effective",
+        "expected_token": "效果绝佳"
+      },
+      {
+        "sha256": "09e5d86c6b94a5de8fc5f46fbf9317f5da63f620aaae828a6523ae5287c44652",
+        "timestamp": 224.671667,
+        "label": "visible_message",
+        "occurrence": "super_effective",
+        "expected_token": "效果绝佳"
+      },
+      {
+        "sha256": "c0e8c7e8691bcf8e15097b4f075a09cedc20dab2198834454b6f9e213d7ebf84",
+        "timestamp": 225.005,
+        "label": "visible_message",
+        "occurrence": "super_effective",
+        "expected_token": "效果绝佳"
+      },
+      {
+        "sha256": "37eff46c4921fa246a6062cb91693f8c6795df8c682aa7b8be67c76a2fb2a2a2",
+        "timestamp": 225.338333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "7a3e6f448ef09519811cbc2815319a899a7aff0cf41104abad7085c6fcb8429d",
+        "timestamp": 225.505,
+        "label": "ambiguous_fade",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "d6a035d61b7e57ae8379a59fcf14e45c1eb8b7754552a95800a543c737cc5e2f",
+        "timestamp": 225.671667,
+        "label": "visible_message",
+        "occurrence": "defense_drop",
+        "expected_token": "防御降低"
+      },
+      {
+        "sha256": "8c6656c6e4bc7da1f87700e2374b88140189683d47eb672cd45cd768f207e1ba",
+        "timestamp": 226.005,
+        "label": "visible_message",
+        "occurrence": "defense_drop",
+        "expected_token": "防御降低"
+      },
+      {
+        "sha256": "46d28114cd5a82d478a582f57ea57afeead687999d19935bd867b4018a187cc9",
+        "timestamp": 226.338333,
+        "label": "visible_message",
+        "occurrence": "defense_drop",
+        "expected_token": "防御降低"
+      },
+      {
+        "sha256": "cf8600d878583da9416f6743143b7eaf6c3f5e42261d071f12e4e067c7a023a3",
+        "timestamp": 226.505,
+        "label": "visible_message",
+        "occurrence": "defense_drop",
+        "expected_token": "防御降低"
+      },
+      {
+        "sha256": "346ae7baec3b1858ec982382f569ab62de45e927b80708dca66af54f4fa27144",
+        "timestamp": 226.671667,
+        "label": "visible_message",
+        "occurrence": "defense_drop",
+        "expected_token": "防御降低"
+      },
+      {
+        "sha256": "1ea7cc953f4063a9199429c3cf25a9750c8af6ba583b5a6ec967eaf4f56e60ce",
+        "timestamp": 227.005,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "8666fb3ec034efbfb97d734b13b63c54539b6ea9e5dd06a9289a68de8f8567ae",
+        "timestamp": 227.338333,
+        "label": "ambiguous_fade",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "744b6117cb2dc57a3bb42281089e47eb2aeb942a7276c124e364398cfc0e7653",
+        "timestamp": 227.505,
+        "label": "visible_message",
+        "occurrence": "berry",
+        "expected_token": "千香果"
+      },
+      {
+        "sha256": "1081e66c3fc17b67ed0f178229bcb833fbe0846c1e110a8f79f94c2354bb1c64",
+        "timestamp": 227.671667,
+        "label": "visible_message",
+        "occurrence": "berry",
+        "expected_token": "千香果"
+      },
+      {
+        "sha256": "b5e96975cc46506d77f18ebb56f4e7960021ad8366079a93f567ad39cc41551c",
+        "timestamp": 228.005,
+        "label": "visible_message",
+        "occurrence": "berry",
+        "expected_token": "千香果"
+      },
+      {
+        "sha256": "a31772be7fc143b909e8ca844f5ac451d27e744a2379b8de316b7d741226e722",
+        "timestamp": 228.338333,
+        "label": "visible_message",
+        "occurrence": "berry",
+        "expected_token": "千香果"
+      },
+      {
+        "sha256": "ad6d16cc682686cdab5c16d5919c86dc9cfc1d08e8b81be05c627f477d421551",
+        "timestamp": 228.505,
+        "label": "visible_message",
+        "occurrence": "berry",
+        "expected_token": "千香果"
+      },
+      {
+        "sha256": "d849d8e444ad116ecad85dad75cacf794be06475611a46e5a0734c402cb437c8",
+        "timestamp": 228.671667,
+        "label": "visible_message",
+        "occurrence": "berry",
+        "expected_token": "千香果"
+      },
+      {
+        "sha256": "0b2f6e43f26a984bb5e4c9ce741be6dd30aa24d9ee30bdb6f8baa049be2be9f7",
+        "timestamp": 229.005,
+        "label": "ambiguous_fade",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "a6b3e2fc2570c533a861a297e9d91efa591b0fe74de1841691de929b04d42b33",
+        "timestamp": 229.338333,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "a57e3a2478a476eba638f0809abbefec5ce7023c499ff6bef59cebdf569c24e5",
+        "timestamp": 229.505,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      },
+      {
+        "sha256": "420d9a6c82bd5a2781eb001e13f7777fde9a8a6cf0fa573aae8267d216a45255",
+        "timestamp": 229.671667,
+        "label": "no_message",
+        "occurrence": "",
+        "expected_token": ""
+      }
+    ]
+  }
+}

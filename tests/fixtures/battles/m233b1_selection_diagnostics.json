@@ -1,0 +1,535 @@
+{
+  "description": "Purposive audit positives and manually reviewed cached controls; not held-out recall ground truth",
+  "frames": [
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 328.005,
+      "image": ".cache/m14-phases/sample_battle/00010555.png",
+      "sha256": "5d738771ed34090ab7289b774b30428d827e289a745a7c1958ddd1fc8b7fb86d",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "效果不好"
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 412.0033333333334,
+      "image": ".cache/m14-phases/sample_battle/00013081.png",
+      "sha256": "3fa410e8a28490dd88470f7db246ddf228f2329599b836a128d38b446214d576",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "爱管侍倒下"
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 484.0316666666667,
+      "image": ".cache/m14-phases/sample_battle/00015821.png",
+      "sha256": "1e28cead9f761ed1d7a8b86d55b7862256f49a81048b7847825bd2b5d9a34a0f",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "灵骚"
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 546.0083333333333,
+      "image": ".cache/m14-phases/sample_battle/00017756.png",
+      "sha256": "33ca67b8364100d59e0fb0d31ed628d1803bf623c99f1d730b567066c70dd54a",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "效果不好"
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 152.00833333333335,
+      "image": ".cache/m14-phases/sample_battle/00004951.png",
+      "sha256": "a38fa377f11eb39411413784acccc6002e44b1a59ffa9324d9760fba22b782a3",
+      "phase": "battle_screen",
+      "label": "no_message",
+      "category": "empty",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 176.01333333333335,
+      "image": ".cache/m14-phases/sample_battle/00005671.png",
+      "sha256": "2278621f717dae82923eaa9a14fc1709bf48594bad96b4715d7747db55b0195b",
+      "phase": "unknown",
+      "label": "no_message",
+      "category": "animation",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 196.01666666666668,
+      "image": ".cache/m14-phases/sample_battle/00006272.png",
+      "sha256": "f0d944f74ce4e13d5a34b75654747c1e0a93c0662068cc9fdb9ad2d37185f553",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "empty",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 220.02,
+      "image": ".cache/m14-phases/sample_battle/00007272.png",
+      "sha256": "babad3fcb5129a1c9756e7efb7d30ba5c8f0094195977070f40e5c8f7092de1f",
+      "phase": "battle_screen",
+      "label": "no_message",
+      "category": "menu",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 284.01500000000004,
+      "image": ".cache/m14-phases/sample_battle/00009191.png",
+      "sha256": "cad287872fc76f7483adfb4db3fc491806ce2c232a6b08c52105a59287bf3e1c",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "empty",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 352.01000000000005,
+      "image": ".cache/m14-phases/sample_battle/00011281.png",
+      "sha256": "ac08e9967c1230b65628340d692ff605f7b3fae06082b77459c1009d30ffe1d6",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "empty",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 392.0166666666667,
+      "image": ".cache/m14-phases/sample_battle/00012482.png",
+      "sha256": "28d768a1a4022e4e38ca97cfe6bc24c2faa293cd235687b86991518fa63de7e0",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "menu",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 432.02333333333337,
+      "image": ".cache/m14-phases/sample_battle/00013683.png",
+      "sha256": "f8ee948e4151cb2f6b1b5dc7b7c74c003d2ef25f2521c8902fd01b4f03616929",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "empty",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 410.00166666666667,
+      "image": ".cache/m14-phases/sample_battle/00013021.png",
+      "sha256": "db887295aeaaf9e8b4e4e49bb0928b701ae8938cc49dfbd75862eca014e56b85",
+      "phase": "battle_animation",
+      "label": "ambiguous_fade",
+      "category": "fade",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 216.02,
+      "image": ".cache/m14-phases/sample_battle_1/00006884.png",
+      "sha256": "bd7e95edad2a3835765df66c6b813dc6c095bb2626d029e6452162adec3b6338",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "水流裂破"
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 228.00500000000002,
+      "image": ".cache/m14-phases/sample_battle_1/00007483.png",
+      "sha256": "63979769a654a04fb6e7eaf092172cdc3aef19f9bbbfada0e82a215e8406652c",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "千香果"
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 314.00333333333333,
+      "image": ".cache/m14-phases/sample_battle_1/00011533.png",
+      "sha256": "fbe10b1b407fae47804b79956321b06daa81b3956ca340d7855d8ad76685a224",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "特防降低"
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 430.0216666666667,
+      "image": ".cache/m14-phases/sample_battle_1/00015031.png",
+      "sha256": "89bc675f972c21d9e7c2b4aa29ea55498b41b4c4b9270a5cce343c9e4ee4bcb3",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "效果绝佳"
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 508.0016666666667,
+      "image": ".cache/m14-phases/sample_battle_1/00017378.png",
+      "sha256": "68f1889ca83bc200a56f2cf89c340f0131074b7d95ef933ea8e7ca17df1898ff",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "没有击中"
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 150.025,
+      "image": ".cache/m14-phases/sample_battle_1/00004845.png",
+      "sha256": "0403334124d29d67614d6fa39d401ba468b7a9d301bc26fe9a85c4a090091aa6",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "menu",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 166.01166666666668,
+      "image": ".cache/m14-phases/sample_battle_1/00005340.png",
+      "sha256": "810ec3b21006ff1ecf016c7e0a83e1fd28b8576384a734a2abe87baea6a0b068",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "animation",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 182.01333333333335,
+      "image": ".cache/m14-phases/sample_battle_1/00005831.png",
+      "sha256": "52cdf6ede96ffa6be4dcb3a25ecd28dce93d0e5cdc304219f06dd3a4257929bb",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "empty",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 194.01666666666668,
+      "image": ".cache/m14-phases/sample_battle_1/00006204.png",
+      "sha256": "a69a3997a5077d54bce86c6c8ea72144b248f5d67e38f2130d15a61452528f54",
+      "phase": "battle_screen",
+      "label": "no_message",
+      "category": "hud",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 300.0,
+      "image": ".cache/m14-phases/sample_battle_1/00010975.png",
+      "sha256": "6d4217282f1cd562e7681a18dc36b68d69bb0afd8773684afc37b17cac00e196",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "animation",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 326.005,
+      "image": ".cache/m14-phases/sample_battle_1/00011904.png",
+      "sha256": "fdf2fa0a6087bdc6f534fa52495c4f0230f429ca518ce26ea5fed0df47f23afc",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "empty",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 392.03333333333336,
+      "image": ".cache/m14-phases/sample_battle_1/00013890.png",
+      "sha256": "0473f3aa2eb1203bf42166f0a981d58b528073fa14ca071ab42d342b27e7ef19",
+      "phase": "battle_screen",
+      "label": "no_message",
+      "category": "menu",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 478.0300000000001,
+      "image": ".cache/m14-phases/sample_battle_1/00016478.png",
+      "sha256": "c8beb7ffd7624180f9ed8b6b80c8feb06c0896d6c7588f1c5b30375fefbfaa0c",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "menu",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 318.003333,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000300/000010.jpg",
+      "sha256": "8e4e68a696da805f8c26166b0d52d66b696ae9156c2edf07d9603c1941c2ab47",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "特攻提高"
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 326.005,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000300/000014.jpg",
+      "sha256": "4a4309e446bd75b27e0f3f942213d5e0d6bdfc88e3b4ee6b49becb9b5c913502",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "红莲铠骑倒下"
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 390.015,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000360/000016.jpg",
+      "sha256": "227ad7a7b990b0a361ed587ecddd621597492719922628e10c1f18a9b4a1f81e",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "轰擂金刚猩"
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 164.04500000000002,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000120/000023.jpg",
+      "sha256": "8ee9c84c704ce734d9a7031ae3eda59e4fbe6baf79958df671dd2edbd48002b5",
+      "phase": "battle_screen",
+      "label": "no_message",
+      "category": "hud",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 186.015,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000180/000004.jpg",
+      "sha256": "e773ceddb48e96c00517d21a752cfb048d4558919d1702385d703f9a10029f87",
+      "phase": "unknown",
+      "label": "no_message",
+      "category": "animation",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 214.053333,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000180/000018.jpg",
+      "sha256": "704532b1826873a9a5e6cb38360dfe7e85caeae8fe8895f4955908ce1f701a0b",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "animation",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 224.055,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000180/000023.jpg",
+      "sha256": "de3b87b78d38f7d267e6956a62f8caae481175ceab0cceae9b09bdddce288ea1",
+      "phase": "unknown",
+      "label": "no_message",
+      "category": "animation",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 232.055,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000180/000027.jpg",
+      "sha256": "958e3060571ec991e58664a305a1f76ac35824318c9c3cca0aea64627761830f",
+      "phase": "unknown",
+      "label": "no_message",
+      "category": "menu",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 280.096667,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000240/000021.jpg",
+      "sha256": "b66688c4c6d50af1074acc72d758624b7e36cc414169dc75751ebb8962b26d29",
+      "phase": "battle_screen",
+      "label": "no_message",
+      "category": "hud",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 290.131667,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000240/000026.jpg",
+      "sha256": "bbc3b72f7e894fa8cce3e0de06fa048ad9e323d3d94bf9ff4f4fff0a43f80f8c",
+      "phase": "battle_animation",
+      "label": "ambiguous_fade",
+      "category": "fade",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 188.015,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000180/000005.jpg",
+      "sha256": "dd33e9a29654e215ab60b80b2974b81695e343f04b6ae7c1aad4ac38a2a00768",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "效果绝佳"
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 420.00333333,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000420/000001.jpg",
+      "sha256": "e898d6f6b2177cf53ff3189184eca76f2fac98eb29a19bfcdb1c946cc4ecc08f",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "万众瞩目"
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 532.14,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000480/000027.jpg",
+      "sha256": "fb90ac1efbe1e1a29a53ddf181ab6196bdc6573bc4fe997cc8fbf70bb353cef0",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "防守的架势"
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 584.015,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000540/000023.jpg",
+      "sha256": "2cbfa08db105bef3b58cb820f537dc8364c9fcdfa38ded68bb61c007c08408c8",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "防御降低"
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 586.015,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000540/000024.jpg",
+      "sha256": "04cdee253fdc521adfdfe02088f0826489505a16e9cbe7a6ae821a7850fe59bf",
+      "phase": "battle_animation",
+      "label": "visible_message",
+      "category": "audit_positive",
+      "expected_token": "速度大幅提高"
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 172.04500000000002,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000120/000027.jpg",
+      "sha256": "8b708a78263404f753f1314a0b20a2b39e4e61629e3598f8790428ab494de25f",
+      "phase": "battle_screen",
+      "label": "no_message",
+      "category": "hud",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 206.01833299999998,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000180/000014.jpg",
+      "sha256": "16a90607c2866a94e6ecae2ad63234cc99fe320f79a827b046d32f8f53a62a60",
+      "phase": "unknown",
+      "label": "no_message",
+      "category": "animation",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 222.02,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000180/000022.jpg",
+      "sha256": "6e599a5fd6dbc0c0a677c216b277a3e782c0dc2d9686efa942486e54db82cd34",
+      "phase": "unknown",
+      "label": "no_message",
+      "category": "menu",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 240.0233333,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000240/000001.jpg",
+      "sha256": "d9a8835f02b155169c3104d838290104f3ce8f00187f5f4634e9ea040ba8d6b6",
+      "phase": "battle_screen",
+      "label": "no_message",
+      "category": "hud",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 300.0,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000300/000001.jpg",
+      "sha256": "c7e996b6abf7d97eef88dfb6d054d1c1f09bc49b1504178193e77114b0e8a325",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "animation",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 318.036667,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000300/000010.jpg",
+      "sha256": "40a6533e5bc68b4205369026e0151dbeda74e6934f36f5338de24ec2c291457f",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "menu",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 334.04,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000300/000018.jpg",
+      "sha256": "76d843c5776acc90fa66369205be2d3009ecee9ec8d7b08aacaa7723f6d3655c",
+      "phase": "unknown",
+      "label": "no_message",
+      "category": "menu",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 370.011667,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000360/000006.jpg",
+      "sha256": "0fac9a11d68f4c474b285206da7c0257a4ef51786846a8af6cc3d76931cbf2e3",
+      "phase": "battle_screen",
+      "label": "no_message",
+      "category": "hud",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 398.016667,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000360/000020.jpg",
+      "sha256": "a0d594399242f851b4d60c3f8d756eb4ee95b9db4bb5c013e225ebd253c8eac9",
+      "phase": "battle_screen",
+      "label": "no_message",
+      "category": "hud",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 460.128333,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000420/000021.jpg",
+      "sha256": "c48105e541326d55d685f2380e4a2f84042a6ceb54bf8d1e052c34491291bd02",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "animation",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 496.083333,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000480/000009.jpg",
+      "sha256": "2cae5283ff693d09b390882d2e785a39c43e1e1d0a5a5e2e09315b4799505d45",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "menu",
+      "expected_token": ""
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 516.103333,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000480/000019.jpg",
+      "sha256": "c52a9c86d7fd7ed675040d8312d80658c0215a22a6315c57a4e3c0aff9898d03",
+      "phase": "battle_animation",
+      "label": "no_message",
+      "category": "menu",
+      "expected_token": ""
+    }
+  ]
+}

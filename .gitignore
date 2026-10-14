@@ -43,3 +43,9 @@ tests/fixtures/*.mp4
 # Compact M2.3.2 multi-recording validation summaries.
 !/reports/M2.3.2-cross-battle-validation.json
 !/reports/battles/*/M2.3.2-validation.json
+
+# Compact M2.3.3-A evidence-fusion validation summaries.
+!/reports/battles/*/M2.3.3-A-validation.json
+
+# Compact B1 scoped sampling/selection experiment summary.
+!/reports/M2.3.3-B1-validation.json

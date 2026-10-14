@@ -170,3 +170,31 @@ After cloning, run `python scripts/setup_battle_workspace.py` to recreate histor
 Install test dependencies with `python -m pip install -e '.[test]'` and run `python -m pytest`. Portable unit/replay tests use reviewed small event oracles and curated initialization fixtures, reconstructing timeline states in memory. Tests marked `local_artifacts` exercise optional historical recording/OCR/cache integrations; missing prerequisites produce explicit skips in a clean clone. They run automatically when the local evidence is available. `pytest -m 'not local_artifacts'` selects only portable tests. This distinction does not skip failures for artifacts that are present.
 
 No media or generated replay data is required for the portable M2.3.1 hidden-state, projection or quantitative-mechanics regression tests. Full 197-prefix comparisons require the local cached M2.2.4 reports and preserve their rule profiles; those reports are intentionally not distributed in Git.
+
+### Scoped sampling and message selection (M2.3.3-B1)
+
+New acquisition uses one setting, `--sample-fps`, defaulting to **2 FPS** (0.5s).
+The default comes from `recognition.video_sampling.DEFAULT_SAMPLE_FPS`; 3 FPS
+uses the same timestamp-grid logic. Sampling and OCR frequency are independent:
+
+```sh
+.venv/bin/python scripts/validate_m233b1.py --battle-id sample_battle_0 --start 408 --duration 8
+.cache/m15-accel-venv/bin/python scripts/validate_m233b1.py --battle-id sample_battle_0 --start 408 --duration 8 --sample-fps 2 --stage ocr
+```
+
+The first command selects candidates without OCR; the second uses the existing
+optional ONNX environment. `--policy` selects `baseline`, `reduced`, `temporal`,
+or default `hybrid`. `--selection-config thresholds.json` overrides fields in
+`SelectionConfig`, for example `{"stroke_value":120,"repeat_similarity":0.9}`.
+Install the optional `sampling` extra if `imageio_ffmpeg` is unavailable.
+Explicit battle and interval arguments prevent accidental five-video jobs.
+New caches stay under `.cache/battles/<battle_id>/m233b1/`; historical M2.3.2
+and M2.3.3-A entry points and artifacts remain unchanged. See
+[the B1 report](reports/M2.3.3-B1-sampling-and-selection.md) for measured costs,
+limited coverage results, cache identities, and B2 recommendations.
+
+M2.3.3-B2's scoped parser/move recovery and cache-only validation are documented in
+[the B2 report](reports/M2.3.3-B2-parser-and-move-recognition.md). Run
+`.venv/bin/python scripts/verify_m233b1.py` to verify preserved B1/prior artifacts
+without recognition. B2 replay requires one explicit `--battle-id`; see the report
+for saved-crop recovery and evaluation commands.

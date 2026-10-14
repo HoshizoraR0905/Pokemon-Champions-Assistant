@@ -158,7 +158,19 @@ class StateEngine:
                 record.reason='earlier_order_tie';continue
             event=event_from_dict(record.event);trial=deepcopy(self.state)
             try:
+                from .evidence_fusion import prepare_message, move_revelation
+                event=prepare_message(trial,event)
+                if event.event_type=='move_execution' and event.attributes.get('fusion_context'):
+                    move_revelation(self,trial,event,record)
+                    self.state=trial
+                    record.application_status='applied_partial'
+                    record.reason='move_revelation_only'
+                    record.state_hash=hash_state(self.state)
+                    if snapshot_callback is not None:snapshot_callback(record,self.state)
+                    continue
                 self.policy.check(event)
+                if event.attributes.get('fusion_context'):
+                    record.bindings['resolved_event']=event.to_dict()
                 turns={e.details.get('turn') for e in event.evidence if e.details.get('turn') is not None}
                 if len(turns)==1 and event.event_type!='turn_boundary':
                     self._set_turn(trial,next(iter(turns)),event,tick=False)
@@ -168,7 +180,7 @@ class StateEngine:
                 self.state=trial
                 record.application_status='recorded_observation' if recorded else ('applied_candidate' if event.status=='candidate' else 'applied_confirmed')
             except Deferred as exc:
-                record.reason=str(exc);record.bindings={}
+                record.reason=str(exc);record.bindings={'resolved_event':event.to_dict()} if event.attributes.get('fusion_context') else {}
             except (Contradiction,ValueError,TypeError,KeyError) as exc:
                 record.application_status='rejected';record.reason=str(exc);record.bindings={}
                 self.state.conflicts.append({'event_id':event.event_id,'reason':str(exc),'proposed_event':event.to_dict(),'state_unchanged':True})
@@ -249,6 +261,9 @@ class StateEngine:
 
     def _transition(self,state,e,record):
         kind=e.event_type;a=e.attributes
+        if kind=='hud_observation':
+            from .evidence_fusion import hud_transition
+            return hud_transition(self,state,e,record)
         if state.knowledge.get('move_grounding') and kind=='turn_boundary':
             state.knowledge['association_boundary']=len(state.knowledge.get('causal_actions',[]))
         if state.knowledge.get('move_grounding') and kind=='move_effect' and a.get('effect_of'):

@@ -77,9 +77,38 @@ class EventParser:
         elif '派出了' in text or text.startswith('上吧'):typ='send_out'
         elif '使出了' in text:
             typ='move_execution';move=text.split('使出了',1)[1].rstrip('！!。.')
-            refs['move']=self.identity(move,'move')
+            from recognition.move_resolution import resolve_move
+            resolution=resolve_move(move,self.kb,entry.get('move_ocr_alternatives',[]))
+            attrs['move_resolution']=resolution
+            refs['move']=next((self.identity(e.names.get('zh-hans',''),'move') for e in self.kb.by_kind['move']
+                if e.canonical_id==resolution['canonical_id']),None)
             if refs['move'] is None:unc.append('unresolved_move')
             c.previous_move={'actor':subject,'side':side,'move':refs['move']}
+        elif re.fullmatch(r'.+拍落了(对手的)?.+的.+[！!。.]?',text):
+            removal=re.fullmatch(r'(.+?)拍落了(对手的)?(.+?)的(.+?)[！!。.]?',text)
+            item=self.identity(removal[4],'item')
+            owner=self.identity(removal[3],'species')
+            if item and owner:
+                typ='item_change';refs['item']=item
+                attrs.update(change='remove',removal_actor=subject,
+                    observation='item_removed',consumption_observed=False)
+                # State engine item_change actor means the item owner. The
+                # attacking actor stays separate; no attack damage is inferred.
+                subject=owner
+                side='opponent' if removal[2] else 'unknown'
+                if removal[2]:basis=['explicit_item_owner_text']
+        elif re.fullmatch(r'.+用.+复原了能力[！!。.]?',text):
+            item_text=text.split('用',1)[1].split('复原了能力',1)[0]
+            item=self.identity(item_text,'item')
+            if item and item.get('name')=='白色香草':
+                typ='item_activation';refs['item']=item
+                attrs.update(reported_effect='stat_restoration',stat_values=None,
+                    affected_stats=None,consumption_observed=False)
+        elif re.fullmatch(r'.+扭曲了时空[！!。.]?',text):
+            typ='trick_room_change';attrs.update(change='start')
+        elif re.fullmatch(r'.+进化石(?:[XY])?和.+起了反应[！!。.]?',text):
+            typ='move_effect';attrs.update(effect='mega_stone_reaction_notice',
+                completed_transformation=False)
         elif re.search(r'HP\d+%?[→➡➜>-]+\d+%?',text):
             typ='hp_change';m=re.search(r'HP(\d+)(%?)[→➡➜>-]+(\d+)(%?)',text)
             attrs.update(before=int(m[1]),after=int(m[3]),unit='displayed_percent' if m[2] or m[4] else 'absolute')
@@ -131,6 +160,8 @@ class EventParser:
             else:unc.append('terrain_identity_unknown')
         elif '的' in text:
             suffix=text.split('的',1)[1].rstrip('！!。.')
+            if subject:
+                suffix=re.sub(r'^(?:对手的)?'+re.escape(subject['name'])+r'的','',identity_text).rstrip('！!。.')
             for kind,event_type in [('ability','ability_activation'),('item','item_activation')]:
                 ref=self.identity(suffix,kind)
                 if ref:typ=event_type;refs[kind]=ref;break

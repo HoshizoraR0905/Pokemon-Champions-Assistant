@@ -264,17 +264,23 @@ class HiddenEngine:
     def _handle(self,r):
         from .state_engine import event_from_dict
         e=event_from_dict(r['event']);a=e.attributes;pid=r['instance_id'] or a.get('actor_instance_id') or (e.actor or {}).get('pokemon_instance_id')
-        if r['application_status'] in {'deferred','rejected','retracted'} or e.status!='confirmed':
+        # Opt-in, field-admitted observations retain their original candidate status.
+        # Existing candidate events without this receipt remain unresolved.
+        fused_hud=(e.event_type=='hud_observation' and r['application_status']=='applied_candidate')
+        revealed=(e.event_type=='move_execution' and e.attributes.get('fusion_context')
+                  and r['application_status']=='applied_partial'
+                  and a.get('actor_instance_id')==pid)
+        if r['application_status'] in {'deferred','rejected','retracted'} or (e.status!='confirmed' and not fused_hud and not revealed):
             if e.event_type in {'move_execution','ability_activation','item_activation','transformation'}:self.state['unresolved'].append({'event_id':e.event_id,'reason':'observation_not_accepted_as_confirmed','status':e.status,'application_status':r['application_status']})
             return
         if not pid or r['side'] not in {'self','opponent'}:
             if e.event_type in {'move_execution','transformation','ability_activation','item_activation'}:
                 self.state['unresolved'].append({'event_id':e.event_id,'reason':'instance_or_side_unresolved'})
             return
-        if r['side']=='self' and e.event_type!='transformation':return
+        if r['side']=='self' and e.event_type!='transformation' and not (fused_hud or revealed):return
         p=self.ensure(pid,r['side'],(e.actor or {}).get('name'));p['events_seen'].append(e.event_id)
         before={k:(v['status'],v['value'],v['candidates'],v['interval'],v['members']) for k,v in p['fields'].items()}
-        for i,c in enumerate(a.get('hidden_constraints',[])):
+        for i,c in enumerate([] if revealed else a.get('hidden_constraints',[])):
             self.constrain(p,e,c['variable'],c['operation'],c['value'],strength=c.get('strength','hard'),rule=c.get('rule'),reason=c.get('reason','normalized knowledge observation'),suffix=str(i))
         if e.actor and e.actor.get('canonical_id') and e.event_type!='transformation':self.constrain(p,e,'species','equal',f"pokeapi:species:{e.actor['species_id']}" if e.actor.get('species_id') else e.actor['canonical_id'])
         if e.event_type=='send_out' and not p['transformed'] and (e.actor or {}).get('canonical_identity'):

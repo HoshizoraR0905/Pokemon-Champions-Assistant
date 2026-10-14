@@ -1,0 +1,763 @@
+{
+  "diagnostic_composition": {
+    "visible_message": 17,
+    "no_message": 34,
+    "ambiguous_fade": 2
+  },
+  "policies": {
+    "baseline": {
+      "selected_by_label": {},
+      "diagnostic_actual_new_calls": 0
+    },
+    "reduced": {
+      "selected_by_label": {
+        "visible_message": 14,
+        "no_message": 8
+      },
+      "diagnostic_actual_new_calls": 22
+    },
+    "temporal": {
+      "selected_by_label": {
+        "visible_message": 17,
+        "no_message": 34,
+        "ambiguous_fade": 2
+      },
+      "diagnostic_actual_new_calls": 31
+    },
+    "hybrid": {
+      "selected_by_label": {
+        "visible_message": 17
+      },
+      "diagnostic_actual_new_calls": 0
+    }
+  },
+  "intervals": {
+    "sample_battle_0": {
+      "0.5": {
+        "frames_acquired": 4,
+        "visible_frames": 1,
+        "visible_occurrences": 1,
+        "acquisition_seconds": 1.0362668329908047,
+        "policies": {
+          "baseline": {
+            "candidates": 0,
+            "selected_visible_frames": 0,
+            "occurrences_selected": 0,
+            "occurrences_key_phrase_readable": 0,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 0,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.054488750000018626,
+            "ocr_wall_seconds": 1.3750104699283838e-06
+          },
+          "reduced": {
+            "candidates": 1,
+            "selected_visible_frames": 0,
+            "occurrences_selected": 0,
+            "occurrences_key_phrase_readable": 0,
+            "false_positive_selections": 1,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 1,
+            "actual_new_read_calls": 1,
+            "selection_seconds": 0.052014540997333825,
+            "ocr_wall_seconds": 0.07155091699678451
+          },
+          "temporal": {
+            "candidates": 4,
+            "selected_visible_frames": 1,
+            "occurrences_selected": 1,
+            "occurrences_key_phrase_readable": 1,
+            "false_positive_selections": 2,
+            "ambiguous_fade_selections": 1,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 4,
+            "actual_new_read_calls": 3,
+            "selection_seconds": 0.052440375002333894,
+            "ocr_wall_seconds": 0.2934492499916814
+          },
+          "hybrid": {
+            "candidates": 1,
+            "selected_visible_frames": 1,
+            "occurrences_selected": 1,
+            "occurrences_key_phrase_readable": 1,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 1,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.052425583999138325,
+            "ocr_wall_seconds": 0.013772374979453161
+          }
+        }
+      },
+      "1": {
+        "frames_acquired": 8,
+        "visible_frames": 3,
+        "visible_occurrences": 2,
+        "acquisition_seconds": 1.1518953750201035,
+        "policies": {
+          "baseline": {
+            "candidates": 0,
+            "selected_visible_frames": 0,
+            "occurrences_selected": 0,
+            "occurrences_key_phrase_readable": 0,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 0,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.11177312498330139,
+            "ocr_wall_seconds": 1.500011421740055e-06
+          },
+          "reduced": {
+            "candidates": 2,
+            "selected_visible_frames": 1,
+            "occurrences_selected": 1,
+            "occurrences_key_phrase_readable": 1,
+            "false_positive_selections": 1,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 2,
+            "actual_new_read_calls": 1,
+            "selection_seconds": 0.10435624999809079,
+            "ocr_wall_seconds": 0.19158520799828693
+          },
+          "temporal": {
+            "candidates": 8,
+            "selected_visible_frames": 3,
+            "occurrences_selected": 2,
+            "occurrences_key_phrase_readable": 2,
+            "false_positive_selections": 4,
+            "ambiguous_fade_selections": 1,
+            "repeated_occurrence_selections": 1,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 8,
+            "actual_new_read_calls": 3,
+            "selection_seconds": 0.10442029099795036,
+            "ocr_wall_seconds": 0.5668425000039861
+          },
+          "hybrid": {
+            "candidates": 3,
+            "selected_visible_frames": 3,
+            "occurrences_selected": 2,
+            "occurrences_key_phrase_readable": 2,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 1,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 3,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.10416529199574143,
+            "ocr_wall_seconds": 0.03945758301415481
+          }
+        }
+      },
+      "2": {
+        "frames_acquired": 16,
+        "visible_frames": 7,
+        "visible_occurrences": 2,
+        "acquisition_seconds": 1.2318231670069508,
+        "policies": {
+          "baseline": {
+            "candidates": 0,
+            "selected_visible_frames": 0,
+            "occurrences_selected": 0,
+            "occurrences_key_phrase_readable": 0,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 0,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.21493224997539073,
+            "ocr_wall_seconds": 1.7080164980143309e-06
+          },
+          "reduced": {
+            "candidates": 3,
+            "selected_visible_frames": 2,
+            "occurrences_selected": 1,
+            "occurrences_key_phrase_readable": 1,
+            "false_positive_selections": 1,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 1,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 3,
+            "actual_new_read_calls": 1,
+            "selection_seconds": 0.20520170801319182,
+            "ocr_wall_seconds": 0.1984317500027828
+          },
+          "temporal": {
+            "candidates": 13,
+            "selected_visible_frames": 5,
+            "occurrences_selected": 2,
+            "occurrences_key_phrase_readable": 2,
+            "false_positive_selections": 7,
+            "ambiguous_fade_selections": 1,
+            "repeated_occurrence_selections": 3,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 13,
+            "actual_new_read_calls": 5,
+            "selection_seconds": 0.20582616698811762,
+            "ocr_wall_seconds": 1.1977095409820322
+          },
+          "hybrid": {
+            "candidates": 5,
+            "selected_visible_frames": 5,
+            "occurrences_selected": 2,
+            "occurrences_key_phrase_readable": 2,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 3,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 5,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.20729287501308136,
+            "ocr_wall_seconds": 0.06510712500312366
+          }
+        }
+      },
+      "3": {
+        "frames_acquired": 24,
+        "visible_frames": 10,
+        "visible_occurrences": 2,
+        "acquisition_seconds": 1.299555915989913,
+        "policies": {
+          "baseline": {
+            "candidates": 0,
+            "selected_visible_frames": 0,
+            "occurrences_selected": 0,
+            "occurrences_key_phrase_readable": 0,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 0,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.3250096669944469,
+            "ocr_wall_seconds": 2.667016815394163e-06
+          },
+          "reduced": {
+            "candidates": 3,
+            "selected_visible_frames": 2,
+            "occurrences_selected": 1,
+            "occurrences_key_phrase_readable": 1,
+            "false_positive_selections": 1,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 1,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 3,
+            "actual_new_read_calls": 1,
+            "selection_seconds": 0.3105162499996368,
+            "ocr_wall_seconds": 0.1994411250052508
+          },
+          "temporal": {
+            "candidates": 19,
+            "selected_visible_frames": 6,
+            "occurrences_selected": 2,
+            "occurrences_key_phrase_readable": 2,
+            "false_positive_selections": 12,
+            "ambiguous_fade_selections": 1,
+            "repeated_occurrence_selections": 4,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 19,
+            "actual_new_read_calls": 11,
+            "selection_seconds": 0.3384880830126349,
+            "ocr_wall_seconds": 1.9731127499835566
+          },
+          "hybrid": {
+            "candidates": 5,
+            "selected_visible_frames": 5,
+            "occurrences_selected": 2,
+            "occurrences_key_phrase_readable": 2,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 3,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 5,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.31388224998954684,
+            "ocr_wall_seconds": 0.0657681250013411
+          }
+        }
+      }
+    },
+    "sample_battle_1": {
+      "0.5": {
+        "frames_acquired": 8,
+        "visible_frames": 4,
+        "visible_occurrences": 4,
+        "acquisition_seconds": 2.2140643330058083,
+        "policies": {
+          "baseline": {
+            "candidates": 1,
+            "selected_visible_frames": 1,
+            "occurrences_selected": 1,
+            "occurrences_key_phrase_readable": 1,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 1,
+            "actual_new_read_calls": 1,
+            "selection_seconds": 0.11178945799474604,
+            "ocr_wall_seconds": 0.3835017920064274
+          },
+          "reduced": {
+            "candidates": 5,
+            "selected_visible_frames": 4,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 4,
+            "false_positive_selections": 1,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 5,
+            "actual_new_read_calls": 4,
+            "selection_seconds": 0.10773833299754187,
+            "ocr_wall_seconds": 1.1859725000103936
+          },
+          "temporal": {
+            "candidates": 8,
+            "selected_visible_frames": 4,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 4,
+            "false_positive_selections": 4,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 8,
+            "actual_new_read_calls": 3,
+            "selection_seconds": 0.10777529099141248,
+            "ocr_wall_seconds": 0.7644956660224125
+          },
+          "hybrid": {
+            "candidates": 4,
+            "selected_visible_frames": 4,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 4,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 4,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.10585724998963997,
+            "ocr_wall_seconds": 0.05358850001357496
+          }
+        }
+      },
+      "1": {
+        "frames_acquired": 16,
+        "visible_frames": 5,
+        "visible_occurrences": 4,
+        "acquisition_seconds": 2.3012085410009604,
+        "policies": {
+          "baseline": {
+            "candidates": 1,
+            "selected_visible_frames": 1,
+            "occurrences_selected": 1,
+            "occurrences_key_phrase_readable": 1,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 1,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.22206508298404515,
+            "ocr_wall_seconds": 0.013527500006603077
+          },
+          "reduced": {
+            "candidates": 8,
+            "selected_visible_frames": 5,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 4,
+            "false_positive_selections": 3,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 1,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 8,
+            "actual_new_read_calls": 3,
+            "selection_seconds": 0.21235024998895824,
+            "ocr_wall_seconds": 2.295774290978443
+          },
+          "temporal": {
+            "candidates": 13,
+            "selected_visible_frames": 4,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 4,
+            "false_positive_selections": 7,
+            "ambiguous_fade_selections": 2,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 13,
+            "actual_new_read_calls": 4,
+            "selection_seconds": 0.2120824169833213,
+            "ocr_wall_seconds": 0.41033916699234396
+          },
+          "hybrid": {
+            "candidates": 4,
+            "selected_visible_frames": 4,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 4,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 4,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.21225679200142622,
+            "ocr_wall_seconds": 0.05436954100150615
+          }
+        }
+      },
+      "2": {
+        "frames_acquired": 32,
+        "visible_frames": 12,
+        "visible_occurrences": 4,
+        "acquisition_seconds": 2.4746994170127437,
+        "policies": {
+          "baseline": {
+            "candidates": 3,
+            "selected_visible_frames": 3,
+            "occurrences_selected": 2,
+            "occurrences_key_phrase_readable": 2,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 1,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 3,
+            "actual_new_read_calls": 2,
+            "selection_seconds": 0.44085745798656717,
+            "ocr_wall_seconds": 0.7079400840157177
+          },
+          "reduced": {
+            "candidates": 15,
+            "selected_visible_frames": 11,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 4,
+            "false_positive_selections": 4,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 7,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 15,
+            "actual_new_read_calls": 5,
+            "selection_seconds": 0.4255519160069525,
+            "ocr_wall_seconds": 2.791570707981009
+          },
+          "temporal": {
+            "candidates": 21,
+            "selected_visible_frames": 4,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 3,
+            "false_positive_selections": 14,
+            "ambiguous_fade_selections": 3,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 21,
+            "actual_new_read_calls": 10,
+            "selection_seconds": 0.4293537499906961,
+            "ocr_wall_seconds": 0.8661256660125218
+          },
+          "hybrid": {
+            "candidates": 5,
+            "selected_visible_frames": 5,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 4,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 1,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 5,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.4256301669811364,
+            "ocr_wall_seconds": 0.06731758400565013
+          }
+        }
+      },
+      "3": {
+        "frames_acquired": 48,
+        "visible_frames": 18,
+        "visible_occurrences": 4,
+        "acquisition_seconds": 2.7988234590156935,
+        "policies": {
+          "baseline": {
+            "candidates": 7,
+            "selected_visible_frames": 6,
+            "occurrences_selected": 3,
+            "occurrences_key_phrase_readable": 3,
+            "false_positive_selections": 1,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 3,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 7,
+            "actual_new_read_calls": 6,
+            "selection_seconds": 0.6622206660103984,
+            "ocr_wall_seconds": 1.868619499990018
+          },
+          "reduced": {
+            "candidates": 22,
+            "selected_visible_frames": 17,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 4,
+            "false_positive_selections": 5,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 13,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 22,
+            "actual_new_read_calls": 8,
+            "selection_seconds": 0.6389195419906173,
+            "ocr_wall_seconds": 3.2176853339769877
+          },
+          "temporal": {
+            "candidates": 24,
+            "selected_visible_frames": 4,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 3,
+            "false_positive_selections": 17,
+            "ambiguous_fade_selections": 3,
+            "repeated_occurrence_selections": 0,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 24,
+            "actual_new_read_calls": 13,
+            "selection_seconds": 0.6398092500166968,
+            "ocr_wall_seconds": 1.670284708001418
+          },
+          "hybrid": {
+            "candidates": 5,
+            "selected_visible_frames": 5,
+            "occurrences_selected": 4,
+            "occurrences_key_phrase_readable": 4,
+            "false_positive_selections": 0,
+            "ambiguous_fade_selections": 0,
+            "repeated_occurrence_selections": 1,
+            "duplicate_identical_crop_requests": 0,
+            "unique_crop_requests": 5,
+            "actual_new_read_calls": 0,
+            "selection_seconds": 0.641361957998015,
+            "ocr_wall_seconds": 0.06788733301800676
+          }
+        }
+      }
+    }
+  },
+  "recoveries": [
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 328.005,
+      "expected_token": "效果不好",
+      "raw_text": "对钢铠鸦效果不好。",
+      "confidence": 0.988,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 412.0033333333334,
+      "expected_token": "爱管侍倒下",
+      "raw_text": "爱管侍倒下了！",
+      "confidence": 0.826,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 484.0316666666667,
+      "expected_token": "灵骚",
+      "raw_text": "对手的Bubba使出了",
+      "confidence": 0.999,
+      "key_phrase_recovered": false
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 546.0083333333333,
+      "expected_token": "效果不好",
+      "raw_text": "对对手的流氓鳄效果不好。",
+      "confidence": 0.967,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 216.02,
+      "expected_token": "水流裂破",
+      "raw_text": "对手的大力鳄使出了水流裂破！",
+      "confidence": 0.954,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 228.00500000000002,
+      "expected_token": "千香果",
+      "raw_text": "千香果减轻了对炽焰咆哮虎造成的伤害！",
+      "confidence": 0.995,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 314.00333333333333,
+      "expected_token": "特防降低",
+      "raw_text": "对手的大狂拉的防御、特防降低了！",
+      "confidence": 0.959,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 430.0216666666667,
+      "expected_token": "效果绝佳",
+      "raw_text": "对暴飞龙二效果绝佳！",
+      "confidence": 0.963,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 508.0016666666667,
+      "expected_token": "没有击中",
+      "raw_text": "没有击中蚊香蛙皇！",
+      "confidence": 0.996,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 318.003333,
+      "expected_token": "特攻提高",
+      "raw_text": "铝钢桥龙的特攻提高了！",
+      "confidence": 0.981,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 326.005,
+      "expected_token": "红莲铠骑倒下",
+      "raw_text": "对手的红莲铠骑倒下了！",
+      "confidence": 0.99,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 390.015,
+      "expected_token": "轰擂金刚猩",
+      "raw_text": "上吧！轰擂金刚猩！",
+      "confidence": 0.985,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 188.015,
+      "expected_token": "效果绝佳",
+      "raw_text": "对对手的妖火红狐效果绝佳！",
+      "confidence": 0.942,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 420.00333333,
+      "expected_token": "万众瞩目",
+      "raw_text": "对手的爱管侍变得万众瞩目了！",
+      "confidence": 0.983,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 532.14,
+      "expected_token": "防守的架势",
+      "raw_text": "红莲铠骑摆出了防守的架势！",
+      "confidence": 0.994,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 584.015,
+      "expected_token": "防御降低",
+      "raw_text": "红莲铠骑的防御降低了！",
+      "confidence": 0.971,
+      "key_phrase_recovered": true
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 586.015,
+      "expected_token": "速度大幅提高",
+      "raw_text": "红莲铠骑的速度大幅提高了！",
+      "confidence": 0.977,
+      "key_phrase_recovered": true
+    }
+  ],
+  "ocr": {
+    "new_read_calls": 138,
+    "predicted_crops": 198,
+    "inference_batches": 198,
+    "inference_seconds": 32.544375575031154
+  },
+  "peak_python_rss_bytes": 529154048,
+  "recommended_selection": {
+    "policy": "hybrid",
+    "glyph_threshold": 8,
+    "reduced_threshold": 3,
+    "stroke_value": 120,
+    "stroke_contrast": 25,
+    "minimum_strokes": 4,
+    "maximum_gap": 40,
+    "minimum_span": 50,
+    "left_anchor": 45,
+    "temporal_mae": 8.0,
+    "repeat_similarity": 0.9,
+    "repeat_window_seconds": 2.0
+  },
+  "repeated_frame_controls": {
+    "selection": {
+      "baseline": {
+        "first_selected": 2,
+        "repeated_selected": 2
+      },
+      "reduced": {
+        "first_selected": 2,
+        "repeated_selected": 2
+      },
+      "temporal": {
+        "first_selected": 2,
+        "repeated_selected": 0
+      },
+      "hybrid": {
+        "first_selected": 2,
+        "repeated_selected": 0
+      }
+    },
+    "ocr": [
+      {
+        "battle_id": "sample_battle_0",
+        "timestamp": 198.01666666666668,
+        "counts": {
+          "new_read_calls": 0,
+          "predicted_crops": 0,
+          "inference_batches": 0,
+          "cache_hits": 1,
+          "legacy_hits": 1,
+          "inference_seconds": 0.0
+        }
+      },
+      {
+        "battle_id": "sample_battle_4",
+        "timestamp": 578.013333,
+        "counts": {
+          "new_read_calls": 0,
+          "predicted_crops": 0,
+          "inference_batches": 0,
+          "cache_hits": 1,
+          "legacy_hits": 1,
+          "inference_seconds": 0.0
+        }
+      }
+    ]
+  },
+  "measurement_limits": [
+    "Purposive inspected intervals only; no full-battle recall/accuracy.",
+    "Actual new calls are allocated by sequential evaluation order and cache sharing, not independent cold-policy cost.",
+    "Peak RSS is Python process high-water mark; FFmpeg child RSS unmeasured.",
+    "Key-phrase recovery is weaker than complete correct actor/move text."
+  ]
+}

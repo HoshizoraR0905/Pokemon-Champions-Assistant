@@ -137,3 +137,15 @@ user's current scope; do not start the next milestone or commit/push unless aske
 - At completion, concisely identify changed files, resulting behavior, tests and
   results, limitations, and remaining work. Separate generated-artifact completion
   from semantic acceptance; do not advance milestones on replay success alone.
+
+## Sampling policy for M2.3.3 and later
+
+- The target default video sampling rate is 2 FPS (one frame every 0.5 seconds).
+  M2.3.3-A must use existing caches without changing sampling, extracting frames,
+  or rerunning OCR; sampling implementation belongs to M2.3.3-B.
+- In M2.3.3-B, expose one documented sampling setting, include it in cache
+  fingerprints/manifests, and support changing to 3 FPS without restructuring.
+  Keep frame sampling frequency independent of OCR invocation frequency.
+- Reuse compatible frames and recognition results; evaluate runtime and OCR cost
+  on a scoped recording before processing all five videos. Faster sampling for
+  brief UI states or individual multi-hit impacts is a future requirement.
