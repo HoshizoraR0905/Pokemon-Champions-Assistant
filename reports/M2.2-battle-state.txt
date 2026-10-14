@@ -1,0 +1,18 @@
+Battle sample_battle_2; turn 2; phase unknown
+Weather: rain (active True, remaining unknown); Terrain: psychic (active True, remaining unknown)
+Trick Room: unknown
+self: Hoshi; complete party True; remaining available 3
+  sample_battle_2:self:party-1: 轰擂金刚猩; {'kind': 'bench', 'slot': None}; 207/207 HP; fainted False; status unknown
+  sample_battle_2:self:party-2: 铝钢桥龙; {'kind': 'active', 'slot': 'right'}; 197/197 HP; fainted False; status unknown
+    special_attack: increment, magnitude unknown; exact stage unknown
+  sample_battle_2:self:party-3: 雪妖女; {'kind': 'fainted', 'slot': None}; 0/177 HP; fainted True; status unknown
+  sample_battle_2:self:party-4: 蚊香蛙皇; {'kind': 'active', 'slot': 'left'}; 173/197 HP; fainted False; status unknown
+opponent: 训练家; complete party unknown; remaining available unknown
+  sample_battle_2:opponent:initial-1: 雷丘; {'kind': 'bench', 'slot': None}; 100% displayed (absolute HP unknown); fainted False; status unknown
+  sample_battle_2:opponent:initial-2: 红莲铠骑; {'kind': 'fainted', 'slot': None}; 0% displayed (absolute HP unknown); fainted True; status unknown
+    defense: decrement, magnitude unknown; exact stage unknown; special_defense: decrement, magnitude unknown; exact stage unknown
+  sample_battle_2:opponent:encounter:9812bf594961d870: 爱管侍; {'kind': 'active', 'slot': 'left'}; HP unknown; fainted False; status unknown
+  sample_battle_2:opponent:encounter:7d5d9440d324a376: 大狃拉; {'kind': 'active', 'slot': 'right'}; HP unknown; fainted False; status unknown
+    special_defense: increment, magnitude unknown; exact stage unknown
+    item activation(s): 1; current item status unknown
+Event applications: {'applied_candidate': 18, 'recorded_observation': 2}

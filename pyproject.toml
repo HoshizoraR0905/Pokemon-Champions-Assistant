@@ -18,6 +18,7 @@ ocr_experimental = ["onnxruntime==1.23.2", "onnx==1.23.2", "PyYAML>=6,<7"]
 include = ["capture*", "recognition*", "models*", "tracking*", "damage*", "api*", "knowledge*", "streaming*", "battle_events*"]
 
 [tool.setuptools.package-data]
+tracking = ["templates/*.html"]
 knowledge = ["data/*.json", "data/*.txt", "archive/*/*.json", "archive/*/*.txt"]
 
 [tool.pytest.ini_options]

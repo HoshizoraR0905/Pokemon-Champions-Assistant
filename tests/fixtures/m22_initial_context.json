@@ -1,0 +1,3105 @@
+{
+  "schema_version": 1,
+  "method": "manual annotation of existing cached frames only; no OCR/video processing; selected own-party completeness explicitly verified from enabled vs dimmed rows",
+  "state": {
+    "battle_id": "sample_battle_2",
+    "turn": {
+      "value": null,
+      "knowledge": "unknown",
+      "provenance": [],
+      "alternatives": []
+    },
+    "phase": {
+      "value": null,
+      "knowledge": "unknown",
+      "provenance": [],
+      "alternatives": []
+    },
+    "weather": {
+      "active": {
+        "value": true,
+        "knowledge": "observed",
+        "provenance": [
+          {
+            "source_type": "manual_context_annotation",
+            "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+            "observation_ids": [
+              "m22-initial-context:266"
+            ],
+            "image": "reports/M2.2-context-evidence/party-266.png",
+            "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+            "timestamp": 266,
+            "timestamp_uncertainty_seconds": 0.5
+          }
+        ],
+        "alternatives": []
+      },
+      "kind": {
+        "value": "snow",
+        "knowledge": "observed",
+        "provenance": [
+          {
+            "source_type": "manual_context_annotation",
+            "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+            "observation_ids": [
+              "m22-initial-context:266"
+            ],
+            "image": "reports/M2.2-context-evidence/party-266.png",
+            "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+            "timestamp": 266,
+            "timestamp_uncertainty_seconds": 0.5
+          }
+        ],
+        "alternatives": []
+      },
+      "duration": {
+        "remaining": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "expires_at_turn": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "timing": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "modifiers": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "last_tick": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        }
+      },
+      "initiated_by": {
+        "value": null,
+        "knowledge": "unknown",
+        "provenance": [],
+        "alternatives": []
+      }
+    },
+    "terrain": {
+      "active": {
+        "value": null,
+        "knowledge": "unknown",
+        "provenance": [],
+        "alternatives": []
+      },
+      "kind": {
+        "value": null,
+        "knowledge": "unknown",
+        "provenance": [],
+        "alternatives": []
+      },
+      "duration": {
+        "remaining": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "expires_at_turn": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "timing": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "modifiers": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "last_tick": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        }
+      },
+      "initiated_by": {
+        "value": null,
+        "knowledge": "unknown",
+        "provenance": [],
+        "alternatives": []
+      }
+    },
+    "trick_room": {
+      "active": {
+        "value": null,
+        "knowledge": "unknown",
+        "provenance": [],
+        "alternatives": []
+      },
+      "kind": {
+        "value": null,
+        "knowledge": "unknown",
+        "provenance": [],
+        "alternatives": []
+      },
+      "duration": {
+        "remaining": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "expires_at_turn": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "timing": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "modifiers": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "last_tick": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        }
+      },
+      "initiated_by": {
+        "value": null,
+        "knowledge": "unknown",
+        "provenance": [],
+        "alternatives": []
+      }
+    },
+    "global_effects": {},
+    "sides": {
+      "self": {
+        "side_id": "self",
+        "trainer": {
+          "side_id": "self",
+          "display_name": "Hoshi",
+          "unique_trainer_id": null,
+          "evidence": [
+            {
+              "source": "reports/M2.1-battle-log-evidence/team-preview-28.png",
+              "sha256": "8d65d4f50319aae4f6ed716e92bf3aa693ea09ae5f1cb50534fd61a66f1f8bec",
+              "box": [
+                216,
+                35,
+                400,
+                66
+              ],
+              "timestamp": 28,
+              "timestamp_uncertainty_seconds": 2,
+              "color": "purple",
+              "basis": "visible_team_preview_panel"
+            }
+          ]
+        },
+        "party_instance_ids": [
+          "sample_battle_2:self:party-1",
+          "sample_battle_2:self:party-2",
+          "sample_battle_2:self:party-3",
+          "sample_battle_2:self:party-4"
+        ],
+        "party_complete": {
+          "value": true,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5,
+              "annotation": "Four selected battle-party rows are enabled; two unselected preview entries are dimmed. This is the selected party, not the six-member preview roster."
+            }
+          ],
+          "alternatives": []
+        },
+        "active_slots": {
+          "left": "sample_battle_2:self:party-1",
+          "right": "sample_battle_2:self:party-2"
+        },
+        "vacant_slots": [],
+        "fainted_instance_ids": [
+          "sample_battle_2:self:party-3"
+        ],
+        "remaining_available": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "conditions": {
+          "tailwind": {
+            "active": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "reflect": {
+            "active": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "light_screen": {
+            "active": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "aurora_veil": {
+            "active": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          }
+        },
+        "hazards": {},
+        "temporary_effects": {},
+        "resources": {
+          "mega_evolution": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "opponent": {
+        "side_id": "opponent",
+        "trainer": {
+          "side_id": "opponent",
+          "display_name": "训练家",
+          "unique_trainer_id": null,
+          "evidence": [
+            {
+              "source": "reports/M2.1-battle-log-evidence/team-preview-28.png",
+              "sha256": "8d65d4f50319aae4f6ed716e92bf3aa693ea09ae5f1cb50534fd61a66f1f8bec",
+              "box": [
+                977,
+                35,
+                1164,
+                66
+              ],
+              "timestamp": 28,
+              "timestamp_uncertainty_seconds": 2,
+              "color": "red",
+              "basis": "visible_team_preview_panel"
+            }
+          ]
+        },
+        "party_instance_ids": [
+          "sample_battle_2:opponent:initial-1",
+          "sample_battle_2:opponent:initial-2"
+        ],
+        "party_complete": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "active_slots": {
+          "left": "sample_battle_2:opponent:initial-1",
+          "right": "sample_battle_2:opponent:initial-2"
+        },
+        "vacant_slots": [],
+        "fainted_instance_ids": [],
+        "remaining_available": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "conditions": {
+          "tailwind": {
+            "active": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "reflect": {
+            "active": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "light_screen": {
+            "active": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          },
+          "aurora_veil": {
+            "active": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "provenance": [],
+                "alternatives": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            }
+          }
+        },
+        "hazards": {},
+        "temporary_effects": {},
+        "resources": {
+          "mega_evolution": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      }
+    },
+    "pokemon": {
+      "sample_battle_2:self:party-1": {
+        "pokemon_instance_id": "sample_battle_2:self:party-1",
+        "side_id": "self",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:812",
+            "kind": "species",
+            "name": "轰擂金刚猩",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 812,
+            "pokemon_id": 812,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:812",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": "pokeapi:pokemon:812",
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:812",
+            "kind": "species",
+            "name": "轰擂金刚猩",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 812,
+            "pokemon_id": 812,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:812",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "active",
+            "slot": "left"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+              "observation_ids": [
+                "m22-initial-context:267.5"
+              ],
+              "image": "reports/M2.2-context-evidence/active-267.5.png",
+              "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+              "timestamp": 267.5,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": false,
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5,
+              "rule": "observed_absolute_HP_zero_vs_positive"
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": 207,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": 207,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "absolute",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "sample_battle_2:self:party-2": {
+        "pokemon_instance_id": "sample_battle_2:self:party-2",
+        "side_id": "self",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": "pokeapi:pokemon:1018",
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "active",
+            "slot": "right"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+              "observation_ids": [
+                "m22-initial-context:267.5"
+              ],
+              "image": "reports/M2.2-context-evidence/active-267.5.png",
+              "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+              "timestamp": 267.5,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": false,
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5,
+              "rule": "observed_absolute_HP_zero_vs_positive"
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": 197,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": 197,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "absolute",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "sample_battle_2:self:party-3": {
+        "pokemon_instance_id": "sample_battle_2:self:party-3",
+        "side_id": "self",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:478",
+            "kind": "species",
+            "name": "雪妖女",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 478,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:478",
+            "kind": "species",
+            "name": "雪妖女",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 478,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "fainted",
+            "slot": null
+          },
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": true,
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5,
+              "rule": "observed_absolute_HP_zero_vs_positive"
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": 0,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": 177,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "absolute",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "sample_battle_2:self:party-4": {
+        "pokemon_instance_id": "sample_battle_2:self:party-4",
+        "side_id": "self",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:186",
+            "kind": "species",
+            "name": "蚊香蛙皇",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 186,
+            "pokemon_id": 186,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:186",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": "pokeapi:pokemon:186",
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:186",
+            "kind": "species",
+            "name": "蚊香蛙皇",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 186,
+            "pokemon_id": 186,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:186",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "bench",
+            "slot": null
+          },
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": false,
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+              "observation_ids": [
+                "m22-initial-context:266"
+              ],
+              "image": "reports/M2.2-context-evidence/party-266.png",
+              "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+              "timestamp": 266,
+              "timestamp_uncertainty_seconds": 0.5,
+              "rule": "observed_absolute_HP_zero_vs_positive"
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": 197,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": 197,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "absolute",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+                "observation_ids": [
+                  "m22-initial-context:266"
+                ],
+                "image": "reports/M2.2-context-evidence/party-266.png",
+                "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+                "timestamp": 266,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "sample_battle_2:opponent:initial-1": {
+        "pokemon_instance_id": "sample_battle_2:opponent:initial-1",
+        "side_id": "opponent",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+              "observation_ids": [
+                "m22-initial-context:267.5"
+              ],
+              "image": "reports/M2.2-context-evidence/active-267.5.png",
+              "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+              "timestamp": 267.5,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+              "observation_ids": [
+                "m22-initial-context:267.5"
+              ],
+              "image": "reports/M2.2-context-evidence/active-267.5.png",
+              "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+              "timestamp": 267.5,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "active",
+            "slot": "left"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+              "observation_ids": [
+                "m22-initial-context:267.5"
+              ],
+              "image": "reports/M2.2-context-evidence/active-267.5.png",
+              "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+              "timestamp": 267.5,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": false,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+              "observation_ids": [
+                "m22-initial-context:267.5"
+              ],
+              "image": "reports/M2.2-context-evidence/active-267.5.png",
+              "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+              "timestamp": 267.5,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": 100,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+                "observation_ids": [
+                  "m22-initial-context:267.5"
+                ],
+                "image": "reports/M2.2-context-evidence/active-267.5.png",
+                "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+                "timestamp": 267.5,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "displayed_percent",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+                "observation_ids": [
+                  "m22-initial-context:267.5"
+                ],
+                "image": "reports/M2.2-context-evidence/active-267.5.png",
+                "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+                "timestamp": 267.5,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      },
+      "sample_battle_2:opponent:initial-2": {
+        "pokemon_instance_id": "sample_battle_2:opponent:initial-2",
+        "side_id": "opponent",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:936",
+            "kind": "species",
+            "name": "红莲铠骑",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 936,
+            "pokemon_id": 936,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:936",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+              "observation_ids": [
+                "m22-initial-context:267.5"
+              ],
+              "image": "reports/M2.2-context-evidence/active-267.5.png",
+              "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+              "timestamp": 267.5,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "current_variant": {
+          "value": "pokeapi:pokemon:936",
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+              "observation_ids": [
+                "m22-initial-context:267.5"
+              ],
+              "image": "reports/M2.2-context-evidence/active-267.5.png",
+              "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+              "timestamp": 267.5,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "original_identity": {
+          "value": {
+            "canonical_id": "pokeapi:species:936",
+            "kind": "species",
+            "name": "红莲铠骑",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 936,
+            "pokemon_id": 936,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:936",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+              "observation_ids": [
+                "m22-initial-context:267.5"
+              ],
+              "image": "reports/M2.2-context-evidence/active-267.5.png",
+              "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+              "timestamp": 267.5,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "location": {
+          "value": {
+            "kind": "active",
+            "slot": "right"
+          },
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+              "observation_ids": [
+                "m22-initial-context:267.5"
+              ],
+              "image": "reports/M2.2-context-evidence/active-267.5.png",
+              "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+              "timestamp": 267.5,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "fainted": {
+          "value": false,
+          "knowledge": "observed",
+          "provenance": [
+            {
+              "source_type": "manual_context_annotation",
+              "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+              "observation_ids": [
+                "m22-initial-context:267.5"
+              ],
+              "image": "reports/M2.2-context-evidence/active-267.5.png",
+              "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+              "timestamp": 267.5,
+              "timestamp_uncertainty_seconds": 0.5
+            }
+          ],
+          "alternatives": []
+        },
+        "hp": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "maximum": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "displayed_percent": {
+            "value": 30,
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+                "observation_ids": [
+                  "m22-initial-context:267.5"
+                ],
+                "image": "reports/M2.2-context-evidence/active-267.5.png",
+                "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+                "timestamp": 267.5,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "unit": {
+            "value": "displayed_percent",
+            "knowledge": "observed",
+            "provenance": [
+              {
+                "source_type": "manual_context_annotation",
+                "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+                "observation_ids": [
+                  "m22-initial-context:267.5"
+                ],
+                "image": "reports/M2.2-context-evidence/active-267.5.png",
+                "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+                "timestamp": 267.5,
+                "timestamp_uncertainty_seconds": 0.5
+              }
+            ],
+            "alternatives": []
+          },
+          "observations": []
+        },
+        "major_status": {
+          "value": null,
+          "knowledge": "unknown",
+          "provenance": [],
+          "alternatives": []
+        },
+        "status_counters": {},
+        "stages": {
+          "attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_attack": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "special_defense": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "speed": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "accuracy": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          },
+          "evasion": {
+            "value": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "interval": {
+              "value": null,
+              "knowledge": "unknown",
+              "provenance": [],
+              "alternatives": []
+            },
+            "changes": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "activations": [],
+          "changes": []
+        },
+        "ability": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "revealed": [],
+          "modifications": []
+        },
+        "moves": {
+          "executed": [],
+          "known_slots": {},
+          "pp": {},
+          "unrevealed_slots": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "hit_observations": []
+        },
+        "volatile": {},
+        "transformations": [],
+        "hidden_configuration": {
+          "held_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ability": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "moveset": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ev_allocation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "nature": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "ivs": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          },
+          "possible_transformation": {
+            "value": null,
+            "knowledge": "unknown",
+            "provenance": [],
+            "alternatives": []
+          }
+        }
+      }
+    },
+    "observations": [
+      {
+        "kind": "initial_weather_duration_display",
+        "raw_text": "4/5",
+        "evidence": {
+          "source_type": "manual_context_annotation",
+          "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+          "observation_ids": [
+            "m22-initial-context:267.5"
+          ],
+          "image": "reports/M2.2-context-evidence/active-267.5.png",
+          "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+          "timestamp": 267.5,
+          "timestamp_uncertainty_seconds": 0.5
+        },
+        "interpreted_remaining": null
+      }
+    ],
+    "conflicts": []
+  },
+  "annotations": {
+    "source_frames": {
+      "266": {
+        "source_type": "manual_context_annotation",
+        "source_id": "tests/fixtures/sample_battle_2.mp4#266",
+        "observation_ids": [
+          "m22-initial-context:266"
+        ],
+        "image": "reports/M2.2-context-evidence/party-266.png",
+        "sha256": "40bc022f4f17716fcb0971b06b2b04daaadcf6109af0bf8415f4a5024ab8e6e3",
+        "timestamp": 266,
+        "timestamp_uncertainty_seconds": 0.5
+      },
+      "267.5": {
+        "source_type": "manual_context_annotation",
+        "source_id": "tests/fixtures/sample_battle_2.mp4#267.5",
+        "observation_ids": [
+          "m22-initial-context:267.5"
+        ],
+        "image": "reports/M2.2-context-evidence/active-267.5.png",
+        "sha256": "22e7038d222a2672cbe3d7ac393b848eeb1b69053cb8cba8837d75194e2b7092",
+        "timestamp": 267.5,
+        "timestamp_uncertainty_seconds": 0.5
+      }
+    },
+    "turn": "Unknown at initialization; Turn 2 heading comes from each normalized event.",
+    "opponent_party": "Incomplete. Two initially active participants only; preview composition is not a verified selected battle party.",
+    "self_party": "Four selected participants known. Initial Froslass fainted fact derives from observed absolute 0/177 HP; no Turn 1 event is synthesized.",
+    "stat_stages": "All initial stages unknown. No guessed zero baselines.",
+    "duration": "Raw 4/5 counter is preserved but no remaining-duration/tick rule is assumed."
+  }
+}
