@@ -1,0 +1,915 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pokemon-champions:damage:request:v1",
+  "$defs": {
+    "conflict": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "const": "conflicting"
+        },
+        "values": {
+          "type": "array",
+          "minItems": 2
+        }
+      },
+      "required": [
+        "state",
+        "values"
+      ],
+      "additionalProperties": false
+    },
+    "exact": {
+      "type": "object",
+      "properties": {
+        "profile": {
+          "enum": [
+            "champions-evidence-only-v1",
+            "showdown-champions-reference-v1"
+          ]
+        },
+        "mode": {
+          "const": "exact"
+        },
+        "attacker": {
+          "type": "object",
+          "properties": {
+            "identity": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "form": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "level": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "stats": {
+              "type": "object",
+              "properties": {
+                "attack": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "defense": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "special_attack": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "special_defense": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "speed": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "stages": {
+              "type": "object",
+              "properties": {
+                "attack": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": -6,
+                      "maximum": 6
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "defense": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": -6,
+                      "maximum": 6
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "special_attack": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": -6,
+                      "maximum": 6
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "special_defense": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": -6,
+                      "maximum": 6
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "speed": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": -6,
+                      "maximum": 6
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "stat_basis": {
+              "enum": [
+                "unmodified",
+                "effective",
+                null
+              ]
+            },
+            "current_hp": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 65535
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "maximum_hp": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 65535
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "ability": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "item": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "status": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "other_effects": {
+              "anyOf": [
+                {
+                  "type": "array"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            }
+          },
+          "required": [
+            "identity",
+            "level",
+            "stats",
+            "stages",
+            "stat_basis",
+            "ability",
+            "item",
+            "status",
+            "other_effects"
+          ],
+          "additionalProperties": false
+        },
+        "defender": {
+          "type": "object",
+          "properties": {
+            "identity": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "form": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "level": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "stats": {
+              "type": "object",
+              "properties": {
+                "attack": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "defense": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "special_attack": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "special_defense": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "speed": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "stages": {
+              "type": "object",
+              "properties": {
+                "attack": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": -6,
+                      "maximum": 6
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "defense": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": -6,
+                      "maximum": 6
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "special_attack": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": -6,
+                      "maximum": 6
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "special_defense": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": -6,
+                      "maximum": 6
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                },
+                "speed": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": -6,
+                      "maximum": 6
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/$defs/conflict"
+                    }
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "stat_basis": {
+              "enum": [
+                "unmodified",
+                "effective",
+                null
+              ]
+            },
+            "current_hp": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 65535
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "maximum_hp": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 65535
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "ability": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "item": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "status": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "other_effects": {
+              "anyOf": [
+                {
+                  "type": "array"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            }
+          },
+          "required": [
+            "identity",
+            "level",
+            "stats",
+            "stages",
+            "stat_basis",
+            "ability",
+            "item",
+            "status",
+            "other_effects"
+          ],
+          "additionalProperties": false
+        },
+        "move": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/conflict"
+            }
+          ]
+        },
+        "field": {
+          "type": "object",
+          "properties": {
+            "critical": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "reflect": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "light_screen": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "aurora_veil": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "attacker_grounded": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "defender_grounded": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "helping_hand": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "friend_guard": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "format": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "weather": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "terrain": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "targets_hit": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            },
+            "other_effects": {
+              "anyOf": [
+                {
+                  "type": "array"
+                },
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/conflict"
+                }
+              ]
+            }
+          },
+          "required": [
+            "critical",
+            "reflect",
+            "light_screen",
+            "aurora_veil",
+            "helping_hand",
+            "friend_guard",
+            "format",
+            "weather",
+            "terrain",
+            "targets_hit",
+            "other_effects"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "profile",
+        "attacker",
+        "defender",
+        "move",
+        "field"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/exact"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "scenarios": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 64,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "input": {
+                "$ref": "#/$defs/exact"
+              }
+            },
+            "required": [
+              "id",
+              "input"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "scenarios"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

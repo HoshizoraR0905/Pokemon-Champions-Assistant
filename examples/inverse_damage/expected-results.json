@@ -1,0 +1,226 @@
+{
+  "single": {
+    "status": "exact",
+    "feasible": {
+      "values": [
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ],
+      "minimum": 89,
+      "maximum": 109,
+      "count": 21,
+      "hull": [
+        89,
+        109
+      ],
+      "has_gaps": false,
+      "intervals": [
+        [
+          89,
+          109
+        ]
+      ]
+    }
+  },
+  "multiple": {
+    "status": "exact",
+    "feasible": {
+      "values": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ],
+      "minimum": 91,
+      "maximum": 109,
+      "count": 19,
+      "hull": [
+        91,
+        109
+      ],
+      "has_gaps": false,
+      "intervals": [
+        [
+          91,
+          109
+        ]
+      ]
+    }
+  },
+  "shared-item-empty": {
+    "status": "empty",
+    "feasible": {
+      "values": [],
+      "minimum": null,
+      "maximum": null,
+      "count": 0,
+      "hull": null,
+      "has_gaps": false,
+      "intervals": []
+    }
+  },
+  "independent-items": {
+    "status": "conditional",
+    "feasible": {
+      "values": [
+        100
+      ],
+      "minimum": 100,
+      "maximum": 100,
+      "count": 1,
+      "hull": [
+        100,
+        100
+      ],
+      "has_gaps": false,
+      "intervals": [
+        [
+          100,
+          100
+        ]
+      ]
+    }
+  },
+  "stat-domain": {
+    "status": "exact",
+    "feasible": {
+      "values": [
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149
+      ],
+      "minimum": 93,
+      "maximum": 149,
+      "count": 56,
+      "hull": [
+        93,
+        149
+      ],
+      "has_gaps": true,
+      "intervals": [
+        [
+          93,
+          141
+        ],
+        [
+          143,
+          149
+        ]
+      ]
+    }
+  },
+  "rounding-gap": {
+    "status": "exact",
+    "feasible": {
+      "values": [
+        80,
+        82
+      ],
+      "minimum": 80,
+      "maximum": 82,
+      "count": 2,
+      "hull": [
+        80,
+        82
+      ],
+      "has_gaps": true,
+      "intervals": [
+        [
+          80,
+          80
+        ],
+        [
+          82,
+          82
+        ]
+      ]
+    }
+  }
+}

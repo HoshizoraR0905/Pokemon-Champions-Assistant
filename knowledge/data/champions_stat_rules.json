@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "profile": "52poke-champions-stats-v1",
+  "sources": [
+    {
+      "id": "stat",
+      "url": "https://wiki.52poke.com/wiki/能力",
+      "revision_id": 2607357,
+      "permalink": "https://wiki.52poke.com/index.php?title=能力&oldid=2607357",
+      "retrieved_date": "2026-10-15",
+      "game": "Pokémon Champions",
+      "html_sha256": "5f0fe7280ad8db753b119fc23e1b336d0993be217df7a6187926aae0e32d1cf4",
+      "local_snapshot": ".cache/champions-stats/stat.html",
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+    },
+    {
+      "id": "nature",
+      "url": "https://wiki.52poke.com/wiki/性格",
+      "revision_id": 2568467,
+      "permalink": "https://wiki.52poke.com/index.php?title=性格&oldid=2568467",
+      "retrieved_date": "2026-10-15",
+      "game": "Pokémon Champions",
+      "html_sha256": "46bd1130a070d7200558fb7e5dc2378030f139da703e5475d07fd902ece2109e",
+      "local_snapshot": ".cache/champions-stats/nature.html",
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+    },
+    {
+      "id": "champions",
+      "url": "https://wiki.52poke.com/wiki/Pokémon_Champions",
+      "revision_id": 2628728,
+      "permalink": "https://wiki.52poke.com/index.php?title=Pokémon_Champions&oldid=2628728",
+      "retrieved_date": "2026-10-15",
+      "game": "Pokémon Champions",
+      "html_sha256": "ecf61ce073c6ba9fa62c4bcf5487e631003c08572b683af94a97a84b75b705d0",
+      "local_snapshot": ".cache/champions-stats/champions.html",
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+    }
+  ],
+  "documented_rules": {
+    "hp": "base + training_points + 75",
+    "other": "floor((base + training_points + 20) * adjustment)",
+    "training_points_per_stat": [
+      0,
+      32
+    ],
+    "training_points_total_max": 66,
+    "adjustment_numerators": [
+      9,
+      10,
+      11
+    ],
+    "adjustment_denominator": 10,
+    "alignment": "one increased and one distinct decreased non-HP stat, or neutral",
+    "alignment_evidence": "性格: 影响 and 能力调整; Champions maps nature/mint effects to Stat Alignment; four neutral nature labels cannot be selected. Numerical neutral represented once.",
+    "no_level_or_iv": "Pokémon Champions: training section"
+  },
+  "limitations": [
+    "Community encyclopedia documentation, not independently certified official mechanics.",
+    "No stat-stage, item, ability, transformation or in-battle modifiers.",
+    "No roster/regulation legality inferred from base-stat presence.",
+    "Fixed-HP species blocked pending Champions-specific exception verification.",
+    "Pinned article revisions do not freeze transcluded templates; retrieved HTML digests identify rendered snapshots."
+  ]
+}

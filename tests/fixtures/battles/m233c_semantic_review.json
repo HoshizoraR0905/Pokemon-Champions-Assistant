@@ -1,0 +1,2572 @@
+{
+  "schema_version": 1,
+  "labeling_criteria": {
+    "method": "Manual inspection of cached images and 10 FPS reference contact sheets before inspecting current OCR outputs; labels never imported by inference.",
+    "independence": "Primary intervals avoid all B1/B2 tuning frames and their benchmark intervals. Sparse survey preview selected message-rich windows. HUD checkpoints were not withheld during original A development; current evaluation withholds matching frames and later prefix information. Supplemental old-audit cases are explicitly non-held-out.",
+    "census_limit": "10 FPS reference, not exhaustive native-frame video review; events shorter than 0.1s remain unmeasured.",
+    "mechanics": "Direct names, HP, text, UI arrows and field labels are direct observations. No effect sizes inferred from moves; uncertain actors/targets stay unknown.",
+    "reviewer": "Single Codex visual review; no independent second annotator or inter-rater agreement measurement."
+  },
+  "intervals": [
+    {
+      "battle_id": "sample_battle_2",
+      "start": 292,
+      "end": 304,
+      "reference_fps": 10,
+      "occurrences": [
+        {
+          "occurrence_id": "send",
+          "first_clear_index": 15,
+          "last_clear_index": 30,
+          "expected_text": "上吧！蚊香蛙皇！",
+          "expected_type": "send_out",
+          "actor": "蚊香蛙皇",
+          "side": "self",
+          "target": null,
+          "canonical_move": null,
+          "evidence_class": "direct_visual_text",
+          "confidence": "high",
+          "right_censored": false
+        },
+        {
+          "occurrence_id": "rain",
+          "first_clear_index": 49,
+          "last_clear_index": 63,
+          "expected_text": "开始下雨了！",
+          "expected_type": "weather_change",
+          "actor": null,
+          "side": "field",
+          "target": null,
+          "canonical_move": null,
+          "evidence_class": "direct_visual_text",
+          "confidence": "high",
+          "right_censored": false
+        },
+        {
+          "occurrence_id": "armor",
+          "first_clear_index": 68,
+          "last_clear_index": 82,
+          "expected_text": "对手的红莲铠骑使出了铠农炮！",
+          "expected_type": "move_execution",
+          "actor": "红莲铠骑",
+          "side": "opponent",
+          "target": null,
+          "canonical_move": "pokeapi:move:890",
+          "evidence_class": "direct_visual_text",
+          "confidence": "high",
+          "right_censored": false
+        }
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "timestamp": 292.0,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000001.png",
+          "sha256": "4d8a23031f8c1719943452a55e150f0473727fb2850b7161ef204ffaa786070d",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 1,
+          "timestamp": 292.1,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000002.png",
+          "sha256": "f95fac699a7683c52170516c7079d9af7e808624fce8584bc26946b840b08640",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 2,
+          "timestamp": 292.2,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000003.png",
+          "sha256": "4a85c40637001784747b371207c138235880d692066bc0bb18e149de9db203d0",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 3,
+          "timestamp": 292.3,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000004.png",
+          "sha256": "1adabe93ea7a053ddd3c0be5933ecf81de8e7444fa15f85eb0452d437d273aff",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 4,
+          "timestamp": 292.4,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000005.png",
+          "sha256": "fb12e6b8087635f24c9ccceb10d69b8758fb28d962836d0ef727b09292a9f089",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 5,
+          "timestamp": 292.5,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000006.png",
+          "sha256": "371f9c0dde8d94484134a3a472e8e6ee11820c09db531d3917f9626d07517ced",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 6,
+          "timestamp": 292.6,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000007.png",
+          "sha256": "3c309388c82e556ecd127c3abb3d2330cb85dbad1311a7ee28d7cffa1e638c55",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 7,
+          "timestamp": 292.7,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000008.png",
+          "sha256": "bbf384c2aa558f0505135c25ddfc673043f5b2106badcbacca6c8d0137ec696b",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 8,
+          "timestamp": 292.8,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000009.png",
+          "sha256": "6bf6712b0ed0184a0897ddaf65d14d283149c7b477d5ba3508c39c6ecc2e94c7",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 9,
+          "timestamp": 292.9,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000010.png",
+          "sha256": "21a7ffbc7b30dfb89789aebf3585c3e5b173ad739ae218c95f0e70969348d76a",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 10,
+          "timestamp": 293.0,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000011.png",
+          "sha256": "5c92ac842628df096f0105eb116e8a6a58f4ba396cff19e642c4b397180a93e3",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 11,
+          "timestamp": 293.1,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000012.png",
+          "sha256": "9e64b8246708161a9640da02cd746e4e209e8a9e1f48744f365ba40cd21c136c",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 12,
+          "timestamp": 293.2,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000013.png",
+          "sha256": "8cbf41a2a3a734fd89a5f059d1b0d66226b2bfd31822de25be714e3fa740df3c",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 13,
+          "timestamp": 293.3,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000014.png",
+          "sha256": "00453fa0fa65fbaa90a78a3094fabccde93930718cec74992cc5af76f7f22560",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 14,
+          "timestamp": 293.4,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000015.png",
+          "sha256": "09f47d91e65b01e4e446314b0cf6bae37f4fcb5eeb96aa844cd00eeaee387b88",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 15,
+          "timestamp": 293.5,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000016.png",
+          "sha256": "034b44292e05dd9ec49b85085de082c5d5b342779898b56ece96318806b53eb1",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 16,
+          "timestamp": 293.6,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000017.png",
+          "sha256": "fa5a4f436596f4a20f7486465af608530d203bcea79f347705225300fe8447c4",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 17,
+          "timestamp": 293.7,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000018.png",
+          "sha256": "add689857f4f7409aba7c4025b3df5e070618a3967a64875de741a02f5d5feef",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 18,
+          "timestamp": 293.8,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000019.png",
+          "sha256": "2842445031579864cc8511ba7615d06128b3037c4fbbd98f485fe198eb0b13f4",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 19,
+          "timestamp": 293.9,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000020.png",
+          "sha256": "5d361330b6e424a36606daa8ffea1dd4f78827c0dc18f4bddc760d5c44d3c793",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 20,
+          "timestamp": 294.0,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000021.png",
+          "sha256": "e58471794ea8921d1e8fae2cad08964446b9afb9451a42a0d574dd91e1707c25",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 21,
+          "timestamp": 294.1,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000022.png",
+          "sha256": "f6ee086c237ac15c0f768f985ce9fd9d42d5abbcfec35223118ddf2414ffc573",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 22,
+          "timestamp": 294.2,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000023.png",
+          "sha256": "f9d073809216f9fa371eca1230cc1ac2d4429b1e43bf2e7898fe98f364d9cdc8",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 23,
+          "timestamp": 294.3,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000024.png",
+          "sha256": "60fb302968efb55d018b901a58229b2502804adf5939b83efee31f53a37f738b",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 24,
+          "timestamp": 294.4,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000025.png",
+          "sha256": "e16d66d4770a99cbb76c570300d47dbf81660596492e357c4a5b57c7c5b95028",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 25,
+          "timestamp": 294.5,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000026.png",
+          "sha256": "37479ac3f9951d6555da1441812a10718fd6064a01513d5e5b67ab603762b35c",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 26,
+          "timestamp": 294.6166666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000027.png",
+          "sha256": "ec24358f6bd4060529224b8dea3118ad0b13ceb8e4399a3a8ddf9760d32706fe",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 27,
+          "timestamp": 294.7,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000028.png",
+          "sha256": "b9ad18719f5bf4dff2aef2aa9092d8f3f7fc620059b615983efa65ba5ae2884f",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 28,
+          "timestamp": 294.8,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000029.png",
+          "sha256": "7cc2ed371987f8005ec8b55e9453c7649c824bd11828693707b3abc95044abd4",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 29,
+          "timestamp": 294.9,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000030.png",
+          "sha256": "ed9c05db8bac1e0f1f2f3810a6edc65644e745e8b1a61a31b86b96311968b27e",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 30,
+          "timestamp": 295.0,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000031.png",
+          "sha256": "b892d6ed71518ea88dfb5773381df9935b754190ab867840e00436d509e261ff",
+          "label": "clear_message",
+          "occurrence_id": "send",
+          "review_confidence": "high"
+        },
+        {
+          "index": 31,
+          "timestamp": 295.1,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000032.png",
+          "sha256": "db879c49817ccc434a845f8714d979ce2ffed68013fd04972ccb3583bc654b99",
+          "label": "ambiguous_fade",
+          "occurrence_id": null,
+          "review_confidence": "ambiguous"
+        },
+        {
+          "index": 32,
+          "timestamp": 295.2,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000033.png",
+          "sha256": "2c4728fde43dd14787a09a26f620285653df2e8f87ef3f2d30f085b3e476f9cf",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 33,
+          "timestamp": 295.3,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000034.png",
+          "sha256": "28c54aee506d2f56010842b5b1e8fda43464d3d9980a75b1e577bdc02e2f0195",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 34,
+          "timestamp": 295.4,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000035.png",
+          "sha256": "487d4f7b12230268341c7b82b6bd13c717810795b4bb1fed773b64fab0f7746b",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 35,
+          "timestamp": 295.5,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000036.png",
+          "sha256": "063adb704b764be58dd1b35ebf5e4f4dc2f53dcb22946409e6cf89ec2e140a4f",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 36,
+          "timestamp": 295.6,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000037.png",
+          "sha256": "d2a66b68431bdfe18fd88e4d777f2b719a67306316ed4fd0fde1a868c64b55c3",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 37,
+          "timestamp": 295.71666666666664,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000038.png",
+          "sha256": "46f6de7ed43fa9d53ef5110d36e2ac7ee2ad246b0ca06228cf19082e09324031",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 38,
+          "timestamp": 295.8,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000039.png",
+          "sha256": "d4185a4403afa50955399c356dfd4190bac1c59774669caeac3ff7dbee56ddb3",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 39,
+          "timestamp": 295.9,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000040.png",
+          "sha256": "4a9c1745f2aec360f0b13ceacd5979b1649480cfdf1622002a94715b4bbbbc9a",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 40,
+          "timestamp": 296.0,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000041.png",
+          "sha256": "ab0e4d4183f7412c4d7709dfccd24d54c0152c2bb025b18430b4f95193efab9c",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 41,
+          "timestamp": 296.1,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000042.png",
+          "sha256": "9d2d06ee9ff8014af2804afb507046535fc5c6f4502c6373537cf19b48b9d57b",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 42,
+          "timestamp": 296.2,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000043.png",
+          "sha256": "324dc376c2df52204a3f5f5e9e01dc9fe971d06247f80b84d577c2399dced173",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 43,
+          "timestamp": 296.3,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000044.png",
+          "sha256": "028dee65f32f7a611eef9201c0e0488dde2c90a815eb98587ae9329f3de9ecc1",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 44,
+          "timestamp": 296.4166666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000045.png",
+          "sha256": "466dbe4bc2128d6d87012b117571e976ab068ac2234ed5294d5f359d5bf709cb",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 45,
+          "timestamp": 296.5,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000046.png",
+          "sha256": "14555233913ea7f9d724584b199655346298f15892357548bba96f7046a448aa",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 46,
+          "timestamp": 296.6166666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000047.png",
+          "sha256": "c63ff26bad9d6333b0718e288b19991b1e6da8d942b09c7daed86f0d97b23cde",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 47,
+          "timestamp": 296.7,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000048.png",
+          "sha256": "c06ffca2556d7af9eb53c20b3e0e2ba7f2c702f71262c6f2d9feb4e1dc32dda5",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 48,
+          "timestamp": 296.8,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000049.png",
+          "sha256": "2a99c7d55291e2b6f3ba6c9341dbbbe6e554462b6bf9c46cb30380b5ee596ae2",
+          "label": "ambiguous_fade",
+          "occurrence_id": null,
+          "review_confidence": "ambiguous"
+        },
+        {
+          "index": 49,
+          "timestamp": 296.9166666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000050.png",
+          "sha256": "f3a5d3c76a14d2790f968277c24778d9f5177873021bf203d12c500ff74a9137",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 50,
+          "timestamp": 297.0,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000051.png",
+          "sha256": "4bfc4116845b8bad9f757575b12010cf8afc8f86d47031a184bb8f23b6406e03",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 51,
+          "timestamp": 297.1,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000052.png",
+          "sha256": "6a873c7b83bd487b519cc6f428aad348a235620c0c51f89954f49e1745116252",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 52,
+          "timestamp": 297.2,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000053.png",
+          "sha256": "bed9182af237ef5c82bc00be23a28e862420b5baeb1ad1319ddbd8e00dea82e4",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 53,
+          "timestamp": 297.3,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000054.png",
+          "sha256": "21075a34191dfa352cb0a9d9caec68c64eca476dd9cb0569e2d74753f64015b7",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 54,
+          "timestamp": 297.4,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000055.png",
+          "sha256": "d62f577e95de8b3bbcc8499e1e4e6cc67c30cabf47819e8bb4358187c7e37ddf",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 55,
+          "timestamp": 297.5,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000056.png",
+          "sha256": "691c1f6a4cf403dc51143d35620fb4eff1ac8d37b8464381dfaeef1fd7ebc7b7",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 56,
+          "timestamp": 297.6,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000057.png",
+          "sha256": "3c7b3907a723f20d0f00e9a3fd245f82e40772c935303f6fdd59f6c2c740161d",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 57,
+          "timestamp": 297.7,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000058.png",
+          "sha256": "d46c2cf4f020580b6b42792d75fc7c736aedc59489b8c138a93d6dc0d5cda5e0",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 58,
+          "timestamp": 297.81666666666666,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000059.png",
+          "sha256": "f258376bdf52908cf38d5a48a0663209f6d72512d4dddd6a81b84ea9845e1958",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 59,
+          "timestamp": 297.9,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000060.png",
+          "sha256": "dd4be6ce4f8b315bf3e136f7315739f4a3393b5a7cc890b0f8c87975718b06b5",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 60,
+          "timestamp": 298.0,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000061.png",
+          "sha256": "574b68ff75c9ac2b830089ee0920a8437fcafe959b92ff2b77c44d7a681edb9c",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 61,
+          "timestamp": 298.1166666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000062.png",
+          "sha256": "63af06747aaa021c95044de9e29ff6abbfa83149e9ee68124c5a70b28946e3bb",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 62,
+          "timestamp": 298.2,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000063.png",
+          "sha256": "dc4d975680f5c4083053cf8006e3772487faeae9c154b4739f09c6116575ec10",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 63,
+          "timestamp": 298.3,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000064.png",
+          "sha256": "f5e85e1c3b2c88d59e12c6a6be50beddbe9020c5c16590c763c21ad7bf4095a1",
+          "label": "clear_message",
+          "occurrence_id": "rain",
+          "review_confidence": "high"
+        },
+        {
+          "index": 64,
+          "timestamp": 298.4,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000065.png",
+          "sha256": "377ef3e96d984ebc2fc08e1b5c39cb32a822f7c86a702c1b15675681e337d470",
+          "label": "ambiguous_fade",
+          "occurrence_id": null,
+          "review_confidence": "ambiguous"
+        },
+        {
+          "index": 65,
+          "timestamp": 298.5,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000066.png",
+          "sha256": "4f2f37c7b40fe972272c79f51d490a2151cf7e9674b486b68259d8128b8466fb",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 66,
+          "timestamp": 298.6,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000067.png",
+          "sha256": "9cd0cd27d2fe4606839140a619002001dd746b7ed02faf5569ff691d357b12f9",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 67,
+          "timestamp": 298.7,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000068.png",
+          "sha256": "1fd59e8a428a2b1e5cd57360eb15b6d9830ce6d65b35a5a2ebe8f4e17d0aca73",
+          "label": "ambiguous_fade",
+          "occurrence_id": null,
+          "review_confidence": "ambiguous"
+        },
+        {
+          "index": 68,
+          "timestamp": 298.8,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000069.png",
+          "sha256": "ff737574de38608c014e2a7b58f8cfcc0a86ad724648738c2864d40d8dc09844",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 69,
+          "timestamp": 298.9,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000070.png",
+          "sha256": "1d4a7907e9f131e347e486839d63dc0d392669528131039743c87a72f77115f2",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 70,
+          "timestamp": 299.0,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000071.png",
+          "sha256": "6b622c84cb5f572899d56250d9a0cc27ca65f60e8008018460fb0037de0df5fc",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 71,
+          "timestamp": 299.1,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000072.png",
+          "sha256": "fe55b8d20a497ee5ddc80255e8b206d0deb0ebb618a77a12107b20bf57058ad9",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 72,
+          "timestamp": 299.2,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000073.png",
+          "sha256": "9d2ffacd499a185d1f1accdd059510d90df911a42606fd6af4b423e0183bf2bf",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 73,
+          "timestamp": 299.3,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000074.png",
+          "sha256": "e29eca92e868d5211f54b51607a7a4a1a22b9cf31acd21015a82f8571ca953d5",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 74,
+          "timestamp": 299.4,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000075.png",
+          "sha256": "1faa515e212bf775632c3e5e274bc60894de15b30a67217bcf4d92adeeaa6b1f",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 75,
+          "timestamp": 299.5,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000076.png",
+          "sha256": "6058270feec156c6eaaf410c74367ce6aa2f413a12b2e2860a4f184011194fa4",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 76,
+          "timestamp": 299.6,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000077.png",
+          "sha256": "2a082ad663b1779dd288898fe7d8cf6e5bc8ea0424e6d2682258e4d6bbb5534d",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 77,
+          "timestamp": 299.7,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000078.png",
+          "sha256": "42e20f9fa0f7796f0e6cc5580a4238dec9270f6348d0bfd39705f74f6f8567e4",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 78,
+          "timestamp": 299.8,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000079.png",
+          "sha256": "3215323877189d74d03463a20a811391c5ab7564653533b74e2cd4a9ff316997",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 79,
+          "timestamp": 299.9,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000080.png",
+          "sha256": "4bb1a785141af744fbacffcd06c395db58f8849ca97a8dd119881351d8310902",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 80,
+          "timestamp": 300.0,
+          "image": ".cache/battles/sample_battle_2/m232-survey/segment-000300/000001.jpg",
+          "sha256": "92f31a5253f341db274fe2d73e524a1c26aedbef98fee3cb438e4f605b3ce349",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 81,
+          "timestamp": 300.1,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000001.png",
+          "sha256": "e09c15055d18226127c21815d4891863bc01cff4ad6f52f3bfeb5aa68f36753d",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 82,
+          "timestamp": 300.2,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000002.png",
+          "sha256": "33182e7a14d77e5f0bf7a7a1b4cb3687c4a13d9e47a483a2e9ac157d777f6481",
+          "label": "clear_message",
+          "occurrence_id": "armor",
+          "review_confidence": "high"
+        },
+        {
+          "index": 83,
+          "timestamp": 300.3,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000003.png",
+          "sha256": "35c0561b46159059b888510602d6335faf89e87650d0513c8e2c587504801daf",
+          "label": "ambiguous_fade",
+          "occurrence_id": null,
+          "review_confidence": "ambiguous"
+        },
+        {
+          "index": 84,
+          "timestamp": 300.4,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000004.png",
+          "sha256": "bee2a4873b76001eee38d473c436f6c49c80b232b9025ffa1a3e6c03f4effc90",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 85,
+          "timestamp": 300.5,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000005.png",
+          "sha256": "3c1f6d561bb6371993c00cdedc576a74800428a72ce7b027bf075b00ab048bd7",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 86,
+          "timestamp": 300.6,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000006.png",
+          "sha256": "fafce48030b35d12cf1717b80dbfa8885284e3e8a6e09a7c6a6176931c98e5ea",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 87,
+          "timestamp": 300.7,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000007.png",
+          "sha256": "43fa5b7abff17d2d3d82453763e5d6c83ba0e7cb067d70d5f9015528064ade8b",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 88,
+          "timestamp": 300.8,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000008.png",
+          "sha256": "fd2200878f10b23a4cd8fa78b7c7c6c538bbab659134e184a1e3c23574db2eb2",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 89,
+          "timestamp": 300.9,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000009.png",
+          "sha256": "9c4f51f8324493964702f6f2deefd9511d7c9c5ffcd29b892f773065bf4d834b",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 90,
+          "timestamp": 301.0,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000010.png",
+          "sha256": "9db1cdbdf6be1b473fa903da5435ac71c244fa1d579041e004df98d3445cfa97",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 91,
+          "timestamp": 301.1,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000011.png",
+          "sha256": "6ec33e0bc6f6e980fd4d1df4e6ec5129bd6e1afe57ff1ee179c8ce3216b65b78",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 92,
+          "timestamp": 301.2,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000012.png",
+          "sha256": "22999977173feadd3149e6ef068815ae6bd6abf5e8ee5de0d036b625c23cb7bc",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 93,
+          "timestamp": 301.3,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000013.png",
+          "sha256": "facbecefb733d445ac923b288b3711062ffe8d487e440303a25d43d8213cdd1a",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 94,
+          "timestamp": 301.4,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000014.png",
+          "sha256": "43dd8ceb4b7a0429d449c9390345cc46dfed303bc866c1c1962051a2d0a78e7c",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 95,
+          "timestamp": 301.5,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000015.png",
+          "sha256": "041e8ee54ab84127c524f549218fafba155e842229557107428951571d369217",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 96,
+          "timestamp": 301.6,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000016.png",
+          "sha256": "76a064dfe19802cc245e8f648eace7abb623acddb15f321514f2036b3de3be22",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 97,
+          "timestamp": 301.7,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000017.png",
+          "sha256": "e654dd11d5765880125c66ba9298d0fac88a744614a452fcdbe2c5d2d7e24d30",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 98,
+          "timestamp": 301.8016666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000018.png",
+          "sha256": "1224081c7f4b4e5c768f030bc0f857e1c9473fff78fabb7a70992d6309236ed6",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 99,
+          "timestamp": 301.90166666666664,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000019.png",
+          "sha256": "e6cb5367f418ba50fc5236b1cc615889f43d20cabdf6c7a9a912d13d8186144b",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 100,
+          "timestamp": 302.00166666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000020.png",
+          "sha256": "7924688ea7eee7a9d35c12e1ce6ef77c8f39d37191c868bdb3d6436aff73171d",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 101,
+          "timestamp": 302.1016666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000021.png",
+          "sha256": "88babf6baaf0b189ebc3201687f3b4ad5d3368c1f4d6d1d432cd86eca19d6f79",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 102,
+          "timestamp": 302.20166666666665,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000022.png",
+          "sha256": "7be717f400ddbd4ed01f7d636022ad5af25aa924866ba1972cbd2f30371b3198",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 103,
+          "timestamp": 302.3016666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000023.png",
+          "sha256": "23ca22df3696bbe2af01f0e6b116006c510c1f57153db2314daca8f3708fe949",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 104,
+          "timestamp": 302.40166666666664,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000024.png",
+          "sha256": "93be9f7fc48d409f1b0f6a43fe8f7ac3393fa78b8c5303b0eec1fa353af34c93",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 105,
+          "timestamp": 302.50166666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000025.png",
+          "sha256": "3097b376e846274b5c2e7b8da4c7db923ef0141742106692b7ce6bbdfbaef255",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 106,
+          "timestamp": 302.6016666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000026.png",
+          "sha256": "5d140973e984e0ad730a52e51b1fd7921036f6659ba262b628e5555c6dc4e62c",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 107,
+          "timestamp": 302.70166666666665,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000027.png",
+          "sha256": "dc7b2f60ed1ae3639a92c39a931cb206996392863886d643c3aa1b51ea2ddf2c",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 108,
+          "timestamp": 302.8016666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000028.png",
+          "sha256": "4a7c096eba6fe7e36e2dceff7d4f00bc15f72751b805056bdcd5147a8fef4a35",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 109,
+          "timestamp": 302.90166666666664,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000029.png",
+          "sha256": "b44b1ed7bef72c1cbe9c02382421f9dc9cd0c48da1d50a0f48803ab9b4c70c7f",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 110,
+          "timestamp": 303.00166666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000030.png",
+          "sha256": "dc78d59247927df1e502d8b62dd76e23f819ecf95f19fc24b8270d556b297e57",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 111,
+          "timestamp": 303.1016666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000031.png",
+          "sha256": "fd34d44b89764fb9274b8577e00667a0c8fcd56f0702fa72e642a7c915da609c",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 112,
+          "timestamp": 303.20166666666665,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000032.png",
+          "sha256": "db4dea7a0bc15e6a5bc5e0d693ce91465f2a6d5fbc03fb67ca73a436e0a0e1b5",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 113,
+          "timestamp": 303.3016666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000033.png",
+          "sha256": "f9a226b2093966e7019c78a37b3a70b05c450c73a427494863c7f858fdc74e62",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 114,
+          "timestamp": 303.40166666666664,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000034.png",
+          "sha256": "d0755f02a5f613f4edd2f9d87699b4004378dc5064fe9f16c6809edfcd9bccca",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 115,
+          "timestamp": 303.50166666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000035.png",
+          "sha256": "cf7ddb32d0ce12f2661af0adf1f02b9ceeb5af6cfbf8e1ddee0cfbfda6c4e1f9",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 116,
+          "timestamp": 303.6016666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000036.png",
+          "sha256": "3654f103bc1a0c72d6fef5a7fc4279fb3b6f591b3d3b9cb61bdf515db4d20404",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 117,
+          "timestamp": 303.70166666666665,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000037.png",
+          "sha256": "847414fcbb2b8f5fe191388e61f4f9c6f4547415e78863ac19039a36eb232a6b",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 118,
+          "timestamp": 303.8016666666667,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000038.png",
+          "sha256": "3541480377c5d9e0bf173914c385d18faf117176b5bf2b1cc91bed566b632b07",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 119,
+          "timestamp": 303.91833333333335,
+          "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/f471adbf7093a964c6b8b371/000039.png",
+          "sha256": "043f4c87ec8358c9333f76bca245e660aff7ab8ddeefdb8a856e0b102fe150ca",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        }
+      ],
+      "source_video": "tests/fixtures/sample_battle_2.mp4"
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "start": 450,
+      "end": 458,
+      "reference_fps": 10,
+      "occurrences": [
+        {
+          "occurrence_id": "protect",
+          "first_clear_index": 15,
+          "last_clear_index": 32,
+          "expected_text": "对手的妖火红狐使出了守住！",
+          "expected_type": "move_execution",
+          "actor": "妖火红狐",
+          "side": "opponent",
+          "target": null,
+          "canonical_move": "pokeapi:move:182",
+          "evidence_class": "direct_visual_text",
+          "confidence": "high",
+          "right_censored": false
+        },
+        {
+          "occurrence_id": "guard",
+          "first_clear_index": 51,
+          "last_clear_index": 66,
+          "expected_text": "对手的妖火红狐摆出了防守的架势！",
+          "expected_type": "move_effect",
+          "actor": "妖火红狐",
+          "side": "opponent",
+          "target": null,
+          "canonical_move": null,
+          "evidence_class": "direct_visual_text",
+          "confidence": "high",
+          "right_censored": false
+        },
+        {
+          "occurrence_id": "psychic",
+          "first_clear_index": 71,
+          "last_clear_index": 79,
+          "expected_text": "爱管侍使出了精神强念！",
+          "expected_type": "move_execution",
+          "actor": "爱管侍",
+          "side": "unknown",
+          "target": null,
+          "canonical_move": "pokeapi:move:94",
+          "evidence_class": "direct_visual_text",
+          "confidence": "high",
+          "right_censored": true
+        }
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "timestamp": 450.025,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000001.png",
+          "sha256": "e0b7d09bca6165b5857fb357ac1c5fe839917ff5323108baa101bbf821356e54",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 1,
+          "timestamp": 450.125,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000002.png",
+          "sha256": "a2449a4e332d38e5c08600136309927c0e972ce1a9dab8868199dea2e13517b8",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 2,
+          "timestamp": 450.225,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000003.png",
+          "sha256": "de24e3255be10fa6f30a9648dd8b2acfe6426a822ab76a0f3e242cfbaa9c53c9",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 3,
+          "timestamp": 450.32666666666665,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000004.png",
+          "sha256": "52a136f8185379699ec227a96b5b21520a9612f33ef9405d6e0e480aac6e3caa",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 4,
+          "timestamp": 450.4266666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000005.png",
+          "sha256": "59d1fe12e71a0cbbd4d2e1da9d4ff079ec1c2125d5f69af0d59cd44a7cba1845",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 5,
+          "timestamp": 450.52666666666664,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000006.png",
+          "sha256": "23a45387c9220afaa43301bc91ee3d5242e931313a3faff3cf75fec575aa13ec",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 6,
+          "timestamp": 450.61,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000007.png",
+          "sha256": "51adcc3b690ff1ba8aa22719f4c19f82ed78881744746c9006cda5269fb369a2",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 7,
+          "timestamp": 450.7266666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000008.png",
+          "sha256": "2eabcc247ac14213178522aa198250213baeb9803bb270943f8bbb00e1a556c1",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 8,
+          "timestamp": 450.82666666666665,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000009.png",
+          "sha256": "866baa5fb36e7413f04933d24dc27e5fa85ff243a5f0d119a39faff272ca19ae",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 9,
+          "timestamp": 450.9266666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000010.png",
+          "sha256": "e7da6103c91cedbb8387fcfddbb7d2b8e56a28e5725f3d0609fb6a98e8e8f9a0",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 10,
+          "timestamp": 451.02666666666664,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000011.png",
+          "sha256": "2e5e9641006fc0fa2948dbce0928433c6eced16018f0ea7300c22180b8685a67",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 11,
+          "timestamp": 451.12666666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000012.png",
+          "sha256": "497aa0f9ff18963d632f950f21870529b48016cbfef759ad4149f256665ab058",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 12,
+          "timestamp": 451.2266666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000013.png",
+          "sha256": "d981324b7faf475b9b189a0c65f8f8c431d4259af1adc6a56cac930ac3c186f9",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 13,
+          "timestamp": 451.32666666666665,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000014.png",
+          "sha256": "641a6e9fd1baddbc3249885d8643bd67f73a9210dd2fcab7aeb8fd4846c92dbc",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 14,
+          "timestamp": 451.4266666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000015.png",
+          "sha256": "fb50f2be1a66e0876731ddd6cb1cf202947700c0045f8f8a37bb8dcc36de02c8",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 15,
+          "timestamp": 451.52666666666664,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000016.png",
+          "sha256": "3282618ec502cbaa43b2208ba880395b654dc351980343c421307d80f4df68d8",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 16,
+          "timestamp": 451.61,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000017.png",
+          "sha256": "43edd308dbfa88edf15aaa7ad920b5cc0affdf466677398ca7db09fe732dd2a7",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 17,
+          "timestamp": 451.7266666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000018.png",
+          "sha256": "28edf2555502b3873c9a757b70b28582ba657a6f251023fdd0eeec0f9cc57380",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 18,
+          "timestamp": 451.82666666666665,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000019.png",
+          "sha256": "5dfbec40b7152ea7c4f6b8922aa7fc2d9345bceea5a6b3c987db756a7011c710",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 19,
+          "timestamp": 451.9266666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000020.png",
+          "sha256": "a28e3820cbb69718f7a719884a0c05b4238d2e9615d8541241867ed7f8a88506",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 20,
+          "timestamp": 452.02666666666664,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000021.png",
+          "sha256": "b3788dc6989b37ce663101724025f40ba00352c811becbdac304862ddca7cbf8",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 21,
+          "timestamp": 452.11,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000022.png",
+          "sha256": "b7808b58a02e4d12a6db6c8b60003ffd61ef091376e39cf1e9a4babdf7138f10",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 22,
+          "timestamp": 452.2266666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000023.png",
+          "sha256": "66e9d4a5c8b895febe2a65bc1ec314f7f244a4a368b7934c1ae0e78cfe610050",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 23,
+          "timestamp": 452.32666666666665,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000024.png",
+          "sha256": "2711c7dd6cdfa82cab9704e294bc48805d65e1ed4d08365fe8e1644b4a5455d3",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 24,
+          "timestamp": 452.4266666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000025.png",
+          "sha256": "d9118164ca2f9405594e3dfdcc0333c4fe82dc60866965b322f95223ad465b31",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 25,
+          "timestamp": 452.52666666666664,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000026.png",
+          "sha256": "051220925f3183aadbd16c38ae9e5d1f5cb28d75662dc4ed4e8b45efd369f84a",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 26,
+          "timestamp": 452.62666666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000027.png",
+          "sha256": "e8899a6926499f43647efa113bff55ae1347056d04b52993eb6011cdc604982e",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 27,
+          "timestamp": 452.74333333333334,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000028.png",
+          "sha256": "52750e7ace91bf05660c69f86dcaca3e60b77b6791bfa1d17b0a2987662a296f",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 28,
+          "timestamp": 452.82666666666665,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000029.png",
+          "sha256": "3e16e31fc3c0a073618f976f6e9df6a1a94422cd15c6c16305eefe79ef7fdefb",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 29,
+          "timestamp": 452.9266666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000030.png",
+          "sha256": "8e3044faa7dd9dca5cfe87e4acfe05bcaf71fc25bb4ff3968cd1c41be109fc7e",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 30,
+          "timestamp": 453.02666666666664,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000031.png",
+          "sha256": "e60b51ace4b7defd867f73955f121a7ff85f9350ab3d6b5875ca241dc51931fb",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 31,
+          "timestamp": 453.11,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000032.png",
+          "sha256": "89d0b14a1783442403c3c6022995ec9b809d92899eb49da1b0b3d36ca5782667",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 32,
+          "timestamp": 453.2266666666667,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000033.png",
+          "sha256": "2d006de9c25aedbd2ed5445f63ea3044a6001b9e695c144c7c8bfe65d53d359c",
+          "label": "clear_message",
+          "occurrence_id": "protect",
+          "review_confidence": "high"
+        },
+        {
+          "index": 33,
+          "timestamp": 453.32666666666665,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000034.png",
+          "sha256": "8624f988dd51ccde32c4d2a1599e62067019a2033fb2f145d57843cffdddfde6",
+          "label": "ambiguous_fade",
+          "occurrence_id": null,
+          "review_confidence": "ambiguous"
+        },
+        {
+          "index": 34,
+          "timestamp": 453.41,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000035.png",
+          "sha256": "e5aa96bd544618cbf26f086691e66a1b854d3e451413232fc7985960333e8349",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 35,
+          "timestamp": 453.52666666666664,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000036.png",
+          "sha256": "2a9a46ca0c1cdf9b2ad72e5b0a64d6da8a16695db2734dfec4f07b3ca959550c",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 36,
+          "timestamp": 453.61,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000037.png",
+          "sha256": "f85f58435e97799a9341e1839972e8ea6aa7e81b879e550637e52467bc796fbe",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 37,
+          "timestamp": 453.71,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000038.png",
+          "sha256": "4606e1c575c8371881797a7217928f98d6e0774305678075ee4647c7bf85916c",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 38,
+          "timestamp": 453.81,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000039.png",
+          "sha256": "460b78fe3f1f24cc5e17b3a04c693e912dcba6339dd3d1cc2dcff524c1acb7d9",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 39,
+          "timestamp": 453.91,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000040.png",
+          "sha256": "095e20d5b84e99c8af60ee08eee942bf920bcb42e8db12c89a19ca8ba672ca5b",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 40,
+          "timestamp": 454.01,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000041.png",
+          "sha256": "3f0376d19ef4164be54f546308c71be231a35914511796a444718051321c572f",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 41,
+          "timestamp": 454.11,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000042.png",
+          "sha256": "b6f787e19782e3aa39c4d5c70fe3983416fbfbd5df9d7c4d6cc3985312ca74fc",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 42,
+          "timestamp": 454.21,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000043.png",
+          "sha256": "284527905083ba9fe6f09e5e6d6e422b83b69a09b6f0092c5728747ca0b6987a",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 43,
+          "timestamp": 454.31,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000044.png",
+          "sha256": "a5193564cdee8d110621a434281f677aeb5e208894ee39ed518a61aade77d359",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 44,
+          "timestamp": 454.41,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000045.png",
+          "sha256": "d1e6a953a77b8258adb2987c52e651e0fff8a70b8147cdac109b16797a59f136",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 45,
+          "timestamp": 454.51,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000046.png",
+          "sha256": "bfc2872183f18300cddf692afdcad1461baf7b85fc86d9b527b516c6b11c4484",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 46,
+          "timestamp": 454.61,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000047.png",
+          "sha256": "41d269be77406f55562622873694c089a98ba6483be8f206362a54c588e99795",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 47,
+          "timestamp": 454.71,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000048.png",
+          "sha256": "e9617cb40b2e44587a8866032b825321dce0adc1cae27929787e33d1996e971f",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 48,
+          "timestamp": 454.81,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000049.png",
+          "sha256": "b9253a6de5191bc5d28e191e71ef070eb60b4d994f6bd42c72fd56b0c7c7c793",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 49,
+          "timestamp": 454.91,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000050.png",
+          "sha256": "655f89acf1c9ab17657d90922926262008b23d16e651fe8c6a717b96993a79be",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 50,
+          "timestamp": 455.01,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000051.png",
+          "sha256": "d9bbde0759bb49869d8138fc17fadfff81b5f3101010a36b82f9b39c7cd594d9",
+          "label": "ambiguous_fade",
+          "occurrence_id": null,
+          "review_confidence": "ambiguous"
+        },
+        {
+          "index": 51,
+          "timestamp": 455.11,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000052.png",
+          "sha256": "1b7158a9c091e777b35a2622534893312d49fb3afd40ae40097550ee132775af",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 52,
+          "timestamp": 455.21,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000053.png",
+          "sha256": "b03f5c85ed8228087bfbc6f59125a1acd7384b787638fe07344876a58769d8b7",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 53,
+          "timestamp": 455.31,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000054.png",
+          "sha256": "9142eb5153e9d16fe5f21430ce1a0769c6654e9f2c85a35d165f6227ee7c76c1",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 54,
+          "timestamp": 455.41,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000055.png",
+          "sha256": "ba15fe55e7d0c230453f37534b51a2855ed691fb0fce09a5eb67974306a3c074",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 55,
+          "timestamp": 455.51,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000056.png",
+          "sha256": "24b58a6d53efd9bd5e0e126b5c50cb8165efd06b5a2f88a8e98ff9c4519d1a52",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 56,
+          "timestamp": 455.61,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000057.png",
+          "sha256": "8c34b9234ac2bbd67af868dc94a71a9b59fc56027ff7aa6042b34948a08aacb5",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 57,
+          "timestamp": 455.71,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000058.png",
+          "sha256": "2ef497067854b1b3389192dbc31e3fc2cf7a732a2895ec6b8899d000928a17f0",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 58,
+          "timestamp": 455.81,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000059.png",
+          "sha256": "c2cc5b3b172715879a29d6a38a75f01f846c95860ff383a9eea3f958de1bbd2b",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 59,
+          "timestamp": 455.91,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000060.png",
+          "sha256": "24681413d44af81af2a279c4bcc1c09089d43fc5a64f256f97f0c86a78271d02",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 60,
+          "timestamp": 456.01,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000061.png",
+          "sha256": "fb9208c694af84f58aa09763eebe9265a5f2f1e18fd196af348277750e448be6",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 61,
+          "timestamp": 456.11,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000062.png",
+          "sha256": "eec1273ceb2ea3413a185315fa3de437214b2dc6f297179dceedfc90ec979133",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 62,
+          "timestamp": 456.21,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000063.png",
+          "sha256": "c527a6ca4861d70f5f930338c46364c731ed954cce6e644d3fd45eb8f268ec60",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 63,
+          "timestamp": 456.31,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000064.png",
+          "sha256": "98d44ff19b1dc88baabe654c25c52ff95154af7f5586624f54fb680851632702",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 64,
+          "timestamp": 456.41,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000065.png",
+          "sha256": "36095a1aff6a67036969d49a4e7193b342e65dfd62b0b62d6249d106117aac32",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 65,
+          "timestamp": 456.51,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000066.png",
+          "sha256": "f7ecb8b936ca8edfef66dac0dcab51dc69159485d0a6e3b0bb82a0cd88f3569f",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 66,
+          "timestamp": 456.61,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000067.png",
+          "sha256": "15b501e23b7d97456f79801ea2f11a6ebf53fc5f29a5dae81dc67349120c94ac",
+          "label": "clear_message",
+          "occurrence_id": "guard",
+          "review_confidence": "high"
+        },
+        {
+          "index": 67,
+          "timestamp": 456.71,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000068.png",
+          "sha256": "3cd4b04e3ea1be0a1db239c27402877cfa383e67c25ca383d44845629b0ba583",
+          "label": "ambiguous_fade",
+          "occurrence_id": null,
+          "review_confidence": "ambiguous"
+        },
+        {
+          "index": 68,
+          "timestamp": 456.81,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000069.png",
+          "sha256": "894ba5b2633de42755b762db32c045b2716203fbc48e6f8bc6d50603461b70c2",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 69,
+          "timestamp": 456.91,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000070.png",
+          "sha256": "4daff7a6f6f8ee65e0815482ec114377caa221940e9905553c7abc9329e839b0",
+          "label": "no_message",
+          "occurrence_id": null,
+          "review_confidence": "high"
+        },
+        {
+          "index": 70,
+          "timestamp": 457.01,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000071.png",
+          "sha256": "69b2b92a9bb26523b3b99d9147f24384ffc29cb4d424c2bdec09b63d96173ce2",
+          "label": "ambiguous_fade",
+          "occurrence_id": null,
+          "review_confidence": "ambiguous"
+        },
+        {
+          "index": 71,
+          "timestamp": 457.11,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000072.png",
+          "sha256": "68aad2aa6ff436d58f24e4d8eaa7c8146f42073cda9ce6d560ef5694e319af1c",
+          "label": "clear_message",
+          "occurrence_id": "psychic",
+          "review_confidence": "high"
+        },
+        {
+          "index": 72,
+          "timestamp": 457.21,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000073.png",
+          "sha256": "98562b9067326dea64c6991e3297860cd3ff309052f28ad517b1277e2d6096ee",
+          "label": "clear_message",
+          "occurrence_id": "psychic",
+          "review_confidence": "high"
+        },
+        {
+          "index": 73,
+          "timestamp": 457.31,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000074.png",
+          "sha256": "919311ea397c0eb7c569c717a1f98bb80b86b5aa6ec599ae45880339d27db0d0",
+          "label": "clear_message",
+          "occurrence_id": "psychic",
+          "review_confidence": "high"
+        },
+        {
+          "index": 74,
+          "timestamp": 457.41,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000075.png",
+          "sha256": "563ac78be980e0497f346f3a8b6b039c6d443638c5d510d1ae17577cb7942909",
+          "label": "clear_message",
+          "occurrence_id": "psychic",
+          "review_confidence": "high"
+        },
+        {
+          "index": 75,
+          "timestamp": 457.51,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000076.png",
+          "sha256": "fa4a958b2d5bab90f8262c38aac4ca43e7b9b43ec7060efd6d78a547e9c7eace",
+          "label": "clear_message",
+          "occurrence_id": "psychic",
+          "review_confidence": "high"
+        },
+        {
+          "index": 76,
+          "timestamp": 457.61,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000077.png",
+          "sha256": "7bbf077fe7f3c5b876e77fa6d5f347c035e49ebcc4b20ed4a083ad857adba96d",
+          "label": "clear_message",
+          "occurrence_id": "psychic",
+          "review_confidence": "high"
+        },
+        {
+          "index": 77,
+          "timestamp": 457.71,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000078.png",
+          "sha256": "703a52c19109389165bcdc8f2fe29c3614799d6d38a2779e8debf4d35336ebb9",
+          "label": "clear_message",
+          "occurrence_id": "psychic",
+          "review_confidence": "high"
+        },
+        {
+          "index": 78,
+          "timestamp": 457.81,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000079.png",
+          "sha256": "40e3540691a323180ea3561d2bdbefc64185df00b7952702ad6bead79556b287",
+          "label": "clear_message",
+          "occurrence_id": "psychic",
+          "review_confidence": "high"
+        },
+        {
+          "index": 79,
+          "timestamp": 457.91,
+          "image": ".cache/battles/sample_battle_4/m233c/reference/ampling/eb931faf03faee66fa38ecb9/f107662a75cfefe085f2e5fd/000080.png",
+          "sha256": "e15adc5d6bb40e4c4a25853bc9ac5ebf3ac99168a5d10f5f85ad1cbb213a4455",
+          "label": "clear_message",
+          "occurrence_id": "psychic",
+          "review_confidence": "high"
+        }
+      ],
+      "source_video": "tests/fixtures/sample_battle_4.mp4"
+    }
+  ],
+  "hud_checkpoints": [
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 434.02333333333337,
+      "image": ".cache/m14-phases/sample_battle/00013743.png",
+      "sha256": "39d826946dddf0ff0e50a1a584f103401a15f8b20c7a4376c50652c470377c44",
+      "evidence_class": "direct_visual_hud",
+      "slots": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 823,
+          "hp": {
+            "current": 152,
+            "maximum": 173
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 354,
+          "hp": {
+            "percent": 94
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 981,
+          "hp": {
+            "percent": 9
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        }
+      ],
+      "withhold": "all events at/after checkpoint time",
+      "source_video": "tests/fixtures/sample_battle_0.mp4",
+      "review_confidence": "high"
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 500.0183333333334,
+      "image": ".cache/m14-phases/sample_battle/00016310.png",
+      "sha256": "e4e09604dd5b1f9325c53d7f445825ca3edcd6f4a98895f324bfcfdf0ddf4097",
+      "evidence_class": "direct_visual_hud",
+      "slots": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 823,
+          "hp": {
+            "current": 152,
+            "maximum": 173
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 354,
+          "hp": {
+            "percent": 94
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 553,
+          "hp": {
+            "percent": 51
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        }
+      ],
+      "withhold": "all events at/after checkpoint time",
+      "source_video": "tests/fixtures/sample_battle_0.mp4",
+      "review_confidence": "high"
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 370.0116666666667,
+      "image": ".cache/m14-phases/sample_battle_1/00013229.png",
+      "sha256": "cbc9b3b36072cfc2445c25894c55dcdbba1b5980634b64b39ba02984a90625fc",
+      "evidence_class": "direct_visual_hud",
+      "slots": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 373,
+          "hp": {
+            "current": 106,
+            "maximum": 172
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 186,
+          "hp": {
+            "current": 197,
+            "maximum": 197
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 911,
+          "hp": {
+            "percent": 100
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 553,
+          "hp": {
+            "percent": 91
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        }
+      ],
+      "withhold": "all events at/after checkpoint time",
+      "source_video": "tests/fixtures/sample_battle_1.mp4",
+      "review_confidence": "high"
+    },
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 408.0183333333334,
+      "image": ".cache/m14-phases/sample_battle_1/00014370.png",
+      "sha256": "4d4c61f4c352afb999940a9b1d6ce4b6f2be00bb63a9f5696ed09500d884a859",
+      "evidence_class": "direct_visual_hud",
+      "slots": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 373,
+          "hp": {
+            "current": 106,
+            "maximum": 172
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 186,
+          "hp": {
+            "current": 197,
+            "maximum": 197
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 911,
+          "hp": {
+            "percent": 100
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 553,
+          "hp": {
+            "percent": 91
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        }
+      ],
+      "withhold": "all events at/after checkpoint time",
+      "source_video": "tests/fixtures/sample_battle_1.mp4",
+      "review_confidence": "high"
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 344.008333,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000300/000023.jpg",
+      "sha256": "c05005fdb257c683ff01b5ef487de036f5f90e2f875bace12aa2ea90aad9a8d5",
+      "evidence_class": "direct_visual_hud",
+      "slots": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 186,
+          "hp": {
+            "current": 173,
+            "maximum": 197
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 1018,
+          "hp": {
+            "current": 197,
+            "maximum": 197
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 876,
+          "hp": {
+            "percent": 100
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 903,
+          "hp": {
+            "percent": 100
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        }
+      ],
+      "withhold": "all events at/after checkpoint time",
+      "source_video": "tests/fixtures/sample_battle_2.mp4",
+      "review_confidence": "high"
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 364.011667,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000360/000003.jpg",
+      "sha256": "aeca77d957520d71d10c6d2ef300dcd2e6ff995239c0471dbfd7f9d32395c6c8",
+      "evidence_class": "direct_visual_hud",
+      "slots": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 186,
+          "hp": {
+            "current": 173,
+            "maximum": 197
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 1018,
+          "hp": {
+            "current": 197,
+            "maximum": 197
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 876,
+          "hp": {
+            "percent": 100
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 903,
+          "hp": {
+            "percent": 100
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        }
+      ],
+      "withhold": "all events at/after checkpoint time",
+      "source_video": "tests/fixtures/sample_battle_2.mp4",
+      "review_confidence": "high"
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 490.066667,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000480/000006.jpg",
+      "sha256": "a7e3da101194b9668a4ff535ed21b69fd4393067035a09648b9904e5088dfcb6",
+      "evidence_class": "direct_visual_hud",
+      "slots": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 876,
+          "hp": {
+            "current": 94,
+            "maximum": 177
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 936,
+          "hp": {
+            "current": 66,
+            "maximum": 162
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 865,
+          "hp": {
+            "percent": 100
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 655,
+          "hp": {
+            "percent": 1
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        }
+      ],
+      "withhold": "all events at/after checkpoint time",
+      "source_video": "tests/fixtures/sample_battle_4.mp4",
+      "review_confidence": "high"
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 510.103333,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000480/000016.jpg",
+      "sha256": "03df8d48642261c46546c4c6b5cb31c45774eb51434601d6e7337825da75661a",
+      "evidence_class": "direct_visual_hud",
+      "slots": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 876,
+          "hp": {
+            "current": 94,
+            "maximum": 177
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 936,
+          "hp": {
+            "current": 66,
+            "maximum": 162
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 865,
+          "hp": {
+            "percent": 100
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 655,
+          "hp": {
+            "percent": 1
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        }
+      ],
+      "withhold": "all events at/after checkpoint time",
+      "source_video": "tests/fixtures/sample_battle_4.mp4",
+      "review_confidence": "high"
+    },
+    {
+      "battle_id": "sample_battle_3",
+      "timestamp": 360.543333,
+      "image": ".cache/m223-survey/000181.jpg",
+      "sha256": "0ce01fb8cd61dca81f7d3216455c89b4a1e123951c7f7b708f41acc88d69bd40",
+      "evidence_class": "direct_visual_hud",
+      "slots": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 812,
+          "hp": {
+            "current": 207,
+            "maximum": 207
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 1018,
+          "hp": {
+            "current": 144,
+            "maximum": 197
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 373,
+          "hp": {
+            "percent": 100
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 983,
+          "hp": {
+            "percent": 100
+          },
+          "confidence": "high",
+          "form": null,
+          "continuity": "unmeasured_without_continuous_field_evidence"
+        }
+      ],
+      "withhold": "all events at/after checkpoint time",
+      "source_video": "tests/fixtures/sample_battle_3.mp4",
+      "review_confidence": "high"
+    }
+  ],
+  "supplemental": [
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 404.0183333333334,
+      "image": ".cache/m14-phases/sample_battle/00012842.png",
+      "sha256": "3e32f9011b48e73daa6f73b15cfe161f5b25817490d9479ba30227d639bc389e",
+      "independence": "previously audited/tuning-occurrence exposure; supplemental only",
+      "facts": [
+        {
+          "kind": "ability",
+          "side": "opponent",
+          "species_id": 354,
+          "name": "察觉",
+          "basis": "ability popup"
+        },
+        {
+          "kind": "item",
+          "side": "self",
+          "species_id": 876,
+          "name": "白色香草",
+          "basis": "message text; no consumption"
+        }
+      ],
+      "source_video": "tests/fixtures/sample_battle_0.mp4",
+      "review_confidence": "high"
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 342.008333,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000300/000022.jpg",
+      "sha256": "4dc46d4c5934ab0875a66beac8e224fe37c69de1c878eafe7f23f0810c7427e5",
+      "independence": "previously audited/tuning-occurrence exposure; supplemental only",
+      "facts": [
+        {
+          "kind": "stat_direction",
+          "side": "opponent",
+          "species_id": 903,
+          "stat": "special_defense",
+          "direction": "up",
+          "stages": null
+        }
+      ],
+      "source_video": "tests/fixtures/sample_battle_2.mp4",
+      "review_confidence": "high"
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 578.013333,
+      "image": ".cache/battles/sample_battle_4/m232-survey/segment-000540/000020.jpg",
+      "sha256": "ebf08ca4a0c2cfa7a5acd660d1b5ec204b8d3d8cb838b59ab6f7b8003fc37f6f",
+      "independence": "previously audited/tuning-occurrence exposure; supplemental only",
+      "facts": [
+        {
+          "kind": "form",
+          "side": "opponent",
+          "species_id": 655,
+          "name": "超级妖火红狐",
+          "basis": "completed announcement"
+        }
+      ],
+      "source_video": "tests/fixtures/sample_battle_4.mp4",
+      "review_confidence": "high"
+    },
+    {
+      "battle_id": "sample_battle_3",
+      "timestamp": 384.548333,
+      "image": ".cache/m223-survey/000193.jpg",
+      "sha256": "af2b73eaf867eff7588808109d3dbd6efdb28cd7c98e2d967a79b65628782eb1",
+      "independence": "newly reviewed UI checkpoint, historical dense recording",
+      "facts": [
+        {
+          "kind": "ability",
+          "side": "self",
+          "species_id": 1018,
+          "name": "持久力"
+        },
+        {
+          "kind": "item",
+          "side": "self",
+          "species_id": 1018,
+          "name": "吃剩的东西"
+        },
+        {
+          "kind": "hp",
+          "side": "self",
+          "species_id": 1018,
+          "current": 144,
+          "maximum": 197
+        },
+        {
+          "kind": "stat_stage",
+          "side": "self",
+          "species_id": 1018,
+          "stat": "attack",
+          "value": -1,
+          "basis": "one down arrow; x0.67 corroboration"
+        },
+        {
+          "kind": "stat_stage",
+          "side": "self",
+          "species_id": 1018,
+          "stat": "defense",
+          "value": 1,
+          "basis": "one up arrow; x1.5 corroboration"
+        },
+        {
+          "kind": "stat_stage",
+          "side": "self",
+          "species_id": 1018,
+          "stat": "special_attack",
+          "value": 2,
+          "basis": "two up arrows; x2.0 corroboration"
+        },
+        {
+          "kind": "field",
+          "name": "rain"
+        },
+        {
+          "kind": "field",
+          "name": "aurora_veil"
+        },
+        {
+          "kind": "field",
+          "name": "grassy"
+        }
+      ],
+      "source_video": "tests/fixtures/sample_battle_3.mp4",
+      "review_confidence": "high"
+    }
+  ]
+}

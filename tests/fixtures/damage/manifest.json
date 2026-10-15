@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "oracle": "@smogon/calc@0.12.0 Champions generation 0",
+  "files": {
+    "reference-inputs.json": "f0111f8da4f26832999d68efb13d649f55374457f294b400b340caddef842a03",
+    "reference-rolls.json": "fdcff9daa2727766a790e69ac1c5a4801138b30494e920cf58cb3f348399f7f6",
+    "combo-inputs.json": "3e0cc63ce2f39a7cd56094909defdef5358910ed75c76f338ec6a80e09b9a2aa",
+    "combo-rolls.json": "84be0b52d7ca7d5e140d069b34826758752225b7039c814c57c9480161452ca3",
+    "oracle-package.json": "f39987fffe8997b9008a5033343dd7a6bbf725e523b1835058f8ae49c15861e2",
+    "oracle-package-lock.json": "ea7f6274e1b074d9229e45919cd6624bcd9d57ed952db49582f3d3492f4ea8c6",
+    "extra-inputs.json": "7873bc0eb1dea466bedc2e9aa7e04ba54dd564a5c3cf0bfdc3907d31d1830ce1",
+    "extra-rolls.json": "4188348d870c3b6d64a7dfaafbd78ee303d507a2ca22364ac9e1822ea35cda70"
+  },
+  "cases": {
+    "curated": 95,
+    "mixed": 160,
+    "supported": 371,
+    "explicit_unsupported": 2,
+    "extra": 118
+  },
+  "wiki": {
+    "url": "https://wiki.52poke.com/wiki/伤害",
+    "revision": 2617717,
+    "source_sha256": "97f4d84713a809343723d74d0922649416323929872b530f457f4de58c740fb3",
+    "role": "Community general-formula and two full-roll examples; not official Champions verification"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "files": {
+    "knowledge/data/champions_stat_rules.json": "d4c838154b7f4f417b849d4328dd8540bf0cace76e6d409a8ba7605d74cc6e57",
+    "tests/fixtures/champions_stats/52poke-ranges.json": "6ec1f6aa76d88ddb57e8b375df9948c11ac3043b4a1a8ac0f94cc570e5362900"
+  }
+}

@@ -81,6 +81,55 @@ user's current scope; do not start the next milestone or commit/push unless aske
   have a justified, documented source. Revealed move membership does not establish
   exact move slots.
 
+## Project-wide knowledge sources: 52Poké
+
+- Treat [52Poké (神奇宝贝百科)](https://wiki.52poke.com/) as a major
+  structured knowledge reference throughout the project, beyond its damage
+  article. Relevant subjects include species and forms; base stats and stat
+  mechanics; types and matchups; abilities and held items; moves and their power,
+  category, accuracy, PP, targeting and effects; Pokémon-specific learnsets;
+  evolution and Mega Evolution; battle mechanics and damage formulas; and
+  game-specific availability, restrictions and rules.
+- For Champions tasks, explicitly check for applicable Champions-specific
+  information, including species/form learnset pages such as
+  [大狃拉/Champions招式表](https://wiki.52poke.com/wiki/大狃拉/Champions招式表).
+  Prefer applicable Champions data over unrelated Generation 9 learnsets or
+  generic game assumptions. Respect form and game/version differences. A move
+  appearing in Scarlet/Violet does not establish Champions availability; absence
+  from an unrelated generation's learnset does not establish unavailability.
+  Champions learnability establishes possible moves, not equipped slots,
+  battle-revealed membership, or move-usage probabilities.
+- Select sources by the scope of each fact: official Pokémon Champions
+  documentation for official rules and availability; 52Poké for detailed data,
+  Champions learnsets and documented move/item/ability mechanics; pinned local
+  data and PokéAPI for canonical identity and general structured data; and pinned
+  Pokémon Showdown Champions implementations for executable mechanics references
+  and independent calculations. No source is authoritative for every field.
+  Preserve conflicting values and provenance rather than silently overwriting
+  facts. Do not substitute Generation 9 mechanics or learnsets for unverified
+  Champions behavior.
+- Integrate validated facts through source-specific, versioned supplements to
+  the existing `KnowledgeBase`, using its canonical species, form, move, ability
+  and item IDs and Chinese/English name resolution. Do not create a competing
+  identity database. Preserve per-fact provenance and game/form applicability;
+  keep source assertions distinct when they disagree. Future supplements should
+  support base-stat, form, Champions learnset, move power/PP, ability/item and
+  Champions mechanics queries. This policy alone does not authorize implementing
+  a supplement, importer or crawler.
+- Record each article's URL, revision ID when available, retrieval date and
+  applicable game/version. Preserve licensing and attribution requirements.
+  Prefer reproducible local snapshots for runtime use; battle analysis and
+  damage calculation must not require live network access. Validate parsed
+  tables against their actual headings and form columns. Distinguish missing or
+  incomplete data from confirmed absence; an incomplete learnset does not prove
+  a move impossible. Keep research scoped: avoid unbounded crawling and repeated
+  full-site fetching.
+- Apply this policy to all relevant milestones, including M3.1 forward damage,
+  M3.1.1 inverse constraints, later M3 mechanics/inference, M2.3.4 recognition and
+  entity validation, hidden-state feasibility, form-specific move legality, and
+  future Bayesian inference and strategy work. Learnset feasibility supplies no
+  probability prior by itself. These examples do not authorize advancing scope.
+
 ## State consistency
 
 - Preserve the responsibilities of observable state, hidden configuration, and

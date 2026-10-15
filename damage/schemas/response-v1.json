@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pokemon-champions:damage:response:v1",
+  "$defs": {
+    "ratio": {
+      "type": "object",
+      "properties": {
+        "numerator": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "denominator": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "numerator",
+        "denominator"
+      ],
+      "additionalProperties": false
+    },
+    "result": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "status": {
+          "enum": [
+            "exact_reference",
+            "unsupported",
+            "incomplete_input",
+            "conflicting_input",
+            "invalid_input",
+            "unresolved_input",
+            "ambiguous_input"
+          ]
+        },
+        "profile": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "identities": {
+          "type": "object"
+        },
+        "distribution": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "rolls": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "frequencies": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "damage": {
+                        "type": "integer"
+                      },
+                      "count": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "probability": {
+                        "$ref": "#/$defs/ratio"
+                      }
+                    },
+                    "required": [
+                      "damage",
+                      "count",
+                      "probability"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "outcome_count": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "minimum": {
+                  "type": "integer"
+                },
+                "maximum": {
+                  "type": "integer"
+                },
+                "hp_loss_rolls": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "percent_max_hp": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "#/$defs/ratio"
+                  }
+                },
+                "ko_probability": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/$defs/ratio"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "rolls",
+                "frequencies",
+                "outcome_count",
+                "minimum",
+                "maximum",
+                "hp_loss_rolls",
+                "percent_max_hp",
+                "ko_probability"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "applied_modifiers": {
+          "type": "array"
+        },
+        "trace": {
+          "type": "array"
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "unresolved_inputs": {
+          "type": "array"
+        },
+        "unsupported_mechanics": {
+          "type": "array"
+        },
+        "provenance": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "schema_version",
+        "status",
+        "profile",
+        "identities",
+        "distribution",
+        "applied_modifiers",
+        "trace",
+        "assumptions",
+        "unresolved_inputs",
+        "unsupported_mechanics",
+        "provenance"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/result"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "status": {
+          "const": "conditional_scenarios"
+        },
+        "scenario_probabilities": {
+          "type": "null"
+        },
+        "scenarios": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "result": {
+                "$ref": "#/$defs/result"
+              }
+            },
+            "required": [
+              "id",
+              "result"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status",
+        "scenario_probabilities",
+        "scenarios"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "status": {
+          "const": "invalid_input"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "distribution": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "status",
+        "reason"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "observations": [
+    {
+      "id": "hit1",
+      "battle_id": "synthetic-example",
+      "attacker_instance_id": "opponent:1",
+      "target_instance_id": "self:1",
+      "stat_epoch": "original",
+      "damage": 35,
+      "damage_kind": "direct_move_damage",
+      "evidence": "Synthetic direct move damage, not an HP delta; no residual effects or KO censoring.",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": null,
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Body Slam",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      }
+    },
+    {
+      "id": "hit2",
+      "battle_id": "synthetic-example",
+      "attacker_instance_id": "opponent:1",
+      "target_instance_id": "self:1",
+      "stat_epoch": "original",
+      "damage": 47,
+      "damage_kind": "direct_move_damage",
+      "evidence": "Synthetic direct move damage, not an HP delta; no residual effects or KO censoring.",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": null,
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Body Slam",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      }
+    }
+  ],
+  "candidate_stats": [
+    100
+  ],
+  "stat": "attack",
+  "ruleset": "showdown-champions-reference-v1",
+  "variables": [
+    {
+      "id": "item",
+      "scope": "shared",
+      "observation_ids": [
+        "hit1",
+        "hit2"
+      ],
+      "path": "attacker.item",
+      "values": [
+        "none",
+        "Life Orb"
+      ]
+    }
+  ]
+}

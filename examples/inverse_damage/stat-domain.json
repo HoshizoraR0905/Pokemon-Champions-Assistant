@@ -1,0 +1,229 @@
+{
+  "observations": [
+    {
+      "id": "hit1",
+      "battle_id": "synthetic-example",
+      "attacker_instance_id": "opponent:1",
+      "target_instance_id": "self:1",
+      "stat_epoch": "original",
+      "damage": {
+        "minimum": 0,
+        "maximum": 65535
+      },
+      "damage_kind": "direct_move_damage",
+      "evidence": "Synthetic direct move damage, not an HP delta; no residual effects or KO censoring.",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Body Slam",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      }
+    }
+  ],
+  "candidate_stats": [
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149
+  ],
+  "stat": "attack",
+  "ruleset": "showdown-champions-reference-v1",
+  "domain_provenance": {
+    "profile": "52poke-champions-stats-v1",
+    "rule_sha256": "d4c838154b7f4f417b849d4328dd8540bf0cace76e6d409a8ba7605d74cc6e57",
+    "sources": [
+      {
+        "id": "stat",
+        "url": "https://wiki.52poke.com/wiki/能力",
+        "revision_id": 2607357,
+        "permalink": "https://wiki.52poke.com/index.php?title=能力&oldid=2607357",
+        "retrieved_date": "2026-10-15",
+        "game": "Pokémon Champions",
+        "html_sha256": "5f0fe7280ad8db753b119fc23e1b336d0993be217df7a6187926aae0e32d1cf4",
+        "local_snapshot": ".cache/champions-stats/stat.html",
+        "attribution": "52Poké contributors",
+        "license": "CC BY-NC-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+      },
+      {
+        "id": "nature",
+        "url": "https://wiki.52poke.com/wiki/性格",
+        "revision_id": 2568467,
+        "permalink": "https://wiki.52poke.com/index.php?title=性格&oldid=2568467",
+        "retrieved_date": "2026-10-15",
+        "game": "Pokémon Champions",
+        "html_sha256": "46bd1130a070d7200558fb7e5dc2378030f139da703e5475d07fd902ece2109e",
+        "local_snapshot": ".cache/champions-stats/nature.html",
+        "attribution": "52Poké contributors",
+        "license": "CC BY-NC-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+      },
+      {
+        "id": "champions",
+        "url": "https://wiki.52poke.com/wiki/Pokémon_Champions",
+        "revision_id": 2628728,
+        "permalink": "https://wiki.52poke.com/index.php?title=Pokémon_Champions&oldid=2628728",
+        "retrieved_date": "2026-10-15",
+        "game": "Pokémon Champions",
+        "html_sha256": "ecf61ce073c6ba9fa62c4bcf5487e631003c08572b683af94a97a84b75b705d0",
+        "local_snapshot": ".cache/champions-stats/champions.html",
+        "attribution": "52Poké contributors",
+        "license": "CC BY-NC-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+      }
+    ],
+    "documented_rules": {
+      "hp": "base + training_points + 75",
+      "other": "floor((base + training_points + 20) * adjustment)",
+      "training_points_per_stat": [
+        0,
+        32
+      ],
+      "training_points_total_max": 66,
+      "adjustment_numerators": [
+        9,
+        10,
+        11
+      ],
+      "adjustment_denominator": 10,
+      "alignment": "one increased and one distinct decreased non-HP stat, or neutral",
+      "alignment_evidence": "性格: 影响 and 能力调整; Champions maps nature/mint effects to Stat Alignment; four neutral nature labels cannot be selected. Numerical neutral represented once.",
+      "no_level_or_iv": "Pokémon Champions: training section"
+    },
+    "limitations": [
+      "Community encyclopedia documentation, not independently certified official mechanics.",
+      "No stat-stage, item, ability, transformation or in-battle modifiers.",
+      "No roster/regulation legality inferred from base-stat presence.",
+      "Fixed-HP species blocked pending Champions-specific exception verification.",
+      "Pinned article revisions do not freeze transcluded templates; retrieved HTML digests identify rendered snapshots."
+    ],
+    "base_stats_source": {
+      "repository": "https://github.com/pmwl0128/Quark_Drive_Skills",
+      "commit": "8673c506b1ead3e66a436764e12fc066367ca283",
+      "commit_date": "2026-10-13T00:40:42+08:00",
+      "path": ".agents/skills/pokemon-champions-dex/data/champions_dex.sqlite",
+      "sha256": "35a08585f980f859dc721cf128762d1c62f3a34928bd6ed8db4fc459551b5413",
+      "file_commit": "f42039921e8838710c5e628dc81ba7c604343a24",
+      "file_commit_date": "2026-09-19T07:46:01+08:00"
+    },
+    "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+    "facts_sha256": "c9203fdf1cdad92bb37e88c3f56763fc910ce03e566f851e3f8389cac5d3f93b"
+  }
+}

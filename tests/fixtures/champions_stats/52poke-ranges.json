@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "charizard",
+      "url": "https://wiki.52poke.com/wiki/喷火龙",
+      "revision_id": 2627146,
+      "permalink": "https://wiki.52poke.com/index.php?title=喷火龙&oldid=2627146",
+      "retrieved_date": "2026-10-15",
+      "game": "Pokémon Champions",
+      "html_sha256": "9d057b3cfc52ca427a729f3b144844c8a8d62d8b69e07fbbd26ce1a8aac58ad9",
+      "local_snapshot": ".cache/champions-stats/charizard.html",
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+    },
+    {
+      "id": "sneasler",
+      "url": "https://wiki.52poke.com/wiki/大狃拉",
+      "revision_id": 2575062,
+      "permalink": "https://wiki.52poke.com/index.php?title=大狃拉&oldid=2575062",
+      "retrieved_date": "2026-10-15",
+      "game": "Pokémon Champions",
+      "html_sha256": "7c23763e2debdbdfaad4ad2152ce2b51e04142ab0b4e8f1388025d0f1ee41367",
+      "local_snapshot": ".cache/champions-stats/sneasler.html",
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+    }
+  ],
+  "attribution": "Range/base-stat facts transcribed from rendered 52Poké tables. No formula-generated expected ranges.",
+  "cases": [
+    {
+      "identity": "Charizard",
+      "form": "base",
+      "base_stats": {
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "special_attack": 109,
+        "special_defense": 85,
+        "speed": 100
+      },
+      "ranges": {
+        "hp": [
+          153,
+          185
+        ],
+        "attack": [
+          93,
+          149
+        ],
+        "defense": [
+          88,
+          143
+        ],
+        "special_attack": [
+          116,
+          177
+        ],
+        "special_defense": [
+          94,
+          150
+        ],
+        "speed": [
+          108,
+          167
+        ]
+      },
+      "source_id": "charizard",
+      "table_container": "<div class=\"toggle-content toggle-cbase toggle-1base\">",
+      "column": "first th.StatPoint per stat row (second is em dash); header identifies Champions ability points"
+    },
+    {
+      "identity": "Charizard-Mega-X",
+      "form": "as_named",
+      "base_stats": {
+        "hp": 78,
+        "attack": 130,
+        "defense": 111,
+        "special_attack": 130,
+        "special_defense": 85,
+        "speed": 100
+      },
+      "ranges": {
+        "hp": [
+          153,
+          185
+        ],
+        "attack": [
+          135,
+          200
+        ],
+        "defense": [
+          117,
+          179
+        ],
+        "special_attack": [
+          135,
+          200
+        ],
+        "special_defense": [
+          94,
+          150
+        ],
+        "speed": [
+          108,
+          167
+        ]
+      },
+      "source_id": "charizard",
+      "table_container": "<div class=\"toggle-content toggle-cbase toggle-2base\" style=\"display: none;\">",
+      "column": "first th.StatPoint per stat row (second is em dash); header identifies Champions ability points"
+    },
+    {
+      "identity": "Charizard-Mega-Y",
+      "form": "as_named",
+      "base_stats": {
+        "hp": 78,
+        "attack": 104,
+        "defense": 78,
+        "special_attack": 159,
+        "special_defense": 115,
+        "speed": 100
+      },
+      "ranges": {
+        "hp": [
+          153,
+          185
+        ],
+        "attack": [
+          111,
+          171
+        ],
+        "defense": [
+          88,
+          143
+        ],
+        "special_attack": [
+          161,
+          232
+        ],
+        "special_defense": [
+          121,
+          183
+        ],
+        "speed": [
+          108,
+          167
+        ]
+      },
+      "source_id": "charizard",
+      "table_container": "<div class=\"toggle-content toggle-cbase toggle-3base\" style=\"display: none;\">",
+      "column": "first th.StatPoint per stat row (second is em dash); header identifies Champions ability points"
+    },
+    {
+      "identity": "Sneasler",
+      "form": "base",
+      "base_stats": {
+        "hp": 80,
+        "attack": 130,
+        "defense": 60,
+        "special_attack": 40,
+        "special_defense": 80,
+        "speed": 120
+      },
+      "ranges": {
+        "hp": [
+          155,
+          187
+        ],
+        "attack": [
+          135,
+          200
+        ],
+        "defense": [
+          72,
+          123
+        ],
+        "special_attack": [
+          54,
+          101
+        ],
+        "special_defense": [
+          90,
+          145
+        ],
+        "speed": [
+          126,
+          189
+        ]
+      },
+      "source_id": "sneasler",
+      "table_container": "single species stat table beneath 种族值",
+      "column": "first th.StatPoint per stat row (second is em dash); header identifies Champions ability points"
+    }
+  ]
+}

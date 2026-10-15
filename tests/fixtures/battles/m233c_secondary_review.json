@@ -1,0 +1,75 @@
+{
+  "observations": [
+    {
+      "battle_id": "sample_battle_1",
+      "timestamp": 440.02333333333337,
+      "image": ".cache/m14-phases/sample_battle_1/00015332.png",
+      "sha256": "b5122ad9cf7cac61851a2620d45a29266a40bd7d7017630bc354705364092e9c",
+      "expected": {
+        "side": "self",
+        "slot": "left",
+        "species_id": 373,
+        "current": 52,
+        "maximum": 172,
+        "form": "超级暴飞龙",
+        "rain_visible": true,
+        "status_condition": "not independently established",
+        "move_menu_execution": false
+      },
+      "evidence_class": "direct_visual_hud_and_model",
+      "independence": "Supplemental HP/form coverage; species/HP sequence was previously examined in A, not held-out acceptance"
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 296.7,
+      "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000048.png",
+      "sha256": "c06ffca2556d7af9eb53c20b3e0e2ba7f2c702f71262c6f2d9feb4e1dc32dda5",
+      "expected": {
+        "kind": "ability_popup",
+        "side": "self",
+        "species_id": 186,
+        "name": "降雨",
+        "mechanics_inferred": false
+      },
+      "review_confidence": "high",
+      "evidence_class": "direct_visual_ability_popup",
+      "independence": "Unseen C interval; additional whole-screen review, outside message ROI. Labeled after primary OCR review; no inference/rule change."
+    }
+  ],
+  "hp_comparison": {
+    "first": {
+      "battle_id": "sample_battle_1",
+      "timestamp": 370.0116666666667,
+      "image": ".cache/m14-phases/sample_battle_1/00013229.png",
+      "sha256": "cbc9b3b36072cfc2445c25894c55dcdbba1b5980634b64b39ba02984a90625fc",
+      "current": 106,
+      "maximum": 172
+    },
+    "later": {
+      "battle_id": "sample_battle_1",
+      "timestamp": 440.02333333333337,
+      "image": ".cache/m14-phases/sample_battle_1/00015332.png",
+      "sha256": "b5122ad9cf7cac61851a2620d45a29266a40bd7d7017630bc354705364092e9c",
+      "expected": {
+        "side": "self",
+        "slot": "left",
+        "species_id": 373,
+        "current": 52,
+        "maximum": 172,
+        "form": "超级暴飞龙",
+        "rain_visible": true,
+        "status_condition": "not independently established",
+        "move_menu_execution": false
+      },
+      "evidence_class": "direct_visual_hud_and_model",
+      "independence": "Supplemental HP/form coverage; species/HP sequence was previously examined in A, not held-out acceptance"
+    },
+    "visible_endpoint_difference": -54,
+    "cause": null,
+    "continuous_instance_proof": "not established by two endpoints; no continuous video identity claim"
+  },
+  "negative_controls": [
+    "Move-selection menu lists choices; it does not reveal opponent execution or confirm own execution.",
+    "A Mega badge/model does not establish a major status condition."
+  ]
+}

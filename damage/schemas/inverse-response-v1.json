@@ -1,0 +1,736 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "enum": [
+        "exact",
+        "conditional",
+        "empty",
+        "unsupported",
+        "insufficient_information"
+      ]
+    },
+    "stat": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ruleset": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attacker": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "candidate_domain": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 65535
+      },
+      "uniqueItems": true
+    },
+    "feasible": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "values": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "uniqueItems": true
+            },
+            "minimum": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1,
+              "maximum": 65535
+            },
+            "maximum": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1,
+              "maximum": 65535
+            },
+            "count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "hull": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "has_gaps": {
+              "type": "boolean"
+            },
+            "intervals": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 65535
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            }
+          },
+          "required": [
+            "values",
+            "minimum",
+            "maximum",
+            "count",
+            "hull",
+            "has_gaps",
+            "intervals"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assignment": {
+            "type": "object"
+          },
+          "feasible": {
+            "type": "object",
+            "properties": {
+              "values": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 65535
+                },
+                "uniqueItems": true
+              },
+              "minimum": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "maximum": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "hull": {
+                "anyOf": [
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "has_gaps": {
+                "type": "boolean"
+              },
+              "intervals": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                }
+              }
+            },
+            "required": [
+              "values",
+              "minimum",
+              "maximum",
+              "count",
+              "hull",
+              "has_gaps",
+              "intervals"
+            ],
+            "additionalProperties": false
+          },
+          "per_observation": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "constraint": {
+                  "oneOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 65535
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "minimum": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65535
+                        },
+                        "maximum": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65535
+                        }
+                      },
+                      "required": [
+                        "minimum",
+                        "maximum"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "allowed_values": {
+                          "type": "array",
+                          "items": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 65535
+                          },
+                          "minItems": 1,
+                          "maxItems": 65536,
+                          "uniqueItems": true
+                        }
+                      },
+                      "required": [
+                        "allowed_values"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
+                },
+                "evidence": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "feasible": {
+                  "type": "object",
+                  "properties": {
+                    "values": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 65535
+                      },
+                      "uniqueItems": true
+                    },
+                    "minimum": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    "maximum": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    "count": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "hull": {
+                      "anyOf": [
+                        {
+                          "type": "array",
+                          "items": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 65535
+                          },
+                          "minItems": 2,
+                          "maxItems": 2
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "has_gaps": {
+                      "type": "boolean"
+                    },
+                    "intervals": {
+                      "type": "array",
+                      "items": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 65535
+                        },
+                        "minItems": 2,
+                        "maxItems": 2
+                      }
+                    }
+                  },
+                  "required": [
+                    "values",
+                    "minimum",
+                    "maximum",
+                    "count",
+                    "hull",
+                    "has_gaps",
+                    "intervals"
+                  ],
+                  "additionalProperties": false
+                },
+                "compatibility": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "candidate": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 65535
+                      },
+                      "compatible_rolls": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65535
+                        },
+                        "minItems": 1,
+                        "uniqueItems": true
+                      },
+                      "supported_rolls": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65535
+                        },
+                        "minItems": 1
+                      }
+                    },
+                    "required": [
+                      "candidate",
+                      "compatible_rolls",
+                      "supported_rolls"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "dependencies": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "attacker": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "defender": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "handler": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "attacker",
+                      "defender",
+                      "handler"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1
+                },
+                "informative_dependency": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "id",
+                "constraint",
+                "evidence",
+                "feasible",
+                "compatibility",
+                "dependencies",
+                "informative_dependency"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "assignment",
+          "feasible",
+          "per_observation"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "per_observation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "feasible": {
+            "type": "object",
+            "properties": {
+              "values": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 65535
+                },
+                "uniqueItems": true
+              },
+              "minimum": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "maximum": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "hull": {
+                "anyOf": [
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "has_gaps": {
+                "type": "boolean"
+              },
+              "intervals": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                }
+              }
+            },
+            "required": [
+              "values",
+              "minimum",
+              "maximum",
+              "count",
+              "hull",
+              "has_gaps",
+              "intervals"
+            ],
+            "additionalProperties": false
+          },
+          "informative_dependency": {
+            "type": "boolean"
+          },
+          "dependency_varies_by_scenario": {
+            "type": "boolean"
+          },
+          "individually_feasible": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "feasible",
+          "informative_dependency",
+          "dependency_varies_by_scenario",
+          "individually_feasible"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "inconsistency": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "unconstrained": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "work": {
+      "type": "object",
+      "properties": {
+        "forward_evaluations": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "memo_hits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "assignments": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "forward_evaluations",
+        "memo_hits",
+        "assignments"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "stat",
+    "ruleset",
+    "attacker",
+    "candidate_domain",
+    "feasible",
+    "scenarios",
+    "per_observation",
+    "inconsistency",
+    "unconstrained",
+    "diagnostics",
+    "provenance",
+    "assumptions",
+    "work"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pokemon-champions:inverse:response:v1",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "exact",
+              "conditional",
+              "empty"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "feasible": {
+            "type": "object",
+            "properties": {
+              "values": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 65535
+                },
+                "uniqueItems": true
+              },
+              "minimum": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "maximum": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "hull": {
+                "anyOf": [
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65535
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "has_gaps": {
+                "type": "boolean"
+              },
+              "intervals": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                }
+              }
+            },
+            "required": [
+              "values",
+              "minimum",
+              "maximum",
+              "count",
+              "hull",
+              "has_gaps",
+              "intervals"
+            ],
+            "additionalProperties": false
+          },
+          "unconstrained": {
+            "type": "boolean"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "feasible": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "oracle": {
+    "package": "@smogon/calc",
+    "version": "0.12.0",
+    "generation": 0,
+    "adapter": "actual raw stats; direct Champions mechanics; ability/level defaults overwritten"
+  },
+  "oracle_evaluations": 779,
+  "groups": 19,
+  "description": "Expected feasible sets derived exclusively from independently enumerated Node oracle rolls; Python forward/inverse not imported.",
+  "files": {
+    "tests/fixtures/inverse_damage/oracle-enumeration.json": "c2a5bc9d838808836b259ba2d36f09a7ece0037f2bedd26d382b7e3ad7fdc786",
+    "scripts/damage_oracle.cjs": "d94bc438415037224eeba7f6577965f03030ef2664a4c46014ccb96e43314dd7",
+    "tests/fixtures/damage/manifest.json": "573cbec21f3c0b9b4580a459bf51a0dacdbd4ef34570ea42aa3e235c18cca3ad",
+    "tests/fixtures/damage/oracle-package-lock.json": "ea7f6274e1b074d9229e45919cd6624bcd9d57ed952db49582f3d3492f4ea8c6",
+    "damage/data/manifest.json": "1333fa4e35cfbe0fe7acf56000cfd5a553d14385f7ad80de3698c7167905ed03"
+  }
+}

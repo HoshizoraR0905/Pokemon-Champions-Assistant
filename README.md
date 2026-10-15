@@ -198,3 +198,15 @@ M2.3.3-B2's scoped parser/move recovery and cache-only validation are documented
 `.venv/bin/python scripts/verify_m233b1.py` to verify preserved B1/prior artifacts
 without recognition. B2 replay requires one explicit `--battle-id`; see the report
 for saved-crop recovery and evaluation commands.
+
+Standalone damage calculation accepts explicit JSON inputs without reading video
+state: `.venv/bin/python -m damage examples/damage/neutral.json`. See the
+[versioned API/data/mechanics contract](docs/damage-v1.md) and
+[M3.1 validation report](reports/M3.1-validation.md). Reference-profile distributions
+are provisional for Champions; unknown or unsupported mechanics produce diagnostics.
+
+Inverse damage constraints enumerate exact feasible Attack/Special Attack sets:
+`.venv/bin/python -m damage.inverse_cli examples/inverse_damage/single.json`.
+See the [inverse API](docs/inverse-damage-v1.md) and
+[M3.1.1 validation](reports/M3.1.1-inverse-damage-solver.md) for shared scenarios,
+evidence requirements and the supported provisional mechanics scope.
