@@ -58,7 +58,15 @@ def evidence_projection(engine, *, as_of):
             last=state.knowledge.get('hud_fusion',{}).get('slots',{}).get(side+':'+slot,{})
             loc=view(p.location,side=side) if p else None
             conflicting=last.get('status')=='conflicting'
-            unresolved=last.get('status')=='deferred' or any(x['side']==side and state.pokemon[x['instance_id']].location.value=={'kind':'unplaced_entry','slot':None} for x in state.knowledge.get('unplaced_entries',[]))
+            pending=[x for x in state.knowledge.get('unplaced_entries',[]) if x['side']==side
+                and state.pokemon[x['instance_id']].location.value=={'kind':'unplaced_entry','slot':None}]
+            if state.knowledge.get('identity_v1'):
+                # Historical arrivals across a coverage gap cannot identify or
+                # veto a directly observed new episode. Keep their evidence in
+                # history, without asserting departure or biological continuity.
+                pending=[x for x in pending if not any(g.get('side') in {side,'field','unknown'}
+                    and g['end']>(x.get('timestamp') if x.get('timestamp') is not None else float('-inf')) for g in gaps)]
+            unresolved=last.get('status')=='deferred' or bool(pending)
             supported=bool(loc and loc['current_supported'] and not conflicting and not unresolved)
             occupancy[side][slot]=dict(last_observed_instance_id=pid,
                 current_instance_id=pid if supported else None,

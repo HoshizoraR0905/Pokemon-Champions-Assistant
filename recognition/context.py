@@ -21,6 +21,9 @@ class RecognitionContext:
         self.verified_team: dict[str,TeamMember] = {}
         self.observed_team: dict[str,TeamMember] = {}
         self.opponent_preview: set[str] = set()
+        # Rows and source occurrences retain duplicate species. The legacy set
+        # remains a text-ranking hint for existing callers, never occupancy.
+        self.preview_observations: list[dict] = []
         self.previous: dict[str,tuple[str,str,int]] = {}
         self.complete_verified_roster = False
         self.last_source: str | None = None

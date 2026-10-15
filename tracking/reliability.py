@@ -20,7 +20,7 @@ def unplaced_entry(engine, state, event, record):
         and r.ordering['domain']==record.ordering['domain'] and tuple(r.ordering['key'])<tuple(record.ordering['key'])
         and r.event['event_type']!='hud_observation']
     prior=max(earlier,key=lambda r:tuple(r.ordering['key'])) if earlier else None
-    if prior and prior.event['event_type']=='send_out' and prior.event['side']==event.side and prior.event['original_text']==event.original_text:
+    if prior and prior.event['event_type']=='send_out' and prior.event['side']==event.side and prior.event['original_text']==event.original_text and (prior.event.get('actor') or {}).get('species_id')==ref['species_id']:
         pid=prior.bindings.get('actor',{}).get('pokemon_instance_id')
         if pid in state.pokemon and state.pokemon[pid].location.value=={'kind':'unplaced_entry','slot':None}:
             record.bindings['actor']=dict(pokemon_instance_id=pid,basis='consecutive_same_announcement')

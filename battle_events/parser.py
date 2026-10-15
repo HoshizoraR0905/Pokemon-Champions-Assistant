@@ -42,6 +42,14 @@ class EventParser:
         return [self.identity(n,'species') for _,_,n in sorted(hits)]
 
     def parse(self, entry, context=None, battle_id='battle'):
+        region=entry.get('source_region_type')
+        if region is not None and region!='battle_message':
+            return BattleEvent(stable_id(battle_id,entry['entry_id']),'unknown','unknown',None,None,
+                entry['raw_text'],{},entry.get('log_order'),
+                [Evidence(region,entry.get('source_id','unknown'),entry.get('observation_ids',[]),
+                          {'entry_id':entry['entry_id'],'original_event_time':None})],
+                entry.get('ocr_confidence'),'uncertain',['non_live_ui_region'],
+                dict(source_region_type=region,semantic_admission='not_a_live_battle_message'))
         c=context or BattleContext()
         if entry.get('ocr_confidence') is not None and entry['ocr_confidence']<.75:
             from copy import deepcopy
@@ -49,10 +57,11 @@ class EventParser:
         raw=entry['raw_text'];text=re.sub(r'\s+','',raw)
         subject=None;target=None;refs={};attrs={};unc=[];typ='unknown';basis=[]
         identity_text=text
-        for alias,binding in sorted(c.display_aliases.items(),key=lambda kv:-len(kv[0])):
-            if alias and alias in identity_text and binding.get('evidence'):
-                identity_text=identity_text.replace(alias,binding['identity']['name'])
-                attrs.setdefault('display_alias_evidence',[]).append(binding)
+        from .aliases import substitutions
+        alias_side='opponent' if text.startswith('对手') else entry.get('side_hint','unknown')
+        identity_text,used,collisions=substitutions(identity_text,c.display_aliases,alias_side)
+        if used:attrs['display_alias_evidence']=used
+        if collisions:unc.append('ambiguous_display_alias')
         mentions=[m for m in self.species_mentions(identity_text) if m]
         subject=mentions[0] if mentions else None
         hint=entry.get('side_hint','unknown')
@@ -121,6 +130,8 @@ class EventParser:
             if not attrs['identity']:unc.append('transformation_identity_unknown')
         elif '摆出了防守的架势' in text:
             typ='move_effect';attrs['effect']='protection_established'
+        elif '畏缩了' in text and '无法使出招式' in text:
+            typ='move_effect';attrs.update(effect='flinch_prevented_action',observation_only=True)
         elif '在攻击中守护住了自己' in text:
             typ='move_effect';attrs['effect']='protected_from_attack'
         elif '没有起到效果' in text:

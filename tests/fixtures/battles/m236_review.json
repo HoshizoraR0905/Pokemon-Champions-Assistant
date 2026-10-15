@@ -1,0 +1,2950 @@
+{
+  "schema_version": 1,
+  "battle_id": "sample_battle_5",
+  "method": "Manual full-frame/contact-sheet review before algorithm tuning or new OCR; single reviewer, no second annotator",
+  "limits": [
+    "New temporal occurrences on same recording/species, not new-species generalization",
+    "Pre-existing M235 reviewed frames remain regression only",
+    "No 3D proximity for slots",
+    "No species labels inferred on trainer/entry animations without literal text/HUD",
+    "Intermediate HP not assumed stable final endpoint"
+  ],
+  "plan": {
+    "development": [
+      [
+        108,
+        126
+      ],
+      [
+        284,
+        298
+      ]
+    ],
+    "held_out": [
+      [
+        404,
+        432
+      ]
+    ],
+    "same_occurrence_cannot_cross_split": true
+  },
+  "frames": [
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/4a22bdeaa893b36794a00e05/000001.png",
+      "sha256": "d2cd6410992a5f298626f2836e9f1fa7bf189c1552f5a9a0689d9200fd849903",
+      "timestamp": 108.00166666666667,
+      "target_timestamp": 108.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/4a22bdeaa893b36794a00e05/000002.png",
+      "sha256": "6a05f6c318cc5e0e84d7c91e6a15e4b398278fd70540d699c03e31a25d08e969",
+      "timestamp": 108.50166666666667,
+      "target_timestamp": 108.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/4a22bdeaa893b36794a00e05/000003.png",
+      "sha256": "d91d823a31e922be21a71794c5632cfbedbfd3d2ff33d4e5ce906ef13f458064",
+      "timestamp": 109.00166666666667,
+      "target_timestamp": 109.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/4a22bdeaa893b36794a00e05/000004.png",
+      "sha256": "d785d3251059b974ec3820185e276287476452f44d1e877608e518137fd1132a",
+      "timestamp": 109.50166666666667,
+      "target_timestamp": 109.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000001.png",
+      "sha256": "cee687c4f67cfc5040999ea7c9b3971ffefd9c44167a5f3df6bc335a5c34e4e8",
+      "timestamp": 110.00166666666667,
+      "target_timestamp": 110.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000002.png",
+      "sha256": "599ade1064189f6cdd4f4a2ff3ac7ca68de43dbdd0ca2b52ad0e277c9e0db0c3",
+      "timestamp": 110.50166666666667,
+      "target_timestamp": 110.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000003.png",
+      "sha256": "f4a135fd40043281387b9c71acee3f4a6d29baefce83b2198af5107654391053",
+      "timestamp": 111.00166666666667,
+      "target_timestamp": 111.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000004.png",
+      "sha256": "8a4ea85df20dad5aa02ce6a1560057fa117c6a4fba78d8f7c8ecbd97a679d36f",
+      "timestamp": 111.50166666666667,
+      "target_timestamp": 111.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000005.png",
+      "sha256": "6b156e7e89af0b208e9bed6c24d2e4802ed38d4b10f07e6fc7e31c23e28d2ec0",
+      "timestamp": 112.00166666666667,
+      "target_timestamp": 112.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000006.png",
+      "sha256": "ad0454e2eac4fb1886e9c2ece7dd8df198bcace60d9d1854e8dcb7b6880d8541",
+      "timestamp": 112.50166666666667,
+      "target_timestamp": 112.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000007.png",
+      "sha256": "f6abc3a5fb204d20185bc1bd962549678cd1ea52daf68d272a74d21eb3d7c95e",
+      "timestamp": 113.00166666666667,
+      "target_timestamp": 113.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000008.png",
+      "sha256": "e8c47e671c8cdae6494b4c0331dfc834b5692cdd89ff5ba61505e0f4c62c654b",
+      "timestamp": 113.50166666666667,
+      "target_timestamp": 113.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000009.png",
+      "sha256": "f229f63cd000cecd3ab965950a63afb32572e7e4f44cdfd2e65912502b4ef42f",
+      "timestamp": 114.00333333333333,
+      "target_timestamp": 114.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000010.png",
+      "sha256": "90c98de7e1d649279178945550cde065fc4fe55a09be1a68cc533542186fc987",
+      "timestamp": 114.52,
+      "target_timestamp": 114.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000011.png",
+      "sha256": "d1f3a169e69c655e65b6f7c74e31870066caf6c6fad34c172996f44259599b72",
+      "timestamp": 115.02,
+      "target_timestamp": 115.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000012.png",
+      "sha256": "c04818b9967acf3329bbba6fa24d46485d7fd20cd87db5f23909fdc45ef5680a",
+      "timestamp": 115.52,
+      "target_timestamp": 115.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000013.png",
+      "sha256": "00bd6d5e86ce9fcb37483ea299e62590dc5b0f1b6113a477f34a50f46a5b9481",
+      "timestamp": 116.02,
+      "target_timestamp": 116.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000014.png",
+      "sha256": "dee1c8939b854c80f3268bc29cc5304edfd143cbd1fd87dfd7c54559dfa00279",
+      "timestamp": 116.52,
+      "target_timestamp": 116.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000015.png",
+      "sha256": "c1acceba10c873086d5e36abead3e3b74c1a81d1a279d5b4b3f75e4a20f8c496",
+      "timestamp": 117.00333333333333,
+      "target_timestamp": 117.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000016.png",
+      "sha256": "c42cd4d71749402f23461b257e96e3ab17e222dbc61dfc2f593d2e64293f4a0a",
+      "timestamp": 117.52,
+      "target_timestamp": 117.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000017.png",
+      "sha256": "131cc174101e43c1c8cec76c7199be5cf7de001678880ff27d059467c6ce500a",
+      "timestamp": 118.02,
+      "target_timestamp": 118.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000018.png",
+      "sha256": "e08ee92e32d47126a0cf8308af4c5ce7f7f2717cead3159025815550d72665d5",
+      "timestamp": 118.52,
+      "target_timestamp": 118.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000019.png",
+      "sha256": "45c7e4d6d89a75badf865b3955509ecba72dbf6a9c4ea56bc0f32dc013080479",
+      "timestamp": 119.02,
+      "target_timestamp": 119.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c7cba21458aeb98b5904b1e3/000020.png",
+      "sha256": "c534fd7ecfb040f3d70ac38740b1178351eda31105a99d1726770e621af88459",
+      "timestamp": 119.52,
+      "target_timestamp": 119.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000001.png",
+      "sha256": "0bff58382f2c49b19cb56dc9ec8f8c3b283c5709fa74c43a73eedb6beb673d00",
+      "timestamp": 120.02,
+      "target_timestamp": 120.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000002.png",
+      "sha256": "d3afe3ce6e0fcf4ca283772dbf519fe258c0763298378091e2e1b5dccc5e4d29",
+      "timestamp": 120.52,
+      "target_timestamp": 120.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000003.png",
+      "sha256": "2b72a2e749db2bea4885e2d52ceafdd382d5478a6d32d797ecf0c76165d34593",
+      "timestamp": 121.02,
+      "target_timestamp": 121.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000004.png",
+      "sha256": "299816eaf69e847cdf25e405edd85937c26d5600d922e4dc8af7039fbd2df83d",
+      "timestamp": 121.52,
+      "target_timestamp": 121.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000005.png",
+      "sha256": "7ac92a1f0d805c04939cfe12436578185e376e649b6d7dc6bc78d90276f1788d",
+      "timestamp": 122.02,
+      "target_timestamp": 122.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000006.png",
+      "sha256": "f1b9f80cadaf0ad12c58d7502064b92c2f411bbb3178ab0ab5aba68d0a6baede",
+      "timestamp": 122.52,
+      "target_timestamp": 122.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000007.png",
+      "sha256": "2bf7cbd3f02ca59c154d5445b3daaeb9d321b7695f1011095e72229cf8f4fdc0",
+      "timestamp": 123.02,
+      "target_timestamp": 123.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000008.png",
+      "sha256": "4dbfc002473b6771f6cb19d9b4fa04ef1786eafdd7c8a55aabef78715742262a",
+      "timestamp": 123.52,
+      "target_timestamp": 123.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000009.png",
+      "sha256": "22a3a7f8d49460327b34a293d41dca41378bfd026212a24f7839987f9a80f0fc",
+      "timestamp": 124.02166666666666,
+      "target_timestamp": 124.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000010.png",
+      "sha256": "3278e3ad5920ac6c8650bc5bd8f1462450c069b7b108822aa1ff69f0c27a26ae",
+      "timestamp": 124.52166666666666,
+      "target_timestamp": 124.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000011.png",
+      "sha256": "482b8137bfe92f313c6d931ec19a68e97e379adcef153d96dcaf2a7fcb30145d",
+      "timestamp": 125.02166666666666,
+      "target_timestamp": 125.0,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000012.png",
+      "sha256": "a81809abdeba31822b2f59f2f990225321eacd6a19470e83c43a0ca4b7253470",
+      "timestamp": 125.52166666666666,
+      "target_timestamp": 125.5,
+      "split": "development",
+      "window": [
+        108,
+        126
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000001.png",
+      "sha256": "57a8e90c78adad7d98bb583f581cf752f0cd61b5af251d154022d1d4fa05db1b",
+      "timestamp": 284.015,
+      "target_timestamp": 284.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000002.png",
+      "sha256": "4129fc109cc76071e9e113641067c27d7ca7485e87bd0447010c06a44e4e644a",
+      "timestamp": 284.515,
+      "target_timestamp": 284.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000003.png",
+      "sha256": "104560b35dae891cf89f70a466dd2d7ccdd7ec57399ac6a42c27b0643cc6451b",
+      "timestamp": 285.015,
+      "target_timestamp": 285.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000004.png",
+      "sha256": "ad36120d2973e851fc251b9718195b36ba7c1277310d64babb95c6b557344593",
+      "timestamp": 285.515,
+      "target_timestamp": 285.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000005.png",
+      "sha256": "5cae46252fc6ab0fa01ef7870788918041830d20fa7cb25d93ca5dc8665bdce4",
+      "timestamp": 286.015,
+      "target_timestamp": 286.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000006.png",
+      "sha256": "776309bf958bde9ec42a2b0450b8abd81b4623a340737813c0e8ab5b78b5d454",
+      "timestamp": 286.515,
+      "target_timestamp": 286.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000007.png",
+      "sha256": "e87440048ba46508452331874880cc93a2888fdbbc04debc0b736870af4170b3",
+      "timestamp": 287.015,
+      "target_timestamp": 287.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000008.png",
+      "sha256": "7ac281afbdd9b5c522016599e43522da5a83775f0d6c076ed2c41de29e7ad556",
+      "timestamp": 287.515,
+      "target_timestamp": 287.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000009.png",
+      "sha256": "416fa15bae97476e81ae1f217c0e8376052a035cd5fc0a812d3382dde5fb62fa",
+      "timestamp": 288.015,
+      "target_timestamp": 288.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000010.png",
+      "sha256": "66fb20f438999f964931323c55b8be9d5c98296af70c28e864b758ee7f112029",
+      "timestamp": 288.515,
+      "target_timestamp": 288.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000011.png",
+      "sha256": "c6cc9c65dbe8924e21eadc97a97a713af96e6dfc3098e76bcfc593ed53cb7cf3",
+      "timestamp": 289.015,
+      "target_timestamp": 289.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000012.png",
+      "sha256": "9ffdc365dd9fdd841bd4c5df62edae3ea081a5d96ea927c5a4a52500781b8f46",
+      "timestamp": 289.515,
+      "target_timestamp": 289.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000001.png",
+      "sha256": "c47d13a152f1e2c5c97c31e9d55399a115725d7b1d79ef07430c311a0f254492",
+      "timestamp": 290.015,
+      "target_timestamp": 290.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000002.png",
+      "sha256": "010df8b0684d8df41a519040e8dba7cad73f29377def4fe7db17d0b152f824a1",
+      "timestamp": 290.515,
+      "target_timestamp": 290.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000003.png",
+      "sha256": "6829fd64940f9dec19bd93b55ede6005ee6df9435874a0dd7213e4292d4c7e11",
+      "timestamp": 291.015,
+      "target_timestamp": 291.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000004.png",
+      "sha256": "5bd176d87df1aaebb7bc501ca81489d3033211e62e80337326a339665f1dee9a",
+      "timestamp": 291.515,
+      "target_timestamp": 291.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000005.png",
+      "sha256": "3507c9fcdd05a0ec3eb36e83c167f084c1a5a3ea957611d6eaa41aad9f3d7be3",
+      "timestamp": 292.015,
+      "target_timestamp": 292.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000006.png",
+      "sha256": "204a12876ce1732de34c47fc8f5655a9cfaa6dbb628cb47c71d8f8ae1795dbe8",
+      "timestamp": 292.51666666666665,
+      "target_timestamp": 292.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000007.png",
+      "sha256": "293c200acf42a2a00ae74cac696f7b95f6c2371809f88a8bfce8ff818ecfa0dd",
+      "timestamp": 293.01666666666665,
+      "target_timestamp": 293.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000008.png",
+      "sha256": "82c23913f64a1cc312dd4bd0d4cd2760eac2a547b911dfd5bb7535de51568c67",
+      "timestamp": 293.51666666666665,
+      "target_timestamp": 293.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000009.png",
+      "sha256": "879e69145baf15f49a4dd43c0513ac100b61a6dc276712e52c712949791548ae",
+      "timestamp": 294.01666666666665,
+      "target_timestamp": 294.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000010.png",
+      "sha256": "d24be9c1ca9ee8de0997300bf7a7c232f99fcbcadbea82ec175725fe786ed298",
+      "timestamp": 294.51666666666665,
+      "target_timestamp": 294.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000011.png",
+      "sha256": "3aba72a947279fe56002dd297cd20504a7f7c2728144cc0e35ad5fc8ebae2b85",
+      "timestamp": 295.01666666666665,
+      "target_timestamp": 295.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000012.png",
+      "sha256": "101b5e8e74481f84446fd97b0f86c2aa24d18bb8e7cc686cbb6e263a64ac4a54",
+      "timestamp": 295.51666666666665,
+      "target_timestamp": 295.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000013.png",
+      "sha256": "7e5ed03b1b675a7a765f60d562739cc97eb46859eda468c246595d47f9ca7c8e",
+      "timestamp": 296.01666666666665,
+      "target_timestamp": 296.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000014.png",
+      "sha256": "e1a14e317194855ffe15b66a446c6571ae7b21cd7ddc12da46f9bb89aca14657",
+      "timestamp": 296.51666666666665,
+      "target_timestamp": 296.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000015.png",
+      "sha256": "dc8f0fe764a26bdc257ccbfe38c81c23b886a7043ed5b6ee6fbc9c2898814e0a",
+      "timestamp": 297.01666666666665,
+      "target_timestamp": 297.0,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0504c4414a29daf6726590cb/000016.png",
+      "sha256": "32ce0d490ef00150a319886fead390dc7bc124c321d0045d00a1d71705a3d864",
+      "timestamp": 297.53333333333336,
+      "target_timestamp": 297.5,
+      "split": "development",
+      "window": [
+        284,
+        298
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "self",
+          "slot": "right",
+          "species_id": 248,
+          "display_name": "班基拉斯",
+          "hp": {
+            "current": 177,
+            "maximum": 177
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "left",
+          "species_id": 448,
+          "display_name": "Invincible",
+          "hp": {
+            "percent": 100
+          },
+          "instance_id": null,
+          "form": null
+        },
+        {
+          "side": "opponent",
+          "slot": "right",
+          "species_id": 205,
+          "display_name": "Big Nugget",
+          "hp": {
+            "percent": 15
+          },
+          "instance_id": null,
+          "form": null
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000001.png",
+      "sha256": "50bc5ae94d916532dae7089f9c4f3ba39aeac79618652f86749b961b6a9db361",
+      "timestamp": 404.00166666666667,
+      "target_timestamp": 404.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000002.png",
+      "sha256": "7b830beea1091cd2497e4972476dc3a9ebaf7035b2e4186ed9fb2d2b19b5211e",
+      "timestamp": 404.50166666666667,
+      "target_timestamp": 404.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000003.png",
+      "sha256": "7a891aa51d8ce9aab33246cac5ea400623f67759a18d4f76f05dfc88e38290b7",
+      "timestamp": 405.0183333333333,
+      "target_timestamp": 405.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000004.png",
+      "sha256": "86def8778f6d88c2fed9e92e2cb1c1defbf81609d64ba03668933c1726ce604d",
+      "timestamp": 405.50166666666667,
+      "target_timestamp": 405.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000005.png",
+      "sha256": "837bb40eed342913a5b1280ca8f72d3a4971e32cfc3554f67215d3a6c46e0139",
+      "timestamp": 406.00166666666667,
+      "target_timestamp": 406.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000006.png",
+      "sha256": "c32230b187757b598d900693821fb3fc30885f94e7db4d43bcfa449cee795193",
+      "timestamp": 406.50166666666667,
+      "target_timestamp": 406.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000007.png",
+      "sha256": "6b2119d74b81f282c9dc03f40719f8d4dafe6ef9d660f047b4c434123c460953",
+      "timestamp": 407.00166666666667,
+      "target_timestamp": 407.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000008.png",
+      "sha256": "af9c5dfbafa380de211406f2b15b9e2f6c8d1be37c2bd05c2a56161d751e09ed",
+      "timestamp": 407.5183333333333,
+      "target_timestamp": 407.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000009.png",
+      "sha256": "9ea7c063fc692555c72e5d948fdcc7c242e5f8bc219f669fcad8de959147b195",
+      "timestamp": 408.00166666666667,
+      "target_timestamp": 408.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000010.png",
+      "sha256": "0d2afc7e4af2553fd4a2084375bf4341a4ae07f6cbd3e602bd70bf0769791278",
+      "timestamp": 408.50166666666667,
+      "target_timestamp": 408.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000011.png",
+      "sha256": "c5aff75122b2ad8b802544c65ed2eac9873f211e83f966813df578d11ad8a582",
+      "timestamp": 409.00166666666667,
+      "target_timestamp": 409.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000012.png",
+      "sha256": "2be97bcee2b6723123da881d9cf87293f7631bbc42683de8992814098bb2418d",
+      "timestamp": 409.50166666666667,
+      "target_timestamp": 409.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000001.png",
+      "sha256": "94eca23a6cc3c940610090eb0bf270531f5bf4e936de2cf0c2302e1a31e3b03e",
+      "timestamp": 410.00166666666667,
+      "target_timestamp": 410.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000002.png",
+      "sha256": "5eb82fbeff0f6770f15fb92d8fe81f84a15e36bc4f46216c322cab9ac99770c9",
+      "timestamp": 410.50166666666667,
+      "target_timestamp": 410.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000003.png",
+      "sha256": "23638ae9fe8952aea53325eda7cadfe4496c2516f74e3be7c9998821976d11ee",
+      "timestamp": 411.00333333333333,
+      "target_timestamp": 411.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000004.png",
+      "sha256": "6002b7d8ecbadf0b50020615792457e5375d5dc3767bd675fa8e4ecf2c31a241",
+      "timestamp": 411.50333333333333,
+      "target_timestamp": 411.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000005.png",
+      "sha256": "b4564eb4478cef762140005bafd7938a4c9a4eb8fad4ea30d4889c99728321b4",
+      "timestamp": 412.00333333333333,
+      "target_timestamp": 412.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000006.png",
+      "sha256": "9a6786ef18da14eeb24733c7baeb78c516b923a9d78c7b8dbfca2112e2482d86",
+      "timestamp": 412.50333333333333,
+      "target_timestamp": 412.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000007.png",
+      "sha256": "4331062f087e7c66ac890a36b7dfa08161ac45ae07c9451c5c794f396b0e9eb3",
+      "timestamp": 413.00333333333333,
+      "target_timestamp": 413.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000008.png",
+      "sha256": "a3aa8271f87239a8cb740c32dbe20c6e7949966a8e406b1f92f4999b3dccddbb",
+      "timestamp": 413.50333333333333,
+      "target_timestamp": 413.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000009.png",
+      "sha256": "1d20b0053544d3d1d1917d227f6e38fb82e440b54d2679fbfc9e453b5a457bf4",
+      "timestamp": 414.00333333333333,
+      "target_timestamp": 414.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000010.png",
+      "sha256": "0601b6c98e386dd166f33217f2d7e6af05968d07aa319dbc583ebaf2a821fd91",
+      "timestamp": 414.50333333333333,
+      "target_timestamp": 414.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000011.png",
+      "sha256": "2eeb4c991fdb2342f2aa623166006b56a3f1606db7e3539701ec0af4a8f8e6d5",
+      "timestamp": 415.00333333333333,
+      "target_timestamp": 415.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000012.png",
+      "sha256": "a3a5a701dadfd45d9796047845befd74e1b00a63c11e177cc3835fdc2bb2242a",
+      "timestamp": 415.50333333333333,
+      "target_timestamp": 415.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000013.png",
+      "sha256": "3dd6574562b4d8a43230defd483611cdb004c1a9641f1ccbb738496022f93f8b",
+      "timestamp": 416.00333333333333,
+      "target_timestamp": 416.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000014.png",
+      "sha256": "3ebb1d91de297581b1edb8b08f184185568f236a025c634bcd2890ea8c4c53fe",
+      "timestamp": 416.50333333333333,
+      "target_timestamp": 416.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000015.png",
+      "sha256": "6ac5b365e94ce6b20ce69b5dfe784f0dcf429ff63b2b39e62fb3adfe2308f243",
+      "timestamp": 417.00333333333333,
+      "target_timestamp": 417.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 185,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "intermediate_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000016.png",
+      "sha256": "d0c87bd13fc24621bb5f6f4ffbac7c4b3e1069b2faa98ca6809a750d357a0619",
+      "timestamp": 417.50333333333333,
+      "target_timestamp": 417.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 168,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "intermediate_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000017.png",
+      "sha256": "a30e0e26f0b7843dbe52c186f78c5221ee6271a9880012f0e975a49c414c9478",
+      "timestamp": 418.02,
+      "target_timestamp": 418.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 155,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "intermediate_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000018.png",
+      "sha256": "5ea88d02574059e356ffc05131f657f4242f60a34e800e50a0a68b291b4009fc",
+      "timestamp": 418.50333333333333,
+      "target_timestamp": 418.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 149,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "intermediate_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000019.png",
+      "sha256": "fdee4c58b4e2b5f85226d9635f6ae1c1de54a1f9b3fab303ada41c7652763c3a",
+      "timestamp": 419.00333333333333,
+      "target_timestamp": 419.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 148,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "stable_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000020.png",
+      "sha256": "31c15c5e1afb462baced53a3507543e6e6ba242ca64aee0c4594f1e51c388078",
+      "timestamp": 419.50333333333333,
+      "target_timestamp": 419.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 148,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "stable_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000001.png",
+      "sha256": "c41cceb61e046e78369068a806e169fd9296ece425b36919fbe6af431c63bdda",
+      "timestamp": 420.00333333333333,
+      "target_timestamp": 420.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 148,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "stable_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000002.png",
+      "sha256": "fc4fbb54328f12a4bf316884be8650d8acc46a703fbede07c436f8634b20684b",
+      "timestamp": 420.52,
+      "target_timestamp": 420.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 148,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "stable_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000003.png",
+      "sha256": "8401a74729ce9d86df6ec1a097bb1ebc17b8b2cc9f75f5351bf6b924a29bc192",
+      "timestamp": 421.005,
+      "target_timestamp": 421.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 148,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "stable_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000004.png",
+      "sha256": "6faede718c9657dae7fb20ec0d3f5ed37d8371a4872a65378ccf4d45eae6090a",
+      "timestamp": 421.505,
+      "target_timestamp": 421.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 148,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "stable_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000005.png",
+      "sha256": "675affc35ff8a50db096138f63316cfbf46986dc556c894a728f133ad7545944",
+      "timestamp": 422.005,
+      "target_timestamp": 422.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 148,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "stable_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000006.png",
+      "sha256": "9084a200a21155ba989d64861f330a4f8b558b2434cc944deab11381f8a9fef8",
+      "timestamp": 422.505,
+      "target_timestamp": 422.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 148,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "stable_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000007.png",
+      "sha256": "3748f48edb948adb074da3034e82b2fea6a37fb623b0aed56fe33cb20534cf60",
+      "timestamp": 423.005,
+      "target_timestamp": 423.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [
+        {
+          "side": "self",
+          "slot": "left",
+          "species_id": 530,
+          "display_name": "龙头地鼠",
+          "hp": {
+            "current": 148,
+            "maximum": 185
+          },
+          "instance_id": null,
+          "form": null,
+          "observation_kind": "stable_display"
+        }
+      ],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000008.png",
+      "sha256": "302f72f6f034f3921f6d385a24360c85d1e5bcd279bfde5f91a163f154436c9a",
+      "timestamp": 423.505,
+      "target_timestamp": 423.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000009.png",
+      "sha256": "48be4b6b6ecc566a8b63fae6fd11da5ab88095f59a0092a03b21a80fa50391bd",
+      "timestamp": 424.005,
+      "target_timestamp": 424.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000010.png",
+      "sha256": "9a2d8eda321f40be3ecfe34a6f52edea697a4dd8516d23e064aad2078fcdad66",
+      "timestamp": 424.505,
+      "target_timestamp": 424.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000011.png",
+      "sha256": "778a814cdb395d099bbbe17d65acd83b0d7291816434902fa5a77341fb0d0097",
+      "timestamp": 425.005,
+      "target_timestamp": 425.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000012.png",
+      "sha256": "d86d0e6f38f64e45a18d392e99b4d2a6460dbda2514ae6dcc3f1041a64829844",
+      "timestamp": 425.505,
+      "target_timestamp": 425.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000013.png",
+      "sha256": "e297042d80e2cd5c287733d77494f35009fc6c5211db642db4430717638d6f3f",
+      "timestamp": 426.005,
+      "target_timestamp": 426.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000014.png",
+      "sha256": "39075cf76ef83434847f991aa0981c7707d6906f32fb583a98c487d24f6a90ba",
+      "timestamp": 426.505,
+      "target_timestamp": 426.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000015.png",
+      "sha256": "687221ef488317d05e81512557f7c085d7538078cca2d30c005746a3c6a24bc7",
+      "timestamp": 427.005,
+      "target_timestamp": 427.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000016.png",
+      "sha256": "3324888a19c07e4938fd6223850902ce72738d6f8917d92a7a5f5a208419016b",
+      "timestamp": 427.505,
+      "target_timestamp": 427.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000017.png",
+      "sha256": "fec2f3dc223e9c0fa0665743c8101c647ae3ab806c04c6afc85ea00884029b68",
+      "timestamp": 428.005,
+      "target_timestamp": 428.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000018.png",
+      "sha256": "6c6da345be26b7199884ef437459b51b06a6f2b43eb0228d185aac3828a48a0b",
+      "timestamp": 428.505,
+      "target_timestamp": 428.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000019.png",
+      "sha256": "afeb72a7a2d3e9f9e16f50d7569e8ddb1779a1900b95190aa47314b0216441eb",
+      "timestamp": 429.005,
+      "target_timestamp": 429.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000020.png",
+      "sha256": "663cb8d60f392664ca1c9d2a57badc3c179e5c602fdfea2b70aef2ef0351acd8",
+      "timestamp": 429.505,
+      "target_timestamp": 429.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/312d2dcf3cd27cb2d4ffc550/000001.png",
+      "sha256": "a021396b94439ae7c86b8fd0b39b08db5a66896cca46c0b62b353ddfcc9368cd",
+      "timestamp": 430.005,
+      "target_timestamp": 430.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/312d2dcf3cd27cb2d4ffc550/000002.png",
+      "sha256": "e2198e7f34af4d6bd71ff48586f184f69b43001bb8b143a6a22da623c74ccd6f",
+      "timestamp": 430.505,
+      "target_timestamp": 430.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/312d2dcf3cd27cb2d4ffc550/000003.png",
+      "sha256": "be6ebb6656f2b3e66afe78d8b66731f765dddf2a07f74fa03830111118c1ec4a",
+      "timestamp": 431.00666666666666,
+      "target_timestamp": 431.0,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/312d2dcf3cd27cb2d4ffc550/000004.png",
+      "sha256": "f47194e29f08666948e61510d3a95969dd3d2a37a24b66fb99205c49bec824c6",
+      "timestamp": 431.50666666666666,
+      "target_timestamp": 431.5,
+      "split": "held_out",
+      "window": [
+        404,
+        432
+      ],
+      "hud": [],
+      "scene_models_not_used_for_slots": true
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "initial_opponent_entry",
+      "split": "development",
+      "start": 121,
+      "end": 122.5,
+      "kind": "send_out",
+      "side": "opponent",
+      "display_names": [
+        "Big Nugget",
+        "Invincible"
+      ],
+      "species_ids": null,
+      "slot": null,
+      "text_contains": "派出了"
+    },
+    {
+      "id": "initial_own_entry",
+      "split": "development",
+      "start": 124.5,
+      "end": 126,
+      "kind": "send_out",
+      "side": "self",
+      "species_ids": [
+        248,
+        530
+      ],
+      "slot": null,
+      "text_contains": "上吧"
+    },
+    {
+      "id": "own_reentry_candidate",
+      "split": "development",
+      "start": 284,
+      "end": 284.5,
+      "kind": "send_out",
+      "side": "self",
+      "species_ids": [
+        248
+      ],
+      "slot": null,
+      "text_contains": "上吧"
+    },
+    {
+      "id": "mega_item",
+      "split": "held_out",
+      "start": 404,
+      "end": 405.5,
+      "kind": "item_reaction",
+      "side": "opponent",
+      "display_name": "Big Mom",
+      "species_id": null,
+      "text_contains": "袋兽进化石"
+    },
+    {
+      "id": "mega_revelation",
+      "split": "held_out",
+      "start": 413.5,
+      "end": 415,
+      "kind": "transformation",
+      "side": "opponent",
+      "display_name": "Big Mom",
+      "species_id": 115,
+      "text_contains": "超级袋兽"
+    },
+    {
+      "id": "fake_out",
+      "split": "held_out",
+      "start": 415.5,
+      "end": 417.5,
+      "kind": "move_execution",
+      "side": "opponent",
+      "display_name": "Big Mom",
+      "species_id": 115,
+      "move": "pokeapi:move:252",
+      "text": "对手的Big Mom使出了击掌奇袭！"
+    },
+    {
+      "id": "not_effective",
+      "split": "held_out",
+      "start": 419.5,
+      "end": 421,
+      "kind": "effectiveness",
+      "side": "self",
+      "species_id": 530,
+      "text_contains": "效果不好"
+    },
+    {
+      "id": "two_hits",
+      "split": "held_out",
+      "start": 421,
+      "end": 423,
+      "kind": "multi_hit",
+      "count": 2,
+      "text_contains": "击中了2次"
+    },
+    {
+      "id": "flinch",
+      "split": "held_out",
+      "start": 424,
+      "end": 425.5,
+      "kind": "move_effect",
+      "side": "self",
+      "species_id": 530,
+      "text_contains": "畏缩了"
+    },
+    {
+      "id": "coaching",
+      "split": "held_out",
+      "start": 425.5,
+      "end": 427.5,
+      "kind": "move_execution",
+      "side": "opponent",
+      "display_name": "Invincible",
+      "species_id": 448,
+      "move": "pokeapi:move:811",
+      "text": "对手的Invincible使出了指导！"
+    },
+    {
+      "id": "coaching_stages",
+      "split": "held_out",
+      "start": 430,
+      "end": 431.5,
+      "kind": "stat_change",
+      "side": "opponent",
+      "display_name": "Big Mom",
+      "species_id": 115,
+      "text_contains": "攻击、防御提高了"
+    }
+  ],
+  "preview_reference": {
+    "source": "M235-D independent manual preview image review; development/reference only",
+    "species_by_ui_row": [
+      115,
+      302,
+      448,
+      350,
+      937,
+      205
+    ]
+  }
+}

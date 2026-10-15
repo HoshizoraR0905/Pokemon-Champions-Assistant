@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "review_method": "Single reviewer full-frame/contact-sheet visual inspection before M236-U implementation; new frame-level UI labels on previously unlabelled survey timestamps. Same recording and prior phase-survey exposure; not pristine new-recording generalization.",
+  "cases": [
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/1ad7b77acb9c590704b94f36/000001.png",
+      "sha256": "62829bc17373b07393a3860794e9d9471c3c7b3eeaaa0e3fcc7a8ff6b06a0382",
+      "timestamp": 180.03,
+      "target_timestamp": 180.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#180.03",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 18,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "battle_animation",
+      "split": "held_out",
+      "expected": {
+        "message": "班基拉斯摆出了防守的架势！",
+        "rows": 2,
+        "hud": 0,
+        "overlay": null,
+        "kind": "move_effect"
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/ef70d43cb93438833f5a5a9f/000001.png",
+      "sha256": "b5b5dc9a30c511e57e0b60bdfea6f84ed6abadab22c0c832d198cb50f4cb99c0",
+      "timestamp": 240.00666666666666,
+      "target_timestamp": 240.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#240.00666666666666",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 4,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "battle_screen",
+      "split": "held_out",
+      "expected": {
+        "message": null,
+        "rows": 0,
+        "hud": 4,
+        "overlay": null,
+        "menu": "command",
+        "field_label": "沙暴状态",
+        "field_counter": "4/5"
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/a335bb97b8ccfe7e3bb5f6ab/000001.png",
+      "sha256": "8c05bffe68e3ffc83fe2a89d739d859269f847abce91e3dbc6ddfaf031a2429b",
+      "timestamp": 260.01,
+      "target_timestamp": 260.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#260.01",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 6,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "battle_animation",
+      "split": "held_out",
+      "expected": {
+        "message": "对手的Invincible使出了指导！",
+        "rows": 2,
+        "hud": 0,
+        "overlay": null,
+        "kind": "move_execution",
+        "move": "pokeapi:move:811"
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/4e08c8e2afab25b632037682/000001.png",
+      "sha256": "bc2f243c53de56ca8fb7d57e9fae199a3a794a2814c01631de921fefa9719d14",
+      "timestamp": 320.02,
+      "target_timestamp": 320.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#320.02",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 12,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "battle_screen",
+      "split": "held_out",
+      "expected": {
+        "message": null,
+        "rows": 0,
+        "hud": 4,
+        "overlay": null
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/f7adf6d678e4623a9b2ba9c2/000001.png",
+      "sha256": "bb228919f457274462811487021980195bb9fb2e446d76dd5ac9fd0354b2b592",
+      "timestamp": 340.0233333333333,
+      "target_timestamp": 340.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#340.0233333333333",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 14,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "battle_animation",
+      "split": "held_out",
+      "expected": {
+        "message": null,
+        "rows": 0,
+        "hud": 0,
+        "overlay": null
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/0c78e68ebdf66a01d3c8d056/000001.png",
+      "sha256": "cde5b000dd3a01b6e2cc54be0ed4e444de66606eeb599f0b6dd444230f7bdb01",
+      "timestamp": 360.02666666666664,
+      "target_timestamp": 360.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#360.02666666666664",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 16,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "battle_animation",
+      "split": "held_out",
+      "expected": {
+        "message": null,
+        "rows": 0,
+        "hud": 0,
+        "overlay": null
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c1102d0a64a8ee9dcbe36507/000001.png",
+      "sha256": "0e2995b882068c5437a29b53457b8bd7e47758d9a3c9e228a63a5a6ec22c3f76",
+      "timestamp": 400.0,
+      "target_timestamp": 400.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#400.0",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 0,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "move_target_selection",
+      "split": "held_out",
+      "expected": {
+        "message": null,
+        "rows": 0,
+        "hud": 0,
+        "overlay": "target_selection",
+        "field_label": "沙暴状态",
+        "field_counter": "2/5"
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/9bf62182bf7373c7f656612d/000001.png",
+      "sha256": "7c355246d75c7cfbe466bc8f357080b15e840ea7ca6e1d4e8266e084107db924",
+      "timestamp": 440.00666666666666,
+      "target_timestamp": 440.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#440.00666666666666",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 4,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "battle_animation",
+      "split": "held_out",
+      "expected": {
+        "message": null,
+        "rows": 0,
+        "hud": 0,
+        "overlay": null
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/9355c5cef592e5e96d98efef/000001.png",
+      "sha256": "27586cd3c28f89602666c63c55a8abf5b234de4bbca5ae5d255771e987dca980",
+      "timestamp": 460.01,
+      "target_timestamp": 460.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#460.01",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 6,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "battle_animation",
+      "split": "held_out",
+      "expected": {
+        "message": null,
+        "rows": 0,
+        "hud": 1,
+        "overlay": null,
+        "hud_visibility": "partial",
+        "hp_literal": "0%"
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e0c810f45da6754241842bb4/000001.png",
+      "sha256": "9d5e6d02290edd80839ea3c03209ed77d56020db3fe02dede1cef6233dacb361",
+      "timestamp": 480.0133333333333,
+      "target_timestamp": 480.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#480.0133333333333",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 8,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "unknown",
+      "split": "held_out",
+      "expected": {
+        "message": "有一方选择了投降。",
+        "rows": 1,
+        "hud": 0,
+        "overlay": null,
+        "kind": "unknown"
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/f619b066e0650ea726efd027/000001.png",
+      "sha256": "fd9f8ab5370010159be52546d7ee891e53bb90df700c52ce902b41d651a5d400",
+      "timestamp": 140.02333333333334,
+      "target_timestamp": 140.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#140.02333333333334",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 14,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "move_selection",
+      "split": "development",
+      "expected": {
+        "overlay": null,
+        "message": null,
+        "menu": "move_selection"
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/52de082ec4e5c7bb51e6b847/000001.png",
+      "sha256": "34041fa6a41c5536ef58c900accb0d383176c0b947dacb7952d6af9b1bcc1cb6",
+      "timestamp": 160.02666666666667,
+      "target_timestamp": 160.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#160.02666666666667",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 16,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "team_preview",
+      "split": "development",
+      "expected": {
+        "overlay": "party_overlay",
+        "message": null,
+        "menu": null
+      }
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/f5c6b23616bffeb3c9aa0eb4/000001.png",
+      "sha256": "e90ee17e9ceebd6cf3158e729b5d81b0858adf67a39d5565a4bd9bda9c1e14f9",
+      "timestamp": 280.0133333333333,
+      "target_timestamp": 280.0,
+      "source_id": "tests/fixtures/sample_battle_5.mp4#280.0133333333333",
+      "timestamp_uncertainty_seconds": null,
+      "source_pts": 8,
+      "source_time_base": "1/600",
+      "reused_legacy": false,
+      "phase": "unknown",
+      "split": "development",
+      "expected": {
+        "overlay": "party_overlay",
+        "message": null,
+        "menu": null
+      }
+    }
+  ]
+}

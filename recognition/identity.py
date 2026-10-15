@@ -1,5 +1,5 @@
 """Conservative fusion of independently computed text and icon identities."""
-from dataclasses import replace
+from dataclasses import replace, asdict
 from models import EntityResolution
 
 
@@ -13,13 +13,14 @@ def combine_identity(text,icon,knowledge,context=None):
             top=eligible[0]
             near=[c for c in eligible if top.similarity-c.similarity<.10]
             if len({c.canonical_identity for c in near})==1:
-                icon=replace(icon,status='resolved',species_id=sid,form_id=top.form_id,
-                             pokemon_id=top.pokemon_id,canonical_identity=top.canonical_identity,
-                             canonical_id=top.canonical_id,
-                             identity_status=knowledge.identities.for_key(top.canonical_identity)['identity_status'],
-                             reason='text_species_filters_visual_candidates')
+                # This ranking depends on the text. It cannot corroborate that
+                # text or establish a form. Keep both independent observations.
+                return replace(text,resolution=replace(text.resolution,
+                    independent_text=asdict(text.resolution),
+                    conditional_evidence=[dict(method='text_species_filters_visual_candidates',
+                        depends_on='independent_text',candidate=asdict(top))]))
     if icon.status!='resolved':return text
-    if icon.canonical_identity is None:
+    if icon.canonical_identity is None and icon.identity_status!='species_only':
         mapped=(knowledge.identities.for_form(icon.form_id) if icon.form_id is not None
                 else knowledge.identities.for_key(icon.canonical_id))
         icon=replace(icon,form_id=mapped['form_id'],pokemon_id=mapped['pokemon_id'],
@@ -66,7 +67,8 @@ def combine_identity(text,icon,knowledge,context=None):
                    pokemon_id=icon.pokemon_id,canonical_identity=icon.canonical_identity,
                    identity_status=icon.identity_status,
                    status='resolved',method='text_icon_agreement' if text_sid else 'icon_only',
-                   confidence='strong' if text_sid else 'moderate',evidence=evidence)
+                   confidence='strong' if text_sid else 'moderate',evidence=evidence,
+                   independent_text=asdict(resolution))
     chinese=bool(__import__('re').search(r'[\u4e00-\u9fff]',text.raw_text)) or not text.raw_text
     base=knowledge.entities.get(f'pokeapi:species:{icon.species_id}')
     label=(entity.names.get('zh-hans') or (base.names.get('zh-hans') if base else None) or entity.label(False)) if chinese else entity.label(False)

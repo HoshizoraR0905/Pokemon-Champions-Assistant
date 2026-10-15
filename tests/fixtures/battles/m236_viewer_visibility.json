@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "purpose": "Presentation-only manual message-visibility review; separate from frozen evaluation labels",
+  "frames": {
+    "9ea7c063fc692555c72e5d948fdcc7c242e5f8bc219f669fcad8de959147b195": {
+      "classification": "no_message",
+      "visible_message": "",
+      "basis": "Manual inspection of the full cached white Mega Evolution transition frame and message region on 2026-10-15; no readable battle message",
+      "source_image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/13054bbed39d7adf7736f672/000009.png",
+      "timestamp": 408.00166666666667
+    }
+  }
+}

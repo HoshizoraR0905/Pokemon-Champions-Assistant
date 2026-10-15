@@ -23,6 +23,9 @@ class ApplicationPolicy:
     allow_candidates: bool = True
 
     def check(self,event):
+        if (event.event_type=='move_execution' and event.attributes.get('source_region_type') is not None
+                and event.attributes['source_region_type']!='battle_message'):
+            raise Deferred('move_execution_requires_live_message_region')
         if event.status not in {'candidate','confirmed'}:raise Deferred('event_not_candidate_or_confirmed')
         if not event.evidence:raise Deferred('missing_provenance')
         if event.status=='candidate':
@@ -264,6 +267,9 @@ class StateEngine:
         record.bindings[role]={'pokemon_instance_id':p.pokemon_instance_id,'basis':basis};return p
 
     def _transition(self,state,e,record):
+        if e.event_type in {'preview_observation','entry_observation','alias_observation'}:
+            from .identity_ledger import transition
+            return transition(self,state,e,record)
         kind=e.event_type;a=e.attributes
         if kind in {'visual_observation','coverage_observation'}:
             if not state.knowledge.get('reliability_v1'):raise Deferred('reliability_profile_required')

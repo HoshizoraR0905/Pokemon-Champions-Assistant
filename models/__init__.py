@@ -46,6 +46,8 @@ class EntityResolution:
     debug_candidates: list[EntityCandidate] = field(default_factory=list)
     filtered_zero_similarity_count: int = 0
     evidence: list[str] = field(default_factory=list)
+    independent_text: dict | None = None
+    conditional_evidence: list[dict] = field(default_factory=list)
 
 
 @dataclass
@@ -98,6 +100,8 @@ class IconEvidence:
     latency_ms: float = 0.0
     source_commit: str = ''
     reason: str = ''
+    conditioned: dict | None = None
+    independent_profiles: list[dict] = field(default_factory=list)
 
 
 @dataclass

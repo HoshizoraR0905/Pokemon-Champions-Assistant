@@ -9,7 +9,8 @@ EVENT_TYPES = {'switch_out','send_out','move_execution','hp_change','ability_act
                'status_change','critical_hit','multi_hit','effectiveness','move_effect','unknown',
                'item_change','ability_change','trick_room_change','side_condition_change',
                'turn_boundary','transformation','volatile_change','phase_observation','protection_attempt','protection_outcome',
-               'visual_observation','coverage_observation','hud_observation','mechanic_observation','mechanic_reset','type_change','ability_attempt','move_observation','party_observation'}
+               'visual_observation','coverage_observation','hud_observation','mechanic_observation','mechanic_reset','type_change','ability_attempt','move_observation','party_observation',
+               'preview_observation','entry_observation','alias_observation'}
 
 @dataclass
 class Participant:
