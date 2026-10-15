@@ -1,0 +1,9 @@
+{
+  "files": {
+    "tests/fixtures/speed_order/reference.json": "5a8496365e957471fc21331912a81aba2f027c8def7b1c4f96a4baeb37ba0f8e",
+    "scripts/speed_oracle.cjs": "c9a2b9c7593fc112e00ede92906ce96b8bd26ec1485ba35936d8fa2e5a7cf373",
+    "speed_order/data/sources-v1.json": "8698287df7786fa5cbd5c7be39a92b0897809fcbfa26134d1e33bfad404d2677",
+    "damage/data/manifest.json": "1333fa4e35cfbe0fe7acf56000cfd5a553d14385f7ad80de3698c7167905ed03",
+    "knowledge/data/manifest.json": "baede21b38040373e0771ebef7d7af39ae71708326485c5501204917b26bb612"
+  }
+}

@@ -12,7 +12,7 @@ def knowledge():
     return KnowledgeBase()
 
 
-def identity_evidence(species, icon, previous=None, support=None):
+def identity_evidence(species, icon, previous=None, support=None, *, reliability=False):
     """Validate resolution semantics, not just the resolver's method label.
 
     Exact is a unique dictionary match, not an icon assertion. A high-confidence
@@ -44,10 +44,14 @@ def identity_evidence(species, icon, previous=None, support=None):
     repeated = (previous and previous.get('raw') == raw and previous.get('species_id') == sid
                 and previous.get('status') != 'conflicting' and previous.get('confidence',0) >= .75)
     icon_candidates = icon.get('candidates') or []
+    # Provisional high-margin icon corroboration, opt-in and never a form assertion.
+    high_margin = (reliability and len(icon_candidates)>=2
+        and icon_candidates[0].get('similarity',0)>=.90
+        and icon_candidates[0].get('similarity',0)-icon_candidates[1].get('similarity',0)>=.20)
     nickname_icon = (method == 'icon_only' and not exact and confidence >= .95
         and icon.get('status') == 'resolved' and icon.get('species_id') == sid
         and icon_candidates and icon_candidates[0].get('similarity', 0) >= .85
-        and repeated)
+        and (repeated or high_margin))
     corroborated = support and support.get('species_id') == sid and support.get('evidence')
     if not (agreed or nickname_icon or strong_exact and (confidence >= .95 or repeated or corroborated)):
         return None, 'deferred', 'identity_not_independently_supported'
@@ -60,10 +64,10 @@ def identity_evidence(species, icon, previous=None, support=None):
     # A bare name with multiple forms must not assert a default/native form.
     named_forms = {knowledge().identities.for_entity(e).get('canonical_identity') for e in exact}
     variant = resolution.get('canonical_identity')
-    observed_form = (agreed or nickname_icon) and icon.get('canonical_identity') == variant
+    observed_form = (agreed or (nickname_icon and repeated)) and icon.get('canonical_identity') == variant
     if variant and (observed_form or named_forms == {variant}):
         ref.update(canonical_identity=variant, identity_status=resolution.get('identity_status'))
-    return ref, 'accepted', ('text_icon_agreement' if agreed else 'stable_icon_nickname' if nickname_icon else 'exact_with_prior_sendout' if corroborated else 'unique_raw_exact')
+    return ref, 'accepted', ('text_icon_agreement' if agreed else 'high_margin_icon_nickname_provisional' if nickname_icon and high_margin and not repeated else 'stable_icon_nickname' if nickname_icon else 'exact_with_prior_named_observation' if corroborated and reliability else 'exact_with_prior_sendout' if corroborated else 'unique_raw_exact')
 
 
 def hud_transition(engine, state, event, record):
@@ -87,22 +91,24 @@ def hud_transition(engine, state, event, record):
     support = None
     sid = (species.get('resolution') or {}).get('species_id')
     for earlier in engine.history:
+        if state.knowledge.get('reliability_v1') and earlier.application_status=='rejected':continue
         candidate = earlier.bindings.get('resolved_event', earlier.event)
         t = candidate.get('attributes',{}).get('observation_time')
         if (earlier.retracted or not earlier.ordering or not record.ordering
                 or earlier.ordering['domain'] != record.ordering['domain']
                 or tuple(earlier.ordering['key']) >= tuple(record.ordering['key'])):
             continue
-        if (candidate['event_type']=='send_out' and candidate['side']==event.side
+        if ((candidate['event_type']=='send_out' or state.knowledge.get('reliability_v1') and candidate['event_type'] in {'stat_change','ability_activation','move_execution'}) and candidate['side']==event.side
                 and (candidate.get('actor') or {}).get('species_id')==sid
-                and candidate.get('ocr_confidence') is not None and candidate['ocr_confidence']>=.95
+                and candidate.get('ocr_confidence') is not None
+                and candidate['ocr_confidence']>=(.90 if state.knowledge.get('reliability_v1') and candidate['event_type']!='send_out' else .95)
                 and 'explicit_text' in candidate['attributes'].get('side_basis',[])
                 and t is not None and 0<=timestamp-t<=30
-                and not set(candidate['uncertainty'])-{'actor_variant_unresolved'}):
+                and not set(candidate['uncertainty'])-({'actor_variant_unresolved','active_identity_context_unresolved'} if state.knowledge.get('reliability_v1') else {'actor_variant_unresolved'})):
             support = dict(species_id=sid,event_id=candidate['event_id'],
                            evidence=deepcopy(candidate['evidence']),timestamp=t)
     ref, status, reason = identity_evidence(species, icon,
-        previous if previous and previous['timestamp'] < timestamp else None, support)
+        previous if previous and previous['timestamp'] < timestamp else None, support, reliability=bool(state.knowledge.get('reliability_v1')))
 
     if (ref and previous and previous['timestamp'] == timestamp
             and previous.get('status') == 'accepted' and previous.get('species_id') != ref['species_id']):
@@ -121,12 +127,32 @@ def hud_transition(engine, state, event, record):
         return True
     team = state.sides[event.side]; old_pid = team.active_slots.get(a['slot'])
     current = state.pokemon.get(old_pid)
+    if current and state.knowledge.get('reliability_v2'):
+        from .evidence_projection import source_times
+        last_location=max(source_times(current.location.provenance),default=float('-inf'))
+        if any(o.get('kind')=='coverage_gap' and o.get('side') in {event.side,'field','unknown'}
+               and o['end']>last_location for o in state.observations):
+            # Re-observing the same species after missing coverage does not prove
+            # it is the same biological individual. Keep historical revelations.
+            current=None
     continuity = a.get('continuity') or {}
     explicit = continuity.get('instance_id') if continuity.get('evidence') else None
+    pending = [state.pokemon[x['instance_id']] for x in state.knowledge.get('unplaced_entries',[])
+        if x['side']==event.side and x['species_id']==ref['species_id']
+        and x.get('timestamp') is not None and x['timestamp']<=timestamp
+        and state.pokemon[x['instance_id']].location.value=={'kind':'unplaced_entry','slot':None}]
+    if state.knowledge.get('reliability_v2'):
+        from .evidence_projection import source_times
+        pending=[p for p in pending if not any(o.get('kind')=='coverage_gap'
+            and o.get('side') in {event.side,'field','unknown'} and o['end']<=timestamp
+            and o['end']>max(source_times(p.location.provenance),default=float('-inf'))
+            for o in state.observations)]
     if explicit:
         if explicit not in team.party_instance_ids or state.pokemon[explicit].species.value.get('species_id') != ref['species_id']:
             raise Contradiction('unsupported_hud_continuity_relation')
         p = state.pokemon[explicit]; basis = 'explicit_evidenced_instance_relation'
+    elif len(pending)==1:
+        p=pending[0];basis='unique_prior_unplaced_entry'
     elif current and current.species.known and current.species.value.get('species_id') == ref['species_id']:
         p = current; basis = 'same_observed_slot_and_species_episode'
     else:
@@ -146,6 +172,8 @@ def hud_transition(engine, state, event, record):
         for position, pid in list(team.active_slots.items()):
             if pid == p.pokemon_instance_id:
                 del team.active_slots[position]
+        if old_pid and old_pid!=p.pokemon_instance_id and old_pid in state.pokemon:
+            state.pokemon[old_pid].location=Fact(provenance=[evidence_link(event)])
         team.active_slots[a['slot']] = p.pokemon_instance_id
         interval = dict(after=previous['timestamp'] if previous else None, at_or_before=timestamp,
                         action_time=None, cause=None, previous_instance_id=old_pid,
@@ -194,6 +222,17 @@ def hud_transition(engine, state, event, record):
     return False
 
 
+def context_supported(state, side, slot, timestamp):
+    """Explicit intervening uncertainty blocks aliases and actor binding."""
+    if not state.knowledge.get('reliability_v1'):return True
+    pending=[x for x in state.knowledge.get('unplaced_entries',[]) if x['side']==side
+        and state.pokemon[x['instance_id']].location.value=={'kind':'unplaced_entry','slot':None}]
+    if pending:return False
+    last=state.knowledge.get('hud_fusion',{}).get('slots',{}).get(side+':'+slot,{})
+    return not any(o.get('kind')=='coverage_gap' and o.get('side') in {side,'field','unknown'}
+        and o['end']<=timestamp and o['end']>last.get('timestamp',float('-inf')) for o in state.observations)
+
+
 def prepare_message(state, event):
     """Reparse only opt-in fusion messages against this replay prefix."""
     if not event.attributes.get('fusion_context'):
@@ -208,13 +247,15 @@ def prepare_message(state, event):
             last = state.knowledge.get('hud_fusion', {}).get('slots', {}).get(side + ':' + slot)
             if last and (last['status'] != 'accepted' or last['timestamp'] > timestamp):
                 continue
+            if not context_supported(state,side,slot,timestamp):continue
             mon = state.pokemon[pid]
             if mon.species.known:
                 context.active[side].add(mon.species.value['canonical_id'])
     aliases = state.knowledge.get('hud_fusion', {}).get('aliases', {})
     for binding in aliases.values():
         side = binding['side']; pid = binding['instance_id']
-        if pid not in state.sides[side].active_slots.values():
+        slots=[s for s,p in state.sides[side].active_slots.items() if p==pid]
+        if not slots or not context_supported(state,side,slots[0],timestamp):
             continue
         name = next(k.split(':', 1)[1] for k, v in aliases.items() if v is binding)
         alternatives = [b for k, b in aliases.items() if k.split(':', 1)[1] == name]
@@ -232,6 +273,7 @@ def prepare_message(state, event):
     if parsed.actor and parsed.side in state.sides:
         matches = []
         for slot, pid in state.sides[parsed.side].active_slots.items():
+            if not context_supported(state,parsed.side,slot,timestamp):continue
             mon = state.pokemon[pid]
             last = state.knowledge.get('hud_fusion', {}).get('slots', {}).get(parsed.side + ':' + slot)
             if last and (last['status'] != 'accepted' or last['timestamp'] > timestamp):

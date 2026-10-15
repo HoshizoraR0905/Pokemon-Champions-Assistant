@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "verification": "provisional Champions executable reference; generic encyclopedia descriptions are not Champions-specific rounding verification",
+  "oracle": {
+    "package": "@smogon/calc",
+    "version": "0.12.0",
+    "generation": 0,
+    "license": "MIT",
+    "repository": "https://github.com/smogon/damage-calc",
+    "inspected_commit": "9c57e9b8c1d8a7403b71c10042136ea5e001593b",
+    "files": {
+      "dist/mechanics/champions.js": "d93f27bf742c55e8feb8faca967402329eedd810bbc8681f49e111499658f3bb",
+      "dist/mechanics/util.js": "78bc9316a99655c330a0d1ba7f93e6c66fab05d5919a0993ed8dbd4546aeb8db",
+      "dist/data/moves.js": "9cc10f7120bedb48be7a0606e0e60d6625a742af5878f81e5249d06405e620d5",
+      "dist/data/species.js": "dd50acf25dbdd5e3a79d725b195f34861ea10109e42d2690c6bc5819e276c167",
+      "dist/data/types.js": "2c141c3d49f147a18847b032888a46ab066dbb592c2595e18077bfdb48608960"
+    }
+  },
+  "showdown_commit": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+  "sources": [
+    {
+      "url": "https://wiki.52poke.com/wiki/速度",
+      "revision_id": 2616893,
+      "retrieved_date": "2026-10-15",
+      "license": "CC BY-NC-SA 3.0",
+      "attribution": "52Poké contributors"
+    },
+    {
+      "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/mods/champions/scripts.ts",
+      "scope": "getActionSpeed: reversed Speed without standard Trick Room underflow"
+    },
+    {
+      "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/sim/pokemon.ts",
+      "scope": "getStat: stage calculation and 10000 Speed cap"
+    }
+  ],
+  "snapshot_sha256": {
+    ".cache/m32/sources/champions-scripts.ts": "21c26e520804d648493f43a6ec94e5c7d65a79cc41eb58feeb39df7a2914c126",
+    ".cache/m32/sources/pokemon.ts": "e36493e502858c7f7fa8e899f4b4439295fefa452f96c5017e974494f1c4a688",
+    ".cache/m32/sources/speed.html": "ca793dbbc96b15983d898b26c5948a9a62188b91103668c6d0a0665525bbbcc2"
+  },
+  "knowledge_manifest_sha256": "baede21b38040373e0771ebef7d7af39ae71708326485c5501204917b26bb612",
+  "limits": [
+    "actual Speed 1..4095 avoids reference/simulator 16-bit stage overflow disagreement",
+    "No mid-turn recalculation claim",
+    "Priority abilities, conditional/special actions and order triggers gated",
+    "No official Champions rounding certification",
+    "Effective Speed >999 is unsupported: pinned calc gen0 cap999 differs from pinned simulator cap10000. Modern-generation probe is diagnostic only, never a Champions fallback."
+  ]
+}

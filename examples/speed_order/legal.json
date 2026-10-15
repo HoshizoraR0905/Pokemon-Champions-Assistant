@@ -1,0 +1,91 @@
+{
+  "operation": "infer",
+  "input": {
+    "observations": [
+      {
+        "id": "order1",
+        "battle_id": "synthetic",
+        "stat_epoch": "original",
+        "sequence": [
+          "opponent",
+          "own"
+        ],
+        "evidence_kind": "verified_action_order",
+        "context": {
+          "own": {
+            "identity": "Charizard",
+            "form": "base",
+            "instance_id": "own:1",
+            "actual_speed": 100,
+            "stage": 0,
+            "tailwind": false,
+            "ability": "none",
+            "ability_active": true,
+            "item": "none",
+            "status": "none",
+            "unburden_active": false,
+            "activation_evidence": null,
+            "other_effects": []
+          },
+          "opponent": {
+            "identity": "Sneasler",
+            "form": "base",
+            "instance_id": "opponent:1",
+            "actual_speed": null,
+            "stage": 0,
+            "tailwind": false,
+            "ability": "none",
+            "ability_active": true,
+            "item": "none",
+            "status": "none",
+            "unburden_active": false,
+            "activation_evidence": null,
+            "other_effects": []
+          },
+          "field": {
+            "weather": "none",
+            "terrain": "none",
+            "trick_room": false,
+            "other_effects": []
+          },
+          "actions": {
+            "own": {
+              "kind": "move",
+              "move": "Body Slam",
+              "effective_priority": 0,
+              "evidence": "Explicit audited priority and actual completed move action."
+            },
+            "opponent": {
+              "kind": "move",
+              "move": "Body Slam",
+              "effective_priority": 0,
+              "evidence": "Explicit audited priority and actual completed move action."
+            }
+          },
+          "ordering_effects": [],
+          "timing": {
+            "turn": 1,
+            "decision_id": "turn1:start",
+            "state_at": "order_decision",
+            "modifier_changes": []
+          },
+          "comparable": true,
+          "evidence": "Synthetic established action sequence at ordering snapshot; no switch, failed or repeated actions."
+        }
+      }
+    ],
+    "candidate_speeds": {
+      "minimum": 50,
+      "maximum": 249
+    },
+    "profile": "showdown-champions-reference-v1",
+    "champions": {
+      "identity": "Sneasler",
+      "form": "base",
+      "known_training_points": {
+        "hp": 32,
+        "attack": 32
+      }
+    }
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "status": {
+          "enum": [
+            "exact_reference",
+            "exact",
+            "conditional",
+            "empty",
+            "non_informative",
+            "own_guaranteed_first",
+            "opponent_guaranteed_first",
+            "speed_tie_possible",
+            "mixed_order_possible",
+            "non_speed_ordering",
+            "unsupported",
+            "insufficient_information"
+          ]
+        },
+        "diagnostics": {
+          "type": "array",
+          "items": {}
+        },
+        "provenance": {
+          "type": "object"
+        },
+        "effective_speed": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 999
+        },
+        "stage_speed": {
+          "type": "integer"
+        },
+        "modifier_fixed": {
+          "type": "integer"
+        },
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "paralysis_applied": {
+          "type": "boolean"
+        },
+        "identity": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "status",
+        "effective_speed",
+        "diagnostics",
+        "provenance"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "status": {
+          "enum": [
+            "exact_reference",
+            "exact",
+            "conditional",
+            "empty",
+            "non_informative",
+            "own_guaranteed_first",
+            "opponent_guaranteed_first",
+            "speed_tie_possible",
+            "mixed_order_possible",
+            "non_speed_ordering",
+            "unsupported",
+            "insufficient_information"
+          ]
+        },
+        "diagnostics": {
+          "type": "array",
+          "items": {}
+        },
+        "provenance": {
+          "type": "object"
+        },
+        "feasible": {
+          "anyOf": [
+            {
+              "type": "object",
+              "required": [
+                "values",
+                "minimum",
+                "maximum",
+                "hull",
+                "count",
+                "has_gaps",
+                "intervals"
+              ],
+              "properties": {
+                "values": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 4095
+                  },
+                  "uniqueItems": true
+                },
+                "hull": {
+                  "type": [
+                    "array",
+                    "null"
+                  ]
+                },
+                "count": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "has_gaps": {
+                  "type": "boolean"
+                }
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "numerical_feasible": {
+          "anyOf": [
+            {
+              "type": "object",
+              "required": [
+                "values",
+                "minimum",
+                "maximum",
+                "hull",
+                "count",
+                "has_gaps",
+                "intervals"
+              ],
+              "properties": {
+                "values": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 4095
+                  },
+                  "uniqueItems": true
+                },
+                "hull": {
+                  "type": [
+                    "array",
+                    "null"
+                  ]
+                },
+                "count": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "has_gaps": {
+                  "type": "boolean"
+                }
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "candidate_domain": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4095
+          },
+          "uniqueItems": true
+        },
+        "scenarios": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "assignment",
+              "feasible",
+              "per_observation"
+            ]
+          }
+        },
+        "per_observation": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "conflict": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "champions": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "compatible_training": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "work": {
+          "type": "object",
+          "properties": {
+            "evaluations": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "memo_hits": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "evaluations",
+            "memo_hits"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema_version",
+        "status",
+        "diagnostics",
+        "provenance",
+        "feasible",
+        "numerical_feasible",
+        "candidate_domain",
+        "scenarios",
+        "per_observation",
+        "conflict",
+        "champions",
+        "compatible_training",
+        "work"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "status": {
+          "enum": [
+            "exact_reference",
+            "exact",
+            "conditional",
+            "empty",
+            "non_informative",
+            "own_guaranteed_first",
+            "opponent_guaranteed_first",
+            "speed_tie_possible",
+            "mixed_order_possible",
+            "non_speed_ordering",
+            "unsupported",
+            "insufficient_information"
+          ]
+        },
+        "diagnostics": {
+          "type": "array",
+          "items": {}
+        },
+        "provenance": {
+          "type": "object"
+        },
+        "explanation": {
+          "type": "string"
+        },
+        "own_guaranteed_first": {
+          "type": "boolean"
+        },
+        "opponent_guaranteed_first": {
+          "type": "boolean"
+        },
+        "speed_tie_possible": {
+          "type": "boolean"
+        },
+        "tie_only_uncertainty": {
+          "type": "boolean"
+        },
+        "non_tie_order_varies": {
+          "type": "boolean"
+        },
+        "possible_first": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "non_tie_possible_first": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "scenarios": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "status",
+        "diagnostics",
+        "provenance",
+        "explanation",
+        "own_guaranteed_first",
+        "opponent_guaranteed_first",
+        "speed_tie_possible",
+        "possible_first",
+        "scenarios"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "status": {
+          "const": "insufficient_information"
+        },
+        "diagnostics": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "status",
+        "diagnostics"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

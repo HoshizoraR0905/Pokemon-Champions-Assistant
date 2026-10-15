@@ -11,10 +11,35 @@ from knowledge import KnowledgeBase
 DEFAULT_CACHE=Path(__file__).resolve().parents[1]/'.cache/champions-icons'
 
 
+def color_correlation(query,template,mask=None):
+    """Center BGR jointly, preserving color differences lost by per-channel NCC.
+
+    Interleaving channels in one row makes OpenCV compute one joint mean.
+    Only every third output column represents a spatially aligned BGR pixel.
+    """
+    q=query.reshape(query.shape[0],-1)
+    t=template.reshape(template.shape[0],-1)
+    if mask is None:return cv2.matchTemplate(q,t,cv2.TM_CCOEFF_NORMED)[:,::3]
+    # Compute masked NCC explicitly: some OpenCV builds fail for particular
+    # template/image height differences in masked CCOEFF_NORMED.
+    m=np.repeat(mask,3,axis=1).astype('float32');q=q.astype('float32');t=t.astype('float32')
+    n=float(m.sum())
+    if not n:return np.full((q.shape[0]-t.shape[0]+1,(q.shape[1]-t.shape[1])//3+1),-1.)
+    centered=(t-float((t*m).sum())/n)*m
+    numerator=cv2.matchTemplate(q,centered,cv2.TM_CCORR)
+    sums=cv2.matchTemplate(q,m,cv2.TM_CCORR)
+    squares=cv2.matchTemplate(q*q,m,cv2.TM_CCORR)
+    denominator=np.sqrt(np.maximum(0,squares-sums*sums/n)*float((centered*centered).sum()))
+    scores=np.full(numerator.shape,-1.,dtype='float32')
+    np.divide(numerator,denominator,out=scores,where=denominator>1e-6)
+    return np.clip(scores[:,::3],-1,1)
+
+
 class IconRecognizer:
-    def __init__(self,directory=None,*,minimum=.80,margin=.10,max_height=64):
+    def __init__(self,directory=None,*,minimum=.80,margin=.10,max_height=64,color_sensitive=False):
         self.directory=Path(directory) if directory else DEFAULT_CACHE
         self.minimum,self.margin,self.max_height=minimum,margin,max_height
+        self.color_sensitive=color_sensitive
         index_path=self.directory/'index.json'
         if not index_path.exists():raise ValueError('Icon cache missing; see scripts/retrieve_visuals.py')
         index=json.loads(index_path.read_text());self.source=index['source']
@@ -51,6 +76,8 @@ class IconRecognizer:
     def identify(self,image,region):
         start=time.perf_counter();x1,y1,x2,y2=region
         result=IconEvidence(region=region,source_commit=self.source['commit'])
+        if self.color_sensitive:
+            result.method='masked_multiscale_color_correlation_v2'
         crop=image[y1:y2,x1:x2]
         if not crop.size or crop.shape[0]<12 or crop.shape[1]<12:
             result.reason='crop_too_small';return result
@@ -73,7 +100,8 @@ class IconRecognizer:
                 rendered=(template[:,:,:3].astype('float32')*alpha+background*(1-alpha)).astype('uint8')
                 # Fast complete-library pass renders transparency against the
                 # observed panel color; the shortlist gets masked refinement.
-                scores=cv2.matchTemplate(query.astype('uint8'),rendered,cv2.TM_CCOEFF_NORMED)
+                scores=(color_correlation(query.astype('uint8'),rendered) if self.color_sensitive
+                        else cv2.matchTemplate(query.astype('uint8'),rendered,cv2.TM_CCOEFF_NORMED))
                 scores=np.nan_to_num(scores,nan=-1,posinf=-1,neginf=-1)
                 _,value,_,loc=cv2.minMaxLoc(scores)
                 if value>best[0]:best=(value,template_scale,loc)
@@ -94,7 +122,8 @@ class IconRecognizer:
                 if tw>fine.shape[1] or tw<8:continue
                 template=cv2.resize(rgba,(tw,th),interpolation=cv2.INTER_AREA)
                 mask=(template[:,:,3]>200).astype('uint8')
-                scores=cv2.matchTemplate(fine,template[:,:,:3].astype('float32'),cv2.TM_CCOEFF_NORMED,mask=mask)
+                scores=(color_correlation(fine,template[:,:,:3].astype('float32'),mask) if self.color_sensitive
+                        else cv2.matchTemplate(fine,template[:,:,:3].astype('float32'),cv2.TM_CCOEFF_NORMED,mask=mask))
                 scores=np.nan_to_num(scores,nan=-1,posinf=-1,neginf=-1)
                 _,value,_,loc=cv2.minMaxLoc(scores)
                 if value>best[0]:best=(value,float(template_scale),loc)

@@ -189,6 +189,10 @@ class StateEngine:
                 snapshot_callback(record,self.state)
         return self.state
 
+    def evidence_projection(self, *, as_of):
+        from .evidence_projection import evidence_projection
+        return evidence_projection(self, as_of=as_of)
+
     def decision_state(self,hidden_engine=None):
         from .decision_state import decision_state
         return decision_state(self.state,self.mechanic_rules,hidden_engine=hidden_engine)
@@ -261,6 +265,21 @@ class StateEngine:
 
     def _transition(self,state,e,record):
         kind=e.event_type;a=e.attributes
+        if kind in {'visual_observation','coverage_observation'}:
+            if not state.knowledge.get('reliability_v1'):raise Deferred('reliability_profile_required')
+            if kind=='coverage_observation':
+                if a.get('battle_id')!=state.battle_id:raise Contradiction('coverage_battle_ownership_mismatch')
+                start=a.get('start');end=a.get('observation_time')
+                if not all(type(t) in (int,float) and math.isfinite(t) for t in (start,end)) or not 0<=start<=end:raise Contradiction('invalid_coverage_interval')
+                if a.get('status')!='gap':raise Deferred('unsupported_coverage_assertion')
+                state.observations.append(dict(kind='coverage_gap',start=start,end=end,side=e.side,fields=deepcopy(a.get('fields',[])),evidence=evidence_link(e)))
+                return True
+            from .reliability import visual_transition
+            return visual_transition(self,state,e,record)
+        if kind=='send_out' and state.knowledge.get('reliability_v1'):
+            from .reliability import unplaced_entry
+            result=unplaced_entry(self,state,e,record)
+            if result is not None:return result
         if kind=='hud_observation':
             from .evidence_fusion import hud_transition
             return hud_transition(self,state,e,record)

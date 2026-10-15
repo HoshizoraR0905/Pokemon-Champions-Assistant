@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "independence": "Visual review of frozen C intervals and supplemental UI, plus two ordinary HUD negatives each tested in two adapters. Not an independent random sample; not used by production recognition.",
+  "ability_discrepancy": "Resume checkpoint called selected frame inconsistent with frozen Stamina label. Saved panel zoom shows 持久力; the cached ability ROI is blank. Preserve frozen label and unresolved OCR, correct crop interpretation only.",
+  "examples": [
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 293.5,
+      "image": ".cache/battles/sample_battle_2/m233c/measurement/sampling/649baedd5058bf1f2325b9d0/6cdc084882a721c398e92314/000004.png",
+      "sha256": "034b44292e05dd9ec49b85085de082c5d5b342779898b56ece96318806b53eb1",
+      "kind": "message",
+      "expected": {
+        "canonical_move": null
+      }
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 295.0,
+      "image": ".cache/battles/sample_battle_2/m233c/measurement/sampling/649baedd5058bf1f2325b9d0/6cdc084882a721c398e92314/000007.png",
+      "sha256": "b892d6ed71518ea88dfb5773381df9935b754190ab867840e00436d509e261ff",
+      "kind": "message",
+      "expected": {
+        "canonical_move": null
+      }
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 297.0,
+      "image": ".cache/battles/sample_battle_2/m233c/measurement/sampling/649baedd5058bf1f2325b9d0/6cdc084882a721c398e92314/000011.png",
+      "sha256": "4bfc4116845b8bad9f757575b12010cf8afc8f86d47031a184bb8f23b6406e03",
+      "kind": "message",
+      "expected": {
+        "canonical_move": null
+      }
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 299.0,
+      "image": ".cache/battles/sample_battle_2/m233c/measurement/sampling/649baedd5058bf1f2325b9d0/6cdc084882a721c398e92314/000015.png",
+      "sha256": "6b622c84cb5f572899d56250d9a0cc27ca65f60e8008018460fb0037de0df5fc",
+      "kind": "message",
+      "expected": {
+        "canonical_move": "pokeapi:move:890"
+      }
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 299.5,
+      "image": ".cache/battles/sample_battle_2/m233c/measurement/sampling/649baedd5058bf1f2325b9d0/6cdc084882a721c398e92314/000016.png",
+      "sha256": "6058270feec156c6eaaf410c74367ce6aa2f413a12b2e2860a4f184011194fa4",
+      "kind": "message",
+      "expected": {
+        "canonical_move": "pokeapi:move:890"
+      }
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 452.02666666666664,
+      "image": ".cache/battles/sample_battle_4/m233c/measurement/sampling/c8c2b68f658ed895d5abdf14/d6b3079f3a45deb481d999d1/000005.png",
+      "sha256": "b3788dc6989b37ce663101724025f40ba00352c811becbdac304862ddca7cbf8",
+      "kind": "message",
+      "expected": {
+        "canonical_move": "pokeapi:move:182",
+        "expected_admission": "unresolved_below_threshold"
+      }
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 455.51,
+      "image": ".cache/battles/sample_battle_4/m233c/measurement/sampling/c8c2b68f658ed895d5abdf14/d6b3079f3a45deb481d999d1/000012.png",
+      "sha256": "24b58a6d53efd9bd5e0e126b5c50cb8165efd06b5a2f88a8e98ff9c4519d1a52",
+      "kind": "message",
+      "expected": {
+        "canonical_move": null
+      }
+    },
+    {
+      "battle_id": "sample_battle_4",
+      "timestamp": 457.51,
+      "image": ".cache/battles/sample_battle_4/m233c/measurement/sampling/c8c2b68f658ed895d5abdf14/d6b3079f3a45deb481d999d1/000016.png",
+      "sha256": "fa4a958b2d5bab90f8262c38aac4ca43e7b9b43ec7060efd6d78a547e9c7eace",
+      "kind": "message",
+      "expected": {
+        "canonical_move": "pokeapi:move:94"
+      }
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 296.7,
+      "image": ".cache/battles/sample_battle_2/m233c/reference/ampling/35c7113eb131814f7f051920/16c6823c263e680bcd658996/000048.png",
+      "sha256": "c06ffca2556d7af9eb53c20b3e0e2ba7f2c702f71262c6f2d9feb4e1dc32dda5",
+      "kind": "popup",
+      "expected": {
+        "species_id": 186,
+        "ability": "pokeapi:ability:2",
+        "side": "self"
+      }
+    },
+    {
+      "battle_id": "sample_battle_3",
+      "timestamp": 384.548333,
+      "image": ".cache/m223-survey/000193.jpg",
+      "sha256": "af2b73eaf867eff7588808109d3dbd6efdb28cd7c98e2d967a79b65628782eb1",
+      "kind": "detail",
+      "expected": {
+        "species_id": 1018,
+        "hp": {
+          "current": 144,
+          "maximum": 197
+        },
+        "item": "pokeapi:item:211",
+        "ability": "pokeapi:ability:192",
+        "stages": {
+          "attack": -1,
+          "defense": 1,
+          "special_attack": 2
+        },
+        "field": [
+          "rain",
+          "aurora_veil",
+          "grassy"
+        ],
+        "side": "self"
+      }
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 434.02333333333337,
+      "image": ".cache/m14-phases/sample_battle/00013743.png",
+      "sha256": "39d826946dddf0ff0e50a1a584f103401a15f8b20c7a4376c50652c470377c44",
+      "kind": "popup",
+      "expected": {
+        "visual_events": 0
+      }
+    },
+    {
+      "battle_id": "sample_battle_0",
+      "timestamp": 434.02333333333337,
+      "image": ".cache/m14-phases/sample_battle/00013743.png",
+      "sha256": "39d826946dddf0ff0e50a1a584f103401a15f8b20c7a4376c50652c470377c44",
+      "kind": "detail",
+      "expected": {
+        "visual_events": 0
+      }
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 344.008333,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000300/000023.jpg",
+      "sha256": "c05005fdb257c683ff01b5ef487de036f5f90e2f875bace12aa2ea90aad9a8d5",
+      "kind": "popup",
+      "expected": {
+        "visual_events": 0
+      }
+    },
+    {
+      "battle_id": "sample_battle_2",
+      "timestamp": 344.008333,
+      "image": ".cache/battles/sample_battle_2/m232-survey/segment-000300/000023.jpg",
+      "sha256": "c05005fdb257c683ff01b5ef487de036f5f90e2f875bace12aa2ea90aad9a8d5",
+      "kind": "detail",
+      "expected": {
+        "visual_events": 0
+      }
+    }
+  ]
+}

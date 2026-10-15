@@ -1,0 +1,1545 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "const": "effective"
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "actual_speed": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4095
+            },
+            "participant": {
+              "type": "object",
+              "properties": {
+                "identity": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "object"
+                    }
+                  ]
+                },
+                "form": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "object"
+                    }
+                  ]
+                },
+                "ability": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "object"
+                    }
+                  ]
+                },
+                "item": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "object"
+                    }
+                  ]
+                },
+                "status": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "object"
+                    }
+                  ]
+                },
+                "activation_evidence": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "object"
+                    }
+                  ]
+                },
+                "instance_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "actual_speed": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "stage": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "tailwind": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "ability_active": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "unburden_active": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "other_effects": {
+                  "type": "array",
+                  "items": {}
+                }
+              },
+              "required": [
+                "identity",
+                "form",
+                "ability",
+                "item",
+                "status",
+                "activation_evidence",
+                "instance_id",
+                "actual_speed",
+                "stage",
+                "tailwind",
+                "ability_active",
+                "unburden_active",
+                "other_effects"
+              ],
+              "additionalProperties": false
+            },
+            "field": {
+              "type": "object",
+              "properties": {
+                "weather": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "object"
+                    }
+                  ]
+                },
+                "terrain": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "object"
+                    }
+                  ]
+                },
+                "trick_room": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "other_effects": {
+                  "type": "array",
+                  "items": {}
+                }
+              },
+              "required": [
+                "weather",
+                "terrain",
+                "trick_room",
+                "other_effects"
+              ],
+              "additionalProperties": false
+            },
+            "profile": {
+              "enum": [
+                "champions-evidence-only-v1",
+                "showdown-champions-reference-v1"
+              ]
+            }
+          },
+          "required": [
+            "actual_speed",
+            "participant",
+            "field"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "operation",
+        "input"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "const": "infer"
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "observations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "battle_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "stat_epoch": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sequence": {
+                    "enum": [
+                      [
+                        "own",
+                        "opponent"
+                      ],
+                      [
+                        "opponent",
+                        "own"
+                      ]
+                    ]
+                  },
+                  "evidence_kind": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "context": {
+                    "type": "object",
+                    "properties": {
+                      "own": {
+                        "type": "object",
+                        "properties": {
+                          "identity": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "form": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "ability": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "item": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "status": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "activation_evidence": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "instance_id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "actual_speed": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ]
+                          },
+                          "stage": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ]
+                          },
+                          "tailwind": {
+                            "type": [
+                              "boolean",
+                              "null"
+                            ]
+                          },
+                          "ability_active": {
+                            "type": [
+                              "boolean",
+                              "null"
+                            ]
+                          },
+                          "unburden_active": {
+                            "type": [
+                              "boolean",
+                              "null"
+                            ]
+                          },
+                          "other_effects": {
+                            "type": "array",
+                            "items": {}
+                          }
+                        },
+                        "required": [
+                          "identity",
+                          "form",
+                          "ability",
+                          "item",
+                          "status",
+                          "activation_evidence",
+                          "instance_id",
+                          "actual_speed",
+                          "stage",
+                          "tailwind",
+                          "ability_active",
+                          "unburden_active",
+                          "other_effects"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "opponent": {
+                        "type": "object",
+                        "properties": {
+                          "identity": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "form": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "ability": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "item": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "status": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "activation_evidence": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "instance_id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "actual_speed": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ]
+                          },
+                          "stage": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ]
+                          },
+                          "tailwind": {
+                            "type": [
+                              "boolean",
+                              "null"
+                            ]
+                          },
+                          "ability_active": {
+                            "type": [
+                              "boolean",
+                              "null"
+                            ]
+                          },
+                          "unburden_active": {
+                            "type": [
+                              "boolean",
+                              "null"
+                            ]
+                          },
+                          "other_effects": {
+                            "type": "array",
+                            "items": {}
+                          }
+                        },
+                        "required": [
+                          "identity",
+                          "form",
+                          "ability",
+                          "item",
+                          "status",
+                          "activation_evidence",
+                          "instance_id",
+                          "actual_speed",
+                          "stage",
+                          "tailwind",
+                          "ability_active",
+                          "unburden_active",
+                          "other_effects"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "field": {
+                        "type": "object",
+                        "properties": {
+                          "weather": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "terrain": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "trick_room": {
+                            "type": [
+                              "boolean",
+                              "null"
+                            ]
+                          },
+                          "other_effects": {
+                            "type": "array",
+                            "items": {}
+                          }
+                        },
+                        "required": [
+                          "weather",
+                          "terrain",
+                          "trick_room",
+                          "other_effects"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "actions": {
+                        "type": "object",
+                        "properties": {
+                          "own": {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "move": {
+                                "anyOf": [
+                                  {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  {
+                                    "type": "null"
+                                  },
+                                  {
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "effective_priority": {
+                                "type": [
+                                  "integer",
+                                  "null"
+                                ]
+                              },
+                              "evidence": {
+                                "type": "string",
+                                "minLength": 1
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "move",
+                              "effective_priority",
+                              "evidence"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "opponent": {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "move": {
+                                "anyOf": [
+                                  {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  {
+                                    "type": "null"
+                                  },
+                                  {
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "effective_priority": {
+                                "type": [
+                                  "integer",
+                                  "null"
+                                ]
+                              },
+                              "evidence": {
+                                "type": "string",
+                                "minLength": 1
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "move",
+                              "effective_priority",
+                              "evidence"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "own",
+                          "opponent"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "ordering_effects": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "effect": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "actor": {
+                              "enum": [
+                                "own",
+                                "opponent"
+                              ]
+                            },
+                            "active": {
+                              "type": [
+                                "boolean",
+                                "null"
+                              ]
+                            },
+                            "evidence": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "effect",
+                            "actor",
+                            "active",
+                            "evidence"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "timing": {
+                        "type": "object",
+                        "properties": {
+                          "turn": {
+                            "type": "integer",
+                            "minimum": 1
+                          },
+                          "decision_id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "state_at": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "modifier_changes": {
+                            "type": "array",
+                            "items": {}
+                          }
+                        },
+                        "required": [
+                          "turn",
+                          "decision_id",
+                          "state_at",
+                          "modifier_changes"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "comparable": {
+                        "type": "boolean"
+                      },
+                      "evidence": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "own",
+                      "opponent",
+                      "field",
+                      "actions",
+                      "ordering_effects",
+                      "timing",
+                      "comparable",
+                      "evidence"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "id",
+                  "battle_id",
+                  "stat_epoch",
+                  "sequence",
+                  "evidence_kind",
+                  "context"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            },
+            "candidate_speeds": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 4095
+                  },
+                  "minItems": 1
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "minimum": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 4095
+                    },
+                    "maximum": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 4095
+                    }
+                  },
+                  "required": [
+                    "minimum",
+                    "maximum"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "champions": {
+              "type": "object"
+            },
+            "profile": {
+              "enum": [
+                "champions-evidence-only-v1",
+                "showdown-champions-reference-v1"
+              ]
+            },
+            "variables": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scope": {
+                    "enum": [
+                      "shared",
+                      "observation"
+                    ]
+                  },
+                  "observation_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                  },
+                  "path": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "values": {
+                    "type": "array",
+                    "items": {},
+                    "minItems": 1
+                  },
+                  "change_evidence": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "id",
+                  "scope",
+                  "observation_ids",
+                  "path",
+                  "values"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "max_assignments": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1024
+            },
+            "max_evaluations": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000
+            }
+          },
+          "required": [
+            "observations"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "operation",
+        "input"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "const": "compare"
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "context": {
+              "type": "object",
+              "properties": {
+                "own": {
+                  "type": "object",
+                  "properties": {
+                    "identity": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "form": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "ability": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "item": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "status": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "activation_evidence": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "instance_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "actual_speed": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "stage": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "tailwind": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "ability_active": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "unburden_active": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "other_effects": {
+                      "type": "array",
+                      "items": {}
+                    }
+                  },
+                  "required": [
+                    "identity",
+                    "form",
+                    "ability",
+                    "item",
+                    "status",
+                    "activation_evidence",
+                    "instance_id",
+                    "actual_speed",
+                    "stage",
+                    "tailwind",
+                    "ability_active",
+                    "unburden_active",
+                    "other_effects"
+                  ],
+                  "additionalProperties": false
+                },
+                "opponent": {
+                  "type": "object",
+                  "properties": {
+                    "identity": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "form": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "ability": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "item": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "status": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "activation_evidence": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "instance_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "actual_speed": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "stage": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "tailwind": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "ability_active": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "unburden_active": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "other_effects": {
+                      "type": "array",
+                      "items": {}
+                    }
+                  },
+                  "required": [
+                    "identity",
+                    "form",
+                    "ability",
+                    "item",
+                    "status",
+                    "activation_evidence",
+                    "instance_id",
+                    "actual_speed",
+                    "stage",
+                    "tailwind",
+                    "ability_active",
+                    "unburden_active",
+                    "other_effects"
+                  ],
+                  "additionalProperties": false
+                },
+                "field": {
+                  "type": "object",
+                  "properties": {
+                    "weather": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "terrain": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "trick_room": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "other_effects": {
+                      "type": "array",
+                      "items": {}
+                    }
+                  },
+                  "required": [
+                    "weather",
+                    "terrain",
+                    "trick_room",
+                    "other_effects"
+                  ],
+                  "additionalProperties": false
+                },
+                "actions": {
+                  "type": "object",
+                  "properties": {
+                    "own": {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "move": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            {
+                              "type": "null"
+                            },
+                            {
+                              "type": "object"
+                            }
+                          ]
+                        },
+                        "effective_priority": {
+                          "type": [
+                            "integer",
+                            "null"
+                          ]
+                        },
+                        "evidence": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "move",
+                        "effective_priority",
+                        "evidence"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "opponent": {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "move": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            {
+                              "type": "null"
+                            },
+                            {
+                              "type": "object"
+                            }
+                          ]
+                        },
+                        "effective_priority": {
+                          "type": [
+                            "integer",
+                            "null"
+                          ]
+                        },
+                        "evidence": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "move",
+                        "effective_priority",
+                        "evidence"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "own",
+                    "opponent"
+                  ],
+                  "additionalProperties": false
+                },
+                "ordering_effects": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "effect": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "actor": {
+                        "enum": [
+                          "own",
+                          "opponent"
+                        ]
+                      },
+                      "active": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "evidence": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "effect",
+                      "actor",
+                      "active",
+                      "evidence"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "timing": {
+                  "type": "object",
+                  "properties": {
+                    "turn": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "decision_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "state_at": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "modifier_changes": {
+                      "type": "array",
+                      "items": {}
+                    }
+                  },
+                  "required": [
+                    "turn",
+                    "decision_id",
+                    "state_at",
+                    "modifier_changes"
+                  ],
+                  "additionalProperties": false
+                },
+                "comparable": {
+                  "type": "boolean"
+                },
+                "evidence": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "own",
+                "opponent",
+                "field",
+                "actions",
+                "ordering_effects",
+                "timing",
+                "comparable",
+                "evidence"
+              ],
+              "additionalProperties": false
+            },
+            "opponent_speeds": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 4095
+                  },
+                  "minItems": 1
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "minimum": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 4095
+                    },
+                    "maximum": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 4095
+                    }
+                  },
+                  "required": [
+                    "minimum",
+                    "maximum"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "profile": {
+              "enum": [
+                "champions-evidence-only-v1",
+                "showdown-champions-reference-v1"
+              ]
+            },
+            "variables": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scope": {
+                    "enum": [
+                      "shared",
+                      "observation"
+                    ]
+                  },
+                  "observation_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                  },
+                  "path": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "values": {
+                    "type": "array",
+                    "items": {},
+                    "minItems": 1
+                  },
+                  "change_evidence": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "id",
+                  "scope",
+                  "observation_ids",
+                  "path",
+                  "values"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "max_assignments": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1024
+            },
+            "max_evaluations": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000
+            }
+          },
+          "required": [
+            "context",
+            "opponent_speeds"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "operation",
+        "input"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}
