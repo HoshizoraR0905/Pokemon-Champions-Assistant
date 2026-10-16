@@ -342,6 +342,11 @@ class StateEngine:
             return False
         if kind=='hp_change' and (a.get('intermediate') is True or a.get('observation_kind')=='animation'):
             state.observations.append({'event_id':e.event_id,'kind':'intermediate_hp_sample','attributes':deepcopy(a),'evidence':evidence_link(e)});return True
+        if kind=='hp_change' and a.get('qualitative_only'):
+            p=self._resolve(state,e,record)
+            observation=dict(event_id=e.event_id,kind='qualitative_hp_loss',direction=a.get('direction'),
+                magnitude=a.get('magnitude'),before=None,after=None,cause=None,evidence=evidence_link(e))
+            p.hp.observations.append(observation);state.observations.append(deepcopy(observation));return True
         p=self._resolve(state,e,record,sending=kind=='send_out',allow_identity_change=kind=='transformation')
         team=state.sides[p.side_id]
         from .knowledge_grounding import ground_event

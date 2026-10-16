@@ -118,8 +118,11 @@ def stage_arrows(image):
 def parse_popup(readings):
     # Two source-specific line groups; never deduce an ability from weather.
     species=consensus(readings.get('species',[]),'species',suffix='的')
-    ability=consensus(readings.get('ability',[]),'ability')
-    return dict(species=species,ability=ability,status='supported' if species and ability else 'unresolved',readings=readings)
+    label=readings.get('ability',[])  # Legacy key names the second banner row, not its semantics.
+    ability=consensus(label,'ability')
+    item=consensus(label,'item')
+    supported=bool(species and bool(ability)!=bool(item))
+    return dict(species=species,ability=ability,item=item,status='supported' if supported else 'unresolved',readings=readings)
 
 
 def parse_detail(readings,arrows):

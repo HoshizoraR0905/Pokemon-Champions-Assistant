@@ -62,18 +62,20 @@ def video_events(rows, roster, battle_id):
             proof=Evidence('video_'+visual['kind'],row['source_id'],[row['sha256']],
                 dict(timestamp=row['timestamp'],image=row['image'],readings=deepcopy(visual.get('readings',{}))))
             if visual['kind']=='popup':
-                semantic=(visual['species']['canonical_id'],visual['ability']['canonical_id'])
+                kind='item' if visual.get('item') else 'ability'
+                ref=visual.get(kind)
+                semantic=(visual['species']['canonical_id'],kind,ref['canonical_id'])
                 session=banner_sessions[visual['screen_edge']]
                 if session['emitted_semantic']==semantic:continue
                 session['emitted_semantic']=semantic
                 # Screen edge alone never establishes trainer side. Prefix-local
                 # HUD context may bind a unique named species via the existing parser.
-                raw=visual['species']['name']+'的'+visual['ability']['name']
+                raw=visual['species']['name']+'的'+ref['name']
                 events.append(BattleEvent(stable_id(battle_id,'banner:'+row['source_id']+':'+visual['screen_edge']),
-                    'ability_activation','unknown',deepcopy(visual['species']),None,raw,
-                    dict(ability=deepcopy(visual['ability'])),None,[proof],None,'uncertain',['side_unknown'],
+                    kind+'_activation','unknown',deepcopy(visual['species']),None,raw,
+                    {kind:deepcopy(ref)},None,[proof],None,'uncertain',['side_unknown'],
                     dict(battle_id=battle_id,observation_time=row['timestamp'],fusion_context=True,
-                        source_region_type='ability_banner',screen_edge=visual['screen_edge'])).to_dict())
+                        source_region_type=kind+'_banner',screen_edge=visual['screen_edge'],consumption_observed=False)).to_dict())
             elif visual['kind']=='detail':
                 request=dict(battle_id=battle_id,image=row['image'],sha256=row['sha256'],timestamp=row['timestamp'],kind='detail')
                 events.extend(e.to_dict() for e in visual_events(dict(request=request,parsed=visual,

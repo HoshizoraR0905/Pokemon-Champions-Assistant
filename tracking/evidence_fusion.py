@@ -319,6 +319,23 @@ def context_supported(state, side, slot, timestamp):
         and o['end']<=timestamp and o['end']>last.get('timestamp',float('-inf')) for o in state.observations)
 
 
+def episode_hud(state, side, slot, timestamp):
+    """A prior menu/HUD failure cannot veto a newer explicit active entry.
+
+    A HUD at/after entry still gates admission. No future evidence is used.
+    """
+    last=state.knowledge.get('hud_fusion',{}).get('slots',{}).get(side+':'+slot)
+    pid=state.sides[side].active_slots.get(slot)
+    mon=state.pokemon.get(pid)
+    if last and mon and mon.location.value==dict(kind='active',slot=slot):
+        from .evidence_projection import source_times
+        direct=[p for p in mon.location.provenance if any(
+            e.get('source_type')=='video_message' for e in p.get('sources',[]))]
+        entered=max(source_times(direct),default=float('-inf'))
+        if last['timestamp'] < entered <= timestamp:return None
+    return last
+
+
 def prepare_message(state, event):
     """Reparse only opt-in fusion messages against this replay prefix."""
     if not event.attributes.get('fusion_context'):
@@ -335,7 +352,7 @@ def prepare_message(state, event):
             context.participants[side].display_name = trainer['display_name']
     for side, team in state.sides.items():
         for slot, pid in team.active_slots.items():
-            last = state.knowledge.get('hud_fusion', {}).get('slots', {}).get(side + ':' + slot)
+            last = episode_hud(state,side,slot,timestamp)
             if last and (last['status'] != 'accepted' or last['timestamp'] > timestamp):
                 continue
             if not context_supported(state,side,slot,timestamp):continue
@@ -359,12 +376,14 @@ def prepare_message(state, event):
         if len({b['identity']['canonical_id'] for b in alternatives}) == 1:
             context.display_aliases[name] = binding
     entry = dict(entry_id=event.event_id, source_id=event.evidence[0].source_id,
-                 raw_text=event.original_text, ocr_confidence=event.ocr_confidence,
+                 raw_text=event.attributes.get('semantic_text',event.original_text), ocr_confidence=event.ocr_confidence,
+                 source_region_type=event.attributes.get('source_region_type') if any(p.source_type=='video_message' for p in event.evidence) else None,
                  move_ocr_alternatives=[a for a in event.attributes.get('move_ocr_alternatives',[])
                     if a.get('source_sha256') in {oid for source in event.evidence for oid in source.observation_ids}])
     parsed = EventParser(knowledge()).parse(entry, context, state.battle_id)
     if 'observed_trainer_display_name' in parsed.attributes.get('side_basis', []):
         parsed.attributes['trainer_side_evidence'] = deepcopy(state.sides[parsed.side].trainer)
+    parsed.original_text=event.original_text
     parsed.event_id = event.event_id; parsed.evidence = deepcopy(event.evidence)
     parsed.attributes.update({k:deepcopy(v) for k,v in event.attributes.items() if k not in {'side_basis','display_alias_evidence','move_resolution'}})
     parsed.status = event.status
@@ -377,7 +396,7 @@ def prepare_message(state, event):
             if state.knowledge.get('identity_v1') and alias_claims and pid not in alias_instances:continue
             if not context_supported(state,parsed.side,slot,timestamp):continue
             mon = state.pokemon[pid]
-            last = state.knowledge.get('hud_fusion', {}).get('slots', {}).get(parsed.side + ':' + slot)
+            last = episode_hud(state,parsed.side,slot,timestamp)
             if last and (last['status'] != 'accepted' or last['timestamp'] > timestamp):
                 continue
             if mon.species.known and mon.species.value.get('species_id') == parsed.actor.get('species_id'):

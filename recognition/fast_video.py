@@ -275,7 +275,7 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
         rows=[json.loads(p.read_text()) for p in sorted((folder/'observations').glob('*.json'))]
         if len(rows)!=saved['row_count']:raise ValueError('Checkpoint/row mismatch; incomplete tail must be inspected, not silently discarded')
         for row in rows:
-            if row['message'].get('visibility')!='partial':occurrences.observe(row)
+            occurrences.observe(row)
         context_restore(recognizer.context,saved['context']);scheduler.next_time=saved['next_time'];scheduler.boost_until=saved['boost_until']
         if event_driven:
             scheduler.restore(saved['event_scheduler'])
@@ -435,9 +435,8 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
                 if t-last_fallback>=config.unknown_fallback_seconds:
                     row['unknown_fallback']=dict(status='insufficient_coverage',reason='No locally qualified expensive-recognition region; image retained for review')
                     last_fallback=t;counts['unknown_fallback_checkpoints']+=1
-            if row['message'].get('visibility')!='partial':
-                result=occurrences.observe(row);row['occurrence_decision']=dict(events=result['events'],reason=result['reason'])
-            else:row['occurrence_decision']=dict(events=[],reason='uncertain_visibility_not_disappearance')
+            result=occurrences.observe(row)
+            row['occurrence_decision']=dict(events=result['events'],reason=result['reason'])
             if event_driven:
                 for event in row['occurrence_decision']['events']:
                     controller.invalidate(event)

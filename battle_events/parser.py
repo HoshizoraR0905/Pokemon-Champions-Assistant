@@ -59,6 +59,13 @@ class EventParser:
         identity_text=text
         from .aliases import substitutions
         alias_side='opponent' if text.startswith('对手') else entry.get('side_hint','unknown')
+        if alias_side=='unknown' and region=='battle_message' and c.display_aliases:
+            # Establish literal actor grammar before consulting side-owned aliases.
+            # Empty context prevents a competing alias or active species from
+            # deciding which side's individual the literal name refers to.
+            literal=self.parse(entry,BattleContext(),battle_id)
+            if 'complete_live_actor_grammar' in literal.attributes.get('side_basis',[]):
+                alias_side=literal.side
         identity_text,used,collisions=substitutions(identity_text,c.display_aliases,alias_side)
         if used:attrs['display_alias_evidence']=used
         if collisions:unc.append('ambiguous_display_alias')
@@ -89,7 +96,8 @@ class EventParser:
         ended = ending(text)
         if ended:
             typ, side, fields = ended; attrs.update(fields); basis=['explicit_termination_text']
-        elif '换下了' in text or '回来' in text:typ='switch_out'
+        elif ('换下了' in text or '回来' in text
+              or re.fullmatch(r'(?:对手的)?.+要回到.+的身边了[！!。.]?',text)):typ='switch_out'
         elif '派出了' in text or text.startswith('上吧'):typ='send_out'
         elif re.fullmatch(r'.+(?:交换了位置|交换了场地)[！!。.]?',text):
             typ='position_change';attrs.update(mechanic='ally_switch',execution_observed=True)
@@ -100,7 +108,9 @@ class EventParser:
             attrs['move_resolution']=resolution
             refs['move']=next((self.identity(e.names.get('zh-hans',''),'move') for e in self.kb.by_kind['move']
                 if e.canonical_id==resolution['canonical_id']),None)
-            if refs['move'] is None:unc.append('unresolved_move')
+            if refs['move'] is None:
+                unc.append('unresolved_move')
+                if not move:typ='unknown'
             c.previous_move={'actor':subject,'side':side,'move':refs['move']}
         elif re.fullmatch(r'.+拍落了(对手的)?.+的.+[！!。.]?',text):
             removal=re.fullmatch(r'(.+?)拍落了(对手的)?(.+?)的(.+?)[！!。.]?',text)
@@ -124,7 +134,7 @@ class EventParser:
                     affected_stats=None,consumption_observed=False)
         elif re.fullmatch(r'.+扭曲了时空[！!。.]?',text):
             typ='trick_room_change';attrs.update(change='start')
-        elif re.fullmatch(r'.+进化石(?:[XY])?和.+起了反应[！!。.]?',text):
+        elif re.fullmatch(r'.+进化石(?:[XYZ])?和.+起了反应[！!。.]?',text):
             typ='move_effect';attrs.update(effect='mega_stone_reaction_notice',
                 completed_transformation=False)
         elif re.search(r'HP\d+%?[→➡➜>-]+\d+%?',text):
@@ -149,6 +159,12 @@ class EventParser:
             typ='move_effect';attrs['effect']='healing_announcement'
         elif '反作用力造成的伤害' in text:
             typ='move_effect';attrs['effect']='recoil_announcement'
+        elif re.fullmatch(r'光墙使我方的特殊抗性提高了[！!。.]?',text):
+            typ='side_condition_change';side='self';attrs.update(condition='light_screen',change='observe')
+        elif re.fullmatch(r'从我方身后吹起了顺风[！!。.]?',text):
+            typ='side_condition_change';side='self';attrs.update(condition='tailwind',change='start')
+        elif re.fullmatch(r'(?:对手的)?.+的生命被少量削减了[！!。.]?',text):
+            typ='hp_change';attrs.update(qualitative_only=True,direction='down',magnitude='small',cause=None)
         elif '极光幕使我方' in text:
             typ='side_condition_change';side='self';attrs.update(condition='aurora_veil',change='start')
         elif '我方的极光幕消失' in text:
@@ -185,6 +201,33 @@ class EventParser:
             for kind,event_type in [('ability','ability_activation'),('item','item_activation')]:
                 ref=self.identity(suffix,kind)
                 if ref:typ=event_type;refs[kind]=ref;break
+        # Champions live actor grammar is side-bearing; a bare mention is not.
+        live = region == 'battle_message'
+        actor_name = re.escape(subject['name']) if subject else None
+        if live and actor_name and not collisions:
+            grammar = (r'(?:对手的)?'+actor_name+r'(?:使出了.+[！!。.]|倒下了[！!。.]?|'
+                       r'要回到.+的身边了[！!。.]?|的(?:特攻|特防|攻击|防御|速度|命中率|闪避率)'
+                       r'(?:大幅)?(?:提高了|降低了)[！!。.]?|的生命被少量削减了[！!。.]?|'
+                       r'超级进化成了.+[！!。.]|摆出了防守的架势[！!。.]?|'
+                       r'的.+进化石(?:[XYZxyz])?和.+起了反应[！!。.]?)')
+            if re.fullmatch(grammar,identity_text):
+                grammar_side='opponent' if identity_text.startswith('对手的') else 'self'
+                if side not in {'unknown',grammar_side}:
+                    side='unknown';unc.append('side_evidence_conflict')
+                else:side=grammar_side;basis.append('complete_live_actor_grammar')
+        receiver = re.fullmatch(r'对(对手的)?(.+?)(?:效果不好|效果绝佳|没有效果)[！!。.]?',identity_text)
+        if typ=='effectiveness' and receiver and self.identity(receiver[2],'species'):
+            side='opponent' if receiver[1] else ('self' if live else side)
+            attrs['target_side']=side;basis.append('explicit_named_receiver')
+        if typ=='move_effect' and attrs.get('effect')=='mega_stone_reaction_notice':
+            reaction=re.fullmatch(r'.+进化石(?:[XYZ])?和(.+?)的.+起了反应[！!。.]?',text)
+            if reaction:
+                attrs['trainer_display_text']=reaction[1]
+                matched=[s for s,p in c.participants.items() if p.display_name and alias_key(p.display_name)==alias_key(reaction[1])]
+                if len(matched)==1:
+                    attrs['trainer_side']=matched[0]
+                    if side in {'unknown',matched[0]}:side=matched[0];basis.append('observed_trainer_display_name')
+                    else:side='unknown';unc.append('trainer_name_conflict')
         affected=subject or target
         if side=='unknown' and not unc and affected:
             sid=affected['canonical_id'];owners=[s for s,values in c.active.items() if sid in values]
@@ -217,6 +260,25 @@ class EventParser:
         return BattleEvent(stable_id(battle_id,entry['entry_id']),typ,side,subject,target,raw,refs,
                            entry.get('log_order'),[evidence],entry.get('ocr_confidence'),
                            'uncertain' if unc else 'supported',unc,attrs)
+
+
+    def parse_many(self, entry, context=None, battle_id='battle'):
+        """Split only complete named stat recipients; retain the full source text."""
+        text=compact_text(entry['raw_text'])
+        match=re.fullmatch(r'(.+?)的((?:特攻|特防|攻击|防御|速度|命中率|闪避率)(?:大幅)?(?:提高了|降低了)[！!。.]?)',text)
+        if not match or '和' not in match[1]:return [self.parse(entry,context,battle_id)]
+        names=match[1].split('和')
+        if not all(self.identity(n.removeprefix('对手的'),'species') for n in names):
+            return [self.parse(entry,context,battle_id)]
+        result=[]
+        for i,name in enumerate(names):
+            semantic=name+'的'+match[2]
+            child=self.parse(dict(entry,entry_id=entry['entry_id']+':recipient:'+str(i),raw_text=semantic),context,battle_id)
+            child.original_text=entry['raw_text']
+            child.attributes.update(semantic_text=semantic,recipient_index=i,recipient_count=len(names),
+                                    directly_observed=True,causal_ability=None)
+            result.append(child)
+        return result
 
 
     def parse_sequence(self, entries, context=None, battle_id='battle'):
