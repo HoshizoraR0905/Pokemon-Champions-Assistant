@@ -2,18 +2,39 @@
 
 Analysis date: 2026-10-16 (Asia/Shanghai). Primary input: `m236-event-review-annotations.json`.
 
-Original SHA-256: `3c0570bcd3eee4bc74dae241e6471d587d71b58c077c7bb91b2346a684bfe3fc`. The original bytes were not changed. Schema `m236-human-review-v2` is compatible; no migration is needed.
+Original SHA-256: `d287123c7ee3f28667b2dcef269f7b8f803548fa7fcbe49807bb0fec0a23144b`. The original bytes were not changed. Schema `m236-human-review-v2` is compatible; no migration is needed.
 
 ## Counts and interpretation
 
 - Reviewable actual event occurrences: 11. These are the old fixture population, not proof of current human acceptance.
-- Explicit human event-occurrence verdicts: 0 reviewed, 11 still without a verdict. 7 occurrences have human feedback on constituent frames; 4 have no such feedback. Frame feedback does not judge an entire occurrence.
-- Individually reviewed frames: 20/136; 116 remain unreviewed under the rule below. 11 structured frames contain a classification or substantive text; 9 additional frames have explicit legacy `reviewed=true`.
-- 12 structured frame records exist: one is entirely indeterminate/blank and is not counted as reviewed. Two say `cannot_determine`; one of those supplies a literal field transcription and counts as feedback, not a resolved visibility judgment.
-- Actual-event verdicts: correct 0; incorrect/missing 0; explicit unresolved/cannot-determine 0. Absence of an event verdict is unreviewed, not unresolved or accepted.
-- Across all 36 navigation groups (including UI cards): 1 explicit verdict, `incorrect`, at 140.023s; 8 other saved event records say `cannot_determine`, including 7 with substantive corrections/comments. No group is explicitly marked correct, missing, or unresolved.
-- Frame classifications (different denominator): readable_correct 5; readable_incorrect 1; readable_missed 2; no_message 2; cannot_determine 2. Legacy reviewed flags carry no correctness verdict. None of these categories is silently promoted to an event verdict.
+- Explicit human event-occurrence verdicts: 5 reviewed, 6 still without a verdict. 9 occurrences have feedback on the event or its frames; 9 have constituent-frame feedback. Frame feedback does not judge an entire occurrence.
+- Individually reviewed frames: 28/136; 108 remain unreviewed. 20 structured frames contain a classification or substantive text; 8 additional frames have explicit legacy `reviewed=true`. Overlapping IDs count once.
+- 22 structured frame records exist. `cannot_determine` without substantive text does not count as reviewed; with text it counts as feedback, not a resolved visibility judgment.
+- Actual-event verdicts: correct 5. The viewer uses `cannot_determine` for both indeterminate and unreviewed records; it cannot establish an explicit unresolved judgment. Blank records are not accepted.
+- Across all 36 navigation groups (including UI cards): correct 9; incorrect 2; no_ui 1. Preview-row notes are separate from this denominator.
+- Frame classifications (different denominator): cannot_determine 3; no_message 5; readable_correct 11; readable_incorrect 1; readable_missed 2. Legacy reviewed flags carry no correctness verdict. None of these categories is silently promoted to an event verdict.
 - Three preview species suggestions, two nickname suggestions, one HUD correction, and one field comment have no final event verdict. Blank fields provide no negative evidence.
+
+## Additional saved reviews
+
+The explicit verdicts below are human assessments of the displayed conclusions. They do not independently establish recognition accuracy, complete actor/target binding, or Champions mechanics.
+
+- `occurrence:not_effective` at 419.503s (actual occurrence): **correct** — Not very effective — target context unresolved.
+- `occurrence:two_hits` at 421.005s (actual occurrence): **correct** — Two-hit notice.
+- `interval:837bb40eed342913a5b1280ca8f72d3a4971e32cfc3554f67215d3a6c46e0139` at 406.002s (navigation/UI card): **correct** — Mega Evolution animation — no-text example.
+- `occurrence:mega_revelation` at 413.503s (actual occurrence): **correct** — Big Mom’s Mega Evolution revelation.
+- `occurrence:fake_out` at 415.503s (actual occurrence): **correct** — Fake Out — identified and attributed · baseline / U comparison.
+- `occurrence:coaching_stages` at 430.005s (actual occurrence): **correct** — Attack and Defense increased.
+- `u:fd9f8ab5370010159be52546d7ee891e53bb90df700c52ce902b41d651a5d400:field` at 140.023s (navigation/UI card): **incorrect** — Weather / terrain / Trick Room indicator · 140.023s.
+- `u:6ac5b365e94ce6b20ce69b5dfe784f0dcf429ff63b2b39e62fb3adfe2308f243:field` at 417.003s (navigation/UI card): **incorrect** — Weather / terrain / Trick Room indicator · 417.003s.
+- `u:d0c87bd13fc24621bb5f6f4ffbac7c4b3e1069b2faa98ca6809a750d357a0619:field` at 417.503s (navigation/UI card): **no_ui** — Weather / terrain / Trick Room indicator · 417.503s.
+- `u:0e2995b882068c5437a29b53457b8bd7e47758d9a3c9e228a63a5a6ec22c3f76:overlay` at 400.000s (navigation/UI card): **correct** — Target-selection overlay · 400.0s.
+- `u:af2b73eaf867eff7588808109d3dbd6efdb28cd7c98e2d967a79b65628782eb1:overlay` at 384.548s (navigation/UI card): **correct** — Check Status Overlay · 384.548s.
+- `u:1af4952460ffc1aa4f621a8d5de8cdb289939c375979369f92a64335b33df17d:overlay` at 374.000s (navigation/UI card): **correct** — Battle Log Overlay · 374.0s.
+
+The Coaching stat-change comment attributes the result to Lucario using Coaching. This remains a human causal/identity assertion for investigation; the saved comment does not bind the execution actor or target in production state. The earlier 426.505s reading-profile disagreement still needs resolution.
+
+At 417.003s the field card is marked incorrect and reclassified as a move, with the U frame reviewed as readable_correct and the comment `对手的Big Mom使出了击掌奇袭！`. At 417.503s the field card says no_ui and its message-region review says no_message. These are distinct region-scoped judgments; no_message alone would not establish absence of field UI.
 
 ## Prioritized issues from the human corrections
 
@@ -113,6 +134,126 @@ No state decision on this navigation card; see per-frame evidence.
 240.006667–240.006667s; original card: Weather / terrain / Trick Room indicator · 240.007s; kind=field_indicator; actual occurrence=False.
 Source frame IDs: `b5b5dc9a30c511e57e0b60bdfea6f84ed6abadab22c0c832d198cb50f4cb99c0`.
 [Representative evidence](assets/b5b5dc9a30c511e57e0b60bdfea6f84ed6abadab22c0c832d198cb50f4cb99c0.png); baseline OCR: "".
+No state decision on this navigation card; see per-frame evidence.
+
+### Event/card `interval:837bb40eed342913a5b1280ca8f72d3a4971e32cfc3554f67215d3a6c46e0139`
+
+```json
+{"verdict": "correct", "eventKind": "mega", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+406.001667–413.003333s; original card: Mega Evolution animation — no-text example; kind=background; actual occurrence=False.
+Source frame IDs: `837bb40eed342913a5b1280ca8f72d3a4971e32cfc3554f67215d3a6c46e0139`, `c32230b187757b598d900693821fb3fc30885f94e7db4d43bcfa449cee795193`, `6b2119d74b81f282c9dc03f40719f8d4dafe6ef9d660f047b4c434123c460953`, `af9c5dfbafa380de211406f2b15b9e2f6c8d1be37c2bd05c2a56161d751e09ed`, `9ea7c063fc692555c72e5d948fdcc7c242e5f8bc219f669fcad8de959147b195`, `0d2afc7e4af2553fd4a2084375bf4341a4ae07f6cbd3e602bd70bf0769791278`, `c5aff75122b2ad8b802544c65ed2eac9873f211e83f966813df578d11ad8a582`, `2be97bcee2b6723123da881d9cf87293f7631bbc42683de8992814098bb2418d`, `94eca23a6cc3c940610090eb0bf270531f5bf4e936de2cf0c2302e1a31e3b03e`, `5eb82fbeff0f6770f15fb92d8fe81f84a15e36bc4f46216c322cab9ac99770c9`, `23638ae9fe8952aea53325eda7cadfe4496c2516f74e3be7c9998821976d11ee`, `6002b7d8ecbadf0b50020615792457e5375d5dc3767bd675fa8e4ecf2c31a241`, `b4564eb4478cef762140005bafd7938a4c9a4eb8fad4ea30d4889c99728321b4`, `9a6786ef18da14eeb24733c7baeb78c516b923a9d78c7b8dbfca2112e2482d86`, `4331062f087e7c66ac890a36b7dfa08161ac45ae07c9451c5c794f396b0e9eb3`.
+[Representative evidence](assets/837bb40eed342913a5b1280ca8f72d3a4971e32cfc3554f67215d3a6c46e0139.png); baseline OCR: "2".
+State decisions: event:06e58dd171670926aff0d906: deferred, admitted=False; event:5cb91f31805589c0103e12e1: deferred, admitted=False; event:a6c1d5799abe597f1911be1a: deferred, admitted=False; event:efa14441c582eeaea3f8e50b: deferred, admitted=False; event:eed8f09e3d822e37250734b9: deferred, admitted=False
+
+### Event/card `interval:302f72f6f034f3921f6d385a24360c85d1e5bcd279bfde5f91a163f154436c9a`
+
+```json
+{"verdict": "cannot_determine", "eventKind": "cannot_determine", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+423.505000–423.505000s; original card: Message visibility / transition interval; kind=background; actual occurrence=False.
+Source frame IDs: `302f72f6f034f3921f6d385a24360c85d1e5bcd279bfde5f91a163f154436c9a`.
+[Representative evidence](assets/302f72f6f034f3921f6d385a24360c85d1e5bcd279bfde5f91a163f154436c9a.png); baseline OCR: "1\n1".
+State decisions: event:b25a6658ff046a950558fc3e: deferred, admitted=False
+
+### Event/card `occurrence:mega_revelation`
+
+```json
+{"verdict": "correct", "eventKind": "mega", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+413.503333–415.003333s; original card: Big Mom’s Mega Evolution revelation; kind=transformation; actual occurrence=True.
+Source frame IDs: `a3aa8271f87239a8cb740c32dbe20c6e7949966a8e406b1f92f4999b3dccddbb`, `1d20b0053544d3d1d1917d227f6e38fb82e440b54d2679fbfc9e453b5a457bf4`, `0601b6c98e386dd166f33217f2d7e6af05968d07aa319dbc583ebaf2a821fd91`, `2eeb4c991fdb2342f2aa623166006b56a3f1606db7e3539701ec0af4a8f8e6d5`.
+[Representative evidence](assets/a3aa8271f87239a8cb740c32dbe20c6e7949966a8e406b1f92f4999b3dccddbb.png); baseline OCR: "对手的Big Mom超级进化成了超级袋兽！".
+State decisions: event:e9edf03eb60c1b617706d22f: recorded_observation, admitted=True; event:3fc190b64ed4987f41a5a681: applied_candidate, admitted=True; event:2a3a1505977e2e33afadf06f: deferred, admitted=False
+
+### Event/card `occurrence:fake_out`
+
+```json
+{"verdict": "correct", "eventKind": "move", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+415.503333–417.503333s; original card: Fake Out — identified and attributed · baseline / U comparison; kind=move_execution; actual occurrence=True.
+Source frame IDs: `a3a5a701dadfd45d9796047845befd74e1b00a63c11e177cc3835fdc2bb2242a`, `3dd6574562b4d8a43230defd483611cdb004c1a9641f1ccbb738496022f93f8b`, `3ebb1d91de297581b1edb8b08f184185568f236a025c634bcd2890ea8c4c53fe`, `6ac5b365e94ce6b20ce69b5dfe784f0dcf429ff63b2b39e62fb3adfe2308f243`, `d0c87bd13fc24621bb5f6f4ffbac7c4b3e1069b2faa98ca6809a750d357a0619`.
+[Representative evidence](assets/a3a5a701dadfd45d9796047845befd74e1b00a63c11e177cc3835fdc2bb2242a.png); baseline OCR: "对手的BigMom使出了击堂奇龚出手可表！".
+State decisions: event:6f15947550c45b67a9e1175e: deferred, admitted=False; event:813ff44b7eb9a37dd3afc8a4: deferred, admitted=False; event:81531417c53140f189550aa5: applied_partial, admitted=True; event:d51e8f57b0c8c09e518a5db3: deferred, admitted=False; event:4d140db768b2894d29b0f5a8: deferred, admitted=False
+
+### Event/card `occurrence:coaching_stages`
+
+```json
+{"verdict": "correct", "eventKind": "stat", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "this is a result of Lucario used Coaching. ", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+430.005000–431.506667s; original card: Attack and Defense increased; kind=stat_change; actual occurrence=True.
+Source frame IDs: `a021396b94439ae7c86b8fd0b39b08db5a66896cca46c0b62b353ddfcc9368cd`, `e2198e7f34af4d6bd71ff48586f184f69b43001bb8b143a6a22da623c74ccd6f`, `be6ebb6656f2b3e66afe78d8b66731f765dddf2a07f74fa03830111118c1ec4a`, `f47194e29f08666948e61510d3a95969dd3d2a37a24b66fb99205c49bec824c6`.
+[Representative evidence](assets/a021396b94439ae7c86b8fd0b39b08db5a66896cca46c0b62b353ddfcc9368cd.png); baseline OCR: "对手的BigMom的攻击、防御提高了！".
+State decisions: event:8f42bdc4568012e655e07c6b: applied_candidate, admitted=True
+
+### Event/card `occurrence:not_effective`
+
+```json
+{"verdict": "correct", "eventKind": "cannot_determine", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+419.503333–421.005000s; original card: Not very effective — target context unresolved; kind=effectiveness; actual occurrence=True.
+Source frame IDs: `31c15c5e1afb462baced53a3507543e6e6ba242ca64aee0c4594f1e51c388078`, `c41cceb61e046e78369068a806e169fd9296ece425b36919fbe6af431c63bdda`, `fc4fbb54328f12a4bf316884be8650d8acc46a703fbede07c436f8634b20684b`, `8401a74729ce9d86df6ec1a097bb1ebc17b8b2cc9f75f5351bf6b924a29bc192`.
+[Representative evidence](assets/31c15c5e1afb462baced53a3507543e6e6ba242ca64aee0c4594f1e51c388078.png); baseline OCR: "对龙头地鼠效果不好。".
+State decisions: event:2080b1b77f1d1d7f85d971ea: deferred, admitted=False
+
+### Event/card `occurrence:two_hits`
+
+```json
+{"verdict": "correct", "eventKind": "cannot_determine", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+421.005000–423.005000s; original card: Two-hit notice; kind=multi_hit; actual occurrence=True.
+Source frame IDs: `8401a74729ce9d86df6ec1a097bb1ebc17b8b2cc9f75f5351bf6b924a29bc192`, `6faede718c9657dae7fb20ec0d3f5ed37d8371a4872a65378ccf4d45eae6090a`, `675affc35ff8a50db096138f63316cfbf46986dc556c894a728f133ad7545944`, `9084a200a21155ba989d64861f330a4f8b558b2434cc944deab11381f8a9fef8`, `3748f48edb948adb074da3034e82b2fea6a37fb623b0aed56fe33cb20534cf60`.
+[Representative evidence](assets/8401a74729ce9d86df6ec1a097bb1ebc17b8b2cc9f75f5351bf6b924a29bc192.png); baseline OCR: "".
+State decisions: event:6db7260af289bbb3a567cea5: deferred, admitted=False; event:36d4513f009faad475e2637b: deferred, admitted=False
+
+### Event/card `u:d0c87bd13fc24621bb5f6f4ffbac7c4b3e1069b2faa98ca6809a750d357a0619:field`
+
+```json
+{"verdict": "no_ui", "eventKind": "cannot_determine", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+417.503333–417.503333s; original card: Weather / terrain / Trick Room indicator · 417.503s; kind=field_indicator; actual occurrence=False.
+Source frame IDs: `d0c87bd13fc24621bb5f6f4ffbac7c4b3e1069b2faa98ca6809a750d357a0619`.
+[Representative evidence](assets/d0c87bd13fc24621bb5f6f4ffbac7c4b3e1069b2faa98ca6809a750d357a0619.png); baseline OCR: "\n\n一\n\n".
+No state decision on this navigation card; see per-frame evidence.
+
+### Event/card `u:6ac5b365e94ce6b20ce69b5dfe784f0dcf429ff63b2b39e62fb3adfe2308f243:field`
+
+```json
+{"verdict": "incorrect", "eventKind": "move", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+417.003333–417.003333s; original card: Weather / terrain / Trick Room indicator · 417.003s; kind=field_indicator; actual occurrence=False.
+Source frame IDs: `6ac5b365e94ce6b20ce69b5dfe784f0dcf429ff63b2b39e62fb3adfe2308f243`.
+[Representative evidence](assets/6ac5b365e94ce6b20ce69b5dfe784f0dcf429ff63b2b39e62fb3adfe2308f243.png); baseline OCR: "对手的Big Mom使出了".
+No state decision on this navigation card; see per-frame evidence.
+
+### Event/card `u:0e2995b882068c5437a29b53457b8bd7e47758d9a3c9e228a63a5a6ec22c3f76:overlay`
+
+```json
+{"verdict": "correct", "eventKind": "cannot_determine", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+400.000000–400.000000s; original card: Target-selection overlay · 400.0s; kind=target_selection; actual occurrence=False.
+Source frame IDs: `0e2995b882068c5437a29b53457b8bd7e47758d9a3c9e228a63a5a6ec22c3f76`.
+[Representative evidence](assets/0e2995b882068c5437a29b53457b8bd7e47758d9a3c9e228a63a5a6ec22c3f76.png); baseline OCR: "".
+No state decision on this navigation card; see per-frame evidence.
+
+### Event/card `u:af2b73eaf867eff7588808109d3dbd6efdb28cd7c98e2d967a79b65628782eb1:overlay`
+
+```json
+{"verdict": "correct", "eventKind": "cannot_determine", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+384.548333–384.548333s; original card: Check Status Overlay · 384.548s; kind=status_overlay; actual occurrence=False.
+Source frame IDs: `af2b73eaf867eff7588808109d3dbd6efdb28cd7c98e2d967a79b65628782eb1`.
+[Representative evidence](assets/af2b73eaf867eff7588808109d3dbd6efdb28cd7c98e2d967a79b65628782eb1.jpg); baseline OCR: "".
+No state decision on this navigation card; see per-frame evidence.
+
+### Event/card `u:1af4952460ffc1aa4f621a8d5de8cdb289939c375979369f92a64335b33df17d:overlay`
+
+```json
+{"verdict": "correct", "eventKind": "cannot_determine", "actualEvent": "", "actor": "", "target": "", "species": "", "hp": "", "feedback": "", "proximity": false, "fieldAbility": "", "errorCategory": "cannot_determine"}
+```
+374.000000–374.000000s; original card: Battle Log Overlay · 374.0s; kind=battle_log_overlay; actual occurrence=False.
+Source frame IDs: `1af4952460ffc1aa4f621a8d5de8cdb289939c375979369f92a64335b33df17d`.
+[Representative evidence](assets/1af4952460ffc1aa4f621a8d5de8cdb289939c375979369f92a64335b33df17d.png); baseline OCR: "".
 No state decision on this navigation card; see per-frame evidence.
 
 ### Structured frame: 108.001667s
@@ -278,6 +419,146 @@ Baseline OCR: "上吧！班基拉斯！".
 - baseline `event:dd2aaca70e4491d102d343c8` entry_observation: recorded_observation, admitted=False; Stored as an observation; this does not establish an active slot or a mechanical effect.
 - baseline `event:48a4566027412a14340704cb` send_out: recorded_observation, admitted=True; Only named identity is supported; placement and biological continuity are not established.
 U: no new receipt at this exact timestamp (not proof of no prior occurrence admission).
+
+### Structured frame: 423.505000s
+
+Frame ID: `302f72f6f034f3921f6d385a24360c85d1e5bcd279bfde5f91a163f154436c9a`. [Cached pixels](assets/302f72f6f034f3921f6d385a24360c85d1e5bcd279bfde5f91a163f154436c9a.png). Original source: `../../.cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000008.png`.
+
+User record:
+```json
+{"message_class": "no_message", "visible_message": "", "feedback": "", "reading_source": "baseline"}
+```
+Baseline OCR: "1\n1".
+
+- baseline `event:b25a6658ff046a950558fc3e` unknown: deferred, admitted=False; OCR confidence was below the admission threshold. No semantic event was admitted.
+U: no new receipt at this exact timestamp (not proof of no prior occurrence admission).
+
+### Structured frame: 429.005000s
+
+Frame ID: `afeb72a7a2d3e9f9e16f50d7569e8ddb1779a1900b95190aa47314b0216441eb`. [Cached pixels](assets/afeb72a7a2d3e9f9e16f50d7569e8ddb1779a1900b95190aa47314b0216441eb.png). Original source: `../../.cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000019.png`.
+
+User record:
+```json
+{"message_class": "no_message", "visible_message": "", "feedback": "", "reading_source": "baseline"}
+```
+Baseline OCR: "O\nCN\n101N".
+
+- baseline `event:bb9f6dc93e1373d3f2c29e75` unknown: deferred, admitted=False; OCR confidence was below the admission threshold. No semantic event was admitted.
+U: no new receipt at this exact timestamp (not proof of no prior occurrence admission).
+
+### Structured frame: 413.503333s
+
+Frame ID: `a3aa8271f87239a8cb740c32dbe20c6e7949966a8e406b1f92f4999b3dccddbb`. [Cached pixels](assets/a3aa8271f87239a8cb740c32dbe20c6e7949966a8e406b1f92f4999b3dccddbb.png). Original source: `../../.cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000008.png`.
+
+User record:
+```json
+{"message_class": "readable_correct", "visible_message": "", "feedback": "", "reading_source": "baseline"}
+```
+Baseline OCR: "对手的Big Mom超级进化成了超级袋兽！".
+
+U OCR: "对手的Big Mom超级进化成了\n超级袋兽！"; selected=True.
+- baseline `event:e9edf03eb60c1b617706d22f` alias_observation: recorded_observation, admitted=True; Only named identity is supported; placement and biological continuity are not established.
+- baseline `event:3fc190b64ed4987f41a5a681` transformation: applied_candidate, admitted=True; The supported observation passed the existing state policy.
+- U `event:e9edf03eb60c1b617706d22f` alias_observation: recorded_observation, admitted=True; Only named identity is supported; placement and biological continuity are not established.
+- U `event:3fc190b64ed4987f41a5a681` transformation: applied_candidate, admitted=True; The supported observation passed the existing state policy.
+
+### Structured frame: 416.503333s
+
+Frame ID: `3ebb1d91de297581b1edb8b08f184185568f236a025c634bcd2890ea8c4c53fe`. [Cached pixels](assets/3ebb1d91de297581b1edb8b08f184185568f236a025c634bcd2890ea8c4c53fe.png). Original source: `../../.cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000014.png`.
+
+User record:
+```json
+{"message_class": "readable_correct", "visible_message": "", "feedback": "", "reading_source": "baseline"}
+```
+Baseline OCR: "对手的Big Mom使出了击掌奇袭！".
+
+U OCR: "对手的Big Mom使出了\n击掌奇袭！"; selected=True.
+- baseline `event:81531417c53140f189550aa5` move_execution: applied_partial, admitted=True; Actor and executed move were supported. Targets and move effects were not established.
+U: no new receipt at this exact timestamp (not proof of no prior occurrence admission).
+
+### Structured frame: 430.005000s
+
+Frame ID: `a021396b94439ae7c86b8fd0b39b08db5a66896cca46c0b62b353ddfcc9368cd`. [Cached pixels](assets/a021396b94439ae7c86b8fd0b39b08db5a66896cca46c0b62b353ddfcc9368cd.png). Original source: `../../.cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/312d2dcf3cd27cb2d4ffc550/000001.png`.
+
+User record:
+```json
+{"message_class": "readable_correct", "visible_message": "", "feedback": "", "reading_source": "baseline"}
+```
+Baseline OCR: "对手的BigMom的攻击、防御提高了！".
+
+U OCR: "对手的Big Mom的\n攻击、防御提高了！"; selected=True.
+- baseline `event:8f42bdc4568012e655e07c6b` stat_change: applied_candidate, admitted=True; The supported observation passed the existing state policy.
+- U `event:8f42bdc4568012e655e07c6b` stat_change: applied_candidate, admitted=True; The supported observation passed the existing state policy.
+
+### Structured frame: 422.005000s
+
+Frame ID: `675affc35ff8a50db096138f63316cfbf46986dc556c894a728f133ad7545944`. [Cached pixels](assets/675affc35ff8a50db096138f63316cfbf46986dc556c894a728f133ad7545944.png). Original source: `../../.cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000005.png`.
+
+User record:
+```json
+{"message_class": "readable_correct", "visible_message": "", "feedback": "", "reading_source": "baseline"}
+```
+Baseline OCR: "击中了2次！".
+
+baseline: 1 HUD receipts; event:0fbe852096799864da715a89: applied_candidate.
+U: no new receipt at this exact timestamp (not proof of no prior occurrence admission).
+
+### Structured frame: 420.520000s
+
+Frame ID: `fc4fbb54328f12a4bf316884be8650d8acc46a703fbede07c436f8634b20684b`. [Cached pixels](assets/fc4fbb54328f12a4bf316884be8650d8acc46a703fbede07c436f8634b20684b.png). Original source: `../../.cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/c9c516c2bdc377b888a49e95/000002.png`.
+
+User record:
+```json
+{"message_class": "readable_correct", "visible_message": "", "feedback": "", "reading_source": "baseline"}
+```
+Baseline OCR: "对龙头地鼠效果不好。".
+
+baseline: 1 HUD receipts; event:f276e739d94b41535dfdcdd8: applied_candidate.
+U: no new receipt at this exact timestamp (not proof of no prior occurrence admission).
+
+### Structured frame: 417.503333s
+
+Frame ID: `d0c87bd13fc24621bb5f6f4ffbac7c4b3e1069b2faa98ca6809a750d357a0619`. [Cached pixels](assets/d0c87bd13fc24621bb5f6f4ffbac7c4b3e1069b2faa98ca6809a750d357a0619.png). Original source: `../../.cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000016.png`.
+
+User record:
+```json
+{"message_class": "no_message", "visible_message": "", "feedback": "", "reading_source": "ui_u"}
+```
+Baseline OCR: "\n\n一\n\n".
+
+U OCR: ""; selected=False.
+baseline: 1 HUD receipts; event:b74a659efc954cc5eed7ff92: applied_candidate.
+- baseline `event:4d140db768b2894d29b0f5a8` unknown: deferred, admitted=False; OCR confidence was below the admission threshold. No semantic event was admitted.
+U: 1 HUD receipts; event:b74a659efc954cc5eed7ff92: applied_candidate.
+
+### Structured frame: 417.003333s
+
+Frame ID: `6ac5b365e94ce6b20ce69b5dfe784f0dcf429ff63b2b39e62fb3adfe2308f243`. [Cached pixels](assets/6ac5b365e94ce6b20ce69b5dfe784f0dcf429ff63b2b39e62fb3adfe2308f243.png). Original source: `../../.cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/436c8f82ad40c0ee5e246c44/000015.png`.
+
+User record:
+```json
+{"message_class": "readable_correct", "visible_message": "", "feedback": "对手的Big Mom使出了击掌奇袭！", "reading_source": "ui_u"}
+```
+Baseline OCR: "对手的Big Mom使出了".
+
+U OCR: "对手的Big Mom使出了\n击掌奇袭!"; selected=True.
+- baseline `event:d51e8f57b0c8c09e518a5db3` move_execution: deferred, admitted=False; Required identity, side, move or effect information was unresolved; state mutation was withheld.
+U: no new receipt at this exact timestamp (not proof of no prior occurrence admission).
+
+### Structured frame: 287.015000s
+
+Frame ID: `e87440048ba46508452331874880cc93a2888fdbbc04debc0b736870af4170b3`. [Cached pixels](assets/e87440048ba46508452331874880cc93a2888fdbbc04debc0b736870af4170b3.png). Original source: `../../.cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/2e4df209b17e1036eab60cac/000007.png`.
+
+User record:
+```json
+{"message_class": "cannot_determine", "visible_message": "", "feedback": "", "reading_source": "ui_u"}
+```
+Baseline OCR: "0".
+
+U OCR: ""; selected=False.
+baseline: 4 HUD receipts; event:5cef7adcc1ee6f45c62076f3: recorded_observation; event:6540389fbaf5ae69c133f8a2: recorded_observation; event:712041954c0f508fbd7a4470: applied_candidate; event:c6878965f68de1a5843bd991: applied_candidate.
+- baseline `event:d6f7af5b667d5356fa3d4668` unknown: deferred, admitted=False; OCR confidence was below the admission threshold. No semantic event was admitted.
+U: 4 HUD receipts; event:5cef7adcc1ee6f45c62076f3: recorded_observation; event:6540389fbaf5ae69c133f8a2: recorded_observation; event:712041954c0f508fbd7a4470: applied_candidate; event:c6878965f68de1a5843bd991: applied_candidate.
 
 Legacy `a30e0e26f0b7843dbe52c186f78c5221ee6271a9880012f0e975a49c414c9478` at 418.020000s: {"reviewed": true, "unsupported_proximity": false, "note": "(empty)"}.
 Baseline OCR: "0\n1"; frame-reviewed flag only, no event verdict.

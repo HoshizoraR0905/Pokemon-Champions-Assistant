@@ -75,15 +75,24 @@ class EventParser:
             if explicit!='unknown':basis.append('explicit_text')
             if color!='unknown':basis.append('calibrated_row_color')
             if hint!='unknown':basis.append('adjacent_entry_context')
-        name_sides={s for s,p in c.participants.items() if p.display_name and p.display_name!='训练家' and text.startswith(p.display_name)}
+        from .aliases import alias_key
+        trainer_prefix=re.match(r'^(.+?)(?:派出了|换下了)',text)
+        name_sides={s for s,p in c.participants.items() if p.display_name and p.display_name!='训练家'
+            and trainer_prefix and alias_key(trainer_prefix[1])==alias_key(p.display_name)}
         if len(name_sides)>1:
             side='unknown';unc.append('ambiguous_trainer_display_name')
         elif name_sides:
             name_side=next(iter(name_sides))
             if side!='unknown' and side!=name_side:side='unknown';unc.append('trainer_name_conflict')
             else:side=name_side;basis.append('observed_trainer_display_name')
-        if '换下了' in text or '回来' in text:typ='switch_out'
+        from .visible_endings import ending
+        ended = ending(text)
+        if ended:
+            typ, side, fields = ended; attrs.update(fields); basis=['explicit_termination_text']
+        elif '换下了' in text or '回来' in text:typ='switch_out'
         elif '派出了' in text or text.startswith('上吧'):typ='send_out'
+        elif re.fullmatch(r'.+(?:交换了位置|交换了场地)[！!。.]?',text):
+            typ='position_change';attrs.update(mechanic='ally_switch',execution_observed=True)
         elif '使出了' in text:
             typ='move_execution';move=text.split('使出了',1)[1].rstrip('！!。.')
             from recognition.move_resolution import resolve_move

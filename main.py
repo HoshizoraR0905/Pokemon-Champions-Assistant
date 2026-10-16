@@ -21,6 +21,13 @@ def main() -> int:
     inputs.add_argument('--images', nargs='+', type=Path, help='Collect configuration from several screenshots')
     inputs.add_argument('--video', type=Path)
     parser.add_argument('--annotated', type=Path, help='Image output path or video annotation directory')
+    parser.add_argument('--profile',choices=['standard','fast','diagnostic','event-driven'],default='standard',help='Event-driven: default 2 FPS, confirmed COMMAND 1 FPS; fast/diagnostic retain experimental scheduling')
+    parser.add_argument('--run-id',default='fast-v1',help='Separate battle-owned fast-run namespace')
+    parser.add_argument('--resume',action='store_true',help='Resume the same fast-run identity and checkpoints')
+    parser.add_argument('--end-seconds',type=float,help='Optional scoped fast-profile experiment end')
+    parser.add_argument('--frame-cache',type=Path,help='Event-driven: reuse a compatible acquisition manifest; no video decoding')
+    parser.add_argument('--recognition-cache',type=Path,nargs='+',help='Event-driven: reuse verified same-model pixel predictions from prior runs')
+    parser.add_argument('--reconstruct-from',type=Path,help='Event-driven: reuse a sealed compatible recognition stage; no decoding, OCR or icons')
     parser.add_argument('--interval',type=float,default=1.0,help='Video sampling interval in seconds')
     parser.add_argument('--max-frames',type=int)
     parser.add_argument('--language',default='chi_sim+eng')
@@ -37,6 +44,18 @@ def main() -> int:
     parser.add_argument('--team-corrections',type=Path,help='Apply manually reviewed JSON corrections')
     args = parser.parse_args()
     try:
+        if args.profile in {'fast','diagnostic','event-driven'}:
+            if not args.video:
+                parser.error('--profile fast/diagnostic requires --video')
+            if args.no_knowledge or args.verified_team or args.collect_team or args.images or args.image:
+                parser.error('Fast profile uses the existing evidence policy; team configuration options require standard profile')
+            from recognition.fast_video import analyze
+            result=analyze(args.video,run_id=args.run_id,resume=args.resume,end=args.end_seconds,
+                max_frames=args.max_frames,diagnostic_menus=args.profile=='diagnostic',icons=not args.no_icons,
+                event_driven=args.profile=='event-driven',frame_cache=args.frame_cache,recognition_caches=args.recognition_cache,
+                reconstruct_from=args.reconstruct_from)
+            print(json.dumps(result,ensure_ascii=False,indent=2))
+            return 0
         collecting = args.collect_team or bool(args.images)
         if not (args.image or args.images or args.video or args.team_summary or args.team_corrections):
             parser.error('provide --image, --images, --video, --team-summary, or --team-corrections')

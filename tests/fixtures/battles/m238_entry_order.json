@@ -1,0 +1,55 @@
+{
+  "schema": "m238-entry-hud-order-review-v1",
+  "reviewer": "agent visual review; not independent human ground truth",
+  "battle_id": "sample_battle_5",
+  "basis": "Literal send-out order compared to subsequent named HUD cards. No rendered 3D coordinates used.",
+  "sources": [
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000003.png",
+      "timestamp": 121.02,
+      "sha256": "2b72a2e749db2bea4885e2d52ceafdd382d5478a6d32d797ecf0c76165d34593"
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m236/acquisition/sampling/df80a9b1e4c77d2514ab79f3/e74239531a14c26350a424ae/000011.png",
+      "timestamp": 125.02166666666668,
+      "sha256": "482b8137bfe92f313c6d931ec19a68e97e379adcef153d96dcaf2a7fcb30145d"
+    },
+    {
+      "image": ".cache/battles/sample_battle_5/m235/acquisition/sampling/df80a9b1e4c77d2514ab79f3/f619b066e0650ea726efd027/000001.png",
+      "timestamp": 140.02333333333334,
+      "sha256": "fd9f8ab5370010159be52546d7ee891e53bb90df700c52ce902b41d651a5d400"
+    }
+  ],
+  "examples": [
+    {
+      "side": "opponent",
+      "raw_text": "J派出了级别对战大师Big Nugget和喜欢宝可梦的Invincible!",
+      "ordered_references": [
+        "级别对战大师Big Nugget",
+        "喜欢宝可梦的Invincible"
+      ],
+      "hud_screen_left": "Invincible",
+      "hud_screen_right": "Big Nugget",
+      "first_slot": "right",
+      "second_slot": "left"
+    },
+    {
+      "side": "self",
+      "raw_text": "上吧！班基拉斯！龙头地鼠！",
+      "ordered_references": [
+        "班基拉斯",
+        "龙头地鼠"
+      ],
+      "hud_screen_left": "班基拉斯",
+      "hud_screen_right": "龙头地鼠",
+      "first_slot": "left",
+      "second_slot": "right"
+    }
+  ],
+  "limitations": [
+    "One reviewed opening; no universal identity accuracy claim.",
+    "Slots use existing StateEngine screen-HUD left/right convention.",
+    "Unseen Ally Switch or gaps require separate evidence.",
+    "No nickname-to-species mapping is a runtime input."
+  ]
+}

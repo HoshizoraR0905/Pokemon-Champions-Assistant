@@ -12,6 +12,44 @@ def knowledge():
     return KnowledgeBase()
 
 
+def literal_label_icon_support(species, icon):
+    """Validate preserved *independent* exact text beneath a literal HUD label.
+
+    Keep the adapter's icon_only representation. A fused label, a conditioned
+    candidate, or the mere presence of OCR text cannot establish agreement.
+    """
+    resolution = species.get('resolution') or {}
+    if resolution.get('method') != 'icon_only' or species.get('confidence', 0) < .95:
+        return None
+    text = resolution.get('independent_text') or {}
+    for _ in range(3):
+        if text.get('status') != 'resolved' or text.get('species_id') != resolution.get('species_id'):
+            return None
+        if text.get('method') == 'exact':
+            break
+        if text.get('method') != 'text_icon_agreement' or text.get('conditional_evidence'):
+            return None
+        text = text.get('independent_text') or {}
+    sid = resolution.get('species_id')
+    exact = knowledge().exact['species'].get(normalize(species.get('raw_text') or ''), [])
+    if (not sid or {e.species_id for e in exact} != {sid}
+            or text.get('method') != 'exact' or text.get('status') != 'resolved'
+            or text.get('confidence') != 'strong' or text.get('species_id') != sid
+            or text.get('conditional_evidence')
+            or (text.get('canonical_identity') and icon.get('canonical_identity')
+                and text['canonical_identity'] != icon['canonical_identity'])
+            or icon.get('status') != 'resolved' or icon.get('species_id') != sid
+            or icon.get('method') not in {'masked_multiscale_template', 'registered_silhouette_v1'}
+            or not icon.get('candidates') or icon['candidates'][0].get('species_id') != sid):
+        return None
+    return dict(policy='literal_label_independent_icon_agreement', raw_label=species['raw_text'],
+                species_id=sid, independent_text=deepcopy(text),
+                independent_icon=dict(method=icon['method'], species_id=sid,
+                                      canonical_identity=icon.get('canonical_identity'),
+                                      top_candidate=deepcopy(icon['candidates'][0])),
+                form_assertion='Existing form policy still applies; no default form inferred')
+
+
 def identity_evidence(species, icon, previous=None, support=None, *, reliability=False):
     """Validate resolution semantics, not just the resolver's method label.
 
@@ -53,7 +91,8 @@ def identity_evidence(species, icon, previous=None, support=None, *, reliability
         and icon_candidates and icon_candidates[0].get('similarity', 0) >= .85
         and (repeated or high_margin))
     corroborated = support and support.get('species_id') == sid and support.get('evidence')
-    if not (agreed or nickname_icon or strong_exact and (confidence >= .95 or repeated or corroborated)):
+    literal_agreement = reliability and literal_label_icon_support(species, icon)
+    if not (agreed or nickname_icon or literal_agreement or strong_exact and (confidence >= .95 or repeated or corroborated)):
         return None, 'deferred', 'identity_not_independently_supported'
     entity = knowledge().entities.get(f'pokeapi:species:{sid}')
     if entity is None:
@@ -67,7 +106,7 @@ def identity_evidence(species, icon, previous=None, support=None, *, reliability
     observed_form = (agreed or (nickname_icon and repeated)) and icon.get('canonical_identity') == variant
     if variant and (observed_form or named_forms == {variant}):
         ref.update(canonical_identity=variant, identity_status=resolution.get('identity_status'))
-    return ref, 'accepted', ('text_icon_agreement' if agreed else 'high_margin_icon_nickname_provisional' if nickname_icon and high_margin and not repeated else 'stable_icon_nickname' if nickname_icon else 'exact_with_prior_named_observation' if corroborated and reliability else 'exact_with_prior_sendout' if corroborated else 'unique_raw_exact')
+    return ref, 'accepted', ('text_icon_agreement' if agreed else 'literal_label_independent_icon_agreement' if literal_agreement else 'high_margin_icon_nickname_provisional' if nickname_icon and high_margin and not repeated else 'stable_icon_nickname' if nickname_icon else 'exact_with_prior_named_observation' if corroborated and reliability else 'exact_with_prior_sendout' if corroborated else 'unique_raw_exact')
 
 
 def hud_transition(engine, state, event, record):
@@ -83,6 +122,29 @@ def hud_transition(engine, state, event, record):
         raise Contradiction('invalid_hud_timestamp')
     fusion = state.knowledge.setdefault('hud_fusion', dict(slots={}, aliases={}))
     key = event.side + ':' + a['slot']; previous = fusion['slots'].get(key)
+    if a.get('identity_reused_from'):
+        # Reuse identifies a previous accepted HUD observation, never a new
+        # species/icon assertion. A departed or exchanged occupant cannot match.
+        source=a['identity_reused_from']
+        matches=[r for r in engine.history if r is not record and not r.retracted
+            and r.event['event_type']=='hud_observation' and r.event['side']==event.side
+            and r.event['attributes'].get('slot')==a['slot']
+            and any(p.get('source_id')==source for p in r.event.get('evidence',[]))
+            and r.bindings.get('hud',{}).get('status')=='accepted'
+            and r.event['attributes'].get('observation_time',float('inf'))<timestamp]
+        if len(matches)!=1:raise Deferred('retained_hud_identity_unresolved')
+        pid=matches[0].bindings.get('actor',{}).get('pokemon_instance_id')
+        if state.sides[event.side].active_slots.get(a['slot'])!=pid:
+            raise Deferred('retained_hud_episode_no_longer_active')
+        p=state.pokemon[pid]
+        outcome=dict(kind='hud_observation',status='accepted',side=event.side,slot=a['slot'],
+            event_id=event.event_id,timestamp=timestamp,identity_event_id=matches[0].event['event_id'],
+            reason='retained_active_episode_identity',evidence=evidence_link(event))
+        record.bindings['actor']=dict(pokemon_instance_id=pid,basis='retained_accepted_hud_identity')
+        if previous:
+            fusion['slots'][key]=dict(previous,timestamp=timestamp,retained_identity_event_id=matches[0].event['event_id'])
+        state.observations.append(outcome)
+        return apply_hud_hp(engine,state,event,record,p,previous,outcome,timestamp)
     if previous and timestamp < previous['timestamp']:
         raise Contradiction('hud_time_reversal')
     species = a.get('species') or {}; icon = a.get('icon') or {}
@@ -117,6 +179,8 @@ def hud_transition(engine, state, event, record):
     observed = dict(event_id=event.event_id, timestamp=timestamp, raw=species.get('raw_text'),
                     species_id=raw_sid, confidence=species.get('confidence') or 0, status=status, reason=reason, evidence=evidence_link(event), hp=deepcopy(a.get('hp')))
     if support:observed['corroboration'] = support
+    if reason == 'literal_label_independent_icon_agreement':
+        observed['independent_identity_support'] = literal_label_icon_support(species, icon)
     fusion['slots'][key] = observed
     outcome = dict(kind='hud_observation', **deepcopy(observed), side=event.side, slot=a['slot'])
     state.observations.append(outcome)
@@ -210,7 +274,15 @@ def hud_transition(engine, state, event, record):
     if state.knowledge.get('identity_v1') and raw and icon.get('status')=='resolved':
         from .identity_ledger import remember_alias
         remember_alias(state,raw,ref,[evidence_link(event)],side=event.side,instance_id=p.pokemon_instance_id)
-    hp = a.get('hp') or {}; value = hp.get('value')
+    if state.knowledge.get('identity_v1'):
+        from .identity_ledger import trainer_from_opening_hud
+        trainer_from_opening_hud(engine, state, event, record)
+    return apply_hud_hp(engine,state,event,record,p,previous,outcome,timestamp)
+
+
+def apply_hud_hp(engine,state,event,record,p,previous,outcome,timestamp):
+    from .state_engine import evidence_link
+    hp = event.attributes.get('hp') or {}; value = hp.get('value')
     outcome['hp_status'] = 'deferred'
     if hp.get('confidence', 0) >= .75 and isinstance(value, dict):
         current_hp = value.get('current'); maximum = value.get('maximum')
@@ -257,6 +329,11 @@ def prepare_message(state, event):
     context = BattleContext()
     timestamp = event.attributes.get('observation_time', float('-inf'))
     for side, team in state.sides.items():
+        trainer = team.trainer
+        if (trainer.get('status') == 'accepted' and trainer.get('evidence')
+                and trainer.get('observed_at', float('inf')) <= timestamp):
+            context.participants[side].display_name = trainer['display_name']
+    for side, team in state.sides.items():
         for slot, pid in team.active_slots.items():
             last = state.knowledge.get('hud_fusion', {}).get('slots', {}).get(side + ':' + slot)
             if last and (last['status'] != 'accepted' or last['timestamp'] > timestamp):
@@ -286,6 +363,8 @@ def prepare_message(state, event):
                  move_ocr_alternatives=[a for a in event.attributes.get('move_ocr_alternatives',[])
                     if a.get('source_sha256') in {oid for source in event.evidence for oid in source.observation_ids}])
     parsed = EventParser(knowledge()).parse(entry, context, state.battle_id)
+    if 'observed_trainer_display_name' in parsed.attributes.get('side_basis', []):
+        parsed.attributes['trainer_side_evidence'] = deepcopy(state.sides[parsed.side].trainer)
     parsed.event_id = event.event_id; parsed.evidence = deepcopy(event.evidence)
     parsed.attributes.update({k:deepcopy(v) for k,v in event.attributes.items() if k not in {'side_basis','display_alias_evidence','move_resolution'}})
     parsed.status = event.status

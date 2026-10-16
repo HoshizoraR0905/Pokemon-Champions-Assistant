@@ -14,8 +14,9 @@ def compact(text):return re.sub(r'\s+','',text).casefold()
 
 
 class MessageOccurrences:
-    def __init__(self,battle_id,maximum_gap=1.1):
+    def __init__(self,battle_id,maximum_gap=1.1,source_occurrence_ids=False):
         self.battle_id=battle_id;self.maximum_gap=maximum_gap;self.current=None;self.groups=[];self.last_timestamp=None
+        self.source_occurrence_ids=source_occurrence_ids
         self.parser=EventParser()
 
     def observe(self,row):
@@ -38,7 +39,8 @@ class MessageOccurrences:
         # when their actors and grammar look identical. Ambiguous cases stay raw.
         if related and current.get('canonical_move') and move and current['canonical_move']!=move:related=False
         if not related:
-            current=dict(id=stable_id(self.battle_id,'occurrence:'+row['sha256']),first_time=t,last_time=t,
+            seed=row['source_id']+':'+row['sha256'] if self.source_occurrence_ids else row['sha256']
+            current=dict(id=stable_id(self.battle_id,'occurrence:'+seed),first_time=t,last_time=t,
                          last_text='',observations=[],canonical_move=None,emitted=False,interpretation_time=None,
                          chronology='first supported reading, never backdated')
             self.groups.append(current);self.current=current

@@ -2,7 +2,10 @@
 import hashlib
 import json
 import re
+from collections import Counter
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / 'reports/M2.3.6-review'
@@ -13,6 +16,33 @@ def substantive(row):
                for k, v in row.items() if k not in {'reading_source', 'proximity', 'reviewed', 'unsupported_proximity'})
 
 
+def review_counts(annotations, data):
+    """Keep explicit occurrence verdicts separate from frame and UI feedback."""
+    frames = {f['id'] for f in data['frames']}
+    structured = {k for k, v in annotations.get('frames', {}).items() if k in frames and substantive(v)}
+    legacy = {k for k, v in annotations.get('legacy_annotations', {}).items()
+              if k in frames and v.get('reviewed') is True}
+    reviewed = structured | legacy
+    occurrences = [e for e in data['events'] if e['reviewed_occurrence']]
+    notes = annotations.get('events', {})
+    def verdicts(events):
+        return Counter(notes[e['id']]['verdict'] for e in events
+                       if notes.get(e['id'], {}).get('verdict') not in {None, '', 'cannot_determine'})
+    return dict(
+        reviewed=reviewed, structured=structured, legacy_only=legacy - structured,
+        frame_feedback=sum(bool(reviewed.intersection(e['frame_ids'])) for e in occurrences),
+        touched=sum(substantive(notes.get(e['id'], {})) or bool(reviewed.intersection(e['frame_ids']))
+                    for e in occurrences),
+        occurrence_verdicts=verdicts(occurrences), group_verdicts=verdicts(data['events']),
+        frame_classes=Counter(v.get('message_class', '(unset)') for k, v in annotations.get('frames', {}).items()
+                              if k in frames),
+    )
+
+
+def format_counts(counts):
+    return '; '.join(f'{key} {value}' for key, value in sorted(counts.items())) or 'none'
+
+
 def main():
     source = TARGET / 'm236-event-review-annotations.json'
     original = source.read_bytes()
@@ -21,20 +51,33 @@ def main():
     frames = {f['id']: f for f in d['frames']}
     events = {e['id']: e for e in d['events']}
     preview = {'preview:' + r['evidence']['sha256'] + ':' + str(r['preview_row']): r for r in d['preview']}
-    reviewed = {k for k, v in a['frames'].items() if substantive(v)} | {k for k, v in a['legacy_annotations'].items() if v.get('reviewed') is True and k in frames}
+    counts = review_counts(a, d)
+    reviewed = counts['reviewed']
     occurrences = [e for e in d['events'] if e['reviewed_occurrence']]
-    touched = [e for e in occurrences if substantive(a['events'].get(e['id'], {})) or reviewed.intersection(e['frame_ids'])]
-    lines = ['# M2.3.6-U partial human feedback', '', 'Analysis date: 2026-10-16 (Asia/Shanghai). Primary input: `m236-event-review-annotations.json`.',
+    judged = sum(counts['occurrence_verdicts'].values())
+    analysis_date = datetime.now(ZoneInfo('Asia/Shanghai')).date().isoformat()
+    lines = ['# M2.3.6-U partial human feedback', '', f'Analysis date: {analysis_date} (Asia/Shanghai). Primary input: `m236-event-review-annotations.json`.',
              '', f'Original SHA-256: `{hashlib.sha256(original).hexdigest()}`. The original bytes were not changed. Schema `m236-human-review-v2` is compatible; no migration is needed.', '',
              '## Counts and interpretation', '',
              f'- Reviewable actual event occurrences: {len(occurrences)}. These are the old fixture population, not proof of current human acceptance.',
-             f'- Explicit human event-occurrence verdicts: 0 reviewed, 11 still without a verdict. {len(touched)} occurrences have human feedback on constituent frames; {len(occurrences)-len(touched)} have no such feedback. Frame feedback does not judge an entire occurrence.',
-             f'- Individually reviewed frames: {len(reviewed)}/136; {136-len(reviewed)} remain unreviewed under the rule below. 11 structured frames contain a classification or substantive text; 9 additional frames have explicit legacy `reviewed=true`.',
-             '- 12 structured frame records exist: one is entirely indeterminate/blank and is not counted as reviewed. Two say `cannot_determine`; one of those supplies a literal field transcription and counts as feedback, not a resolved visibility judgment.',
-             '- Actual-event verdicts: correct 0; incorrect/missing 0; explicit unresolved/cannot-determine 0. Absence of an event verdict is unreviewed, not unresolved or accepted.',
-             '- Across all 36 navigation groups (including UI cards): 1 explicit verdict, `incorrect`, at 140.023s; 8 other saved event records say `cannot_determine`, including 7 with substantive corrections/comments. No group is explicitly marked correct, missing, or unresolved.',
-             '- Frame classifications (different denominator): readable_correct 5; readable_incorrect 1; readable_missed 2; no_message 2; cannot_determine 2. Legacy reviewed flags carry no correctness verdict. None of these categories is silently promoted to an event verdict.',
+             f'- Explicit human event-occurrence verdicts: {judged} reviewed, {len(occurrences)-judged} still without a verdict. {counts["touched"]} occurrences have feedback on the event or its frames; {counts["frame_feedback"]} have constituent-frame feedback. Frame feedback does not judge an entire occurrence.',
+             f'- Individually reviewed frames: {len(reviewed)}/{len(frames)}; {len(frames)-len(reviewed)} remain unreviewed. {len(counts["structured"])} structured frames contain a classification or substantive text; {len(counts["legacy_only"])} additional frames have explicit legacy `reviewed=true`. Overlapping IDs count once.',
+             f'- {len(a["frames"])} structured frame records exist. `cannot_determine` without substantive text does not count as reviewed; with text it counts as feedback, not a resolved visibility judgment.',
+             f'- Actual-event verdicts: {format_counts(counts["occurrence_verdicts"])}. The viewer uses `cannot_determine` for both indeterminate and unreviewed records; it cannot establish an explicit unresolved judgment. Blank records are not accepted.',
+             f'- Across all {len(events)} navigation groups (including UI cards): {format_counts(counts["group_verdicts"])}. Preview-row notes are separate from this denominator.',
+             f'- Frame classifications (different denominator): {format_counts(counts["frame_classes"])}. Legacy reviewed flags carry no correctness verdict. None of these categories is silently promoted to an event verdict.',
              '- Three preview species suggestions, two nickname suggestions, one HUD correction, and one field comment have no final event verdict. Blank fields provide no negative evidence.', '',
+             '## Additional saved reviews', '',
+             'The explicit verdicts below are human assessments of the displayed conclusions. They do not independently establish recognition accuracy, complete actor/target binding, or Champions mechanics.', '']
+    for e in d['events']:
+        note = a['events'].get(e['id'], {})
+        if note.get('verdict') in {None, '', 'cannot_determine'}:
+            continue
+        scope = 'actual occurrence' if e['reviewed_occurrence'] else 'navigation/UI card'
+        lines.append(f'- `{e["id"]}` at {e["start"]:.3f}s ({scope}): **{note["verdict"]}** — {e["title"]}.')
+    lines.extend(['',
+             'The Coaching stat-change comment attributes the result to Lucario using Coaching. This remains a human causal/identity assertion for investigation; the saved comment does not bind the execution actor or target in production state. The earlier 426.505s reading-profile disagreement still needs resolution.', '',
+             'At 417.003s the field card is marked incorrect and reclassified as a move, with the U frame reviewed as readable_correct and the comment `对手的Big Mom使出了击掌奇袭！`. At 417.503s the field card says no_ui and its message-region review says no_message. These are distinct region-scoped judgments; no_message alone would not establish absence of field UI.', '',
              '## Prioritized issues from the human corrections', '',
              '1. **Move-description layout at 140.023s — confirmed visibility/layout coverage gap.** The user marked the field card incorrect and selected `move_description_overlay`. Cached full pixels show a large move description (category, power 75, accuracy 90, effect range, effect text) while a sandstorm indicator is also visible at top left. U records only a field/command-style case and claims no verified move-description positive. Both UI elements can coexist: the correction does not show that the field itself was absent. No state event was admitted. Next: separately review overlay geometry/visibility and multi-region routing; do not infer an executed move or opponent equipped slots from the menu.', '',
              '2. **Ability banner at 128.022s — confirmed missed visible text, cause partly unresolved.** User: `班基拉斯的扬沙`, “在屏幕左侧，特性发动区域。” Cached pixels visibly contain that left-side banner; no banner text or new effect receipt exists in the packaged U evidence. This is a region coverage / scheduling / extraction issue; no new OCR was run to distinguish those causes. Next: inspect existing banner geometry and scheduling provenance. The species label alone does not establish a persistent actor instance or warrant applying a weather trigger twice.', '',
@@ -45,7 +88,7 @@ def main():
              '7. **Pre-battle UI at 108.002/110.502/116.020s — distinguish screen information from battle messages.** User labels the first two no-message, and 116.020s readable_missed with player IDs/ranks. Baseline sees noise `3U人` / `O: O`, defers it, and admits no semantic event. Confirmed: useful user-described screen information is absent from these battle-message readings. A missing player-info extraction is distinct from a missed battle action; current crops/route applicability should be checked before attributing this to OCR alone.', '',
              '8. **Field label at 240.007s and opponent entry at 122.020s — scope clarifications.** User: weather/field state persists at top left, literal `沙暴状态           4/5`; U field canonical evidence retains the label/counter, with no new state event. Counter duration meaning stays unknown. At 122.020s user identifies custom nicknames in the send-out message; baseline transcription matches, but send-out remains deferred (side/actor unresolved). Correct transcription does not resolve identity/slots. Next: investigate persistence and identity association with evidence, without turning repeated display into repeated effects.', '',
              '## Exact saved feedback and original predictions', '',
-             'All IDs, timestamps, empty strings and user text below come from the existing JSON/payload; timestamps are sampled observations, not action onsets. The annotation JSON remains the authoritative lossless input.', '']
+             'All IDs, timestamps, empty strings and user text below come from the existing JSON/payload; timestamps are sampled observations, not action onsets. The annotation JSON remains the authoritative lossless input.', ''])
     def emit_frame(fid, note, label):
         f = frames.get(fid)
         if not f:
@@ -83,11 +126,14 @@ def main():
     for fid, note in a['legacy_annotations'].items():
         if note.get('reviewed') is True or note.get('note'):
             f = frames.get(fid)
-            lines.extend([f'Legacy `{fid}` at {f["timestamp"]:.6f}s: ' + json.dumps(note, ensure_ascii=False) + '.', 'Baseline OCR: ' + json.dumps(f['message']['raw_text'], ensure_ascii=False) + '; frame-reviewed flag only, no event verdict.', ''])
+            if f:
+                lines.extend([f'Legacy `{fid}` at {f["timestamp"]:.6f}s: ' + json.dumps(note, ensure_ascii=False) + '.', 'Baseline OCR: ' + json.dumps(f['message']['raw_text'], ensure_ascii=False) + '; frame-reviewed flag only, no event verdict.', ''])
+            else:
+                lines.extend([f'Legacy `{fid}`: no frame match; retained in original JSON. ' + json.dumps(note, ensure_ascii=False), ''])
     lines.extend(['## Limits and next work', '', 'No OCR, video decoding, recognition model, StateEngine, historical labels or frozen evaluation reports were changed. Human corrections were not promoted to ground truth. The original intermittent Chrome image failure was not reproduced; see `viewer-validation.md` for observed behavior and limits. Review remains partial.'])
     (TARGET / 'human-feedback-summary.md').write_text('\n'.join(lines) + '\n')
     assert source.read_bytes() == original
-    print(f'Summary: {len(reviewed)} reviewed frames; {len(touched)}/11 occurrences with frame feedback; zero explicit occurrence verdicts.')
+    print(f'Summary: {len(reviewed)}/{len(frames)} reviewed frames; {counts["touched"]}/{len(occurrences)} occurrences with event/frame feedback; {judged} explicit occurrence verdicts.')
 
 
 if __name__ == '__main__':

@@ -4,8 +4,64 @@ from copy import deepcopy
 from pathlib import Path
 import pytest
 from scripts.build_m236_review import build,event_priority,receipt
+from scripts.summarize_m236_feedback import review_counts
 
 CACHE=Path('.cache/battles/sample_battle_5/m236')
+
+
+def test_feedback_counts_separate_occurrences_cards_and_frame_reviews():
+    data = dict(frames=[dict(id=f) for f in ['a', 'b', 'c', 'd']], events=[
+        dict(id='occurrence:approved', reviewed_occurrence=True, frame_ids=['a']),
+        dict(id='occurrence:frame_only', reviewed_occurrence=True, frame_ids=['b']),
+        dict(id='occurrence:blank', reviewed_occurrence=True, frame_ids=['c']),
+        dict(id='ui', reviewed_occurrence=False, frame_ids=['d']),
+    ])
+    annotations = dict(events={
+        'occurrence:approved': dict(verdict='correct'),
+        'occurrence:blank': dict(verdict='cannot_determine'),
+        'ui': dict(verdict='no_ui'),
+        'preview:row': dict(verdict='correct'),
+    }, frames={
+        'a': dict(message_class='readable_correct', reading_source='baseline'),
+        'b': dict(message_class='cannot_determine', visible_message='literal text'),
+        'c': dict(message_class='cannot_determine', reading_source='ui_u'),
+        'unknown-frame': dict(message_class='readable_correct'),
+    }, legacy_annotations={
+        'a': dict(reviewed=True), 'd': dict(reviewed=True), 'unknown-legacy': dict(reviewed=True),
+    })
+    result = review_counts(annotations, data)
+    assert result['reviewed'] == {'a', 'b', 'd'}
+    assert result['structured'] == {'a', 'b'}
+    assert result['legacy_only'] == {'d'}
+    assert result['occurrence_verdicts'] == {'correct': 1}
+    assert result['group_verdicts'] == {'correct': 1, 'no_ui': 1}
+    assert result['frame_feedback'] == result['touched'] == 2
+    assert result['frame_classes'] == {'readable_correct': 1, 'cannot_determine': 2}
+    # An explicit verdict counts even when no constituent frame was reviewed.
+    annotations['events']['occurrence:blank']['verdict'] = 'unresolved'
+    result = review_counts(annotations, data)
+    assert result['occurrence_verdicts'] == {'correct': 1, 'unresolved': 1}
+    assert result['touched'] == 3 and result['frame_feedback'] == 2
+
+
+def test_feedback_report_uses_saved_verdicts_and_preserves_annotation_bytes(tmp_path, monkeypatch):
+    from scripts import summarize_m236_feedback as feedback
+
+    monkeypatch.setattr(feedback, 'TARGET', tmp_path)
+    annotation = tmp_path / 'm236-event-review-annotations.json'
+    original = b'{"schema":"m236-human-review-v2", "events":{"e":{"verdict":"correct"}}, "frames":{}, "legacy_annotations":{}}\n'
+    annotation.write_bytes(original)
+    data = dict(frames=[], preview=[], events=[dict(
+        id='e', reviewed_occurrence=True, frame_ids=[], start=1, end=2,
+        title='Saved occurrence', kind='move_execution', receipts=[],
+    )])
+    (tmp_path / 'review.html').write_text('const DATA=' + json.dumps(data) + ';\nconst $')
+    feedback.main()
+    report = (tmp_path / 'human-feedback-summary.md').read_text()
+    assert '1 reviewed, 0 still without a verdict' in report
+    assert 'Actual-event verdicts: correct 1.' in report
+    assert 'Individually reviewed frames: 0/0' in report
+    assert annotation.read_bytes() == original
 
 
 def test_priority_distinguishes_failed_move_from_unbound_actor():

@@ -267,10 +267,27 @@ class StateEngine:
         record.bindings[role]={'pokemon_instance_id':p.pokemon_instance_id,'basis':basis};return p
 
     def _transition(self,state,e,record):
-        if e.event_type in {'preview_observation','entry_observation','alias_observation'}:
+        if e.event_type in {'preview_observation','entry_observation','alias_observation','trainer_observation'}:
             from .identity_ledger import transition
             return transition(self,state,e,record)
         kind=e.event_type;a=e.attributes
+        if kind=='position_change':
+            if a.get('mechanic')!='ally_switch' or a.get('execution_observed') is not True:
+                raise Deferred('position_exchange_execution_unresolved')
+            team=self._side(state,e.side)
+            if set(team.active_slots)!={'left','right'} or len(set(team.active_slots.values()))!=2:
+                raise Deferred('position_exchange_occupants_unresolved')
+            left,right=team.active_slots['left'],team.active_slots['right']
+            team.active_slots.update(left=right,right=left)
+            for slot,pid in team.active_slots.items():
+                self._assign(state.pokemon[pid],'location',dict(kind='active',slot=slot),e)
+            fusion=state.knowledge.get('hud_fusion',{}).get('slots',{})
+            lk,rk=e.side+':left',e.side+':right'
+            lv,rv=fusion.pop(lk,None),fusion.pop(rk,None)
+            if rv:fusion[lk]=rv
+            if lv:fusion[rk]=lv
+            record.bindings['exchange']=dict(before=dict(left=left,right=right),after=dict(team.active_slots))
+            return False
         if kind in {'visual_observation','coverage_observation'}:
             if not state.knowledge.get('reliability_v1'):raise Deferred('reliability_profile_required')
             if kind=='coverage_observation':
