@@ -56,3 +56,25 @@ def test_cached_review_groups_do_not_inflate_event_or_move_denominators():
     assert background['representatives']['during']==white['id']
     assert background['priority']==7 and not background['reviewed_occurrence']
     assert any(e['id']=='nickname:development:Big Nugget' for e in data['events'])
+
+
+def test_portable_package_preserves_evidence_and_deduplicates(tmp_path):
+    from scripts.package_m236_review import package
+    import hashlib
+
+    source = tmp_path / 'cached.png'
+    source.write_bytes(b'cached image evidence')
+    digest = hashlib.sha256(source.read_bytes()).hexdigest()
+    payload = {'frames': [{'id': 'immutable-frame-id', 'image': 'cached.png'}],
+               'preview': [{'evidence': {'image': 'cached.png', 'sha256': digest}}]}
+    annotation = tmp_path / 'm236-event-review-annotations.json'
+    annotation.write_bytes(b'{"human": "unchanged"}')
+    manifest = package(payload, tmp_path)
+    assert len(manifest) == 1
+    image = payload['frames'][0]['image']
+    assert (tmp_path / image).read_bytes() == source.read_bytes()
+    assert payload['frames'][0]['id'] == 'immutable-frame-id'
+    assert payload['frames'][0]['source_image'] == 'cached.png'
+    assert payload['preview'][0]['evidence']['sha256'] == digest
+    assert package(payload, tmp_path) == manifest
+    assert annotation.read_bytes() == b'{"human": "unchanged"}'

@@ -1,8 +1,11 @@
 # Review M2.3.6 battle events
 
 Open [review.html](review.html) directly in Chrome and refresh if you had the old
-viewer open. Keep the repository's `.cache/battles/` directory in place: images
-use relative local links. No server, network, OCR or video decoding is needed.
+viewer open. Keep `review.html` and `assets/` together; you can copy this review
+directory elsewhere. All display images use local hash-addressed assets. No
+server, network, OCR, video decoding or special Chrome file-access flag is needed.
+The package is about 202 MiB because the original PNG bytes are preserved.
+`assets-manifest.json` records hashes and original evidence paths; do not rename assets.
 
 ## Start here
 
@@ -186,3 +189,39 @@ M2.3.6 renderers belong to the preserved baseline and should not be used to upda
 this U comparison. The previous event viewer is preserved locally as
 `m236u/previous-review.html`. U review and resource manifests are separate from
 closed M2.3.6 budgets and outputs. No new OCR runs when rendering this page.
+
+## Resume the saved partial review (2026-10-16 repair)
+
+1. Open `review.html` and select **Import annotations**.
+2. Select this directory's existing `m236-event-review-annotations.json`.
+3. The partial-review indicator should show **0/11 event verdicts**, **7/11
+   occurrences with event/frame feedback**, and **20/136 individually reviewed
+   frames**. Frame feedback is not an event-level verdict. Indeterminate blank
+   records remain unreviewed; legacy reviewed flags retain their original meaning.
+4. Inspect **Team preview**, nickname cards, and individual frames to resume the
+   corrections already entered. Blank correction fields are preserved as blank.
+5. Export to a new filename/location to retain the original export. The viewer
+   does not write to the original JSON file. Temporary validation exports are
+   confined to `.cache/battles/sample_battle_5/m236u/browser-check/`.
+
+[Human feedback and priorities](human-feedback-summary.md) and
+[Chrome validation and limits](viewer-validation.md) distinguish confirmed
+observations from hypotheses. The intermittent original image failure was not
+reproduced in this Chrome environment. The repair removes cache-path dependency,
+registers image callbacks before assigning sources, and displays explicit errors.
+Cyan boxes show cached visible U HUD regions; yellow shows the selected message
+or panel region. Existing frozen scores are separate from your partial review.
+
+To rebuild only the package or summary, using existing HTML/caches:
+
+```sh
+.venv/bin/python scripts/package_m236_review.py
+.venv/bin/python scripts/summarize_m236_feedback.py
+node scripts/verify_m236_portable_review.cjs
+```
+
+The packaging command requires either existing `assets/` or the original cached
+images. It never extracts frames or invokes OCR. The U renderer also calls this
+packager on future explicit renders; no recognition rerun is needed for this fix.
+Assets and generated review outputs follow the existing Git ignore policy and
+remain available locally. No commit or push was performed.

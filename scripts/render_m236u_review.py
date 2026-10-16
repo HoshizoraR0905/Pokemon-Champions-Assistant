@@ -83,8 +83,8 @@ def main():
                    status='untested: no verified positive' if k=='move_description_overlay' else 'cached examples available') for k in labels},
         caveat='New test: 10 sparse same-recording frames, 3 readable message occurrences, 1 executed move. Existing M236 held-out cases are regressions now.',
         replay_executions=replay['executed_event_receipts'])
-    text=(ROOT/'scripts/templates/m236_event_review.html').read_text()
-    (TARGET/'review.html').write_text(text.replace('__PAYLOAD__',json.dumps(payload,ensure_ascii=False).replace('<','\\u003c')))
+    from scripts.package_m236_review import package
+    package(payload)
     atomic_json(P/'review-manifest.json',dict(status='complete',renderer=sha(__file__),template=sha(ROOT/'scripts/templates/m236_event_review.html'),
         source_results={str(P/f'{s}-results.json'):sha(P/f'{s}-results.json') for s in ['development','held_out']},
         output=sha(TARGET/'review.html'),cached_frames=len(payload['frames']),ocr_calls=0))
