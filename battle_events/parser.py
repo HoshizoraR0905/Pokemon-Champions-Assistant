@@ -58,7 +58,49 @@ class EventParser:
         subject=None;target=None;refs={};attrs={};unc=[];typ='unknown';basis=[]
         identity_text=text
         from .aliases import substitutions
-        alias_side='opponent' if text.startswith('对手') else entry.get('side_hint','unknown')
+        from .aliases import alias_key
+        trainer_match=re.fullmatch(r'(.+?)换下了(.+?)[！!。.]?',text)
+        recall=re.fullmatch(r'(.+?)[，,]回来[！!。.]?',text)
+        returning=re.fullmatch(r'(对手的)?(.+?)要回到(.+?)的身边了[！!。.]?',text)
+        trainer_send=re.fullmatch(r'(.+?)派出了.+',text)
+        faint_literal=re.fullmatch(r'(对手的)?(.+?)倒下了[！!。.]?',text)
+        live_actor=re.fullmatch(r'(对手的)?(.+?)(?:使出了.+[！!。.]|'
+            r'的(?:特攻|特防|攻击|防御|速度|命中率|闪避率)(?:大幅)?(?:提高了|降低了)[！!。.]?|'
+            r'(?:中毒了|麻痹了|睡着了|灼伤了|冰冻了)[！!。.]?)',text) if region=='battle_message' else None
+        trainer_literal=(trainer_match[1] if trainer_match else returning[3] if returning else trainer_send[1] if trainer_send else None)
+        trainer_sides={side for side,p in c.participants.items() if trainer_literal and p.display_name
+            and p.display_name!='训练家' and alias_key(p.display_name)==alias_key(trainer_literal)}
+        route='unknown';actor_literal=None
+        if recall and region=='battle_message':route='self';actor_literal=recall[1]
+        elif trainer_match:
+            route=next(iter(trainer_sides)) if len(trainer_sides)==1 else 'unknown';actor_literal=trainer_match[2]
+            if not trainer_sides:unc.append('trainer_id_not_observed')
+        elif returning:
+            route=next(iter(trainer_sides)) if len(trainer_sides)==1 else 'unknown'
+            actor_literal=returning[2]
+            if not trainer_sides:unc.append('trainer_id_not_observed')
+            if returning[1] and route=='self':unc.append('trainer_name_conflict');route='unknown'
+        elif faint_literal and region=='battle_message':
+            route='opponent' if faint_literal[1] else 'self';actor_literal=faint_literal[2]
+        elif trainer_send and len(trainer_sides)==1:route=next(iter(trainer_sides))
+        elif trainer_send:
+            unc.append('trainer_id_not_observed')
+        elif live_actor:
+            route='opponent' if live_actor[1] else 'self';actor_literal=live_actor[2]
+            prefixed=[(s,p.display_name) for s,p in c.participants.items() if p.display_name
+                and p.display_name!='训练家'
+                and alias_key(actor_literal).startswith(alias_key(p.display_name)+'的')]
+            if len(prefixed)==1:
+                route,name=prefixed[0];trainer_literal=name
+                original_actor=actor_literal
+                actor_literal=alias_key(actor_literal)[len(alias_key(name))+1:]
+                identity_text=alias_key(identity_text).replace(alias_key(original_actor),actor_literal,1)
+                basis.append('observed_trainer_display_name')
+            elif len(prefixed)>1:
+                route='unknown';unc.append('ambiguous_trainer_display_name')
+        if actor_literal:attrs['actor_display_reference']=actor_literal
+        if trainer_literal:attrs['trainer_display_text']=trainer_literal
+        alias_side=route if route!='unknown' else 'opponent' if text.startswith('对手') else entry.get('side_hint','unknown')
         if alias_side=='unknown' and region=='battle_message' and c.display_aliases:
             # Establish literal actor grammar before consulting side-owned aliases.
             # Empty context prevents a competing alias or active species from
@@ -71,17 +113,22 @@ class EventParser:
         if collisions:unc.append('ambiguous_display_alias')
         mentions=[m for m in self.species_mentions(identity_text) if m]
         subject=mentions[0] if mentions else None
+        if actor_literal:
+            literal,_,_=substitutions(actor_literal,c.display_aliases,alias_side)
+            subject=self.identity(literal,'species')
         hint=entry.get('side_hint','unknown')
         color=c.color_sides.get(entry.get('color'),'unknown')
         explicit='opponent' if text.startswith('对手') else 'unknown'
         if re.search(r'回来[！!]?$',text) or text.startswith('上吧'):explicit='self'
-        signals={s for s in (color,explicit,hint) if s!='unknown'}
+        signals={s for s in (color,explicit,hint,route) if s!='unknown'}
         side=next(iter(signals)) if len(signals)==1 else 'unknown'
         if len(signals)>1:unc.append('side_evidence_conflict')
         if side!='unknown':
             if explicit!='unknown':basis.append('explicit_text')
             if color!='unknown':basis.append('calibrated_row_color')
             if hint!='unknown':basis.append('adjacent_entry_context')
+            if route!='unknown':basis.append('complete_live_faint_grammar' if faint_literal and region=='battle_message' else 'complete_withdrawal_grammar' if actor_literal else 'observed_trainer_display_name')
+            if live_actor:basis.append('complete_live_actor_grammar')
         from .aliases import alias_key
         trainer_prefix=re.match(r'^(.+?)(?:派出了|换下了)',text)
         name_sides={s for s,p in c.participants.items() if p.display_name and p.display_name!='训练家'
@@ -92,6 +139,7 @@ class EventParser:
             name_side=next(iter(name_sides))
             if side!='unknown' and side!=name_side:side='unknown';unc.append('trainer_name_conflict')
             else:side=name_side;basis.append('observed_trainer_display_name')
+        if 'trainer_name_conflict' in unc or 'trainer_id_not_observed' in unc:side='unknown'
         from .visible_endings import ending
         ended = ending(text)
         if ended:
@@ -211,7 +259,7 @@ class EventParser:
                        r'超级进化成了.+[！!。.]|摆出了防守的架势[！!。.]?|'
                        r'的.+进化石(?:[XYZxyz])?和.+起了反应[！!。.]?)')
             if re.fullmatch(grammar,identity_text):
-                grammar_side='opponent' if identity_text.startswith('对手的') else 'self'
+                grammar_side=route if live_actor and trainer_literal and route!='unknown' else 'opponent' if identity_text.startswith('对手的') else 'self'
                 if side not in {'unknown',grammar_side}:
                     side='unknown';unc.append('side_evidence_conflict')
                 else:side=grammar_side;basis.append('complete_live_actor_grammar')
@@ -228,8 +276,9 @@ class EventParser:
                     attrs['trainer_side']=matched[0]
                     if side in {'unknown',matched[0]}:side=matched[0];basis.append('observed_trainer_display_name')
                     else:side='unknown';unc.append('trainer_name_conflict')
+        if 'trainer_name_conflict' in unc or 'trainer_id_not_observed' in unc:side='unknown'
         affected=subject or target
-        if side=='unknown' and not unc and affected:
+        if side=='unknown' and not unc and affected and typ!='unknown':
             sid=affected['canonical_id'];owners=[s for s,values in c.active.items() if sid in values]
             if len(owners)==1:side=owners[0];basis.append('prior_active_observation')
             elif len(owners)>1:unc.append('species_active_on_both_sides')

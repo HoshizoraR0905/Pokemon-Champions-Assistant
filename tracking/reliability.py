@@ -28,7 +28,7 @@ def unplaced_entry(engine, state, event, record):
             state.observations.append(dict(kind='repeated_entry_display',instance_id=pid,evidence=evidence_link(event)))
             return True
     pid = state.battle_id + ':' + event.side + ':entry:' + hashlib.sha256(event.event_id.encode()).hexdigest()[:16]
-    if team.party_complete.known and team.party_complete.value:
+    if state.knowledge.get('active_continuity_v1') or team.party_complete.known and team.party_complete.value:
         p=engine._resolve(state,event,record,sending=True)
         pid=p.pokemon_instance_id
         if pid in team.active_slots.values():raise Contradiction('already_active_instance')
@@ -42,6 +42,9 @@ def unplaced_entry(engine, state, event, record):
     engine._assign(p, 'location', {'kind': 'unplaced_entry', 'slot': None}, event)
     state.knowledge.setdefault('unplaced_entries', []).append(dict(instance_id=pid, side=event.side,
         species_id=ref['species_id'], event_id=event.event_id, timestamp=event.attributes.get('observation_time')))
+    if state.knowledge.get('active_continuity_v1'):
+        from .active_continuity import enter
+        enter(state,p,event,record)
     record.bindings['actor'] = dict(pokemon_instance_id=pid, basis='named_entry_slot_unresolved')
     record.bindings['admissibility'] = dict(identity=True, slot=False, continuity=False)
     state.observations.append(dict(kind='unplaced_entry', evidence=evidence_link(event), instance_id=pid))
@@ -54,6 +57,9 @@ def visual_transition(engine, state, event, record):
     a = event.attributes
     if a.get('battle_id') != state.battle_id:
         raise Contradiction('visual_battle_ownership_mismatch')
+    if a.get('source_kind') == 'entry_model' and state.knowledge.get('active_persistence_v1'):
+        from .active_persistence import corroborate_entry_model
+        return corroborate_entry_model(state, event, record)
     if a.get('source_kind') not in {'ability_popup', 'selected_detail_panel','party_configuration_panel'}:
         raise Deferred('visual_layout_unresolved')
     timestamp=a.get('observation_time')

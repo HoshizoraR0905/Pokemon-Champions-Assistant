@@ -46,7 +46,9 @@ def video_events(rows, roster, battle_id):
             events.append(BattleEvent(stable_id(battle_id,'trainer:'+row['source_id']+':'+trainer['side']),
                 'trainer_observation',trainer['side'],None,None,trainer['raw_text'],{},None,
                 [Evidence('team_preview_trainer',row['source_id'],[row['sha256']],dict(timestamp=t,image=row['image']))],
-                trainer['ocr_confidence'],'supported',[],dict(battle_id=battle_id,observation_time=t,
+                # Raw reads (including empty panel / clear foreground retry)
+                # must reach consensus. Per-reading confidence stays in trainer.
+                None,'supported',[],dict(battle_id=battle_id,observation_time=t,
                 trainer=deepcopy(trainer))).to_dict())
         visible_edges={r['region_id'] for r in row.get('ui',{}).get('regions',[])
             if r['region_type']=='ability_banner' and r['visibility']=='visible'}
@@ -98,7 +100,7 @@ def video_events(rows, roster, battle_id):
                 event['attributes']['opening_evidence']=qualification
                 if qualification.get('confirmed') and qualification.get('side')=='opponent':
                     event['side']='opponent'
-                    event['uncertainty']=[u for u in event['uncertainty'] if u!='side_unknown']
+                    event['uncertainty']=[u for u in event['uncertainty'] if u not in {'side_unknown','trainer_id_not_observed'}]
                     event['attributes']['side_basis']=['explicit_preview_trainer_id_match']
             if event['event_type']=='send_out':
                 event['attributes']['ordered_display_references']=refs
@@ -136,7 +138,7 @@ def reconstruct_and_package(paths,folder,report,rows,roster,occurrences):
         verify_seal(folder)
         return json.loads((report/'summary.json').read_text())
     events=video_events(rows,roster,paths.battle_id)
-    engine=StateEngine(BattleState(paths.battle_id,knowledge=dict(reliability_v1=True,reliability_v2=True,identity_v1=True)))
+    engine=StateEngine(BattleState(paths.battle_id,knowledge=dict(reliability_v1=True,reliability_v2=True,identity_v1=True,active_continuity_v1=True,active_persistence_v1=True)))
     for i,event in enumerate(events,1):
         event['attributes']['sequence']=i
         engine.history.append(EventRecord(event,i,ordering(event_from_dict(event))))

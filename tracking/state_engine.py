@@ -248,14 +248,15 @@ class StateEngine:
         if sending:
             if len(matches)==1 and team.party_complete.known and team.party_complete.value:
                 p=matches[0];basis='unique_species_in_verified_complete_party'
-            elif matches:raise Deferred('ambiguous_existing_instance_in_partial_or_duplicate_party')
+            elif matches and not state.knowledge.get('active_continuity_v1'):raise Deferred('ambiguous_existing_instance_in_partial_or_duplicate_party')
+            elif matches and team.party_complete.known and team.party_complete.value:raise Deferred('ambiguous_existing_instance_in_partial_or_duplicate_party')
             elif team.party_complete.known and team.party_complete.value:raise Contradiction('send_out_outside_complete_party')
             else:
                 pid=f'{state.battle_id}:{side}:encounter:'+hashlib.sha256(event.event_id.encode()).hexdigest()[:16]
                 p=PokemonState(pid,side)
                 self._assign(p,'species',ref,event);self._assign(p,'original_identity',ref,event)
                 if ref.get('canonical_identity'):self._assign(p,'current_variant',ref['canonical_identity'],event)
-                state.pokemon[pid]=p;team.party_instance_ids.append(pid);basis='first_observed_instance'
+                state.pokemon[pid]=p;team.party_instance_ids.append(pid);basis='new_entry_without_species_only_party_merge' if matches else 'first_observed_instance'
         else:
             # A species name refers to an active instance only if that reference
             # is unique within this side. No cross-side or hidden-roster merge.
@@ -362,11 +363,18 @@ class StateEngine:
                 slot=team.vacant_slots[0]
             if not isinstance(slot,str):raise Contradiction('invalid_slot')
             if slot in team.active_slots:raise Contradiction('occupied_active_slot')
+            if state.knowledge.get('active_continuity_v1'):
+                from .active_continuity import enter,placed
+                enter(state,p,e,record,slot=slot);placed(state,p,e,record,slot)
             team.active_slots[slot]=p.pokemon_instance_id
             if slot in team.vacant_slots:team.vacant_slots.remove(slot)
             self._assign(p,'location',{'kind':'active','slot':slot},e);self._assign(p,'fainted',False,e)
         elif kind in {'switch_out','faint'}:
             slots=[s for s,i in team.active_slots.items() if i==p.pokemon_instance_id]
+            if state.knowledge.get('active_continuity_v1'):
+                if not slots:raise Deferred('departure_active_slot_unresolved')
+                from .active_continuity import depart
+                depart(state,p,e,record,slots)
             if kind=='switch_out' and not slots:raise Contradiction('withdrawal_of_inactive_instance')
             for slot in slots:
                 del team.active_slots[slot]

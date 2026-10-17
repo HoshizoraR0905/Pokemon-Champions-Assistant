@@ -79,7 +79,10 @@ def test_no_overlap_visibility_break_or_time_gap_never_concatenates():
  ('对对手的赛富豪效果不好','effectiveness','opponent'),
  ('烈咬陆鲨的烈咬陆鲨进化石Z和Host的全一环起了反应！','move_effect','self')])
 def test_observed_vocabulary(text,kind,side):
-    e=parse(text); assert (e.event_type,e.side)==(kind,side)
+    context=BattleContext()
+    context.participants['self'].display_name='Host'
+    context.participants['opponent'].display_name='Visitor'
+    e=parse(text,context=context); assert (e.event_type,e.side)==(kind,side)
     if kind=='effectiveness':assert e.actor is None and e.target['species_id']==1000
     if kind=='hp_change':assert e.attributes['qualitative_only'] and 'after' not in e.attributes
     if kind=='move_effect':assert e.attributes['completed_transformation'] is False

@@ -137,10 +137,20 @@ def hud_transition(engine, state, event, record):
         if state.sides[event.side].active_slots.get(a['slot'])!=pid:
             raise Deferred('retained_hud_episode_no_longer_active')
         p=state.pokemon[pid]
+        if state.knowledge.get('active_continuity_v1'):
+            from .active_continuity import current_episode
+            episode=current_episode(state,pid)
+            if episode and matches[0].bindings.get('active_episode_id')!=episode['episode_id']:
+                raise Deferred('retained_hud_from_earlier_active_episode')
+        if state.knowledge.get('active_persistence_v1') and (
+                not context_supported(state,event.side,a['slot'],timestamp)
+                or episode_hud(state,event.side,a['slot'],timestamp)):
+            raise Deferred('retained_hud_occupancy_uncertain')
         outcome=dict(kind='hud_observation',status='accepted',side=event.side,slot=a['slot'],
             event_id=event.event_id,timestamp=timestamp,identity_event_id=matches[0].event['event_id'],
             reason='retained_active_episode_identity',evidence=evidence_link(event))
         record.bindings['actor']=dict(pokemon_instance_id=pid,basis='retained_accepted_hud_identity')
+        if state.knowledge.get('active_continuity_v1') and episode:record.bindings['active_episode_id']=episode['episode_id']
         if previous:
             fusion['slots'][key]=dict(previous,timestamp=timestamp,retained_identity_event_id=matches[0].event['event_id'])
         state.observations.append(outcome)
@@ -171,6 +181,12 @@ def hud_transition(engine, state, event, record):
                            evidence=deepcopy(candidate['evidence']),timestamp=t)
     ref, status, reason = identity_evidence(species, icon,
         previous if previous and previous['timestamp'] < timestamp else None, support, reliability=bool(state.knowledge.get('reliability_v1')))
+    entry_support=None
+    if state.knowledge.get('identity_v1'):
+        from .identity_ledger import entry_visual_support
+        entry_support=entry_visual_support(engine,state,event)
+        if entry_support and status=='deferred':
+            ref=entry_support['identity'];status='accepted';reason=entry_support['policy']
 
     if (ref and previous and previous['timestamp'] == timestamp
             and previous.get('status') == 'accepted' and previous.get('species_id') != ref['species_id']):
@@ -179,8 +195,14 @@ def hud_transition(engine, state, event, record):
     observed = dict(event_id=event.event_id, timestamp=timestamp, raw=species.get('raw_text'),
                     species_id=raw_sid, confidence=species.get('confidence') or 0, status=status, reason=reason, evidence=evidence_link(event), hp=deepcopy(a.get('hp')))
     if support:observed['corroboration'] = support
+    if entry_support:observed['entry_identity_support']=deepcopy(entry_support)
+    if state.knowledge.get('active_continuity_v1'):
+        observed['icon_species_id']=icon.get('species_id') if icon.get('status')=='resolved' else None
     if reason == 'literal_label_independent_icon_agreement':
         observed['independent_identity_support'] = literal_label_icon_support(species, icon)
+    if state.knowledge.get('active_persistence_v1'):
+        from .active_persistence import observe_hud
+        observe_hud(state,event,observed)
     fusion['slots'][key] = observed
     outcome = dict(kind='hud_observation', **deepcopy(observed), side=event.side, slot=a['slot'])
     state.observations.append(outcome)
@@ -222,6 +244,9 @@ def hud_transition(engine, state, event, record):
             state.knowledge.setdefault('identity_episode_history',[]).append(dict(
                 instance_id=explicit,hp=deepcopy(p.hp.__dict__),event_id=event.event_id))
             p.hp=HPState()
+    elif len(pending)>1 and state.knowledge.get('active_continuity_v1'):
+        outcome['occupancy_status']='unresolved_multiple_entry_episodes'
+        return True
     elif len(pending)==1:
         p=pending[0];basis='unique_prior_unplaced_entry'
     elif current and current.species.known and current.species.value.get('species_id') == ref['species_id']:
@@ -263,6 +288,9 @@ def hud_transition(engine, state, event, record):
     if ref.get('canonical_identity'):
         engine._assign(p, 'current_variant', ref['canonical_identity'], event)
     engine._assign(p, 'location', dict(kind='active', slot=a['slot']), event)
+    if state.knowledge.get('active_continuity_v1'):
+        from .active_continuity import placed
+        placed(state,p,event,record,a['slot'])
     record.bindings['actor'] = dict(pokemon_instance_id=p.pokemon_instance_id, basis=basis)
     record.bindings['identity'] = deepcopy(ref)
     # A nickname binding needs explicit raw-name/icon agreement on this frame.
@@ -273,7 +301,10 @@ def hud_transition(engine, state, event, record):
             instance_id=p.pokemon_instance_id, side=event.side)
     if state.knowledge.get('identity_v1') and raw and icon.get('status')=='resolved':
         from .identity_ledger import remember_alias
-        remember_alias(state,raw,ref,[evidence_link(event)],side=event.side,instance_id=p.pokemon_instance_id)
+        claim=remember_alias(state,raw,ref,[evidence_link(event)],side=event.side,instance_id=p.pokemon_instance_id)
+        if entry_support:
+            claim['entry_identity_support']=deepcopy(entry_support)
+            claim['evidence']+=deepcopy(entry_support['evidence'])
     if state.knowledge.get('identity_v1'):
         from .identity_ledger import trainer_from_opening_hud
         trainer_from_opening_hud(engine, state, event, record)
@@ -315,8 +346,13 @@ def context_supported(state, side, slot, timestamp):
         and state.pokemon[x['instance_id']].location.value=={'kind':'unplaced_entry','slot':None}]
     if pending:return False
     last=state.knowledge.get('hud_fusion',{}).get('slots',{}).get(side+':'+slot,{})
+    since=last.get('timestamp',float('-inf'))
+    if state.knowledge.get('active_continuity_v1'):
+        from .evidence_projection import source_times
+        pid=state.sides[side].active_slots.get(slot);p=state.pokemon.get(pid)
+        since=max(source_times(p.location.provenance),default=float('-inf')) if p else since
     return not any(o.get('kind')=='coverage_gap' and o.get('side') in {side,'field','unknown'}
-        and o['end']<=timestamp and o['end']>last.get('timestamp',float('-inf')) for o in state.observations)
+        and o['end']<=timestamp and o['end']>since for o in state.observations)
 
 
 def episode_hud(state, side, slot, timestamp):
@@ -324,6 +360,9 @@ def episode_hud(state, side, slot, timestamp):
 
     A HUD at/after entry still gates admission. No future evidence is used.
     """
+    if state.knowledge.get('active_persistence_v1'):
+        from .active_persistence import occupancy_gate
+        return occupancy_gate(state,side,slot,timestamp)
     last=state.knowledge.get('hud_fusion',{}).get('slots',{}).get(side+':'+slot)
     pid=state.sides[side].active_slots.get(slot)
     mon=state.pokemon.get(pid)
@@ -333,6 +372,14 @@ def episode_hud(state, side, slot, timestamp):
             e.get('source_type')=='video_message' for e in p.get('sources',[]))]
         entered=max(source_times(direct),default=float('-inf'))
         if last['timestamp'] < entered <= timestamp:return None
+        if (state.knowledge.get('active_continuity_v1') and last.get('status')=='deferred'
+                and last.get('confidence',0)>=.95 and last['timestamp']<=timestamp
+                and last.get('species_id') in {None,mon.species.value.get('species_id')}
+                and last.get('icon_species_id') in {None,mon.species.value.get('species_id')}):
+            names=knowledge().exact['species'].get(normalize(last.get('raw') or ''),[])
+            # This does not admit the failed HUD. It retains an independently
+            # established active episode when the unresolved label agrees.
+            if {e.species_id for e in names}=={mon.species.value.get('species_id')}:return None
     return last
 
 
@@ -361,7 +408,9 @@ def prepare_message(state, event):
                 context.active[side].add(mon.species.value['canonical_id'])
     aliases = state.knowledge.get('hud_fusion', {}).get('aliases', {})
     if state.knowledge.get('identity_v1'):
-        for a in state.knowledge.get('identity_ledger',{}).get('aliases',[]):
+        from .active_continuity import current_aliases
+        available=current_aliases(state,timestamp) if state.knowledge.get('active_continuity_v1') else state.knowledge.get('identity_ledger',{}).get('aliases',[])
+        for a in available:
             # Preserve colliding records under distinct raw spelling keys so
             # parser normalization can withhold conflicting alternatives.
             key=a['raw_nickname']+' '*(len(context.display_aliases)+1)
@@ -387,6 +436,9 @@ def prepare_message(state, event):
     parsed.event_id = event.event_id; parsed.evidence = deepcopy(event.evidence)
     parsed.attributes.update({k:deepcopy(v) for k,v in event.attributes.items() if k not in {'side_basis','display_alias_evidence','move_resolution'}})
     parsed.status = event.status
+    # New arrivals cannot bind to an already-active or inactive old alias.
+    if parsed.event_type=='send_out' and state.knowledge.get('active_continuity_v1'):
+        return parsed
     # Capture exact prefix-local instance bindings; no future roster is consulted.
     if parsed.actor and parsed.side in state.sides:
         matches = []
@@ -408,6 +460,11 @@ def prepare_message(state, event):
                 state.knowledge.get('hud_fusion',{}).get('slots',{}).items()
                 if k.startswith(parsed.side+':') and v.get('species_id')==parsed.actor.get('species_id')
                 and v['timestamp'] <= timestamp and v['status']=='accepted']
+            if state.knowledge.get('active_continuity_v1'):
+                from .active_continuity import current_episode
+                episode=current_episode(state,matches[0])
+                parsed.attributes['binding_sources']+=deepcopy(state.pokemon[matches[0]].location.provenance)
+                if episode:parsed.attributes['active_episode_id']=episode['episode_id']
         elif state.knowledge.get('identity_v1') and parsed.attributes.get('display_alias_evidence'):
             claims=parsed.attributes['display_alias_evidence']
             pids={c.get('instance_id') for c in claims if c.get('status')=='accepted' and c.get('side')==parsed.side}

@@ -61,7 +61,8 @@ def test_generic_trainer_needs_evidence(parser):
     assert event.side=='unknown'
     context=calibrated()
     events=parser.parse_sequence([row('训练家换下了雷丘！',order=1),row('训练家派出了爱管侍！',order=2),row('爱管侍的精神制造者','red',3)],context)
-    assert [e.side for e in events]==['opponent']*3
+    # Color-supported activation does not establish an arbitrary trainer ID.
+    assert [e.side for e in events]==['unknown','unknown','opponent']
     assert 'side_hint_evidence' in events[0].attributes
 
 

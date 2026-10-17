@@ -6,6 +6,25 @@ from copy import deepcopy
 import re
 
 
+def recognize_matchmaking_trainer(image, backend, *, source, sha256, timestamp):
+    """Explicit found-opponent dialog; geometry alone cannot establish a name.
+
+    Call only for a scoped prebattle dialog candidate. The two complete lines
+    identify the opponent; no self ID is displayed in this dialog.
+    """
+    h,w=image.shape[:2]
+    bounds=tuple(round(v*(w if i%2==0 else h)) for i,v in enumerate((.40,.415,.60,.535)))
+    o=backend.read(image,bounds,multiline=True)
+    text=re.sub(r'\s+','',o.raw_text or '')
+    match=re.fullmatch(r'已找到对战对手[。.]与(.+?)的对战即将开始[。.]',text)
+    return [dict(raw_text=match[1] if match else '',display_name=None,ocr_confidence=o.confidence,
+        side='opponent' if match else 'unknown',
+        parse_status='supported' if match else 'unresolved',
+        raw_dialog_text=o.raw_text,ui_region='matchmaking_opponent_dialog',
+        evidence=[dict(source=source,sha256=sha256,timestamp=timestamp,box=bounds,
+                       basis='complete_found_opponent_dialog_grammar')])]
+
+
 def recognize_preview_trainers(image, backend, *, source, sha256, timestamp=None, timestamp_uncertainty=None, sides=('self','opponent')):
     h,w=image.shape[:2];observations={}
     for side,bounds,color in [('self',(.165,.058,.305,.11),'purple'),('opponent',(.745,.058,.888,.11),'red')]:
@@ -16,8 +35,23 @@ def recognize_preview_trainers(image, backend, *, source, sha256, timestamp=None
         # Unrecognized preview layout must not calibrate ownership colors.
         if colored.mean()<.35:continue
         o=backend.read(image,box)
+        readings=[dict(raw_text=o.raw_text,ocr_confidence=o.confidence,box=box,method='panel')]
+        # Excess background is particularly harmful to short labels. Read a
+        # foreground crop as a separate observation, never rewrite glyphs (J/1).
+        if len(alias_key(o.raw_text or '')) <= 2 or o.confidence < .95:
+            import numpy as np
+            white=(hsv[:,:,1]<90)&(hsv[:,:,2]>155)
+            ys,xs=np.where(white)
+            if len(xs)>=4:
+                tight=(max(x1,x1+int(xs.min())-4),max(y1,y1+int(ys.min())-4),
+                       min(x2,x1+int(xs.max())+5),min(y2,y1+int(ys.max())+5))
+                retry=backend.read(image,tight)
+                readings.append(dict(raw_text=retry.raw_text,ocr_confidence=retry.confidence,
+                                     box=tight,method='foreground_crop'))
         observations[side]={'display_name':o.raw_text if o.confidence>=.75 and o.raw_text else None,
             'raw_text':o.raw_text,'unique_trainer_id':None,'ocr_confidence':o.confidence,
+            'readings':readings,
+            'ui_region':'team_preview_'+side+'_trainer_panel',
             'evidence':[{'source':source,'sha256':sha256,'box':box,'timestamp':timestamp,
                          'timestamp_uncertainty_seconds':timestamp_uncertainty,'color':color,
                          'basis':'visible_team_preview_panel'}]}
@@ -35,6 +69,43 @@ def trainer_observation(observation, battle_id, side):
                   status='accepted' if complete and result['ocr_confidence'] >= .95 else 'unresolved',
                   entity_kind='trainer', unique_trainer_id=None,
                   policy='champions-six-to-four-trainer-label-v1')
+    return result
+
+
+def aggregate_trainer(previous, observation):
+    """Count distinct frames, retain alternatives, and abstain on strong ties.
+
+    Multiple crops of one frame count once. Short IDs require two clear frames.
+    Weak competing reads remain visible but cannot veto repeated clear evidence.
+    """
+    observations=deepcopy((previous or {}).get('observations',[]))
+    if observation not in observations:observations.append(deepcopy(observation))
+    candidates={}
+    for obs in observations:
+        proof=obs.get('evidence') or []
+        if not proof:continue
+        frame=proof[0].get('sha256') or proof[0].get('source')
+        if not frame:continue
+        for reading in obs.get('readings') or [obs]:
+            raw=reading.get('raw_text') or '';key=alias_key(raw)
+            if not key or any(c in raw for c in ('…','...','\ufffd')):continue
+            item=candidates.setdefault(key,dict(display_name=raw,frames={},readings=[]))
+            score=reading.get('ocr_confidence',0)
+            item['frames'][frame]=max(score,item['frames'].get(frame,0))
+            item['readings'].append(deepcopy(reading))
+    qualified=[]
+    for key,item in candidates.items():
+        item['strong_frames']=sum(c>=.95 for c in item['frames'].values())
+        if item['strong_frames'] >= (2 if len(key)<=2 else 1):qualified.append(key)
+    # Strong but not yet repeated short alternatives still prevent certainty.
+    strong=[k for k,v in candidates.items() if v['strong_frames']]
+    winner=qualified[0] if len(qualified)==1 and len(strong)==1 else None
+    result=deepcopy(observation)
+    result.update(observations=observations,candidates=candidates,
+        status='accepted' if winner else 'conflicting' if len(strong)>1 else 'unresolved',
+        display_name=candidates[winner]['display_name'] if winner else None,
+        normalized_matching_form=winner,policy='trainer-distinct-frame-consensus-v2',
+        evidence=[deepcopy(p) for o in observations for p in o.get('evidence',[])])
     return result
 
 
@@ -58,13 +129,10 @@ class OpeningSequence:
         if not self.closed and ui.get('phase') == 'team_preview' and ui.get('confidence', 0) >= .9:
             self.preview = dict(source_id=row['source_id'], timestamp=row['timestamp'], sha256=row['sha256'])
         for observation in row.get('trainer_observations', []):
-            if (observation['status'] == 'accepted' and observation.get('evidence')
+            if (observation.get('evidence')
                     and observation['evidence'][0]['timestamp'] <= row['timestamp']):
-                old = self.trainers.get(observation['side'])
-                if old and old['normalized_matching_form'] != observation['normalized_matching_form']:
-                    self.trainers[observation['side']] = dict(observation, status='conflicting')
-                elif not old:
-                    self.trainers[observation['side']] = deepcopy(observation)
+                side=observation['side']
+                self.trainers[side]=aggregate_trainer(self.trainers.get(side),observation)
 
     def qualify(self, event, refs):
         t = event['attributes']['observation_time']

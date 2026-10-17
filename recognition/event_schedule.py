@@ -116,9 +116,9 @@ class IdentitySchedule:
         self.trainers = {}; self.trainer_attempts = {}; self.trainer_last_attempt = {}
 
     def acquire_trainers(self, recognizer, frame, phase, confidence, battle_id, counts):
-        from recognition.trainers import recognize_preview_trainers, trainer_observation
+        from recognition.trainers import recognize_preview_trainers, trainer_observation, aggregate_trainer
         if phase != 'team_preview' or confidence < .9:return []
-        sides = [side for side in ('self','opponent') if side not in self.trainers
+        sides = [side for side in ('self','opponent') if self.trainers.get(side,{}).get('status')!='accepted'
                  and self.trainer_attempts.get(side,0) < 3
                  and frame.timestamp-self.trainer_last_attempt.get(side,float('-inf')) >= 2]
         if not sides:return []
@@ -133,7 +133,7 @@ class IdentitySchedule:
             observation = trainer_observation(observed[side], battle_id, side)
             observation['evidence'][0]['image'] = frame.metadata.get('image')
             result.append(observation)
-            if observation['status'] == 'accepted':self.trainers[side] = observation
+            self.trainers[side]=aggregate_trainer(self.trainers.get(side),observation)
         return result
 
     def invalidate(self, event):
