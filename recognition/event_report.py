@@ -40,6 +40,9 @@ def video_events(rows, roster, battle_id):
     banner_sessions={}
     for row in rows:
         t=row['timestamp']
+        from recognition.command_checkpoint import checkpoint_event
+        checkpoint=checkpoint_event(row,battle_id)
+        if checkpoint:events.append(checkpoint)
         opening.observe(row)
         for trainer in row.get('trainer_observations',[]):
             if trainer.get('battle_id')!=battle_id:raise ValueError('Trainer observation belongs to another battle')
@@ -123,7 +126,7 @@ def video_events(rows, roster, battle_id):
                     continue
             events.append(event)
     return sorted(events,key=lambda e:(e['attributes']['observation_time'],
-        {'preview_observation':0,'hud_observation':1,'entry_observation':2}.get(e['event_type'],3),
+        {'preview_observation':0,'command_checkpoint':.5,'hud_observation':1,'entry_observation':2}.get(e['event_type'],3),
         e['attributes'].get('announced_order',0),e['event_id']))
 
 
@@ -138,7 +141,7 @@ def reconstruct_and_package(paths,folder,report,rows,roster,occurrences):
         verify_seal(folder)
         return json.loads((report/'summary.json').read_text())
     events=video_events(rows,roster,paths.battle_id)
-    engine=StateEngine(BattleState(paths.battle_id,knowledge=dict(reliability_v1=True,reliability_v2=True,identity_v1=True,active_continuity_v1=True,active_persistence_v1=True)))
+    engine=StateEngine(BattleState(paths.battle_id,knowledge=dict(reliability_v1=True,reliability_v2=True,identity_v1=True,active_continuity_v1=True,active_persistence_v1=True,command_reconciliation_v1=True)))
     for i,event in enumerate(events,1):
         event['attributes']['sequence']=i
         engine.history.append(EventRecord(event,i,ordering(event_from_dict(event))))

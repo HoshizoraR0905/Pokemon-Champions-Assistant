@@ -116,12 +116,12 @@ class CachedOCR:
                 self.counts['ocr_invocations_performed']+=1;atomic_json(path,result)
             output.append(result)
         return output
-    def read(self,image,bounds,numeric=False,multiline=False,italic=False):
+    def read(self,image,bounds,numeric=False,multiline=False,italic=False,independent=False):
         self.counts['ocr_read_requests']+=1
         kwargs=dict(numeric=numeric,multiline=multiline,italic=italic)
         key=str((tuple(bounds),tuple(sorted(kwargs.items()))));sig=normalized(image,bounds,text=True)
         selected,reason,old=self.gate.choose(key,sig,True,self.timestamp)
-        if not selected:
+        if not selected and not independent:
             self.counts['ocr_region_reads_reused']+=1
             self.counts['ocr_invocations_avoided_unchanged']+=self.read_costs.get(key,1)
             self.reuses.append(dict(bounds=bounds,original_source_id=old['source_id'],original_timestamp=old['timestamp']))
@@ -265,6 +265,10 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
         return reconstruct_cached(paths,folder,report,source,identity)
     counts=Counter({'ocr_invocations_performed':0,'icon_invocations_performed':0});rows=[];roster=[];scheduler=AdaptiveInspection(config);gate=RegionGate(config.region_difference)
     if event_driven:scheduler=EventInspection(config)
+    command_schedule=None
+    if event_driven:
+        from recognition.command_checkpoint import CommandCheckpointSchedule,schedule_checkpoint
+        command_schedule=CommandCheckpointSchedule()
     ocr=CachedOCR(folder,counts);icon=CachedIcons(folder,counts,icons);recognizer=Recognizer(ocr,icons=icon)
     occurrences=MessageOccurrences(paths.battle_id,source_occurrence_ids=event_driven);previous_visible=set();last_phase=None;last_fallback=-math.inf
     # A resume reconstructs scheduling/context from persisted prefix images and
@@ -280,6 +284,7 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
         if event_driven:
             scheduler.restore(saved['event_scheduler'])
             controller.__dict__.update(saved['identity_schedule'])
+            command_schedule.__dict__.update(saved.get('command_checkpoint_schedule',{}))
         last_phase=saved['last_phase'];previous_visible=set(saved['previous_visible']);last_fallback=saved['last_fallback']
         for key,old in saved['gate'].items():old['signature']=np.asarray(old['signature'],dtype=np.uint8);gate.regions[key]=old
         # OCR/icon fuzzy caches intentionally start empty on resume. Exact crop
@@ -293,7 +298,8 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
             next_time=scheduler.next_time,boost_until=scheduler.boost_until,last_phase=last_phase,previous_visible=sorted(previous_visible),
             last_fallback=last_fallback,gate=serialgate,last_sample=rows[-1]['timestamp'] if rows else None,
             event_scheduler=scheduler.dump() if event_driven else None,
-            identity_schedule=controller.__dict__ if event_driven else None))
+            identity_schedule=controller.__dict__ if event_driven else None,
+            command_checkpoint_schedule=command_schedule.__dict__ if event_driven else None))
         manifest.update(status=status,active_seconds=manifest['prior_active_seconds']+time.monotonic()-started,counts=dict(counts),
             last_timestamp=rows[-1]['timestamp'] if rows else None,error=error)
         atomic_json(manifest_path,manifest)
@@ -438,6 +444,7 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
             result=occurrences.observe(row)
             row['occurrence_decision']=dict(events=result['events'],reason=result['reason'])
             if event_driven:
+                schedule_checkpoint(row,image,command_schedule,ocr,counts)
                 for event in row['occurrence_decision']['events']:
                     controller.invalidate(event)
                     if event['event_type'] in {'send_out','switch_out','faint','transformation','position_change'}:

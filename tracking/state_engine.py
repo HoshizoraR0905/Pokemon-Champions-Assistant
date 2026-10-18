@@ -268,6 +268,9 @@ class StateEngine:
         record.bindings[role]={'pokemon_instance_id':p.pokemon_instance_id,'basis':basis};return p
 
     def _transition(self,state,e,record):
+        if e.event_type=='command_checkpoint':
+            from .command_reconciliation import transition
+            return transition(self,state,e,record)
         if e.event_type in {'preview_observation','entry_observation','alias_observation','trainer_observation'}:
             from .identity_ledger import transition
             return transition(self,state,e,record)
