@@ -59,7 +59,7 @@ def visual_transition(engine, state, event, record):
         raise Contradiction('visual_battle_ownership_mismatch')
     if a.get('source_kind') == 'entry_model' and state.knowledge.get('active_persistence_v1'):
         from .active_persistence import corroborate_entry_model
-        return corroborate_entry_model(state, event, record)
+        return corroborate_entry_model(state, event, record,engine=engine)
     if a.get('source_kind') not in {'ability_popup', 'selected_detail_panel','party_configuration_panel'}:
         raise Deferred('visual_layout_unresolved')
     timestamp=a.get('observation_time')

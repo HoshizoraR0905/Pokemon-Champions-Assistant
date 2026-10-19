@@ -100,11 +100,11 @@ def acquire(owner,folder):
                         dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(candidate,dest)
                         reused.append(dict(path=str(candidate.relative_to(ROOT)),sha256=sha(candidate)))
             return super().predict(crops)
-    dependencies=[folder/'audit.json',source(owner),ROOT/'recognition/command_checkpoint.py',ROOT/'recognition/onnx_ocr.py',Path(__file__)]
+    dependencies=[folder/'audit.json',source(owner),ROOT/'recognition/command_checkpoint.py',ROOT/'recognition/onnx_ocr.py',ROOT/'recognition/fast_video.py',Path(__file__)]
     manifest=begin(folder,'acquire',dependencies)
     if manifest is None:print('Completed scoped captures reused');return
     rows={r['source_id']:r for r in read(source(owner))['observations']}
-    cache_sources=[source(owner).parent,owner.cache('event-driven/m238-live-1')]
+    cache_sources=[source(owner).parent,owner.cache('event-driven/m238-live-1'),owner.cache('event-driven/m238-command-reconciliation-v1')]
     counts=Counter();reused=[];backend=ReusingOCR(folder,counts);captures=[];began=time.monotonic()
     progress=folder/'capture-progress.json'
     if progress.exists():

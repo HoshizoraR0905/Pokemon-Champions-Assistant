@@ -144,6 +144,40 @@ def test_three_supplied_overlay_examples_never_qualify_even_with_command_and_man
     assert not inspect_command(cv2.resize(image,(1311,603)))['normal_controls']
 
 
+@pytest.mark.parametrize('overlay,phase,complete,eligible',[
+    ('status_overlay','battle_screen',True,True),
+    ('status_overlay','battle_screen',False,False),
+    ('battle_log_overlay','battle_screen',True,False),
+    ('status_overlay','move_selection',True,False)])
+def test_color_overlay_override_requires_native_controls_and_all_huds(monkeypatch,overlay,phase,complete,eligible):
+    import numpy as np
+    import recognition.command_checkpoint as module
+    image=np.zeros((603,1311,3),dtype=np.uint8)
+    for center in [(1141,353),(1092,474)]:
+        cv2.circle(image,center,53,(255,255,255),-1)
+        cv2.circle(image,center,43,(180,30,150),-1)
+    cards=[('own',0,None,None),('own',1,None,None),('opponent',0,None,None),('opponent',1,None,None)]
+    monkeypatch.setattr(module,'independent_cards',lambda image:cards if complete else cards[:3])
+    monkeypatch.setattr('recognition.ui_regions.inspect_ui',lambda image:dict(overlay=overlay,phase=phase))
+    assert inspect_command(image)['eligible'] is eligible
+    image[:]=0
+    assert not inspect_command(image)['eligible']
+
+
+@pytest.mark.local_artifacts
+def test_saved_color_vetoed_native_command_frames_qualify_without_new_recognition():
+    import json
+    path=Path('.cache/battles/sample_battle_7/event-driven/production-first-pass-v1/observations.json')
+    if not path.exists():pytest.skip('Optional saved Battle 7 evidence absent')
+    rows=json.loads(path.read_text())['observations']
+    vetoed=[r for r in rows if r.get('command_inspection',{}).get('overlay')=='status_overlay']
+    assert len(vetoed)==6
+    for row in vetoed:
+        image=cv2.imread(row['image'])
+        assert image is not None
+        assert inspect_command(image)['eligible'],row['timestamp']
+
+
 @pytest.mark.local_artifacts
 def test_real_normal_command_and_move_selection_have_distinct_controls():
     base=Path('.cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames')
@@ -293,3 +327,80 @@ def test_audit_compatibility_accepts_capture_only_changes_and_rejects_detector_c
     assert report.audit_compatibility(folder)['status']=='compatible'
     path.write_text(original.replace('return True','return False'))
     with pytest.raises(AssertionError,match='UI detection'):report.audit_compatibility(folder)
+
+
+def strict_checkpoint(t=5):
+    c=checkpoint(t=t);c.attributes['checkpoint'].update(stable=False,previous_timestamp=None,window_mode='single_frame_strict')
+    c.attributes['checkpoint']['inspection'].update(normal_controls=True,eligible=True,
+        reason='normal_four_hud_command',visible_slots=list(SLOT_REGIONS),control_bounds=[[[1,2,101,102]],[[1,2,101,102]]])
+    for o in c.attributes['observations']:o['icon']=dict(status='resolved',species_id=next(k for k,v in NAMES.items() if v==o['species']['raw_text']))
+    return c
+
+
+def test_strict_single_frame_corrects_only_supported_slot_and_does_not_retry():
+    e=engine();c=strict_checkpoint();c.attributes['observations'][0]['species']['raw_text']=NAMES[248]
+    c.attributes['observations'][0]['icon']['species_id']=248
+    before=deepcopy(e.state.to_dict());r=add(e,c)
+    assert outcomes(r)[0]['corrected'] and r.bindings['command_reconciliation']['corrections']==1
+    for side,slot in [('self','right'),('opponent','left'),('opponent','right')]:
+        pid=before['sides'][side]['active_slots'][slot]
+        assert e.state.to_dict()['pokemon'][pid]==before['pokemon'][pid]
+    c=strict_checkpoint(6);assert add(e,c).bindings['command_reconciliation']['status']=='duplicate_phase_attempt_ignored'
+
+
+@pytest.mark.parametrize('failure',['low','missing','partial','ambiguous','icon_conflict','no_controls','few_icons','future_nickname'])
+def test_strict_single_frame_cannot_correct_with_any_insufficient_identity(failure):
+    e=engine();c=strict_checkpoint();obs=c.attributes['observations']
+    obs[0]['species']['raw_text']=NAMES[248];obs[0]['icon']['species_id']=248
+    if failure=='low':obs[1]['species']['confidence']=.97
+    elif failure=='missing':obs[1]['species']['raw_text']=''
+    elif failure=='partial':obs[1]['visible']=False
+    elif failure=='ambiguous':obs[1]['species']['raw_text']='Unknown nickname'
+    elif failure=='icon_conflict':obs[1]['icon']['species_id']=248
+    elif failure=='no_controls':c.attributes['checkpoint']['inspection']['control_bounds']=[]
+    elif failure=='few_icons':
+        for o in obs[:2]:o['icon']={}
+    else:
+        e.initial=deepcopy(e.state);e.history=[]
+        remember_alias(e.initial,'Later',dict(species_id=530),[dict(sources=[dict(details=dict(timestamp=9))])],side='self',instance_id=None)
+        e.replay();obs[1]['species']['raw_text']='Later'
+    before=deepcopy(e.state.to_dict()['pokemon']);r=add(e,c)
+    assert all(o['status']=='inconclusive' for o in outcomes(r))
+    assert e.state.to_dict()['pokemon']==before
+
+
+@pytest.mark.local_artifacts
+def test_real_saved_single_frame_observation_detects_controlled_state_error_without_new_recognition():
+    import json,hashlib
+    from recognition.command_checkpoint import checkpoint_event
+    base=Path('.cache/battles/sample_battle_6/event-driven')
+    path=base/'m238-scrolling-semantics-v4/observations.json'
+    if not path.exists():pytest.skip('Optional saved Battle 6 observations absent')
+    rows=json.loads(path.read_text())['observations']
+    row=deepcopy(next(r for r in rows if r['image'].endswith('/000269.png')))
+    image_path=Path(row['image']);assert hashlib.sha256(image_path.read_bytes()).hexdigest()==row['sha256']
+    schedule=CommandCheckpointSchedule();inspection,attempt=schedule.inspect(row,cv2.imread(str(image_path)))
+    assert attempt and attempt['window_mode']=='single_frame_strict'
+    row['command_checkpoint']=attempt
+    e=StateEngine(BattleState('test',knowledge=dict(identity_v1=True,reliability_v1=True,reliability_v2=True,
+        active_continuity_v1=True,active_persistence_v1=True,command_reconciliation_v1=True)))
+    for i,(side,slot,sid) in enumerate([('self','left',861),('self','right',1018),('opponent','left',727),('opponent','right',1000)],1):
+        e.apply(hud(i,1,sid,side=side,slot=slot,hp=dict(current=50,maximum=100),
+            mon=dict(raw_text={861:'长毛巨魔',1018:'铝钢桥龙',727:'炽焰咆哮虎',1000:'赛富豪'}[sid],confidence=.99,
+                resolution=dict(status='resolved',method='exact',species_id=sid,confidence='strong',
+                    canonical_identity=f'pokeapi:pokemon:{sid}',identity_status='resolved_unique'))),sequence=i)
+    correct_prediction=deepcopy(e.state)
+    incorrect_prediction=deepcopy(correct_prediction)
+    wrong=incorrect_prediction.pokemon[incorrect_prediction.sides['self'].active_slots['left']]
+    wrong.species.value.update(species_id=823,canonical_id='pokeapi:species:823',name='钢铠鸦')
+    e=StateEngine(incorrect_prediction)
+    before=deepcopy(e.state.to_dict());history=deepcopy([h.event for h in e.history])
+    r=add(e,checkpoint_event(row,'test'));result=outcomes(r)
+    assert [o['status'] for o in result]==['conflict','match','match','match']
+    assert result[0]['observed']['species_id']==861 and result[0]['corrected']
+    assert [h.event for h in e.history[:-1]]==history
+    new=e.state.pokemon[e.state.sides['self'].active_slots['left']];assert not new.hp.current.known
+    for side,slot in [('self','right'),('opponent','left'),('opponent','right')]:
+        pid=before['sides'][side]['active_slots'][slot];assert e.state.to_dict()['pokemon'][pid]==before['pokemon'][pid]
+
+    assert correct_prediction.pokemon[correct_prediction.sides['self'].active_slots['left']].species.value['species_id']==861

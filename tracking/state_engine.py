@@ -159,10 +159,16 @@ class StateEngine:
         for record in ordered:
             if barrier is not None and tuple(record.ordering['key'])>barrier:
                 record.reason='earlier_order_tie';continue
-            event=event_from_dict(record.event);trial=deepcopy(self.state)
+            event=event_from_dict(record.event)
+            # Audit observations even when normal admission later abstains.
+            from .entry_hud import observe
+            observe(self.state,event)
+            trial=deepcopy(self.state)
             try:
                 from .evidence_fusion import prepare_message, move_revelation
                 event=prepare_message(trial,event)
+                from .active_continuity import prepare_unidentified
+                event=prepare_unidentified(trial,event)
                 if event.event_type=='move_execution' and event.attributes.get('fusion_context'):
                     move_revelation(self,trial,event,record)
                     self.state=trial
@@ -304,6 +310,9 @@ class StateEngine:
             from .reliability import visual_transition
             return visual_transition(self,state,e,record)
         if kind=='send_out' and state.knowledge.get('reliability_v1'):
+            if a.get('unidentified_entry_reference'):
+                from .active_continuity import unidentified_entry
+                return unidentified_entry(self,state,e,record)
             from .reliability import unplaced_entry
             result=unplaced_entry(self,state,e,record)
             if result is not None:return result
@@ -375,10 +384,11 @@ class StateEngine:
         elif kind in {'switch_out','faint'}:
             slots=[s for s,i in team.active_slots.items() if i==p.pokemon_instance_id]
             if state.knowledge.get('active_continuity_v1'):
-                if not slots:raise Deferred('departure_active_slot_unresolved')
+                if not slots and not (a.get('unidentified_departure') and p.location.value==dict(kind='unplaced_entry',slot=None)):
+                    raise Deferred('departure_active_slot_unresolved')
                 from .active_continuity import depart
                 depart(state,p,e,record,slots)
-            if kind=='switch_out' and not slots:raise Contradiction('withdrawal_of_inactive_instance')
+            if kind=='switch_out' and not slots and not a.get('unidentified_departure'):raise Contradiction('withdrawal_of_inactive_instance')
             for slot in slots:
                 del team.active_slots[slot]
                 if slot not in team.vacant_slots:team.vacant_slots.append(slot)

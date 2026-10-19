@@ -66,7 +66,7 @@ class EventParser:
         faint_literal=re.fullmatch(r'(对手的)?(.+?)倒下了[！!。.]?',text)
         live_actor=re.fullmatch(r'(对手的)?(.+?)(?:使出了.+[！!。.]|'
             r'的(?:特攻|特防|攻击|防御|速度|命中率|闪避率)(?:大幅)?(?:提高了|降低了)[！!。.]?|'
-            r'(?:中毒了|麻痹了|睡着了|灼伤了|冰冻了)[！!。.]?)',text) if region=='battle_message' else None
+            r'(?:被)?(?:中毒了|麻痹了|睡着了|灼伤了|冰冻了)[！!。.]?)',text) if region=='battle_message' else None
         trainer_literal=(trainer_match[1] if trainer_match else returning[3] if returning else trainer_send[1] if trainer_send else None)
         trainer_sides={side for side,p in c.participants.items() if trainer_literal and p.display_name
             and p.display_name!='训练家' and alias_key(p.display_name)==alias_key(trainer_literal)}
@@ -100,6 +100,10 @@ class EventParser:
                 route='unknown';unc.append('ambiguous_trainer_display_name')
         if actor_literal:attrs['actor_display_reference']=actor_literal
         if trainer_literal:attrs['trainer_display_text']=trainer_literal
+        receiver_literal=re.fullmatch(r'对(?:于)?(对手的)?(.+?)[，,]?(?:好像)?(?:效果不好|效果绝佳|没有效果)[！!。.]*',text) if region=='battle_message' else None
+        if receiver_literal:
+            route='opponent' if receiver_literal[1] else 'self'
+            attrs['receiver_display_reference']=receiver_literal[2].rstrip('，,')
         alias_side=route if route!='unknown' else 'opponent' if text.startswith('对手') else entry.get('side_hint','unknown')
         if alias_side=='unknown' and region=='battle_message' and c.display_aliases:
             # Establish literal actor grammar before consulting side-owned aliases.
@@ -146,7 +150,12 @@ class EventParser:
             typ, side, fields = ended; attrs.update(fields); basis=['explicit_termination_text']
         elif ('换下了' in text or '回来' in text
               or re.fullmatch(r'(?:对手的)?.+要回到.+的身边了[！!。.]?',text)):typ='switch_out'
-        elif '派出了' in text or text.startswith('上吧'):typ='send_out'
+        elif '派出了' in text or text.startswith('上吧'):
+            typ='send_out'
+            # The complete display reference can itself be a chosen nickname.
+            # A canonical species substring does not prove a title boundary.
+            literal=(text.split('派出了',1)[1] if '派出了' in text else re.sub(r'^上吧[！!，,]*','',text)).rstrip('！!。.')
+            subject=self.identity(literal,'species')
         elif re.fullmatch(r'.+(?:交换了位置|交换了场地)[！!。.]?',text):
             typ='position_change';attrs.update(mechanic='ally_switch',execution_observed=True)
         elif '使出了' in text:
@@ -207,8 +216,10 @@ class EventParser:
             typ='move_effect';attrs['effect']='healing_announcement'
         elif '反作用力造成的伤害' in text:
             typ='move_effect';attrs['effect']='recoil_announcement'
-        elif re.fullmatch(r'光墙使我方的特殊抗性提高了[！!。.]?',text):
-            typ='side_condition_change';side='self';attrs.update(condition='light_screen',change='observe')
+        elif (screen:=re.fullmatch(r'(反射壁|光墙)使(我方|对手|对方)的(?:物理|特殊)抗性提高了[！!。.]?',text)):
+            typ='side_condition_change';side='self' if screen[2]=='我方' else 'opponent'
+            attrs.update(condition={'反射壁':'reflect','光墙':'light_screen'}[screen[1]],change='observe')
+            basis.append('explicit_side_condition_text')
         elif re.fullmatch(r'从我方身后吹起了顺风[！!。.]?',text):
             typ='side_condition_change';side='self';attrs.update(condition='tailwind',change='start')
         elif re.fullmatch(r'(?:对手的)?.+的生命被少量削减了[！!。.]?',text):
@@ -263,9 +274,9 @@ class EventParser:
                 if side not in {'unknown',grammar_side}:
                     side='unknown';unc.append('side_evidence_conflict')
                 else:side=grammar_side;basis.append('complete_live_actor_grammar')
-        receiver = re.fullmatch(r'对(对手的)?(.+?)(?:效果不好|效果绝佳|没有效果)[！!。.]?',identity_text)
-        if typ=='effectiveness' and receiver and self.identity(receiver[2],'species'):
-            side='opponent' if receiver[1] else ('self' if live else side)
+        receiver = re.fullmatch(r'对(?:于)?(对手的)?(.+?)[，,]?(?:好像)?(?:效果不好|效果绝佳|没有效果)[！!。.]*',identity_text)
+        if typ=='effectiveness' and receiver_literal:
+            side='opponent' if receiver_literal[1] else 'self'
             attrs['target_side']=side;basis.append('explicit_named_receiver')
         if typ=='move_effect' and attrs.get('effect')=='mega_stone_reaction_notice':
             reaction=re.fullmatch(r'.+进化石(?:[XYZ])?和(.+?)的.+起了反应[！!。.]?',text)

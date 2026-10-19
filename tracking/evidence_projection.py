@@ -72,6 +72,11 @@ def evidence_projection(engine, *, as_of):
                 current_instance_id=pid if supported else None,
                 status='conflicting' if conflicting else 'confirmed_current' if supported else 'unresolved_current',
                 evidence=loc,latest_hud=deepcopy(last))
+            from .active_continuity import occupancy as occupancy_status
+            occupancy[side][slot]['occupancy']=occupancy_status(state,side,slot)
+            if p and not p.species.known:
+                occupancy[side][slot]['current_instance_id']=pid
+                occupancy[side][slot]['status']='occupied_unidentified'
     def effect(e):return dict(active=view(e.active),kind=view(e.kind),duration=deepcopy(asdict(e.duration)))
     actions=[]
     for r in applied:

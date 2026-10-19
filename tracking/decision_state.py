@@ -87,4 +87,7 @@ def decision_state(state, rules, *, hidden_engine=None):
         for pid,view in views.items():
             pokemon[pid]['knowledge']=view
         result['hidden_state_belief']={'status':'deterministic_constraints_only','distribution':None}
+    from .active_continuity import occupancy
+    for side,team in result['sides'].items():
+        team['occupancy']={slot:occupancy(state,side,slot) for slot in ('left','right')}
     return result

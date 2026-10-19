@@ -184,9 +184,15 @@ def hud_transition(engine, state, event, record):
     entry_support=None
     if state.knowledge.get('identity_v1'):
         from .identity_ledger import entry_visual_support
-        entry_support=entry_visual_support(engine,state,event)
+        entry_support=entry_visual_support(engine,state,event,record=record)
         if entry_support and status=='deferred':
             ref=entry_support['identity'];status='accepted';reason=entry_support['policy']
+
+    if state.knowledge.get('active_continuity_v1'):
+        from .active_continuity import current_episode
+        pid=state.sides[event.side].active_slots.get(a['slot']);ep=current_episode(state,pid)
+        if ep and ep.get('display_reference') and not state.pokemon[pid].species.known and not entry_support:
+            ref,status,reason=None,'deferred','episode_hud_confirmation_pending'
 
     if (ref and previous and previous['timestamp'] == timestamp
             and previous.get('status') == 'accepted' and previous.get('species_id') != ref['species_id']):
@@ -223,8 +229,11 @@ def hud_transition(engine, state, event, record):
             current=None
     continuity = a.get('continuity') or {}
     explicit = continuity.get('instance_id') if continuity.get('evidence') else None
+    from .active_continuity import current_episode
+    from battle_events.aliases import alias_key
     pending = [state.pokemon[x['instance_id']] for x in state.knowledge.get('unplaced_entries',[])
-        if x['side']==event.side and x['species_id']==ref['species_id']
+        if x['side']==event.side and (x['species_id']==ref['species_id'] or
+            x.get('species_id') is None and alias_key(x.get('raw_nickname',''))==alias_key(species.get('raw_text') or ''))
         and x.get('timestamp') is not None and x['timestamp']<=timestamp
         and state.pokemon[x['instance_id']].location.value=={'kind':'unplaced_entry','slot':None}]
     if state.knowledge.get('reliability_v2'):
@@ -249,6 +258,8 @@ def hud_transition(engine, state, event, record):
         return True
     elif len(pending)==1:
         p=pending[0];basis='unique_prior_unplaced_entry'
+    elif current and not current.species.known and current_episode(state,current.pokemon_instance_id):
+        p=current;basis='provisional_entry_prospective_identity'
     elif current and current.species.known and current.species.value.get('species_id') == ref['species_id']:
         p = current; basis = 'same_observed_slot_and_species_episode'
     else:
@@ -284,6 +295,9 @@ def hud_transition(engine, state, event, record):
             interval['after'] = None
     if a['slot'] in team.vacant_slots:
         team.vacant_slots.remove(a['slot'])
+    if not p.species.known and current_episode(state,p.pokemon_instance_id):
+        from .active_continuity import resolve_identity
+        resolve_identity(engine,state,p,ref,event,record,basis=basis)
     engine._assign(p, 'species', ref, event)
     if ref.get('canonical_identity'):
         engine._assign(p, 'current_variant', ref['canonical_identity'], event)
@@ -366,7 +380,7 @@ def episode_hud(state, side, slot, timestamp):
     last=state.knowledge.get('hud_fusion',{}).get('slots',{}).get(side+':'+slot)
     pid=state.sides[side].active_slots.get(slot)
     mon=state.pokemon.get(pid)
-    if last and mon and mon.location.value==dict(kind='active',slot=slot):
+    if last and mon and mon.species.known and mon.location.value==dict(kind='active',slot=slot):
         from .evidence_projection import source_times
         direct=[p for p in mon.location.provenance if any(
             e.get('source_type')=='video_message' for e in p.get('sources',[]))]
@@ -434,11 +448,29 @@ def prepare_message(state, event):
         parsed.attributes['trainer_side_evidence'] = deepcopy(state.sides[parsed.side].trainer)
     parsed.original_text=event.original_text
     parsed.event_id = event.event_id; parsed.evidence = deepcopy(event.evidence)
-    parsed.attributes.update({k:deepcopy(v) for k,v in event.attributes.items() if k not in {'side_basis','display_alias_evidence','move_resolution'}})
+    parsed.attributes.update({k:deepcopy(v) for k,v in event.attributes.items() if k not in {'side_basis','display_alias_evidence','move_resolution','actor_display_reference'}})
     parsed.status = event.status
     # New arrivals cannot bind to an already-active or inactive old alias.
     if parsed.event_type=='send_out' and state.knowledge.get('active_continuity_v1'):
         return parsed
+    if state.knowledge.get('active_continuity_v1') and parsed.side in state.sides:
+        from .active_continuity import current_episode
+        from battle_events.aliases import alias_key
+        raw=parsed.attributes.get('actor_display_reference') or parsed.attributes.get('receiver_display_reference')
+        matches=[]
+        for slot,pid in state.sides[parsed.side].active_slots.items():
+            ep=current_episode(state,pid)
+            names={alias_key(ep.get('display_reference') or ''),alias_key((ep.get('hud_display_name') or {}).get('value') or '')} if ep else set()
+            if (raw and ep and alias_key(raw) in names
+                    and context_supported(state,parsed.side,slot,timestamp)):
+                matches.append(pid)
+        if len(matches)==1:
+            role='target' if parsed.event_type=='effectiveness' else 'actor'
+            parsed.attributes[role+'_instance_id']=matches[0]
+            parsed.attributes['binding_basis']='explicit_episode_name_and_side'
+            if role=='actor':
+                parsed.uncertainty=[u for u in parsed.uncertainty if u not in {'actor_unresolved','active_identity_context_unresolved'}]
+            return parsed
     # Capture exact prefix-local instance bindings; no future roster is consulted.
     if parsed.actor and parsed.side in state.sides:
         matches = []

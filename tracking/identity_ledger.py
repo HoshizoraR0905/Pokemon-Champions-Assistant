@@ -85,7 +85,7 @@ def remember_alias(state,raw,identity,evidence,*,side,instance_id=None,source='s
     return claim
 
 
-def entry_visual_support(engine,state,event):
+def entry_visual_support(engine,state,event,*,record=None):
     """Repeated saved icon classifications can support an announced nickname.
 
     A complete preview restricts candidates, never chooses a species or selected
@@ -94,6 +94,13 @@ def entry_visual_support(engine,state,event):
     from .state_engine import evidence_link, event_from_dict
     from .evidence_fusion import knowledge
     from recognition.event_schedule import entry_slots
+    from .active_continuity import current_episode
+    if state.knowledge.get('active_continuity_v1') and event.side in state.sides:
+        pid=state.sides[event.side].active_slots.get(event.attributes.get('slot'))
+        ep=current_episode(state,pid)
+        if ep and ep.get('hud_binding'):
+            from .entry_hud import support,known_support
+            return known_support(state,event) if state.pokemon[pid].species.known else support(state,event)
     a=event.attributes;species=a.get('species') or {};icon=a.get('icon') or {}
     raw=species.get('raw_text') or '';sid=icon.get('species_id')
     if (event.side!='opponent' or a.get('identity_reused_from') or not raw
@@ -110,21 +117,42 @@ def entry_visual_support(engine,state,event):
         all(r.get('status')=='resolved' and r.get('species_id') for r in rows)
         and len({r['species_id'] for r in rows})==1 for rows in by_row.values()))
     if not reliable or sid not in {r['species_id'] for r in roster}:return None
-    timestamp=a['observation_time'];entry=None
+    timestamp=a['observation_time'];entry=None;single=None
     for h in engine.history:
+        if record is not None and (h.ordering is None or record.ordering is None
+                or h.ordering['domain']!=record.ordering['domain']
+                or tuple(h.ordering['key'])>=tuple(record.ordering['key'])):continue
         e=h.bindings.get('resolved_event',h.event);attrs=e.get('attributes',{});t=attrs.get('observation_time')
         if h.retracted or t is None or t>=timestamp:continue
         if e['event_type']=='move_execution':entry=None
-        if e['side']=='unknown' and e['event_type'] in {'switch_out','faint'}:entry=None
+        if e['side']=='unknown' and e['event_type'] in {'switch_out','faint'}:entry=None;single=None
         if e['side']!=event.side:continue
         if e['event_type']=='entry_observation':
+            single=None
             refs=attrs.get('ordered_display_references',[])
             slots=entry_slots(event.side,refs)
             matches=[literal for literal,slot in zip(refs,slots) if slot==a['slot']
                      and alias_key(literal).endswith(alias_key(raw))]
             if len(matches)==1:entry=e
             else:entry=None
-        elif e['event_type'] in {'switch_out','faint'}:entry=None
+        elif e['event_type']=='send_out':
+            # A single replacement may have an unresolved species but an
+            # independently observed trainer side. Later HUDs establish only
+            # present occupancy, never an earlier message's application.
+            single=None
+            refs=attrs.get('ordered_display_references',[])
+            if (len(refs)==1 and alias_key(refs[0]).endswith(alias_key(raw))
+                    and e.get('ocr_confidence',0) is not None and e['ocr_confidence']>=.95):single=e
+        elif e['event_type'] in {'switch_out','faint'}:entry=None;single=None
+    prospective=False
+    if entry is None and single is not None:
+        from .active_continuity import current_episode
+        team=state.sides[event.side]
+        vacant=set(team.vacant_slots)-set(team.active_slots)
+        pid=team.active_slots.get(a['slot']);p=state.pokemon.get(pid);ep=current_episode(state,pid)
+        provisional=bool(p and not p.species.known and ep and ep['entry_event_id']==single['event_id'])
+        if (vacant=={a['slot']} and a['slot'] not in team.active_slots) or provisional:
+            entry=single;prospective=True
     if entry is None:return None
     proof=event.evidence[0]
     if not proof.observation_ids:return None
@@ -142,6 +170,7 @@ def entry_visual_support(engine,state,event):
     identity=dict(canonical_id=entity.canonical_id,species_id=sid,kind='species',
                   name=entity.names.get('zh-hans'),knowledge_snapshot=knowledge().snapshot_id,identity_status='species_only')
     return dict(identity=identity,raw_nickname=raw,entry_event_id=entry['event_id'],
+        prospective_only=prospective,established_at=timestamp,historical_entry_applied=False,
         raw_sendout=entry['original_text'],selected_party_membership_proven=False,
         evidence=[evidence_link(event_from_dict(entry)),*[o['evidence'] for o in relevant]],
         preview_evidence=[deepcopy(r['evidence']) for r in roster],

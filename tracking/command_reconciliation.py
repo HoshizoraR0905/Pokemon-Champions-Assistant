@@ -57,7 +57,8 @@ def transition(engine,state,event,record):
     if not state.knowledge.get('command_reconciliation_v1'):raise Deferred('command_reconciliation_profile_required')
     if not finite(t) or not checkpoint.get('phase_id'):raise Contradiction('invalid_checkpoint')
     previous=checkpoint.get('previous_timestamp')
-    if not checkpoint.get('stable') or not finite(previous) or not 0<t-previous<=1.1:
+    single=checkpoint.get('window_mode')=='single_frame_strict'
+    if not single and (not checkpoint.get('stable') or not finite(previous) or not 0<t-previous<=1.1):
         raise Deferred('command_window_not_stable')
     ledger=state.knowledge.setdefault('command_reconciliation',dict(attempts=[],verified={},receipts=[]))
     phase=checkpoint['phase_id']
@@ -83,10 +84,20 @@ def transition(engine,state,event,record):
                    and p.details.get('image')==o.get('image') for p in event.evidence):
             raise Contradiction('checkpoint_observation_source_mismatch')
         ref,basis,aliases=observed_identity(state,o,t) if valid_window else (None,'incomplete_normal_command_view',[])
-        status='inconclusive' if ref is None else 'unexpected_occupancy' if old_sid is None else 'match' if old_sid==ref['species_id'] else 'conflict'
+        from .active_continuity import occupancy
+        status='inconclusive' if ref is None else 'identity_resolved' if old and not old.species.known else 'unexpected_occupancy' if old_sid is None else 'match' if old_sid==ref['species_id'] else 'conflict'
         outcomes.append(dict(key=key,status=status,basis=basis,observed=deepcopy(ref),
+            previous_occupancy=occupancy(state,o['side'],o['slot']),
             previous_instance_id=pid,previous_species_id=old_sid,corrected=False,
             observation=deepcopy(o),alias_proofs=aliases,comparison_scope='species_and_hud_slot; individual_continuity_unverified'))
+    if single:
+        from recognition.command_checkpoint import strict_single_huds,strict_single_ui
+        # Revalidate the full frame at the state boundary, including prefix-local
+        # nickname resolution; a scheduler assertion alone cannot permit repair.
+        sufficient=(strict_single_ui(checkpoint.get('inspection',{}))
+            and strict_single_huds(observations) and all(o['observed'] for o in outcomes))
+        if not sufficient:
+            for o in outcomes:o.update(status='inconclusive',basis='strict_single_frame_identity_or_ui_incomplete')
     # Same-species occupancy within one side does not identify party instances.
     for side in state.sides:
         same=[o for o in outcomes if o['key'].startswith(side+':') and o['observed']]
@@ -95,6 +106,13 @@ def transition(engine,state,event,record):
                 if o['status']!='match':o.update(status='inconclusive',basis='same_species_individual_ambiguity')
     for outcome in outcomes:
         key=outcome['key'];side,slot=key.split(':');status=outcome['status']
+        if status=='identity_resolved':
+            from .active_continuity import resolve_identity
+            p=state.pokemon[outcome['previous_instance_id']]
+            ep=resolve_identity(engine,state,p,outcome['observed'],event,record,basis='independent_command_checkpoint')
+            outcome.update(resolved_instance_id=p.pokemon_instance_id,active_episode_id=ep['episode_id'])
+            raw=outcome['observation']['species']['raw_text']
+            remember_alias(state,raw,outcome['observed'],[proof],side=side,instance_id=p.pokemon_instance_id,source='command_checkpoint_prospective_identity')
         if status in {'conflict','unexpected_occupancy'}:
             start=ledger['verified'].get(key)
             evidence_events=[]
@@ -136,7 +154,7 @@ def transition(engine,state,event,record):
             raw=outcome['observation']['species']['raw_text']
             remember_alias(state,raw,outcome['observed'],[proof],side=side,instance_id=pid,source='command_checkpoint_existing_species_association')
             outcome.update(corrected=True,corrected_instance_id=pid,active_episode_id=ep['episode_id'])
-        if status in {'match','conflict','unexpected_occupancy'}:ledger['verified'][key]=t
+        if status in {'match','conflict','unexpected_occupancy','identity_resolved'}:ledger['verified'][key]=t
     receipt=dict(event_id=event.event_id,timestamp=t,phase_id=phase,source=proof,
                  outcomes=outcomes,corrections=sum(o['corrected'] for o in outcomes))
     ledger['receipts'].append(receipt);record.bindings['command_reconciliation']=deepcopy(receipt)

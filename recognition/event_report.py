@@ -115,8 +115,7 @@ def video_events(rows, roster, battle_id):
                 if len(refs)==2:
                     for i,(literal,slot) in enumerate(zip(refs,entry_slots(event['side'],refs))):
                         child=deepcopy(event);child['event_id']=stable_id(battle_id,event['event_id']+':member:'+str(i))
-                        candidates=[r for r in parser.species_mentions(literal) if literal.endswith(r['name'])]
-                        child['actor']=candidates[0] if len(candidates)==1 else None
+                        child['actor']=parser.identity(literal,'species')
                         child['attributes'].update(fusion_context=False,announced_order=i,display_reference=literal)
                         if slot is not None:child['attributes']['slot']=slot
                         child['uncertainty']=[u for u in child['uncertainty'] if u not in {'actor_unresolved','actor_variant_unresolved'}]

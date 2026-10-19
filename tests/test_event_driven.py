@@ -153,7 +153,11 @@ def test_pair_entries_do_not_duplicate_the_first_actor_or_use_roster_membership(
     row=live_row(text='上吧！皮卡丘！曾是头目的班基拉斯！')
     events=video_events([row],[],'test');entries=[e for e in events if e['event_type']=='send_out']
     assert len(entries)==2
-    assert [e['actor']['species_id'] for e in entries]==[25,248]
+    assert [e['actor']['species_id'] if e['actor'] else None for e in entries]==[25,None]
+    assert entries[1]['attributes']['display_reference']=='曾是头目的班基拉斯'
+    assert entries[1]['original_text']==row['message']['raw_text']
+    plain=video_events([live_row(text='上吧！皮卡丘！班基拉斯！')],[],'test')
+    assert [e['actor']['species_id'] for e in plain if e['event_type']=='send_out']==[25,248]
     assert [e['attributes']['slot'] for e in entries]==['left','right']
     row=live_row(text='X派出了昵称A和昵称B！')
     assert all(e['actor'] is None for e in video_events([row],[],'test') if e['event_type']=='send_out')

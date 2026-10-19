@@ -2,14 +2,49 @@
 from copy import deepcopy
 import cv2
 import numpy as np
+import math
 from recognition import box, color_fraction
 from recognition.fast_profile import independent_cards, normalized, difference
 
-VERSION='normal-command-checkpoint-v1'
+VERSION='normal-command-checkpoint-v2'
 SLOT_REGIONS={'own_active_1':('self','left',(.139,.847,.226,.887)),
               'own_active_2':('self','right',(.307,.847,.394,.887)),
               'opponent_active_1':('opponent','left',(.624,.051,.722,.084)),
               'opponent_active_2':('opponent','right',(.790,.051,.888,.084))}
+
+
+def strict_single_huds(monsters):
+    """Require four independent strong names and >=3 agreeing visual IDs.
+
+    Unresolved icons may only accompany exact canonical species text. Nicknames
+    require an independent icon here and an already accepted alias at replay.
+    This function never consults predicted slots or roster order.
+    """
+    from tracking.evidence_fusion import knowledge
+    from knowledge import normalize
+    if len(monsters)!=4:return False
+    supported=0
+    for mon in monsters:
+        species=mon.get('species') or {};icon=mon.get('icon') or {};confidence=species.get('confidence',0)
+        raw=species.get('raw_text')
+        if (mon.get('identity_reused_from') or not isinstance(confidence,(int,float))
+                or isinstance(confidence,bool) or not math.isfinite(confidence) or confidence<.98 or not raw):return False
+        if (species.get('resolution') or {}).get('status')=='conflict':return False
+        ids={e.species_id for e in knowledge().exact['species'].get(normalize(raw),[])}
+        resolved=icon.get('status')=='resolved' and isinstance(icon.get('species_id'),int)
+        if resolved:
+            if ids and (len(ids)!=1 or icon['species_id'] not in ids):return False
+            supported+=1
+        elif len(ids)!=1:return False
+    return supported>=3
+
+
+def strict_single_ui(inspection):
+    return (inspection.get('normal_controls') is True and inspection.get('eligible') is True
+        and inspection.get('reason')=='normal_four_hud_command'
+        and set(inspection.get('visible_slots',[]))==set(SLOT_REGIONS)
+        and len(inspection.get('control_bounds',[]))==2
+        and all(len(bounds)==1 for bounds in inspection['control_bounds']))
 
 
 def inspect_command(image):
@@ -38,22 +73,27 @@ def inspect_command(image):
     if not all(len(c)==1 for c in controls):return result
     from recognition.ui_regions import inspect_ui
     ui=inspect_ui(image)
-    if ui.get('overlay') or ui['phase'] in {'team_preview','team_configuration','pokemon_selection','switch_selection','move_selection','move_target_selection'}:
+    # Broad blue/purple background coverage also matches rain and arena walls.
+    # Only that generic status veto may yield to two native decision controls
+    # AND all four ordinary name/HP cards. Other overlays remain hard vetoes.
+    cards=independent_cards(image)
+    visible=[side+'_active_'+str(i+1) for side,i,_,_ in cards]
+    complete=set(visible)==set(SLOT_REGIONS)
+    status_false_positive=ui.get('overlay')=='status_overlay' and complete
+    if (ui.get('overlay') and not status_false_positive) or ui['phase'] in {'team_preview','team_configuration','pokemon_selection','switch_selection','move_selection','move_target_selection'}:
         result.update(reason='overlay_or_selection',overlay=ui.get('overlay'),phase=ui['phase'])
         return result
     # Reject lingering move rows even when the broad phase classifier is unsure.
     rows=[color_fraction(image,(.70,.44+i*.118,.735,.49+i*.118),'purple') for i in range(4)]
     if all(p>.35 for p in rows):result['reason']='move_rows_visible';return result
-    cards=independent_cards(image)
-    visible=[('own' if side=='own' else 'opponent')+'_active_'+str(i+1) for side,i,_,_ in cards]
-    complete=set(visible)==set(SLOT_REGIONS)
+    if status_false_positive:result['overlay_disambiguation']='native_dual_controls_and_four_hud_cards_override_generic_color_panel'
     result.update(normal_controls=True,eligible=complete,visible_slots=visible,command_context=True,
                   phase=ui['phase'],reason='normal_four_hud_command' if complete else 'incomplete_active_huds')
     return result
 
 
 class CommandCheckpointSchedule:
-    """Two stable observations; one attempt, including unresolved, per phase.
+    """Stable pair or strongly corroborated single view; one attempt per phase.
 
     Menu/overlay navigation retains the phase. A live action or a sustained
     absence of decision UI closes it. State is serializable for pipeline resume.
@@ -86,10 +126,16 @@ class CommandCheckpointSchedule:
         self.previous=dict(timestamp=t,signatures=deepcopy(signatures),source_id=row['source_id'])
         stable=(previous and t-previous['timestamp']<=1.1 and set(previous['signatures'])==set(signatures)
                 and all(difference(np.asarray(previous['signatures'][k],dtype=np.uint8),np.asarray(v,dtype=np.uint8))<=.08 for k,v in signatures.items()))
-        if self.attempted or not stable:return None
+        monsters={m['slot']:m for m in row.get('snapshot',{}).get('pokemon',[])}
+        single=(strict_single_ui(inspection) and set(monsters)==set(SLOT_REGIONS)
+                and strict_single_huds(list(monsters.values())))
+        if self.attempted or not (stable or single):return None
         self.attempted=True
-        return dict(phase_id='command:'+str(self.phase),stable=True,previous_source_id=previous['source_id'],
-                    previous_timestamp=previous['timestamp'],inspection=deepcopy(inspection),attempt=1)
+        return dict(phase_id='command:'+str(self.phase),stable=bool(stable),
+                    window_mode='stable_pair' if stable else 'single_frame_strict',
+                    previous_source_id=previous['source_id'] if stable else None,
+                    previous_timestamp=previous['timestamp'] if stable else None,
+                    inspection=deepcopy(inspection),attempt=1)
 
     def inspect(self,row,image):
         inspection=inspect_command(image)

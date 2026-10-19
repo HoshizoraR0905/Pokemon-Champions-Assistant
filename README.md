@@ -25,6 +25,25 @@ python -m pytest -q
 
 Image input emits one JSON object. Video input streams one JSON object per sampled frame (JSON Lines), including newly observed events and the accumulated own-team configuration. `--annotated` is an output filename for images and an output directory for videos. Recognition uses actual video position timestamps where available, with an explicitly marked FPS fallback. Sampling decodes sequentially without retaining video frames; smaller intervals improve coverage at the cost of more OCR work. Sampling can miss brief messages and does not establish turn numbers.
 
+### Maintained event-driven battle pipeline
+
+For a new recording, the current battle-analysis entry point is:
+
+```sh
+.venv/bin/python main.py --video /path/to/new_recording.mp4 --profile event-driven --run-id production-v1
+```
+
+This uses saved battle-message evidence, the standardized 2D HUD icons, and `tracking.state_engine.StateEngine`. Supported send-outs create occupancy immediately. `tracking/entry_hud.py` confirms the actual HUD display name and species prospectively; full message references and possible title segments remain separate. W supplies an auxiliary command-phase check. Scene-model recognition is not enabled.
+
+For an existing saved-event baseline, run only reconstruction in a battle-owned diagnostic namespace:
+
+```sh
+.venv/bin/python scripts/replay_entry_hud.py --battle sample_battle_5 --baseline evaluation/m238-provisional-entry-v2/replay.json --diagnostic-id m238-hud-authority-v2
+.venv/bin/python scripts/report_entry_hud.py --battle sample_battle_5 --diagnostic-id m238-hud-authority-v2 --baseline evaluation/m238-provisional-entry-v2/replay.json --report reports/battles/sample_battle_5/M2.3.8-HUD-authoritative-name-proof-v2.md
+```
+
+These saved-evidence commands require the named local baseline. Compatible completed manifests are reused; source drift requires a new diagnostic ID. `--reconstruct-from` on the video entry point remains subject to its stricter recognition-stage dependency checks. The shared current report implementation is `scripts/report_entry_hud.py`; the `review_entry_hud.py` and historical `reuse_entry_hud.py` paths are compatibility wrappers. Earlier milestone drivers and sealed runs remain available for historical reproduction. See the [HUD-authoritative validation and consolidation report](reports/battles/sample_battle_7/M2.3.8-HUD-authority-and-consolidation-v2.md) for the current saved-evidence acceptance.
+
 ## Design
 
 - `capture/`: `Frame`, image loading, and video sampling. Adapters return BGR image data, source, frame index, timestamp, and metadata. QuickTime, ADB, and mobile acquisition can later implement this contract.

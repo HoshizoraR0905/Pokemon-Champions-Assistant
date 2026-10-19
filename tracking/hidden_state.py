@@ -199,7 +199,7 @@ class HiddenEngine:
         """Initial identities are evidence, not hidden legality candidate catalogs."""
         for pid,p in observable['pokemon'].items():
             if p['side_id']!='opponent':continue
-            mon=self.ensure(pid,'opponent',p['species']['value'].get('name'))
+            mon=self.ensure(pid,'opponent',(p['species']['value'] or {}).get('name'))
             for name,key in [('species','species'),('current_variant','original_form')]:
                 f=p[name]
                 if f['knowledge'] in {'observed','derived'}:

@@ -20,7 +20,7 @@ def observe_hud(state, event, observed):
         # Admission either corroborates this episode or observes a new occupant.
         ledger.pop(key, None)
         return
-    if not mon or not episode:
+    if not mon or not episode or not mon.species.known:
         return
     names = knowledge().exact['species'].get(normalize(observed.get('raw') or ''), [])
     ids = {e.species_id for e in names}
@@ -46,7 +46,7 @@ def occupancy_gate(state, side, slot, timestamp):
     return None
 
 
-def corroborate_entry_model(state, event, record):
+def corroborate_entry_model(state, event, record,engine=None):
     """Optional cached corroboration tied to an explicit entry, never placement.
 
     No model is invoked here. The adapter must preserve independent model
@@ -78,6 +78,21 @@ def corroborate_entry_model(state, event, record):
     sid = event.actor.get('species_id')
     if not sid:
         raise Deferred('entry_model_identity_unresolved')
+    if ep['species_id'] is None:
+        # A human reference or an uncalibrated score is never an automatic
+        # prediction. The dormant adapter accepts only a versioned, validated
+        # classifier result tied to this entry; no such local model exists yet.
+        model=a.get('classification') or {}
+        from recognition.entry_model import VALIDATED_CLASSIFIERS
+        if (engine is None or model.get('status')!='accepted' or model.get('evidence_kind')!='automatic'
+                or not model.get('method_version') or not model.get('validation_artifact')
+                or VALIDATED_CLASSIFIERS.get(model.get('method_version'))!=model.get('validation_artifact')
+                or model.get('species_id')!=sid or not model.get('candidate_scores')
+                or sid not in model.get('preview_species_ids',[])):
+            raise Deferred('entry_model_classifier_unvalidated')
+        from .active_continuity import resolve_identity
+        p=state.pokemon[ep['instance_id']]
+        resolve_identity(engine,state,p,event.actor,event,record,basis='validated_entry_model')
     proof = dict(event_id=event.event_id, timestamp=t, species_id=sid,
                  confidence=a['confidence'], evidence=evidence_link(event),
                  status='agreement' if sid == ep['species_id'] else 'disagreement')
