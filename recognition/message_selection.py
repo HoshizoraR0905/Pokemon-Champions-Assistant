@@ -17,9 +17,9 @@ class SelectionConfig:
     reduced_threshold: int = 3
     stroke_value: int = 120
     stroke_contrast: int = 25
-    minimum_strokes: int = 4
+    minimum_strokes: int = 2
     maximum_gap: int = 40
-    minimum_span: int = 50
+    minimum_span: int = 38
     left_anchor: int = 45
     temporal_mae: float = 8.0
     repeat_similarity: float = .9
