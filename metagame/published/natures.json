@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "scope": "nature name resolution only; no mechanics imported",
+  "source_url": "https://wiki.52poke.com/index.php?title=性格&oldid=2568467",
+  "retrieved_date": "2026-10-15",
+  "licensing": "52Poké contributors; CC BY-NC-SA 3.0; non-commercial attribution/share-alike",
+  "rows": {
+    "hardy": {
+      "english": "Hardy",
+      "names": [
+        "勤奋",
+        "がんばりや",
+        "Hardy"
+      ]
+    },
+    "lonely": {
+      "english": "Lonely",
+      "names": [
+        "怕寂寞",
+        "さみしがり",
+        "Lonely"
+      ]
+    },
+    "adamant": {
+      "english": "Adamant",
+      "names": [
+        "固执",
+        "いじっぱり",
+        "Adamant"
+      ]
+    },
+    "naughty": {
+      "english": "Naughty",
+      "names": [
+        "頑皮",
+        "やんちゃ",
+        "Naughty"
+      ]
+    },
+    "brave": {
+      "english": "Brave",
+      "names": [
+        "勇敢",
+        "ゆうかん",
+        "Brave"
+      ]
+    },
+    "bold": {
+      "english": "Bold",
+      "names": [
+        "大膽",
+        "ずぶとい",
+        "Bold"
+      ]
+    },
+    "docile": {
+      "english": "Docile",
+      "names": [
+        "坦率",
+        "すなお",
+        "Docile"
+      ]
+    },
+    "impish": {
+      "english": "Impish",
+      "names": [
+        "淘气",
+        "わんぱく",
+        "Impish"
+      ]
+    },
+    "lax": {
+      "english": "Lax",
+      "names": [
+        "乐天",
+        "のうてんき",
+        "Lax"
+      ]
+    },
+    "relaxed": {
+      "english": "Relaxed",
+      "names": [
+        "悠闲",
+        "のんき",
+        "Relaxed"
+      ]
+    },
+    "modest": {
+      "english": "Modest",
+      "names": [
+        "內斂",
+        "ひかえめ",
+        "Modest",
+        "内敛"
+      ]
+    },
+    "mild": {
+      "english": "Mild",
+      "names": [
+        "慢吞吞",
+        "おっとり",
+        "Mild"
+      ]
+    },
+    "bashful": {
+      "english": "Bashful",
+      "names": [
+        "害羞",
+        "てれや",
+        "Bashful"
+      ]
+    },
+    "rash": {
+      "english": "Rash",
+      "names": [
+        "马虎",
+        "うっかりや",
+        "Rash"
+      ]
+    },
+    "quiet": {
+      "english": "Quiet",
+      "names": [
+        "冷静",
+        "れいせい",
+        "Quiet"
+      ]
+    },
+    "calm": {
+      "english": "Calm",
+      "names": [
+        "溫和",
+        "おだやか",
+        "Calm"
+      ]
+    },
+    "gentle": {
+      "english": "Gentle",
+      "names": [
+        "温顺",
+        "おとなしい",
+        "Gentle"
+      ]
+    },
+    "careful": {
+      "english": "Careful",
+      "names": [
+        "慎重",
+        "しんちょう",
+        "Careful"
+      ]
+    },
+    "quirky": {
+      "english": "Quirky",
+      "names": [
+        "浮躁",
+        "きまぐれ",
+        "Quirky"
+      ]
+    },
+    "sassy": {
+      "english": "Sassy",
+      "names": [
+        "自大",
+        "なまいき",
+        "Sassy"
+      ]
+    },
+    "timid": {
+      "english": "Timid",
+      "names": [
+        "胆小",
+        "おくびょう",
+        "Timid"
+      ]
+    },
+    "hasty": {
+      "english": "Hasty",
+      "names": [
+        "急躁",
+        "せっかち",
+        "Hasty"
+      ]
+    },
+    "jolly": {
+      "english": "Jolly",
+      "names": [
+        "爽朗",
+        "ようき",
+        "Jolly"
+      ]
+    },
+    "naive": {
+      "english": "Naive",
+      "names": [
+        "天真",
+        "むじゃき",
+        "Naive"
+      ]
+    },
+    "serious": {
+      "english": "Serious",
+      "names": [
+        "认真",
+        "まじめ",
+        "Serious"
+      ]
+    }
+  }
+}

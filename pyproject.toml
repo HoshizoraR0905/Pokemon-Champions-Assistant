@@ -13,17 +13,21 @@ dependencies = ["opencv-python-headless>=4.8,<6", "pytesseract>=0.3.10,<0.4"]
 champions-damage = "damage.__main__:main"
 champions-inverse-damage = "damage.inverse_cli:main"
 champions-speed-order = "speed_order.__main__:main"
+champions-metagame = "metagame.__main__:main"
+champions-published-teams = "metagame.published.__main__:main"
 
 [project.optional-dependencies]
 test = ["pytest>=7"]
+metagame = ["requests>=2.31,<3"]
 sampling = ["imageio-ffmpeg==0.6.0"]
 ocr = ["paddleocr==3.7.0", "paddlepaddle==3.3.1"]
 ocr_experimental = ["onnxruntime==1.23.2", "onnx==1.23.2", "PyYAML>=6,<7"]
 
 [tool.setuptools.packages.find]
-include = ["capture*", "recognition*", "models*", "tracking*", "damage*", "api*", "knowledge*", "streaming*", "battle_events*", "speed_order*"]
+include = ["capture*", "recognition*", "models*", "tracking*", "damage*", "api*", "knowledge*", "streaming*", "battle_events*", "speed_order*", "metagame*"]
 
 [tool.setuptools.package-data]
+metagame = ["published/*.json"]
 tracking = ["templates/*.html"]
 damage = ["data/*.json", "data/*.txt", "schemas/*.json"]
 speed_order = ["data/*.json", "schemas/*.json"]
