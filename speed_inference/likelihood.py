@@ -75,6 +75,15 @@ def likelihoods(model,observation,alive,profile):
             problems.append('Opponent unmodified Speed must be inferred, not substituted in the observation')
         speed=candidate['unmodified_speed']
         memo_key=(speed,c['opponent']['ability'],c['opponent']['item'])
+        if observation.get('execution_model') is not None:
+            from speed_order.execution import pair_likelihood
+            if memo_key not in memo:
+                memo[memo_key]=pair_likelihood(c,speed,first,observation['execution_model'],profile)
+            probability,detail=memo[memo_key]
+            if probability is None:problems.append(detail['reason'])
+            values.append(probability)
+            details.append(dict(candidate_id=candidate['id'],likelihood=probability,**detail))
+            continue
         if memo_key not in memo:memo[memo_key]=evaluate_order(context=c,opponent_speed=speed,profile=profile)
         outcome=memo[memo_key]
         if outcome['status']!='assessed' or outcome['kind']!='speed':

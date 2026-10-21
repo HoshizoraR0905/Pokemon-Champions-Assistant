@@ -125,7 +125,20 @@ def test_frozen_results_references_pages_and_protected_sources_preserved():
     p=Path('.cache/m34-visual-v22/preservation-baseline.json')
     if not p.exists():pytest.skip('Optional preservation snapshot absent')
     baseline=json.loads(p.read_text())
-    for path,sha in baseline.items():assert Path(path).exists() and file_hash(Path(path))==sha,path
+    for path,sha in baseline.items():
+        assert Path(path).exists(),path
+        if path=='speed_inference/likelihood.py':
+            # M3.4.1 adds only an explicit opt-in dispatcher. Verify the exact
+            # addition AND the original source after removing it; never reseal
+            # historical visual outputs or accept arbitrary inference changes.
+            import hashlib
+            compatibility=json.loads(Path('tests/fixtures/battle_evidence/m341-likelihood-compatibility.json').read_text())
+            source=Path(path).read_text();addition=compatibility['exact_opt_in_addition']
+            assert compatibility['before_sha256']==sha
+            assert source.count(addition)==1
+            assert file_hash(Path(path))==compatibility['after_sha256']
+            assert hashlib.sha256(source.replace(addition,'',1).encode()).hexdigest()==sha
+        else:assert file_hash(Path(path))==sha,path
 
 
 def test_human_observations_do_not_approve_agent_localization_or_change_history():

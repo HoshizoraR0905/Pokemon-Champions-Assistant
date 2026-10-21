@@ -1,0 +1,95 @@
+{
+  "review_scope": "Agent visual checks of message text only, not hidden-state or whole-turn ground truth",
+  "messages": [
+    {
+      "battle_id": "sample_battle_6",
+      "event_id": "event:bd0b33c22b234fdfb7ec1034",
+      "timestamp": 172.51166666666666,
+      "text": "长毛巨魔使出了\n光墙！",
+      "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000319.png",
+      "sha256": "91b572a1c588442e4bad9fb517996199bca54f0af5cb2229daa899c6aa818c05",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "message text only; no hidden build or queue certification"
+    },
+    {
+      "battle_id": "sample_battle_6",
+      "event_id": "event:5ce390b4320c9b626bc851b5",
+      "timestamp": 179.01333333333332,
+      "text": "对手的赛富豪使出了\n诡计！",
+      "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000332.png",
+      "sha256": "ae62f617f41c21c75b026fd1e465c7684f3ac999832634237f53e20f119157f4",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "message text only; no hidden build or queue certification"
+    },
+    {
+      "battle_id": "sample_battle_6",
+      "event_id": "event:3dbc431d9638cdb4549cc757",
+      "timestamp": 186.03166666666667,
+      "text": "铝钢桥龙使出了\n大声咆哮！",
+      "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000346.png",
+      "sha256": "b41b43e07194ff9e7691fe1495b8898523309b67b5e5f86bf6efc7e3a9946d4e",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "message text only; no hidden build or queue certification"
+    },
+    {
+      "battle_id": "sample_battle_9",
+      "event_id": "event:5421180fe53e2c968c01c267",
+      "timestamp": 169.51166666666666,
+      "text": "妙蛙花使出了\n催眠粉！",
+      "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000296.png",
+      "sha256": "83ec148cea01d070106ad577b14df885ff8cef2b6e5bb1f2af139c8474996793",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "message text only; no hidden build or queue certification"
+    },
+    {
+      "battle_id": "sample_battle_9",
+      "event_id": "event:ad20002e3ccdfe8fcd5ab03a",
+      "timestamp": 179.51333333333332,
+      "text": "喷火龙使出了\n气象球！",
+      "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000316.png",
+      "sha256": "7bac9472ddb7fa88cb80c6a6bc94eb428c5a4f80f7013c479cc1adb642083eb5",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "message text only; no hidden build or queue certification"
+    },
+    {
+      "battle_id": "sample_battle_9",
+      "event_id": "event:2505903ac2ffa203bd1ba686",
+      "timestamp": 190.015,
+      "text": "对手的奇麒麟使出了\n戏法空间！",
+      "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000337.png",
+      "sha256": "2d8829f66d31abd008398133adf44fc647750347b9f88d662f68db9569ad276a",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "message text only; no hidden build or queue certification"
+    },
+    {
+      "battle_id": "sample_battle_10",
+      "event_id": "event:0970c5f361e349d814dbdf42",
+      "timestamp": 141.52333333333334,
+      "text": "喷火龙使出了\n守住！",
+      "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000264.png",
+      "sha256": "3da2a5fc13fb28d4333e8614d54ae94955dd0bfd53ef7154a545ddaf1a0b0441",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "message text only; no hidden build or queue certification"
+    },
+    {
+      "battle_id": "sample_battle_10",
+      "event_id": "event:dbeab51fe9e88400c1fffc16",
+      "timestamp": 146.525,
+      "text": "妙蛙花使出了\n守住！",
+      "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000274.png",
+      "sha256": "e07831b82a8dabdc583a937894e914f43a008b87021167e4c9a3f92c6c2ad262",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "message text only; no hidden build or queue certification"
+    },
+    {
+      "battle_id": "sample_battle_10",
+      "event_id": "event:1c1841fef1d2fd5de80e9550",
+      "timestamp": 152.525,
+      "text": "对手的铝钢桥龙使出了\n电光束！",
+      "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000286.png",
+      "sha256": "cd25c648b0930ba5d4ebdc627ff8196f934f513ddea37af59c9f75dd2341c329",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "message text only; no hidden build or queue certification"
+    }
+  ]
+}

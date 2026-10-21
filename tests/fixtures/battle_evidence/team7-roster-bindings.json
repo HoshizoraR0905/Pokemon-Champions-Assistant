@@ -1,0 +1,145 @@
+{
+  "team_configuration": "tests/fixtures/battle_evidence/sample-team7-reviewed.json",
+  "user_assertion": {
+    "asserted_by": "user",
+    "date": "2026-10-21",
+    "statement": "This pokemon team-up is unique in all teams I saved. I dont have a second team with these 6 pokemons. So any battle I have exactly these 6 pokemons, use the same building from the video.",
+    "requires": "complete exact six-species roster; unresolved individual continuity and battle-time form/item state remain independent"
+  },
+  "roster_reviews": [
+    {
+      "battle_id": "sample_battle_5",
+      "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000018.png",
+      "event_id": "event:0e904baa2e2baecd60272d10",
+      "sha256": "7a831cc8d2f9a4534d1d93ca21875e21d3a6c1e5b4fbd5b0191d48f7f1605639",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "full six-member configuration page or self preview column; visually reviewed, not automatic recognition accuracy",
+      "matches_team7": false,
+      "species_ids": [
+        373,
+        248,
+        823,
+        530,
+        876,
+        903
+      ]
+    },
+    {
+      "battle_id": "sample_battle_6",
+      "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000014.png",
+      "event_id": "event:21937e1a81e6f481de446f77",
+      "sha256": "5be1586d23bf7902dcde4294a442e6958fe0380ea1b884f47c3768e40c8bbcb0",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "full six-member configuration page or self preview column; visually reviewed, not automatic recognition accuracy",
+      "matches_team7": true,
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ]
+    },
+    {
+      "battle_id": "sample_battle_7",
+      "image": ".cache/battles/sample_battle_7/event-driven/production-first-pass-v1/frames/000003.png",
+      "event_id": "event:01992375fb856166f5f44be4",
+      "sha256": "d929d8f75b0f3a55739417c18ce8fb89d2af3ff2a5b90ff282e661804f3422bf",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "full six-member configuration page or self preview column; visually reviewed, not automatic recognition accuracy",
+      "matches_team7": true,
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ]
+    },
+    {
+      "battle_id": "sample_battle_8",
+      "image": ".cache/battles/sample_battle_8/event-driven/m239-production-first-pass-v1/frames/000011.png",
+      "event_id": "event:2d2e1f0c538dc010b11d0d58",
+      "sha256": "a1709bc5481912c951c9f3041c22d346c5f90316c54cc4e75b1f8f1564b27d10",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "full six-member configuration page or self preview column; visually reviewed, not automatic recognition accuracy",
+      "matches_team7": true,
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ]
+    },
+    {
+      "battle_id": "sample_battle_9",
+      "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000033.png",
+      "event_id": "event:22e7c5c82506587595aa6e5e",
+      "sha256": "6f4524b9245c87e3c5a59bdcf5e45ca035f57af035b0515f2e294273812fc415",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "full six-member configuration page or self preview column; visually reviewed, not automatic recognition accuracy",
+      "matches_team7": true,
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ]
+    },
+    {
+      "battle_id": "sample_battle_10",
+      "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000026.png",
+      "event_id": "event:15c8769137076080a503175f",
+      "sha256": "d601313716b7069575dfcac976eb005d4bc772689fe3c6182c04fcce901be0e2",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "full six-member configuration page or self preview column; visually reviewed, not automatic recognition accuracy",
+      "matches_team7": true,
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ]
+    },
+    {
+      "battle_id": "sample_battle_11",
+      "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000042.png",
+      "sha256": "96e26f531561fadbbb572d177e4c9dcb7906945ff3bc886be78c45fe99bf429a",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "full self six-member preview column, visually reviewed",
+      "matches_team7": true,
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ]
+    },
+    {
+      "battle_id": "sample_battle_12",
+      "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000050.png",
+      "sha256": "ed5057f0b6409dc078661e910f45bfab2a8760275d1df82654ca1b939aa46ff5",
+      "reviewer": "codex-visual-inspection-2026-10-21",
+      "scope": "full self six-member preview column, visually reviewed",
+      "matches_team7": true,
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ]
+    }
+  ]
+}

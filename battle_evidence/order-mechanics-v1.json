@@ -1,0 +1,172 @@
+{
+  "conditional_profile": "showdown-champions-reference-v1",
+  "independently_certified_queue_timing": false,
+  "items_unavailable_in_pinned_champions": [
+    "Custap Berry",
+    "Lagging Tail",
+    "Full Incense"
+  ],
+  "numeric_arithmetic": "Reuse speed_order.core.effective_speed; no alternative Speed calculator",
+  "prankster": {
+    "source_scope": "52Poké Champions description row plus pinned ability implementation",
+    "status_priority_delta": 1
+  },
+  "prior": "Existing uniform legal Speed SP/numerical-alignment/explicit modifier projection. No empirical statistics; unmodeled domains remain unknown.",
+  "quick_claw": {
+    "activation_states": [
+      "confirmed_active",
+      "confirmed_inactive",
+      "unknown"
+    ],
+    "kind": "fractional_order_override",
+    "legality": "present in pinned Champions KnowledgeBase item facts; inherited simulator item, no Champions Past override",
+    "probability_denominator": 5,
+    "probability_numerator": 1,
+    "unknown_policy": "Marginalize 1/5 only within explicit complete conditional item domain. No silent activation invented for unknown held item."
+  },
+  "reference_queue": "Pinned Champions mod gen9 inherits battle.ts gen>=8 recomputation before next queued move. Runtime reconstruction records current and decision snapshots separately; unverified mid-turn changes defer numeric inference.",
+  "retrieved_date": "2026-10-21",
+  "scope": "Champions-specific community descriptions and pinned Champions simulator inheritance, not official independent in-game certification",
+  "sources": [
+    {
+      "attribution": "Pokémon Showdown contributors",
+      "license": "MIT",
+      "path": ".cache/m341-actions/sources/ps-data-items.ts",
+      "retrieved_date": "2026-10-21",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "75da206e2cb09868bb549360f38a144c2f50b24e1d189e03b485d550a4f6357a",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/items.ts"
+    },
+    {
+      "attribution": "Pokémon Showdown contributors",
+      "license": "MIT",
+      "path": ".cache/m341-actions/sources/ps-data-abilities.ts",
+      "retrieved_date": "2026-10-21",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "53d8558979e337c675907b76b5375185b28a0877f770d7456025b94535e1064d",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/abilities.ts"
+    },
+    {
+      "attribution": "Pokémon Showdown contributors",
+      "license": "MIT",
+      "path": ".cache/m341-actions/sources/ps-data-mods-champions-items.ts",
+      "retrieved_date": "2026-10-21",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "b39dafa66d136ebb1a8576367ced2c9f4519aa1c17d5d65c59b368ac15d7de77",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/mods/champions/items.ts"
+    },
+    {
+      "attribution": "Pokémon Showdown contributors",
+      "license": "MIT",
+      "path": ".cache/m341-actions/sources/ps-data-mods-champions-abilities.ts",
+      "retrieved_date": "2026-10-21",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "5c10f24808e26605d2a104139cd25ae76cb9ba12c3cd5331e29cb70659b37bb0",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/mods/champions/abilities.ts"
+    },
+    {
+      "attribution": "Pokémon Showdown contributors",
+      "license": "MIT",
+      "path": ".cache/m341-actions/sources/ps-sim-battle-queue.ts",
+      "retrieved_date": "2026-10-21",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "3d9dd71dfb7abc788f961d6123b1b9f7308ccab947af6527f1752dd1d94b95ed",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/sim/battle-queue.ts"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "path": ".cache/m341-actions/sources/wiki-优先度.html",
+      "retrieved_date": "2026-10-21",
+      "revision": "2599726",
+      "sha256": "695fe2057200736aa9b6510c1329ae53aa744251f96f9c212491c6155a32374f",
+      "url": "https://wiki.52poke.com/wiki/%E4%BC%98%E5%85%88%E5%BA%A6"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "path": ".cache/m341-actions/sources/wiki-速度.html",
+      "retrieved_date": "2026-10-21",
+      "revision": "2616893",
+      "sha256": "21655b5bdcf8df2972e10f4d1f785a5d23f225c5737919f0083b0a411270ef70",
+      "url": "https://wiki.52poke.com/wiki/%E9%80%9F%E5%BA%A6"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "path": ".cache/m341-actions/sources/wiki-先制之爪.html",
+      "retrieved_date": "2026-10-21",
+      "revision": "2622392",
+      "sha256": "1da3adf816ac5924bca23f02bb21f598878d3bd0e2a17c38cc4810020e769bd5",
+      "url": "https://wiki.52poke.com/wiki/%E5%85%88%E5%88%B6%E4%B9%8B%E7%88%AA"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "path": ".cache/m341-actions/sources/wiki-恶作剧之心.html",
+      "retrieved_date": "2026-10-21",
+      "revision": "2618394",
+      "sha256": "c7c2620735873095cace99e17097e9b00edba329ed4789ec033850cdfce6fdcd",
+      "url": "https://wiki.52poke.com/wiki/%E6%81%B6%E4%BD%9C%E5%89%A7%E4%B9%8B%E5%BF%83"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "path": ".cache/m341-actions/sources/wiki-释陀果.html",
+      "retrieved_date": "2026-10-21",
+      "revision": "2515695",
+      "sha256": "94bda0a43e908a98cff354dfd08fc9f8a6c1ab3f5d44552357e0ce5b36a70e35",
+      "url": "https://wiki.52poke.com/wiki/%E9%87%8A%E9%99%80%E6%9E%9C"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "path": ".cache/m341-actions/sources/wiki-后攻之尾.html",
+      "retrieved_date": "2026-10-21",
+      "revision": "2560763",
+      "sha256": "eb2bd4fe93c18a4378e98cd94e4fa555558ad504f3de9a7bcab066b5942c2235",
+      "url": "https://wiki.52poke.com/wiki/%E5%90%8E%E6%94%BB%E4%B9%8B%E5%B0%BE"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "path": ".cache/m341-actions/sources/wiki-饱腹薰香.html",
+      "retrieved_date": "2026-10-21",
+      "revision": "2560431",
+      "sha256": "94e650ab0fa7faaf6489760158556f15c62c73bc5c6043801f82d565e73da0e9",
+      "url": "https://wiki.52poke.com/wiki/%E9%A5%B1%E8%85%B9%E8%96%B0%E9%A6%99"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "path": ".cache/m341-actions/sources/wiki-慢出.html",
+      "retrieved_date": "2026-10-21",
+      "revision": "2561850",
+      "sha256": "434950d40383e96646a2dfaa8fc87cc8604a47c0fa6e3291bc8eb68d92cdb963",
+      "url": "https://wiki.52poke.com/wiki/%E6%85%A2%E5%87%BA"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "path": ".cache/m341-actions/sources/wiki-讲究围巾.html",
+      "retrieved_date": "2026-10-21",
+      "revision": "2622400",
+      "sha256": "e77e3b1114616ada2bf53fe65fecfb08e8f85c38694876cb2a554049f5915d13",
+      "url": "https://wiki.52poke.com/wiki/%E8%AE%B2%E7%A9%B6%E5%9B%B4%E5%B7%BE"
+    }
+  ],
+  "strict_profile": "champions-evidence-only-v1",
+  "unsupported": [
+    "Custap Berry and Lagging Tail are Past in pinned Champions mod; Full Incense Past in inherited item data",
+    "Gale Wings/Triage conditional move eligibility needs additional evidence",
+    "Quick Draw, Mycelium Might, After You, Quash, Instruct and multi-turn preparation require dedicated interaction context",
+    "Suppressed/transferred abilities and simultaneous interacting order overrides need explicit models",
+    "No independent official tie probability, numeric modifier rounding or dynamic queue verification"
+  ],
+  "verified_catalog_examples": {
+    "pokeapi:move:182": 4,
+    "pokeapi:move:252": 3,
+    "pokeapi:move:433": -7
+  },
+  "version": "champions-order-exceptions-audit-v1"
+}

@@ -1,0 +1,7 @@
+{
+  "path": "speed_inference/likelihood.py",
+  "before_sha256": "96064eed4cdc94eb5e44742c4e60f7b42a550c35962ecca7586a900d68f9d9de",
+  "after_sha256": "a1973c94d7ec95957d05ad77902d4e1a23e00c090ecc0e6b7fc0b7c42c959fc5",
+  "exact_opt_in_addition": "        if observation.get('execution_model') is not None:\n            from speed_order.execution import pair_likelihood\n            if memo_key not in memo:\n                memo[memo_key]=pair_likelihood(c,speed,first,observation['execution_model'],profile)\n            probability,detail=memo[memo_key]\n            if probability is None:problems.append(detail['reason'])\n            values.append(probability)\n            details.append(dict(candidate_id=candidate['id'],likelihood=probability,**detail))\n            continue\n",
+  "reason": "M3.4.1 optional execution_model dispatch to Speed/order adapter. Default likelihood bytes and behavior remain original; no Bayesian engine or Speed arithmetic fork."
+}
