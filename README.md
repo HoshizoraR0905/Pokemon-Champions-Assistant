@@ -229,3 +229,7 @@ Inverse damage constraints enumerate exact feasible Attack/Special Attack sets:
 See the [inverse API](docs/inverse-damage-v1.md) and
 [M3.1.1 validation](reports/M3.1.1-inverse-damage-solver.md) for shared scenarios,
 evidence requirements and the supported provisional mechanics scope.
+
+M2.4 event-driven runs default to message-only `--identity-mode lightweight`.
+`--identity-mode development` adds one independent post-entry HUD verification per
+episode without changing Battle State. See [commands and measured profiling](docs/identity-modes-m24.md).

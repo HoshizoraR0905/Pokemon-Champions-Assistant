@@ -1,0 +1,64 @@
+{
+  "version": "52poke-champions-duration-v1",
+  "sources": [
+    {
+      "attribution": "52Poké contributors",
+      "game": "Pokémon Champions; applicable description rows separately checked",
+      "license": "CC BY-NC-SA 3.0",
+      "local_snapshot": ".cache/m34e/sources/顺风.html",
+      "retrieved_date": "2026-10-20",
+      "revision_id": "2606453",
+      "sha256": "d9ead77d483f03cd1b49b240c605fdb91d6239028429b697a70e938cf7d1bfd5",
+      "url": "https://wiki.52poke.com/wiki/顺风"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "game": "Pokémon Champions; applicable description rows separately checked",
+      "license": "CC BY-NC-SA 3.0",
+      "local_snapshot": ".cache/m34e/sources/戏法空间.html",
+      "retrieved_date": "2026-10-20",
+      "revision_id": "2554174",
+      "sha256": "a51903fe05137ed211f26bd790ad8eb51184a9c8e93677b78d82cdda8ed41bc4",
+      "url": "https://wiki.52poke.com/wiki/戏法空间"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "game": "Pokémon Champions; applicable description rows separately checked",
+      "license": "CC BY-NC-SA 3.0",
+      "local_snapshot": ".cache/m34e/sources/潮湿岩石.html",
+      "retrieved_date": "2026-10-20",
+      "revision_id": "2622423",
+      "sha256": "50eb0c51835425964d28ac2f80e6d67cd151df508f30b2ac30bf46756b20a031",
+      "url": "https://wiki.52poke.com/wiki/潮湿岩石"
+    },
+    {
+      "attribution": "52Poké contributors",
+      "game": "Pokémon Champions; applicable description rows separately checked",
+      "license": "CC BY-NC-SA 3.0",
+      "local_snapshot": ".cache/m34e/sources/大地膜（道具）.html",
+      "retrieved_date": "2026-10-20",
+      "revision_id": "2622431",
+      "sha256": "05f503a738cb9e86d5dfd2bd1fb5c710b773ccd262b0f1efb622ac1462111b5c",
+      "url": "https://wiki.52poke.com/wiki/大地膜（道具）"
+    }
+  ],
+  "verification": "Champions-specific community descriptions plus documented inclusive activation turn; not official in-game certification",
+  "decrement_scope": "Bookkeeping after a confirmed end of turn; relative order of individual residual effects is not inferred",
+  "default_rules": {
+    "tailwind": {
+      "initial_support": [
+        4
+      ],
+      "scope": "side",
+      "decrement_at": "turn_end"
+    },
+    "trick_room": {
+      "initial_support": [
+        5
+      ],
+      "scope": "field",
+      "decrement_at": "turn_end"
+    }
+  },
+  "conditional_rules": "Weather, terrain, screen and item extensions require explicit activation-mode and duration evidence; generic 5/8 defaults are not applied"
+}

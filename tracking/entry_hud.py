@@ -63,6 +63,7 @@ def name_relation(state, episode, raw, event):
 
 
 def observe(state, event):
+    if state.knowledge.get('message_identity_v1'):return
     from .active_continuity import enabled, current_episode
     from .state_engine import evidence_link
     a=event.attributes;t=a.get('observation_time')

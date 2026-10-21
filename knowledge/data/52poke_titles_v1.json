@@ -1,0 +1,1025 @@
+{
+  "schema_version": 1,
+  "version": "52poke-titles-2026-10-19-v1",
+  "source": {
+    "url": "https://wiki.52poke.com/zh-hans/称号",
+    "revision_id": 2597624,
+    "retrieved_date": "2026-10-19",
+    "game": "Pokémon Champions",
+    "html_sha256": "8e3a198bc7dfcb233660fef87c66f9c9b684c8bdf640421b5f7aa65746790f3d",
+    "attribution": "神奇宝贝百科 / 52Poké contributors",
+    "license": "CC BY-NC-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+  },
+  "limitation": "Chinese static Pokemon title strings only. This is not the Champions trainer achievements table. Unknown titles and variable trainer-name titles abstain.",
+  "titles": [
+    {
+      "number": 1,
+      "title": "卡洛斯冠军",
+      "award": "卡洛斯冠军奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 2,
+      "title": "冠军",
+      "award": "冠军奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 3,
+      "title": "神奥冠军",
+      "award": "神奥冠军奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 4,
+      "title": "挚友",
+      "award": "好友奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 5,
+      "title": "一起接受过试炼的",
+      "award": "修行奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 6,
+      "title": "经验老到的",
+      "award": "高手对战奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 7,
+      "title": "高手",
+      "award": "大师对战奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 8,
+      "title": "那时很努力的",
+      "award": "努力奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 9,
+      "title": "那天精神抖擞的",
+      "award": "振奋奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 10,
+      "title": "以前是胆小鬼的",
+      "award": "心跳奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 11,
+      "title": "有着伤心过去的",
+      "award": "失望奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 12,
+      "title": "也曾犯错的",
+      "award": "大意奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 13,
+      "title": "那天神清气爽的",
+      "award": "畅快奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 14,
+      "title": "总是在睡觉的",
+      "award": "酣睡奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 15,
+      "title": "笑口常开的",
+      "award": "欢笑奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 16,
+      "title": "豪华",
+      "award": "豪华奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 17,
+      "title": "高贵",
+      "award": "高贵奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "Champions override",
+      "supported": true
+    },
+    {
+      "number": 18,
+      "title": "豪华＆高贵",
+      "award": "豪华高贵奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "Champions override",
+      "supported": true
+    },
+    {
+      "number": 19,
+      "title": "成为绘画模特的",
+      "award": "肖像奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 20,
+      "title": "以自己的脚印为傲的",
+      "award": "脚印奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 21,
+      "title": "保持纪录的",
+      "award": "纪录奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 22,
+      "title": "保持厉害纪录的",
+      "award": "传说奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 23,
+      "title": "优胜者",
+      "award": "地区奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 24,
+      "title": "克服了困难的",
+      "award": "国家奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 25,
+      "title": "１００连胜的",
+      "award": "地球奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 26,
+      "title": "称霸世界的",
+      "award": "世界奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 27,
+      "title": "喜欢宝可梦的",
+      "award": "经典奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 28,
+      "title": "度过了纪念日的",
+      "award": "纪念奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 29,
+      "title": "参加了活动的",
+      "award": "活动奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 30,
+      "title": "总是在一起的",
+      "award": "生日奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 31,
+      "title": "特别日子里的",
+      "award": "特殊奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 32,
+      "title": "精彩回忆里的",
+      "award": "回忆奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 33,
+      "title": "梦想成真的",
+      "award": "许愿奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 34,
+      "title": "对战冠军",
+      "award": "对战冠军奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 35,
+      "title": "地区冠军",
+      "award": "地区冠军奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 36,
+      "title": "国家冠军",
+      "award": "国家冠军奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 37,
+      "title": "世界冠军",
+      "award": "世界冠军奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 38,
+      "title": "辉煌回忆里的",
+      "award": "华丽大赛回忆奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 39,
+      "title": "热血回忆里的",
+      "award": "对战回忆奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 40,
+      "title": "丰缘冠军",
+      "award": "丰缘冠军奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 41,
+      "title": "传奇明星",
+      "award": "华丽大赛之星奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 42,
+      "title": "曾经是明星的",
+      "award": "帅气大师奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 43,
+      "title": "当时美丽动人的",
+      "award": "美丽大师奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 44,
+      "title": "曾是偶像的",
+      "award": "可爱大师奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 45,
+      "title": "被称作天才的",
+      "award": "聪明大师奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 46,
+      "title": "曾经浑身肌肉的",
+      "award": "强壮大师奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 47,
+      "title": "阿罗拉冠军",
+      "award": "阿罗拉冠军奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 48,
+      "title": "皇家大师",
+      "award": "皇家大师奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 49,
+      "title": "对战树赢家",
+      "award": "高手对战树奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 50,
+      "title": "对战树大师",
+      "award": "大师对战树奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 51,
+      "title": "伽勒尔冠军",
+      "award": "伽勒尔冠军奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 52,
+      "title": "对战塔大师",
+      "award": "对战塔大师奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 53,
+      "title": "级别对战大师",
+      "award": "级别对战大师奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 54,
+      "title": "肚子饿扁了的",
+      "award": "正午之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 55,
+      "title": "想睡觉的",
+      "award": "午夜之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 56,
+      "title": "开始犯困的",
+      "award": "黄昏之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 57,
+      "title": "很早就醒来的",
+      "award": "拂晓之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 58,
+      "title": "盯着云看的",
+      "award": "阴云之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 59,
+      "title": "在雨中哽咽的",
+      "award": "降雨之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 60,
+      "title": "对打雷大呼小叫的",
+      "award": "落雷之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 61,
+      "title": "在雪里打滚的",
+      "award": "降雪之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 62,
+      "title": "冻得发抖的",
+      "award": "暴雪之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 63,
+      "title": "喉咙干渴的",
+      "award": "干燥之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 64,
+      "title": "满身沙子的",
+      "award": "沙尘之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 65,
+      "title": "对雾感到困惑的",
+      "award": "浓雾之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 66,
+      "title": "命中注定的",
+      "award": "命运之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 67,
+      "title": "刚钓上来活蹦乱跳的",
+      "award": "上钩之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 68,
+      "title": "喜欢咖喱的",
+      "award": "咖喱之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 69,
+      "title": "不怕人的",
+      "award": "偶遇之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 70,
+      "title": "没见过人类的",
+      "award": "未知之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 71,
+      "title": "脾气暴躁的",
+      "award": "淘气之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 72,
+      "title": "脑袋空空的",
+      "award": "无虑之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 73,
+      "title": "心跳不已的",
+      "award": "紧张之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 74,
+      "title": "兴奋期待的",
+      "award": "期待之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 75,
+      "title": "感觉到气场的",
+      "award": "领袖之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 76,
+      "title": "酷酷的",
+      "award": "冷静之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 77,
+      "title": "好斗的",
+      "award": "热情之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 78,
+      "title": "在发呆的",
+      "award": "疏忽之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 79,
+      "title": "看起来很幸福的",
+      "award": "幸福之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 80,
+      "title": "气呼呼的",
+      "award": "愤怒之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 81,
+      "title": "笑眯眯的",
+      "award": "微笑之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 82,
+      "title": "泪汪汪的",
+      "award": "悲伤之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 83,
+      "title": "心情好的",
+      "award": "爽快之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 84,
+      "title": "心情不好的",
+      "award": "激动之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 85,
+      "title": "聪慧的",
+      "award": "理性之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 86,
+      "title": "狂暴的",
+      "award": "本能之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 87,
+      "title": "伺机而动的",
+      "award": "狡猾之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 88,
+      "title": "粗犷的",
+      "award": "凶悍之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 89,
+      "title": "温柔的",
+      "award": "优雅之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 90,
+      "title": "慌慌张张的",
+      "award": "动摇之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 91,
+      "title": "充满干劲的",
+      "award": "昂扬之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 92,
+      "title": "毫无干劲的",
+      "award": "倦怠之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 93,
+      "title": "嚣张跋扈的",
+      "award": "自信之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 94,
+      "title": "缺乏自信的",
+      "award": "自卑之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 95,
+      "title": "朴素的",
+      "award": "木讷之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 96,
+      "title": "装模作样的",
+      "award": "不纯之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 97,
+      "title": "精力充沛的",
+      "award": "活力之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 98,
+      "title": "看似疲惫的",
+      "award": "不振之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 99,
+      "title": "遥远过去的",
+      "award": "洗翠奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 100,
+      "title": "闪亮之星",
+      "award": "闪亮之星奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 101,
+      "title": "帕底亚冠军",
+      "award": "帕底亚冠军奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 102,
+      "title": "大个子",
+      "award": "大个子之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 103,
+      "title": "小不点",
+      "award": "小不点之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 104,
+      "title": "寻宝猎人",
+      "award": "捡拾之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 105,
+      "title": "可靠搭档",
+      "award": "搭档之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 106,
+      "title": "美食家",
+      "award": "美食之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 107,
+      "title": "千载难逢的",
+      "award": "千载难逢奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 108,
+      "title": "曾是头目的",
+      "award": "头目之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 109,
+      "title": "最强的",
+      "award": "最强之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 110,
+      "title": "曾是宝主的",
+      "award": "宝主之证",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    },
+    {
+      "number": 111,
+      "title": "<初训家的名字>的",
+      "award": "同伴奖章",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": false
+    },
+    {
+      "number": 112,
+      "title": "冠军级的",
+      "award": "无",
+      "game": "Pokémon Champions",
+      "language": "zh-Hans",
+      "applicability": "article documents HOME-carried titles in Champions",
+      "supported": true
+    }
+  ]
+}

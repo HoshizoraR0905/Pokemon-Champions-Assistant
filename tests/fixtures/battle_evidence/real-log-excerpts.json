@@ -1,0 +1,156 @@
+{
+  "excerpts": [
+    {
+      "battle_id": "sample_battle_5",
+      "boundaries": {
+        "end": null,
+        "start": null
+      },
+      "heading_turn": 1,
+      "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000398.png",
+      "image_sha256": "d9136e211f6b44c1366597e6eae1c01d7853111e681e71f0469445a9fdaa069f",
+      "independent_human_ground_truth": false,
+      "inspection_timestamp": 230.005,
+      "limitations": [
+        "Visible opening/setup entries may precede the first move decision; displayed heading alone does not delimit complete game-turn membership"
+      ],
+      "numbering_scope": "explicit displayed historical Battle Log heading; not current turn at capture time",
+      "origin": "agent_visual_review",
+      "original_execution_time": null,
+      "rows": [
+        {
+          "kind": "send_out",
+          "order": 1,
+          "raw_text": "上吧！班基拉斯！\n龙头地鼠！"
+        },
+        {
+          "kind": "ability",
+          "order": 2,
+          "raw_text": "班基拉斯的\n扬沙"
+        },
+        {
+          "kind": "weather",
+          "order": 3,
+          "raw_text": "开始刮沙暴了！"
+        },
+        {
+          "kind": "switch_out",
+          "order": 4,
+          "raw_text": "龙头地鼠，\n回来！"
+        }
+      ]
+    },
+    {
+      "battle_id": "sample_battle_6",
+      "boundaries": {
+        "end": null,
+        "start": null
+      },
+      "heading_turn": 4,
+      "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000829.png",
+      "image_sha256": "a7f495f87c80770d3de8e0b79a4a60338f2e6c670353afcbb71c43c653eca5de",
+      "independent_human_ground_truth": false,
+      "inspection_timestamp": 474.0133333333333,
+      "limitations": [
+        "No live execution timestamps, instance bindings or full-turn coverage; cached OCR reports its final row partial"
+      ],
+      "numbering_scope": "explicit displayed historical Battle Log heading; not current turn at capture time",
+      "origin": "agent_visual_review",
+      "original_execution_time": null,
+      "rows": [
+        {
+          "kind": "switch_out",
+          "order": 1,
+          "raw_text": "REIKOU换下了\n赛富豪！"
+        },
+        {
+          "kind": "send_out",
+          "order": 2,
+          "raw_text": "REIKOU\n派出了轰擂金刚猩！"
+        },
+        {
+          "kind": "transformation",
+          "order": 3,
+          "partial": true,
+          "raw_text": null
+        },
+        {
+          "kind": "transformation",
+          "order": 4,
+          "partial": true,
+          "raw_text": null
+        },
+        {
+          "displayed_priority": 4,
+          "kind": "action",
+          "move_name": "守住",
+          "order": 5,
+          "raw_text": "对手的烈咬陆鲨使出了\n守住！"
+        },
+        {
+          "kind": "move_effect",
+          "order": 6,
+          "raw_text": "对手的烈咬陆鲨\n摆出了防守的架势！"
+        }
+      ]
+    },
+    {
+      "battle_id": "sample_battle_8",
+      "boundaries": {
+        "end": null,
+        "start": null
+      },
+      "heading_turn": 3,
+      "image": ".cache/battles/sample_battle_8/event-driven/m239-production-first-pass-v1/frames/000567.png",
+      "image_sha256": "246d19033640bbfbcd8605914a9611f9deb6bdd2aa36fa336e7ebf0ca1683c1e",
+      "independent_human_ground_truth": false,
+      "inspection_timestamp": 327.005,
+      "limitations": [
+        "Opponent display-name text is not transcribed or bound; no species inferred from icons; bottom row partly cut off; no decision-time state"
+      ],
+      "numbering_scope": "explicit displayed historical Battle Log heading; not current turn at capture time",
+      "origin": "agent_visual_review",
+      "original_execution_time": null,
+      "rows": [
+        {
+          "kind": "switch_out",
+          "order": 1,
+          "raw_text": "喷火龙，\n回来！"
+        },
+        {
+          "kind": "send_out",
+          "order": 2,
+          "raw_text": "上吧！铝钢桥龙！"
+        },
+        {
+          "kind": "action",
+          "move_name": "催眠粉",
+          "order": 3,
+          "raw_text": "妙蛙花使出了\n催眠粉！"
+        },
+        {
+          "kind": "status",
+          "order": 4,
+          "partial": true,
+          "raw_text": "睡着了！"
+        },
+        {
+          "kind": "status",
+          "order": 5,
+          "partial": true,
+          "raw_text": "醒过来了！"
+        },
+        {
+          "kind": "action",
+          "move_name": "电光束",
+          "order": 6,
+          "partial": true,
+          "raw_text": "电光束！"
+        }
+      ]
+    }
+  ],
+  "review_date": "2026-10-20",
+  "reviewer": "Codex visual transcription of cited cached source frames",
+  "schema_version": 1
+}

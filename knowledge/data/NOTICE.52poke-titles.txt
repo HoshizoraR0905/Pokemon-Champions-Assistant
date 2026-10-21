@@ -1,0 +1,11 @@
+Pokemon title strings and associated award names: 神奇宝贝百科 / 52Poké contributors.
+Source: https://wiki.52poke.com/zh-hans/称号
+Revision: 2597624; retrieved 2026-10-19; game applicability: Pokémon Champions.
+License: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported.
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+Changes: extracted static Chinese table entries; selected explicit Champions
+wording where present; deduplicated identical numbered rows; excluded the
+variable original-trainer-name template from matching. No species identities
+come from this supplement; the maintained KnowledgeBase owns identity mapping.
+Local source HTML SHA256 is recorded in 52poke_titles_v1.json. Runtime is offline.
+This source does not establish that nicknames are normalized by a game setting.

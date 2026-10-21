@@ -193,8 +193,10 @@ def cached_frames(manifest,paths,video,*,start=0.,end=None):
             container_duration_seconds=prior['metadata']['duration_seconds'])
 
 
-def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagnostic_menus=False,icons=True,event_driven=False,frame_cache=None,recognition_caches=None,reconstruct_from=None):
+def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagnostic_menus=False,icons=True,event_driven=False,frame_cache=None,recognition_caches=None,reconstruct_from=None,identity_mode='lightweight'):
     from recognition import Recognizer,box
+    from recognition.identity_modes import EntryVerifier,read_hp
+    if identity_mode not in {'lightweight','development'}:raise ValueError('Unknown identity mode')
     from recognition.ui_regions import read_message
     from recognition.identity_flow import preview_rows
     from recognition.message_occurrences import MessageOccurrences
@@ -229,6 +231,7 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
     identity=dict(version=config.version,config=asdict(config),video_path=str(video),video_sha256=digest(video),sources=sources,
                   ocr_manifest=digest(ROOT/'.cache/m15-onnx-medium/local-manifest.json'),icon_index=digest(ROOT/'.cache/champions-icons/index.json'),
                   end=end,max_frames=max_frames,icons=icons)
+    if event_driven:identity['identity_mode']=identity_mode
     if frame_cache:identity['frame_cache']=dict(path=str(Path(frame_cache).resolve()),sha256=digest(frame_cache))
     cache_sources=[]
     for source in recognition_caches or []:
@@ -289,10 +292,16 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
         for key,old in saved['gate'].items():old['signature']=np.asarray(old['signature'],dtype=np.uint8);gate.regions[key]=old
         # OCR/icon fuzzy caches intentionally start empty on resume. Exact crop
         # caches remain available; additional calls are recorded as resumed cost.
+    verifier=EntryVerifier(paths.battle_id) if event_driven and identity_mode=='development' else None
+    if verifier and rows:
+        verifier.observe_prefix(rows)
+        saved_verification=folder/'identity-verification-checkpoint.json'
+        if saved_verification.exists():verifier.predictions=json.loads(saved_verification.read_text())
     initial_counts=dict(counts);manifest=dict(status='running',identity=identity,cold_run=not bool(prior) and not bool(frame_cache) and not bool(recognition_caches),
         prior_active_seconds=prior.get('active_seconds',0) if prior else 0,completed_stages=[],report=str(report),counts=dict(counts))
     atomic_json(manifest_path,manifest)
     def save(status='running',error=None):
+        if verifier:atomic_json(folder/'identity-verification-checkpoint.json',verifier.predictions)
         serialgate={k:{**v,'signature':v['signature'].tolist()} for k,v in gate.regions.items()}
         atomic_json(checkpoint,dict(row_count=len(rows),roster=roster,context=context_dump(recognizer.context),counts=dict(counts),
             next_time=scheduler.next_time,boost_until=scheduler.boost_until,last_phase=last_phase,previous_visible=sorted(previous_visible),
@@ -327,7 +336,17 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
                 atomic_json(folder/'monitor'/f'{round(raw["target_timestamp"]*2):06d}.json',
                     dict(**raw,command=deepcopy(scheduler.last_monitor),inspected=eligible))
             else:eligible=scheduler.due(t)
-            if not eligible:counts['frames_not_inspected_adaptive_1fps']+=1;continue
+            if not eligible:
+                if verifier:
+                    verification_raw=dict(raw,source_id=str(video.relative_to(ROOT))+'#'+str(t))
+                    old_source,old_time=ocr.source,ocr.timestamp
+                    old_icon_source,old_icon_time=icon.frame_source,icon.timestamp
+                    ocr.source=verification_raw['source_id'];ocr.timestamp=t
+                    icon.frame_source=ocr.source;icon.timestamp=t
+                    verifier.verify(recognizer,Frame(image,ocr.source,counts['frames_sampled'],t,verification_raw),ui['cards'],counts)
+                    ocr.source,ocr.timestamp=old_source,old_time
+                    icon.frame_source,icon.timestamp=old_icon_source,old_icon_time
+                counts['frames_not_inspected_adaptive_1fps']+=1;continue
             counts['frames_sampled']+=1;counts['frames_classified']+=1
             ui=ui or inspect(image);counts['phase:'+ui['phase']]+=1
             frame_hash=hashlib.sha256(image.tobytes()).hexdigest()
@@ -340,6 +359,7 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
             row=dict(**raw,ui={k:v for k,v in ui.items() if k not in {'message_mask','cards','message_visible','flash'}},
                 message=dict(selected=False,raw_text='',confidence=0.),snapshot={},visual=dict(readings={},parsed=[]),region_decisions=decisions,
                 window=[0,end],ocr_read_reuses=ocr.reuses)
+            if event_driven:row['identity_mode']=identity_mode
             selected_cards=[]
             if event_driven:
                 row['command']=deepcopy(scheduler.last_monitor)
@@ -409,7 +429,7 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
             previous_visible=visible
             if selected_cards:
                 frame=Frame(image,raw['source_id'],counts['frames_sampled'],t,raw)
-                if event_driven:row['snapshot']=controller.recognize(recognizer,frame,selected_cards,counts)
+                if event_driven:row['snapshot']=read_hp(recognizer,frame,selected_cards,counts)
                 else:row['snapshot']=recognize_cards(recognizer,frame,selected_cards).to_dict()
             if event_driven:
                 if ui['phase'] in {'team_configuration','team_preview'}:
@@ -444,12 +464,20 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
             result=occurrences.observe(row)
             row['occurrence_decision']=dict(events=result['events'],reason=result['reason'])
             if event_driven:
-                schedule_checkpoint(row,image,command_schedule,ocr,counts)
+                # Detect W controls without identity acquisition or reconciliation.
+                from recognition.command_checkpoint import inspect_command
+                row['command_inspection']=inspect_command(image)
                 for event in row['occurrence_decision']['events']:
                     controller.invalidate(event)
                     if event['event_type'] in {'send_out','switch_out','faint','transformation','position_change'}:
                         for key in list(gate.regions):
                             if '_active_' in key:gate.regions.pop(key,None)
+            if verifier:
+                # Replay only when message/trainer evidence changes. No HUD enters this prefix.
+                if any(e['event_type'] in {'send_out','switch_out','faint','position_change'} for e in row['occurrence_decision']['events']) or row.get('trainer_observations'):
+                    verifier.observe_prefix([*rows,row])
+                frame=Frame(image,raw['source_id'],counts['frames_sampled'],t,raw)
+                verifier.verify(recognizer,frame,ui['cards'],counts)
             changed=changed or last_phase!=ui['phase']
             row['inspection_fps']=scheduler.advance(t,phase=ui['phase'],message_visible=ui['message_visible'],changed=changed)
             if event_driven:counts[f'inspected_frames_at_{int(row["inspection_fps"])}fps']+=1
@@ -470,6 +498,7 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
         manifest['decoder']=decoded_frames.last_metadata
         atomic_json(folder/'observations.json',dict(battle_id=paths.battle_id,observations=rows,roster=roster,occurrences=occurrences.groups,
             prefix_decisions=[dict(source_id=r['source_id'],**r['occurrence_decision']) for r in rows],independent_manual_review=False))
+        if verifier:atomic_json(folder/'identity-verification.json',verifier.finish())
         manifest['completed_stages']=['recognition'];save()
         if event_driven:
             from recognition.event_report import reconstruct_and_package

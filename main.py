@@ -22,6 +22,7 @@ def main() -> int:
     inputs.add_argument('--video', type=Path)
     parser.add_argument('--annotated', type=Path, help='Image output path or video annotation directory')
     parser.add_argument('--profile',choices=['standard','fast','diagnostic','event-driven'],default='standard',help='Event-driven: default 2 FPS, confirmed COMMAND 1 FPS; fast/diagnostic retain experimental scheduling')
+    parser.add_argument('--identity-mode', choices=['lightweight','development'], default='lightweight', help='Event-driven message identity; development adds one independent HUD verification per entry')
     parser.add_argument('--run-id',default='fast-v1',help='Separate battle-owned fast-run namespace')
     parser.add_argument('--resume',action='store_true',help='Resume the same fast-run identity and checkpoints')
     parser.add_argument('--end-seconds',type=float,help='Optional scoped fast-profile experiment end')
@@ -53,7 +54,7 @@ def main() -> int:
             result=analyze(args.video,run_id=args.run_id,resume=args.resume,end=args.end_seconds,
                 max_frames=args.max_frames,diagnostic_menus=args.profile=='diagnostic',icons=not args.no_icons,
                 event_driven=args.profile=='event-driven',frame_cache=args.frame_cache,recognition_caches=args.recognition_cache,
-                reconstruct_from=args.reconstruct_from)
+                reconstruct_from=args.reconstruct_from,identity_mode=args.identity_mode)
             print(json.dumps(result,ensure_ascii=False,indent=2))
             return 0
         collecting = args.collect_team or bool(args.images)

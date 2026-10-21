@@ -120,6 +120,16 @@ def hud_transition(engine, state, event, record):
     timestamp = a.get('observation_time')
     if not isinstance(timestamp, (int, float)) or isinstance(timestamp, bool) or not math.isfinite(timestamp) or timestamp < 0:
         raise Contradiction('invalid_hud_timestamp')
+    if state.knowledge.get('message_identity_v1'):
+        from .active_continuity import current_episode
+        pid=state.sides[event.side].active_slots.get(a['slot'])
+        if not pid or not context_supported(state,event.side,a['slot'],timestamp):
+            raise Deferred('message_episode_occupancy_unresolved')
+        p=state.pokemon[pid];ep=current_episode(state,pid)
+        if not ep or ep['start']>=timestamp:raise Deferred('post_entry_hp_required')
+        outcome=dict(status='non_identity_observation',timestamp=timestamp,episode_id=ep['episode_id'])
+        record.bindings['actor']=dict(pokemon_instance_id=pid,basis='message_entry_slot')
+        return apply_hud_hp(engine,state,event,record,p,None,outcome,timestamp)
     fusion = state.knowledge.setdefault('hud_fusion', dict(slots={}, aliases={}))
     key = event.side + ':' + a['slot']; previous = fusion['slots'].get(key)
     if a.get('identity_reused_from'):

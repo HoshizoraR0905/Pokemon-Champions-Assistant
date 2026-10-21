@@ -48,6 +48,9 @@ def enter(state,p,event,record,*,slot=None,observed=False):
         ep['species_known_at_entry']=p.species.known
         ep['hud_binding']=dict(policy=POLICY,status='pending',entry_deadline=ep['start']+ENTRY_WINDOW_SECONDS,
             confirmation_seconds=CONFIRM_SECONDS,first_candidate_time=None,first_eligible_time=None,candidates=[])
+    if state.knowledge.get('message_identity_v1'):
+        ep['species_resolution_time']=ep['start'] if p.species.known else None
+        ep['hud_binding']=dict(policy='message_only_v1',status='not_used')
     episodes.append(ep);record.bindings['entry_episode']=deepcopy(ep)
     return ep
 
@@ -113,7 +116,10 @@ def prepare_unidentified(state,event):
         # that unsupported derived actor in the replay's resolved event.
         from battle_events.parser import EventParser
         from .evidence_fusion import knowledge
-        literal=EventParser(knowledge()).identity(a['display_reference'],'species')
+        if state.knowledge.get('message_identity_v1'):
+            from knowledge.message_names import MessageNames
+            literal=MessageNames(knowledge()).resolve(a['display_reference'])['identity']
+        else:literal=EventParser(knowledge()).identity(a['display_reference'],'species')
         if not literal or literal.get('species_id')!=event.actor.get('species_id'):
             event=deepcopy(event);event.actor=None
             if 'actor_unresolved' not in event.uncertainty:event.uncertainty.append('actor_unresolved')
@@ -177,6 +183,7 @@ def unidentified_entry(engine,state,event,record):
     from .entry_hud import ENTRY_WINDOW_SECONDS,CONFIRM_SECONDS,POLICY
     ep['hud_binding']=dict(policy=POLICY,status='pending',entry_deadline=ep['start']+ENTRY_WINDOW_SECONDS,
         confirmation_seconds=CONFIRM_SECONDS,first_candidate_time=None,first_eligible_time=None,candidates=[])
+    if state.knowledge.get('message_identity_v1'):ep['hud_binding']=dict(policy='message_only_v1',status='not_used')
     if slot:
         team.active_slots[slot]=pid
         if slot in team.vacant_slots:team.vacant_slots.remove(slot)

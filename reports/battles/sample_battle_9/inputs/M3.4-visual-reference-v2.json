@@ -1,0 +1,688 @@
+{
+  "approval": "Pending human confirmation/correction; no human accuracy claim authorized",
+  "battle_id": "sample_battle_9",
+  "human_approved": false,
+  "independence": {
+    "prediction_files_used_for_annotation": false,
+    "qualification": "Reviewer has prior project context. This is separately authored source-frame review, not blinded independent human ground truth.",
+    "selection": "fixed video-time grids, then visually identified transition/tail refinements"
+  },
+  "initial_sendout_completion": {
+    "confidence": "medium",
+    "disposition": "inferred_visible_sequence",
+    "evidence": "Opening four-Pokemon field established before first ordinary command",
+    "frame_refs": [
+      {
+        "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000211.png",
+        "source_id": "tests/fixtures/sample_battle_9.mp4#105.01833333333333",
+        "timestamp": 105.01833333333333
+      },
+      {
+        "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000221.png",
+        "source_id": "tests/fixtures/sample_battle_9.mp4#110.00166666666667",
+        "timestamp": 110.00166666666667
+      }
+    ],
+    "human_approved": false,
+    "interval": [
+      105.01833333333333,
+      110.00166666666667
+    ],
+    "review_status": "agent-reviewed"
+  },
+  "intervals": [
+    {
+      "confidence": "medium",
+      "disposition": "inferred_visible_sequence",
+      "evidence": "ordinary move selection; native controls before this do not imply multiple turns",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000243.png",
+          "source_id": "tests/fixtures/sample_battle_9.mp4#130.005",
+          "timestamp": 130.005
+        },
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000263.png",
+          "source_id": "tests/fixtures/sample_battle_9.mp4#150.025",
+          "timestamp": 150.025
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        130.005,
+        150.025
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "inferred_visible_sequence",
+      "evidence": "ordinary move and party selection",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000355.png",
+          "source_id": "tests/fixtures/sample_battle_9.mp4#200.01666666666668",
+          "timestamp": 200.01666666666668
+        },
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000380.png",
+          "source_id": "tests/fixtures/sample_battle_9.mp4#225.02166666666668",
+          "timestamp": 225.02166666666668
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        200.01666666666668,
+        225.02166666666668
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "inferred_visible_sequence",
+      "evidence": "status/move/target navigation before voluntary switching",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000436.png",
+          "source_id": "tests/fixtures/sample_battle_9.mp4#255.02666666666667",
+          "timestamp": 255.02666666666667
+        },
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000472.png",
+          "source_id": "tests/fixtures/sample_battle_9.mp4#290.0316666666667",
+          "timestamp": 290.0316666666667
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        255.02666666666667,
+        290.0316666666667
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "inferred_visible_sequence",
+      "evidence": "ordinary command move/target selection; later native return does not establish a second phase",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000565.png",
+          "source_id": "tests/fixtures/sample_battle_9.mp4#340.0233333333333",
+          "timestamp": 340.0233333333333
+        },
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000575.png",
+          "source_id": "tests/fixtures/sample_battle_9.mp4#350.0083333333333",
+          "timestamp": 350.0083333333333
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        340.0233333333333,
+        350.0083333333333
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    }
+  ],
+  "notes": "The final ordinary command is around378; after subsequent switching/actions a WIN result appears at440.023. No later native command is observed.",
+  "review_method": "Chronological visual inspection of fixed-five-second original-recording cached frames, with explicitly recorded one-second refinements; not continuous video playback",
+  "review_status": "agent-reviewed",
+  "reviewer": "AI coding agent",
+  "schema": "m34-agent-reference-v2",
+  "source": {
+    "observations": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/observations.json",
+    "observations_sha256": "b03ca47f7f03f9613e5bfd574badafbf35f2bd71af623918dbc73eb99d0953ed",
+    "reviewed_range": [
+      0.0,
+      444.0083333333333
+    ],
+    "video": "tests/fixtures/sample_battle_9.mp4"
+  },
+  "termination": {
+    "confidence": "high",
+    "disposition": "direct_frame_review",
+    "evidence": "Visible WIN/result banner; terminal result is distinct from any last resolution completion",
+    "frame_refs": [
+      {
+        "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000744.png",
+        "source_id": "tests/fixtures/sample_battle_9.mp4#439.00666666666666",
+        "timestamp": 439.00666666666666
+      },
+      {
+        "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000746.png",
+        "source_id": "tests/fixtures/sample_battle_9.mp4#440.0233333333333",
+        "timestamp": 440.0233333333333
+      }
+    ],
+    "human_approved": false,
+    "interval": [
+      439.00666666666666,
+      440.0233333333333
+    ],
+    "review_status": "agent-reviewed"
+  },
+  "turns": [
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Chronological field/send-out or resolution view followed by ordinary command controls or move/target interface; not selected from predictions",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000221.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#110.00166666666667",
+            "timestamp": 110.00166666666667
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000228.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#115.00333333333333",
+            "timestamp": 115.00333333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          110.00166666666667,
+          115.00333333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "confidence": "medium",
+        "count": 4,
+        "visually_observed": "four cards at unobscured representative command frames; transient occlusion not a combatant count"
+      },
+      "human_approved": false,
+      "id": "sample_battle_9:agent-turn:01",
+      "index_scope": "chronological observed normal-command phases; game turn number not certified",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Chronological field/send-out or resolution view followed by ordinary command controls or move/target interface; not selected from predictions",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000347.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#195.01666666666668",
+            "timestamp": 195.01666666666668
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000355.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#200.01666666666668",
+            "timestamp": 200.01666666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          195.01666666666668,
+          200.01666666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "relative_index": 1,
+      "resolution_completion": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Final visible resolution/effect/send-out sequence gives way to command or terminal presentation; completion is distinct from command entry but may share the sampling interval",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000347.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#195.01666666666668",
+            "timestamp": 195.01666666666668
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000355.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#200.01666666666668",
+            "timestamp": 200.01666666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          195.01666666666668,
+          200.01666666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Command/menu sequence gives way to live field execution, switching or transformation",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000263.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#150.025",
+            "timestamp": 150.025
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000268.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#155.01",
+            "timestamp": 155.01
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          150.025,
+          155.01
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed",
+      "uncertainty": [
+        "Transitions bracketed by reviewed frames; unseen detail between samples remains unknown",
+        "Completion and next command cannot always be separated within these intervals"
+      ]
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Chronological field/send-out or resolution view followed by ordinary command controls or move/target interface; not selected from predictions",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000347.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#195.01666666666668",
+            "timestamp": 195.01666666666668
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000355.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#200.01666666666668",
+            "timestamp": 200.01666666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          195.01666666666668,
+          200.01666666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "confidence": "medium",
+        "count": 4,
+        "visually_observed": "four cards at unobscured representative command frames; transient occlusion not a combatant count"
+      },
+      "human_approved": false,
+      "id": "sample_battle_9:agent-turn:02",
+      "index_scope": "chronological observed normal-command phases; game turn number not certified",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Chronological field/send-out or resolution view followed by ordinary command controls or move/target interface; not selected from predictions",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000427.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#250.025",
+            "timestamp": 250.025
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000436.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#255.02666666666667",
+            "timestamp": 255.02666666666667
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          250.025,
+          255.02666666666667
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "relative_index": 2,
+      "resolution_completion": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Final visible resolution/effect/send-out sequence gives way to command or terminal presentation; completion is distinct from command entry but may share the sampling interval",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000427.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#250.025",
+            "timestamp": 250.025
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000436.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#255.02666666666667",
+            "timestamp": 255.02666666666667
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          250.025,
+          255.02666666666667
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Command/menu sequence gives way to live field execution, switching or transformation",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000380.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#225.02166666666668",
+            "timestamp": 225.02166666666668
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000387.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#230.02166666666668",
+            "timestamp": 230.02166666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          225.02166666666668,
+          230.02166666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed",
+      "uncertainty": [
+        "Transitions bracketed by reviewed frames; unseen detail between samples remains unknown",
+        "Completion and next command cannot always be separated within these intervals"
+      ]
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Chronological field/send-out or resolution view followed by ordinary command controls or move/target interface; not selected from predictions",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000427.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#250.025",
+            "timestamp": 250.025
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000436.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#255.02666666666667",
+            "timestamp": 255.02666666666667
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          250.025,
+          255.02666666666667
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "confidence": "medium",
+        "count": 4,
+        "visually_observed": "four cards at unobscured representative command frames; transient occlusion not a combatant count"
+      },
+      "human_approved": false,
+      "id": "sample_battle_9:agent-turn:03",
+      "index_scope": "chronological observed normal-command phases; game turn number not certified",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Chronological field/send-out or resolution view followed by ordinary command controls or move/target interface; not selected from predictions",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000558.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#335.00666666666666",
+            "timestamp": 335.00666666666666
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000565.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#340.0233333333333",
+            "timestamp": 340.0233333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          335.00666666666666,
+          340.0233333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "relative_index": 3,
+      "resolution_completion": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Final visible resolution/effect/send-out sequence gives way to command or terminal presentation; completion is distinct from command entry but may share the sampling interval",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000558.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#335.00666666666666",
+            "timestamp": 335.00666666666666
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000565.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#340.0233333333333",
+            "timestamp": 340.0233333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          335.00666666666666,
+          340.0233333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Command/menu sequence gives way to live field execution, switching or transformation",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000472.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#290.0316666666667",
+            "timestamp": 290.0316666666667
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000478.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#295.0",
+            "timestamp": 295.0
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          290.0316666666667,
+          295.0
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed",
+      "uncertainty": [
+        "Transitions bracketed by reviewed frames; unseen detail between samples remains unknown",
+        "Completion and next command cannot always be separated within these intervals"
+      ]
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Chronological field/send-out or resolution view followed by ordinary command controls or move/target interface; not selected from predictions",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000558.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#335.00666666666666",
+            "timestamp": 335.00666666666666
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000565.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#340.0233333333333",
+            "timestamp": 340.0233333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          335.00666666666666,
+          340.0233333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "confidence": "medium",
+        "count": 4,
+        "visually_observed": "four cards at unobscured representative command frames; transient occlusion not a combatant count"
+      },
+      "human_approved": false,
+      "id": "sample_battle_9:agent-turn:04",
+      "index_scope": "chronological observed normal-command phases; game turn number not certified",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Chronological field/send-out or resolution view followed by ordinary command controls or move/target interface; not selected from predictions",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000623.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#375.0133333333333",
+            "timestamp": 375.0133333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000632.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#380.0133333333333",
+            "timestamp": 380.0133333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          375.0133333333333,
+          380.0133333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "relative_index": 4,
+      "resolution_completion": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Final visible resolution/effect/send-out sequence gives way to command or terminal presentation; completion is distinct from command entry but may share the sampling interval",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000623.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#375.0133333333333",
+            "timestamp": 375.0133333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000632.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#380.0133333333333",
+            "timestamp": 380.0133333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          375.0133333333333,
+          380.0133333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Command/menu sequence gives way to live field execution, switching or transformation",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000575.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#350.0083333333333",
+            "timestamp": 350.0083333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000583.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#355.01",
+            "timestamp": 355.01
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          350.0083333333333,
+          355.01
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed",
+      "uncertainty": [
+        "Transitions bracketed by reviewed frames; unseen detail between samples remains unknown",
+        "Completion and next command cannot always be separated within these intervals"
+      ]
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Chronological field/send-out or resolution view followed by ordinary command controls or move/target interface; not selected from predictions",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000623.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#375.0133333333333",
+            "timestamp": 375.0133333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000632.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#380.0133333333333",
+            "timestamp": 380.0133333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          375.0133333333333,
+          380.0133333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "confidence": "medium",
+        "count": 4,
+        "visually_observed": "four cards at unobscured representative command frames; transient occlusion not a combatant count"
+      },
+      "human_approved": false,
+      "id": "sample_battle_9:agent-turn:05",
+      "index_scope": "chronological observed normal-command phases; game turn number not certified",
+      "next_command_start": null,
+      "relative_index": 5,
+      "resolution_completion": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Final visible resolution/effect/send-out sequence gives way to command or terminal presentation; completion is distinct from command entry but may share the sampling interval",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000740.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#437.0233333333333",
+            "timestamp": 437.0233333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000742.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#438.00666666666666",
+            "timestamp": 438.00666666666666
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          437.0233333333333,
+          438.00666666666666
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Command/menu sequence gives way to live field execution, switching or transformation",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000637.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#385.015",
+            "timestamp": 385.015
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000646.png",
+            "source_id": "tests/fixtures/sample_battle_9.mp4#390.015",
+            "timestamp": 390.015
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          385.015,
+          390.015
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed",
+      "uncertainty": [
+        "Transitions bracketed by reviewed frames; unseen detail between samples remains unknown",
+        "Completion and next command cannot always be separated within these intervals"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2934 @@
+{
+  "battle_id": "sample_battle_9",
+  "chronological_review": [
+    {
+      "frame_index": 0,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 0.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 1,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 2.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 2,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 4.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 3,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 6.0183333333333335,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 4,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 8.018333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 5,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 10.018333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 6,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 12.018333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 7,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 14.001666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 8,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 16.003333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 9,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 18.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 10,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 20.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 11,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 22.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 12,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 24.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 13,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 26.02166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 14,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 28.02166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 15,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 30.02166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 16,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 32.02166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 17,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 34.02166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 18,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 36.02333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 19,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 38.02333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 20,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 40.02333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 21,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 42.02333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 22,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 44.02333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 23,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 46.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 24,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 48.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 25,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 50.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 26,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 52.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 27,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 54.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 28,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 56.026666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 29,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 58.026666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 30,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 60.026666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 31,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 62.026666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 32,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 64.02666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 33,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 66.02833333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 34,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 68.02833333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 35,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 70.02833333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 36,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 72.02833333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 37,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 74.02833333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 38,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 76.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 39,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 78.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 40,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 80.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 41,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 82.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 42,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 84.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 43,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 86.03166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 44,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 88.03166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 45,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 90.03166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 46,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 92.03166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 47,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 94.03166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 48,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 96.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 49,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 98.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 50,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 100.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 51,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 102.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 52,
+      "human_approved": false,
+      "phase": "initial_sendout",
+      "review_status": "agent-reviewed",
+      "timestamp": 104.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 53,
+      "human_approved": false,
+      "phase": "initial_sendout",
+      "review_status": "agent-reviewed",
+      "timestamp": 106.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 54,
+      "human_approved": false,
+      "phase": "initial_sendout",
+      "review_status": "agent-reviewed",
+      "timestamp": 108.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 55,
+      "human_approved": false,
+      "phase": "initial_sendout",
+      "review_status": "agent-reviewed",
+      "timestamp": 110.00166666666667,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 56,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 112.01833333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 57,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 114.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 58,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 116.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 59,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 118.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 60,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 120.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 61,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 122.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 62,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 124.02166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 63,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 126.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 64,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 128.02166666666668,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 65,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 130.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 66,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 132.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 67,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 134.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 68,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 136.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 69,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 138.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 70,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 140.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 71,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 142.02333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 72,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 144.00833333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 73,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 146.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 74,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 148.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 75,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 150.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 76,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 152.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 77,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 154.01,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 78,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 156.01,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 79,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 158.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 80,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 160.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 81,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 162.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 82,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 164.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 83,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 166.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 84,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 168.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 85,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 170.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 86,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 172.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 87,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 174.01333333333332,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 88,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 176.01333333333332,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 89,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 178.01333333333332,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 90,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 180.01333333333332,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 91,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 182.01333333333332,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 92,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 184.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 93,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 186.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 94,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 188.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 95,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 190.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 96,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 192.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 97,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 194.01666666666668,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 98,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 196.01666666666668,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 99,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 198.01666666666668,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 100,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 200.01666666666668,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 101,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 202.01666666666668,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 102,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 204.01833333333335,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 103,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 206.01833333333335,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 104,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 208.01833333333335,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 105,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 210.01833333333335,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 106,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 212.01833333333335,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 107,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 214.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 108,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 216.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 109,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 218.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 110,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 220.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 111,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 222.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 112,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 224.02166666666668,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 113,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 226.02166666666668,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 114,
+      "human_approved": false,
+      "phase": "submitted_command_waiting",
+      "review_status": "agent-reviewed",
+      "timestamp": 228.02166666666668,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 115,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 230.02166666666668,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 116,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 232.02166666666668,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 117,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 234.02333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 118,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 236.02333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 119,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 238.02333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 120,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 240.02333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 121,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 242.02333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 122,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 244.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 123,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 246.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 124,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 248.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 125,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 250.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 126,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 252.025,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 127,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 254.02666666666667,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 128,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 256.02666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 129,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 258.02666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 130,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 260.02666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 131,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 262.02666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 132,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 264.0283333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 133,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 266.0283333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 134,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 268.045,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 135,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 270.0283333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 136,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 272.0283333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 137,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 274.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 138,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 276.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 139,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 278.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 140,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 280.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 141,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 282.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 142,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 284.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 143,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 286.0316666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 144,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 288.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 145,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 290.0316666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 146,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 292.0316666666667,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 147,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 294.0,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 148,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 296.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 149,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 298.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 150,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 300.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 151,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 302.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 152,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 304.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 153,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 306.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 154,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 308.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 155,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 310.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 156,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 312.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 157,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 314.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 158,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 316.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 159,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 318.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 160,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 320.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 161,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 322.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 162,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 324.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 163,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 326.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 164,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 328.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 165,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 330.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 166,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 332.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 167,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 334.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 168,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 336.0233333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 169,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 338.00666666666666,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 170,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 340.0233333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 171,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 342.0083333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 172,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 344.0083333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 173,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 346.0083333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 174,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 348.0083333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 175,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 350.0083333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 176,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 352.01,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 177,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 354.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 178,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 356.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 179,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 358.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 180,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 360.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 181,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 362.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 182,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 364.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 183,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 366.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 184,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 368.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 185,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 370.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 186,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 372.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 187,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 374.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 188,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 376.0133333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 189,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 378.0133333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 190,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 380.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 191,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 382.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 192,
+      "human_approved": false,
+      "phase": "submitted_command_waiting",
+      "review_status": "agent-reviewed",
+      "timestamp": 384.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 193,
+      "human_approved": false,
+      "phase": "submitted_command_waiting",
+      "review_status": "agent-reviewed",
+      "timestamp": 386.015,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 194,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 388.015,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 195,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 390.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 196,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 392.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 197,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 394.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 198,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 396.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 199,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 398.03333333333336,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 200,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 400.03333333333336,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 201,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 402.0183333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 202,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 404.0183333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 203,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 406.0183333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 204,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 408.0183333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 205,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 410.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 206,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 412.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 207,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 414.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 208,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 416.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 209,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 418.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 210,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 420.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 211,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 422.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 212,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 424.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 213,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 426.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 214,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 428.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 215,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 430.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 216,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 432.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 217,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 434.0233333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 218,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 436.0233333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 219,
+      "human_approved": false,
+      "phase": "terminal_presentation",
+      "review_status": "agent-reviewed",
+      "timestamp": 438.00666666666666,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 220,
+      "human_approved": false,
+      "phase": "terminal_presentation",
+      "review_status": "agent-reviewed",
+      "timestamp": 440.0233333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 221,
+      "human_approved": false,
+      "phase": "terminal_presentation",
+      "review_status": "agent-reviewed",
+      "timestamp": 442.0083333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 222,
+      "human_approved": false,
+      "phase": "terminal_presentation",
+      "review_status": "agent-reviewed",
+      "timestamp": 444.0083333333333,
+      "transition_proposal": false
+    }
+  ],
+  "evaluation_role": "development_retrospective",
+  "human_approved": false,
+  "independence": {
+    "prediction_files_used_for_annotation": false,
+    "qualification": "Agent with prior project context and historical report exposure; not blinded human ground truth",
+    "selection": "fixed chronological 0,2,4,... cached source PTS; every grid frame reviewed on contact sheets"
+  },
+  "initial_sendout_completion": {
+    "confidence": "medium",
+    "disposition": "inferred_visible_sequence",
+    "evidence": "visible_transition; adjacent chronological two-second source samples, not an exact instant",
+    "frame_refs": [
+      {
+        "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000221.png",
+        "image_sha256": "f8f7d3b9a0f63e547b58d4f72a854ba6d8ed365df884835b3ef3021b6073b96f",
+        "index": 55,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 0.0,
+        "source_id": "tests/fixtures/sample_battle_9.mp4#110.00166666666667",
+        "source_pts": 66001,
+        "source_time_base": "1/600",
+        "target_timestamp": 110,
+        "timestamp": 110.00166666666667
+      },
+      {
+        "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000225.png",
+        "image_sha256": "daee33104bda508f8e4c0501cf673537a41ca03cb4c745154e0d469dd07c6fd3",
+        "index": 56,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 0.0,
+        "source_id": "tests/fixtures/sample_battle_9.mp4#112.01833333333333",
+        "source_pts": 67211,
+        "source_time_base": "1/600",
+        "target_timestamp": 112,
+        "timestamp": 112.01833333333333
+      }
+    ],
+    "human_approved": false,
+    "interval": [
+      110.00166666666667,
+      112.01833333333333
+    ],
+    "review_status": "agent-reviewed"
+  },
+  "intervals": [
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000225.png",
+          "image_sha256": "daee33104bda508f8e4c0501cf673537a41ca03cb4c745154e0d469dd07c6fd3",
+          "index": 56,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#112.01833333333333",
+          "source_pts": 67211,
+          "source_time_base": "1/600",
+          "target_timestamp": 112,
+          "timestamp": 112.01833333333333
+        },
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000269.png",
+          "image_sha256": "e9febe1f262d354ccc2d2405c27ae93cd4d5ac1210da0db08a5500465cf5e0ae",
+          "index": 78,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#156.01",
+          "source_pts": 93606,
+          "source_time_base": "1/600",
+          "target_timestamp": 156,
+          "timestamp": 156.01
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        112.01833333333333,
+        156.01
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000353.png",
+          "image_sha256": "f74cd038232c5653890f105320c9661408180005a52a4ecf363a47bb313d3cc6",
+          "index": 99,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#198.01666666666668",
+          "source_pts": 118810,
+          "source_time_base": "1/600",
+          "target_timestamp": 198,
+          "timestamp": 198.01666666666668
+        },
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000383.png",
+          "image_sha256": "977bb3f7a30cc14f9737159741345bc1617cdac6b2e0b5dab311025badf2ba29",
+          "index": 114,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#228.02166666666668",
+          "source_pts": 136813,
+          "source_time_base": "1/600",
+          "target_timestamp": 228,
+          "timestamp": 228.02166666666668
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        198.01666666666668,
+        228.02166666666668
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000435.png",
+          "image_sha256": "c1480ea3a194d8ae921cd43c2e170ce67b623b41886f5f2adb4dd5bcce73ba84",
+          "index": 127,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#254.02666666666667",
+          "source_pts": 152416,
+          "source_time_base": "1/600",
+          "target_timestamp": 254,
+          "timestamp": 254.02666666666667
+        },
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000476.png",
+          "image_sha256": "e6c0385ccda2d33c9cdc356c9f729b3814ebc936e8368a79e6cd1cac42aa9a6a",
+          "index": 147,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#294.0",
+          "source_pts": 176400,
+          "source_time_base": "1/600",
+          "target_timestamp": 294,
+          "timestamp": 294.0
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        254.02666666666667,
+        294.0
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000563.png",
+          "image_sha256": "9e224a3d896c2f4ab7311345b16e3d22b2916136762803d911fcc606ecfb18d9",
+          "index": 169,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#338.00666666666666",
+          "source_pts": 202804,
+          "source_time_base": "1/600",
+          "target_timestamp": 338,
+          "timestamp": 338.00666666666666
+        },
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000577.png",
+          "image_sha256": "defbd8c75bbb633ef57051eae3aa6c8fa375ee5c4b8306b7fe2523a5c764cf53",
+          "index": 176,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#352.01",
+          "source_pts": 211206,
+          "source_time_base": "1/600",
+          "target_timestamp": 352,
+          "timestamp": 352.01
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        338.00666666666666,
+        352.01
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000629.png",
+          "image_sha256": "ad6c46eaa72cef32b9bb67639e272f9b6aab1d2f63962c8cf7c9018c23c8e4a6",
+          "index": 189,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#378.0133333333333",
+          "source_pts": 226808,
+          "source_time_base": "1/600",
+          "target_timestamp": 378,
+          "timestamp": 378.0133333333333
+        },
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000636.png",
+          "image_sha256": "5fa3e6dcce9c10077f2a03ebf4d1ebdf52c8c7ed235e02de745639caea9cf888",
+          "index": 192,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#384.015",
+          "source_pts": 230409,
+          "source_time_base": "1/600",
+          "target_timestamp": 384,
+          "timestamp": 384.015
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        378.0133333333333,
+        384.015
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000383.png",
+          "image_sha256": "977bb3f7a30cc14f9737159741345bc1617cdac6b2e0b5dab311025badf2ba29",
+          "index": 114,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#228.02166666666668",
+          "source_pts": 136813,
+          "source_time_base": "1/600",
+          "target_timestamp": 228,
+          "timestamp": 228.02166666666668
+        },
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000387.png",
+          "image_sha256": "380c8ebd842e2dd3f8b552594c42abf2a66bada1eff05bc1b91b2d0a0222083f",
+          "index": 115,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#230.02166666666668",
+          "source_pts": 138013,
+          "source_time_base": "1/600",
+          "target_timestamp": 230,
+          "timestamp": 230.02166666666668
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        228.02166666666668,
+        230.02166666666668
+      ],
+      "kind": "submitted_command_waiting",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000636.png",
+          "image_sha256": "5fa3e6dcce9c10077f2a03ebf4d1ebdf52c8c7ed235e02de745639caea9cf888",
+          "index": 192,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#384.015",
+          "source_pts": 230409,
+          "source_time_base": "1/600",
+          "target_timestamp": 384,
+          "timestamp": 384.015
+        },
+        {
+          "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000642.png",
+          "image_sha256": "336d03117be23a6b4a29d8554465628f0de442a5cc757580585aadc85363d6e4",
+          "index": 194,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_9.mp4#388.015",
+          "source_pts": 232809,
+          "source_time_base": "1/600",
+          "target_timestamp": 388,
+          "timestamp": 388.015
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        384.015,
+        388.015
+      ],
+      "kind": "submitted_command_waiting",
+      "review_status": "agent-reviewed"
+    }
+  ],
+  "review_notes": [
+    "338–350s command and 352–376s Protect/residual sequence are followed by another command at 378s. Later native controls cannot be assumed to be a submenu return without inspecting the intervening actions."
+  ],
+  "review_status": "agent-reviewed",
+  "schema_version": "visual-reference-v21",
+  "source_grid": ".cache/battles/sample_battle_9/m34-visual-v21/reference-grid/manifest.json",
+  "source_grid_sha256": "5ea555f862c70e8abc1e51b4e11f56cf87d17f79c1cfbba63d253478f62d6739",
+  "termination": {
+    "confidence": "medium",
+    "disposition": "inferred_visible_sequence",
+    "evidence": "Field-to-result transition; adjacent chronological two-second source samples, not an exact instant",
+    "frame_refs": [
+      {
+        "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000738.png",
+        "image_sha256": "b62fcf50c5ddff490b927bc2e2d555532e6adf360bbe03e3037c2703693bf178",
+        "index": 218,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 0.0,
+        "source_id": "tests/fixtures/sample_battle_9.mp4#436.0233333333333",
+        "source_pts": 261614,
+        "source_time_base": "1/600",
+        "target_timestamp": 436,
+        "timestamp": 436.0233333333333
+      },
+      {
+        "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000742.png",
+        "image_sha256": "10a33f4954765586d56cba23ca7647a472f3bb7e90c9f912d040231ce86992f9",
+        "index": 219,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 0.0,
+        "source_id": "tests/fixtures/sample_battle_9.mp4#438.00666666666666",
+        "source_pts": 262804,
+        "source_time_base": "1/600",
+        "target_timestamp": 438,
+        "timestamp": 438.00666666666666
+      }
+    ],
+    "human_approved": false,
+    "interval": [
+      436.0233333333333,
+      438.00666666666666
+    ],
+    "review_status": "agent-reviewed"
+  },
+  "turns": [
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Normal command/menu entry after source-observed opening or executed resolution; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000221.png",
+            "image_sha256": "f8f7d3b9a0f63e547b58d4f72a854ba6d8ed365df884835b3ef3021b6073b96f",
+            "index": 55,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#110.00166666666667",
+            "source_pts": 66001,
+            "source_time_base": "1/600",
+            "target_timestamp": 110,
+            "timestamp": 110.00166666666667
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000225.png",
+            "image_sha256": "daee33104bda508f8e4c0501cf673537a41ca03cb4c745154e0d469dd07c6fd3",
+            "index": 56,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#112.01833333333333",
+            "source_pts": 67211,
+            "source_time_base": "1/600",
+            "target_timestamp": 112,
+            "timestamp": 112.01833333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          110.00166666666667,
+          112.01833333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "count": 4,
+        "qualification": "four cards in representative unobscured command frames; menus may occlude"
+      },
+      "human_approved": false,
+      "id": "sample_battle_9:v21-agent-turn:01",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Next ordinary command entry; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000349.png",
+            "image_sha256": "91bd347d0fd310b3dcfc6b1cea3212b50c28f1623024a5fc7d9e7e29685102ea",
+            "index": 98,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#196.01666666666668",
+            "source_pts": 117610,
+            "source_time_base": "1/600",
+            "target_timestamp": 196,
+            "timestamp": 196.01666666666668
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000353.png",
+            "image_sha256": "f74cd038232c5653890f105320c9661408180005a52a4ecf363a47bb313d3cc6",
+            "index": 99,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#198.01666666666668",
+            "source_pts": 118810,
+            "source_time_base": "1/600",
+            "target_timestamp": 198,
+            "timestamp": 198.01666666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          196.01666666666668,
+          198.01666666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_completion": {
+        "confidence": "uncertain",
+        "disposition": "uncertain",
+        "evidence": "Completion bounded by return/result presentation; not resolved separately from this transition; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000349.png",
+            "image_sha256": "91bd347d0fd310b3dcfc6b1cea3212b50c28f1623024a5fc7d9e7e29685102ea",
+            "index": 98,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#196.01666666666668",
+            "source_pts": 117610,
+            "source_time_base": "1/600",
+            "target_timestamp": 196,
+            "timestamp": 196.01666666666668
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000353.png",
+            "image_sha256": "f74cd038232c5653890f105320c9661408180005a52a4ecf363a47bb313d3cc6",
+            "index": 99,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#198.01666666666668",
+            "source_pts": 118810,
+            "source_time_base": "1/600",
+            "target_timestamp": 198,
+            "timestamp": 198.01666666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          196.01666666666668,
+          198.01666666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "First visible execution, switching or transformation; excludes submitted-command waiting; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000267.png",
+            "image_sha256": "7668fb8ec9ac44cdf5e8eb48b388b6804ee359d6d6db5b26738ab7ce4b4fb25f",
+            "index": 77,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#154.01",
+            "source_pts": 92406,
+            "source_time_base": "1/600",
+            "target_timestamp": 154,
+            "timestamp": 154.01
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000269.png",
+            "image_sha256": "e9febe1f262d354ccc2d2405c27ae93cd4d5ac1210da0db08a5500465cf5e0ae",
+            "index": 78,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#156.01",
+            "source_pts": 93606,
+            "source_time_base": "1/600",
+            "target_timestamp": 156,
+            "timestamp": 156.01
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          154.01,
+          156.01
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed"
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Normal command/menu entry after source-observed opening or executed resolution; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000349.png",
+            "image_sha256": "91bd347d0fd310b3dcfc6b1cea3212b50c28f1623024a5fc7d9e7e29685102ea",
+            "index": 98,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#196.01666666666668",
+            "source_pts": 117610,
+            "source_time_base": "1/600",
+            "target_timestamp": 196,
+            "timestamp": 196.01666666666668
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000353.png",
+            "image_sha256": "f74cd038232c5653890f105320c9661408180005a52a4ecf363a47bb313d3cc6",
+            "index": 99,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#198.01666666666668",
+            "source_pts": 118810,
+            "source_time_base": "1/600",
+            "target_timestamp": 198,
+            "timestamp": 198.01666666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          196.01666666666668,
+          198.01666666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "count": 4,
+        "qualification": "four cards in representative unobscured command frames; menus may occlude"
+      },
+      "human_approved": false,
+      "id": "sample_battle_9:v21-agent-turn:02",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Next ordinary command entry; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000431.png",
+            "image_sha256": "592de0af8c245208daf5bbd403c61aaf1c93ebedf56f0fd8e263538f3559e5a2",
+            "index": 126,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#252.025",
+            "source_pts": 151215,
+            "source_time_base": "1/600",
+            "target_timestamp": 252,
+            "timestamp": 252.025
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000435.png",
+            "image_sha256": "c1480ea3a194d8ae921cd43c2e170ce67b623b41886f5f2adb4dd5bcce73ba84",
+            "index": 127,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#254.02666666666667",
+            "source_pts": 152416,
+            "source_time_base": "1/600",
+            "target_timestamp": 254,
+            "timestamp": 254.02666666666667
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          252.025,
+          254.02666666666667
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_completion": {
+        "confidence": "uncertain",
+        "disposition": "uncertain",
+        "evidence": "Completion bounded by return/result presentation; not resolved separately from this transition; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000431.png",
+            "image_sha256": "592de0af8c245208daf5bbd403c61aaf1c93ebedf56f0fd8e263538f3559e5a2",
+            "index": 126,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#252.025",
+            "source_pts": 151215,
+            "source_time_base": "1/600",
+            "target_timestamp": 252,
+            "timestamp": 252.025
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000435.png",
+            "image_sha256": "c1480ea3a194d8ae921cd43c2e170ce67b623b41886f5f2adb4dd5bcce73ba84",
+            "index": 127,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#254.02666666666667",
+            "source_pts": 152416,
+            "source_time_base": "1/600",
+            "target_timestamp": 254,
+            "timestamp": 254.02666666666667
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          252.025,
+          254.02666666666667
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "First visible execution, switching or transformation; excludes submitted-command waiting; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000383.png",
+            "image_sha256": "977bb3f7a30cc14f9737159741345bc1617cdac6b2e0b5dab311025badf2ba29",
+            "index": 114,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#228.02166666666668",
+            "source_pts": 136813,
+            "source_time_base": "1/600",
+            "target_timestamp": 228,
+            "timestamp": 228.02166666666668
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000387.png",
+            "image_sha256": "380c8ebd842e2dd3f8b552594c42abf2a66bada1eff05bc1b91b2d0a0222083f",
+            "index": 115,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#230.02166666666668",
+            "source_pts": 138013,
+            "source_time_base": "1/600",
+            "target_timestamp": 230,
+            "timestamp": 230.02166666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          228.02166666666668,
+          230.02166666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed"
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Normal command/menu entry after source-observed opening or executed resolution; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000431.png",
+            "image_sha256": "592de0af8c245208daf5bbd403c61aaf1c93ebedf56f0fd8e263538f3559e5a2",
+            "index": 126,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#252.025",
+            "source_pts": 151215,
+            "source_time_base": "1/600",
+            "target_timestamp": 252,
+            "timestamp": 252.025
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000435.png",
+            "image_sha256": "c1480ea3a194d8ae921cd43c2e170ce67b623b41886f5f2adb4dd5bcce73ba84",
+            "index": 127,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#254.02666666666667",
+            "source_pts": 152416,
+            "source_time_base": "1/600",
+            "target_timestamp": 254,
+            "timestamp": 254.02666666666667
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          252.025,
+          254.02666666666667
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "count": 4,
+        "qualification": "four cards in representative unobscured command frames; menus may occlude"
+      },
+      "human_approved": false,
+      "id": "sample_battle_9:v21-agent-turn:03",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Next ordinary command entry; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000560.png",
+            "image_sha256": "2560d42a31e2a824d7ee2efdf63cf2581ac6d37cce07cee972ec096426d76afe",
+            "index": 168,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#336.0233333333333",
+            "source_pts": 201614,
+            "source_time_base": "1/600",
+            "target_timestamp": 336,
+            "timestamp": 336.0233333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000563.png",
+            "image_sha256": "9e224a3d896c2f4ab7311345b16e3d22b2916136762803d911fcc606ecfb18d9",
+            "index": 169,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#338.00666666666666",
+            "source_pts": 202804,
+            "source_time_base": "1/600",
+            "target_timestamp": 338,
+            "timestamp": 338.00666666666666
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          336.0233333333333,
+          338.00666666666666
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_completion": {
+        "confidence": "uncertain",
+        "disposition": "uncertain",
+        "evidence": "Completion bounded by return/result presentation; not resolved separately from this transition; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000560.png",
+            "image_sha256": "2560d42a31e2a824d7ee2efdf63cf2581ac6d37cce07cee972ec096426d76afe",
+            "index": 168,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#336.0233333333333",
+            "source_pts": 201614,
+            "source_time_base": "1/600",
+            "target_timestamp": 336,
+            "timestamp": 336.0233333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000563.png",
+            "image_sha256": "9e224a3d896c2f4ab7311345b16e3d22b2916136762803d911fcc606ecfb18d9",
+            "index": 169,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#338.00666666666666",
+            "source_pts": 202804,
+            "source_time_base": "1/600",
+            "target_timestamp": 338,
+            "timestamp": 338.00666666666666
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          336.0233333333333,
+          338.00666666666666
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "First visible execution, switching or transformation; excludes submitted-command waiting; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000474.png",
+            "image_sha256": "926567229f13fa666554decb48898c593c4de9030943de57c9161d72ab360114",
+            "index": 146,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#292.0316666666667",
+            "source_pts": 175219,
+            "source_time_base": "1/600",
+            "target_timestamp": 292,
+            "timestamp": 292.0316666666667
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000476.png",
+            "image_sha256": "e6c0385ccda2d33c9cdc356c9f729b3814ebc936e8368a79e6cd1cac42aa9a6a",
+            "index": 147,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#294.0",
+            "source_pts": 176400,
+            "source_time_base": "1/600",
+            "target_timestamp": 294,
+            "timestamp": 294.0
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          292.0316666666667,
+          294.0
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed"
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Normal command/menu entry after source-observed opening or executed resolution; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000560.png",
+            "image_sha256": "2560d42a31e2a824d7ee2efdf63cf2581ac6d37cce07cee972ec096426d76afe",
+            "index": 168,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#336.0233333333333",
+            "source_pts": 201614,
+            "source_time_base": "1/600",
+            "target_timestamp": 336,
+            "timestamp": 336.0233333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000563.png",
+            "image_sha256": "9e224a3d896c2f4ab7311345b16e3d22b2916136762803d911fcc606ecfb18d9",
+            "index": 169,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#338.00666666666666",
+            "source_pts": 202804,
+            "source_time_base": "1/600",
+            "target_timestamp": 338,
+            "timestamp": 338.00666666666666
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          336.0233333333333,
+          338.00666666666666
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "count": 4,
+        "qualification": "four cards in representative unobscured command frames; menus may occlude"
+      },
+      "human_approved": false,
+      "id": "sample_battle_9:v21-agent-turn:04",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Next ordinary command entry; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000625.png",
+            "image_sha256": "7bf263deee7fa97ff2f05f303483194194221d220b8c11a384285bf6ed721486",
+            "index": 188,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#376.0133333333333",
+            "source_pts": 225608,
+            "source_time_base": "1/600",
+            "target_timestamp": 376,
+            "timestamp": 376.0133333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000629.png",
+            "image_sha256": "ad6c46eaa72cef32b9bb67639e272f9b6aab1d2f63962c8cf7c9018c23c8e4a6",
+            "index": 189,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#378.0133333333333",
+            "source_pts": 226808,
+            "source_time_base": "1/600",
+            "target_timestamp": 378,
+            "timestamp": 378.0133333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          376.0133333333333,
+          378.0133333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_completion": {
+        "confidence": "uncertain",
+        "disposition": "uncertain",
+        "evidence": "Completion bounded by return/result presentation; not resolved separately from this transition; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000625.png",
+            "image_sha256": "7bf263deee7fa97ff2f05f303483194194221d220b8c11a384285bf6ed721486",
+            "index": 188,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#376.0133333333333",
+            "source_pts": 225608,
+            "source_time_base": "1/600",
+            "target_timestamp": 376,
+            "timestamp": 376.0133333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000629.png",
+            "image_sha256": "ad6c46eaa72cef32b9bb67639e272f9b6aab1d2f63962c8cf7c9018c23c8e4a6",
+            "index": 189,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#378.0133333333333",
+            "source_pts": 226808,
+            "source_time_base": "1/600",
+            "target_timestamp": 378,
+            "timestamp": 378.0133333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          376.0133333333333,
+          378.0133333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "First visible execution, switching or transformation; excludes submitted-command waiting; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000575.png",
+            "image_sha256": "e439fdc1cd13e42dd970653ff56e893b535a953bf3d30e971bc25de6d8074a6b",
+            "index": 175,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#350.0083333333333",
+            "source_pts": 210005,
+            "source_time_base": "1/600",
+            "target_timestamp": 350,
+            "timestamp": 350.0083333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000577.png",
+            "image_sha256": "defbd8c75bbb633ef57051eae3aa6c8fa375ee5c4b8306b7fe2523a5c764cf53",
+            "index": 176,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#352.01",
+            "source_pts": 211206,
+            "source_time_base": "1/600",
+            "target_timestamp": 352,
+            "timestamp": 352.01
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          350.0083333333333,
+          352.01
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed"
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Normal command/menu entry after source-observed opening or executed resolution; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000625.png",
+            "image_sha256": "7bf263deee7fa97ff2f05f303483194194221d220b8c11a384285bf6ed721486",
+            "index": 188,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#376.0133333333333",
+            "source_pts": 225608,
+            "source_time_base": "1/600",
+            "target_timestamp": 376,
+            "timestamp": 376.0133333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000629.png",
+            "image_sha256": "ad6c46eaa72cef32b9bb67639e272f9b6aab1d2f63962c8cf7c9018c23c8e4a6",
+            "index": 189,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#378.0133333333333",
+            "source_pts": 226808,
+            "source_time_base": "1/600",
+            "target_timestamp": 378,
+            "timestamp": 378.0133333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          376.0133333333333,
+          378.0133333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "count": 4,
+        "qualification": "four cards in representative unobscured command frames; menus may occlude"
+      },
+      "human_approved": false,
+      "id": "sample_battle_9:v21-agent-turn:05",
+      "next_command_start": {
+        "confidence": "uncertain",
+        "disposition": "unobservable",
+        "evidence": "No executed transition visible on the reviewed source grid",
+        "frame_refs": [],
+        "human_approved": false,
+        "interval": null,
+        "review_status": "agent-reviewed"
+      },
+      "resolution_completion": {
+        "confidence": "uncertain",
+        "disposition": "uncertain",
+        "evidence": "Completion bounded by return/result presentation; not resolved separately from this transition; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000738.png",
+            "image_sha256": "b62fcf50c5ddff490b927bc2e2d555532e6adf360bbe03e3037c2703693bf178",
+            "index": 218,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#436.0233333333333",
+            "source_pts": 261614,
+            "source_time_base": "1/600",
+            "target_timestamp": 436,
+            "timestamp": 436.0233333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000742.png",
+            "image_sha256": "10a33f4954765586d56cba23ca7647a472f3bb7e90c9f912d040231ce86992f9",
+            "index": 219,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#438.00666666666666",
+            "source_pts": 262804,
+            "source_time_base": "1/600",
+            "target_timestamp": 438,
+            "timestamp": 438.00666666666666
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          436.0233333333333,
+          438.00666666666666
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "First visible execution, switching or transformation; excludes submitted-command waiting; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000638.png",
+            "image_sha256": "b36476967e58c78868120ceb8481cc6199fe39b720af9105650702b7a3e67a07",
+            "index": 193,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#386.015",
+            "source_pts": 231609,
+            "source_time_base": "1/600",
+            "target_timestamp": 386,
+            "timestamp": 386.015
+          },
+          {
+            "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000642.png",
+            "image_sha256": "336d03117be23a6b4a29d8554465628f0de442a5cc757580585aadc85363d6e4",
+            "index": 194,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_9.mp4#388.015",
+            "source_pts": 232809,
+            "source_time_base": "1/600",
+            "target_timestamp": 388,
+            "timestamp": 388.015
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          386.015,
+          388.015
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed"
+    }
+  ],
+  "win_banner": {
+    "confidence": "medium",
+    "disposition": "inferred_visible_sequence",
+    "evidence": "Result/WIN banner; adjacent chronological two-second source samples, not an exact instant",
+    "frame_refs": [
+      {
+        "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000742.png",
+        "image_sha256": "10a33f4954765586d56cba23ca7647a472f3bb7e90c9f912d040231ce86992f9",
+        "index": 219,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 0.0,
+        "source_id": "tests/fixtures/sample_battle_9.mp4#438.00666666666666",
+        "source_pts": 262804,
+        "source_time_base": "1/600",
+        "target_timestamp": 438,
+        "timestamp": 438.00666666666666
+      },
+      {
+        "image": ".cache/battles/sample_battle_9/event-driven/m24-development-final-v1/frames/000746.png",
+        "image_sha256": "d20e6ba4f5faf377e1a5dd81f6188cf87908fb83250e42aa0f0bc75fad9b6fe9",
+        "index": 220,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 0.0,
+        "source_id": "tests/fixtures/sample_battle_9.mp4#440.0233333333333",
+        "source_pts": 264014,
+        "source_time_base": "1/600",
+        "target_timestamp": 440,
+        "timestamp": 440.0233333333333
+      }
+    ],
+    "human_approved": false,
+    "interval": [
+      438.00666666666666,
+      440.0233333333333
+    ],
+    "review_status": "agent-reviewed"
+  }
+}

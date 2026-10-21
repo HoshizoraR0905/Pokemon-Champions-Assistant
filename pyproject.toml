@@ -12,6 +12,8 @@ dependencies = ["opencv-python-headless>=4.8,<6", "pytesseract>=0.3.10,<0.4"]
 [project.scripts]
 champions-damage = "damage.__main__:main"
 champions-inverse-damage = "damage.inverse_cli:main"
+champions-battle-evidence = "battle_evidence.__main__:main"
+champions-speed-inference = "speed_inference.__main__:main"
 champions-speed-order = "speed_order.__main__:main"
 champions-metagame = "metagame.__main__:main"
 champions-published-teams = "metagame.published.__main__:main"
@@ -24,9 +26,10 @@ ocr = ["paddleocr==3.7.0", "paddlepaddle==3.3.1"]
 ocr_experimental = ["onnxruntime==1.23.2", "onnx==1.23.2", "PyYAML>=6,<7"]
 
 [tool.setuptools.packages.find]
-include = ["capture*", "recognition*", "models*", "tracking*", "damage*", "api*", "knowledge*", "streaming*", "battle_events*", "speed_order*", "metagame*"]
+include = ["capture*", "recognition*", "models*", "tracking*", "damage*", "api*", "knowledge*", "streaming*", "battle_events*", "battle_evidence*", "speed_order*", "speed_inference*", "metagame*"]
 
 [tool.setuptools.package-data]
+battle_evidence = ["*.json"]
 metagame = ["published/*.json"]
 tracking = ["templates/*.html"]
 damage = ["data/*.json", "data/*.txt", "schemas/*.json"]

@@ -1,0 +1,28 @@
+{
+  "battle_id": "sample_battle_5",
+  "historical_turn_id": "sample_battle_5:agent-turn:01",
+  "human_approved": false,
+  "next_command_start": {
+    "approximate": true,
+    "interval": [
+      195.0,
+      196.0
+    ],
+    "review_status": "human-reviewed"
+  },
+  "qualification": "User inspected only these two boundaries. No approval of the whole turn, battle, other fields, or detector. Original agent reference unchanged.",
+  "resolution_completion": {
+    "approximate": true,
+    "interval": [
+      195.0,
+      196.0
+    ],
+    "review_status": "human-reviewed"
+  },
+  "review_status": "human-reviewed",
+  "scope": [
+    "resolution_completion",
+    "next_command_start"
+  ],
+  "source": "User request supplied in this session, 2026-10-21 Asia/Shanghai"
+}

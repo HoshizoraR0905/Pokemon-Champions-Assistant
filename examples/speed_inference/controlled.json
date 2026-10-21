@@ -1,0 +1,356 @@
+{
+  "battle_id": "synthetic",
+  "instance_id": "opponent:1",
+  "model": {
+    "candidates": [
+      {
+        "ability": null,
+        "alignment": {
+          "decrease": null,
+          "increase": null
+        },
+        "id": "1fb2e210cbecbe1a6349773beab19c02b05595cdf98beec9282555e7a2be47ea",
+        "item": null,
+        "speed_sp": 0,
+        "unmodified_speed": 120
+      },
+      {
+        "ability": null,
+        "alignment": {
+          "decrease": null,
+          "increase": null
+        },
+        "id": "6612923d271f286aeacfdeaad25de1ed1a79f5a1d5a2e8e6fe42679605959743",
+        "item": null,
+        "speed_sp": 1,
+        "unmodified_speed": 121
+      },
+      {
+        "ability": null,
+        "alignment": {
+          "decrease": null,
+          "increase": null
+        },
+        "id": "eb28a61faff36bad87524070b15fdcdbd2b8f53b5ec461a26894467c497a2d0f",
+        "item": null,
+        "speed_sp": 2,
+        "unmodified_speed": 122
+      }
+    ],
+    "fingerprint": "bf93fa4d6a7f6cd353eef5699be46d32455679e9e27b8c160c705ee0e9d3aae5",
+    "form": "base",
+    "identity": "pokeapi:species:6",
+    "known_other_points": {},
+    "legality_scope": "Existence of a completion under maintained Champions SP/alignment rules and pinned current-form catalog; not independent roster certification",
+    "modifier_domains": {
+      "ability": {
+        "meaning": "Unmodeled, not neutral; an observation must establish the current modifier or is ineligible",
+        "status": "unresolved",
+        "values": null
+      },
+      "item": {
+        "meaning": "Unmodeled, not neutral; an observation must establish the current modifier or is ineligible",
+        "status": "unresolved",
+        "values": null
+      }
+    },
+    "prior": {
+      "candidate_count": 3,
+      "empirical_data_used": false,
+      "kind": "uniform_configuration_projection",
+      "parameterization": "One weight per numerical Stat Alignment / Speed SP / explicitly supplied modifier assignment; no multiplicity for unenumerated other-SP completions or interchangeable nature labels",
+      "weight": 0.3333333333333333
+    },
+    "provenance": {
+      "base_stats_source": {
+        "commit": "8673c506b1ead3e66a436764e12fc066367ca283",
+        "commit_date": "2026-10-13T00:40:42+08:00",
+        "file_commit": "f42039921e8838710c5e628dc81ba7c604343a24",
+        "file_commit_date": "2026-09-19T07:46:01+08:00",
+        "path": ".agents/skills/pokemon-champions-dex/data/champions_dex.sqlite",
+        "repository": "https://github.com/pmwl0128/Quark_Drive_Skills",
+        "sha256": "35a08585f980f859dc721cf128762d1c62f3a34928bd6ed8db4fc459551b5413"
+      },
+      "documented_rules": {
+        "adjustment_denominator": 10,
+        "adjustment_numerators": [
+          9,
+          10,
+          11
+        ],
+        "alignment": "one increased and one distinct decreased non-HP stat, or neutral",
+        "alignment_evidence": "性格: 影响 and 能力调整; Champions maps nature/mint effects to Stat Alignment; four neutral nature labels cannot be selected. Numerical neutral represented once.",
+        "hp": "base + training_points + 75",
+        "no_level_or_iv": "Pokémon Champions: training section",
+        "other": "floor((base + training_points + 20) * adjustment)",
+        "training_points_per_stat": [
+          0,
+          32
+        ],
+        "training_points_total_max": 66
+      },
+      "facts_sha256": "c9203fdf1cdad92bb37e88c3f56763fc910ce03e566f851e3f8389cac5d3f93b",
+      "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+      "limitations": [
+        "Community encyclopedia documentation, not independently certified official mechanics.",
+        "No stat-stage, item, ability, transformation or in-battle modifiers.",
+        "No roster/regulation legality inferred from base-stat presence.",
+        "Fixed-HP species blocked pending Champions-specific exception verification.",
+        "Pinned article revisions do not freeze transcluded templates; retrieved HTML digests identify rendered snapshots."
+      ],
+      "profile": "52poke-champions-stats-v1",
+      "rule_sha256": "d4c838154b7f4f417b849d4328dd8540bf0cace76e6d409a8ba7605d74cc6e57",
+      "sources": [
+        {
+          "attribution": "52Poké contributors",
+          "game": "Pokémon Champions",
+          "html_sha256": "5f0fe7280ad8db753b119fc23e1b336d0993be217df7a6187926aae0e32d1cf4",
+          "id": "stat",
+          "license": "CC BY-NC-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "local_snapshot": ".cache/champions-stats/stat.html",
+          "permalink": "https://wiki.52poke.com/index.php?title=能力&oldid=2607357",
+          "retrieved_date": "2026-10-15",
+          "revision_id": 2607357,
+          "url": "https://wiki.52poke.com/wiki/能力"
+        },
+        {
+          "attribution": "52Poké contributors",
+          "game": "Pokémon Champions",
+          "html_sha256": "46bd1130a070d7200558fb7e5dc2378030f139da703e5475d07fd902ece2109e",
+          "id": "nature",
+          "license": "CC BY-NC-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "local_snapshot": ".cache/champions-stats/nature.html",
+          "permalink": "https://wiki.52poke.com/index.php?title=性格&oldid=2568467",
+          "retrieved_date": "2026-10-15",
+          "revision_id": 2568467,
+          "url": "https://wiki.52poke.com/wiki/性格"
+        },
+        {
+          "attribution": "52Poké contributors",
+          "game": "Pokémon Champions",
+          "html_sha256": "ecf61ce073c6ba9fa62c4bcf5487e631003c08572b683af94a97a84b75b705d0",
+          "id": "champions",
+          "license": "CC BY-NC-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "local_snapshot": ".cache/champions-stats/champions.html",
+          "permalink": "https://wiki.52poke.com/index.php?title=Pokémon_Champions&oldid=2628728",
+          "retrieved_date": "2026-10-15",
+          "revision_id": 2628728,
+          "url": "https://wiki.52poke.com/wiki/Pokémon_Champions"
+        }
+      ]
+    },
+    "specification": {
+      "abilities": null,
+      "alignments": [
+        {
+          "decrease": null,
+          "increase": null
+        }
+      ],
+      "form": "base",
+      "identity": "pokeapi:species:6",
+      "items": null,
+      "known_other_points": {},
+      "max_candidates": 20000,
+      "speed_points": [
+        0,
+        1,
+        2
+      ]
+    },
+    "version": "speed-configuration-projection-v1"
+  },
+  "observations": [
+    {
+      "action_ids": {
+        "opponent": "opponent-action:1",
+        "own": "own-action:1"
+      },
+      "battle_id": "synthetic",
+      "context": {
+        "actions": {
+          "opponent": {
+            "effective_priority": 0,
+            "evidence": "Controlled ordinary move",
+            "kind": "move",
+            "move": "Flamethrower"
+          },
+          "own": {
+            "effective_priority": 0,
+            "evidence": "Controlled ordinary move",
+            "kind": "move",
+            "move": "Flamethrower"
+          }
+        },
+        "comparable": true,
+        "evidence": "Synthetic ordering snapshot",
+        "field": {
+          "other_effects": [],
+          "terrain": "none",
+          "trick_room": false,
+          "weather": "none"
+        },
+        "opponent": {
+          "ability": "Blaze",
+          "ability_active": true,
+          "activation_evidence": null,
+          "actual_speed": null,
+          "form": "base",
+          "identity": "Charizard",
+          "instance_id": "opponent:1",
+          "item": "none",
+          "other_effects": [],
+          "stage": 0,
+          "status": "none",
+          "tailwind": false,
+          "unburden_active": false
+        },
+        "ordering_effects": [],
+        "own": {
+          "ability": "Blaze",
+          "ability_active": true,
+          "activation_evidence": null,
+          "actual_speed": 121,
+          "form": "base",
+          "identity": "Charizard",
+          "instance_id": "own:1",
+          "item": "none",
+          "other_effects": [],
+          "stage": 0,
+          "status": "none",
+          "tailwind": false,
+          "unburden_active": false
+        },
+        "timing": {
+          "decision_id": "turn:1",
+          "modifier_changes": [],
+          "state_at": "order_decision",
+          "turn": 1
+        }
+      },
+      "evidence_kind": "verified_action_order",
+      "id": "synthetic:1",
+      "origin": "synthetic",
+      "provenance": [
+        {
+          "source": "controlled fixture",
+          "verification": "synthetic, not an observed game"
+        }
+      ],
+      "sequence": [
+        "opponent",
+        "own"
+      ],
+      "stat_epoch": "initial",
+      "verification": {
+        "actor_identity": true,
+        "chronology": true,
+        "continuity": true,
+        "move_identity": true,
+        "order_exceptions": true,
+        "own_unmodified_speed": true,
+        "priority": true,
+        "state_at_decision": true,
+        "turn_membership": true
+      }
+    },
+    {
+      "action_ids": {
+        "opponent": "opponent-action:2",
+        "own": "own-action:2"
+      },
+      "battle_id": "synthetic",
+      "context": {
+        "actions": {
+          "opponent": {
+            "effective_priority": 0,
+            "evidence": "Controlled ordinary move",
+            "kind": "move",
+            "move": "Flamethrower"
+          },
+          "own": {
+            "effective_priority": 0,
+            "evidence": "Controlled ordinary move",
+            "kind": "move",
+            "move": "Flamethrower"
+          }
+        },
+        "comparable": true,
+        "evidence": "Synthetic ordering snapshot",
+        "field": {
+          "other_effects": [],
+          "terrain": "none",
+          "trick_room": false,
+          "weather": "none"
+        },
+        "opponent": {
+          "ability": "Blaze",
+          "ability_active": true,
+          "activation_evidence": null,
+          "actual_speed": null,
+          "form": "base",
+          "identity": "Charizard",
+          "instance_id": "opponent:1",
+          "item": "none",
+          "other_effects": [],
+          "stage": 0,
+          "status": "none",
+          "tailwind": false,
+          "unburden_active": false
+        },
+        "ordering_effects": [],
+        "own": {
+          "ability": "Blaze",
+          "ability_active": true,
+          "activation_evidence": null,
+          "actual_speed": 122,
+          "form": "base",
+          "identity": "Charizard",
+          "instance_id": "own:1",
+          "item": "none",
+          "other_effects": [],
+          "stage": 0,
+          "status": "none",
+          "tailwind": false,
+          "unburden_active": false
+        },
+        "timing": {
+          "decision_id": "turn:2",
+          "modifier_changes": [],
+          "state_at": "order_decision",
+          "turn": 2
+        }
+      },
+      "evidence_kind": "verified_action_order",
+      "id": "synthetic:2",
+      "origin": "synthetic",
+      "provenance": [
+        {
+          "source": "controlled fixture",
+          "verification": "synthetic, not an observed game"
+        }
+      ],
+      "sequence": [
+        "opponent",
+        "own"
+      ],
+      "stat_epoch": "initial",
+      "verification": {
+        "actor_identity": true,
+        "chronology": true,
+        "continuity": true,
+        "move_identity": true,
+        "order_exceptions": true,
+        "own_unmodified_speed": true,
+        "priority": true,
+        "state_at_decision": true,
+        "turn_membership": true
+      }
+    }
+  ],
+  "profile": "showdown-champions-reference-v1",
+  "stat_epoch": "initial"
+}

@@ -167,6 +167,9 @@ class StateEngine:
             try:
                 from .evidence_fusion import prepare_message, move_revelation
                 event=prepare_message(trial,event)
+                if trial.knowledge.get('message_identity_v1') and event.event_type=='send_out':
+                    from recognition.identity_modes import message_identity
+                    event=message_identity(event)
                 from .active_continuity import prepare_unidentified
                 event=prepare_unidentified(trial,event)
                 if event.event_type=='move_execution' and event.attributes.get('fusion_context'):

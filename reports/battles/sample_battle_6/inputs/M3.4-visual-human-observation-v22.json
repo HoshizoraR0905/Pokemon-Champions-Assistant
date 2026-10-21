@@ -1,0 +1,202 @@
+{
+  "agent_source_review": {
+    "chronology": [
+      {
+        "interval": [
+          468.01166666666666,
+          470.01166666666666
+        ],
+        "observation": "Rillaboom HP recovery animation and HP-restored message, no command controls"
+      },
+      {
+        "interval": [
+          470.5133333333333,
+          470.5133333333333
+        ],
+        "observation": "Residual/ability presentation, no native command controls"
+      },
+      {
+        "interval": [
+          471.0133333333333,
+          471.0133333333333
+        ],
+        "observation": "Four HUD cards, native Fight/Pokémon, COMMAND 45: ordinary command available before log opens"
+      },
+      {
+        "interval": [
+          472.0133333333333,
+          474.5133333333333
+        ],
+        "observation": "Battle Log overlay; native controls obscured. Log text and displayed turn number not used for runtime inference"
+      },
+      {
+        "interval": [
+          475.0133333333333,
+          475.0133333333333
+        ],
+        "observation": "Log closed: four HUDs and native controls, COMMAND 41"
+      },
+      {
+        "interval": [
+          476.0133333333333,
+          477.0133333333333
+        ],
+        "observation": "Move menu followed by target selection"
+      }
+    ],
+    "frames": [
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000819.png",
+        "image_sha256": "13c22afa8c911f73529ea28b8c6d35fc024635f90880ac6a89b8f9989514aaba",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#468.01166666666666",
+        "source_pts": 4807,
+        "source_time_base": "1/600",
+        "timestamp": 468.01166666666666
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000820.png",
+        "image_sha256": "9edaf350487fcab280d502b1a0ce5feddf10904311f24f546b06dd457d6877f2",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#468.51166666666666",
+        "source_pts": 5107,
+        "source_time_base": "1/600",
+        "timestamp": 468.51166666666666
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000821.png",
+        "image_sha256": "90a2e425ff3cb6f852b2fc0922a680eb9df16439a135b31446103942408011cf",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#469.01166666666666",
+        "source_pts": 5407,
+        "source_time_base": "1/600",
+        "timestamp": 469.01166666666666
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000822.png",
+        "image_sha256": "cf8761d48f2a513aee44fd99976774b1d3c9e2c91d4021f8b96c1da393f80630",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#469.51166666666666",
+        "source_pts": 5707,
+        "source_time_base": "1/600",
+        "timestamp": 469.51166666666666
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000823.png",
+        "image_sha256": "bdea753d196487aa950db9bd8e2b4570d204c44adca38c1e84a7d7deb53d6ca5",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#470.01166666666666",
+        "source_pts": 7,
+        "source_time_base": "1/600",
+        "timestamp": 470.01166666666666
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000824.png",
+        "image_sha256": "5c4a239cea79fd84f2e0cfea9b20cd6a8c6b9d0ead4fa1fbf4f6c2254bab0d27",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#470.5133333333333",
+        "source_pts": 308,
+        "source_time_base": "1/600",
+        "timestamp": 470.5133333333333
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000825.png",
+        "image_sha256": "2e5d41051ca11d275cbd42f075b00473faa015eeffb2bc82604e7715b4d8365a",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#471.0133333333333",
+        "source_pts": 608,
+        "source_time_base": "1/600",
+        "timestamp": 471.0133333333333
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000826.png",
+        "image_sha256": "f752c2677a136a578bfdb22c92a410fdd9394173947db6cae0ae1eea10198dcf",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#472.0133333333333",
+        "source_pts": 1208,
+        "source_time_base": "1/600",
+        "timestamp": 472.0133333333333
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000827.png",
+        "image_sha256": "33b2a5dde10a406b21ef1475dbfb297a0df109934c142a3092d99adbeea370cf",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#473.03",
+        "source_pts": 1818,
+        "source_time_base": "1/600",
+        "timestamp": 473.03
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000828.png",
+        "image_sha256": "6419a92dd3047846e04d8a447b5ebf976816f1eb1dd422509610ac3b6cb9633b",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#473.5133333333333",
+        "source_pts": 2108,
+        "source_time_base": "1/600",
+        "timestamp": 473.5133333333333
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000829.png",
+        "image_sha256": "a7f495f87c80770d3de8e0b79a4a60338f2e6c670353afcbb71c43c653eca5de",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#474.0133333333333",
+        "source_pts": 2408,
+        "source_time_base": "1/600",
+        "timestamp": 474.0133333333333
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000830.png",
+        "image_sha256": "20c21948e20b898ca7f91ffb8323a8ac26bc6f45ca89e0f7158d18f393fe9550",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#474.5133333333333",
+        "source_pts": 2708,
+        "source_time_base": "1/600",
+        "timestamp": 474.5133333333333
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000831.png",
+        "image_sha256": "daef8d75cb268f265910024f3a739fbeffb7c8957b3736a93d0425c017fd3d49",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#475.0133333333333",
+        "source_pts": 3008,
+        "source_time_base": "1/600",
+        "timestamp": 475.0133333333333
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000832.png",
+        "image_sha256": "ebc609d72b219d368063338e3ba231e293fb88c674269267325ad365a36dd381",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#476.0133333333333",
+        "source_pts": 3608,
+        "source_time_base": "1/600",
+        "timestamp": 476.0133333333333
+      },
+      {
+        "image": ".cache/battles/sample_battle_6/event-driven/m238-live-1/frames/000833.png",
+        "image_sha256": "1d7218c49971e6784274a89220e86a8a29354c27bbfbd0fc9d1d27b5191278e9",
+        "source_id": "tests/fixtures/sample_battle_6.mp4#477.0133333333333",
+        "source_pts": 4208,
+        "source_time_base": "1/600",
+        "timestamp": 477.0133333333333
+      }
+    ],
+    "method": "Original cached source frames at existing capture cadence; scoped supplemental inspection only. Overall two-second grid and 2s tolerance unchanged."
+  },
+  "battle_id": "sample_battle_6",
+  "conclusion": {
+    "classification": "C, with source-label correction A",
+    "entry_interval": [
+      470.5133333333333,
+      471.0133333333333
+    ],
+    "exact_instant_unknown": true,
+    "minimum_interval_error_seconds": 3.5,
+    "prediction_unchanged": [
+      474.5133333333333,
+      475.0133333333333
+    ],
+    "reason": "Original bracket straddled recovery and log opening, not two ordinary command frames. Intervening cached native-command frame proves availability before overlay. Detector loses its unconfirmed one-frame candidate at overlay and reanchors after closing; genuinely late, not merely an unknowable obscured onset."
+  },
+  "human_approved": false,
+  "recorded_date": "2026-10-21",
+  "schema": "scoped-human-observation-v22",
+  "scope": "Only chronology around 468–478 seconds; no whole-recording approval",
+  "user_observations": [
+    {
+      "observation": "Previous turn still resolving: Grassy Terrain end-of-turn HP recovery",
+      "provenance": "Firsthand human observation explicitly supplied by user in attached M3.4 v2.2 request",
+      "time_approx_seconds": 470
+    },
+    {
+      "observation": "User opens Battle Log; ordinary battle HUD not visible",
+      "provenance": "Firsthand human observation explicitly supplied by user in attached M3.4 v2.2 request",
+      "time_approx_seconds": 472
+    }
+  ]
+}

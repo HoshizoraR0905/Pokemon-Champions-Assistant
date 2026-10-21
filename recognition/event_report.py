@@ -124,6 +124,12 @@ def video_events(rows, roster, battle_id):
                         events.append(child)
                     continue
             events.append(event)
+    if any(row.get('identity_mode') for row in rows):
+        from recognition.identity_modes import message_identity
+        from knowledge.message_names import MessageNames
+        from tracking.state_engine import event_from_dict
+        names=MessageNames()
+        events=[message_identity(event_from_dict(e),names).to_dict() if e['event_type']=='send_out' else e for e in events]
     return sorted(events,key=lambda e:(e['attributes']['observation_time'],
         {'preview_observation':0,'command_checkpoint':.5,'hud_observation':1,'entry_observation':2}.get(e['event_type'],3),
         e['attributes'].get('announced_order',0),e['event_id']))
@@ -140,7 +146,8 @@ def reconstruct_and_package(paths,folder,report,rows,roster,occurrences):
         verify_seal(folder)
         return json.loads((report/'summary.json').read_text())
     events=video_events(rows,roster,paths.battle_id)
-    engine=StateEngine(BattleState(paths.battle_id,knowledge=dict(reliability_v1=True,reliability_v2=True,identity_v1=True,active_continuity_v1=True,active_persistence_v1=True,command_reconciliation_v1=True)))
+    mode=json.loads((folder/'manifest.json').read_text())['identity'].get('identity_mode')
+    engine=StateEngine(BattleState(paths.battle_id,knowledge=dict(message_identity_v1=bool(mode),reliability_v1=True,reliability_v2=True,identity_v1=True,active_continuity_v1=True,active_persistence_v1=True,command_reconciliation_v1=True)))
     for i,event in enumerate(events,1):
         event['attributes']['sequence']=i
         engine.history.append(EventRecord(event,i,ordering(event_from_dict(event))))
@@ -219,6 +226,8 @@ def reconstruct_cached(paths,folder,report,source,identity):
     from recognition.fast_video import digest
     verify_seal(source)
     parent=json.loads((source/'manifest.json').read_text())
+    if identity.get('identity_mode') != parent['identity'].get('identity_mode'):
+        raise ValueError('Historical recognition cannot reproduce M2.4 identity policy; use a separately named acquisition diagnostic')
     if parent['status']!='complete' or parent['identity']['version']!='event-driven-v1':
         raise ValueError('A completed event-driven recognition stage is required')
     if parent['identity']['video_sha256']!=identity['video_sha256']:raise ValueError('Video source changed')

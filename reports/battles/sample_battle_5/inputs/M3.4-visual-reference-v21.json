@@ -1,0 +1,3250 @@
+{
+  "battle_id": "sample_battle_5",
+  "chronological_review": [
+    {
+      "frame_index": 0,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 0.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 1,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 2.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 2,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 4.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 3,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 6.001666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 4,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 8.001666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 5,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 10.001666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 6,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 12.001666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 7,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 14.001666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 8,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 16.003333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 9,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 18.003333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 10,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 20.003333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 11,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 22.003333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 12,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 24.003333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 13,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 26.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 14,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 28.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 15,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 30.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 16,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 32.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 17,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 34.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 18,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 36.00666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 19,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 38.00666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 20,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 40.00666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 21,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 42.00666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 22,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 44.00666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 23,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 46.00833333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 24,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 48.00833333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 25,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 50.00833333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 26,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 52.00833333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 27,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 54.00833333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 28,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 56.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 29,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 58.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 30,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 60.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 31,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 62.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 32,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 64.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 33,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 66.01166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 34,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 68.01166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 35,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 70.01166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 36,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 72.01166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 37,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 74.01166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 38,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 76.01333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 39,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 78.01333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 40,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 80.01333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 41,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 82.01333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 42,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 84.01333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 43,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 86.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 44,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 88.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 45,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 90.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 46,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 92.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 47,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 94.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 48,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 96.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 49,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 98.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 50,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 100.01666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 51,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 102.01666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 52,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 104.01833333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 53,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 106.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 54,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 108.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 55,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 110.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 56,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 112.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 57,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 114.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 58,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 116.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 59,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 118.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 60,
+      "human_approved": false,
+      "phase": "pre_battle",
+      "review_status": "agent-reviewed",
+      "timestamp": 120.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 61,
+      "human_approved": false,
+      "phase": "initial_sendout",
+      "review_status": "agent-reviewed",
+      "timestamp": 122.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 62,
+      "human_approved": false,
+      "phase": "initial_sendout",
+      "review_status": "agent-reviewed",
+      "timestamp": 124.02166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 63,
+      "human_approved": false,
+      "phase": "initial_sendout",
+      "review_status": "agent-reviewed",
+      "timestamp": 126.02166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 64,
+      "human_approved": false,
+      "phase": "initial_sendout",
+      "review_status": "agent-reviewed",
+      "timestamp": 128.02166666666668,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 65,
+      "human_approved": false,
+      "phase": "initial_sendout",
+      "review_status": "agent-reviewed",
+      "timestamp": 130.02166666666668,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 66,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 132.02166666666668,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 67,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 134.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 68,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 136.02333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 69,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 138.02333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 70,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 140.02333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 71,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 142.02333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 72,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 144.00833333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 73,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 146.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 74,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 148.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 75,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 150.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 76,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 152.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 77,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 154.02666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 78,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 156.02666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 79,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 158.02666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 80,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 160.02666666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 81,
+      "human_approved": false,
+      "phase": "submitted_command_waiting",
+      "review_status": "agent-reviewed",
+      "timestamp": 162.02666666666667,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 82,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 164.02833333333334,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 83,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 166.02833333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 84,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 168.02833333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 85,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 170.02833333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 86,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 172.02833333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 87,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 174.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 88,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 176.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 89,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 178.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 90,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 180.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 91,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 182.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 92,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 184.03166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 93,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 186.03166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 94,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 188.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 95,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 190.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 96,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 192.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 97,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 194.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 98,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 196.0,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 99,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 198.01666666666668,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 100,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 200.01666666666668,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 101,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 202.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 102,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 204.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 103,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 206.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 104,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 208.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 105,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 210.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 106,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 212.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 107,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 214.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 108,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 216.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 109,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 218.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 110,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 220.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 111,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 222.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 112,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 224.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 113,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 226.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 114,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 228.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 115,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 230.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 116,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 232.02166666666668,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 117,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 234.02333333333334,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 118,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 236.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 119,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 238.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 120,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 240.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 121,
+      "human_approved": false,
+      "phase": "submitted_command_waiting",
+      "review_status": "agent-reviewed",
+      "timestamp": 242.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 122,
+      "human_approved": false,
+      "phase": "submitted_command_waiting",
+      "review_status": "agent-reviewed",
+      "timestamp": 244.00833333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 123,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 246.00833333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 124,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 248.00833333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 125,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 250.00833333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 126,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 252.00833333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 127,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 254.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 128,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 256.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 129,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 258.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 130,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 260.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 131,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 262.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 132,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 264.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 133,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 266.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 134,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 268.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 135,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 270.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 136,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 272.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 137,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 274.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 138,
+      "human_approved": false,
+      "phase": "replacement_or_pivot_selection",
+      "review_status": "agent-reviewed",
+      "timestamp": 276.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 139,
+      "human_approved": false,
+      "phase": "replacement_or_pivot_selection",
+      "review_status": "agent-reviewed",
+      "timestamp": 278.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 140,
+      "human_approved": false,
+      "phase": "replacement_or_pivot_selection",
+      "review_status": "agent-reviewed",
+      "timestamp": 280.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 141,
+      "human_approved": false,
+      "phase": "replacement_or_pivot_selection",
+      "review_status": "agent-reviewed",
+      "timestamp": 282.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 142,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 284.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 143,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 286.015,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 144,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 288.015,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 145,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 290.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 146,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 292.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 147,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 294.01666666666665,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 148,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 296.01666666666665,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 149,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 298.01666666666665,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 150,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 300.01666666666665,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 151,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 302.0183333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 152,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 304.0183333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 153,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 306.0183333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 154,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 308.0183333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 155,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 310.0183333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 156,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 312.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 157,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 314.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 158,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 316.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 159,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 318.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 160,
+      "human_approved": false,
+      "phase": "submitted_command_waiting",
+      "review_status": "agent-reviewed",
+      "timestamp": 320.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 161,
+      "human_approved": false,
+      "phase": "submitted_command_waiting",
+      "review_status": "agent-reviewed",
+      "timestamp": 322.02166666666665,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 162,
+      "human_approved": false,
+      "phase": "submitted_command_waiting",
+      "review_status": "agent-reviewed",
+      "timestamp": 324.02166666666665,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 163,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 326.02166666666665,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 164,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 328.02166666666665,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 165,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 330.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 166,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 332.0233333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 167,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 334.0233333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 168,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 336.0233333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 169,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 338.0233333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 170,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 340.0233333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 171,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 342.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 172,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 344.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 173,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 346.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 174,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 348.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 175,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 350.025,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 176,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 352.02666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 177,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 354.02666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 178,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 356.02666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 179,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 358.02666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 180,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 360.02666666666664,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 181,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 362.0283333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 182,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 364.0283333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 183,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 366.0283333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 184,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 368.0283333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 185,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 370.0283333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 186,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 372.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 187,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 374.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 188,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 376.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 189,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 378.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 190,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 380.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 191,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 382.0316666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 192,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 384.0316666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 193,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 386.0316666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 194,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 388.015,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 195,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 390.0316666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 196,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 392.01666666666665,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 197,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 394.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 198,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 396.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 199,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 398.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 200,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 400.0,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 201,
+      "human_approved": false,
+      "phase": "submitted_command_waiting",
+      "review_status": "agent-reviewed",
+      "timestamp": 402.0183333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 202,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 404.00166666666667,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 203,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 406.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 204,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 408.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 205,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 410.00166666666667,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 206,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 412.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 207,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 414.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 208,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 416.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 209,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 418.02,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 210,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 420.00333333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 211,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 422.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 212,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 424.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 213,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 426.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 214,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 428.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 215,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 430.005,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 216,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 432.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 217,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 434.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 218,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 436.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 219,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 438.00666666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 220,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 440.00666666666666,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 221,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 442.0083333333333,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 222,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 444.0083333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 223,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 446.0083333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 224,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 448.0083333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 225,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 450.0083333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 226,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 452.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 227,
+      "human_approved": false,
+      "phase": "normal_command_and_submenus",
+      "review_status": "agent-reviewed",
+      "timestamp": 454.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 228,
+      "human_approved": false,
+      "phase": "submitted_command_waiting",
+      "review_status": "agent-reviewed",
+      "timestamp": 456.01,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 229,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 458.01,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 230,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 460.01,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 231,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 462.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 232,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 464.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 233,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 466.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 234,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 468.01166666666666,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 235,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 470.0283333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 236,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 472.03,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 237,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 474.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 238,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 476.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 239,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 478.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 240,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 480.0133333333333,
+      "transition_proposal": false
+    },
+    {
+      "frame_index": 241,
+      "human_approved": false,
+      "phase": "resolution_or_residual",
+      "review_status": "agent-reviewed",
+      "timestamp": 482.015,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 242,
+      "human_approved": false,
+      "phase": "terminal_presentation",
+      "review_status": "agent-reviewed",
+      "timestamp": 484.0316666666667,
+      "transition_proposal": true
+    },
+    {
+      "frame_index": 243,
+      "human_approved": false,
+      "phase": "terminal_presentation",
+      "review_status": "agent-reviewed",
+      "timestamp": 486.015,
+      "transition_proposal": false
+    }
+  ],
+  "evaluation_role": "development_retrospective",
+  "human_approved": false,
+  "independence": {
+    "prediction_files_used_for_annotation": false,
+    "qualification": "Agent with prior project context and historical report exposure; not blinded human ground truth",
+    "selection": "fixed chronological 0,2,4,... cached source PTS; every grid frame reviewed on contact sheets"
+  },
+  "initial_sendout_completion": {
+    "confidence": "medium",
+    "disposition": "inferred_visible_sequence",
+    "evidence": "visible_transition; adjacent chronological two-second source samples, not an exact instant",
+    "frame_refs": [
+      {
+        "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000261.png",
+        "image_sha256": "d807085249eb4e66570e489127a686c6d5c270761fd2202bc299a40b9957b6eb",
+        "index": 65,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 0.0,
+        "source_id": "tests/fixtures/sample_battle_5.mp4#130.02166666666668",
+        "source_pts": 78013,
+        "source_time_base": "1/600",
+        "target_timestamp": 130,
+        "timestamp": 130.02166666666668
+      },
+      {
+        "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000265.png",
+        "image_sha256": "e4732aa08b67ddc1059f65aa08db7e7c6c5089b3e5b4c73042f069b09f3affe3",
+        "index": 66,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 0.0,
+        "source_id": "tests/fixtures/sample_battle_5.mp4#132.02166666666668",
+        "source_pts": 79213,
+        "source_time_base": "1/600",
+        "target_timestamp": 132,
+        "timestamp": 132.02166666666668
+      }
+    ],
+    "human_approved": false,
+    "interval": [
+      130.02166666666668,
+      132.02166666666668
+    ],
+    "review_status": "agent-reviewed"
+  },
+  "intervals": [
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000265.png",
+          "image_sha256": "e4732aa08b67ddc1059f65aa08db7e7c6c5089b3e5b4c73042f069b09f3affe3",
+          "index": 66,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 0.0,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#132.02166666666668",
+          "source_pts": 79213,
+          "source_time_base": "1/600",
+          "target_timestamp": 132,
+          "timestamp": 132.02166666666668
+        },
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000296.png",
+          "image_sha256": "a2b68e90efa3a2794b4ad8c1e51e67dd13fd466b93b508db9b5a92df19fd6416",
+          "index": 81,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#162.02666666666667",
+          "source_pts": 15316,
+          "source_time_base": "1/600",
+          "target_timestamp": 162,
+          "timestamp": 162.02666666666667
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        132.02166666666668,
+        162.02666666666667
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000366.png",
+          "image_sha256": "3a6199dfb5a4ae45edc548e2d38028e8c2a16e274942ca34c954fe1bde28bf37",
+          "index": 99,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#198.01666666666668",
+          "source_pts": 36910,
+          "source_time_base": "1/600",
+          "target_timestamp": 198,
+          "timestamp": 198.01666666666668
+        },
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000412.png",
+          "image_sha256": "746217c85f2ef61d67f4df56a82a21c9b370650de704ed0754424d14879e8f98",
+          "index": 121,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#242.00666666666666",
+          "source_pts": 63304,
+          "source_time_base": "1/600",
+          "target_timestamp": 242,
+          "timestamp": 242.00666666666666
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        198.01666666666668,
+        242.00666666666666
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000496.png",
+          "image_sha256": "ef0609176f9af40094838469f3c4d9edef978fa6b27d7fb4f2c5cb8215ed16be",
+          "index": 144,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#288.015",
+          "source_pts": 90909,
+          "source_time_base": "1/600",
+          "target_timestamp": 288,
+          "timestamp": 288.015
+        },
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000528.png",
+          "image_sha256": "1119bb5e66ffe355019099d649cd9d5a558fae072692df89c56ed90680315fb3",
+          "index": 160,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#320.02",
+          "source_pts": 110112,
+          "source_time_base": "1/600",
+          "target_timestamp": 320,
+          "timestamp": 320.02
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        288.015,
+        320.02
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000626.png",
+          "image_sha256": "275af59ef0df752f36753c8585391f3e4ed44430dd476499926158b9f26d2e3e",
+          "index": 185,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#370.0283333333333",
+          "source_pts": 140117,
+          "source_time_base": "1/600",
+          "target_timestamp": 370,
+          "timestamp": 370.0283333333333
+        },
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000658.png",
+          "image_sha256": "27cf46400fda83f07f4559bd0274ac312661f8bd4e3d785d086adfe4432d2401",
+          "index": 201,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#402.0183333333333",
+          "source_pts": 159311,
+          "source_time_base": "1/600",
+          "target_timestamp": 402,
+          "timestamp": 402.0183333333333
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        370.0283333333333,
+        402.0183333333333
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000735.png",
+          "image_sha256": "2aed05ceee93963e6624a26136451db70f6686fa09043a05ef24aca771bf3d92",
+          "index": 221,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#442.0083333333333",
+          "source_pts": 183305,
+          "source_time_base": "1/600",
+          "target_timestamp": 442,
+          "timestamp": 442.0083333333333
+        },
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000749.png",
+          "image_sha256": "33e09b21822587c11a8b1e454c9a707d3968a130b3ba91af156cffab4b6aa4cd",
+          "index": 228,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#456.01",
+          "source_pts": 191706,
+          "source_time_base": "1/600",
+          "target_timestamp": 456,
+          "timestamp": 456.01
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        442.0083333333333,
+        456.01
+      ],
+      "kind": "command_submenu",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000479.png",
+          "image_sha256": "1c3fc95b529329c6c1a3ebf6d29119638b2b68d544c8f1c6583583ba5784ec3b",
+          "index": 138,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#276.0133333333333",
+          "source_pts": 83708,
+          "source_time_base": "1/600",
+          "target_timestamp": 276,
+          "timestamp": 276.0133333333333
+        },
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000488.png",
+          "image_sha256": "f6701afe5fc2ac18025551a63f2ab33b544d436dc1b5ec6888e01c882bba2283",
+          "index": 142,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#284.015",
+          "source_pts": 88509,
+          "source_time_base": "1/600",
+          "target_timestamp": 284,
+          "timestamp": 284.015
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        276.0133333333333,
+        284.015
+      ],
+      "kind": "replacement_or_pivot_selection",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000296.png",
+          "image_sha256": "a2b68e90efa3a2794b4ad8c1e51e67dd13fd466b93b508db9b5a92df19fd6416",
+          "index": 81,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#162.02666666666667",
+          "source_pts": 15316,
+          "source_time_base": "1/600",
+          "target_timestamp": 162,
+          "timestamp": 162.02666666666667
+        },
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000299.png",
+          "image_sha256": "49e3421bde338810f3ee152ac40668104b5ba70b6db09e3f78a4af2584aab78d",
+          "index": 82,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#164.02833333333334",
+          "source_pts": 16517,
+          "source_time_base": "1/600",
+          "target_timestamp": 164,
+          "timestamp": 164.02833333333334
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        162.02666666666667,
+        164.02833333333334
+      ],
+      "kind": "submitted_command_waiting",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000412.png",
+          "image_sha256": "746217c85f2ef61d67f4df56a82a21c9b370650de704ed0754424d14879e8f98",
+          "index": 121,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#242.00666666666666",
+          "source_pts": 63304,
+          "source_time_base": "1/600",
+          "target_timestamp": 242,
+          "timestamp": 242.00666666666666
+        },
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000419.png",
+          "image_sha256": "6c08a1d3cd0a1493207218e53d40c64bcec6974d46d7d0597dfe8af239b65266",
+          "index": 123,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#246.00833333333333",
+          "source_pts": 65705,
+          "source_time_base": "1/600",
+          "target_timestamp": 246,
+          "timestamp": 246.00833333333333
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        242.00666666666666,
+        246.00833333333333
+      ],
+      "kind": "submitted_command_waiting",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000528.png",
+          "image_sha256": "1119bb5e66ffe355019099d649cd9d5a558fae072692df89c56ed90680315fb3",
+          "index": 160,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#320.02",
+          "source_pts": 110112,
+          "source_time_base": "1/600",
+          "target_timestamp": 320,
+          "timestamp": 320.02
+        },
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000539.png",
+          "image_sha256": "b0419c84ff767ec094c3fbfb849824c08168fbe4e217833f8363a54681d8423e",
+          "index": 163,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#326.02166666666665",
+          "source_pts": 113713,
+          "source_time_base": "1/600",
+          "target_timestamp": 326,
+          "timestamp": 326.02166666666665
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        320.02,
+        326.02166666666665
+      ],
+      "kind": "submitted_command_waiting",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000658.png",
+          "image_sha256": "27cf46400fda83f07f4559bd0274ac312661f8bd4e3d785d086adfe4432d2401",
+          "index": 201,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#402.0183333333333",
+          "source_pts": 159311,
+          "source_time_base": "1/600",
+          "target_timestamp": 402,
+          "timestamp": 402.0183333333333
+        },
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000660.png",
+          "image_sha256": "528b0de67976587f72691600ae13c2bcd010e8d5dee719fe76aa240953918807",
+          "index": 202,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#404.00166666666667",
+          "source_pts": 160501,
+          "source_time_base": "1/600",
+          "target_timestamp": 404,
+          "timestamp": 404.00166666666667
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        402.0183333333333,
+        404.00166666666667
+      ],
+      "kind": "submitted_command_waiting",
+      "review_status": "agent-reviewed"
+    },
+    {
+      "confidence": "medium",
+      "evidence": "Chronological source-frame sequence; no new turn solely from timer, menu return, message or HUD loss",
+      "frame_refs": [
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000749.png",
+          "image_sha256": "33e09b21822587c11a8b1e454c9a707d3968a130b3ba91af156cffab4b6aa4cd",
+          "index": 228,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#456.01",
+          "source_pts": 191706,
+          "source_time_base": "1/600",
+          "target_timestamp": 456,
+          "timestamp": 456.01
+        },
+        {
+          "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000752.png",
+          "image_sha256": "8b0ce2e28d3df84255d6305e2e72a67592a58bba89f35946c9e9dd7a9a39538c",
+          "index": 229,
+          "origin_provenance": "source_row",
+          "seek_origin_seconds": 136.5,
+          "source_id": "tests/fixtures/sample_battle_5.mp4#458.01",
+          "source_pts": 192906,
+          "source_time_base": "1/600",
+          "target_timestamp": 458,
+          "timestamp": 458.01
+        }
+      ],
+      "human_approved": false,
+      "interval": [
+        456.01,
+        458.01
+      ],
+      "kind": "submitted_command_waiting",
+      "review_status": "agent-reviewed"
+    }
+  ],
+  "review_notes": [
+    "196s still shows a residual sandstorm message; 198s has a command move menu. The targeted user correction 195–196s is retained separately; the two-second grid does not independently resolve that earlier native entry."
+  ],
+  "review_status": "agent-reviewed",
+  "schema_version": "visual-reference-v21",
+  "source_grid": ".cache/battles/sample_battle_5/m34-visual-v21/reference-grid/manifest.json",
+  "source_grid_sha256": "d29386c7f3d2a03be249ac89d655973a096a7ad96dc4108a7d2b71f5ad9ef3da",
+  "termination": {
+    "confidence": "medium",
+    "disposition": "inferred_visible_sequence",
+    "evidence": "Field-to-result transition; adjacent chronological two-second source samples, not an exact instant",
+    "frame_refs": [
+      {
+        "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000800.png",
+        "image_sha256": "5886078bc1a55fb7fe9a459d5bbd9ad60a0a8f49be01638e27b3558117b137be",
+        "index": 241,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 136.5,
+        "source_id": "tests/fixtures/sample_battle_5.mp4#482.015",
+        "source_pts": 207309,
+        "source_time_base": "1/600",
+        "target_timestamp": 482,
+        "timestamp": 482.015
+      },
+      {
+        "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000804.png",
+        "image_sha256": "e01738757ed02d6527445b7edebe241a6c741af020d5baa36bd222d4ad148fb9",
+        "index": 242,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 136.5,
+        "source_id": "tests/fixtures/sample_battle_5.mp4#484.0316666666667",
+        "source_pts": 208519,
+        "source_time_base": "1/600",
+        "target_timestamp": 484,
+        "timestamp": 484.0316666666667
+      }
+    ],
+    "human_approved": false,
+    "interval": [
+      482.015,
+      484.0316666666667
+    ],
+    "review_status": "agent-reviewed"
+  },
+  "turns": [
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Normal command/menu entry after source-observed opening or executed resolution; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000261.png",
+            "image_sha256": "d807085249eb4e66570e489127a686c6d5c270761fd2202bc299a40b9957b6eb",
+            "index": 65,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#130.02166666666668",
+            "source_pts": 78013,
+            "source_time_base": "1/600",
+            "target_timestamp": 130,
+            "timestamp": 130.02166666666668
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000265.png",
+            "image_sha256": "e4732aa08b67ddc1059f65aa08db7e7c6c5089b3e5b4c73042f069b09f3affe3",
+            "index": 66,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 0.0,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#132.02166666666668",
+            "source_pts": 79213,
+            "source_time_base": "1/600",
+            "target_timestamp": 132,
+            "timestamp": 132.02166666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          130.02166666666668,
+          132.02166666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "count": 4,
+        "qualification": "four cards in representative unobscured command frames; menus may occlude"
+      },
+      "human_approved": false,
+      "id": "sample_battle_5:v21-agent-turn:01",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Next ordinary command entry; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000363.png",
+            "image_sha256": "91edaf8db447381be7316eec5fba878293358406c83896e01e8a9f5834f84a16",
+            "index": 98,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#196.0",
+            "source_pts": 35700,
+            "source_time_base": "1/600",
+            "target_timestamp": 196,
+            "timestamp": 196.0
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000366.png",
+            "image_sha256": "3a6199dfb5a4ae45edc548e2d38028e8c2a16e274942ca34c954fe1bde28bf37",
+            "index": 99,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#198.01666666666668",
+            "source_pts": 36910,
+            "source_time_base": "1/600",
+            "target_timestamp": 198,
+            "timestamp": 198.01666666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          196.0,
+          198.01666666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_completion": {
+        "confidence": "uncertain",
+        "disposition": "uncertain",
+        "evidence": "Completion bounded by return/result presentation; not resolved separately from this transition; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000363.png",
+            "image_sha256": "91edaf8db447381be7316eec5fba878293358406c83896e01e8a9f5834f84a16",
+            "index": 98,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#196.0",
+            "source_pts": 35700,
+            "source_time_base": "1/600",
+            "target_timestamp": 196,
+            "timestamp": 196.0
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000366.png",
+            "image_sha256": "3a6199dfb5a4ae45edc548e2d38028e8c2a16e274942ca34c954fe1bde28bf37",
+            "index": 99,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#198.01666666666668",
+            "source_pts": 36910,
+            "source_time_base": "1/600",
+            "target_timestamp": 198,
+            "timestamp": 198.01666666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          196.0,
+          198.01666666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "First visible execution, switching or transformation; excludes submitted-command waiting; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000296.png",
+            "image_sha256": "a2b68e90efa3a2794b4ad8c1e51e67dd13fd466b93b508db9b5a92df19fd6416",
+            "index": 81,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#162.02666666666667",
+            "source_pts": 15316,
+            "source_time_base": "1/600",
+            "target_timestamp": 162,
+            "timestamp": 162.02666666666667
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000299.png",
+            "image_sha256": "49e3421bde338810f3ee152ac40668104b5ba70b6db09e3f78a4af2584aab78d",
+            "index": 82,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#164.02833333333334",
+            "source_pts": 16517,
+            "source_time_base": "1/600",
+            "target_timestamp": 164,
+            "timestamp": 164.02833333333334
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          162.02666666666667,
+          164.02833333333334
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed"
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Normal command/menu entry after source-observed opening or executed resolution; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000363.png",
+            "image_sha256": "91edaf8db447381be7316eec5fba878293358406c83896e01e8a9f5834f84a16",
+            "index": 98,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#196.0",
+            "source_pts": 35700,
+            "source_time_base": "1/600",
+            "target_timestamp": 196,
+            "timestamp": 196.0
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000366.png",
+            "image_sha256": "3a6199dfb5a4ae45edc548e2d38028e8c2a16e274942ca34c954fe1bde28bf37",
+            "index": 99,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#198.01666666666668",
+            "source_pts": 36910,
+            "source_time_base": "1/600",
+            "target_timestamp": 198,
+            "timestamp": 198.01666666666668
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          196.0,
+          198.01666666666668
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "count": 4,
+        "qualification": "four cards in representative unobscured command frames; menus may occlude"
+      },
+      "human_approved": false,
+      "id": "sample_battle_5:v21-agent-turn:02",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Next ordinary command entry; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000492.png",
+            "image_sha256": "ecf8ef854f40ce83911ced546cb9742c6287c5b0f8227276966dc82aa1c86668",
+            "index": 143,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#286.015",
+            "source_pts": 89709,
+            "source_time_base": "1/600",
+            "target_timestamp": 286,
+            "timestamp": 286.015
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000496.png",
+            "image_sha256": "ef0609176f9af40094838469f3c4d9edef978fa6b27d7fb4f2c5cb8215ed16be",
+            "index": 144,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#288.015",
+            "source_pts": 90909,
+            "source_time_base": "1/600",
+            "target_timestamp": 288,
+            "timestamp": 288.015
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          286.015,
+          288.015
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_completion": {
+        "confidence": "uncertain",
+        "disposition": "uncertain",
+        "evidence": "Completion bounded by return/result presentation; not resolved separately from this transition; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000492.png",
+            "image_sha256": "ecf8ef854f40ce83911ced546cb9742c6287c5b0f8227276966dc82aa1c86668",
+            "index": 143,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#286.015",
+            "source_pts": 89709,
+            "source_time_base": "1/600",
+            "target_timestamp": 286,
+            "timestamp": 286.015
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000496.png",
+            "image_sha256": "ef0609176f9af40094838469f3c4d9edef978fa6b27d7fb4f2c5cb8215ed16be",
+            "index": 144,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#288.015",
+            "source_pts": 90909,
+            "source_time_base": "1/600",
+            "target_timestamp": 288,
+            "timestamp": 288.015
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          286.015,
+          288.015
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "First visible execution, switching or transformation; excludes submitted-command waiting; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000412.png",
+            "image_sha256": "746217c85f2ef61d67f4df56a82a21c9b370650de704ed0754424d14879e8f98",
+            "index": 121,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#242.00666666666666",
+            "source_pts": 63304,
+            "source_time_base": "1/600",
+            "target_timestamp": 242,
+            "timestamp": 242.00666666666666
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000415.png",
+            "image_sha256": "dcadeaf3bb2b84638b6f72a1947e51ca7204c90f099a8c6b60483c35fddb996b",
+            "index": 122,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#244.00833333333333",
+            "source_pts": 64505,
+            "source_time_base": "1/600",
+            "target_timestamp": 244,
+            "timestamp": 244.00833333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          242.00666666666666,
+          244.00833333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed"
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Normal command/menu entry after source-observed opening or executed resolution; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000492.png",
+            "image_sha256": "ecf8ef854f40ce83911ced546cb9742c6287c5b0f8227276966dc82aa1c86668",
+            "index": 143,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#286.015",
+            "source_pts": 89709,
+            "source_time_base": "1/600",
+            "target_timestamp": 286,
+            "timestamp": 286.015
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000496.png",
+            "image_sha256": "ef0609176f9af40094838469f3c4d9edef978fa6b27d7fb4f2c5cb8215ed16be",
+            "index": 144,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#288.015",
+            "source_pts": 90909,
+            "source_time_base": "1/600",
+            "target_timestamp": 288,
+            "timestamp": 288.015
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          286.015,
+          288.015
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "count": 4,
+        "qualification": "four cards in representative unobscured command frames; menus may occlude"
+      },
+      "human_approved": false,
+      "id": "sample_battle_5:v21-agent-turn:03",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Next ordinary command entry; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000623.png",
+            "image_sha256": "fb118b93bf8ed57aca91cd528e7c161ba379c89babfd9c73f5fc96bb20366f02",
+            "index": 184,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#368.0283333333333",
+            "source_pts": 138917,
+            "source_time_base": "1/600",
+            "target_timestamp": 368,
+            "timestamp": 368.0283333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000626.png",
+            "image_sha256": "275af59ef0df752f36753c8585391f3e4ed44430dd476499926158b9f26d2e3e",
+            "index": 185,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#370.0283333333333",
+            "source_pts": 140117,
+            "source_time_base": "1/600",
+            "target_timestamp": 370,
+            "timestamp": 370.0283333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          368.0283333333333,
+          370.0283333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_completion": {
+        "confidence": "uncertain",
+        "disposition": "uncertain",
+        "evidence": "Completion bounded by return/result presentation; not resolved separately from this transition; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000623.png",
+            "image_sha256": "fb118b93bf8ed57aca91cd528e7c161ba379c89babfd9c73f5fc96bb20366f02",
+            "index": 184,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#368.0283333333333",
+            "source_pts": 138917,
+            "source_time_base": "1/600",
+            "target_timestamp": 368,
+            "timestamp": 368.0283333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000626.png",
+            "image_sha256": "275af59ef0df752f36753c8585391f3e4ed44430dd476499926158b9f26d2e3e",
+            "index": 185,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#370.0283333333333",
+            "source_pts": 140117,
+            "source_time_base": "1/600",
+            "target_timestamp": 370,
+            "timestamp": 370.0283333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          368.0283333333333,
+          370.0283333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "First visible execution, switching or transformation; excludes submitted-command waiting; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000535.png",
+            "image_sha256": "2b283f24d12174f4df956cf0ad4fe1abfd75598cc14b2a645083f43046af3a31",
+            "index": 162,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#324.02166666666665",
+            "source_pts": 112513,
+            "source_time_base": "1/600",
+            "target_timestamp": 324,
+            "timestamp": 324.02166666666665
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000539.png",
+            "image_sha256": "b0419c84ff767ec094c3fbfb849824c08168fbe4e217833f8363a54681d8423e",
+            "index": 163,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#326.02166666666665",
+            "source_pts": 113713,
+            "source_time_base": "1/600",
+            "target_timestamp": 326,
+            "timestamp": 326.02166666666665
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          324.02166666666665,
+          326.02166666666665
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed"
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Normal command/menu entry after source-observed opening or executed resolution; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000623.png",
+            "image_sha256": "fb118b93bf8ed57aca91cd528e7c161ba379c89babfd9c73f5fc96bb20366f02",
+            "index": 184,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#368.0283333333333",
+            "source_pts": 138917,
+            "source_time_base": "1/600",
+            "target_timestamp": 368,
+            "timestamp": 368.0283333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000626.png",
+            "image_sha256": "275af59ef0df752f36753c8585391f3e4ed44430dd476499926158b9f26d2e3e",
+            "index": 185,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#370.0283333333333",
+            "source_pts": 140117,
+            "source_time_base": "1/600",
+            "target_timestamp": 370,
+            "timestamp": 370.0283333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          368.0283333333333,
+          370.0283333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "count": 4,
+        "qualification": "four cards in representative unobscured command frames; menus may occlude"
+      },
+      "human_approved": false,
+      "id": "sample_battle_5:v21-agent-turn:04",
+      "next_command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Next ordinary command entry; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000732.png",
+            "image_sha256": "34369e96b46f9df9393db5341ae9703af341fb4573f9ef2f452d11a4811f848c",
+            "index": 220,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#440.00666666666666",
+            "source_pts": 182104,
+            "source_time_base": "1/600",
+            "target_timestamp": 440,
+            "timestamp": 440.00666666666666
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000735.png",
+            "image_sha256": "2aed05ceee93963e6624a26136451db70f6686fa09043a05ef24aca771bf3d92",
+            "index": 221,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#442.0083333333333",
+            "source_pts": 183305,
+            "source_time_base": "1/600",
+            "target_timestamp": 442,
+            "timestamp": 442.0083333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          440.00666666666666,
+          442.0083333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_completion": {
+        "confidence": "uncertain",
+        "disposition": "uncertain",
+        "evidence": "Completion bounded by return/result presentation; not resolved separately from this transition; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000732.png",
+            "image_sha256": "34369e96b46f9df9393db5341ae9703af341fb4573f9ef2f452d11a4811f848c",
+            "index": 220,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#440.00666666666666",
+            "source_pts": 182104,
+            "source_time_base": "1/600",
+            "target_timestamp": 440,
+            "timestamp": 440.00666666666666
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000735.png",
+            "image_sha256": "2aed05ceee93963e6624a26136451db70f6686fa09043a05ef24aca771bf3d92",
+            "index": 221,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#442.0083333333333",
+            "source_pts": 183305,
+            "source_time_base": "1/600",
+            "target_timestamp": 442,
+            "timestamp": 442.0083333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          440.00666666666666,
+          442.0083333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "First visible execution, switching or transformation; excludes submitted-command waiting; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000658.png",
+            "image_sha256": "27cf46400fda83f07f4559bd0274ac312661f8bd4e3d785d086adfe4432d2401",
+            "index": 201,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#402.0183333333333",
+            "source_pts": 159311,
+            "source_time_base": "1/600",
+            "target_timestamp": 402,
+            "timestamp": 402.0183333333333
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000660.png",
+            "image_sha256": "528b0de67976587f72691600ae13c2bcd010e8d5dee719fe76aa240953918807",
+            "index": 202,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#404.00166666666667",
+            "source_pts": 160501,
+            "source_time_base": "1/600",
+            "target_timestamp": 404,
+            "timestamp": 404.00166666666667
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          402.0183333333333,
+          404.00166666666667
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed"
+    },
+    {
+      "command_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "Normal command/menu entry after source-observed opening or executed resolution; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000732.png",
+            "image_sha256": "34369e96b46f9df9393db5341ae9703af341fb4573f9ef2f452d11a4811f848c",
+            "index": 220,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#440.00666666666666",
+            "source_pts": 182104,
+            "source_time_base": "1/600",
+            "target_timestamp": 440,
+            "timestamp": 440.00666666666666
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000735.png",
+            "image_sha256": "2aed05ceee93963e6624a26136451db70f6686fa09043a05ef24aca771bf3d92",
+            "index": 221,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#442.0083333333333",
+            "source_pts": 183305,
+            "source_time_base": "1/600",
+            "target_timestamp": 442,
+            "timestamp": 442.0083333333333
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          440.00666666666666,
+          442.0083333333333
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "hud_layout": {
+        "count": 4,
+        "qualification": "four cards in representative unobscured command frames; menus may occlude"
+      },
+      "human_approved": false,
+      "id": "sample_battle_5:v21-agent-turn:05",
+      "next_command_start": {
+        "confidence": "uncertain",
+        "disposition": "unobservable",
+        "evidence": "No executed transition visible on the reviewed source grid",
+        "frame_refs": [],
+        "human_approved": false,
+        "interval": null,
+        "review_status": "agent-reviewed"
+      },
+      "resolution_completion": {
+        "confidence": "uncertain",
+        "disposition": "uncertain",
+        "evidence": "Completion bounded by return/result presentation; not resolved separately from this transition; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000800.png",
+            "image_sha256": "5886078bc1a55fb7fe9a459d5bbd9ad60a0a8f49be01638e27b3558117b137be",
+            "index": 241,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#482.015",
+            "source_pts": 207309,
+            "source_time_base": "1/600",
+            "target_timestamp": 482,
+            "timestamp": 482.015
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000804.png",
+            "image_sha256": "e01738757ed02d6527445b7edebe241a6c741af020d5baa36bd222d4ad148fb9",
+            "index": 242,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#484.0316666666667",
+            "source_pts": 208519,
+            "source_time_base": "1/600",
+            "target_timestamp": 484,
+            "timestamp": 484.0316666666667
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          482.015,
+          484.0316666666667
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "resolution_start": {
+        "confidence": "medium",
+        "disposition": "inferred_visible_sequence",
+        "evidence": "First visible execution, switching or transformation; excludes submitted-command waiting; adjacent chronological two-second source samples, not an exact instant",
+        "frame_refs": [
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000749.png",
+            "image_sha256": "33e09b21822587c11a8b1e454c9a707d3968a130b3ba91af156cffab4b6aa4cd",
+            "index": 228,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#456.01",
+            "source_pts": 191706,
+            "source_time_base": "1/600",
+            "target_timestamp": 456,
+            "timestamp": 456.01
+          },
+          {
+            "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000752.png",
+            "image_sha256": "8b0ce2e28d3df84255d6305e2e72a67592a58bba89f35946c9e9dd7a9a39538c",
+            "index": 229,
+            "origin_provenance": "source_row",
+            "seek_origin_seconds": 136.5,
+            "source_id": "tests/fixtures/sample_battle_5.mp4#458.01",
+            "source_pts": 192906,
+            "source_time_base": "1/600",
+            "target_timestamp": 458,
+            "timestamp": 458.01
+          }
+        ],
+        "human_approved": false,
+        "interval": [
+          456.01,
+          458.01
+        ],
+        "review_status": "agent-reviewed"
+      },
+      "review_status": "agent-reviewed"
+    }
+  ],
+  "win_banner": {
+    "confidence": "medium",
+    "disposition": "inferred_visible_sequence",
+    "evidence": "Result/WIN banner; adjacent chronological two-second source samples, not an exact instant",
+    "frame_refs": [
+      {
+        "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000804.png",
+        "image_sha256": "e01738757ed02d6527445b7edebe241a6c741af020d5baa36bd222d4ad148fb9",
+        "index": 242,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 136.5,
+        "source_id": "tests/fixtures/sample_battle_5.mp4#484.0316666666667",
+        "source_pts": 208519,
+        "source_time_base": "1/600",
+        "target_timestamp": 484,
+        "timestamp": 484.0316666666667
+      },
+      {
+        "image": ".cache/battles/sample_battle_5/event-driven/m238-rc-b5-v1/frames/000808.png",
+        "image_sha256": "bce2a7ba14522de3162e956cf69534bb32477bd41d6f66c5d74bd916fcf8270e",
+        "index": 243,
+        "origin_provenance": "source_row",
+        "seek_origin_seconds": 136.5,
+        "source_id": "tests/fixtures/sample_battle_5.mp4#486.015",
+        "source_pts": 209709,
+        "source_time_base": "1/600",
+        "target_timestamp": 486,
+        "timestamp": 486.015
+      }
+    ],
+    "human_approved": false,
+    "interval": [
+      484.0316666666667,
+      486.015
+    ],
+    "review_status": "agent-reviewed"
+  }
+}
