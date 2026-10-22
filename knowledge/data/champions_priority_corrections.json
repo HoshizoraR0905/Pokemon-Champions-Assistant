@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "version": "champions-mc-priority-corrections-v1",
+  "game_version": "Pokemon Champions",
+  "regulation": "M-C",
+  "reviewed_on": "2026-10-22",
+  "scope": "Only the listed M-C priority fields; historical generations and source assertions are preserved.",
+  "sources": {
+    "showdown": {
+      "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/moves.ts",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "738b8cfc1ca491537c0188546ab697942aaa313c5e6be83a5432edd5dd8997f7",
+      "champions_overrides_sha256": "4471bcc8eb98f4697d040953008330d7951d0bcc70688f3c85e77099b28ea228",
+      "retrieved_on": "2026-10-21",
+      "license": "MIT",
+      "attribution": "Pokemon Showdown contributors",
+      "scope": "Pinned executable Champions reference inherits these move priorities; no Follow Me/Rage Powder override."
+    },
+    "52poke_rage_powder": {
+      "url": "https://wiki.52poke.com/wiki/愤怒粉（招式）",
+      "revision_id": 2617764,
+      "retrieved_on": "2026-10-22",
+      "license": "CC BY-NC-SA 3.0",
+      "attribution": "52Poke contributors",
+      "scope": "Priority 2, Generation VI change 3 to 2; Champions description explicitly present. Revision ID from permanent link; oldid endpoint returned 403."
+    },
+    "52poke_follow_me": {
+      "url": "https://wiki.52poke.com/wiki/看我嘛（招式）",
+      "revision_id": 2304246,
+      "retrieved_on": "2026-10-22",
+      "license": "CC BY-NC-SA 3.0",
+      "attribution": "52Poke contributors",
+      "scope": "Priority 2, Generation VI change 3 to 2; Champions description explicitly present. Revision ID from permanent link; oldid endpoint returned 403."
+    },
+    "user_correction": {
+      "date": "2026-10-22",
+      "scope": "Champions Regulation M-C uses Rage Powder +2; corroborated by pinned reference, not an independently measured video result."
+    }
+  },
+  "moves": {
+    "pokeapi:move:266": {
+      "name": "Follow Me",
+      "previous_priority": 3,
+      "priority": 2,
+      "evidence": [
+        "showdown",
+        "52poke_follow_me"
+      ]
+    },
+    "pokeapi:move:476": {
+      "name": "Rage Powder",
+      "previous_priority": 3,
+      "priority": 2,
+      "evidence": [
+        "showdown",
+        "52poke_rage_powder",
+        "user_correction"
+      ]
+    }
+  }
+}

@@ -1,0 +1,621 @@
+{
+  "version": "replay-source-review-v1",
+  "origin": "recorded",
+  "reviewer": "codex-cached-frame-review-2026-10-22",
+  "scope": "Cached original switch/transformation frames visually inspected; no complete-video absence certification.",
+  "battles": {
+    "sample_battle_10": {
+      "sources": {
+        "event:d6ff84ff11a91008be956b79": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000202.png",
+          "sha256": "8b1e09d76c1fb95f632bf3189249735e12361e9d7aba7450b6cce6a40903dda9",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#100.51666666666667",
+          "timestamp": 100.51666666666667
+        },
+        "event:e1a71f2dc00775dca07e0437": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000202.png",
+          "sha256": "8b1e09d76c1fb95f632bf3189249735e12361e9d7aba7450b6cce6a40903dda9",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#100.51666666666667",
+          "timestamp": 100.51666666666667
+        },
+        "event:404ce253d0b82838cf474865": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000210.png",
+          "sha256": "b4e5be84ea3b4743d7aa001b605a124b89b45c60b7e1a4c38874e2ba688d5eea",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#104.51833333333333",
+          "timestamp": 104.51833333333333
+        },
+        "event:78721bba8037a0b560d196d3": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000210.png",
+          "sha256": "b4e5be84ea3b4743d7aa001b605a124b89b45c60b7e1a4c38874e2ba688d5eea",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#104.51833333333333",
+          "timestamp": 104.51833333333333
+        },
+        "event:bda2d9b565498f83c34eef05": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000260.png",
+          "sha256": "36b4029c2f3f382d9e38369312354f695f1f49b9668b668035a2cb83bf41fa83",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#139.50666666666666",
+          "timestamp": 139.50666666666666
+        },
+        "event:37cc4a42cb5fdaf1c55edeb3": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000330.png",
+          "sha256": "5c5f1b7e10fb63ea8d791b5e5e4ae573beee40da008fb84900d24e8c5c963b48",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#179.01333333333332",
+          "timestamp": 179.01333333333332
+        },
+        "event:4057a3c4da8e6cd777b0781b": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000336.png",
+          "sha256": "1c9b891853db6aa463e9a93f753b5abfc071d361ebed884807c85c0dc6093cbc",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#182.03",
+          "timestamp": 182.03
+        },
+        "event:5002ce3a46034784dd60d846": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000523.png",
+          "sha256": "59a5bf71f6eca881eabb0af1136b8d9fdfaaed05e79d25eb739b257112e3f720",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#301.0",
+          "timestamp": 301.0
+        },
+        "event:a6f465ff7bbaed4ad5f32a7a": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000529.png",
+          "sha256": "758289347b772428fff346bc5336eb175cd70de7e321641cde8678041e9c46f0",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#304.0183333333333",
+          "timestamp": 304.0183333333333
+        },
+        "event:f297627ecf80e405e679f732": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000645.png",
+          "sha256": "a714c06c59618ced72a6c04982c38ea467deefd6eab2b25a68ac42934c742157",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#373.0133333333333",
+          "timestamp": 373.0133333333333
+        },
+        "event:80b8472f6aceca4d638489c8": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000743.png",
+          "sha256": "445e090db501c466845ce81f4bd7cf809734e9fb5ff913b79e902a7e924ea6f9",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#422.005",
+          "timestamp": 422.005
+        },
+        "event:f4f322ec484a2725363f970b": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000802.png",
+          "sha256": "e4951234d1cdecaf8891549d15ba07698af4b8a1b1a803065711667365bd85a3",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#473.5133333333333",
+          "timestamp": 473.5133333333333
+        },
+        "event:04dffc4ecefc1b9f0f1d6aae": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000808.png",
+          "sha256": "b612fb0476f6597eae942a043aefdeefb8fb4e170f77031fa94d26f87fbd202d",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#476.5133333333333",
+          "timestamp": 476.5133333333333
+        },
+        "event:c7fd866d225db77eb8818749": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/001066.png",
+          "sha256": "39328308f1796b20e765d4bede5cccd47703f76312d4fea4b258b492ce3d56de",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#624.505",
+          "timestamp": 624.505
+        },
+        "event:485473834fb5f0f7a0de4e4f": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/001075.png",
+          "sha256": "b93620afccc9bc096c6b0fd6eb2e8ad56726ab924309aebfb0c617bd905e7dd0",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#629.0066666666667",
+          "timestamp": 629.0066666666667
+        },
+        "event:a149f2fa7319c0c13bc73b23": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/001209.png",
+          "sha256": "842ba75a3436c6271e807f5000f5dec024bc9749cbbb0585e0aba5ac1ab50ce8",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#708.52",
+          "timestamp": 708.52
+        }
+      },
+      "transformations": [
+        {
+          "event_id": "event:bda2d9b565498f83c34eef05",
+          "individual": "sample_battle_10:opponent:encounter:5797cbdf05774388",
+          "original_form": "pokeapi:species:768",
+          "resulting_form": "pokeapi:form:10541",
+          "timestamp": 139.50666666666666,
+          "interval": [
+            109.01833333333333,
+            139.50666666666666
+          ],
+          "basis": "Transformation message plus resulting silhouette in original cached frame; canonical form from existing KnowledgeBase; no numerical move-order deduction",
+          "confidence": "agent_source_reviewed",
+          "source": {
+            "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000260.png",
+            "sha256": "36b4029c2f3f382d9e38369312354f695f1f49b9668b668035a2cb83bf41fa83",
+            "source_id": "tests/fixtures/sample_battle_10.mp4#139.50666666666666",
+            "timestamp": 139.50666666666666
+          },
+          "timing_basis": "Conservative normal-command-to-confirmation interval; apply only at confirmation upper bound, animation completion not inferred from spacing."
+        },
+        {
+          "event_id": "event:f297627ecf80e405e679f732",
+          "individual": "sample_battle_10:self:encounter:08c3ae8785aa37a5",
+          "original_form": "pokeapi:species:6",
+          "resulting_form": "pokeapi:form:10135",
+          "timestamp": 373.0133333333333,
+          "interval": [
+            341.0233333333333,
+            373.0133333333333
+          ],
+          "basis": "Transformation message plus resulting silhouette in original cached frame; canonical form from existing KnowledgeBase; no numerical move-order deduction",
+          "confidence": "agent_source_reviewed",
+          "source": {
+            "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000645.png",
+            "sha256": "a714c06c59618ced72a6c04982c38ea467deefd6eab2b25a68ac42934c742157",
+            "source_id": "tests/fixtures/sample_battle_10.mp4#373.0133333333333",
+            "timestamp": 373.0133333333333
+          },
+          "timing_basis": "Conservative normal-command-to-confirmation interval; apply only at confirmation upper bound, animation completion not inferred from spacing."
+        }
+      ],
+      "identity_links": [
+        {
+          "alias": "sample_battle_10:self:encounter:08c3ae8785aa37a5",
+          "individual": "sample_battle_10:self:encounter:f892fde846f92c2f",
+          "available_at": 304.0183333333333,
+          "source_event_id": "event:a6f465ff7bbaed4ad5f32a7a",
+          "source": {
+            "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000529.png",
+            "sha256": "758289347b772428fff346bc5336eb175cd70de7e321641cde8678041e9c46f0",
+            "source_id": "tests/fixtures/sample_battle_10.mp4#304.0183333333333",
+            "timestamp": 304.0183333333333
+          },
+          "basis": "Reviewed outbound/return messages plus user-confirmed unique six-species Team 7 roster binding; source encounter IDs retained. Available only at this return."
+        },
+        {
+          "alias": "sample_battle_10:self:encounter:e6eeb30ba69dd5e6",
+          "individual": "sample_battle_10:self:encounter:ef654e4bc37da7db",
+          "available_at": 476.5133333333333,
+          "source_event_id": "event:04dffc4ecefc1b9f0f1d6aae",
+          "source": {
+            "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000808.png",
+            "sha256": "b612fb0476f6597eae942a043aefdeefb8fb4e170f77031fa94d26f87fbd202d",
+            "source_id": "tests/fixtures/sample_battle_10.mp4#476.5133333333333",
+            "timestamp": 476.5133333333333
+          },
+          "basis": "Reviewed outbound/return messages plus user-confirmed unique six-species Team 7 roster binding; source encounter IDs retained. Available only at this return."
+        },
+        {
+          "alias": "sample_battle_10:self:encounter:07c845e700f1d41e",
+          "individual": "sample_battle_10:self:encounter:f892fde846f92c2f",
+          "available_at": 708.52,
+          "source_event_id": "event:a149f2fa7319c0c13bc73b23",
+          "source": {
+            "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/001209.png",
+            "sha256": "842ba75a3436c6271e807f5000f5dec024bc9749cbbb0585e0aba5ac1ab50ce8",
+            "source_id": "tests/fixtures/sample_battle_10.mp4#708.52",
+            "timestamp": 708.52
+          },
+          "basis": "Reviewed outbound/return messages plus user-confirmed unique six-species Team 7 roster binding; source encounter IDs retained. Available only at this return."
+        }
+      ]
+    },
+    "sample_battle_11": {
+      "sources": {
+        "event:92459857ccd4ea71738ddeee": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000213.png",
+          "sha256": "32f74991944c1584bc67a4b300f6c0d56841a2b67e9d19fb185fa98fa952c7f0",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#106.01833333333333",
+          "timestamp": 106.01833333333333
+        },
+        "event:3b1e14d7facfc6e90f074ef8": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000213.png",
+          "sha256": "32f74991944c1584bc67a4b300f6c0d56841a2b67e9d19fb185fa98fa952c7f0",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#106.01833333333333",
+          "timestamp": 106.01833333333333
+        },
+        "event:fa143657fa81e1408f56f9b9": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000221.png",
+          "sha256": "1545d1bf898fa2f1102d3c0162d3040ee2923f5dcd7bc92c07cfb02b7756a977",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#110.01833333333333",
+          "timestamp": 110.01833333333333
+        },
+        "event:bf629dbae856100385bc7ed0": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000221.png",
+          "sha256": "1545d1bf898fa2f1102d3c0162d3040ee2923f5dcd7bc92c07cfb02b7756a977",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#110.01833333333333",
+          "timestamp": 110.01833333333333
+        },
+        "event:64f3c610af2085dc041a4b15": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000284.png",
+          "sha256": "9eb448d8708043a3dad4e0fef2d195755d51c425fd6503ac4ea784955877b41f",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#158.02666666666667",
+          "timestamp": 158.02666666666667
+        },
+        "event:0dc88a6a717b3108c4043f74": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000359.png",
+          "sha256": "7728c40eb6e287c429710b7e1a7440525d7237d979af48bd057281b607f21204",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#210.00166666666667",
+          "timestamp": 210.00166666666667
+        },
+        "event:db486631ab2fd5d487785ac4": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000366.png",
+          "sha256": "5f014e4d9101850840263d55eabd512287e1777f44fc9bd91006ca582b8b8010",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#213.50333333333333",
+          "timestamp": 213.50333333333333
+        },
+        "event:0410193cd63cc28f227f7959": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000529.png",
+          "sha256": "c70017fe7b9b938d58c404e1ca3ea1a47b7e162e3a9983e3e87578ccb3496c7c",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#326.02166666666665",
+          "timestamp": 326.02166666666665
+        },
+        "event:936578674b8fce0b75c54dae": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000536.png",
+          "sha256": "4a5115b2790170d3945272251af2cd1c25c9fde36dbabb38099086af05c10cef",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#329.52166666666665",
+          "timestamp": 329.52166666666665
+        },
+        "event:b5e84c3470a900b5422c4269": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000554.png",
+          "sha256": "b967738ba26cabd07badfb9c1d7a8ca01f8052d382428c918be56cb608141276",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#338.5233333333333",
+          "timestamp": 338.5233333333333
+        },
+        "event:f173de7fdd2ca57f9233bbbe": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000566.png",
+          "sha256": "922a438ad786606cf34d0ee37b8f77bc89ccdb4134c6561c4eec77031f567e4e",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#344.525",
+          "timestamp": 344.525
+        },
+        "event:b5c6ea6a163cfcf66443cd86": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000673.png",
+          "sha256": "81a30ea442f254faf1986ce3b3e6c15439c383766eb95fd7239cb0fec5d906e6",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#418.00333333333333",
+          "timestamp": 418.00333333333333
+        },
+        "event:53a0183a9a352b53c755e860": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000781.png",
+          "sha256": "74b58a503bb2dc9dc5c68cb040c350bed0f7a8aeaab8054f1a440fd75250ab61",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#494.51666666666665",
+          "timestamp": 494.51666666666665
+        },
+        "event:891e31973e342f9eaaa5e269": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000787.png",
+          "sha256": "f961c9c283f1b9afe8014932ad960f7970eaa2d6aff7ffaa35b486003c2e59b5",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#497.51666666666665",
+          "timestamp": 497.51666666666665
+        },
+        "event:27365fe943246f5ac18d2091": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000794.png",
+          "sha256": "a4380184c15cc22a2a722c805fc6e2e22443f7a5992d63a37d3f1dea199082c2",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#501.0183333333333",
+          "timestamp": 501.0183333333333
+        },
+        "event:ce470be35d7b0580a433b68a": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000800.png",
+          "sha256": "5863caf2657d6b48681a73fb5a7c67753b245f96bfed72ee3a9130bd01982c42",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#504.0183333333333",
+          "timestamp": 504.0183333333333
+        },
+        "event:34f18c300b9fbe4b8fb87548": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000812.png",
+          "sha256": "ecba5f264e6166c1fb2740789b8573a590b3844d3e789cc1ba54419a61408c1b",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#510.02",
+          "timestamp": 510.02
+        },
+        "event:dccb9fef1a806eee21ef0126": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000818.png",
+          "sha256": "26e7b1d4d7bc9804ae89316d873a1719ddf274ec6b38e1b46d30de8634ce92ef",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#513.02",
+          "timestamp": 513.02
+        },
+        "event:152cfe85b695d6a8e0492833": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000935.png",
+          "sha256": "059968e3c4a5935a0e50f891904c964d45c618cfd30e9d518dd55c962f755151",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#585.0316666666666",
+          "timestamp": 585.0316666666666
+        },
+        "event:fd4e622bd5c1e765c8106011": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000941.png",
+          "sha256": "f12074c8179ea4cb39b19620a78327ab472e4b532eb26085418765fa3b545bac",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#588.0316666666666",
+          "timestamp": 588.0316666666666
+        },
+        "event:a4efa527dc0ee35cf3b67268": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000948.png",
+          "sha256": "d923e9d657c541f1041de0701d4475f4bea83d8472bee9495828747679fec972",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#591.5",
+          "timestamp": 591.5
+        },
+        "event:48f4a09d9b999a55ce53e33a": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000954.png",
+          "sha256": "19181b02e1475793bcb1ab653b193a5612c291de34fe87d5055cc7629cdb94d4",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#594.5",
+          "timestamp": 594.5
+        },
+        "event:a846f6e9012f242c1029fffa": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000265.png",
+          "sha256": "2b19f007e751223066056d658be6f1aac69c914ba9015a515146c8952df512f0",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#148.525",
+          "timestamp": 148.525
+        }
+      },
+      "transformations": [
+        {
+          "event_id": "event:64f3c610af2085dc041a4b15",
+          "individual": "sample_battle_11:opponent:encounter:3a97ce2b12c2c2fe",
+          "original_form": "pokeapi:species:26",
+          "resulting_form": "pokeapi:form:10530",
+          "timestamp": 158.02666666666667,
+          "interval": [
+            148.525,
+            158.02666666666667
+          ],
+          "basis": "Transformation message plus resulting silhouette in original cached frame; canonical form from existing KnowledgeBase; no numerical move-order deduction; explicit Raichunite Y reaction message at 148.525s resolves X/Y independently of silhouette",
+          "confidence": "agent_source_reviewed",
+          "source": {
+            "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000284.png",
+            "sha256": "9eb448d8708043a3dad4e0fef2d195755d51c425fd6503ac4ea784955877b41f",
+            "source_id": "tests/fixtures/sample_battle_11.mp4#158.02666666666667",
+            "timestamp": 158.02666666666667
+          },
+          "timing_basis": "Conservative normal-command-to-confirmation interval; apply only at confirmation upper bound, animation completion not inferred from spacing.",
+          "supporting_sources": [
+            {
+              "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000265.png",
+              "sha256": "2b19f007e751223066056d658be6f1aac69c914ba9015a515146c8952df512f0",
+              "source_id": "tests/fixtures/sample_battle_11.mp4#148.525",
+              "timestamp": 148.525
+            }
+          ]
+        },
+        {
+          "event_id": "event:b5c6ea6a163cfcf66443cd86",
+          "individual": "sample_battle_11:self:encounter:08cf976ab95a28c4",
+          "original_form": "pokeapi:species:445",
+          "resulting_form": "pokeapi:form:10534",
+          "timestamp": 418.00333333333333,
+          "interval": [
+            367.0283333333333,
+            418.00333333333333
+          ],
+          "basis": "Transformation message plus resulting silhouette in original cached frame; canonical form from existing KnowledgeBase; no numerical move-order deduction",
+          "confidence": "agent_source_reviewed",
+          "source": {
+            "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000673.png",
+            "sha256": "81a30ea442f254faf1986ce3b3e6c15439c383766eb95fd7239cb0fec5d906e6",
+            "source_id": "tests/fixtures/sample_battle_11.mp4#418.00333333333333",
+            "timestamp": 418.00333333333333
+          },
+          "timing_basis": "Conservative normal-command-to-confirmation interval; apply only at confirmation upper bound, animation completion not inferred from spacing."
+        }
+      ],
+      "identity_links": [
+        {
+          "alias": "sample_battle_11:opponent:encounter:19079a89fcbea8dd",
+          "individual": "sample_battle_11:opponent:encounter:3a97ce2b12c2c2fe",
+          "available_at": 497.51666666666665,
+          "source_event_id": "event:891e31973e342f9eaaa5e269",
+          "source": {
+            "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000787.png",
+            "sha256": "f961c9c283f1b9afe8014932ad960f7970eaa2d6aff7ffaa35b486003c2e59b5",
+            "source_id": "tests/fixtures/sample_battle_11.mp4#497.51666666666665",
+            "timestamp": 497.51666666666665
+          },
+          "basis": "Reviewed outbound/return messages and unique same-species source roster; source encounter IDs retained as aliases, no pre-return identity merge. Raichu return silhouette corroborated at 501.018s."
+        },
+        {
+          "alias": "sample_battle_11:opponent:encounter:588ad8ada0dc493b",
+          "individual": "sample_battle_11:opponent:encounter:d44d3edfc6ac6181",
+          "available_at": 344.525,
+          "source_event_id": "event:f173de7fdd2ca57f9233bbbe",
+          "source": {
+            "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000566.png",
+            "sha256": "922a438ad786606cf34d0ee37b8f77bc89ccdb4134c6561c4eec77031f567e4e",
+            "source_id": "tests/fixtures/sample_battle_11.mp4#344.525",
+            "timestamp": 344.525
+          },
+          "basis": "Reviewed outbound/return messages and unique same-species source roster; source encounter IDs retained as aliases, no pre-return identity merge. Raichu return silhouette corroborated at 501.018s."
+        },
+        {
+          "alias": "sample_battle_11:opponent:encounter:53dcbee1aa90ece8",
+          "individual": "sample_battle_11:opponent:encounter:d44d3edfc6ac6181",
+          "available_at": 594.5,
+          "source_event_id": "event:48f4a09d9b999a55ce53e33a",
+          "source": {
+            "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000954.png",
+            "sha256": "19181b02e1475793bcb1ab653b193a5612c291de34fe87d5055cc7629cdb94d4",
+            "source_id": "tests/fixtures/sample_battle_11.mp4#594.5",
+            "timestamp": 594.5
+          },
+          "basis": "Reviewed outbound/return messages and unique same-species source roster; source encounter IDs retained as aliases, no pre-return identity merge. Raichu return silhouette corroborated at 501.018s."
+        },
+        {
+          "alias": "sample_battle_11:opponent:encounter:34426b1801e12355",
+          "individual": "sample_battle_11:opponent:encounter:02d2cc36c1af82e7",
+          "available_at": 504.0183333333333,
+          "source_event_id": "event:ce470be35d7b0580a433b68a",
+          "source": {
+            "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000800.png",
+            "sha256": "5863caf2657d6b48681a73fb5a7c67753b245f96bfed72ee3a9130bd01982c42",
+            "source_id": "tests/fixtures/sample_battle_11.mp4#504.0183333333333",
+            "timestamp": 504.0183333333333
+          },
+          "basis": "Reviewed outbound/return messages and unique same-species source roster; source encounter IDs retained as aliases, no pre-return identity merge. Raichu return silhouette corroborated at 501.018s."
+        },
+        {
+          "alias": "sample_battle_11:self:encounter:67f31fc4436cec80",
+          "individual": "sample_battle_11:self:encounter:1ee8e5a23be08158",
+          "available_at": 588.0316666666666,
+          "source_event_id": "event:fd4e622bd5c1e765c8106011",
+          "source": {
+            "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000941.png",
+            "sha256": "f12074c8179ea4cb39b19620a78327ab472e4b532eb26085418765fa3b545bac",
+            "source_id": "tests/fixtures/sample_battle_11.mp4#588.0316666666666",
+            "timestamp": 588.0316666666666
+          },
+          "basis": "Reviewed outbound/return messages plus user-confirmed unique six-species Team 7 roster binding; source encounter IDs retained. Available only at this return."
+        }
+      ],
+      "revelations": [
+        {
+          "event_id": "event:a846f6e9012f242c1029fffa",
+          "individual": "sample_battle_11:opponent:encounter:3a97ce2b12c2c2fe",
+          "timestamp": 148.525,
+          "item": "Raichunite Y",
+          "basis": "Explicit held-stone Y reaction message in original frame; same visible base Raichu precedes animation",
+          "source": {
+            "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000265.png",
+            "sha256": "2b19f007e751223066056d658be6f1aac69c914ba9015a515146c8952df512f0",
+            "source_id": "tests/fixtures/sample_battle_11.mp4#148.525",
+            "timestamp": 148.525
+          }
+        }
+      ],
+      "phase_reviews": {
+        "event:152cfe85b695d6a8e0492833": {
+          "phase": "voluntary_switch",
+          "command_source": {
+            "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000908.png",
+            "sha256": "3e3b9a537f6727caf10fad210c3a27b4c26fea70df33a8577195f18388a68965",
+            "source_id": "tests/fixtures/sample_battle_11.mp4#561.0283333333333",
+            "timestamp": 561.0283333333333
+          },
+          "partial_window_ref": "tests/fixtures/sample_battle_11.mp4#561.0283333333333",
+          "basis": "Normal command menu directly visible at 561.028s, then explicit recalls/arrivals before any ordinary move; frozen final segment assignment remains unresolved."
+        },
+        "event:a4efa527dc0ee35cf3b67268": {
+          "phase": "voluntary_switch",
+          "command_source": {
+            "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000908.png",
+            "sha256": "3e3b9a537f6727caf10fad210c3a27b4c26fea70df33a8577195f18388a68965",
+            "source_id": "tests/fixtures/sample_battle_11.mp4#561.0283333333333",
+            "timestamp": 561.0283333333333
+          },
+          "partial_window_ref": "tests/fixtures/sample_battle_11.mp4#561.0283333333333",
+          "basis": "Normal command menu directly visible at 561.028s, then explicit recalls/arrivals before any ordinary move; frozen final segment assignment remains unresolved."
+        }
+      }
+    },
+    "sample_battle_12": {
+      "sources": {
+        "event:923c96d890cc74fa8f41d2f4": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000212.png",
+          "sha256": "771c1b3e46c062ca123715772b0acf5b749f1c2b84e9948eaaeccb3d5624be39",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#105.50166666666667",
+          "timestamp": 105.50166666666667
+        },
+        "event:2a4e00bded6e7a61909e3d27": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000212.png",
+          "sha256": "771c1b3e46c062ca123715772b0acf5b749f1c2b84e9948eaaeccb3d5624be39",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#105.50166666666667",
+          "timestamp": 105.50166666666667
+        },
+        "event:eb82792e5a86408eaadd05b1": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000219.png",
+          "sha256": "d1608958374c38a1c33a53d0be3de1bddd1b368950532e46afb2480cbb14664f",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#109.00166666666667",
+          "timestamp": 109.00166666666667
+        },
+        "event:153971674881d63675efd54a": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000219.png",
+          "sha256": "d1608958374c38a1c33a53d0be3de1bddd1b368950532e46afb2480cbb14664f",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#109.00166666666667",
+          "timestamp": 109.00166666666667
+        },
+        "event:e1acb7ae8cf9e3c4685dad07": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000286.png",
+          "sha256": "c8ffb14299a3c0873b86ea36163cae91844a016e65ace1cb07a3477ace7be285",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#159.51",
+          "timestamp": 159.51
+        },
+        "event:2313d840b879191c7e1c03bb": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000479.png",
+          "sha256": "55b1d632c6a2b2cbfc8c7e7d3e0e46eee3115af37589098319fff32fba882fb7",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#283.515",
+          "timestamp": 283.515
+        },
+        "event:dee035928e8a0b57828173c1": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000485.png",
+          "sha256": "1cace60f0709af345e07a3903fecd836df4fac9256017c3ed79999a342b0eb3b",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#286.5316666666667",
+          "timestamp": 286.5316666666667
+        },
+        "event:321601aab179b296b46362d8": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000576.png",
+          "sha256": "51396d932a3d7c5b82f9d31bd3a95520732bf16a2b7a1743dd956c46d8856146",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#332.00666666666666",
+          "timestamp": 332.00666666666666
+        },
+        "event:e65858529de07bbfcddc08de": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000688.png",
+          "sha256": "c0b2085aee990cd8f042d0c07a34eccc1d6e1ef0eed941eafb95b414c5a8c6ca",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#400.51666666666665",
+          "timestamp": 400.51666666666665
+        },
+        "event:71ea5fd983eaf7e7cc9dba5a": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000834.png",
+          "sha256": "659a69d95d71f5f472c08d6a62d8143badb0c0642a701eecaf69bab2d8b87965",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#501.00166666666667",
+          "timestamp": 501.00166666666667
+        },
+        "event:25abde3c7497e961ad442d28": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000840.png",
+          "sha256": "4ae526aab3d3ec8375dfeb075929010fdcfcddee09c518a6d2527705ef1947e1",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#504.00166666666667",
+          "timestamp": 504.00166666666667
+        },
+        "event:a6750efc115434ae57314975": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/001035.png",
+          "sha256": "639e27e364d9686ffafce155f06170d70617c0747ada3090feab529b2f0290ae",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#604.5016666666667",
+          "timestamp": 604.5016666666667
+        },
+        "event:46c093fe726d05a9acb0308d": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/001152.png",
+          "sha256": "299b2f3e87d6439cb0ee24afc27821cdac42360bcdb5bfc34e86bdb7079cc54a",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#675.53",
+          "timestamp": 675.53
+        }
+      },
+      "transformations": [
+        {
+          "event_id": "event:e1acb7ae8cf9e3c4685dad07",
+          "individual": "sample_battle_12:self:encounter:e73927722697aba4",
+          "original_form": "pokeapi:species:6",
+          "resulting_form": "pokeapi:form:10135",
+          "timestamp": 159.51,
+          "interval": [
+            116.00333333333333,
+            159.51
+          ],
+          "basis": "Transformation message plus resulting silhouette in original cached frame; canonical form from existing KnowledgeBase; no numerical move-order deduction",
+          "confidence": "agent_source_reviewed",
+          "source": {
+            "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000286.png",
+            "sha256": "c8ffb14299a3c0873b86ea36163cae91844a016e65ace1cb07a3477ace7be285",
+            "source_id": "tests/fixtures/sample_battle_12.mp4#159.51",
+            "timestamp": 159.51
+          },
+          "timing_basis": "Conservative normal-command-to-confirmation interval; apply only at confirmation upper bound, animation completion not inferred from spacing."
+        }
+      ],
+      "identity_links": [
+        {
+          "alias": "sample_battle_12:self:encounter:d7800ede6869edc1",
+          "individual": "sample_battle_12:self:encounter:7bcf8ecddd7f2233",
+          "available_at": 504.00166666666667,
+          "source_event_id": "event:25abde3c7497e961ad442d28",
+          "source": {
+            "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000840.png",
+            "sha256": "4ae526aab3d3ec8375dfeb075929010fdcfcddee09c518a6d2527705ef1947e1",
+            "source_id": "tests/fixtures/sample_battle_12.mp4#504.00166666666667",
+            "timestamp": 504.00166666666667
+          },
+          "basis": "Reviewed outbound/return messages plus user-confirmed unique six-species Team 7 roster binding; source encounter IDs retained. Available only at this return."
+        },
+        {
+          "alias": "sample_battle_12:self:encounter:7f6fbb497bc011b6",
+          "individual": "sample_battle_12:self:encounter:bc18eb30a1f3a68a",
+          "available_at": 675.53,
+          "source_event_id": "event:46c093fe726d05a9acb0308d",
+          "source": {
+            "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/001152.png",
+            "sha256": "299b2f3e87d6439cb0ee24afc27821cdac42360bcdb5bfc34e86bdb7079cc54a",
+            "source_id": "tests/fixtures/sample_battle_12.mp4#675.53",
+            "timestamp": 675.53
+          },
+          "basis": "Reviewed outbound/return messages plus user-confirmed unique six-species Team 7 roster binding; source encounter IDs retained. Available only at this return."
+        }
+      ]
+    }
+  }
+}

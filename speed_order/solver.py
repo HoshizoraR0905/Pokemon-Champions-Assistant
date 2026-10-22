@@ -16,7 +16,18 @@ def domain(values,limit=4096):
 
 
 def infer_speed(*,observations,candidate_speeds=None,profile='champions-evidence-only-v1',variables=None,
-                champions=None,max_assignments=128,max_evaluations=100000):
+                champions=None,max_assignments=128,max_evaluations=100000,
+                schema_version=1,configurations=None,max_branches=4096):
+    if schema_version == 2:
+        from .conditional import infer_action_speed
+        if candidate_speeds is not None or variables is not None or champions is not None:
+            return dict(schema_version=2,status='unresolved',feasible=None,
+                        diagnostics=['v2 uses explicit configurations; do not mix v1 domain/variables'])
+        return infer_action_speed(observations=observations,configurations=configurations,
+            profile=profile,max_evaluations=max_evaluations,max_branches=max_branches)
+    if schema_version != 1 or configurations is not None:
+        return dict(schema_version=1,status='insufficient_information',feasible=None,
+                    diagnostics=['Unsupported schema version or v2 configurations supplied to v1'])
     result=dict(schema_version=1,status='insufficient_information',feasible=None,numerical_feasible=None,
         candidate_domain=[],scenarios=[],per_observation=[],conflict=None,diagnostics=[],
         champions=None,compatible_training=None,provenance=provenance(),work={'evaluations':0,'memo_hits':0})

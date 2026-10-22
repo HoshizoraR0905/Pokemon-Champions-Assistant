@@ -1,0 +1,472 @@
+{
+  "version": 1,
+  "battle_id": "sample_battle_11",
+  "origin": "recorded",
+  "events": [
+    {
+      "id": "review:b11:selection",
+      "kind": "selected_action",
+      "timestamp": 141.02333333333334,
+      "individual": "garchomp",
+      "move": "Earth Power",
+      "outcome": null,
+      "note": "Selected move shown on target screen; subsequent screen moves to Grimmsnarl. Target confirmation is not resolved.",
+      "sources": [
+        {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000257.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "e5326d278e8fbd566ea1adcf279beddc57372acb7753cbc30462344bc916470b",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#141.02333333333334",
+          "source_pts": 84614,
+          "source_time_base": "1/600",
+          "target_timestamp": 141.0,
+          "timestamp": 141.02333333333334
+        }
+      ],
+      "reviewer": "codex-source-frame-review-2026-10-22",
+      "basis": "agent_visual_review",
+      "current_form": "Garchomp"
+    },
+    {
+      "id": "review:b11:flinch",
+      "kind": "prevented_action",
+      "timestamp": 172.02833333333334,
+      "individual": "garchomp",
+      "move": "Earth Power",
+      "outcome": "flinched",
+      "note": "Flinch text at intended-action position; timing rule supplied by user.",
+      "sources": [
+        {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000312.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "3aafcb68e795fbb48f06331cc3d1ddbc5a51270faba772cb1543549d51d355db",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#172.02833333333334",
+          "source_pts": 103217,
+          "source_time_base": "1/600",
+          "target_timestamp": 172.0,
+          "timestamp": 172.02833333333334
+        }
+      ],
+      "reviewer": "codex-source-frame-review-2026-10-22",
+      "basis": "agent_visual_review",
+      "current_form": "Garchomp"
+    },
+    {
+      "id": "review:b11:tailwind",
+      "kind": "executed_move",
+      "timestamp": 174.53,
+      "individual": "volcarona",
+      "move": "Tailwind",
+      "outcome": "completed",
+      "note": "Initial Volcarona action; Tailwind applies after execution.",
+      "sources": [
+        {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000317.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "929aa3d80f45e4a656391994c09b76c75571821ebf965344a85eca04e978a93b",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#174.53",
+          "source_pts": 104718,
+          "source_time_base": "1/600",
+          "target_timestamp": 174.5,
+          "timestamp": 174.53
+        }
+      ],
+      "reviewer": "codex-source-frame-review-2026-10-22",
+      "basis": "agent_visual_review"
+    },
+    {
+      "id": "review:b11:parting-shot",
+      "kind": "executed_move",
+      "timestamp": 333.0233333333333,
+      "individual": "incineroar",
+      "move": "Parting Shot",
+      "outcome": "completed",
+      "note": "Compare the move, not its later pivot replacement.",
+      "sources": [
+        {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000543.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "dac5ba245fb347bfad7f35aa2c48d8a7e9a9772708f06a9adeaacea0acacd9a7",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#333.0233333333333",
+          "source_pts": 199814,
+          "source_time_base": "1/600",
+          "target_timestamp": 333.0,
+          "timestamp": 333.0233333333333
+        }
+      ],
+      "reviewer": "codex-source-frame-review-2026-10-22",
+      "basis": "agent_visual_review"
+    },
+    {
+      "id": "review:b11:earth-power",
+      "kind": "executed_move",
+      "timestamp": 349.025,
+      "individual": "garchomp",
+      "move": "Earth Power",
+      "outcome": "completed",
+      "note": "Base Garchomp shown; Incineroar has already pivoted out.",
+      "sources": [
+        {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000575.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "5ae4e44f53e21c5d038c2fcaafff0959c9803de048a685c4947cef8fbcf0bdbe",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#349.025",
+          "source_pts": 209415,
+          "source_time_base": "1/600",
+          "target_timestamp": 349.0,
+          "timestamp": 349.025
+        }
+      ],
+      "reviewer": "codex-source-frame-review-2026-10-22",
+      "basis": "agent_visual_review",
+      "current_form": "Garchomp"
+    },
+    {
+      "id": "review:b11:mega-z",
+      "kind": "mega_evolution",
+      "timestamp": 418.00333333333333,
+      "individual": "garchomp",
+      "move": null,
+      "outcome": "completed",
+      "note": "Mega Z distinguished by original Team 7 stone, 408.502s activation text and inspected silhouette. Generic parsed Mega form is insufficient.",
+      "sources": [
+        {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000665.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "c0741e27ed41b350db6b2ccac520ec2b7a9e56872a9677039c7fd8098ffa85e3",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#414.00333333333333",
+          "source_pts": 248402,
+          "source_time_base": "1/600",
+          "target_timestamp": 414.0,
+          "timestamp": 414.00333333333333
+        }
+      ],
+      "reviewer": "codex-source-frame-review-2026-10-22",
+      "basis": "agent_visual_review",
+      "current_form": "Mega Garchomp Z"
+    },
+    {
+      "id": "review:b11:power-gem",
+      "kind": "executed_move",
+      "timestamp": 433.5233333333333,
+      "individual": "garchomp",
+      "move": "Power Gem",
+      "outcome": "completed",
+      "note": "Mega Z moves after Rage Powder and Prankster Reflect, before Soak.",
+      "sources": [
+        {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000704.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "0418c01c5ddee45c43c54be7b2f0546fe732955f8f10193346d40a6051d57712",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#433.5233333333333",
+          "source_pts": 260114,
+          "source_time_base": "1/600",
+          "target_timestamp": 433.5,
+          "timestamp": 433.5233333333333
+        }
+      ],
+      "reviewer": "codex-source-frame-review-2026-10-22",
+      "basis": "agent_visual_review",
+      "current_form": "Mega Garchomp Z"
+    },
+    {
+      "id": "review:b11:soak",
+      "kind": "executed_move",
+      "timestamp": 440.5083333333333,
+      "individual": "basculegion",
+      "move": "Soak",
+      "outcome": "completed",
+      "note": "Male Basculegion shown; ability unrevealed and retained as native alternatives.",
+      "sources": [
+        {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000718.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "7fe05f01c7dedc43255bc04ea8c6bba307d38411b8ab934cad7aa7e321aa9455",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#440.5083333333333",
+          "source_pts": 264305,
+          "source_time_base": "1/600",
+          "target_timestamp": 440.5,
+          "timestamp": 440.5083333333333
+        }
+      ],
+      "reviewer": "codex-source-frame-review-2026-10-22",
+      "basis": "agent_visual_review"
+    },
+    {
+      "id": "review:b11:fish-switch",
+      "kind": "voluntary_switch",
+      "timestamp": 494.51666666666665,
+      "individual": "basculegion",
+      "move": null,
+      "outcome": "completed",
+      "note": "Normal switch text after command phase; no pivot move precedes it.",
+      "sources": [
+        {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000781.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "74b58a503bb2dc9dc5c68cb040c350bed0f7a8aeaab8054f1a440fd75250ab61",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#494.51666666666665",
+          "source_pts": 296710,
+          "source_time_base": "1/600",
+          "target_timestamp": 494.5,
+          "timestamp": 494.51666666666665
+        }
+      ],
+      "reviewer": "codex-source-frame-review-2026-10-22",
+      "basis": "agent_visual_review"
+    },
+    {
+      "id": "review:b11:moth-switch",
+      "kind": "voluntary_switch",
+      "timestamp": 501.0183333333333,
+      "individual": "volcarona",
+      "move": null,
+      "outcome": "completed",
+      "note": "Second normal opponent switch in same phase.",
+      "sources": [
+        {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000794.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "a4380184c15cc22a2a722c805fc6e2e22443f7a5992d63a37d3f1dea199082c2",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#501.0183333333333",
+          "source_pts": 300611,
+          "source_time_base": "1/600",
+          "target_timestamp": 501.0,
+          "timestamp": 501.0183333333333
+        }
+      ],
+      "reviewer": "codex-source-frame-review-2026-10-22",
+      "basis": "agent_visual_review"
+    },
+    {
+      "id": "review:b11:intimidate",
+      "kind": "ability_activation",
+      "timestamp": 217.00333333333333,
+      "individual": "incineroar",
+      "move": null,
+      "outcome": null,
+      "note": "Visible Intimidate banner; native ability revealed before turn 4",
+      "sources": [
+        {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000373.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "bddbe680e6800afc3f506da6caf87f4cf38582ee5ef5cc9fb348abb0c540b4b9",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#217.00333333333333",
+          "source_pts": 130202,
+          "source_time_base": "1/600",
+          "target_timestamp": 217.0,
+          "timestamp": 217.00333333333333
+        }
+      ],
+      "reviewer": "codex-source-frame-review-2026-10-22",
+      "basis": "agent_visual_review"
+    }
+  ],
+  "identity_links": {
+    "garchomp": [
+      "sample_battle_11:self:encounter:08cf976ab95a28c4"
+    ],
+    "volcarona": [
+      "sample_battle_11:opponent:encounter:d44d3edfc6ac6181",
+      "sample_battle_11:opponent:encounter:588ad8ada0dc493b"
+    ],
+    "incineroar": [
+      "sample_battle_11:opponent:encounter:02d2cc36c1af82e7"
+    ],
+    "basculegion": [
+      "sample_battle_11:opponent:encounter:e14273821ce06589"
+    ]
+  },
+  "identity_link_basis": "Reviewed outbound/return sequence and unique species in opponent roster; source IDs preserved, alias evidence available only after reentry.",
+  "rules": [
+    {
+      "rule": "flinch_at_intended_action_position",
+      "basis": "user_requirement"
+    },
+    {
+      "rule": "voluntary_switch_then_mega_then_moves; speed order reversed by Trick Room",
+      "basis": "user_requirement",
+      "reference": ".cache/m341-actions/sources/ps-sim-battle-queue.ts:183; ps-data-mods-champions-scripts.ts:46"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "review:b11:initial",
+      "before": "flinch",
+      "after": "tailwind",
+      "subject": "volcarona",
+      "own_form": "Garchomp",
+      "scope": "source_reviewed_order",
+      "assumptions": [
+        "Opening phase; no earlier Speed-stage/status/field changes in cached chronology",
+        "Unknown Quick Claw activation retained, not assumed absent"
+      ],
+      "field": {
+        "weather": "none",
+        "terrain": "none",
+        "trick_room": false,
+        "other_effects": []
+      },
+      "actors": {
+        "garchomp": {
+          "identity": "Garchomp",
+          "form": "base",
+          "stage": 0,
+          "tailwind": false,
+          "ability_active": true,
+          "status": "none",
+          "unburden_active": false,
+          "activation_evidence": null,
+          "other_effects": []
+        },
+        "volcarona": {
+          "identity": "pokeapi:species:637",
+          "form": "base",
+          "stage": 0,
+          "tailwind": false,
+          "ability_active": true,
+          "status": "none",
+          "unburden_active": false,
+          "activation_evidence": null,
+          "other_effects": []
+        }
+      },
+      "kind": "known_own_vs_hidden"
+    },
+    {
+      "id": "review:b11:turn4",
+      "before": "parting-shot",
+      "after": "earth-power",
+      "subject": "incineroar",
+      "own_form": "Garchomp",
+      "scope": "conditional_modifiers",
+      "assumptions": [
+        "Opponent Tailwind from first turn through observed end at 365.028s",
+        "Cached chronological messages show no relevant Speed changes; continuous original-video modifier absence not independently certified"
+      ],
+      "field": {
+        "weather": "none",
+        "terrain": "none",
+        "trick_room": false,
+        "other_effects": []
+      },
+      "actors": {
+        "garchomp": {
+          "identity": "Garchomp",
+          "form": "base",
+          "stage": 0,
+          "tailwind": false,
+          "ability_active": true,
+          "status": "none",
+          "unburden_active": false,
+          "activation_evidence": null,
+          "other_effects": []
+        },
+        "incineroar": {
+          "identity": "pokeapi:species:727",
+          "form": "base",
+          "stage": 0,
+          "tailwind": true,
+          "ability_active": true,
+          "status": "none",
+          "unburden_active": false,
+          "activation_evidence": null,
+          "other_effects": [],
+          "ability": "Intimidate"
+        }
+      },
+      "kind": "known_own_vs_hidden"
+    },
+    {
+      "id": "review:b11:turn5",
+      "before": "power-gem",
+      "after": "soak",
+      "subject": "basculegion",
+      "own_form": "Mega Garchomp Z",
+      "scope": "conditional_modifiers",
+      "assumptions": [
+        "Tailwind ended at 365.028s",
+        "No intervening Speed-stage/status/weather changes in cached chronology; continuous original-video modifier absence not independently certified"
+      ],
+      "field": {
+        "weather": "none",
+        "terrain": "none",
+        "trick_room": false,
+        "other_effects": []
+      },
+      "actors": {
+        "garchomp": {
+          "identity": "Mega Garchomp Z",
+          "form": "as_named",
+          "stage": 0,
+          "tailwind": false,
+          "ability_active": true,
+          "status": "none",
+          "unburden_active": false,
+          "activation_evidence": null,
+          "other_effects": []
+        },
+        "basculegion": {
+          "identity": "pokeapi:species:902",
+          "form": "base",
+          "stage": 0,
+          "tailwind": false,
+          "ability_active": true,
+          "status": "none",
+          "unburden_active": false,
+          "activation_evidence": null,
+          "other_effects": []
+        }
+      },
+      "kind": "known_own_vs_hidden"
+    },
+    {
+      "id": "review:b11:turn6-switch",
+      "before": "fish-switch",
+      "after": "moth-switch",
+      "subject": "basculegion",
+      "scope": "conditional_modifiers",
+      "assumptions": [
+        "Same normal switch phase, no Trick Room in reviewed cached chronology",
+        "Volcarona aliases refer to one individual",
+        "Unknown current item/ability maintained across comparisons"
+      ],
+      "field": {
+        "weather": "none",
+        "terrain": "none",
+        "trick_room": false,
+        "other_effects": []
+      },
+      "actors": {
+        "basculegion": {
+          "identity": "pokeapi:species:902",
+          "form": "base",
+          "stage": 0,
+          "tailwind": false,
+          "ability_active": true,
+          "status": "none",
+          "unburden_active": false,
+          "activation_evidence": null,
+          "other_effects": []
+        },
+        "volcarona": {
+          "identity": "pokeapi:species:637",
+          "form": "base",
+          "stage": 0,
+          "tailwind": false,
+          "ability_active": true,
+          "status": "none",
+          "unburden_active": false,
+          "activation_evidence": null,
+          "other_effects": []
+        }
+      },
+      "kind": "joint_phase"
+    }
+  ],
+  "limitations": [
+    "Agent source checks are not human acceptance or measured recognition coverage.",
+    "No target numerical range is stored in this review.",
+    "Later comparisons retain explicit modifier-continuity conditions."
+  ]
+}

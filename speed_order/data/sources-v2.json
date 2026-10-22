@@ -1,0 +1,181 @@
+{
+  "schema_version": 2,
+  "profile": "showdown-champions-reference-v1",
+  "dynamic_reordering_basis": "User-supplied Champions requirement, corroborated by pinned Showdown gen9 queue refresh",
+  "activation_message_basis": "User observation plus pinned Showdown activation event, no video recognition validation",
+  "knowledge_facts_sha256": "186df39ded2bfffa0b3c13a56c5a85bf430053b3d1bad1b635a7885d0777ff76",
+  "sources": [
+    {
+      "path": ".cache/m341-actions/sources/ps-data-abilities.ts",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/abilities.ts",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "53d8558979e337c675907b76b5375185b28a0877f770d7456025b94535e1064d",
+      "retrieved_date": "2026-10-21",
+      "license": "MIT",
+      "attribution": "Pokémon Showdown contributors",
+      "verification": "pinned executable reference; not independent in-game certification"
+    },
+    {
+      "path": ".cache/m341-actions/sources/ps-data-items.ts",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/items.ts",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "75da206e2cb09868bb549360f38a144c2f50b24e1d189e03b485d550a4f6357a",
+      "retrieved_date": "2026-10-21",
+      "license": "MIT",
+      "attribution": "Pokémon Showdown contributors",
+      "verification": "pinned executable reference; not independent in-game certification"
+    },
+    {
+      "path": ".cache/m341-actions/sources/ps-data-mods-champions-abilities.ts",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/mods/champions/abilities.ts",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "5c10f24808e26605d2a104139cd25ae76cb9ba12c3cd5331e29cb70659b37bb0",
+      "retrieved_date": "2026-10-21",
+      "license": "MIT",
+      "attribution": "Pokémon Showdown contributors",
+      "verification": "pinned executable reference; not independent in-game certification"
+    },
+    {
+      "path": ".cache/m341-actions/sources/ps-data-mods-champions-items.ts",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/mods/champions/items.ts",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "b39dafa66d136ebb1a8576367ced2c9f4519aa1c17d5d65c59b368ac15d7de77",
+      "retrieved_date": "2026-10-21",
+      "license": "MIT",
+      "attribution": "Pokémon Showdown contributors",
+      "verification": "pinned executable reference; not independent in-game certification"
+    },
+    {
+      "path": ".cache/m341-actions/sources/ps-data-mods-champions-scripts.ts",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/mods/champions/scripts.ts",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "21c26e520804d648493f43a6ec94e5c7d65a79cc41eb58feeb39df7a2914c126",
+      "retrieved_date": "2026-10-21",
+      "license": "MIT",
+      "attribution": "Pokémon Showdown contributors",
+      "verification": "pinned executable reference; not independent in-game certification"
+    },
+    {
+      "path": ".cache/m341-actions/sources/ps-sim-battle.ts",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/sim/battle.ts",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "3eb941313832729ee043407c39ced894b4338301fed5d29a45ae8b36e49a09f2",
+      "retrieved_date": "2026-10-21",
+      "license": "MIT",
+      "attribution": "Pokémon Showdown contributors",
+      "verification": "pinned executable reference; not independent in-game certification"
+    },
+    {
+      "path": ".cache/m341-actions/sources/ps-sim-battle-queue.ts",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/sim/battle-queue.ts",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "3d9dd71dfb7abc788f961d6123b1b9f7308ccab947af6527f1752dd1d94b95ed",
+      "retrieved_date": "2026-10-21",
+      "license": "MIT",
+      "attribution": "Pokémon Showdown contributors",
+      "verification": "pinned executable reference; not independent in-game certification"
+    },
+    {
+      "path": ".cache/m321/sources/moves.ts",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/moves.ts",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "738b8cfc1ca491537c0188546ab697942aaa313c5e6be83a5432edd5dd8997f7",
+      "retrieved_date": "2026-10-21",
+      "license": "MIT",
+      "attribution": "Pokémon Showdown contributors",
+      "verification": "pinned executable reference; not independent in-game certification"
+    },
+    {
+      "url": "https://wiki.52poke.com/wiki/先制之爪（道具）",
+      "revision_id": 2622392,
+      "retrieved_date": "2026-10-21",
+      "license": "CC BY-NC-SA 3.0",
+      "attribution": "52Poké contributors",
+      "scope": "Champions-specific item description; message observation remains user supplied",
+      "sha256": "1da3adf816ac5924bca23f02bb21f598878d3bd0e2a17c38cc4810020e769bd5",
+      "path": ".cache/m341-actions/sources/wiki-先制之爪.html"
+    },
+    {
+      "url": "https://wiki.52poke.com/wiki/优先度",
+      "revision_id": 2599726,
+      "retrieved_date": "2026-10-21",
+      "license": "CC BY-NC-SA 3.0",
+      "attribution": "52Poké contributors",
+      "scope": "general ordering; Champions displayed priority",
+      "sha256": "695fe2057200736aa9b6510c1329ae53aa744251f96f9c212491c6155a32374f",
+      "path": ".cache/m341-actions/sources/wiki-优先度.html"
+    },
+    {
+      "url": "https://wiki.52poke.com/wiki/青草滑梯（招式）",
+      "revision_id": null,
+      "retrieved_date": "2026-10-21",
+      "license": "CC BY-NC-SA 3.0",
+      "attribution": "52Poké contributors",
+      "scope": "conditional terrain priority; general mechanics"
+    },
+    {
+      "url": "https://wiki.52poke.com/wiki/喷火龙",
+      "revision_id": null,
+      "retrieved_date": "2026-10-21",
+      "license": "CC BY-NC-SA 3.0",
+      "attribution": "52Poké contributors",
+      "scope": "form/base stats; version-specific scope required"
+    },
+    {
+      "url": "https://wiki.52poke.com/wiki/喷火龙/Champions招式表",
+      "revision_id": null,
+      "retrieved_date": "2026-10-21",
+      "license": "CC BY-NC-SA 3.0",
+      "attribution": "52Poké contributors",
+      "scope": "Champions learnability only"
+    },
+    {
+      "url": "https://wiki.52poke.com/wiki/妙蛙花/Champions招式表",
+      "revision_id": 2622571,
+      "retrieved_date": "2026-10-21",
+      "license": "CC BY-NC-SA 3.0",
+      "attribution": "52Poké contributors",
+      "scope": "Champions learnability only"
+    },
+    {
+      "url": "https://wiki.52poke.com/wiki/风妖精/Champions招式表",
+      "revision_id": null,
+      "retrieved_date": "2026-10-21",
+      "license": "CC BY-NC-SA 3.0",
+      "attribution": "52Poké contributors",
+      "scope": "page located; detailed table fetch incomplete"
+    },
+    {
+      "url": "https://champions.pokemon.com/en-us/gameplay/",
+      "retrieved_date": "2026-10-21",
+      "scope": "Official gameplay; no detailed queue rounding certification"
+    },
+    {
+      "path": ".cache/m322/sources/champions-moves.ts",
+      "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/mods/champions/moves.ts",
+      "revision": "3a766f2cfb5e51c1e428cfe87d0dba91a8f01640",
+      "sha256": "4471bcc8eb98f4697d040953008330d7951d0bcc70688f3c85e77099b28ea228",
+      "retrieved_date": "2026-10-22",
+      "license": "MIT",
+      "attribution": "Pokémon Showdown contributors",
+      "verification": "Pinned executable reference, not independent in-game certification"
+    }
+  ],
+  "limits": [
+    "No independent Champions rounding/timing certification",
+    "Original >999 cap discrepancy gate preserved",
+    "Versioned conservative move/ability classification with explicit unaudited mechanics; unsupported branches withhold full feasible set",
+    "Past items gated; no roster or regulation certification"
+  ],
+  "ordering_coverage_receipt": "speed_order/data/ordering-coverage-v1.json",
+  "phase_order_basis": {
+    "user_requirement": "Voluntary switches, Mega, then ordinary actions; Trick Room reverses Speed in comparable phases",
+    "executable_reference": "ps-sim-battle-queue.ts orders 103/104/200; Champions getActionSpeed reverses Speed under Trick Room",
+    "flinch": "User confirms notification at intended-action position; requires independent intended-move evidence",
+    "other_preventions": "No generic timing assumption"
+  },
+  "champions_priority_corrections": {
+    "path": "knowledge/data/champions_priority_corrections.json",
+    "sha256": "d1aa3e2516349a60e12238bdd2ce452cf1105fbb9063a0ce0bdecddc3acc129a"
+  }
+}

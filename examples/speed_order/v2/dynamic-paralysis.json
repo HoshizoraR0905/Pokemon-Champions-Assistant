@@ -1,0 +1,156 @@
+{
+  "operation": "simulate",
+  "input": {
+    "state": {
+      "participants": {
+        "raichu": {
+          "identity": "Raichu",
+          "form": "base",
+          "instance_id": "raichu",
+          "actual_speed": 200,
+          "stage": 0,
+          "tailwind": false,
+          "ability": "Static",
+          "ability_active": true,
+          "item": "none",
+          "status": "none",
+          "unburden_active": false,
+          "activation_evidence": null,
+          "other_effects": []
+        },
+        "charizard": {
+          "identity": "Charizard",
+          "form": "base",
+          "instance_id": "charizard",
+          "actual_speed": 181,
+          "stage": 0,
+          "tailwind": false,
+          "ability": "Blaze",
+          "ability_active": true,
+          "item": "none",
+          "status": "none",
+          "unburden_active": false,
+          "activation_evidence": null,
+          "other_effects": []
+        },
+        "other": {
+          "identity": "Charizard",
+          "form": "base",
+          "instance_id": "other",
+          "actual_speed": 100,
+          "stage": 0,
+          "tailwind": false,
+          "ability": "Blaze",
+          "ability_active": true,
+          "item": "none",
+          "status": "none",
+          "unburden_active": false,
+          "activation_evidence": null,
+          "other_effects": []
+        }
+      },
+      "field": {
+        "weather": "none",
+        "terrain": "none",
+        "trick_room": false,
+        "other_effects": []
+      }
+    },
+    "actions": [
+      {
+        "id": "raichu:move",
+        "individual": "raichu",
+        "kind": "move",
+        "move": "pokeapi:move:85",
+        "outcome": "completed",
+        "activation": {
+          "state": "unknown",
+          "coverage_complete": false,
+          "evidence": {
+            "sources": [
+              "synthetic:M3.2.1"
+            ],
+            "basis": "synthetic",
+            "confidence": "declared exact synthetic input"
+          }
+        },
+        "changes": [
+          {
+            "kind": "set",
+            "target": "charizard",
+            "values": {
+              "status": "paralysis"
+            },
+            "evidence": {
+              "sources": [
+                "synthetic:M3.2.1"
+              ],
+              "basis": "synthetic",
+              "confidence": "declared exact synthetic input"
+            }
+          }
+        ],
+        "evidence": {
+          "sources": [
+            "synthetic:M3.2.1"
+          ],
+          "basis": "synthetic",
+          "confidence": "declared exact synthetic input"
+        }
+      },
+      {
+        "id": "charizard:move",
+        "individual": "charizard",
+        "kind": "move",
+        "move": "pokeapi:move:53",
+        "outcome": "completed",
+        "activation": {
+          "state": "unknown",
+          "coverage_complete": false,
+          "evidence": {
+            "sources": [
+              "synthetic:M3.2.1"
+            ],
+            "basis": "synthetic",
+            "confidence": "declared exact synthetic input"
+          }
+        },
+        "changes": [],
+        "evidence": {
+          "sources": [
+            "synthetic:M3.2.1"
+          ],
+          "basis": "synthetic",
+          "confidence": "declared exact synthetic input"
+        }
+      },
+      {
+        "id": "other:move",
+        "individual": "other",
+        "kind": "move",
+        "move": "pokeapi:move:53",
+        "outcome": "completed",
+        "activation": {
+          "state": "unknown",
+          "coverage_complete": false,
+          "evidence": {
+            "sources": [
+              "synthetic:M3.2.1"
+            ],
+            "basis": "synthetic",
+            "confidence": "declared exact synthetic input"
+          }
+        },
+        "changes": [],
+        "evidence": {
+          "sources": [
+            "synthetic:M3.2.1"
+          ],
+          "basis": "synthetic",
+          "confidence": "declared exact synthetic input"
+        }
+      }
+    ],
+    "profile": "showdown-champions-reference-v1"
+  }
+}

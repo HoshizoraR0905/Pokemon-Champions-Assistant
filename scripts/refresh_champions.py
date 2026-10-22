@@ -27,6 +27,24 @@ def git(root, *args):
     return subprocess.check_output(['git', '-C', str(root), *args], text=True).strip()
 
 
+def apply_priority_corrections(facts):
+    """Apply reviewed M-C fields while retaining the imported source assertion."""
+    path = Path(__file__).resolve().parents[1]/'knowledge/data/champions_priority_corrections.json'
+    receipt = json.loads(path.read_text())
+    if facts['regulation'] != receipt['regulation']:
+        return
+    for cid, correction in receipt['moves'].items():
+        row = facts['moves'][cid]
+        if row['priority'] not in {correction['previous_priority'], correction['priority']}:
+            raise ValueError(f'Upstream priority changed for {cid}; review the correction')
+        row['priority'] = correction['priority']
+        row['priority_provenance'] = {
+            'correction_version': receipt['version'], 'game_version': receipt['game_version'],
+            'regulation': receipt['regulation'], 'source_file': path.name,
+            'source_sha256': digest(path), 'previous_priority': correction['previous_priority'],
+            'previous_source': facts['source'], 'evidence': correction['evidence']}
+
+
 def build(quark, pokedd, official, output, as_of):
     archive = output.parent/'archive'/'2026-04-16-v1.1.0'
     if not archive.exists():
@@ -107,6 +125,10 @@ def build(quark, pokedd, official, output, as_of):
                 record = {'upstream_name':r['canonical']}
             record['evidence_type'] = 'community_catalog_assertion'
             facts[table][cid] = record
+    apply_priority_corrections(facts)
+    corrections = Path(__file__).resolve().parents[1]/'knowledge/data/champions_priority_corrections.json'
+    if output.resolve() != corrections.parent.resolve():
+        shutil.copyfile(corrections, output/corrections.name)
     relationships = {}
     for cid,r in facts['pokemon'].items():
         relationships[cid] = {'abilities': sorted({mapping[('ability',n)] for n in r['ability_names'] if ('ability',n) in mapping}), 'moves':[]}

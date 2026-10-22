@@ -39,7 +39,7 @@
     ".cache/m32/sources/pokemon.ts": "e36493e502858c7f7fa8e899f4b4439295fefa452f96c5017e974494f1c4a688",
     ".cache/m32/sources/speed.html": "ca793dbbc96b15983d898b26c5948a9a62188b91103668c6d0a0665525bbbcc2"
   },
-  "knowledge_manifest_sha256": "baede21b38040373e0771ebef7d7af39ae71708326485c5501204917b26bb612",
+  "knowledge_manifest_sha256": "d2246404a3523b215d787e41a67244c0ae5f78f231420b2897ecd600cbf339c0",
   "limits": [
     "actual Speed 1..4095 avoids reference/simulator 16-bit stage overflow disagreement",
     "No mid-turn recalculation claim",

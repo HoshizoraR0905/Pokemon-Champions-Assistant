@@ -9128,8 +9128,29 @@
       "power": null,
       "accuracy": null,
       "pp": "20",
-      "priority": 3,
-      "evidence_type": "community_catalog_assertion"
+      "priority": 2,
+      "evidence_type": "community_catalog_assertion",
+      "priority_provenance": {
+        "correction_version": "champions-mc-priority-corrections-v1",
+        "game_version": "Pokemon Champions",
+        "regulation": "M-C",
+        "source_file": "champions_priority_corrections.json",
+        "source_sha256": "d1aa3e2516349a60e12238bdd2ce452cf1105fbb9063a0ce0bdecddc3acc129a",
+        "previous_priority": 3,
+        "previous_source": {
+          "repository": "https://github.com/pmwl0128/Quark_Drive_Skills",
+          "commit": "8673c506b1ead3e66a436764e12fc066367ca283",
+          "commit_date": "2026-10-13T00:40:42+08:00",
+          "path": ".agents/skills/pokemon-champions-dex/data/champions_dex.sqlite",
+          "sha256": "35a08585f980f859dc721cf128762d1c62f3a34928bd6ed8db4fc459551b5413",
+          "file_commit": "f42039921e8838710c5e628dc81ba7c604343a24",
+          "file_commit_date": "2026-09-19T07:46:01+08:00"
+        },
+        "evidence": [
+          "showdown",
+          "52poke_follow_me"
+        ]
+      }
     },
     "pokeapi:move:571": {
       "type": "Grass",
@@ -10640,8 +10661,30 @@
       "power": null,
       "accuracy": null,
       "pp": "20",
-      "priority": 3,
-      "evidence_type": "community_catalog_assertion"
+      "priority": 2,
+      "evidence_type": "community_catalog_assertion",
+      "priority_provenance": {
+        "correction_version": "champions-mc-priority-corrections-v1",
+        "game_version": "Pokemon Champions",
+        "regulation": "M-C",
+        "source_file": "champions_priority_corrections.json",
+        "source_sha256": "d1aa3e2516349a60e12238bdd2ce452cf1105fbb9063a0ce0bdecddc3acc129a",
+        "previous_priority": 3,
+        "previous_source": {
+          "repository": "https://github.com/pmwl0128/Quark_Drive_Skills",
+          "commit": "8673c506b1ead3e66a436764e12fc066367ca283",
+          "commit_date": "2026-10-13T00:40:42+08:00",
+          "path": ".agents/skills/pokemon-champions-dex/data/champions_dex.sqlite",
+          "sha256": "35a08585f980f859dc721cf128762d1c62f3a34928bd6ed8db4fc459551b5413",
+          "file_commit": "f42039921e8838710c5e628dc81ba7c604343a24",
+          "file_commit_date": "2026-09-19T07:46:01+08:00"
+        },
+        "evidence": [
+          "showdown",
+          "52poke_rage_powder",
+          "user_correction"
+        ]
+      }
     },
     "pokeapi:move:873": {
       "type": "Normal",

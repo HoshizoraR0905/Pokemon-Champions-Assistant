@@ -1,0 +1,472 @@
+{
+  "status": "complete",
+  "inputs": {
+    "url": "http://127.0.0.1:8767/scripts/templates/speed_replay.html?battle=11",
+    "replay": ".cache/battles/sample_battle_11/m322-reviewed-speed/3233a8080b610d64/replay.json",
+    "replay_sha256": "6ca5e050b977ac69e63358c7c9bda554ca555f36a8e63c7ad777ea61c9ee3e90",
+    "positions": [
+      543,
+      575
+    ],
+    "viewport": {
+      "width": 1600,
+      "height": 1200,
+      "deviceScaleFactor": 1,
+      "mobile": false
+    },
+    "code": {
+      "scripts/capture_battle11_report.cjs": "5fe829d58dbf6c4366ad6d2feed731212f2ca611ed20df4fca4cb077bf407fe4",
+      "scripts/templates/speed_replay.html": "eb90eaef026a402afc3dd0007b9fe34274ddf74271152cef57b918970d239f49",
+      "scripts/templates/speed_replay.js": "6e97372f64679cf7978119fc59356b9dae94480c75739d2d1004779a9baaefc4",
+      "scripts/templates/speed_replay.css": "58676575c8c31efa529892828cf21ce111afa3b2c965ad5f2af6fa6eb0fd0eb4"
+    }
+  },
+  "method": "Chrome DevTools Protocol: dispatch existing slider input at displayed position minus one, await original image decode and two animation frames, capture unedited viewport as JPEG quality 90.",
+  "figures": [
+    {
+      "display_position": 543,
+      "slider_index": 542,
+      "timestamp": 333.0233333333333,
+      "file": "frame-0543.jpg",
+      "sha256": "8c3aaf3d9c8ec5b78a4cb7779e6c98d80543c282c9b7f61c991c8035255ab20c",
+      "source_frame": {
+        "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000543.png",
+        "seek_origin_seconds": 0,
+        "sha256": "dac5ba245fb347bfad7f35aa2c48d8a7e9a9772708f06a9adeaacea0acacd9a7",
+        "source_id": "tests/fixtures/sample_battle_11.mp4#333.0233333333333",
+        "source_pts": 199814,
+        "source_time_base": "1/600",
+        "target_timestamp": 333,
+        "timestamp": 333.0233333333333
+      },
+      "state": {
+        "display": "543 / 1008",
+        "slider": 542,
+        "time": 333.0233333333333,
+        "source": "/.cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000543.png",
+        "turn": "本地回合 4",
+        "updates": [
+          "review:b11:initial"
+        ],
+        "layers": [
+          "observed",
+          "full"
+        ],
+        "target": {
+          "individual": "sample_battle_11:opponent:encounter:02d2cc36c1af82e7",
+          "current_form": "pokeapi:species:727",
+          "active": true,
+          "observed": {
+            "complete_before": 192,
+            "complete_after": 192,
+            "incomplete_excluded": 175,
+            "speed": {
+              "count": 28,
+              "has_gaps": true,
+              "hull": [
+                72,
+                123
+              ],
+              "intervals": [
+                [
+                  72,
+                  73
+                ],
+                [
+                  80,
+                  88
+                ],
+                [
+                  90,
+                  97
+                ],
+                [
+                  103,
+                  104
+                ],
+                [
+                  106,
+                  108
+                ],
+                [
+                  111,
+                  112
+                ],
+                [
+                  119,
+                  119
+                ],
+                [
+                  123,
+                  123
+                ]
+              ],
+              "maximum": 123,
+              "minimum": 72,
+              "values": [
+                72,
+                73,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                103,
+                104,
+                106,
+                107,
+                108,
+                111,
+                112,
+                119,
+                123
+              ]
+            }
+          },
+          "full": {
+            "configuration_count": 5544,
+            "status": "unresolved",
+            "speed": {
+              "count": 51,
+              "has_gaps": true,
+              "hull": [
+                72,
+                123
+              ],
+              "intervals": [
+                [
+                  72,
+                  119
+                ],
+                [
+                  121,
+                  123
+                ]
+              ],
+              "maximum": 123,
+              "minimum": 72,
+              "values": [
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106,
+                107,
+                108,
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                121,
+                122,
+                123
+              ]
+            }
+          }
+        },
+        "bounds": {
+          "frame": {
+            "x": 24,
+            "y": 129.875,
+            "width": 840.546875,
+            "height": 386.609375,
+            "top": 129.875,
+            "right": 864.546875,
+            "bottom": 516.484375,
+            "left": 24
+          },
+          "timeline": {
+            "x": 24,
+            "y": 658.984375,
+            "width": 840.546875,
+            "height": 16,
+            "top": 658.984375,
+            "right": 864.546875,
+            "bottom": 674.984375,
+            "left": 24
+          },
+          "card": {
+            "x": 888.546875,
+            "y": 300.1875,
+            "width": 672.453125,
+            "height": 659.46875,
+            "top": 300.1875,
+            "right": 1561,
+            "bottom": 959.65625,
+            "left": 888.546875
+          }
+        }
+      }
+    },
+    {
+      "display_position": 575,
+      "slider_index": 574,
+      "timestamp": 349.025,
+      "file": "frame-0575.jpg",
+      "sha256": "68ba65aa19118968341a5d9a64984c19e2302f79cc436fcdd8fe5b887c59db9f",
+      "source_frame": {
+        "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000575.png",
+        "seek_origin_seconds": 0,
+        "sha256": "5ae4e44f53e21c5d038c2fcaafff0959c9803de048a685c4947cef8fbcf0bdbe",
+        "source_id": "tests/fixtures/sample_battle_11.mp4#349.025",
+        "source_pts": 209415,
+        "source_time_base": "1/600",
+        "target_timestamp": 349,
+        "timestamp": 349.025
+      },
+      "state": {
+        "display": "575 / 1008",
+        "slider": 574,
+        "time": 349.025,
+        "source": "/.cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000575.png",
+        "turn": "本地回合 4",
+        "updates": [
+          "review:b11:initial",
+          "review:b11:turn4"
+        ],
+        "layers": [
+          "observed",
+          "full"
+        ],
+        "target": {
+          "individual": "sample_battle_11:opponent:encounter:02d2cc36c1af82e7",
+          "current_form": "pokeapi:species:727",
+          "active": false,
+          "observed": {
+            "complete_before": 192,
+            "complete_after": 163,
+            "incomplete_excluded": 175,
+            "speed": {
+              "count": 26,
+              "has_gaps": true,
+              "hull": [
+                80,
+                123
+              ],
+              "intervals": [
+                [
+                  80,
+                  88
+                ],
+                [
+                  90,
+                  97
+                ],
+                [
+                  103,
+                  104
+                ],
+                [
+                  106,
+                  108
+                ],
+                [
+                  111,
+                  112
+                ],
+                [
+                  119,
+                  119
+                ],
+                [
+                  123,
+                  123
+                ]
+              ],
+              "maximum": 123,
+              "minimum": 80,
+              "values": [
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                103,
+                104,
+                106,
+                107,
+                108,
+                111,
+                112,
+                119,
+                123
+              ]
+            }
+          },
+          "full": {
+            "configuration_count": 2055,
+            "status": "unresolved",
+            "speed": {
+              "count": 51,
+              "has_gaps": true,
+              "hull": [
+                72,
+                123
+              ],
+              "intervals": [
+                [
+                  72,
+                  119
+                ],
+                [
+                  121,
+                  123
+                ]
+              ],
+              "maximum": 123,
+              "minimum": 72,
+              "values": [
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106,
+                107,
+                108,
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                121,
+                122,
+                123
+              ]
+            }
+          }
+        },
+        "bounds": {
+          "frame": {
+            "x": 24,
+            "y": 129.875,
+            "width": 840.546875,
+            "height": 386.609375,
+            "top": 129.875,
+            "right": 864.546875,
+            "bottom": 516.484375,
+            "left": 24
+          },
+          "timeline": {
+            "x": 24,
+            "y": 658.984375,
+            "width": 840.546875,
+            "height": 16,
+            "top": 658.984375,
+            "right": 864.546875,
+            "bottom": 674.984375,
+            "left": 24
+          },
+          "card": {
+            "x": 888.546875,
+            "y": 300.1875,
+            "width": 672.453125,
+            "height": 659.46875,
+            "top": 300.1875,
+            "right": 1561,
+            "bottom": 959.65625,
+            "left": 888.546875
+          }
+        }
+      }
+    }
+  ],
+  "browser": "Chrome/155.0.8059.86",
+  "errors": []
+}

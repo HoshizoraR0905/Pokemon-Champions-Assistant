@@ -49,10 +49,11 @@
     "coverage.json": "0d2eedd8899f2f71a18cc3ec264cb65674edaaa0da38dffedf1bf6dca638cff8",
     "LICENSE.pokeapi.txt": "1c04595dc662981c20956ae4251dfa7b62b475c345eddf98bc9b904cb2373f2c",
     "LICENSE.champions.txt": "e4e8cd45e0acc57989fd62e952302279e1e241e3795c193287b7cd1cb1edc94a",
-    "champions_facts.json": "c9203fdf1cdad92bb37e88c3f56763fc910ce03e566f851e3f8389cac5d3f93b",
+    "champions_facts.json": "186df39ded2bfffa0b3c13a56c5a85bf430053b3d1bad1b635a7885d0777ff76",
     "visual_assets.json": "86f631801fb6bf0a374f58799145261f7919220ec65516a7a03774e75146f84d",
     "identity.json": "bbd2d67cd4d6f01b3a738f3196e764d250528538ceb0036fa3378277fb2bd2db",
-    "identity_scopes.json": "33bb8f8e4959df26a2aa28ab356337b8bb81a9ade8d9c3565432e9c12e2ffea0"
+    "identity_scopes.json": "33bb8f8e4959df26a2aa28ab356337b8bb81a9ade8d9c3565432e9c12e2ffea0",
+    "champions_priority_corrections.json": "d1aa3e2516349a60e12238bdd2ce452cf1105fbb9063a0ce0bdecddc3acc129a"
   },
   "unmapped_champions_entries": [
     {
@@ -552,6 +553,14 @@
     {
       "version": "2026-10-13-identity.2",
       "description": "Derive unique Pokemon or Pokemon-form canonical identities from pinned PokeAPI form rows; retain source_form_id; no upstream refresh"
+    }
+  ],
+  "local_corrections": [
+    {
+      "path": "champions_priority_corrections.json",
+      "version": "champions-mc-priority-corrections-v1",
+      "regulation": "M-C",
+      "reviewed_on": "2026-10-22"
     }
   ]
 }

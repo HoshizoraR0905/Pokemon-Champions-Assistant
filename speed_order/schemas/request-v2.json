@@ -1,0 +1,907 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "M3.2.1 additive request v2",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "const": "infer"
+        },
+        "input": {
+          "$ref": "#/$defs/infer"
+        }
+      },
+      "required": [
+        "operation",
+        "input"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "const": "simulate"
+        },
+        "input": {
+          "$ref": "#/$defs/simulate"
+        }
+      },
+      "required": [
+        "operation",
+        "input"
+      ],
+      "additionalProperties": false
+    }
+  ],
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "basis": {
+          "enum": [
+            "direct",
+            "deduced",
+            "user_requirement",
+            "synthetic",
+            "reference"
+          ]
+        },
+        "confidence": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "sources",
+        "basis",
+        "confidence"
+      ],
+      "additionalProperties": false
+    },
+    "activation": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "enum": [
+            "activated",
+            "not_activated",
+            "unknown"
+          ]
+        },
+        "coverage_complete": {
+          "type": "boolean"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      },
+      "required": [
+        "state",
+        "coverage_complete",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "training": {
+      "type": "object",
+      "properties": {
+        "alignment": {
+          "type": "object",
+          "properties": {
+            "increase": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "attack",
+                    "defense",
+                    "special_attack",
+                    "special_defense",
+                    "speed"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "decrease": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "attack",
+                    "defense",
+                    "special_attack",
+                    "special_defense",
+                    "speed"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "increase",
+            "decrease"
+          ],
+          "additionalProperties": false
+        },
+        "point_domains": {
+          "type": "object",
+          "properties": {
+            "hp": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 32
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "attack": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 32
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "defense": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 32
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "special_attack": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 32
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "special_defense": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 32
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "speed": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 32
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "hp",
+            "attack",
+            "defense",
+            "special_attack",
+            "special_defense",
+            "speed"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "alignment",
+        "point_domains"
+      ],
+      "additionalProperties": false
+    },
+    "participant": {
+      "type": "object",
+      "properties": {
+        "identity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "form": {
+          "type": "string",
+          "minLength": 1
+        },
+        "instance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "actual_speed": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4095
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stage": {
+          "type": "integer",
+          "minimum": -6,
+          "maximum": 6
+        },
+        "tailwind": {
+          "type": "boolean"
+        },
+        "ability": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ability_active": {
+          "type": "boolean"
+        },
+        "item": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "enum": [
+            "none",
+            "burn",
+            "poison",
+            "toxic",
+            "paralysis",
+            "sleep",
+            "freeze"
+          ]
+        },
+        "unburden_active": {
+          "type": "boolean"
+        },
+        "activation_evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "other_effects": {
+          "type": "array",
+          "items": {},
+          "maxItems": 0
+        },
+        "training": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/training"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hp_full": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "grounded": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "identity",
+        "form",
+        "instance_id",
+        "actual_speed",
+        "stage",
+        "tailwind",
+        "ability",
+        "ability_active",
+        "item",
+        "status",
+        "unburden_active",
+        "activation_evidence",
+        "other_effects"
+      ],
+      "additionalProperties": false
+    },
+    "field": {
+      "type": "object",
+      "properties": {
+        "weather": {
+          "enum": [
+            "none",
+            "sun",
+            "rain",
+            "sand",
+            "snow"
+          ]
+        },
+        "terrain": {
+          "enum": [
+            "none",
+            "electric",
+            "grassy",
+            "psychic",
+            "misty"
+          ]
+        },
+        "trick_room": {
+          "type": "boolean"
+        },
+        "other_effects": {
+          "type": "array",
+          "items": {},
+          "maxItems": 0
+        }
+      },
+      "required": [
+        "weather",
+        "terrain",
+        "trick_room",
+        "other_effects"
+      ],
+      "additionalProperties": false
+    },
+    "state": {
+      "type": "object",
+      "properties": {
+        "participants": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/$defs/participant"
+          }
+        },
+        "field": {
+          "$ref": "#/$defs/field"
+        }
+      },
+      "required": [
+        "participants",
+        "field"
+      ],
+      "additionalProperties": false
+    },
+    "change": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "set"
+            },
+            "target": {
+              "type": "string",
+              "minLength": 1
+            },
+            "values": {
+              "type": "object",
+              "minProperties": 1
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "values",
+            "evidence"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "transform"
+            },
+            "target": {
+              "type": "string",
+              "minLength": 1
+            },
+            "values": {
+              "type": "object",
+              "properties": {
+                "forms": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 1,
+                  "maxItems": 128,
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "forms"
+              ],
+              "additionalProperties": false
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "values",
+            "evidence"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "cancel"
+            },
+            "target": {
+              "type": "string",
+              "minLength": 1
+            },
+            "values": {
+              "type": "object",
+              "properties": {},
+              "required": [],
+              "additionalProperties": false
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "values",
+            "evidence"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "action": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "individual": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "move",
+            "voluntary_switch",
+            "mega_evolution"
+          ]
+        },
+        "move": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "outcome": {
+          "enum": [
+            "completed",
+            "flinched"
+          ]
+        },
+        "activation": {
+          "$ref": "#/$defs/activation"
+        },
+        "changes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/change"
+          },
+          "maxItems": 128
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "effective_priorities": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": -7,
+            "maximum": 7
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "selection_evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "timing_evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      },
+      "required": [
+        "id",
+        "individual",
+        "kind",
+        "move",
+        "outcome",
+        "activation",
+        "changes",
+        "evidence"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "outcome": {
+                "const": "flinched"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "selection_evidence",
+              "timing_evidence"
+            ],
+            "properties": {
+              "kind": {
+                "const": "move"
+              },
+              "move": {
+                "type": "string"
+              },
+              "changes": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "voluntary_switch",
+                  "mega_evolution"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "move": {
+                "type": "null"
+              },
+              "outcome": {
+                "const": "completed"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "alternative": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "participants": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "field": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "participants",
+        "field"
+      ],
+      "additionalProperties": false
+    },
+    "observation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "battle_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decision_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "$ref": "#/$defs/state"
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/action"
+          },
+          "minItems": 1,
+          "maxItems": 16
+        },
+        "sequence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "initial_changes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/change"
+          },
+          "maxItems": 128
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "maxItems": 128
+        },
+        "strict_speed": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 2,
+            "maxItems": 2,
+            "uniqueItems": true
+          }
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      },
+      "required": [
+        "id",
+        "battle_id",
+        "decision_id",
+        "subject",
+        "state",
+        "actions",
+        "sequence",
+        "initial_changes",
+        "alternatives",
+        "strict_speed",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "speed": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4095
+        },
+        "ability": {
+          "type": "string",
+          "minLength": 1
+        },
+        "item": {
+          "type": "string",
+          "minLength": 1
+        },
+        "training": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/training"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "form": {
+          "type": "string",
+          "minLength": 1
+        },
+        "persistent": {
+          "type": "object",
+          "properties": {
+            "unburden_active": {
+              "type": "boolean"
+            },
+            "activation_evidence": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "speed",
+        "ability",
+        "item",
+        "training"
+      ],
+      "additionalProperties": false
+    },
+    "infer": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": 2
+        },
+        "observations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/observation"
+          },
+          "minItems": 1,
+          "maxItems": 128
+        },
+        "configurations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/configuration"
+          },
+          "minItems": 1,
+          "maxItems": 100000
+        },
+        "profile": {
+          "enum": [
+            "showdown-champions-reference-v1",
+            "champions-evidence-only-v1"
+          ]
+        },
+        "max_evaluations": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000000
+        },
+        "max_branches": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        }
+      },
+      "required": [
+        "schema_version",
+        "observations",
+        "configurations"
+      ],
+      "additionalProperties": false
+    },
+    "simulate": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "$ref": "#/$defs/state"
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/action"
+          },
+          "minItems": 1,
+          "maxItems": 16
+        },
+        "observed_order": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "initial_changes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/change"
+          },
+          "maxItems": 128
+        },
+        "profile": {
+          "enum": [
+            "showdown-champions-reference-v1",
+            "champions-evidence-only-v1"
+          ]
+        },
+        "max_branches": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "max_nodes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000000
+        }
+      },
+      "required": [
+        "state",
+        "actions"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -41,9 +41,10 @@ class ReviewHandler(SimpleHTTPRequestHandler):
 
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--port',type=int,default=8766);a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--port',type=int,default=8766)
+    p.add_argument('--page',default='/.cache/m34-visual-v21/review.html',help='Local review page path (does not change the served root)');a=p.parse_args()
     server=ThreadingHTTPServer(('127.0.0.1',a.port),partial(ReviewHandler,directory=str(ROOT)))
-    print(f'http://127.0.0.1:{a.port}/.cache/m34-visual-v21/review.html',flush=True)
+    print(f'http://127.0.0.1:{a.port}/'+a.page.lstrip('/'),flush=True)
     try:server.serve_forever()
     except KeyboardInterrupt:pass
     finally:server.server_close()

@@ -1,0 +1,1478 @@
+{
+  "records": 80,
+  "complete": 68,
+  "incomplete": 12,
+  "complete_natures": {
+    "nature:timid": 68
+  },
+  "complete_alignments": {
+    "speed / attack": 68
+  },
+  "complete_abilities": {
+    "pokeapi:ability:31": 65,
+    "pokeapi:ability:99": 3
+  },
+  "complete_unique_builds": 51,
+  "surviving_records": 68,
+  "surviving_unique_builds": 51,
+  "counts_over_time": [
+    68
+  ],
+  "active_abilities": {
+    "No Guard": 68
+  },
+  "observed_speed": [
+    174,
+    190,
+    191,
+    192,
+    193,
+    195,
+    196,
+    198,
+    200
+  ],
+  "exclusion_reasons": [],
+  "surviving": [
+    {
+      "build_id": "f17f920fdcd5897dd8ef45d90c1ca42cc172e0f4635a83b681c755e2956ab435",
+      "observed_team_signature": "0681b5bfcb53a61b345bdd2f908dbbe98787aa0ad0b7b6c975b3acb935a485d8",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "7b97a17b0655c364c910e11000aa287041a9df510f96abb4a5f614254a1f1f05",
+          "id": "59d8f706fe42c0f15fccdc82bacae35c3f9a25c2c3567ae7338f0cd2a08fef70",
+          "source_key": "MC211",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=QmJrzdTv1w"
+        }
+      ]
+    },
+    {
+      "build_id": "cee9980c70fdf6899b1a7bfe43d81aed75dca941985f665a87f05cbd2f50130b",
+      "observed_team_signature": "0a35bfc743c83014aa45965198bab6c1a20c84721ba0ecc46b756162687b38da",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "8b6552eebee181f2d729ebf99a6e8ce0c0db505757ca5d57d7a86ed05ba26e16",
+          "id": "a7f8f0bc67ee9b5d1f6d06a7072937012758adaf0e34ae75c28b8b04c196a5cb",
+          "source_key": "MC432",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=r4p0D3VJUm"
+        }
+      ]
+    },
+    {
+      "build_id": "7a83bf9852dc9fe7f6675cdff52b9fd3b94d433bfff0b7d3cdd2461ca84829d1",
+      "observed_team_signature": "11a622bdcb18418f784397b21cb7b25b90c1e52cd144197a13dcfa0ffe8c803a",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "563244b65651ff87b2454cf0acd45e73a1fe750c8b94ecd57164c655626bbebb",
+          "id": "7bbf7d02a9700f144298a20f0d46e174b3d2fe073b1bd0dbcb09b7afacc1b467",
+          "source_key": "MC364",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=y88jKywqQT"
+        }
+      ]
+    },
+    {
+      "build_id": "adbe54cc8353889fbd41ee04c478b4a3da28f00580cd017e9c2695143d12ff1b",
+      "observed_team_signature": "1351fd282e1a5ea1ca8e87fa88ae786a0eba97d8ba6d84bdda68439fe6b56330",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "305778a4bcb5342ef4b36e9ac539b79f4eea60634d21bbf86ada3c0b3de7cf84",
+          "id": "3a8c8b69c791645c8f917015bd6a98f1fb263704436b50bf957dd8a75a0a3860",
+          "source_key": "MC312",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=t2j268fGCy"
+        }
+      ]
+    },
+    {
+      "build_id": "3bb4a50c652ef446e5a6fdf7a87412a7fc8a4401e0961eddbc15d3d339a1c1e8",
+      "observed_team_signature": "1893d3c6f30ac807909e26e93e9ebd136cabd8a55ec7e8151f04770f8782a947",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 192,
+      "speed_sp": 25,
+      "publications": [
+        {
+          "extraction_id": "8c70a13c5b07f5927911aef327a0464169c02abfbf0ec042fe57c7daed0bba43",
+          "id": "bb719f61b02e8aa0b50b045847300e7914b6e2c4a169956c07a415123ba4f0f4",
+          "source_key": "MC336",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=vnrZPNWIrx"
+        }
+      ]
+    },
+    {
+      "build_id": "81d15e90d9ad219e745353c03a04fd8652312d29969c445a560e6e4531902f46",
+      "observed_team_signature": "1b050526fa0d81b6c2891e6ce4c335b4c0bb2714b3db232ec0f6243cdce1babb",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:99",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "bdb3ee140705acc7f4978f517ab03080bdd073d57721739926af5088d4c5a3a0",
+          "id": "2cadd33f3ffde0ace342066a3e635566dd3072c8284611b0f65b95dba3e54848",
+          "source_key": "MC584",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=7mi3HJvUtR"
+        }
+      ]
+    },
+    {
+      "build_id": "08006775b343e871eb7485212f66b5fa63d94f47284dd9a770f974a3e0fb4300",
+      "observed_team_signature": "22ce6fadc61a648a6dbdb7d8477510d5596892ce2a0621340597949bd422c3ea",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "4d8839cb5d9a6239990af46da5f0f817c37241bb7fa4f6a17b9f1763d4c3d05d",
+          "id": "5b58e460f13611209c501a1065b73945893a6e0c48acc73d48050391642b062c",
+          "source_key": "MC610",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=w04Zcb6mHf"
+        }
+      ]
+    },
+    {
+      "build_id": "a65439fa1dc0d4216ce17b1220ca63ba4ce1c1bc16aa106dcba1af7ce787ad9c",
+      "observed_team_signature": "2c9b34e1e2fac2b87e1d513ec6f29ef717618f2b05aadd6c7b98e5e1f3973bee",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 198,
+      "speed_sp": 30,
+      "publications": [
+        {
+          "extraction_id": "7327c0caeaa36278c306030c3984fb38a70e7379fa75220ea2b861347b7c757a",
+          "id": "5b79f8aa3f831d720ecac8e5007da951fcf5ee26cc683a4f76435667ff7be083",
+          "source_key": "MC403",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=QGZn2bbNYQ"
+        }
+      ]
+    },
+    {
+      "build_id": "5a5b0555a4d132d73a3203c2eb93334fe4b67ad25cd6aac7f7e66a2dbc8ec21f",
+      "observed_team_signature": "2dda246b33130a76c38027c3edbf37deb276a522136d5ce03001667bb9a5ab6b",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 195,
+      "speed_sp": 28,
+      "publications": [
+        {
+          "extraction_id": "a5508285e017c6466d3417fb7ef0958ea02c46e6154a8d5aa86531b7dccb5c54",
+          "id": "20250f9c2790c5983a940b562752553434e34a09273905e3c143d9fafe639841",
+          "source_key": "MC177",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=aIbZYQypP4"
+        }
+      ]
+    },
+    {
+      "build_id": "1ade5e26f9849b1cc2f68a7316088f46f64c1e0e6469eb2db9be26115fbc6de0",
+      "observed_team_signature": "2ff6a62f4a87d1c2e8549e2a3d4ec828f57b9f704a083a77d437f72987d2a80d",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "ced85bdc45280b38549644f7ae334a13afabe1e2f1252457878d37e63f766b7d",
+          "id": "f87219fd71f10f38a11a5c928d8a3aeabbb49e9a80478ae2b339b4fbf22cef7e",
+          "source_key": "MC256",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=tbcXXMe9UA"
+        }
+      ]
+    },
+    {
+      "build_id": "f17f920fdcd5897dd8ef45d90c1ca42cc172e0f4635a83b681c755e2956ab435",
+      "observed_team_signature": "30241be46a8b732c9139bb79ca502d6799633efa8e09327f0c4eb8656d936bb1",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "2021ec455b8db270ac649bc0a93f8af60e6f8b068e447adeeb99bb9f7aec2a42",
+          "id": "49d39654cc9d65df7ba6c613aaf1635fba0f968abcd68913d9f0362844410126",
+          "source_key": "MC89",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=cMHgHCrNk1"
+        }
+      ]
+    },
+    {
+      "build_id": "b47e84fb9681adcb78afd74e64d05ffdb3422277c937630d37844de615747bb1",
+      "observed_team_signature": "30718227eedbabef38559c7780694ff80ddfe9a7444d0fca8091ef734c489320",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 192,
+      "speed_sp": 25,
+      "publications": [
+        {
+          "extraction_id": "77b6b084df8143a4562471c5708023295efc8f266029408107e255907ec39a2b",
+          "id": "8559926704127983cb5cad4286199e61728d1160552ea30c02c577c17f7bb33d",
+          "source_key": "MC255",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=bKgrjMhNMp"
+        }
+      ]
+    },
+    {
+      "build_id": "f23cfd2b9b7214352e651a9cdb572c1b359e7c3ff68cd03c9ae51a8cb3d97dae",
+      "observed_team_signature": "38350784e63f2f83b8adab2e254584059ff6a2e5e7bba96a5d44c8cb94cf3e9a",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "9fec16aa6b6168a9b1d0323346acfa3c643fb0faae18bc751f1b99b10466aba7",
+          "id": "64e01c4fbebec5a704905b4048789da989735dff2c46a0b97b2dc1e2b470e1d2",
+          "source_key": "MC246",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=zOG0GWPqGF"
+        }
+      ]
+    },
+    {
+      "build_id": "b9f17acd425403dab0f38bc141d24f1d8244e3560b301bdeb8cf23a7c56b287f",
+      "observed_team_signature": "3ee6c65bc5aaff4692f66eeab887878d2c59be7345f72395aa61c161788abb3d",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "f5aa963199382dce702b395b6fa758164cf7eebe9c0d0283f4b5f22a81bac0ac",
+          "id": "fb07e5ce2b4d9e2b86c817b9cba85c1678178e51180d201b62623dfa8eabf086",
+          "source_key": "MC282",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=xgW4uhzc4Z"
+        }
+      ]
+    },
+    {
+      "build_id": "cee9980c70fdf6899b1a7bfe43d81aed75dca941985f665a87f05cbd2f50130b",
+      "observed_team_signature": "44dd733354a44ee51ec084273bd88d0a9a87e2ac058f162eceb94f46b86390cc",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "289501b2c76b568c699232686999423040e0204b38abbbf98cd857235bb47c89",
+          "id": "0cdca5cacb6353ab5d11fee23c55066b1b56aa13a4a2b3764a33becf63a2b0c4",
+          "source_key": "MC405",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=un2CFJAChc"
+        }
+      ]
+    },
+    {
+      "build_id": "c57a5c95f839bf77a1cbec10f283a983f26a5caffe5f9ba0fd8c06d78b63f148",
+      "observed_team_signature": "4b7903a4daae1e84a63007312126316e137dcc3881665705bbc1a035f417686f",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 193,
+      "speed_sp": 26,
+      "publications": [
+        {
+          "extraction_id": "4c7fe4c8c5828d87615dfe96d57e4b8754ab1854452ad9268faa89a30032df30",
+          "id": "ac003dc3aec51ebd99c09e71c450bc78f48452272a0a2df79c739e78c46935fe",
+          "source_key": "MC269",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=nKLC4RNXTy"
+        }
+      ]
+    },
+    {
+      "build_id": "d28b6fcca77c789e1cd66a588b5321cf3c7df92cb522be883be31acce35b5e37",
+      "observed_team_signature": "503ae441cf1f39bc8e8044dc8e2b1556e94015b4252ae5bcb3557fc06206d01f",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 195,
+      "speed_sp": 28,
+      "publications": [
+        {
+          "extraction_id": "a72a616371d85254610ab9bc8f3f3851c00f7e0390ca01bd849ef2acd7b70e54",
+          "id": "fee31ad2e5511051e6ca1702b2d5ce8f1fe97f3336ec4fe6e6c4e2a77b0577d6",
+          "source_key": "MC264",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=YbCDgITjje"
+        }
+      ]
+    },
+    {
+      "build_id": "a39f8104ed65fb98fccc8d47c8e9781a2ff867e1f7bb3fdd8b5394e060f7a99f",
+      "observed_team_signature": "5da4809f3b8cb9942956d4c1b7ad8a27e45bcaabe6548d1ab78c50b3391d0d7a",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "915c5b260c47f1cbcbe085066450b4fc086154aa02cdd3cef6fe57b708d5612f",
+          "id": "ca477379439a89074558c9e226236464a4c1cc2cef6ce1a2151adf2249df499e",
+          "source_key": "MC321",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=EPfSX8VKWI"
+        }
+      ]
+    },
+    {
+      "build_id": "42faf38319746674c565b089896f0f3f207341bfcd6321ccd0ea1bdff22ec364",
+      "observed_team_signature": "61dbcc3bad4065a1b9b7efc4ed84dfc8e16a368f3102d2ccefc1e586fd720762",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "0d919b90f1fd91fbdcb314a63886752c744765c151fec5b851f0b33ec8b1619e",
+          "id": "5111d34b795b3bb7c4c7a8bca691100554328fc5872fe046c09a4b25afae6faa",
+          "source_key": "MC271",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=VTMSdRWBJG"
+        }
+      ]
+    },
+    {
+      "build_id": "3bb4a50c652ef446e5a6fdf7a87412a7fc8a4401e0961eddbc15d3d339a1c1e8",
+      "observed_team_signature": "680cf94a367eed3a5ed033fe4b85b5d8d3db8fd3d060e362b2df9b900cef0c18",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 192,
+      "speed_sp": 25,
+      "publications": [
+        {
+          "extraction_id": "701979cdbb066abeb543a86aebf40913c4a11e2b054ee4a6a3e76b23b442e4a2",
+          "id": "2737481fc51718c8b398be3958b06df31dd85ee2ade373d4d5c6a13eeac3e8cf",
+          "source_key": "MC226",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=bCc6nqhFQ5"
+        }
+      ]
+    },
+    {
+      "build_id": "2c2b45a738a7033984966b62d5bfa1b8ea678c58a3e85f13617d3d2430f2bb4d",
+      "observed_team_signature": "710697fb6072d70d0dfb39eb7dba2a8b560e7656e305910a361d0208313e718a",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 195,
+      "speed_sp": 28,
+      "publications": [
+        {
+          "extraction_id": "38c968b624500daba9a095392539670aadbe9d141e5c4172aed8e9bba282634d",
+          "id": "6007235d3787b5f8bbebf45e236ec08e69ea9ebc1f26d362cf630e4d2cffaef9",
+          "source_key": "MC455",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=yd6urH0pJ3"
+        }
+      ]
+    },
+    {
+      "build_id": "60f02edb8852fe6aa58edb63250996d4d96f0562bd421f3deeef55f630ec4118",
+      "observed_team_signature": "7144916e9c97a2af36b76697e4091c7b0a5a6b3819846217067db4c667c7ab99",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "4d8b2b6cee201fb643db791b024332ce9daa420959113901ce74393edc4bd564",
+          "id": "2ef7c1175eada43c19948643971ba28f1da06bffc79d35560d434129439eff78",
+          "source_key": "MC494",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=UG2zTlXBMF"
+        }
+      ]
+    },
+    {
+      "build_id": "7b06d337ef91d205d9dc7ee3111c0775404b925f36107eaef03d9a8a6402a606",
+      "observed_team_signature": "7153eaa51799a05df8b41200e3fa28ac673762553567b628b89bae8e9dafa851",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 196,
+      "speed_sp": 29,
+      "publications": [
+        {
+          "extraction_id": "f3a92be3127c0cd9f3f709f03a29f495e8c4cb3c3df99c146e6fddfb8e55c215",
+          "id": "fabd1284b2bfdf948a3509fbe6bbe75b83f07a4f78f64edd72ab196ed4cdcdde",
+          "source_key": "MC618",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=CPADlI5wyz"
+        }
+      ]
+    },
+    {
+      "build_id": "a677666aa45be509a24473052bc957657f3237675eabe5804868ec14e401f33a",
+      "observed_team_signature": "74c935317fb6957781a778dfb6e6286440f0477126add9c5c333255070d28e47",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 195,
+      "speed_sp": 28,
+      "publications": [
+        {
+          "extraction_id": "14e0300f0217a8faf1ebe46ae1736b33ea657b711f2f5cd3fde5624809e2c387",
+          "id": "7483869055cdd8156f477258cd43d66aee81a42e9b807f4ad1805ea9eed6cb09",
+          "source_key": "MC385",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=NqmYhz0b3j"
+        }
+      ]
+    },
+    {
+      "build_id": "3bbc585e07144d3e0dc0b0fc7b316ef2c56d1e289b693679bc530ff96dfd77eb",
+      "observed_team_signature": "74cab0a639b191ca976d9a958b687bdba75e5690e88c3297f57c637d1fbcc281",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 196,
+      "speed_sp": 29,
+      "publications": [
+        {
+          "extraction_id": "9b6a3b59b682abb4ad164d641f523f1a306b604e91015e910481772c0d4e6e2a",
+          "id": "5c57d707674bfc78db631f2873b39144e1a2f70ab2d9e26827c2326fce62e8de",
+          "source_key": "MC497",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=HdXldJLtwZ"
+        },
+        {
+          "extraction_id": "584bf04b9aa8225a6b33a004f1ccc1450350865d02ef772d2b54fad6e79a59ec",
+          "id": "baf94220685b086718c493eaf0bf5778c04e4075cb21b3f2d85d6359b4f2da83",
+          "source_key": "MC534",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=HfEgpplYU2"
+        },
+        {
+          "extraction_id": "c8a5573d277113da1ebbce3620a42e1de9a7e6a8b26a69fec7b1735ee7a71000",
+          "id": "1428900c63e49a8adf822361dde0471b31af62bb160c9ea516918fd820b4d542",
+          "source_key": "MC469",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=oZmAjy7ZZ3"
+        }
+      ]
+    },
+    {
+      "build_id": "314645cde8da86d354a6c7132bebe629297cd21538977b473132d2cdf4e68380",
+      "observed_team_signature": "7549ff3d7483803a38703fd7df3570bd47dab51b563e8abe4328844f922cc59b",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "31554229159b873e9200dc8cedee16e3fc8c190e69d335b3bcab2575f4032f43",
+          "id": "5cb350b250232fa430c6ecfff9fe862d8e972a2596ddf1dd1ab4d9d585397931",
+          "source_key": "MC481",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=FFWVdDhHkt"
+        }
+      ]
+    },
+    {
+      "build_id": "6280e5bcea7fbccf20e85bf82c9a349ba3c5f1900891ea9521b7b8fc34a240a2",
+      "observed_team_signature": "7655ce3c99d04cdd168742ba384253d764bf081afa7144b64369001aafdd3c08",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "e079ed903f52f62d59a36642cee45d9d79f1e2712ccd83d28ae66df7711c40e7",
+          "id": "dcda60269af6634d895cf5035cd1792be826177db72b1122e39bb328478e9715",
+          "source_key": "MC383",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=EOO4EDJyim"
+        }
+      ]
+    },
+    {
+      "build_id": "81207767666cb11db4a82d58463ebd329a4630fa924b2f7499b823ea1de5b590",
+      "observed_team_signature": "80eb27c38ed63fe5376fe3f5869a51a8b103d1c2287a8bc639b46ae22e5eaa05",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "a7e861f503ae11502f04b7113a41e14b6cffd92df5d211f50b9234bba5ef6434",
+          "id": "9f9846e469d2a016a34f09c9167255cead0e1b6a18ee98415ced9790543755f7",
+          "source_key": "MC491",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=MNE96WeEis"
+        }
+      ]
+    },
+    {
+      "build_id": "0889bc0ce72ba95fdcbe89aa986e993c485cca06b534866bdd0d9f4fd15d408f",
+      "observed_team_signature": "8ac16b910891ea08c49601f68bf44ce1228c1b1c9cd6a1f0b20d3605a96950f5",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "77b32f792452af08c67f34803fa0fe8eb175a5ca53ae104adcb71f553c3df12d",
+          "id": "6606e3130d874fa1fe3ce98e121a14645c599bf8b2a7945776b8aa54b24bbd0d",
+          "source_key": "MC477",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=kbfzil5ZrO"
+        }
+      ]
+    },
+    {
+      "build_id": "58bd744fd94fc1635bfcaaae51f2b90b26b318718540d475fd71dae6472cfa5c",
+      "observed_team_signature": "8d480e1a6ea9306060907837e705159621fc557c0dccc4f928a723d6ddf3309c",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "e1263012fea369231318d7f7cffa8a6b43ea5d6b26cd9f105f488e2fed0cbdd0",
+          "id": "e11680c79363d35f74939158d2fa567332444af24ff214bcd23da5cfc43ff004",
+          "source_key": "MC374",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=RQ5avJsFAG"
+        }
+      ]
+    },
+    {
+      "build_id": "12fd0755f1f32044bfe7f698cd6bb057e6a085ff5009f1b667b436c148540cd6",
+      "observed_team_signature": "8d61f693cff6d021500103083a4e8d601007b66907ab5febdc2942e4a922f381",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 195,
+      "speed_sp": 28,
+      "publications": [
+        {
+          "extraction_id": "c4696acdfd9de4407dc2b30dbf365a5bc8af01ab4449396dc6f110cd3dffeffb",
+          "id": "1e59524fcf1ab89dff53018e16f07c39ddaf815256f3d1f39fc5d8a00f0157ca",
+          "source_key": "MC384",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=p3gYBUBQog"
+        }
+      ]
+    },
+    {
+      "build_id": "6f119b12ca5f613804a29cf7e54f140111c43f212ce00fad4c82cf27aa11a0d3",
+      "observed_team_signature": "8da5e9f49c55da2043b1bf7a87c960194f92307f0dff5fbeb16a47df190525c2",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 192,
+      "speed_sp": 25,
+      "publications": [
+        {
+          "extraction_id": "7631cd5dc29cc6659f27f0f57eed11d33b60666564cfdd7417212f5513521ec2",
+          "id": "40549b722bd0509b3abea9e9522740fe0405f922b590ad55a556690337ea328f",
+          "source_key": "MC612",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=PDM6dSZj67"
+        }
+      ]
+    },
+    {
+      "build_id": "1ade5e26f9849b1cc2f68a7316088f46f64c1e0e6469eb2db9be26115fbc6de0",
+      "observed_team_signature": "8e99f14af6927346b2c32f4327493eb18fc32f3da97eca96162c270e075733e1",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "78937819eda6e39493ffb4dd0b3cfbfc076ad310b39574c5a2929854edd41b7e",
+          "id": "de9ee27e8423967321e5b4d4c72f57c296aa79c60d2dd6e8130605ee2cfac4e6",
+          "source_key": "MC453",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=owZu3eWbqm"
+        }
+      ]
+    },
+    {
+      "build_id": "28cdf5b9d74322c2d01e6a45d6073f406e78269194a0e15a0b410a424f859858",
+      "observed_team_signature": "8f12e11c32888685952520eb097a579dd843b32a9df31dac9ddccafceb43ff12",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 174,
+      "speed_sp": 9,
+      "publications": [
+        {
+          "extraction_id": "41fb67043a5a0d4987294b54dea6f02addb47a56f128883575c767e5a3531945",
+          "id": "3fb1f133f78725de1abc42ac593ca994ce92b86522de5bc4e4c74d238f844090",
+          "source_key": "MC502",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=F4gXF4Cf4U"
+        }
+      ]
+    },
+    {
+      "build_id": "1255e4943c0d80ce7cf0ef2fca3187872ecc6df8c42d7e2c307f010c8f4a8710",
+      "observed_team_signature": "8ff2117245ba51d9793ec52e9e5104a94381ca90cb62d4ace0ff4bc20ee40ba0",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "0ff80bc19dc3dd7e79de96b38f67cf4b3457f735808993a165b3dfee27841f84",
+          "id": "9592e69be1afd2c241cccb0687b9dfe66233a9627f83c29610a05810ad8181be",
+          "source_key": "MC532",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=2xim9NU90C"
+        }
+      ]
+    },
+    {
+      "build_id": "81d15e90d9ad219e745353c03a04fd8652312d29969c445a560e6e4531902f46",
+      "observed_team_signature": "96fd50a874571f3b8f9d2d6b2ac1edaa64f49f7b84d7f29bcfb3f1d7b6ff0e09",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:99",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "a4ae89e374c7fa7b5f376a988de706702f4caa8712d607d08d47977ec57d3345",
+          "id": "1a9c4b8c597438abe05d1964c342bdf492716dfa7791ec83eb70c2751f918226",
+          "source_key": "MC582",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=2MgTc2EYyT"
+        }
+      ]
+    },
+    {
+      "build_id": "cead12ff84a77a7e64665285104cfcb4ba6d48e937bd09a40271ec6c626db65a",
+      "observed_team_signature": "996d3c6e43896df114629253ddf38238793ebc30d2f9d5963e4173ea7c9ec46e",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 195,
+      "speed_sp": 28,
+      "publications": [
+        {
+          "extraction_id": "9d6b4c0cdb2ad52164d6823675860f466c615f8d7dd676e606f7f3d47170a673",
+          "id": "663db83f6ccaf454a9964be0f8bcb4d4bbfb860a93571309756ae901c84b1733",
+          "source_key": "MC615",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=VVO3eu7qAu"
+        }
+      ]
+    },
+    {
+      "build_id": "1a0c495c3a060363ffc2e0a97d110122a0db534c322682162e717610487718c5",
+      "observed_team_signature": "9c22af065d6c91e13cd5a503c113f1516a76e38dd66d0e0a2db74a8fa4863cc2",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "bd8f9fb75a3d348fb23e3c0e1850ba08aaf0a6be69ce3226cd08ffe19bea6793",
+          "id": "069a5ae5ba735874a8ab8e12bac9fb48266a9bf680da892fe248afbfce1a7f11",
+          "source_key": "MC367",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=axdN5hyvKI"
+        }
+      ]
+    },
+    {
+      "build_id": "13789c91a6c8af248de3bf99137fc63c62f28b88bab62ba1d42ff0e2f4bf49ac",
+      "observed_team_signature": "9d40b92be961cfb8a1e645e9b7b6c638e9037e7023ee15f0db2fe1bc29b36c4e",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 193,
+      "speed_sp": 26,
+      "publications": [
+        {
+          "extraction_id": "f29e0229f52c739c3763e0c87145670884593f9c9ad437bf9b2de2bd6ec962d2",
+          "id": "6d0dbc1b6c47acf9e97c32fd394abae19129fd4e42044122bc6630c58bcdf459",
+          "source_key": "MC410",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=k3jSIHbzj3"
+        }
+      ]
+    },
+    {
+      "build_id": "edad32c609031500e24152ef9d34c2f7184fe23defaa38115765e9f10430cbdc",
+      "observed_team_signature": "9d88503ce45afe7b0935216f844fd67ca7dbe1e7a07f9b0084a2c619b050deb5",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "b913a67a673f58c839e58a325d93e27c846ae8f7011297690b99e39d6e421faa",
+          "id": "dbcc8e057e7f1a61f06b7b2145034dc921a66336ca411ea33760c6cb6b4a6a19",
+          "source_key": "MC215",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=O9lkgVtigb"
+        }
+      ]
+    },
+    {
+      "build_id": "66cb51b45cf5461a6198c35ed224a87e848573f73553108c3d682cc2f18bc80a",
+      "observed_team_signature": "9f308f3c517f4cf3d453a4e8d48bebec86f88041a2c339a15e82366e096ef93a",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "76340521dedb19b325b21c6d3ff6cab7cfecbdd307a6b69261b0549d0e8863c3",
+          "id": "a64b4bfb4c091fca0329010d1a08ec4eb414ddef54bbabd71d03d96c7b02c7b8",
+          "source_key": "MC379",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=xKlPebCjW0"
+        }
+      ]
+    },
+    {
+      "build_id": "5dd449a516a8cef97b02be19fa9ca46221c9965df938026a81d0bd17c195e468",
+      "observed_team_signature": "a4d2b2cdc1105f8168f9f7bcd66877a3236701ec1bc947266972d99b2f2e2f92",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 198,
+      "speed_sp": 30,
+      "publications": [
+        {
+          "extraction_id": "ed2792a55d14b4a250ca755be1c9e4b6ce844b84419face4942f21444600b7a9",
+          "id": "32217d2ad3ea58c9a4bdf83b26f0b5d21dc0a725902077b9b5d74904372da39b",
+          "source_key": "MC560",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=dl9zCRl6Ss"
+        }
+      ]
+    },
+    {
+      "build_id": "f8ffa6599c034703cda860cf694f9afb68931aeb545652e293984cdecbf047e8",
+      "observed_team_signature": "a6e1b011caf67a2b684fe34143a4c3849bbb091719334bff1462b9cd5ced3c24",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "662a53a68bfe1224f88a6af9bf33654f2903a5ce6a882957404c473c5bde8a52",
+          "id": "9df74f813cd931f8221997b4d9a62b87091c4c32613e0637af26cd697e311ed1",
+          "source_key": "MC283",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=OuSdw0Ukh0"
+        }
+      ]
+    },
+    {
+      "build_id": "3bb4a50c652ef446e5a6fdf7a87412a7fc8a4401e0961eddbc15d3d339a1c1e8",
+      "observed_team_signature": "adba2cc88c808c34549622704e34f94c6eeeee29bb8c4c54e409df14caa92e06",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 192,
+      "speed_sp": 25,
+      "publications": [
+        {
+          "extraction_id": "71fd70b675d407eb2a3511b80bb9260baa9455d40321e9668313383f889e6ed4",
+          "id": "af94b61c46b360a09269af33d5a48ff6b430ede47f84641ce93a48461c7d35a9",
+          "source_key": "MC272",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=soDqykalNW"
+        }
+      ]
+    },
+    {
+      "build_id": "fca8d352778698cb98faaa825edb528c3212cd094a26a62aba893db785a265c7",
+      "observed_team_signature": "b12b60a369568d20f840f05a6218e92a39abb5645ea7630d5f1239490774b4af",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "233624c41ef771a49e0d9f227a086fbfd4f64df756b0a7677535e38dc5b0904e",
+          "id": "20a65ce642aee4164359f6c2ed152d21af4c6e4895a6d9018d7fc7be1687160f",
+          "source_key": "MC64",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=8Gfhh9D2If"
+        }
+      ]
+    },
+    {
+      "build_id": "3e537282376a8d11da62577de6c039ff23c27bbb04f432d27d368fc47cd41830",
+      "observed_team_signature": "b2768b800c6da0c6f766dcb5cb8458265db49b05d44dcfaa6735ae5ea98280eb",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "23506e38f4550b1e08b58b74c1234e260097e1533f5f943bde1c5a4ad3f28a28",
+          "id": "14c85162fa8ff2a5cc9408c2ea344bd291a5b7d3ff264f65215a9af3d39db328",
+          "source_key": "MC356",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=7N7vR9DnzX"
+        }
+      ]
+    },
+    {
+      "build_id": "af16a1da8d8eff5a67771df4bd84eb6e1febd6d40cbc8d7a34ddff34bf0088a8",
+      "observed_team_signature": "bc82e85cbf86482ea5829ce41fc9209ef71e97359469f28d4fc5464ed83432ce",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 192,
+      "speed_sp": 25,
+      "publications": [
+        {
+          "extraction_id": "0ac3d7d8c28f0f3eafdd2d4e4aabc2e32fa046f5bc64abb875902e78752a0cfe",
+          "id": "3c8ffcc9e7a9174a6e1faa416dffd5e607ec962280c8016396f5ed74f9b98bb0",
+          "source_key": "MC571",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=MGREjPOafm"
+        }
+      ]
+    },
+    {
+      "build_id": "1ade5e26f9849b1cc2f68a7316088f46f64c1e0e6469eb2db9be26115fbc6de0",
+      "observed_team_signature": "be9bfd273e893a9ad05201ae473319ceda6ae170d69fce007fefcd08fc4bda07",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "147903f2499631666be4f4473b8a6405ed58d3cbc0265d33e780adf1cb0f77f1",
+          "id": "9b39fdd8f2908a257cb176bac4f7ce828ff89cf52b3c1300fa09f66027ca0726",
+          "source_key": "MC524",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=TYtzS63Gqg"
+        }
+      ]
+    },
+    {
+      "build_id": "b9f17acd425403dab0f38bc141d24f1d8244e3560b301bdeb8cf23a7c56b287f",
+      "observed_team_signature": "bfdcdbcecd65e049c39ff23b04b3d08c173c2310afb504f02c4523a74e6fa0c3",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "5e7d96c749947ba22ea43962ef1e6fb3e93f9a3565d466b76fb14446b01f275c",
+          "id": "750ac59f8df1f43b2ea21fc0d211aa7e6d14d6863dc7322682fb1d5cc614eb9d",
+          "source_key": "MC565",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=07mGLqh6mt"
+        }
+      ]
+    },
+    {
+      "build_id": "28ddac91e672eca3bb8522c37ee7307f1612e37588f4b8cdbacaab51c6624e01",
+      "observed_team_signature": "c30c229c6029a7e8c6fe8a9ac768d2e40b64813f2a29e204103b411710cac97a",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 196,
+      "speed_sp": 29,
+      "publications": [
+        {
+          "extraction_id": "45b950a5dba7892dbb4b8283893a8a733d6bfcc1eb4a4631ebd9412a8c784022",
+          "id": "37caa7e03b82d11db122869a56d86532c52d5e93c4b55489b8a094886957b955",
+          "source_key": "MC547",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=1KFPrvvkd9"
+        }
+      ]
+    },
+    {
+      "build_id": "25cea4eb7b7525538f91e38bb2d462b48a71093f45400c28a071308a38a63ce3",
+      "observed_team_signature": "c51ad25bf2e2cae8e56b3d96fa656dfd547d64f39a96b82999dcd64ba761365c",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "47aa5c5e302acae903b9ca262f281be61bee02db368be8f6aa23e55f014994de",
+          "id": "93aaa958052823d1f4ddb7e6374572bfd9c81d95278f60b046e954bedf110709",
+          "source_key": "MC315",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=TEoZpOJrsy"
+        }
+      ]
+    },
+    {
+      "build_id": "81d15e90d9ad219e745353c03a04fd8652312d29969c445a560e6e4531902f46",
+      "observed_team_signature": "c756ad604ac9cfe34269731041565e2059cabe6ff5076caa22e4d10105ed22ae",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:99",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "01c2312bc704e2e1f32205b4e0c7d8849867ec5442903585c53740436b6582a0",
+          "id": "93f301b143c34c6f409f36060b681107257c3e6e90870492733b0158e6da5397",
+          "source_key": "MC578",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=2McNdO85VP"
+        }
+      ]
+    },
+    {
+      "build_id": "375130c063b81f1ebba1421d6a832bedf2ead81aef12e311f641f461219993fd",
+      "observed_team_signature": "ca29d6f6e4f00431522163fcf1c3d00011697351b585f44524cef709b409dddb",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "04896b5c4207554e37d3ce20f599dd3efe20b45987c5505713c4664566f5bad5",
+          "id": "46d41edfbdb6a7585c6298c05d4e46f3d1a7616c4074a401931a2afb0302ae91",
+          "source_key": "MC337",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=dEAFd4z9QJ"
+        }
+      ]
+    },
+    {
+      "build_id": "e62c2dfc57c591dd950ed2046a6603eba9c970c2ff66513b0362f926979d7812",
+      "observed_team_signature": "ce89808a8d3a648dce58a09491a5898bf006198e1a882d88db0b09132f7288f8",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "ed2b0978ecc4b03f8ae3b9caaf34b8850a134433014c76107f4cc97bba4b868c",
+          "id": "e22398d895ef51991fecf75d7f4ec29c4b4c4060d0007c12d7430410f62409cc",
+          "source_key": "MC388",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=YJiaAnt3WC"
+        }
+      ]
+    },
+    {
+      "build_id": "7b9e039b2bfe07f6b1e104cbad25cdf6737ced7832374259e0c04712a1aa5aa9",
+      "observed_team_signature": "cf0fc1dd4e8f94d19d768909eec0b6dfd0e107c3a1ffb838c4fb8a4e4df654a9",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "fb01b73302fdf783c234e5625ca3f651aa2749d2978f6e14f447d01d1955a971",
+          "id": "6eebc12aa9b8d932cc497e39b9f3252e339d7485435bd68ab70316052c36fd80",
+          "source_key": "MC605",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=iZziNOa8dm"
+        }
+      ]
+    },
+    {
+      "build_id": "08006775b343e871eb7485212f66b5fa63d94f47284dd9a770f974a3e0fb4300",
+      "observed_team_signature": "d287ba7af067cce65f1ca347ecf9c14f8a853f4fd9e34c64d83fdee01f19c53b",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "3e20bf901e48f8a35d6ea7c0afe6ed73b5ba89f17c5c87b331be16912bd89240",
+          "id": "9c78ce2f76af8d216a80826181a25a8b6c186917974215164baa197d320103c1",
+          "source_key": "MC390",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=vceXRmWPhk"
+        }
+      ]
+    },
+    {
+      "build_id": "091a6387f1099c99a03c7737b689240245c782593a043d5668a8a1273d789552",
+      "observed_team_signature": "d7e28c23f567e7a2e423aa19ee4067e60189ee517b8a1edb9c90032b3dabe0a6",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "76186ec36246d196387e9c88ff3ded654edcad355e9dc139fd933b3afdf61839",
+          "id": "a09d289917430e25a5852e6426a001ac5c6a2273e6be9e6813bcd6318120a291",
+          "source_key": "MC620",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=2mZvx3ka7W"
+        }
+      ]
+    },
+    {
+      "build_id": "00ab41b80cc43bf249e4177f0fd3b7924198f899095b4217781d492a4a30deb4",
+      "observed_team_signature": "db0afa9b369b56e6e8364aa9457c234f4501a06ed8ff4435322f3b3b8ee4bf5e",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "a07069633033b24c2ad7a1ae34632662797e6985189c3b17b772d109d8c3799c",
+          "id": "c7796a7c6f48a31d22ea3aa84397da26573ca4ed1930e9dd5c682ccea993b51c",
+          "source_key": "MC345",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=ynH54YR8oS"
+        }
+      ]
+    },
+    {
+      "build_id": "3bb4a50c652ef446e5a6fdf7a87412a7fc8a4401e0961eddbc15d3d339a1c1e8",
+      "observed_team_signature": "db4d92784ab4a4547c28e65ada1b14fe0deef756c63b18e120946b16cd9d6ff7",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 192,
+      "speed_sp": 25,
+      "publications": [
+        {
+          "extraction_id": "74abcf1160a0fb5a43503da123ebd8b9f7e14c6794ebe07b5e13925822a8d2ac",
+          "id": "9da6209cca116382a446552eb3089e5799086ac71cc5ea2b11199a9945ccf0b7",
+          "source_key": "MC262",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=RHwOTt0CZr"
+        }
+      ]
+    },
+    {
+      "build_id": "1ade5e26f9849b1cc2f68a7316088f46f64c1e0e6469eb2db9be26115fbc6de0",
+      "observed_team_signature": "db9fc62cf5cb552ea49e7dbe2e8e1741da45e2b4602757380f55b8f3b5e8415a",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "22766f7d68f0b1b489288d43927f1d9f062801334eb24220a37571727dc1d7fd",
+          "id": "db4bc598319f4d2e05798c42623f09dc25aaf6ca0b2701bbb9361a4e12ea0664",
+          "source_key": "MC463",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=14D4Hv9czT"
+        }
+      ]
+    },
+    {
+      "build_id": "b47e84fb9681adcb78afd74e64d05ffdb3422277c937630d37844de615747bb1",
+      "observed_team_signature": "dcc65a4386eb3e2d1da6aeb96a12269eae23b2c1625cf09766134df20f7ec09f",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 192,
+      "speed_sp": 25,
+      "publications": [
+        {
+          "extraction_id": "1719b2bdb20209d44b49b065561377c61f045ccd45b7510adedf4ea8514934f4",
+          "id": "b5ca435cf7b370a3377f17f52e3440c814162e26871ab4c8e6e380923500817a",
+          "source_key": "MC265",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=TUZwl0XyiE"
+        }
+      ]
+    },
+    {
+      "build_id": "5a5b0555a4d132d73a3203c2eb93334fe4b67ad25cd6aac7f7e66a2dbc8ec21f",
+      "observed_team_signature": "dced97ba57b8bb8da7d8c0ce52bca43263db3ebb154dce32b981f4d95976b19b",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 195,
+      "speed_sp": 28,
+      "publications": [
+        {
+          "extraction_id": "c4777a006c9bf83ff09346e63d9b2cfc4cfa970c7788b5a911025944f7ce9d3a",
+          "id": "1f3da6c62bc00b398722555a3620880efa2ffbb912ad2d53860f3afb0c653221",
+          "source_key": "MC40",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=RIKbAQRX6W"
+        }
+      ]
+    },
+    {
+      "build_id": "f17f920fdcd5897dd8ef45d90c1ca42cc172e0f4635a83b681c755e2956ab435",
+      "observed_team_signature": "e071cbb64ce3ed5e27c8d62aa44f9d77ee62b7c7cc374823b95586b85520c8be",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "04b7de420076a963d5aa966b67cdd5c8293f40e0c9c73fff669a351d79b39f8f",
+          "id": "1a5d6a5e31fa25cdc1a27210db74fabf966b2bdd1cdbd8292ee5ffd1148d2c61",
+          "source_key": "MC373",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=6f4PC8yOjd"
+        }
+      ]
+    },
+    {
+      "build_id": "2e1f017e718fe9dad3ea7b5ab082728fa9839161055a70961c1525c9d2b6e107",
+      "observed_team_signature": "e2b7c9059e4d27543f3cdf3cb96ac18ce667305879ed55f4a4ac0c6496214d6e",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "ff6edf6ddf192f1e9fcaddad141eed5f94c85d636beb0cba047faef8d1b31090",
+          "id": "d3b39f909ffb4df911f7845e2ad80869d83b3bd2534a2e74c9d34b22cb99cb8b",
+          "source_key": "MC517",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=f0pxCJ4wM1"
+        }
+      ]
+    },
+    {
+      "build_id": "b9f17acd425403dab0f38bc141d24f1d8244e3560b301bdeb8cf23a7c56b287f",
+      "observed_team_signature": "f19ae0a09ef56bd329e6be64afdd64d98187455cbcf572e60769759061401fe6",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "881ea29f3bf6cad6c4a92ea633503791f8ee63cd04ffc2ff0be81012ad8c017b",
+          "id": "2bcfa32bba5326f9a2786bd130050a05328882e39ce63248a4e979eaf393957d",
+          "source_key": "MC567",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=5JvZrj7OAt"
+        }
+      ]
+    },
+    {
+      "build_id": "85b75d77af7c4bc8d6359c3ed80ddcb43f662f2c219e6b8ec7bc5a32d34526c7",
+      "observed_team_signature": "f30f7b5b4002c4a483ff3d6456c1d4fbc208b0a0092a491312f8a2b9114579fe",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 200,
+      "speed_sp": 32,
+      "publications": [
+        {
+          "extraction_id": "a3eb5b89715140068e4b28687cd172ae4d5e92930900bfef429b19759f8b30e8",
+          "id": "f9931da79d1f9ce9c0f42aed7dcfa11d2b265660c691f7d459d073e8cb58bc61",
+          "source_key": "MC340",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=m5R6Q58ofW"
+        }
+      ]
+    },
+    {
+      "build_id": "b9da26b417f3ea5767c867a8463e3d7ec20a635cd7a635b66ef1d761d69f30ae",
+      "observed_team_signature": "f487bc1705b2991f866e3b5057a9e46469336d37493b524a5e444fc86cd9a296",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 195,
+      "speed_sp": 28,
+      "publications": [
+        {
+          "extraction_id": "6c71f41f3bd56c74877f4b797d46e8a90d3e19c7477d8df44c19bb022f33ea70",
+          "id": "226d9f114acee59cef7db337fda59f3d36820301f4ca569c5112d7a09e5800ac",
+          "source_key": "MC507",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=PXBAbSgqHJ"
+        }
+      ]
+    },
+    {
+      "build_id": "1ade5e26f9849b1cc2f68a7316088f46f64c1e0e6469eb2db9be26115fbc6de0",
+      "observed_team_signature": "fe8adc1dffb5fdce26041a99cec2e3a4eae9d9d993de2083eb9c47ad8f04fad3",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:31",
+      "item": "pokeapi:item:2263",
+      "speed": 190,
+      "speed_sp": 23,
+      "publications": [
+        {
+          "extraction_id": "d7a7b49c9eb0d497621b9f9ec9366110953dd5d9215d42533c2f0d0071466942",
+          "id": "e9fdffa1477292717bd40dcd15225c553db420fcb1858c9e917fed2bf16b3367",
+          "source_key": "MC429",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=R10ziZiOBl"
+        }
+      ]
+    }
+  ]
+}

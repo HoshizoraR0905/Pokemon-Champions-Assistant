@@ -1,0 +1,529 @@
+{
+  "operation": "infer",
+  "input": {
+    "schema_version": 2,
+    "profile": "showdown-champions-reference-v1",
+    "observations": [
+      {
+        "id": "turn1",
+        "battle_id": "synthetic",
+        "decision_id": "turn1",
+        "subject": "opp",
+        "state": {
+          "participants": {
+            "own": {
+              "identity": "pokeapi:species:6",
+              "form": "base",
+              "instance_id": "own",
+              "actual_speed": 100,
+              "stage": 0,
+              "tailwind": false,
+              "ability": "pokeapi:ability:66",
+              "ability_active": true,
+              "item": "none",
+              "status": "none",
+              "unburden_active": false,
+              "activation_evidence": null,
+              "other_effects": []
+            },
+            "opp": {
+              "identity": "pokeapi:species:6",
+              "form": "base",
+              "instance_id": "opp",
+              "actual_speed": null,
+              "stage": 0,
+              "tailwind": false,
+              "ability": null,
+              "ability_active": true,
+              "item": null,
+              "status": "none",
+              "unburden_active": false,
+              "activation_evidence": null,
+              "other_effects": []
+            }
+          },
+          "field": {
+            "weather": "none",
+            "terrain": "none",
+            "trick_room": false,
+            "other_effects": []
+          }
+        },
+        "actions": [
+          {
+            "id": "own:move",
+            "individual": "own",
+            "kind": "move",
+            "move": "pokeapi:move:53",
+            "outcome": "completed",
+            "activation": {
+              "state": "unknown",
+              "coverage_complete": false,
+              "evidence": {
+                "sources": [
+                  "synthetic:M3.2.1"
+                ],
+                "basis": "synthetic",
+                "confidence": "declared exact synthetic input"
+              }
+            },
+            "changes": [],
+            "evidence": {
+              "sources": [
+                "synthetic:M3.2.1"
+              ],
+              "basis": "synthetic",
+              "confidence": "declared exact synthetic input"
+            }
+          },
+          {
+            "id": "opp:move",
+            "individual": "opp",
+            "kind": "move",
+            "move": "pokeapi:move:53",
+            "outcome": "completed",
+            "activation": {
+              "state": "unknown",
+              "coverage_complete": false,
+              "evidence": {
+                "sources": [
+                  "synthetic:M3.2.1"
+                ],
+                "basis": "synthetic",
+                "confidence": "declared exact synthetic input"
+              }
+            },
+            "changes": [],
+            "evidence": {
+              "sources": [
+                "synthetic:M3.2.1"
+              ],
+              "basis": "synthetic",
+              "confidence": "declared exact synthetic input"
+            }
+          }
+        ],
+        "sequence": [
+          "opp:move",
+          "own:move"
+        ],
+        "initial_changes": [
+          {
+            "kind": "transform",
+            "target": "opp",
+            "values": {
+              "forms": [
+                "pokeapi:form:10134",
+                "pokeapi:form:10135"
+              ]
+            },
+            "evidence": {
+              "sources": [
+                "synthetic:M3.2.1"
+              ],
+              "basis": "synthetic",
+              "confidence": "declared exact synthetic input"
+            }
+          }
+        ],
+        "alternatives": [],
+        "strict_speed": [],
+        "evidence": {
+          "sources": [
+            "synthetic:M3.2.1"
+          ],
+          "basis": "synthetic",
+          "confidence": "declared exact synthetic input"
+        }
+      }
+    ],
+    "configurations": [
+      {
+        "id": "0",
+        "speed": 120,
+        "ability": "Blaze",
+        "item": "Charizardite X",
+        "form": "pokeapi:species:6",
+        "training": {
+          "alignment": {
+            "increase": null,
+            "decrease": null
+          },
+          "point_domains": {
+            "hp": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "attack": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "defense": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "special_attack": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "special_defense": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "speed": [
+              0
+            ]
+          }
+        }
+      },
+      {
+        "id": "1",
+        "speed": 120,
+        "ability": "Blaze",
+        "item": "Charizardite Y",
+        "form": "pokeapi:species:6",
+        "training": {
+          "alignment": {
+            "increase": null,
+            "decrease": null
+          },
+          "point_domains": {
+            "hp": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "attack": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "defense": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "special_attack": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "special_defense": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "speed": [
+              0
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

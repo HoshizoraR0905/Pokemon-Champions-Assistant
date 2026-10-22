@@ -1,0 +1,86 @@
+{
+  "records": 80,
+  "complete": 68,
+  "incomplete": 12,
+  "complete_natures": {
+    "nature:timid": 68
+  },
+  "complete_alignments": {
+    "speed / attack": 68
+  },
+  "complete_abilities": {
+    "pokeapi:ability:31": 65,
+    "pokeapi:ability:99": 3
+  },
+  "complete_unique_builds": 51,
+  "surviving_records": 3,
+  "surviving_unique_builds": 1,
+  "counts_over_time": [
+    3
+  ],
+  "surviving": [
+    {
+      "build_id": "81d15e90d9ad219e745353c03a04fd8652312d29969c445a560e6e4531902f46",
+      "observed_team_signature": "1b050526fa0d81b6c2891e6ce4c335b4c0bb2714b3db232ec0f6243cdce1babb",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:99",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "bdb3ee140705acc7f4978f517ab03080bdd073d57721739926af5088d4c5a3a0",
+          "id": "2cadd33f3ffde0ace342066a3e635566dd3072c8284611b0f65b95dba3e54848",
+          "source_key": "MC584",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=7mi3HJvUtR"
+        }
+      ]
+    },
+    {
+      "build_id": "81d15e90d9ad219e745353c03a04fd8652312d29969c445a560e6e4531902f46",
+      "observed_team_signature": "96fd50a874571f3b8f9d2d6b2ac1edaa64f49f7b84d7f29bcfb3f1d7b6ff0e09",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:99",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "a4ae89e374c7fa7b5f376a988de706702f4caa8712d607d08d47977ec57d3345",
+          "id": "1a9c4b8c597438abe05d1964c342bdf492716dfa7791ec83eb70c2751f918226",
+          "source_key": "MC582",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=2MgTc2EYyT"
+        }
+      ]
+    },
+    {
+      "build_id": "81d15e90d9ad219e745353c03a04fd8652312d29969c445a560e6e4531902f46",
+      "observed_team_signature": "c756ad604ac9cfe34269731041565e2059cabe6ff5076caa22e4d10105ed22ae",
+      "nature": "nature:timid",
+      "alignment": {
+        "decrease": "attack",
+        "increase": "speed"
+      },
+      "ability": "pokeapi:ability:99",
+      "item": "pokeapi:item:2263",
+      "speed": 191,
+      "speed_sp": 24,
+      "publications": [
+        {
+          "extraction_id": "01c2312bc704e2e1f32205b4e0c7d8849867ec5442903585c53740436b6582a0",
+          "id": "93f301b143c34c6f409f36060b681107257c3e6e90870492733b0158e6da5397",
+          "source_key": "MC578",
+          "url": "https://vgcmulticalc.com/teams/?reg=M-C&paste=2McNdO85VP"
+        }
+      ]
+    }
+  ]
+}

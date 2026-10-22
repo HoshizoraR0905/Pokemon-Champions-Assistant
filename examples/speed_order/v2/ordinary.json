@@ -1,0 +1,587 @@
+{
+  "operation": "infer",
+  "input": {
+    "schema_version": 2,
+    "profile": "showdown-champions-reference-v1",
+    "observations": [
+      {
+        "id": "turn1",
+        "battle_id": "synthetic",
+        "decision_id": "turn1",
+        "subject": "opp",
+        "state": {
+          "participants": {
+            "own": {
+              "identity": "pokeapi:species:6",
+              "form": "base",
+              "instance_id": "own",
+              "actual_speed": 180,
+              "stage": 0,
+              "tailwind": false,
+              "ability": "pokeapi:ability:66",
+              "ability_active": true,
+              "item": "none",
+              "status": "none",
+              "unburden_active": false,
+              "activation_evidence": null,
+              "other_effects": []
+            },
+            "opp": {
+              "identity": "pokeapi:species:6",
+              "form": "base",
+              "instance_id": "opp",
+              "actual_speed": null,
+              "stage": 0,
+              "tailwind": false,
+              "ability": null,
+              "ability_active": true,
+              "item": null,
+              "status": "none",
+              "unburden_active": false,
+              "activation_evidence": null,
+              "other_effects": []
+            }
+          },
+          "field": {
+            "weather": "none",
+            "terrain": "none",
+            "trick_room": false,
+            "other_effects": []
+          }
+        },
+        "actions": [
+          {
+            "id": "own:move",
+            "individual": "own",
+            "kind": "move",
+            "move": "pokeapi:move:53",
+            "outcome": "completed",
+            "activation": {
+              "state": "unknown",
+              "coverage_complete": false,
+              "evidence": {
+                "sources": [
+                  "synthetic:M3.2.1"
+                ],
+                "basis": "synthetic",
+                "confidence": "declared exact synthetic input"
+              }
+            },
+            "changes": [],
+            "evidence": {
+              "sources": [
+                "synthetic:M3.2.1"
+              ],
+              "basis": "synthetic",
+              "confidence": "declared exact synthetic input"
+            }
+          },
+          {
+            "id": "opp:move",
+            "individual": "opp",
+            "kind": "move",
+            "move": "pokeapi:move:53",
+            "outcome": "completed",
+            "activation": {
+              "state": "unknown",
+              "coverage_complete": false,
+              "evidence": {
+                "sources": [
+                  "synthetic:M3.2.1"
+                ],
+                "basis": "synthetic",
+                "confidence": "declared exact synthetic input"
+              }
+            },
+            "changes": [],
+            "evidence": {
+              "sources": [
+                "synthetic:M3.2.1"
+              ],
+              "basis": "synthetic",
+              "confidence": "declared exact synthetic input"
+            }
+          }
+        ],
+        "sequence": [
+          "opp:move",
+          "own:move"
+        ],
+        "initial_changes": [],
+        "alternatives": [],
+        "strict_speed": [],
+        "evidence": {
+          "sources": [
+            "synthetic:M3.2.1"
+          ],
+          "basis": "synthetic",
+          "confidence": "declared exact synthetic input"
+        }
+      }
+    ],
+    "configurations": [
+      {
+        "id": "135:Blaze:none",
+        "speed": 135,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "136:Blaze:none",
+        "speed": 136,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "137:Blaze:none",
+        "speed": 137,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "138:Blaze:none",
+        "speed": 138,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "139:Blaze:none",
+        "speed": 139,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "140:Blaze:none",
+        "speed": 140,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "141:Blaze:none",
+        "speed": 141,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "142:Blaze:none",
+        "speed": 142,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "143:Blaze:none",
+        "speed": 143,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "144:Blaze:none",
+        "speed": 144,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "145:Blaze:none",
+        "speed": 145,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "146:Blaze:none",
+        "speed": 146,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "147:Blaze:none",
+        "speed": 147,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "148:Blaze:none",
+        "speed": 148,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "149:Blaze:none",
+        "speed": 149,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "150:Blaze:none",
+        "speed": 150,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "151:Blaze:none",
+        "speed": 151,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "152:Blaze:none",
+        "speed": 152,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "153:Blaze:none",
+        "speed": 153,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "154:Blaze:none",
+        "speed": 154,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "155:Blaze:none",
+        "speed": 155,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "156:Blaze:none",
+        "speed": 156,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "157:Blaze:none",
+        "speed": 157,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "158:Blaze:none",
+        "speed": 158,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "159:Blaze:none",
+        "speed": 159,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "160:Blaze:none",
+        "speed": 160,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "161:Blaze:none",
+        "speed": 161,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "162:Blaze:none",
+        "speed": 162,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "163:Blaze:none",
+        "speed": 163,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "164:Blaze:none",
+        "speed": 164,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "165:Blaze:none",
+        "speed": 165,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "166:Blaze:none",
+        "speed": 166,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "167:Blaze:none",
+        "speed": 167,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "168:Blaze:none",
+        "speed": 168,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "169:Blaze:none",
+        "speed": 169,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "170:Blaze:none",
+        "speed": 170,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "171:Blaze:none",
+        "speed": 171,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "172:Blaze:none",
+        "speed": 172,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "173:Blaze:none",
+        "speed": 173,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "174:Blaze:none",
+        "speed": 174,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "175:Blaze:none",
+        "speed": 175,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "176:Blaze:none",
+        "speed": 176,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "177:Blaze:none",
+        "speed": 177,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "178:Blaze:none",
+        "speed": 178,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "179:Blaze:none",
+        "speed": 179,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "180:Blaze:none",
+        "speed": 180,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "181:Blaze:none",
+        "speed": 181,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "182:Blaze:none",
+        "speed": 182,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "183:Blaze:none",
+        "speed": 183,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "184:Blaze:none",
+        "speed": 184,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "185:Blaze:none",
+        "speed": 185,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "186:Blaze:none",
+        "speed": 186,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "187:Blaze:none",
+        "speed": 187,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "188:Blaze:none",
+        "speed": 188,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "189:Blaze:none",
+        "speed": 189,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "190:Blaze:none",
+        "speed": 190,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "191:Blaze:none",
+        "speed": 191,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "192:Blaze:none",
+        "speed": 192,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "193:Blaze:none",
+        "speed": 193,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "194:Blaze:none",
+        "speed": 194,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "195:Blaze:none",
+        "speed": 195,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "196:Blaze:none",
+        "speed": 196,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "197:Blaze:none",
+        "speed": 197,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "198:Blaze:none",
+        "speed": 198,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "199:Blaze:none",
+        "speed": 199,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      },
+      {
+        "id": "200:Blaze:none",
+        "speed": 200,
+        "ability": "Blaze",
+        "item": "none",
+        "training": null
+      }
+    ]
+  }
+}
