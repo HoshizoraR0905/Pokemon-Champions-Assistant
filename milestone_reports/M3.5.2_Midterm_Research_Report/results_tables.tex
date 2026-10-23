@@ -1,0 +1,55 @@
+% Generated only from preserved M3.5.1 numerical results.
+\newcommand{\CandidateTable}{%
+\begin{tabular}{llrrrl}\toprule Species & Model & $K$ & Sizes & Silhouette & Subsample ARI\\\midrule
+Hatterene & learned & 1 & 13 & --- & 1.000/1.000/1.000\\
+Hatterene & learned & 2 & 12/1 & 0.802 & 1.000/1.000/1.000\\
+Incineroar & sp & 3 & 31/24/142 & 0.727 & 1.000/1.000/1.000\\
+Incineroar & learned & 1 & 197 & --- & 1.000/1.000/1.000\\
+Incineroar & learned & 2 & 190/7 & 0.838 & 1.000/0.282/-0.010\\
+Incineroar & learned & 3 & 34/7/156 & 0.545 & 1.000/0.759/0.765\\
+Mega Raichu Y & sp & 1 & 72 & --- & 1.000/1.000/1.000\\
+Mega Raichu Y & learned & 2 & 46/26 & 0.442 & 0.747/0.734/0.746\\
+\bottomrule\end{tabular}}
+\newcommand{\HoldoutTable}{%
+\begin{tabular}{llrrrrr}\toprule Species & Model & Speed & Attack & Sp. Atk & Bulk & Item error\\\midrule
+Hatterene & Train baseline & 0.000 & 0.000 & 0.615 & 0.846 & 0.077\\
+Hatterene & sp & 0.000 & 0.000 & 0.615 & 0.846 & 0.077\\
+Hatterene & jaccard & 0.000 & 0.000 & 0.615 & 0.846 & 0.077\\
+Hatterene & learned & 0.000 & 0.000 & 0.615 & 0.846 & 0.077\\
+Hatterene & item-nature & 0.000 & 0.000 & 0.615 & 0.846 & 0.077\\
+\addlinespace
+Incineroar & Train baseline & 5.787 & 3.893 & 0.000 & 8.949 & 0.310\\
+Incineroar & sp & 1.421 & 1.482 & 0.000 & 1.320 & 0.381\\
+Incineroar & jaccard & 2.142 & 1.990 & 0.000 & 2.076 & 0.325\\
+Incineroar & learned & 2.898 & 1.558 & 0.000 & 2.832 & 0.305\\
+Incineroar & item-nature & 3.076 & 1.589 & 0.000 & 3.041 & 0.310\\
+\addlinespace
+Mega Raichu Y & Train baseline & 3.347 & 0.000 & 0.833 & 3.806 & 0.000\\
+Mega Raichu Y & sp & 1.125 & 0.000 & 0.847 & 1.069 & 0.000\\
+Mega Raichu Y & jaccard & 1.736 & 0.000 & 0.847 & 1.361 & 0.000\\
+Mega Raichu Y & learned & 1.458 & 0.000 & 0.847 & 1.153 & 0.000\\
+Mega Raichu Y & item-nature & 1.458 & 0.000 & 0.847 & 1.153 & 0.000\\
+\addlinespace
+\bottomrule\end{tabular}}
+\newcommand{\CrossTable}{%
+\begin{tabular}{lrrrr}\toprule & Learned 0 & Learned 1 & Learned 2 & Total\\\midrule
+SP-only 0 & 31 & 0 & 0 & 31\\
+SP-only 1 & 3 & 7 & 14 & 24\\
+SP-only 2 & 0 & 0 & 142 & 142\\
+\midrule Total & 34 & 7 & 156 & 197\\\bottomrule\end{tabular}}
+\newcommand{\SensitivityTable}{%
+\begin{tabular}{lrrr}\toprule Configuration & Hatterene & Incineroar & Raichu Y\\\midrule
+defense-high & 1 & 1 & 3\\
+defense-low & 1 & 1 & 2\\
+dimension32 & 1 & 1 & 2\\
+dimension8 & 1 & 1 & 2\\
+gamma1 & 1 & 1 & 2\\
+gamma3 & 1 & 1 & 1\\
+item-nature & 1 & 1 & 2\\
+jaccard & 1 & 1 & 1\\
+learned & 1 & 1 & 2\\
+moves-double & 1 & 1 & 3\\
+moves-half & 1 & 3 & 1\\
+proportion & 1 & 1 & 2\\
+sp & 1 & 3 & 1\\
+\bottomrule\end{tabular}}

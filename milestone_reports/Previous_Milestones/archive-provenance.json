@@ -1,0 +1,82 @@
+[
+  {
+    "source": "reports/M3.1.2-champions-stat-feasibility.md",
+    "source_sha256": "e60b6e4d936607007c9c79b58a2ed1edac3f2f1f785189c3e6f5f40c5cf91ac4",
+    "archive": "Previous_Milestones/M3.1.2_Stat_Feasibility/report.md",
+    "archive_sha256": "27f81e2ca45d5e9705ba7786abf5484cd6844a3d1c2c8d380608ed2688e50eee",
+    "context": "Exact joint stat feasibility under pinned Champions rules; historical implementation and conditional mechanics validation.",
+    "images": []
+  },
+  {
+    "source": "docs/m3.2.2-battle11-speed-report.md",
+    "source_sha256": "ec365a3ba8500064efd8d9fe793197f36607e151d35a62a1d9fd48e1d127ea60",
+    "archive": "Previous_Milestones/M3.2.2_Battle11_Speed/report.md",
+    "archive_sha256": "b54540b24f0c666285114bf49f317cbf1b01c726d0a77447467b2dc1518d9f8d",
+    "context": "Evidence-linked, time-causal Speed inference case study. Historical source counts predate the occurrence-preserving M3.4.4/M3.5.1 selection.",
+    "images": []
+  },
+  {
+    "source": "reports/M3.5.1-build-similarity.md",
+    "source_sha256": "93665ae4e2ff64498819ab8fe79a8486eea9ba128107b77a3ff6aed39308d7e9",
+    "archive": "Previous_Milestones/M3.5.1_Build_Similarity/report.md",
+    "archive_sha256": "ebc9c73caeb96d7761dfbffc3f2000e70c20a9c2316d9a9faa8a9ed5ee75c141",
+    "context": "Completed offline SP/moveset association and unsupervised clustering experiment; mixed predictive findings, no accepted tactical taxonomy.",
+    "images": [
+      {
+        "file": "Previous_Milestones/M3.5.1_Build_Similarity/figures/sp-response.png",
+        "source": ".cache/research/m351/7933afbb341cdbeddbe3/figures/sp-response.png",
+        "sha256": "e67a0976b4eaeff8a127be45913d61a0ebf408617c81b9031b835e175f48d223"
+      },
+      {
+        "file": "Previous_Milestones/M3.5.1_Build_Similarity/figures/move-associations.png",
+        "source": ".cache/research/m351/7933afbb341cdbeddbe3/figures/move-associations.png",
+        "sha256": "9b3dfd33bb5f7fcc955216cb5e5bf54329fce7435a50a9b0a10bd1c5ea0a0786"
+      },
+      {
+        "file": "Previous_Milestones/M3.5.1_Build_Similarity/figures/hatterene-heatmap.png",
+        "source": ".cache/research/m351/7933afbb341cdbeddbe3/figures/hatterene-heatmap.png",
+        "sha256": "63500bd362cc0943159e55fba2c1a592f7e6f1cfd0f9ddfa77071c112c574a24"
+      },
+      {
+        "file": "Previous_Milestones/M3.5.1_Build_Similarity/figures/hatterene-projection.png",
+        "source": ".cache/research/m351/7933afbb341cdbeddbe3/figures/hatterene-projection.png",
+        "sha256": "cd09d6d34b04fc5bec13f1bacb2c455c7fea06dc87fdf1be77ad62dc11e35e88"
+      },
+      {
+        "file": "Previous_Milestones/M3.5.1_Build_Similarity/figures/hatterene-sp.png",
+        "source": ".cache/research/m351/7933afbb341cdbeddbe3/figures/hatterene-sp.png",
+        "sha256": "28dbc5683517ffa1ebb9914b0acc6175f0321e7e2381758097df4a5378c25e2f"
+      },
+      {
+        "file": "Previous_Milestones/M3.5.1_Build_Similarity/figures/incineroar-heatmap.png",
+        "source": ".cache/research/m351/7933afbb341cdbeddbe3/figures/incineroar-heatmap.png",
+        "sha256": "8612baff8b834f73b437fd7da6a456d62ed2cf3542e64c45d66db2aac453bfa4"
+      },
+      {
+        "file": "Previous_Milestones/M3.5.1_Build_Similarity/figures/incineroar-projection.png",
+        "source": ".cache/research/m351/7933afbb341cdbeddbe3/figures/incineroar-projection.png",
+        "sha256": "81084290ab92d4fdb94dbb01b299b3c284b6a69cb0763abbfeafb683389fca81"
+      },
+      {
+        "file": "Previous_Milestones/M3.5.1_Build_Similarity/figures/incineroar-sp.png",
+        "source": ".cache/research/m351/7933afbb341cdbeddbe3/figures/incineroar-sp.png",
+        "sha256": "aaf231a015db8943e79ef02e57dd51a17dd06f7f081ec52d27de485a25a687ef"
+      },
+      {
+        "file": "Previous_Milestones/M3.5.1_Build_Similarity/figures/mega-raichu-y-heatmap.png",
+        "source": ".cache/research/m351/7933afbb341cdbeddbe3/figures/mega-raichu-y-heatmap.png",
+        "sha256": "2591854f25141ccb53ff5f6c69cbd9b6eaaba16ae1be23ed2f9bdf0782f16183"
+      },
+      {
+        "file": "Previous_Milestones/M3.5.1_Build_Similarity/figures/mega-raichu-y-projection.png",
+        "source": ".cache/research/m351/7933afbb341cdbeddbe3/figures/mega-raichu-y-projection.png",
+        "sha256": "0d8d9548d4522a7817527264b3a464d49a7736bc27fc5539d2b793424e496749"
+      },
+      {
+        "file": "Previous_Milestones/M3.5.1_Build_Similarity/figures/mega-raichu-y-sp.png",
+        "source": ".cache/research/m351/7933afbb341cdbeddbe3/figures/mega-raichu-y-sp.png",
+        "sha256": "7e5c26fe5feb1f1471f9cfd15a0bfce8807658f4a1723a3aecd1c581e68912f8"
+      }
+    ]
+  }
+]
