@@ -7,6 +7,7 @@ acceptance of mechanics, recognition quality or tactical interpretations.
 
 | Report | Main research contribution | Formats | Status |
 |---|---|---|---|
+| [M3.5.3 — No-SP archetype review](M3.5.3_No_SP_Archetype_Review.md) | Read-only missing-SP audit, frozen Incineroar reference, grouped moves/item prediction and durable local human-review interface | GitHub Markdown, two figures and compact evidence summary | Offline experiment complete; minority recovery weak; human interpretation pending |
 | [M3.5.1 — Build clustering](M3.5.1_Build_Clustering.md) | Primary milestone report: nonlinear SP comparison, Incineroar clustering, learned moveset experiment, held-out results and limits | GitHub Markdown with original figures | Completed offline experiment; tactical interpretations remain preliminary |
 | [M3.5.2 — Supplementary research draft](M3.5.2_Midterm_Research_Report/README.md) | Broader synthesis of hidden-build feasibility and empirical usage through M3.5.1 | Optional [PDF](M3.5.2_Midterm_Research_Report/report.pdf), [LaTeX](M3.5.2_Midterm_Research_Report/report.tex), figures and compact evidence summary | Supplementary academic draft; awaiting human review |
 | [M3.2.2 — Battle 11 Speed case study](Previous_Milestones/M3.2.2_Battle11_Speed/report.md) | Causal action-order evidence reduces joint Speed supports while preserving uncertainty; illustrates distinct empirical/reference layers | Markdown; references existing tracked case-study images/audit assets under `docs/assets/` | Preliminary research demonstration; source-reviewed conditions, independent acceptance not established |
@@ -15,7 +16,7 @@ acceptance of mechanics, recognition quality or tactical interpretations.
 The earlier reports were chosen for mathematical or experimental substance.
 Technical handoffs, debugging logs, cache receipts and broad validation dumps are
 not archived as presentation documents. Historical counts and superseded limits
-remain labeled as historical. Start with the build-clustering Markdown report;
+remain labeled as historical. Start with the build-clustering and no-SP review Markdown reports;
 the midterm PDF is optional supplementary reading. The [detailed M3.5.1
 experiment snapshot](Previous_Milestones/M3.5.1_Build_Similarity/report.md) remains
 available for full numerical tables and method settings.
