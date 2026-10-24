@@ -7,15 +7,18 @@ acceptance of mechanics, recognition quality or tactical interpretations.
 
 | Report | Main research contribution | Formats | Status |
 |---|---|---|---|
-| [M3.5.2 — Midterm research report](M3.5.2_Midterm_Research_Report/README.md) | Joint hidden-build feasibility and empirical usage; nonlinear SP distance, learned moveset association, species-specific clustering and grouped prediction, with explicit SP-only/combined comparisons | [PDF](M3.5.2_Midterm_Research_Report/report.pdf), [LaTeX](M3.5.2_Midterm_Research_Report/report.tex), bundled figures and compact numerical/provenance summary | Awaiting human review; synthesis of completed experiments |
-| [M3.5.1 — Build similarity learning and archetype discovery](Previous_Milestones/M3.5.1_Build_Similarity/report.md) | Occurrence-preserving offline association/clustering study with mixed findings; learned moves do not beat SP-only numeric reconstruction | Markdown and 11 bundled scientific figures | Completed experiment; interpretations preliminary, no independently accepted tactical archetypes |
+| [M3.5.1 — Build clustering](M3.5.1_Build_Clustering.md) | Primary milestone report: nonlinear SP comparison, Incineroar clustering, learned moveset experiment, held-out results and limits | GitHub Markdown with original figures | Completed offline experiment; tactical interpretations remain preliminary |
+| [M3.5.2 — Supplementary research draft](M3.5.2_Midterm_Research_Report/README.md) | Broader synthesis of hidden-build feasibility and empirical usage through M3.5.1 | Optional [PDF](M3.5.2_Midterm_Research_Report/report.pdf), [LaTeX](M3.5.2_Midterm_Research_Report/report.tex), figures and compact evidence summary | Supplementary academic draft; awaiting human review |
 | [M3.2.2 — Battle 11 Speed case study](Previous_Milestones/M3.2.2_Battle11_Speed/report.md) | Causal action-order evidence reduces joint Speed supports while preserving uncertainty; illustrates distinct empirical/reference layers | Markdown; references existing tracked case-study images/audit assets under `docs/assets/` | Preliminary research demonstration; source-reviewed conditions, independent acceptance not established |
 | [M3.1.2 — Joint Champions stat feasibility](Previous_Milestones/M3.1.2_Stat_Feasibility/report.md) | Compact exact joint point-domain/budget representation; gaps and interactions between stat legality and inverse damage | Markdown | Completed conditional feasibility experiment under pinned reference rules; not official mechanics certification |
 
 The earlier reports were chosen for mathematical or experimental substance.
 Technical handoffs, debugging logs, cache receipts and broad validation dumps are
 not archived as presentation documents. Historical counts and superseded limits
-remain labeled as historical; use the midterm report for the current synthesis.
+remain labeled as historical. Start with the build-clustering Markdown report;
+the midterm PDF is optional supplementary reading. The [detailed M3.5.1
+experiment snapshot](Previous_Milestones/M3.5.1_Build_Similarity/report.md) remains
+available for full numerical tables and method settings.
 
 `Previous_Milestones/archive-provenance.json` identifies original and archived
 content by SHA-256. Archive packaging adjusts relative links, bundles the earlier

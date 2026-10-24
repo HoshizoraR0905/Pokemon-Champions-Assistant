@@ -1,4 +1,8 @@
-# M3.5.2 — Midterm Research Report
+# M3.5.2 — Supplementary Midterm Research Draft
+
+The primary milestone deliverable is the [GitHub Markdown build-clustering
+report](../M3.5.1_Build_Clustering.md). This academic PDF/LaTeX draft is preserved
+as optional supplementary material.
 
 **Inferring Hidden Pokémon Builds from Competitive Team Data: Constraint-Based
 Inference and Unsupervised Archetype Discovery**
