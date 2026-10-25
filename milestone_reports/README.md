@@ -7,6 +7,7 @@ acceptance of mechanics, recognition quality or tactical interpretations.
 
 | Report | Main research contribution | Formats | Status |
 |---|---|---|---|
+| [M3.5.4 — Team speed-control context and SP prediction](M3.5.4_Team_Speed_Control_and_SP_Prediction.md) | Source-grouped numeric regression, fixed capability features, permutation controls, learning curves and tactical case studies | GitHub Markdown, scientific figures and compact CSV/JSON | Completed controlled offline experiment; no robust basis for inference integration |
 | [M3.5.3 follow-up — Moveset clustering diagnostics](M3.5.3_Incineroar_Moveset_Clustering_Diagnostics.md) | Moves-only and item-aware cluster comparisons against frozen SP groups, full top-15 move tables and exact-feature ambiguity | GitHub Markdown, scientific figures and compact CSV/JSON exports | Completed descriptive diagnostic; predictor and human annotations unchanged |
 | [M3.5.3 — No-SP archetype review](M3.5.3_No_SP_Archetype_Review.md) | Read-only missing-SP audit, frozen Incineroar reference, grouped moves/item prediction and durable local human-review interface | GitHub Markdown, two figures and compact evidence summary | Offline experiment complete; minority recovery weak; human interpretation pending |
 | [M3.5.1 — Build clustering](M3.5.1_Build_Clustering.md) | Primary milestone report: nonlinear SP comparison, Incineroar clustering, learned moveset experiment, held-out results and limits | GitHub Markdown with original figures | Completed offline experiment; tactical interpretations remain preliminary |

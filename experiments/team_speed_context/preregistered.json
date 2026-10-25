@@ -1,0 +1,43 @@
+{
+  "version": "M3.5.4-design-v1",
+  "registered_on": "2026-10-25",
+  "population": "197 original complete M3.5.1 Incineroar occurrences; no no-SP applications",
+  "source_groups": "Preserve 192 M3.5.1 IDs and use 187 stronger M3.5.3 connected source groups for validation",
+  "targets": ["speed", "attack", "bulk"],
+  "outer_folds": 5,
+  "outer_seeds": [354, 355, 356],
+  "ridge_alpha": 10.0,
+  "hyperparameter_selection": "Fixed a priori; no tuning or final-model selection on outer test folds",
+  "natural_speed_threshold": 100,
+  "natural_speed_form": "Pinned pre-Mega/base or explicitly observed non-Mega form; never assume Mega selected",
+  "context_families": {
+    "tailwind": ["tailwind_count"],
+    "trick_room": ["trick_room_count"],
+    "weather": ["sun_setter_option", "rain_setter_option", "chlorophyll_option", "swift_swim_option", "sun_pair_option", "rain_pair_option"],
+    "natural_speed": ["natural_fast_count"],
+    "priority_disruption": ["priority_support_option", "taunt_count"]
+  },
+  "priority_support_moves": ["Fake Out", "Helping Hand", "Follow Me", "Rage Powder"],
+  "priority_support_ability": "Observed compatible Prankster with observed Status move of native priority >=0; capability only, no activation/target claim",
+  "weather_setters": "Compatible observed Drought/Drizzle, plus a fixed native Drought/Drizzle Mega option supported by an observed compatible required stone; Mega alternatives remain conditional",
+  "manual_weather": "Sunny Day/Rain Dance observations flag unknown setter status if no supported ability option; their effects are not re-established from new sources",
+  "weather_pair": "Observed speed ability and compatible distinct teammate setter option; two required Mega activations yield unknown, never asserted synergy",
+  "unknown_policy": "Explicit null; training-only median imputation, zero fallback for all-missing training columns, explicit missingness indicators; positive presence can be confirmed despite other unknown teammates",
+  "own_features": "Training vocabulary binary canonical moves plus one-hot original held item; no target nature, SP, calculated stats, cluster label or species/team one-hot",
+  "interactions": [
+    {"name": "taunt_tailwind", "own": "Taunt", "context": "tailwind_count>0"},
+    {"name": "close_combat_trick_room", "own": "Close Combat", "context": "trick_room_count>0"},
+    {"name": "named_item_trick_room", "own_items": ["Life Orb", "White Herb"], "context": "trick_room_count>0"}
+  ],
+  "interaction_min_positive_training_groups": 10,
+  "interaction_min_negative_training_groups": 10,
+  "interaction_ablation": "Each interaction separately on top of C; unsupported folds omit it; no automatic pairwise interactions",
+  "permutation_seeds": [35400, 35401, 35402, 35403, 35404, 35405],
+  "permutation_unit": "Whole independent training-group blocks, permuted only among equal block sizes; no test donor and no independent record-level scrambling",
+  "permutation_test_input": "Untouched held-out real context",
+  "learning_fractions": [0.35, 0.65, 1.0],
+  "learning_subset": "Nested source-group subsets selected without targets; all related occurrences retained",
+  "prediction_domain": "Clip independent Speed/Attack predictions to [0,32], Bulk to [0,66]; never construct a joint SP build",
+  "subgroup_thresholds": {"high_attack": 15, "higher_speed": 11},
+  "interpretation": "Descriptive paired CV and negative controls, no formal randomization p-value or causal/tactical identification"
+}
