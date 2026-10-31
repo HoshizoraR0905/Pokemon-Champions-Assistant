@@ -23,6 +23,25 @@ def require_live_rows(rows):
                 raise ValueError('Historical evidence in video-only candidate')
 
 
+def banner_side_evidence(row, visual):
+    """Calibrated fixed layout; a bare screen-edge label is insufficient.
+
+    B16 source-pixel calibration: docs/b16-banner-hp/banner-side-calibration.json.
+    Normal unique-active-species binding still resolves the individual, so
+    duplicate same-species actives on one side remain ambiguous.
+    """
+    layouts={'ability:left':('self',[105,187,472,277]),
+             'ability:right':('opponent',[839,187,1232,277])}
+    candidate=layouts.get(visual['screen_edge'])
+    if candidate is None:return None
+    side,bounds=candidate
+    region=next((r for r in row.get('ui',{}).get('regions',[]) if r['region_id']==visual['screen_edge']
+        and r['region_type']=='ability_banner' and r['visibility']=='visible' and r['bounds']==bounds),None)
+    if region is None:return None
+    return dict(calibration_id='champions-banner-1311x603-v1',side=side,region_id=region['region_id'],
+        bounds=deepcopy(bounds),source_id=row['source_id'],timestamp=row['timestamp'])
+
+
 def video_events(rows, roster, battle_id):
     from recognition.event_schedule import ordered_entries,entry_slots
     from battle_events.parser import EventParser
@@ -37,9 +56,19 @@ def video_events(rows, roster, battle_id):
             'preview_observation',row['side'],None,None,'Observed team row',{},None,
             [Evidence('team_ui',proof['source'],[proof['sha256']],dict(timestamp=t,image=proof['image']))],None,'supported',[],
             dict(battle_id=battle_id,observation_time=t,row=deepcopy(row))).to_dict())
-    banner_sessions={}
+    banner_sessions={};command_session=False
     for row in rows:
         t=row['timestamp']
+        active=row.get('command',{}).get('active',False)
+        if not active:command_session=False
+        if (active and not command_session and
+                row.get('command_inspection',{}).get('reason')=='normal_four_hud_command'):
+            command_session=True
+            events.append(BattleEvent(stable_id(battle_id,'resolution-command:'+row['source_id']),
+                'phase_observation','field',None,None,'Observed normal command UI',{},None,
+                [Evidence('video_ui',row['source_id'],[row['sha256']],dict(timestamp=t,image=row['image']))],
+                None,'supported',[],dict(battle_id=battle_id,observation_time=t,phase='command',
+                    resolution_cycle_start=True,basis='normal_four_hud_command')).to_dict())
         from recognition.command_checkpoint import checkpoint_event
         checkpoint=checkpoint_event(row,battle_id)
         if checkpoint:events.append(checkpoint)
@@ -69,18 +98,20 @@ def video_events(rows, roster, battle_id):
             if visual['kind']=='popup':
                 kind='item' if visual.get('item') else 'ability'
                 ref=visual.get(kind)
+                binding=banner_side_evidence(row,visual)
                 semantic=(visual['species']['canonical_id'],kind,ref['canonical_id'])
                 session=banner_sessions[visual['screen_edge']]
                 if session['emitted_semantic']==semantic:continue
                 session['emitted_semantic']=semantic
-                # Screen edge alone never establishes trainer side. Prefix-local
-                # HUD context may bind a unique named species via the existing parser.
+                # Validated local layout supplies side; otherwise prefix-local
+                # active context may bind a unique named species conservatively.
                 raw=visual['species']['name']+'的'+ref['name']
                 events.append(BattleEvent(stable_id(battle_id,'banner:'+row['source_id']+':'+visual['screen_edge']),
                     kind+'_activation','unknown',deepcopy(visual['species']),None,raw,
                     {kind:deepcopy(ref)},None,[proof],None,'uncertain',['side_unknown'],
                     dict(battle_id=battle_id,observation_time=row['timestamp'],fusion_context=True,
-                        source_region_type=kind+'_banner',screen_edge=visual['screen_edge'],consumption_observed=False)).to_dict())
+                        source_region_type=kind+'_banner',screen_edge=visual['screen_edge'],
+                        banner_side_evidence=binding,consumption_observed=False)).to_dict())
             elif visual['kind']=='detail':
                 request=dict(battle_id=battle_id,image=row['image'],sha256=row['sha256'],timestamp=row['timestamp'],kind='detail')
                 events.extend(e.to_dict() for e in visual_events(dict(request=request,parsed=visual,
@@ -90,7 +121,9 @@ def video_events(rows, roster, battle_id):
             if '_active_' not in slot:continue
             side='self' if slot.startswith('own') else 'opponent'
             attrs=dict(battle_id=battle_id,observation_time=row['timestamp'],slot='left' if slot.endswith('1') else 'right',
-                species=deepcopy(mon.get('species')),icon=deepcopy(mon.get('icon')),hp=deepcopy(mon.get('hp')))
+                species=deepcopy(mon.get('species')),icon=deepcopy(mon.get('icon')),hp=deepcopy(mon.get('hp')),
+                hp_read_status=mon.get('hp_read_status','observed' if (mon.get('hp') or {}).get('value') is not None else 'unreadable'))
+            if mon.get('double_faint_hud'):attrs['double_faint_hud']=deepcopy(mon['double_faint_hud'])
             if mon.get('identity_reused_from'):attrs['identity_reused_from']=mon['identity_reused_from']
             events.append(BattleEvent(stable_id(battle_id,'hud:'+row['source_id']+':'+slot),'hud_observation',side,None,None,
                 'HUD reading',{},None,[Evidence('video_hud',row['source_id'],[row['sha256']],dict(timestamp=row['timestamp'],image=row['image']))],
@@ -131,11 +164,12 @@ def video_events(rows, roster, battle_id):
         names=MessageNames()
         events=[message_identity(event_from_dict(e),names).to_dict() if e['event_type']=='send_out' else e for e in events]
     return sorted(events,key=lambda e:(e['attributes']['observation_time'],
-        {'preview_observation':0,'command_checkpoint':.5,'hud_observation':1,'entry_observation':2}.get(e['event_type'],3),
+        {'preview_observation':0,'command_checkpoint':.5,'hud_observation':1,'entry_observation':2}.get(e['event_type'],
+            2.5 if e['attributes'].get('source_region_type') in {'ability_banner','item_banner'} else 3),
         e['attributes'].get('announced_order',0),e['event_id']))
 
 
-def reconstruct_and_package(paths,folder,report,rows,roster,occurrences):
+def reconstruct_and_package(paths,folder,report,rows,roster,occurrences,*,adaptive_multi_hit=False):
     from recognition.fast_report import state_view
     from recognition.fast_video import digest
     from scripts.build_m236_review import receipt
@@ -147,13 +181,21 @@ def reconstruct_and_package(paths,folder,report,rows,roster,occurrences):
         return json.loads((report/'summary.json').read_text())
     events=video_events(rows,roster,paths.battle_id)
     mode=json.loads((folder/'manifest.json').read_text())['identity'].get('identity_mode')
-    engine=StateEngine(BattleState(paths.battle_id,knowledge=dict(message_identity_v1=bool(mode),reliability_v1=True,reliability_v2=True,identity_v1=True,active_continuity_v1=True,active_persistence_v1=True,command_reconciliation_v1=True)))
+    initial=BattleState(paths.battle_id,knowledge=dict(message_identity_v1=bool(mode),reliability_v1=True,reliability_v2=True,identity_v1=True,active_continuity_v1=True,active_persistence_v1=True,command_reconciliation_v1=True))
+    from tracking.knowledge_grounding import attach_matching_roster_profile
+    initial=attach_matching_roster_profile(initial,roster,root=paths.root)
+    engine=StateEngine(initial)
     for i,event in enumerate(events,1):
         event['attributes']['sequence']=i
         engine.history.append(EventRecord(event,i,ordering(event_from_dict(event))))
     def progress(record,state):
         if record.delivery_index%100==0:print(f'Video-only replay: {record.delivery_index}/{len(events)}',flush=True)
     engine.replay(snapshot_callback=progress)
+    adaptive=None
+    if adaptive_multi_hit:
+        from recognition.resolution_sampling import inspect_resolutions
+        adaptive=inspect_resolutions(paths,folder.name+'-adaptive-multi-hit',engine,initial_fps=3.,maximum_fps=4.)
+        atomic_json(folder/'adaptive-multi-hit.json',adaptive)
     replay=engine.to_dict();receipts=[receipt(asdict(r)) for r in engine.history]
     for r,record in zip(receipts,engine.history):
         r['bindings']=deepcopy(record.bindings);r['turn']=None
@@ -177,6 +219,7 @@ def reconstruct_and_package(paths,folder,report,rows,roster,occurrences):
         limitations=['Command cycles do not prove turns.','Announcement slot ordering has one agent-reviewed Battle 5 opening; no independent human verification.',
             'Recognition/cache context existed before this experiment; this is not a held-out accuracy evaluation.',
             'Historical log frames are excluded from live messages.'])
+    if adaptive is not None:prediction['adaptive_multi_hit']=adaptive
     atomic_json(folder/'video-only.json',prediction);atomic_json(folder/'replay.json',replay)
     atomic_json(report/'video-only.json',prediction)
     summary=dict(profile='event-driven-v1',battle_id=paths.battle_id,video_duration=rows[-1]['timestamp'] if rows else 0,
@@ -228,11 +271,14 @@ def reconstruct_cached(paths,folder,report,source,identity):
     parent=json.loads((source/'manifest.json').read_text())
     if identity.get('identity_mode') != parent['identity'].get('identity_mode'):
         raise ValueError('Historical recognition cannot reproduce M2.4 identity policy; use a separately named acquisition diagnostic')
-    if parent['status']!='complete' or parent['identity']['version']!='event-driven-v1':
+    if parent['status']!='complete' or parent['identity']['version'] not in {'event-driven-v1',identity['version']}:
         raise ValueError('A completed event-driven recognition stage is required')
     if parent['identity']['video_sha256']!=identity['video_sha256']:raise ValueError('Video source changed')
     allowed={'recognition/event_report.py','recognition/fast_report.py','recognition/log_comparison.py',
-             'recognition/fast_video.py','main.py','scripts/templates/event_review.html'}
+             'recognition/fast_video.py','main.py','scripts/templates/event_review.html',
+             # This optional HP-history metadata is never an acquisition input.
+             # Reader, geometry, parser and scheduling changes still invalidate.
+             'tracking/hp_causes.py'}
     dependencies={k:v for k,v in parent['identity']['sources'].items() if k not in allowed}
     if any(identity['sources'].get(k)!=v for k,v in dependencies.items()):
         raise ValueError('Recognition dependency changed; cached interpretations cannot be reused')

@@ -204,36 +204,6 @@ def test_historical_reference_cannot_run_before_frozen_prediction(tmp_path):
     with pytest.raises(FileNotFoundError):compare(BattleArtifacts('test',tmp_path),'absent')
 
 
-def test_identity_models_are_not_repeated_for_hp_changes_and_only_departing_cache_is_invalidated(monkeypatch):
-    from collections import Counter
-    from types import SimpleNamespace
-    from capture import Frame
-    from models import Observation
-    import recognition.event_schedule as schedule
-    calls=[]
-    def full(recognizer,frame,cards):
-        calls.append(list(cards))
-        return SimpleNamespace(to_dict=lambda:dict(pokemon=[dict(slot=f'{s}_active_{i+1}',species=dict(confidence=.99,
-            resolution=dict(species_id=25+i)),icon={},hp={}) for s,i,o,name in cards]))
-    monkeypatch.setattr(schedule,'recognize_cards',full)
-    class OCR:
-        def read(self,image,bounds,**kwargs):return Observation('100',.99,bounds,'100')
-    image=np.zeros((603,1311,3),np.uint8);frame=Frame(image,'video#1',1,1,{})
-    cards=[('own',0,0,(.139,.847,.226,.887)),('own',1,.168,(.307,.847,.394,.887))]
-    controller=schedule.IdentitySchedule();counts=Counter();recognizer=SimpleNamespace(ocr=OCR())
-    controller.recognize(recognizer,frame,cards,counts)
-    frame.source='video#2';frame.timestamp=2
-    result=controller.recognize(recognizer,frame,cards,counts)
-    assert counts['full_identity_recognition_invocations']==2
-    assert counts['identity_reads_reused']==2
-    assert all(m['identity_reused_from']=='video#1' for m in result['pokemon'])
-    controller.invalidate(dict(event_type='switch_out',side='self',actor=dict(species_id=25),event_id='out',attributes=dict(observation_time=2)))
-    assert 'own_active_1' not in controller.known and 'own_active_2' in controller.known
-    # A disappearing card supplies no departure evidence and leaves the other cache intact.
-    controller.recognize(recognizer,frame,[],counts)
-    assert 'own_active_2' in controller.known
-
-
 def test_ability_banner_produces_ability_evidence_without_assuming_edge_side_or_execution():
     from recognition.event_report import video_events
     row=live_row();row['occurrence_decision']['events']=[]

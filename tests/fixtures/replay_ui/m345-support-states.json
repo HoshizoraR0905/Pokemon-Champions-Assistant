@@ -1,0 +1,15 @@
+{
+  "origin": "controlled_presentation_fixture_not_battle_evidence",
+  "description": "Exact supports and sample shares are supplied to the renderer; no inference or probability model is introduced.",
+  "cases": [
+    {"id": "available", "occurrences": 3, "cores": 2, "reference_classes": 8, "speed": [[80, 100], [150, 170]], "attack": [[108, 118]], "special_attack": [[160, 171]], "expect": ["VGC 3/3 次出现", "前三核心", "66.7%", "2 条来源记录"], "absent": ["实际对手的配置已确定。"]},
+    {"id": "empty-empirical", "occurrences": 3, "cores": 0, "reference_classes": 8, "speed": [[80, 100], [150, 170]], "attack": [[108, 118]], "special_attack": [[160, 171]], "expect": ["没有记录中的 VGC 训练配置与当前证据兼容", "样本外的参考合法配置仍然可能", "108–118"]},
+    {"id": "both-empty", "occurrences": 3, "cores": 0, "reference_classes": 0, "speed": [], "attack": [], "special_attack": [], "expect": ["两层支持均为空", "证据或模型矛盾", "空集"], "absent": ["66.7%", "最可能", "期望值"]},
+    {"id": "disjoint", "occurrences": 3, "cores": 0, "reference_classes": 8, "speed": [[80, 100], [150, 170]], "attack": [[99, 102], [108, 118]], "special_attack": [[160, 171], [175, 188]], "expect": ["80–100 ∪ 150–170", "99–102 ∪ 108–118", "160–171 ∪ 175–188"], "absent": ["80–170", "125", "期望"]},
+    {"id": "provisional", "occurrences": 3, "cores": 0, "reference_classes": 8, "evaluated_classes": 3, "speed": [[80, 100], [150, 170]], "attack": [[99, 118]], "special_attack": [[140, 196], [198, 206]], "evaluated_speed": [[90, 100]], "evaluated_attack": [[108, 118]], "evaluated_special_attack": [[160, 171], [175, 188]], "expect": ["5 类机制未决", "不能将已计算分支当作穷尽结论", "已计算速度：90–100", "已计算特攻：160–171 ∪ 175–188", "140–196 ∪ 198–206"]},
+    {"id": "practical-empty", "occurrences": 3, "cores": 0, "reference_classes": 0, "speed": [], "attack": [], "special_attack": [], "profile": "practical", "dormant": ["Iron Ball", "Quick Claw"], "expect": ["Practical 休眠 2 种道具", "策略省略，不是数值排除", "不能据此断言全局矛盾"], "absent": ["两层支持均为空：证据或模型矛盾"]},
+    {"id": "comprehensive", "occurrences": 3, "cores": 0, "reference_classes": 8, "speed": [[40, 70]], "attack": [[108, 118]], "special_attack": [[160, 171]], "profile": "comprehensive", "expect": ["40–70", "Iron Ball", "Quick Claw", "样本外的参考合法配置仍然可能"], "absent": ["Practical 休眠"]},
+    {"id": "single-core", "occurrences": 3, "cores": 1, "reference_classes": 8, "speed": [[80, 100]], "attack": [[108, 118]], "special_attack": [[160, 171]], "expect": ["100% 仅指剩余 VGC 样本", "不代表实际对手的配置已确定", "100.0%", "3 条来源记录"]},
+    {"id": "no-sample", "occurrences": 0, "cores": 0, "reference_classes": 8, "speed": [[80, 100]], "attack": [[108, 118]], "special_attack": [[160, 171]], "expect": ["没有合格的完整 VGC 观察", "不表示训练配置不合法", "样本外的参考合法配置仍然可能"], "absent": ["100.0%"]}
+  ]
+}

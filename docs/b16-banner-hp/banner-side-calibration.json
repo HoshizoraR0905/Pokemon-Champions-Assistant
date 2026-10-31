@@ -1,0 +1,10 @@
+{
+  "calibration_id": "champions-banner-1311x603-v1",
+  "scope": "fixed production 1311x603 battle layout; development evidence from B16",
+  "method": "Agent source-pixel review: fixed left/right activation banners, independently known sides from preceding live entries; user confirmed the example timestamps. Screen edge without matching local layout is insufficient.",
+  "examples": [
+    {"timestamp": 131.005, "screen_edge": "right", "species": "大嘴鸥", "side": "opponent", "source": ".cache/battles/sample_battle_16/event-driven/b16-semantic-state-20261027-v1/frames/000263.png"},
+    {"timestamp": 187.015, "screen_edge": "left", "species": "喷火龙", "side": "self", "source": ".cache/battles/sample_battle_16/event-driven/b16-semantic-state-20261027-v1/frames/000334.png"}
+  ],
+  "limitations": ["Not human independent ground truth or a held-out layout validation.", "Does not identify a unique instance when multiple same-species individuals are active on the same side.", "Does not establish weather, an HP amount, an effect cause, native ability or item consumption."]
+}

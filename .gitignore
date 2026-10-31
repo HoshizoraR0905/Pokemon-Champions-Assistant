@@ -49,3 +49,6 @@ tests/fixtures/*.mp4
 
 # Compact B1 scoped sampling/selection experiment summary.
 !/reports/M2.3.3-B1-validation.json
+
+# Historical generated cleanup inventory; retain its compact result and report.
+/docs/b16-semantic-state/cleanup-inventory.json

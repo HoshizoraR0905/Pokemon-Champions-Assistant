@@ -1,6 +1,6 @@
 """Opt-in Champions HUD scheduling and entry windows, independent of message OCR."""
+from recognition.regions import hud_roi
 from dataclasses import asdict, replace
-import hashlib
 import cv2
 from models import Recognition, Pokemon, Observation,EntityResolution
 from recognition import box, color_fraction
@@ -13,17 +13,9 @@ def hud_cards(image):
     from recognition import classify
     screen,_,components=classify(image)
     if screen in {'team_configuration','team_preview','pokemon_selection','switch_selection','move_target_selection'} or 'ambiguous_target_panel' in components:return []
-    cards=[]
-    for side,offsets in [('own',[0,.168]),('opponent',[0,.166])]:
-        for i,o in enumerate(offsets):
-            name=(.139+o,.847,.226+o,.887) if side=='own' else (.624+o,.051,.722+o,.084)
-            bar=(.177+o,.898,.232+o,.920) if side=='own' else (.650+o,.094,.713+o,.117)
-            x,y,X,Y=box(image,bar);hsv=cv2.cvtColor(image[y:Y,x:X],cv2.COLOR_BGR2HSV)
-            colored=((hsv[:,:,1]>100)&(hsv[:,:,2]>90)&((hsv[:,:,0]<85)|(hsv[:,:,0]>175))).mean()
-            empty_bar=float((hsv[:,:,2]<70).mean())>.40
-            if color_fraction(image,name,'purple' if side=='own' else 'pink')>.30 and (colored>.15 or empty_bar):
-                cards.append((side,i,o,name))
-    return cards
+    from recognition.fast_profile import independent_cards
+    return independent_cards(image)
+
 
 
 class EntryWindows:
@@ -48,15 +40,15 @@ def recognize_hud(recognizer,frame):
         name=recognizer.ocr.read(image,box(image,name_roi),italic=True)
         if side=='own':
             # Same numeric layout/ratio semantics as the existing Recognizer.
-            current=recognizer.ocr.read(image,box(image,(.177+o,.915,.213+o,.955)),numeric=True,italic=True)
-            maximum=recognizer.ocr.read(image,box(image,(.220+o,.925,.243+o,.955)),numeric=True,italic=True)
+            current=recognizer.ocr.read(image,box(image,hud_roi('own',o,'current')),numeric=True,italic=True)
+            maximum=recognizer.ocr.read(image,box(image,hud_roi('own',o,'maximum')),numeric=True,italic=True)
             bounds=(current.region[0],current.region[1],maximum.region[2],maximum.region[3])
-            hp=ratio(Observation(f'{current.value or ""}/{maximum.value or ""}',min(current.confidence,maximum.confidence),
+            hp=ratio(Observation(f'{current.value if current.value is not None else ""}/{maximum.value if maximum.value is not None else ""}',min(current.confidence,maximum.confidence),
                 bounds,f'{current.raw_text}/{maximum.raw_text}'))
-            icon_roi=(.080+o,.825,.137+o,.961)
+            icon_roi=hud_roi('own',o,'icon')
         else:
-            hp=percentage(recognizer.ocr.read(image,box(image,(.681+o,.113,.727+o,.154)),numeric=True))
-            icon_roi=(.563+o,.030,.623+o,.157)
+            hp=percentage(recognizer.ocr.read(image,box(image,hud_roi('opponent',o,'percent')),numeric=True))
+            icon_roi=hud_roi('opponent',o,'icon')
         bounds=box(image,icon_roi);icon=recognizer.icons.identify(image,bounds)
         mon=Pokemon(f'{side}_active_{i+1}',name,hp,icon=icon);result.pokemon.append(mon)
         result.regions[f'{side}_icon_{i}']=bounds

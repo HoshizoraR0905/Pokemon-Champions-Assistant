@@ -22,7 +22,8 @@ def enter(state,p,event,record,*,slot=None,observed=False):
     previous=[x for x in episodes if x['instance_id']==p.pokemon_instance_id]
     explicit=bool(event.attributes.get('actor_instance_id') or (event.attributes.get('continuity') or {}).get('evidence'))
     complete=state.sides[p.side_id].party_complete
-    supported=explicit or complete.known and complete.value
+    scoped_return=record.bindings.get('persistent_continuity')
+    supported=explicit or complete.known and complete.value or bool(scoped_return)
     candidates=[pid for pid in state.sides[p.side_id].party_instance_ids if pid!=p.pokemon_instance_id
         and state.pokemon[pid].species.known and state.pokemon[pid].species.value.get('species_id')==(p.species.value or {}).get('species_id')
         and pid not in state.sides[p.side_id].active_slots.values()
@@ -34,10 +35,17 @@ def enter(state,p,event,record,*,slot=None,observed=False):
         persistent_identity_status='independently_supported' if supported else 'unproven' if candidates else 'first_observed_no_historical_merge',
         possible_prior_instance_ids=[] if supported else candidates,
         distinct_biological_individual_asserted=False)
+    if scoped_return:
+        import hashlib
+        encounter_id=f'{state.battle_id}:{p.side_id}:encounter:'+hashlib.sha256(event.event_id.encode()).hexdigest()[:16]
+        # Retain the original chronological episode identifier even though its
+        # underlying persistent instance is now independently reconciled.
+        ep.update(encounter_id=encounter_id,continuity_evidence=deepcopy(scoped_return),
+            episode_id=stable_id(state.battle_id,'active-entry:'+event.event_id+':'+encounter_id))
     if previous and supported:
         from .battle_state import HPState,Fact
         # Old readings remain evidence, rather than the current episode's HP.
-        p.hp=HPState(observations=deepcopy(p.hp.observations))
+        if not scoped_return:p.hp=HPState(observations=deepcopy(p.hp.observations))
         for stage in p.stages.values():
             stage.value=Fact(provenance=[evidence_link(event)]);stage.interval=Fact(provenance=[evidence_link(event)])
     if not observed:

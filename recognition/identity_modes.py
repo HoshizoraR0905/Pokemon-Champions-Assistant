@@ -1,7 +1,27 @@
 """Message-only production identity and bounded, observational HUD verification."""
+from recognition.regions import hud_roi
 from copy import deepcopy
 from dataclasses import asdict
 from knowledge.message_names import MessageNames
+
+
+def hp_signature(image, side, offset):
+    """Monitor digits/bar only; name/icon animation must not drive HP OCR."""
+    import numpy as np
+    from recognition import box
+    from recognition.fast_profile import normalized
+    fields = ('current', 'maximum', 'bar') if side == 'own' else ('percent', 'bar')
+    return np.hstack([normalized(image, box(image, hud_roi(side, offset, field))) for field in fields])
+
+
+def hp_refresh(old, signature, timestamp, *, opportunity=False):
+    from recognition.fast_profile import difference
+    if old is None:return True, 'newly_visible'
+    if difference(signature, old['signature']) >= .008:return True, 'changed_hp_region'
+    age = timestamp - old['timestamp']
+    if age >= (0.5 if opportunity else 2.):return True, 'hp_opportunity' if opportunity else 'hp_periodic'
+    if not old['reliable'] and old['retries'] < 1:return True, 'retry_unreadable_hp'
+    return False, 'unchanged_hp_region'
 
 
 def message_identity(event, names=None):
@@ -13,6 +33,9 @@ def message_identity(event, names=None):
     complete = event.original_text.rstrip().endswith(('！', '!'))
     event.actor = deepcopy(match['identity']) if complete and (event.ocr_confidence or 0) >= .95 else None
     event.attributes['message_identity'] = deepcopy(match)
+    event.attributes['message_identity_complete'] = complete
+    event.attributes['identity_admission'] = ('admitted' if event.actor else
+        'recognized_candidate' if complete and match.get('identity') else 'unresolved')
     event.attributes.pop('display_alias_evidence', None)
     event.uncertainty = [u for u in event.uncertainty if u not in {'actor_unresolved', 'actor_variant_unresolved'}]
     if not event.actor: event.uncertainty.append('actor_unresolved')
@@ -27,13 +50,14 @@ def read_hp(recognizer, frame, cards, counts):
     result = dict(pokemon=[])
     for side, i, offset, _ in cards:
         if side == 'own':
-            a = recognizer.ocr.read(frame.image, box(frame.image, (.177+offset,.915,.213+offset,.955)), numeric=True, italic=True)
-            b = recognizer.ocr.read(frame.image, box(frame.image, (.220+offset,.925,.243+offset,.955)), numeric=True, italic=True)
-            hp = ratio(Observation(f'{a.value or ""}/{b.value or ""}', min(a.confidence,b.confidence),
+            a = recognizer.ocr.read(frame.image, box(frame.image, hud_roi('own',offset,'current')), numeric=True, italic=True)
+            b = recognizer.ocr.read(frame.image, box(frame.image, hud_roi('own',offset,'maximum')), numeric=True, italic=True)
+            hp = ratio(Observation(f'{a.value if a.value is not None else ""}/{b.value if b.value is not None else ""}', min(a.confidence,b.confidence),
                                    (a.region[0],a.region[1],b.region[2],b.region[3]), f'{a.raw_text}/{b.raw_text}'))
         else:
-            hp = percentage(recognizer.ocr.read(frame.image, box(frame.image, (.681+offset,.113,.727+offset,.154)), numeric=True))
-        result['pokemon'].append(dict(slot=f'{side}_active_{i+1}', species={}, icon=None, hp=asdict(hp)))
+            hp = percentage(recognizer.ocr.read(frame.image, box(frame.image, hud_roi('opponent',offset,'percent')), numeric=True))
+        result['pokemon'].append(dict(slot=f'{side}_active_{i+1}', species={}, icon=None, hp=asdict(hp),
+            hp_read_status='observed' if hp.value is not None else 'unreadable'))
         counts['hud_hp_reading_invocations'] += 1
     return result
 
@@ -87,7 +111,7 @@ class EntryVerifier:
             name = recognizer.ocr.read(frame.image, box(frame.image,name_roi), italic=True, independent=True)
             counts['verification_hud_name_reads'] += 1
             name = resolver.resolve(name, 'species', region_kind='species')
-            roi = (.080+o,.825,.137+o,.961) if side=='own' else (.563+o,.030,.623+o,.157)
+            roi = hud_roi('own',o,'icon') if side=='own' else hud_roi('opponent',o,'icon')
             icon = recognizer.icons.identify(frame.image,box(frame.image,roi))
             counts['verification_hud_icon_reads'] += 1
             species = asdict(name); icon = asdict(icon)

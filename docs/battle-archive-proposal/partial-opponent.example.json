@@ -1,0 +1,1041 @@
+{
+  "schema_version": "0.1.0",
+  "battle": {
+    "battle_id": "synthetic-archive-demo",
+    "game": "Champions",
+    "format_claim_ref": "format",
+    "rule_profile_ref": "rules",
+    "run_ids": [
+      "illustrative-only"
+    ],
+    "source_video_ref": "demo",
+    "archive_revision": 1,
+    "supersedes": null
+  },
+  "sources": {
+    "demo": {
+      "kind": "synthetic_fixture",
+      "path_or_uri": "synthetic:partial-opponent-demonstration",
+      "sha256": null,
+      "hash_missing_reason": "Illustrative fixture; not a recording or measured result",
+      "source_id": "demo.mp4#10.0",
+      "timestamp_seconds": 10,
+      "source_pts": null,
+      "time_base": null,
+      "available_at": 10,
+      "confidence": null,
+      "provenance": {
+        "example_only": true,
+        "not_real_battle_evidence": true
+      },
+      "retention": {
+        "status": "retained",
+        "pixel_dependency": "none"
+      }
+    }
+  },
+  "subjects": {
+    "demo:opponent:0": {
+      "side": "opponent",
+      "source_instance_ids": [
+        "demo:opponent:0"
+      ],
+      "identity_status": "persistent_supported",
+      "possible_same_as": [],
+      "identity_claim_ref": "identity-0",
+      "native_build_claim_refs": [
+        "item-0",
+        "one-move",
+        "move-slots",
+        "move-complete"
+      ],
+      "temporary_state_claim_refs": [],
+      "entry_episodes": [
+        {
+          "episode_id": "demo:entry:0",
+          "source_episode_id": "demo:entry:0",
+          "entry_event_ref": "demo:enter:0",
+          "exit_event_ref": null,
+          "source_encounter_id": "demo:encounter:0",
+          "interval": [
+            1,
+            null
+          ],
+          "continuity_claim_ref": "continuity"
+        }
+      ]
+    },
+    "demo:opponent:1": {
+      "side": "opponent",
+      "source_instance_ids": [
+        "demo:opponent:1"
+      ],
+      "identity_status": "persistent_supported",
+      "possible_same_as": [],
+      "identity_claim_ref": "identity-1",
+      "native_build_claim_refs": [
+        "item-1"
+      ],
+      "temporary_state_claim_refs": [],
+      "entry_episodes": []
+    },
+    "demo:opponent:2": {
+      "side": "opponent",
+      "source_instance_ids": [
+        "demo:opponent:2"
+      ],
+      "identity_status": "persistent_supported",
+      "possible_same_as": [],
+      "identity_claim_ref": "identity-2",
+      "native_build_claim_refs": [
+        "item-2"
+      ],
+      "temporary_state_claim_refs": [],
+      "entry_episodes": []
+    },
+    "demo:opponent:3": {
+      "side": "opponent",
+      "source_instance_ids": [
+        "demo:opponent:3"
+      ],
+      "identity_status": "preview_only",
+      "possible_same_as": [],
+      "identity_claim_ref": "identity-3",
+      "native_build_claim_refs": [
+        "item-3"
+      ],
+      "temporary_state_claim_refs": [],
+      "entry_episodes": []
+    },
+    "demo:opponent:4": {
+      "side": "opponent",
+      "source_instance_ids": [
+        "demo:opponent:4"
+      ],
+      "identity_status": "preview_only",
+      "possible_same_as": [],
+      "identity_claim_ref": "identity-4",
+      "native_build_claim_refs": [
+        "item-4"
+      ],
+      "temporary_state_claim_refs": [],
+      "entry_episodes": []
+    },
+    "demo:opponent:5": {
+      "side": "opponent",
+      "source_instance_ids": [
+        "demo:opponent:5"
+      ],
+      "identity_status": "preview_only",
+      "possible_same_as": [],
+      "identity_claim_ref": "identity-5",
+      "native_build_claim_refs": [
+        "item-5"
+      ],
+      "temporary_state_claim_refs": [],
+      "entry_episodes": []
+    }
+  },
+  "facts": {
+    "format": {
+      "subject_ref": null,
+      "field": "battle.format",
+      "value": "Doubles",
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "rules": {
+      "subject_ref": null,
+      "field": "battle.rule_profile",
+      "value": "synthetic-four-selected-profile",
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "roster-complete": {
+      "subject_ref": null,
+      "field": "opponent.preview_complete",
+      "value": true,
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "selection-count": {
+      "subject_ref": null,
+      "field": "opponent.selected_count",
+      "value": 4,
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "selection-complete": {
+      "subject_ref": null,
+      "field": "opponent.selection_identities_complete",
+      "value": false,
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "turn-unknown": {
+      "subject_ref": null,
+      "field": "battle.turn",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "identity-0": {
+      "subject_ref": "demo:opponent:0",
+      "field": "native.species",
+      "value": "pokeapi:species:727",
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "item-0": {
+      "subject_ref": "demo:opponent:0",
+      "field": "native.held_item",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "identity-1": {
+      "subject_ref": "demo:opponent:1",
+      "field": "native.species",
+      "value": "pokeapi:species:279",
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "item-1": {
+      "subject_ref": "demo:opponent:1",
+      "field": "native.held_item",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "identity-2": {
+      "subject_ref": "demo:opponent:2",
+      "field": "native.species",
+      "value": "pokeapi:species:903",
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "item-2": {
+      "subject_ref": "demo:opponent:2",
+      "field": "native.held_item",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "identity-3": {
+      "subject_ref": "demo:opponent:3",
+      "field": "native.species",
+      "value": "pokeapi:species:445",
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "item-3": {
+      "subject_ref": "demo:opponent:3",
+      "field": "native.held_item",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "identity-4": {
+      "subject_ref": "demo:opponent:4",
+      "field": "native.species",
+      "value": "pokeapi:species:858",
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "item-4": {
+      "subject_ref": "demo:opponent:4",
+      "field": "native.held_item",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "identity-5": {
+      "subject_ref": "demo:opponent:5",
+      "field": "native.species",
+      "value": "pokeapi:species:26",
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "item-5": {
+      "subject_ref": "demo:opponent:5",
+      "field": "native.held_item",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "one-move": {
+      "subject_ref": "demo:opponent:0",
+      "field": "native.revealed_move_membership",
+      "value": [
+        "pokeapi:move:252"
+      ],
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "move-slots": {
+      "subject_ref": "demo:opponent:0",
+      "field": "native.exact_move_slots",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "move-complete": {
+      "subject_ref": "demo:opponent:0",
+      "field": "native.moveset_complete",
+      "value": false,
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "form": {
+      "subject_ref": "demo:opponent:0",
+      "field": "current.form",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "continuity": {
+      "subject_ref": "demo:opponent:0",
+      "field": "identity.continuity",
+      "value": "same_source_instance",
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "hp-before": {
+      "subject_ref": "demo:opponent:0",
+      "field": "hp.before",
+      "value": {
+        "value": 100,
+        "maximum": 173,
+        "reading_kind": "settled"
+      },
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "hp-after": {
+      "subject_ref": "demo:opponent:0",
+      "field": "hp.after",
+      "value": {
+        "value": 84,
+        "maximum": 173,
+        "reading_kind": "settled"
+      },
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "hp-unit": {
+      "subject_ref": "demo:opponent:0",
+      "field": "hp.unit",
+      "value": "absolute",
+      "knowledge": "observed",
+      "basis": "direct",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "hp-delta": {
+      "subject_ref": "demo:opponent:0",
+      "field": "hp.damage",
+      "value": {
+        "value": 16,
+        "sign_convention": "damage_positive",
+        "eventual_recovery_included": false
+      },
+      "knowledge": "inferred",
+      "basis": "deterministic",
+      "evidence_refs": [
+        "demo"
+      ],
+      "premise_claim_refs": [
+        "hp-before",
+        "hp-after"
+      ],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "hit-unknown": {
+      "subject_ref": "demo:opponent:0",
+      "field": "damage.individual_hits",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "attribution": {
+      "subject_ref": "demo:opponent:0",
+      "field": "damage.cause",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "priority": {
+      "subject_ref": "demo:opponent:0",
+      "field": "move.effective_priority",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "speed-constraint": {
+      "subject_ref": "demo:opponent:0",
+      "field": "speed.domain",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "tailwind": {
+      "subject_ref": null,
+      "field": "opponent.tailwind",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "trick-room": {
+      "subject_ref": null,
+      "field": "field.trick_room",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "selection-unknown": {
+      "subject_ref": null,
+      "field": "opponent.selected_slot_4",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    },
+    "damage-move-unknown": {
+      "subject_ref": null,
+      "field": "damage.source_move",
+      "value": null,
+      "knowledge": "unknown",
+      "basis": "unresolved",
+      "evidence_refs": [],
+      "premise_claim_refs": [],
+      "available_at": 10,
+      "valid_interval": [
+        10,
+        null
+      ],
+      "source_ref": "demo",
+      "source_pointer": null,
+      "alternatives": [],
+      "scope": "per_instance"
+    }
+  },
+  "opponent_roster": {
+    "complete_claim_ref": "roster-complete",
+    "slots": [
+      {
+        "slot": 1,
+        "subject_ref": "demo:opponent:0",
+        "identity_claim_ref": "identity-0",
+        "evidence_refs": [
+          "demo"
+        ]
+      },
+      {
+        "slot": 2,
+        "subject_ref": "demo:opponent:1",
+        "identity_claim_ref": "identity-1",
+        "evidence_refs": [
+          "demo"
+        ]
+      },
+      {
+        "slot": 3,
+        "subject_ref": "demo:opponent:2",
+        "identity_claim_ref": "identity-2",
+        "evidence_refs": [
+          "demo"
+        ]
+      },
+      {
+        "slot": 4,
+        "subject_ref": "demo:opponent:3",
+        "identity_claim_ref": "identity-3",
+        "evidence_refs": [
+          "demo"
+        ]
+      },
+      {
+        "slot": 5,
+        "subject_ref": "demo:opponent:4",
+        "identity_claim_ref": "identity-4",
+        "evidence_refs": [
+          "demo"
+        ]
+      },
+      {
+        "slot": 6,
+        "subject_ref": "demo:opponent:5",
+        "identity_claim_ref": "identity-5",
+        "evidence_refs": [
+          "demo"
+        ]
+      }
+    ]
+  },
+  "opponent_selection": {
+    "required_count_claim_ref": "selection-count",
+    "selected_subject_refs": [
+      "demo:opponent:0",
+      "demo:opponent:1",
+      "demo:opponent:2"
+    ],
+    "confirmed_lead_refs": [
+      "demo:opponent:0",
+      "demo:opponent:1"
+    ],
+    "revealed_backline_refs": [
+      "demo:opponent:2"
+    ],
+    "unresolved_slots": [
+      {
+        "slot": 4,
+        "identity_claim_ref": "selection-unknown",
+        "candidate_subject_refs": [
+          "demo:opponent:3",
+          "demo:opponent:4",
+          "demo:opponent:5"
+        ]
+      }
+    ],
+    "exhaustive_claim_ref": "selection-complete"
+  },
+  "events": {
+    "demo:enter:0": {
+      "event_id": "demo:enter:0",
+      "event_type": "send_out",
+      "attributes": {
+        "actor_instance_id": "demo:opponent:0",
+        "observation_time": 1
+      },
+      "evidence": [
+        {
+          "source_id": "demo.mp4#1",
+          "example_only": true
+        }
+      ]
+    },
+    "demo:hud:before": {
+      "event_id": "demo:hud:before",
+      "event_type": "hud_observation",
+      "attributes": {
+        "observation_time": 9,
+        "example_only": true
+      }
+    },
+    "demo:hud:after": {
+      "event_id": "demo:hud:after",
+      "event_type": "hud_observation",
+      "attributes": {
+        "observation_time": 10,
+        "example_only": true
+      }
+    }
+  },
+  "receipts": [
+    {
+      "receipt_id": "demo:receipt:0",
+      "event_ref": "demo:enter:0",
+      "payload": {
+        "delivery_index": 0,
+        "application_status": "applied",
+        "bindings": {
+          "actor": "demo:opponent:0"
+        },
+        "retracted": false,
+        "revisions": []
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "action_id": "demo:hp-interval",
+      "kind": "unattributed_hp_change",
+      "event_refs": [
+        "demo:hud:before",
+        "demo:hud:after"
+      ],
+      "receipt_refs": [],
+      "actor_refs": [],
+      "target_refs": [
+        "demo:opponent:0"
+      ],
+      "occurred_interval": [
+        9,
+        10
+      ],
+      "available_at": 10,
+      "turn_claim_ref": "turn-unknown",
+      "fact_refs": [
+        "hp-before",
+        "hp-after",
+        "hp-delta"
+      ]
+    }
+  ],
+  "damage": [
+    {
+      "resolution_id": "demo:resolution:0",
+      "action_ref": "demo:hp-interval",
+      "actor_ref": null,
+      "target_ref": "demo:opponent:0",
+      "move_claim_ref": "damage-move-unknown",
+      "before_hp_claim_ref": "hp-before",
+      "after_hp_claim_ref": "hp-after",
+      "unit_claim_ref": "hp-unit",
+      "aggregate_damage_claim_ref": "hp-delta",
+      "individual_hit_claim_refs": null,
+      "segment_event_refs": [
+        "demo:hud:before",
+        "demo:hud:after"
+      ],
+      "attribution_claim_ref": "attribution",
+      "context_claim_refs": [
+        "hit-unknown"
+      ]
+    }
+  ],
+  "speed": [
+    {
+      "witness_id": "demo:eot:0",
+      "kind": "end_of_turn_order",
+      "ordered_event_refs": [
+        "demo:hud:before",
+        "demo:hud:after"
+      ],
+      "actor_refs": [
+        "demo:opponent:0"
+      ],
+      "priority_claim_refs": [
+        "priority"
+      ],
+      "context_claim_refs": [
+        "tailwind",
+        "trick-room"
+      ],
+      "constraint_claim_ref": "speed-constraint",
+      "admissibility": "unresolved"
+    }
+  ],
+  "state_checkpoint": {
+    "source_ref": "demo",
+    "source_pointer": "/state",
+    "payload": null,
+    "availability": "missing"
+  },
+  "coverage": {
+    "source_pointer_dispositions": [],
+    "unresolved": [
+      "Synthetic structure demonstration only; coverage and event/receipt semantic acceptance deliberately not claimed",
+      "No exact move slots, equipped item, fourth selection, per-hit damage or Speed inequality established"
+    ],
+    "accepted_for_structured_retention": false,
+    "self_contained": false
+  },
+  "residuals": [],
+  "extensions": {
+    "example_only": true
+  },
+  "population_kind": "censored_battle_evidence"
+}

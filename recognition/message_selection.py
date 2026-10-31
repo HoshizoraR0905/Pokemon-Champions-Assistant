@@ -7,7 +7,7 @@ from recognition import box
 from recognition.phases import _message_glyphs
 from .video_sampling import fingerprint
 
-ROI=(.22,.685,.64,.797)
+from recognition.regions import MESSAGE_ROI as ROI
 
 
 @dataclass(frozen=True)

@@ -13,7 +13,12 @@ class Diagnostic(Exception):
 def database():
     kb=KnowledgeBase();root=Path(__file__).parent/'data';manifest=json.loads((root/'manifest.json').read_text());raw=(root/'reference-v1.json').read_bytes()
     if hashlib.sha256(raw).hexdigest()!=manifest['files']['reference-v1.json']:raise ValueError('Damage supplement checksum mismatch')
-    if hashlib.sha256((Path(__file__).resolve().parents[1]/'knowledge/data/manifest.json').read_bytes()).hexdigest()!=manifest['knowledge_manifest_sha256']:raise ValueError('Pinned knowledge manifest changed')
+    current=hashlib.sha256((Path(__file__).resolve().parents[1]/'knowledge/data/manifest.json').read_bytes()).hexdigest()
+    if current!=manifest['knowledge_manifest_sha256']:
+        compatibility=json.loads((root/'knowledge-compatibility-v1.json').read_text())
+        if (compatibility['original_manifest_sha256']!=manifest['knowledge_manifest_sha256'] or
+                current not in compatibility['accepted_manifest_sha256']):
+            raise ValueError('Pinned knowledge manifest changed without a damage compatibility audit')
     if kb.snapshot_id!=manifest['knowledge_snapshot']:raise ValueError('Damage and knowledge snapshots differ')
     return kb,json.loads(raw),manifest
 

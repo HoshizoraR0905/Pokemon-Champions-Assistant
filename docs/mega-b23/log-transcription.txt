@@ -1,0 +1,87 @@
+# Codex visual transcription, not human-reviewed ground truth.
+# turn | frame-index in log-frame-index.json | type | side | visible text
+# Whitespace/linebreaks consolidated. Only readable rows; no claim of full turns.
+1|2|send_out|opponent|AjayVGC派出了烈咬陆鲨和炽焰咆哮虎！
+1|2|send_out|self|上吧！烈咬陆鲨！长毛巨魔！
+1|2|ability_activation|opponent|炽焰咆哮虎的威吓
+1|2|stat_change|self|烈咬陆鲨和长毛巨魔的攻击降低了！
+1|2|move_execution|self|烈咬陆鲨使出了守住！
+1|0|move_effect|self|烈咬陆鲨摆出了防守的架势！
+1|0|move_execution|opponent|对手的炽焰咆哮虎使出了击掌奇袭！
+1|0|hp_numeric|self|长毛巨魔 HP 201 → 181
+1|0|move_execution|opponent|对手的烈咬陆鲨使出了龙之波动！
+1|0|move_effect|self|烈咬陆鲨在攻击中守护住了自己！
+1|0|move_effect|self|长毛巨魔畏缩了，无法使出招式！
+2|19|move_effect|self|烈咬陆鲨的烈咬陆鲨进化石Z和Hoshi的全一环起了反应！
+2|19|transformation|self|烈咬陆鲨超级进化成了超级烈咬陆鲨！
+2|19|move_execution|self|长毛巨魔使出了光墙！
+2|19|side_condition_change|self|光墙使我方的特殊抗性提高了！
+2|19|move_execution|self|烈咬陆鲨使出了龙之波动！
+2|18|hp_numeric|opponent|烈咬陆鲨 HP 100% → 0%
+2|18|effectiveness|opponent|对对手的烈咬陆鲨效果绝佳！
+2|18|faint|opponent|对手的烈咬陆鲨倒下了！
+2|18|move_execution|opponent|对手的炽焰咆哮虎使出了闪焰冲锋！
+2|17|status_change|self|长毛巨魔被灼伤了！
+2|17|move_effect|opponent|对手的炽焰咆哮虎受到了反作用力造成的伤害！
+2|17|hp_numeric|opponent|炽焰咆哮虎 HP 100% → 86%
+2|17|move_effect|self|长毛巨魔受到了灼伤的伤害！
+2|17|hp_numeric|self|长毛巨魔 HP 97 → 85
+2|17|send_out|opponent|AjayVGC派出了雷丘！
+3|16|move_effect|opponent|对手的雷丘的雷丘进化石Y和AjayVGC的全一环起了反应！
+3|16|transformation|opponent|对手的雷丘超级进化成了超级雷丘！
+3|16|move_execution|opponent|对手的雷丘使出了击掌奇袭！
+3|16|hp_numeric|self|烈咬陆鲨 HP 184 → 168
+3|16|move_execution|self|长毛巨魔使出了反射壁！
+3|16|side_condition_change|self|反射壁使我方的物理抗性提高了！
+3|14|move_effect|self|烈咬陆鲨畏缩了，无法使出招式！
+3|13|move_execution|opponent|对手的炽焰咆哮虎使出了闪焰冲锋！
+3|13|hp_numeric|self|长毛巨魔 HP 85 → 23
+3|13|move_effect|opponent|对手的炽焰咆哮虎受到了反作用力造成的伤害！
+3|13|hp_numeric|opponent|炽焰咆哮虎 HP 86% → 76%
+3|13|move_effect|self|长毛巨魔受到了灼伤的伤害！
+3|13|hp_numeric|self|长毛巨魔 HP 23 → 11
+4|12|move_execution|opponent|对手的雷丘使出了守住！
+4|12|move_effect|opponent|对手的雷丘摆出了防守的架势！
+4|12|move_execution|self|长毛巨魔使出了抛下狠话！
+4|12|move_effect|opponent|对对手的炽焰咆哮虎，好像没有效果……
+4|12|move_execution|self|烈咬陆鲨使出了大地之力！
+4|12|move_effect|opponent|对手的雷丘在攻击中守护住了自己！
+4|10|move_execution|opponent|对手的炽焰咆哮虎使出了抛下狠话！
+4|10|stat_change|self|烈咬陆鲨的攻击、特攻降低了！
+4|10|switch_out|opponent|对手的炽焰咆哮虎要回到AjayVGC的身边了！
+4|10|send_out|opponent|AjayVGC派出了火神蛾！
+4|9|move_effect|self|长毛巨魔受到了灼伤的伤害！
+4|9|hp_numeric|self|长毛巨魔 HP 11 → 0
+4|9|faint|self|长毛巨魔倒下了！
+4|9|send_out|self|上吧！铝钢桥龙！
+5|8|move_execution|opponent|对手的火神蛾使出了愤怒粉！
+5|8|move_effect|opponent|对手的火神蛾变得万众瞩目了！
+5|8|move_execution|self|烈咬陆鲨使出了力量宝石！
+5|8|hp_numeric|opponent|火神蛾 HP 100% → 5%
+5|8|effectiveness|opponent|对对手的火神蛾效果无比绝佳！
+5|8|move_execution|opponent|对手的雷丘使出了真气弹！
+5|6|hp_numeric|self|铝钢桥龙 HP 194 → 94
+5|6|effectiveness|self|对铝钢桥龙效果绝佳！
+5|6|stat_change|self|铝钢桥龙的特防降低了！
+5|6|ability_activation|self|铝钢桥龙的持久力
+5|5|stat_change|self|铝钢桥龙的防御提高了！
+5|5|move_execution|self|铝钢桥龙使出了大声咆哮！
+5|5|hp_numeric|opponent|雷丘 HP 100% → 83%
+5|5|hp_numeric|opponent|火神蛾 HP 5% → 0%
+5|5|stat_change|opponent|对手的雷丘的特攻降低了！
+5|4|faint|opponent|对手的火神蛾倒下了！
+5|4|item_activation|self|铝钢桥龙的吃剩的东西
+5|4|hp_numeric|self|铝钢桥龙 HP 94 → 106
+5|4|send_out|opponent|AjayVGC派出了炽焰咆哮虎！
+5|4|ability_activation|opponent|炽焰咆哮虎的威吓
+5|4|stat_change|self|烈咬陆鲨和铝钢桥龙的攻击降低了！
+6|21|move_execution|self|烈咬陆鲨使出了守住！
+6|21|move_effect|self|烈咬陆鲨摆出了防守的架势！
+6|21|move_execution|self|铝钢桥龙使出了守住！
+6|21|move_effect|self|铝钢桥龙摆出了防守的架势！
+6|21|move_execution|opponent|对手的炽焰咆哮虎使出了击掌奇袭！
+6|20|move_effect|self|铝钢桥龙在攻击中守护住了自己！
+6|20|move_execution|opponent|对手的雷丘使出了真气弹！
+6|20|move_effect|self|铝钢桥龙在攻击中守护住了自己！
+6|20|item_activation|self|铝钢桥龙的吃剩的东西
+6|20|hp_numeric|self|铝钢桥龙 HP 106 → 118

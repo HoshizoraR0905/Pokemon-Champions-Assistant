@@ -64,6 +64,11 @@ def decision_state(state, rules, *, hidden_engine=None):
             'action_constraints':{'active':active(p),'fainted':asdict(p.fainted),
                 'protect':protection_probability(p,rules),
                 'protean_eligible':asdict(read(protean,'eligibility') if protean else Fact())}}
+        transformed=p.mechanics.get('temporary_transform')
+        if transformed and transformed.current.get('active',Fact()).value is True:
+            snapshot=transformed.current['snapshot'].value
+            pokemon[pid]['copied_appearance']={k:deepcopy(snapshot[k]) for k in ('species','form','target_instance_id')}
+            pokemon[pid]['copied_non_hp_stats']=deepcopy(snapshot['non_hp_stats'])
     for pid,configuration in state.knowledge.get('team',{}).get('instances',{}).items():
         if pid in pokemon: pokemon[pid]['known_configuration']=deepcopy(configuration)
     result = {'schema_version':1,'battle_id':state.battle_id,'turn':asdict(state.turn),'phase':asdict(state.phase),

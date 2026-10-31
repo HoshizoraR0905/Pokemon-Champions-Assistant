@@ -75,8 +75,12 @@ def normalized_box(image,roi):
 def popup_regions(image):
     """Candidates only: exact two-line content and phase gate confirm semantics."""
     out=[]
-    if detail_layout(image):return []
-    for side,roi,text_roi in [('self',(.08,.31,.36,.46),(.135,.345,.32,.423)),('opponent',(.64,.31,.94,.46),(.70,.345,.90,.423))]:
+    # A blue rain-lit battlefield can satisfy the broad detail color heuristic.
+    # Only the local two-line banner structure and literal possessive text own
+    # this region; a global color estimate cannot veto its acquisition.
+    # Right text ends before the holder sprite. Including that sprite joins
+    # the two baselines and suppresses otherwise perfectly readable banners.
+    for side,roi,text_roi in [('self',(.08,.31,.36,.46),(.135,.345,.32,.423)),('opponent',(.64,.31,.94,.46),(.70,.345,.866,.423))]:
         bounds=normalized_box(image,roi);x,y,X,Y=bounds;crop=image[y:Y,x:X]
         hsv=cv2.cvtColor(crop,cv2.COLOR_BGR2HSV)
         dark_blue=((hsv[:,:,0]>95)&(hsv[:,:,0]<135)&(hsv[:,:,2]<115)).mean()
@@ -91,9 +95,7 @@ def detail_layout(image):
     return float(((hsv[:,:,0]>=105)&(hsv[:,:,0]<=150)&(hsv[:,:,1]>70)).mean())>.48
 
 
-DETAIL_ROIS={'species':(.25,.185,.435,.239),'hp':(.365,.25,.436,.294),
- 'ability':(.350,.355,.417,.405),'item':(.330,.403,.44,.462),
- 'field0':(.520,.285,.650,.335),'field1':(.520,.380,.655,.435),'field2':(.520,.475,.655,.525)}
+from recognition.regions import DETAIL_ROIS
 
 
 def stage_arrows(image):
@@ -117,7 +119,8 @@ def stage_arrows(image):
 
 def parse_popup(readings):
     # Two source-specific line groups; never deduce an ability from weather.
-    species=consensus(readings.get('species',[]),'species',suffix='的')
+    species=consensus([r for r in readings.get('species',[]) if r['text'].strip().rstrip('！!。').endswith('的')],
+        'species',suffix='的')
     label=readings.get('ability',[])  # Legacy key names the second banner row, not its semantics.
     ability=consensus(label,'ability')
     item=consensus(label,'item')

@@ -1,0 +1,401 @@
+{
+  "validation_run": "b22-followup-validation-v4",
+  "status": "complete",
+  "matched_prior_battles": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "nonmatching_reviewed": [
+    5,
+    13,
+    14,
+    15
+  ],
+  "team_id": "sample_team_team7_20261021",
+  "attached_encounters": {
+    "sample_battle_22:self:encounter:c812d2333b451851": "own_team_4",
+    "sample_battle_22:self:encounter:a8b6c4247cef8311": "own_team_3",
+    "sample_battle_22:self:encounter:2f79a788a9f65246": "own_team_6",
+    "sample_battle_22:self:encounter:59b1b6b99605daa8": "own_team_5",
+    "sample_battle_22:self:encounter:cddd4f82f09160aa": "own_team_3"
+  },
+  "selected_fps": 3,
+  "fourth_fps": "measured_during_initial_baseline_gap_abstention_but_not_necessary",
+  "window": {
+    "start": 699.0183333333333,
+    "end": 714.52,
+    "trigger_time": 706.5183333333333,
+    "action_event_id": "event:7660e24568ad4b208a0c26c2",
+    "target_instance_ids": [
+      "sample_battle_22:self:encounter:cddd4f82f09160aa"
+    ]
+  },
+  "aggregate": {
+    "before": 72,
+    "after": 27,
+    "delta": -45,
+    "unit": "absolute",
+    "parent_action_id": "event:7660e24568ad4b208a0c26c2"
+  },
+  "measurements": [
+    {
+      "fps": 3,
+      "wall_seconds": 7.067104500019923,
+      "measured": {
+        "sampled_frames": 47,
+        "frames_per_requested_second": 3.0319320503171703,
+        "max_pts_gap": 0.35000000000002274,
+        "ocr_read_requests": 30,
+        "ocr_model_predictions": 14,
+        "full_screen_ocr_calls": 0,
+        "hp_reading_invocations": 15
+      },
+      "counts": {
+        "sampled_source_frames": 47,
+        "source_decoded_frames": 479,
+        "visible_hp_cards": 20,
+        "ocr_read_requests": 30,
+        "ocr_prediction_requests": 14,
+        "ocr_invocations_attempted": 14,
+        "ocr_seconds": 0.6631006235256791,
+        "ocr_invocations_performed": 14,
+        "hud_hp_reading_invocations": 15,
+        "ocr_region_reads_reused": 16,
+        "ocr_invocations_avoided_unchanged": 16
+      },
+      "numeric_samples": 20,
+      "hit_resolution": {
+        "hit_count": 2,
+        "per_hit_damage": [
+          21,
+          24
+        ],
+        "hits": [
+          {
+            "index": 1,
+            "before": 72,
+            "after": 51,
+            "damage": 21,
+            "critical_hit": null,
+            "evidence_ids": [
+              "dense:41bbd1a0f68534221bc17a2dcc9b7fd9dfcfcd3b0768cec9e12347cfad0563b4:699.0183333333333",
+              "dense:b785fef7827656bdc83958b2ac4b1c2c007b49118a5ef7e83818f425d4040cd3:707.3516666666667",
+              "dense:2f78109937068ce5cd29695cbb2307160ae0b6c086dd9dff2abe7d059007b865:707.6866666666666",
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:b175e0685b90995d73a0cdd2b7a5d487b2a04db608c26b42ce15646ae56f75da:708.3533333333334",
+              "dense:b3647d87f8281b3a792d77b1427ed4caa04420c5554c0295aba15f2a83b475f8:708.6866666666666"
+            ],
+            "plateau_evidence_ids": [
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:b175e0685b90995d73a0cdd2b7a5d487b2a04db608c26b42ce15646ae56f75da:708.3533333333334",
+              "dense:b3647d87f8281b3a792d77b1427ed4caa04420c5554c0295aba15f2a83b475f8:708.6866666666666"
+            ],
+            "critical_event_ids": [],
+            "damage_begin_time": 707.3516666666667,
+            "end_time": 708.02
+          },
+          {
+            "index": 2,
+            "before": 51,
+            "after": 27,
+            "damage": 24,
+            "critical_hit": null,
+            "evidence_ids": [
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:b175e0685b90995d73a0cdd2b7a5d487b2a04db608c26b42ce15646ae56f75da:708.3533333333334",
+              "dense:b3647d87f8281b3a792d77b1427ed4caa04420c5554c0295aba15f2a83b475f8:708.6866666666666",
+              "dense:f77fda83dfb41388570ce18aef5cf5f711e950eacd242bd497103e2911b2c3dc:709.02",
+              "dense:fbfcf4b79969b7a8961aa43163c517147e0b112933d8796306378309daaac1b1:709.37",
+              "dense:2244fa870a6403af21f98ccc49022b87ff1ec79620bedf3626940c3b6456d23c:709.6866666666666",
+              "dense:e98b6ede4e78e24d77f44028cfdc0ba2d443d12347a07ab7c171ce9fb797a120:710.02",
+              "dense:19f2eaaaa32684df2ae943e6c7db91982eaa6ad86fff66db080439715751b1c5:710.3533333333334",
+              "dense:00eade9f9662542bc1e23fedd5a97218cded270e0e248470b2d5a038afeaa6cb:710.6866666666666"
+            ],
+            "plateau_evidence_ids": [
+              "dense:e98b6ede4e78e24d77f44028cfdc0ba2d443d12347a07ab7c171ce9fb797a120:710.02",
+              "dense:19f2eaaaa32684df2ae943e6c7db91982eaa6ad86fff66db080439715751b1c5:710.3533333333334",
+              "dense:00eade9f9662542bc1e23fedd5a97218cded270e0e248470b2d5a038afeaa6cb:710.6866666666666"
+            ],
+            "critical_event_ids": [],
+            "damage_begin_time": 709.6866666666666,
+            "end_time": 710.02
+          }
+        ],
+        "per_hit_status": "supported",
+        "hit_candidates": [
+          {
+            "index": 1,
+            "before": 72,
+            "after": 51,
+            "damage": 21,
+            "critical_hit": null,
+            "evidence_ids": [
+              "dense:41bbd1a0f68534221bc17a2dcc9b7fd9dfcfcd3b0768cec9e12347cfad0563b4:699.0183333333333",
+              "dense:b785fef7827656bdc83958b2ac4b1c2c007b49118a5ef7e83818f425d4040cd3:707.3516666666667",
+              "dense:2f78109937068ce5cd29695cbb2307160ae0b6c086dd9dff2abe7d059007b865:707.6866666666666",
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:b175e0685b90995d73a0cdd2b7a5d487b2a04db608c26b42ce15646ae56f75da:708.3533333333334",
+              "dense:b3647d87f8281b3a792d77b1427ed4caa04420c5554c0295aba15f2a83b475f8:708.6866666666666"
+            ],
+            "plateau_evidence_ids": [
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:b175e0685b90995d73a0cdd2b7a5d487b2a04db608c26b42ce15646ae56f75da:708.3533333333334",
+              "dense:b3647d87f8281b3a792d77b1427ed4caa04420c5554c0295aba15f2a83b475f8:708.6866666666666"
+            ],
+            "critical_event_ids": [],
+            "damage_begin_time": 707.3516666666667,
+            "end_time": 708.02
+          },
+          {
+            "index": 2,
+            "before": 51,
+            "after": 27,
+            "damage": 24,
+            "critical_hit": null,
+            "evidence_ids": [
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:b175e0685b90995d73a0cdd2b7a5d487b2a04db608c26b42ce15646ae56f75da:708.3533333333334",
+              "dense:b3647d87f8281b3a792d77b1427ed4caa04420c5554c0295aba15f2a83b475f8:708.6866666666666",
+              "dense:f77fda83dfb41388570ce18aef5cf5f711e950eacd242bd497103e2911b2c3dc:709.02",
+              "dense:fbfcf4b79969b7a8961aa43163c517147e0b112933d8796306378309daaac1b1:709.37",
+              "dense:2244fa870a6403af21f98ccc49022b87ff1ec79620bedf3626940c3b6456d23c:709.6866666666666",
+              "dense:e98b6ede4e78e24d77f44028cfdc0ba2d443d12347a07ab7c171ce9fb797a120:710.02",
+              "dense:19f2eaaaa32684df2ae943e6c7db91982eaa6ad86fff66db080439715751b1c5:710.3533333333334",
+              "dense:00eade9f9662542bc1e23fedd5a97218cded270e0e248470b2d5a038afeaa6cb:710.6866666666666"
+            ],
+            "plateau_evidence_ids": [
+              "dense:e98b6ede4e78e24d77f44028cfdc0ba2d443d12347a07ab7c171ce9fb797a120:710.02",
+              "dense:19f2eaaaa32684df2ae943e6c7db91982eaa6ad86fff66db080439715751b1c5:710.3533333333334",
+              "dense:00eade9f9662542bc1e23fedd5a97218cded270e0e248470b2d5a038afeaa6cb:710.6866666666666"
+            ],
+            "critical_event_ids": [],
+            "damage_begin_time": 709.6866666666666,
+            "end_time": 710.02
+          }
+        ],
+        "critical_hit": null,
+        "reasons": [],
+        "completion_confirmed": true,
+        "completion_event_ids": [
+          "event:8231d056e5febb0b02c3041c"
+        ],
+        "completion_basis": "explicit_hit_count_message"
+      }
+    },
+    {
+      "fps": 4,
+      "wall_seconds": 7.081634750124067,
+      "measured": {
+        "sampled_frames": 62,
+        "frames_per_requested_second": 3.9995699387162675,
+        "max_pts_gap": 0.283333333333303,
+        "ocr_read_requests": 42,
+        "ocr_model_predictions": 16,
+        "full_screen_ocr_calls": 0,
+        "hp_reading_invocations": 21
+      },
+      "counts": {
+        "sampled_source_frames": 62,
+        "source_decoded_frames": 474,
+        "visible_hp_cards": 26,
+        "ocr_read_requests": 42,
+        "ocr_prediction_requests": 16,
+        "ocr_invocations_attempted": 16,
+        "ocr_seconds": 0.78629200020805,
+        "ocr_invocations_performed": 16,
+        "hud_hp_reading_invocations": 21,
+        "ocr_region_reads_reused": 26,
+        "ocr_invocations_avoided_unchanged": 26
+      },
+      "numeric_samples": 26,
+      "hit_resolution": {
+        "hit_count": 2,
+        "per_hit_damage": [
+          21,
+          24
+        ],
+        "hits": [
+          {
+            "index": 1,
+            "before": 72,
+            "after": 51,
+            "damage": 21,
+            "critical_hit": null,
+            "evidence_ids": [
+              "dense:41bbd1a0f68534221bc17a2dcc9b7fd9dfcfcd3b0768cec9e12347cfad0563b4:699.0183333333333",
+              "dense:9e0b6be5c970c99cbbb29c0a4625a56549d27c94bd0baf434533ba5fd93d2077:707.2516666666667",
+              "dense:daea08eeaafaec6a7e59c01442dacb524cbc8b1683223f38890c313722b1f2c8:707.5183333333333",
+              "dense:263e12e61e3ea679e561891ab0ea16f9e058abdd5e8f9fa0c05efbc18fe5721b:707.7533333333333",
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:0fe5651a28a004bc1b028c7790724c43aa1b76ab5aeabb3d6fe23dc7cee1758c:708.2533333333333",
+              "dense:2353cc620636f8c9806e889611440411956b58f997b4a42e2080ab8634df3356:708.52"
+            ],
+            "plateau_evidence_ids": [
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:0fe5651a28a004bc1b028c7790724c43aa1b76ab5aeabb3d6fe23dc7cee1758c:708.2533333333333",
+              "dense:2353cc620636f8c9806e889611440411956b58f997b4a42e2080ab8634df3356:708.52"
+            ],
+            "critical_event_ids": [],
+            "damage_begin_time": 707.5183333333333,
+            "end_time": 708.02
+          },
+          {
+            "index": 2,
+            "before": 51,
+            "after": 27,
+            "damage": 24,
+            "critical_hit": null,
+            "evidence_ids": [
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:0fe5651a28a004bc1b028c7790724c43aa1b76ab5aeabb3d6fe23dc7cee1758c:708.2533333333333",
+              "dense:2353cc620636f8c9806e889611440411956b58f997b4a42e2080ab8634df3356:708.52",
+              "dense:1a9b000912b25dc3b5ec6894cb70cf167f5cb7efd55cdafbc6f6190cadc1c227:708.7533333333333",
+              "dense:f77fda83dfb41388570ce18aef5cf5f711e950eacd242bd497103e2911b2c3dc:709.02",
+              "dense:e62cf77d8b83c758f87f55dd8185fa4e8c3d3573bd9c634067eb67774a34777c:709.2533333333333",
+              "dense:b90d9164c3fc2c21576e1ae7667b869fa80f6f4a7defba75fd5680ee51ac4200:709.52",
+              "dense:88214136d034ff84452acbf10bdec0c9ef064a03306fabeb76b2ab71788e594f:709.7533333333333",
+              "dense:e98b6ede4e78e24d77f44028cfdc0ba2d443d12347a07ab7c171ce9fb797a120:710.02",
+              "dense:f924a995f3e3853553abcfc8701cbd6489d9658e769e312ff370c63c2fe8b3c0:710.2533333333333",
+              "dense:287b2060497d5a66f1ad8dab783a4b08285b87e6220b14db3de7b3f7ad96341e:710.5033333333333"
+            ],
+            "plateau_evidence_ids": [
+              "dense:e98b6ede4e78e24d77f44028cfdc0ba2d443d12347a07ab7c171ce9fb797a120:710.02",
+              "dense:f924a995f3e3853553abcfc8701cbd6489d9658e769e312ff370c63c2fe8b3c0:710.2533333333333",
+              "dense:287b2060497d5a66f1ad8dab783a4b08285b87e6220b14db3de7b3f7ad96341e:710.5033333333333"
+            ],
+            "critical_event_ids": [],
+            "damage_begin_time": 709.52,
+            "end_time": 710.02
+          }
+        ],
+        "per_hit_status": "supported",
+        "hit_candidates": [
+          {
+            "index": 1,
+            "before": 72,
+            "after": 51,
+            "damage": 21,
+            "critical_hit": null,
+            "evidence_ids": [
+              "dense:41bbd1a0f68534221bc17a2dcc9b7fd9dfcfcd3b0768cec9e12347cfad0563b4:699.0183333333333",
+              "dense:9e0b6be5c970c99cbbb29c0a4625a56549d27c94bd0baf434533ba5fd93d2077:707.2516666666667",
+              "dense:daea08eeaafaec6a7e59c01442dacb524cbc8b1683223f38890c313722b1f2c8:707.5183333333333",
+              "dense:263e12e61e3ea679e561891ab0ea16f9e058abdd5e8f9fa0c05efbc18fe5721b:707.7533333333333",
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:0fe5651a28a004bc1b028c7790724c43aa1b76ab5aeabb3d6fe23dc7cee1758c:708.2533333333333",
+              "dense:2353cc620636f8c9806e889611440411956b58f997b4a42e2080ab8634df3356:708.52"
+            ],
+            "plateau_evidence_ids": [
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:0fe5651a28a004bc1b028c7790724c43aa1b76ab5aeabb3d6fe23dc7cee1758c:708.2533333333333",
+              "dense:2353cc620636f8c9806e889611440411956b58f997b4a42e2080ab8634df3356:708.52"
+            ],
+            "critical_event_ids": [],
+            "damage_begin_time": 707.5183333333333,
+            "end_time": 708.02
+          },
+          {
+            "index": 2,
+            "before": 51,
+            "after": 27,
+            "damage": 24,
+            "critical_hit": null,
+            "evidence_ids": [
+              "dense:ef4cdf0544b56ccf35969eaf37c898da3974262ef3c45e281b9c97aa1368b029:708.02",
+              "dense:0fe5651a28a004bc1b028c7790724c43aa1b76ab5aeabb3d6fe23dc7cee1758c:708.2533333333333",
+              "dense:2353cc620636f8c9806e889611440411956b58f997b4a42e2080ab8634df3356:708.52",
+              "dense:1a9b000912b25dc3b5ec6894cb70cf167f5cb7efd55cdafbc6f6190cadc1c227:708.7533333333333",
+              "dense:f77fda83dfb41388570ce18aef5cf5f711e950eacd242bd497103e2911b2c3dc:709.02",
+              "dense:e62cf77d8b83c758f87f55dd8185fa4e8c3d3573bd9c634067eb67774a34777c:709.2533333333333",
+              "dense:b90d9164c3fc2c21576e1ae7667b869fa80f6f4a7defba75fd5680ee51ac4200:709.52",
+              "dense:88214136d034ff84452acbf10bdec0c9ef064a03306fabeb76b2ab71788e594f:709.7533333333333",
+              "dense:e98b6ede4e78e24d77f44028cfdc0ba2d443d12347a07ab7c171ce9fb797a120:710.02",
+              "dense:f924a995f3e3853553abcfc8701cbd6489d9658e769e312ff370c63c2fe8b3c0:710.2533333333333",
+              "dense:287b2060497d5a66f1ad8dab783a4b08285b87e6220b14db3de7b3f7ad96341e:710.5033333333333"
+            ],
+            "plateau_evidence_ids": [
+              "dense:e98b6ede4e78e24d77f44028cfdc0ba2d443d12347a07ab7c171ce9fb797a120:710.02",
+              "dense:f924a995f3e3853553abcfc8701cbd6489d9658e769e312ff370c63c2fe8b3c0:710.2533333333333",
+              "dense:287b2060497d5a66f1ad8dab783a4b08285b87e6220b14db3de7b3f7ad96341e:710.5033333333333"
+            ],
+            "critical_event_ids": [],
+            "damage_begin_time": 709.52,
+            "end_time": 710.02
+          }
+        ],
+        "critical_hit": null,
+        "reasons": [],
+        "completion_confirmed": true,
+        "completion_event_ids": [
+          "event:8231d056e5febb0b02c3041c"
+        ],
+        "completion_basis": "explicit_hit_count_message"
+      }
+    }
+  ],
+  "remaining_conflicts": [
+    {
+      "event_id": "event:6b87f17dffcd2baa0c96a4a9",
+      "reason": "maximum_hp_disagreement",
+      "proposed_value": {
+        "current": 1,
+        "maximum": 2
+      }
+    },
+    {
+      "event_id": "event:dcb1a8d99e73bf699a0f9145",
+      "reason": "maximum_hp_disagreement",
+      "proposed_value": {
+        "current": 1,
+        "maximum": 2
+      }
+    }
+  ],
+  "original_deferred_count": 12,
+  "occupancy_code_changed": false,
+  "tests": {
+    "main_passed": 305,
+    "main_deselected": 3,
+    "team_passed": 14,
+    "team_deselected": 1
+  },
+  "input_hashes": {
+    ".cache/battles/sample_battle_22/diagnosis/b22-focused-v6/replay.json": "f008cf7b5883971b90df3ec155cf7ea21ff9198d8cabdc7da5a6ae1f6e5bf8e1",
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/replay.json": "8bf4e8926c331a53127ca9bc2aafad00f2498dcaef7d14d1ecdb19a6b4f7360c",
+    "tests/fixtures/battle_evidence/sample-team7-reviewed.json": "45ebd31add0d7ba2c61c69343680f7805196c9ed6e152f47a6eed460fb3facd8",
+    ".cache/battles/sample_battle_22/diagnosis/b22-followup-v1/team-evidence.json": "fc634ae16b9c69200b0b9ffcb2fd4991c72388dfb2aa6fe7654fbeee35dc4ca3",
+    "knowledge/data/52poke-resolution-v1.json": "f443fb247d66823f356961d6d9c898daf3b7ce17c2eb53653201bd954e298335"
+  },
+  "source_hashes": {
+    "scripts/validate_b22_followup.py": "a188099379d2672a2633bf74cf8ff475b5a94fc1ffc8aa4a647ea743d743eb64",
+    "tracking/knowledge_grounding.py": "db14872c0d424bbe04a76ad9bfcdc5f92559139aec7347be9b3f5b7cdef7839e",
+    "tracking/state_engine.py": "6e3c87ddd05e2a7488e1d04243601ee93b56fecf1b8348a933fa4194d4b0bb59",
+    "tracking/reliability.py": "8ffd0bda06ce1fea5e291035f0915bbbfdd28d98a60f54fa758c36fabd3c6472",
+    "tracking/transformation.py": "7519ef9969cd63b75f5cc1191352565ac08ba12c48da23f05900fb74548d6d57",
+    "tracking/resolution_context.py": "9f2d1b3d5df418468bfca966f97d1e3e711b1722e086b5feb3b43a9dd497b816",
+    "tracking/hp_causes.py": "b2036f5d0660c287f16c07197072ad281050a383a5673a5e1a2de0dd7c160ee4",
+    "recognition/resolution_sampling.py": "596cffe8e4172bbb0b2317a76911c7d73fb6926bbdb63ad615c4c513fb6c3531"
+  },
+  "integrity": {
+    "integrity_before": 11729,
+    "team_replay": "complete",
+    "multi_hit": "complete",
+    "integrity_after": "complete"
+  },
+  "team_link_hp_check": {
+    "nonzero_segments_preserved": 45,
+    "deferred_preserved": 12,
+    "method": "Compared source-event keyed observed_before/after/unit/delta maps against b22-focused-v6"
+  }
+}

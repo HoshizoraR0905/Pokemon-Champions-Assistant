@@ -9,9 +9,11 @@ from collections import Counter
 from contextlib import ExitStack
 from copy import deepcopy
 from dataclasses import asdict
+import hashlib
 import json
 import os
 from pathlib import Path
+import shutil
 import sys
 import time
 from unittest.mock import patch
@@ -27,6 +29,55 @@ SLOTS=('self:left','self:right','opponent:left','opponent:right')
 
 
 def read(p):return json.loads(p.read_text())
+
+
+def review_image(owner, report, value):
+    """Keep review screenshots inside its static root; never rewrite source PNGs."""
+    if not value:return None
+    source=(owner.root/value).resolve()
+    assert (source.is_relative_to(owner.cache_dir.resolve())
+            or source.is_relative_to(owner.report_dir.resolve())
+            or source.is_relative_to(owner.root/'tests/fixtures'))
+    assets=report/'assets';assets.mkdir(exist_ok=True)
+    destination=assets/(digest(source)+'.png')
+    if not destination.exists():
+        try:os.link(source,destination)
+        except OSError:shutil.copyfile(source,destination)
+    return 'assets/'+destination.name
+
+
+def refresh_review_images(owner, evaluation_id):
+    """Refresh only presentation from existing saved DATA, preserving annotations."""
+    report=owner.report('evaluation/'+evaluation_id);html=report/'review.html'
+    source=html.read_text()
+    data=json.loads(source.split('<script>const DATA=',1)[1].split(';\nconst $',1)[0])
+    cache={}
+    def local(value):
+        if value not in cache:
+            path=(report/value).resolve()
+            cache[value]=review_image(owner,report,path)
+        return cache[value]
+    for frame in data['frames']:
+        if frame.get('image'):frame['image']=local(frame['image'])
+    for event in data['events']:
+        for evidence in event['images']:
+            if evidence.get('image'):evidence['image']=local(evidence['image'])
+    for finding in data['review'].get('findings',[]):
+        for evidence in finding.get('evidence',[]):
+            if evidence.get('image'):evidence['image']=local(evidence['image'])
+    template=ROOT/'scripts/templates/battle_evaluation.html'
+    payload=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
+    html.write_text(template.read_text().replace('__DATA__',payload))
+    # This is the review manifest, never the sealed production manifest.
+    manifest_path=owner.cache('evaluation/'+evaluation_id+'/report-manifest.json')
+    if manifest_path.exists():
+        manifest=read(manifest_path)
+        manifest.setdefault('presentation_revisions',[]).append(dict(previous_html_sha256=hashlib.sha256(source.encode()).hexdigest(),kind='local_inline_images'))
+        manifest['outputs'][str(html.relative_to(owner.root))]=digest(html)
+        manifest['sources'][str(template.relative_to(ROOT))]=digest(template)
+        manifest['sources'][str(Path(__file__).relative_to(ROOT))]=digest(Path(__file__))
+        atomic_json(manifest_path,manifest)
+    return html
 def forbidden(*args,**kwargs):raise AssertionError('Offline evaluation cannot acquire recognition or video')
 
 
@@ -88,8 +139,9 @@ def build(owner,run_id,evaluation_id,observations=None):
     line=timeline(folder,target)
     def image_link(value):
         if not value:return None
-        path=(ROOT/value).resolve();assert path.is_relative_to(owner.cache_dir.resolve()) or path.is_relative_to(ROOT/'tests/fixtures')
-        return os.path.relpath(path,report)
+        if value not in image_cache:image_cache[value]=review_image(owner,report,value)
+        return image_cache[value]
+    image_cache={}
     by_source={r['source_id']:r for r in rows}
     def images(e):
         refs=[]
@@ -172,7 +224,10 @@ Production command: `.venv/bin/python main.py --video tests/fixtures/{owner.batt
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--battle',required=True);p.add_argument('--run-id',required=True);p.add_argument('--evaluation-id',required=True);p.add_argument('--observations',type=Path)
+    p.add_argument('--refresh-images-only',action='store_true',help='Refresh saved review HTML/assets only; no replay or annotation writes')
     a=p.parse_args();owner=BattleArtifacts(a.battle,ROOT)
+    if a.refresh_images_only:
+        print(refresh_review_images(owner,a.evaluation_id));return
     if a.observations:assert a.observations.resolve().is_relative_to(owner.cache_dir.resolve())
     build(owner,a.run_id,a.evaluation_id,a.observations)
 if __name__=='__main__':main()

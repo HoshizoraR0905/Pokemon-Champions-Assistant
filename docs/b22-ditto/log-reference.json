@@ -1,0 +1,1623 @@
+{
+  "created_at": "2026-10-30T07:56:09.603393+00:00",
+  "method": "Codex independent visual transcription of all 44 saved log panels before loading production event/receipt contents; not human-reviewed ground truth",
+  "limitations": [
+    "Visible rows only; no whole-match completeness claim",
+    "Source observation times are not original event times",
+    "Line breaks combined; punctuation normalized; banner priority retained in parentheses"
+  ],
+  "rows": [
+    {
+      "reference_id": "log-001",
+      "turn": 1,
+      "text": "Tickle wikle派出了化石翼龙和巨金怪！",
+      "original_event_time": null,
+      "frame_index": 12,
+      "evidence": {
+        "timestamp": 408.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000808.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#408.00166666666667",
+        "sha256": "75d5280840fdccf724eb55bff34d37c1748e44aa9daa2b5086938b15e0a0350c"
+      }
+    },
+    {
+      "reference_id": "log-002",
+      "turn": 1,
+      "text": "上吧！烈咬陆鲨！大嘴鸥！",
+      "original_event_time": null,
+      "frame_index": 12,
+      "evidence": {
+        "timestamp": 408.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000808.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#408.00166666666667",
+        "sha256": "75d5280840fdccf724eb55bff34d37c1748e44aa9daa2b5086938b15e0a0350c"
+      }
+    },
+    {
+      "reference_id": "log-003",
+      "turn": 1,
+      "text": "化石翼龙的紧张感",
+      "original_event_time": null,
+      "frame_index": 12,
+      "evidence": {
+        "timestamp": 408.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000808.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#408.00166666666667",
+        "sha256": "75d5280840fdccf724eb55bff34d37c1748e44aa9daa2b5086938b15e0a0350c"
+      }
+    },
+    {
+      "reference_id": "log-004",
+      "turn": 1,
+      "text": "我方因太紧张而无法食用树果！",
+      "original_event_time": null,
+      "frame_index": 12,
+      "evidence": {
+        "timestamp": 408.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000808.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#408.00166666666667",
+        "sha256": "75d5280840fdccf724eb55bff34d37c1748e44aa9daa2b5086938b15e0a0350c"
+      }
+    },
+    {
+      "reference_id": "log-005",
+      "turn": 1,
+      "text": "大嘴鸥的降雨",
+      "original_event_time": null,
+      "frame_index": 12,
+      "evidence": {
+        "timestamp": 408.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000808.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#408.00166666666667",
+        "sha256": "75d5280840fdccf724eb55bff34d37c1748e44aa9daa2b5086938b15e0a0350c"
+      }
+    },
+    {
+      "reference_id": "log-006",
+      "turn": 1,
+      "text": "开始下雨了！",
+      "original_event_time": null,
+      "frame_index": 12,
+      "evidence": {
+        "timestamp": 408.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000808.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#408.00166666666667",
+        "sha256": "75d5280840fdccf724eb55bff34d37c1748e44aa9daa2b5086938b15e0a0350c"
+      }
+    },
+    {
+      "reference_id": "log-007",
+      "turn": 1,
+      "text": "Tickle wikle换下了巨金怪！",
+      "original_event_time": null,
+      "frame_index": 18,
+      "evidence": {
+        "timestamp": 411.00333333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000814.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#411.00333333333333",
+        "sha256": "e499c908b1a46cd99bf5ce2a80f50e3191c67a6bb89c2d8cece5baa4daa30678"
+      }
+    },
+    {
+      "reference_id": "log-008",
+      "turn": 1,
+      "text": "Tickle wikle派出了铝钢桥龙！",
+      "original_event_time": null,
+      "frame_index": 18,
+      "evidence": {
+        "timestamp": 411.00333333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000814.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#411.00333333333333",
+        "sha256": "e499c908b1a46cd99bf5ce2a80f50e3191c67a6bb89c2d8cece5baa4daa30678"
+      }
+    },
+    {
+      "reference_id": "log-009",
+      "turn": 1,
+      "text": "烈咬陆鲨的烈咬陆鲨进化石Z和Hoshi的全一环起了反应！",
+      "original_event_time": null,
+      "frame_index": 18,
+      "evidence": {
+        "timestamp": 411.00333333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000814.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#411.00333333333333",
+        "sha256": "e499c908b1a46cd99bf5ce2a80f50e3191c67a6bb89c2d8cece5baa4daa30678"
+      }
+    },
+    {
+      "reference_id": "log-010",
+      "turn": 1,
+      "text": "烈咬陆鲨超级进化成了超级烈咬陆鲨！",
+      "original_event_time": null,
+      "frame_index": 10,
+      "evidence": {
+        "timestamp": 407.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000806.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#407.00166666666667",
+        "sha256": "bb7beeb42770a0619afb44fc028ea1d348eee63ced7a51405a245a491420a0d6"
+      }
+    },
+    {
+      "reference_id": "log-011",
+      "turn": 1,
+      "text": "烈咬陆鲨使出了大地之力！",
+      "original_event_time": null,
+      "frame_index": 10,
+      "evidence": {
+        "timestamp": 407.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000806.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#407.00166666666667",
+        "sha256": "bb7beeb42770a0619afb44fc028ea1d348eee63ced7a51405a245a491420a0d6"
+      }
+    },
+    {
+      "reference_id": "log-012",
+      "turn": 1,
+      "text": "铝钢桥龙 HP 100% → 34%",
+      "original_event_time": null,
+      "frame_index": 10,
+      "evidence": {
+        "timestamp": 407.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000806.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#407.00166666666667",
+        "sha256": "bb7beeb42770a0619afb44fc028ea1d348eee63ced7a51405a245a491420a0d6"
+      }
+    },
+    {
+      "reference_id": "log-013",
+      "turn": 1,
+      "text": "对对手的铝钢桥龙效果绝佳！",
+      "original_event_time": null,
+      "frame_index": 9,
+      "evidence": {
+        "timestamp": 406.50166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000805.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#406.50166666666667",
+        "sha256": "b9d5acfba5a4f950ebc3cef02b0cf5102aec20d9b5b42911e7e16f82a1ba8fab"
+      }
+    },
+    {
+      "reference_id": "log-014",
+      "turn": 1,
+      "text": "铝钢桥龙的持久力",
+      "original_event_time": null,
+      "frame_index": 9,
+      "evidence": {
+        "timestamp": 406.50166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000805.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#406.50166666666667",
+        "sha256": "b9d5acfba5a4f950ebc3cef02b0cf5102aec20d9b5b42911e7e16f82a1ba8fab"
+      }
+    },
+    {
+      "reference_id": "log-015",
+      "turn": 1,
+      "text": "对手的铝钢桥龙的防御提高了！",
+      "original_event_time": null,
+      "frame_index": 9,
+      "evidence": {
+        "timestamp": 406.50166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000805.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#406.50166666666667",
+        "sha256": "b9d5acfba5a4f950ebc3cef02b0cf5102aec20d9b5b42911e7e16f82a1ba8fab"
+      }
+    },
+    {
+      "reference_id": "log-016",
+      "turn": 1,
+      "text": "对手的化石翼龙使出了岩崩！",
+      "original_event_time": null,
+      "frame_index": 9,
+      "evidence": {
+        "timestamp": 406.50166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000805.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#406.50166666666667",
+        "sha256": "b9d5acfba5a4f950ebc3cef02b0cf5102aec20d9b5b42911e7e16f82a1ba8fab"
+      }
+    },
+    {
+      "reference_id": "log-017",
+      "turn": 1,
+      "text": "烈咬陆鲨 HP 184 → 132",
+      "original_event_time": null,
+      "frame_index": 16,
+      "evidence": {
+        "timestamp": 410.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000812.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#410.00166666666667",
+        "sha256": "cc3ede17c969b46a05e5baf3a84ff083f3dbda4be6a52170341b801fd1a19bbc"
+      }
+    },
+    {
+      "reference_id": "log-018",
+      "turn": 1,
+      "text": "大嘴鸥 HP 164 → 72",
+      "original_event_time": null,
+      "frame_index": 16,
+      "evidence": {
+        "timestamp": 410.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000812.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#410.00166666666667",
+        "sha256": "cc3ede17c969b46a05e5baf3a84ff083f3dbda4be6a52170341b801fd1a19bbc"
+      }
+    },
+    {
+      "reference_id": "log-019",
+      "turn": 1,
+      "text": "对大嘴鸥效果绝佳！",
+      "original_event_time": null,
+      "frame_index": 15,
+      "evidence": {
+        "timestamp": 409.50166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000811.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#409.50166666666667",
+        "sha256": "5d46c02616ce9d374de86345c080cac216f3e695091747cb37c7d6391183be8c"
+      }
+    },
+    {
+      "reference_id": "log-020",
+      "turn": 1,
+      "text": "大嘴鸥畏缩了，无法使出招式！",
+      "original_event_time": null,
+      "frame_index": 15,
+      "evidence": {
+        "timestamp": 409.50166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000811.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#409.50166666666667",
+        "sha256": "5d46c02616ce9d374de86345c080cac216f3e695091747cb37c7d6391183be8c"
+      }
+    },
+    {
+      "reference_id": "log-021",
+      "turn": 1,
+      "text": "铝钢桥龙的吃剩的东西",
+      "original_event_time": null,
+      "frame_index": 15,
+      "evidence": {
+        "timestamp": 409.50166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000811.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#409.50166666666667",
+        "sha256": "5d46c02616ce9d374de86345c080cac216f3e695091747cb37c7d6391183be8c"
+      }
+    },
+    {
+      "reference_id": "log-022",
+      "turn": 1,
+      "text": "铝钢桥龙 HP 34% → 40%",
+      "original_event_time": null,
+      "frame_index": 15,
+      "evidence": {
+        "timestamp": 409.50166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000811.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#409.50166666666667",
+        "sha256": "5d46c02616ce9d374de86345c080cac216f3e695091747cb37c7d6391183be8c"
+      }
+    },
+    {
+      "reference_id": "log-023",
+      "turn": 2,
+      "text": "大嘴鸥使出了广域防守！（优先度+3）",
+      "original_event_time": null,
+      "frame_index": 7,
+      "evidence": {
+        "timestamp": 405.50166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000803.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#405.50166666666667",
+        "sha256": "30ea99c4b3c4eb1781b7b287a6b399253776649eb176bffda1f7ff81e6050e4d"
+      }
+    },
+    {
+      "reference_id": "log-024",
+      "turn": 2,
+      "text": "我方周围正受到广域防守的保护！",
+      "original_event_time": null,
+      "frame_index": 7,
+      "evidence": {
+        "timestamp": 405.50166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000803.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#405.50166666666667",
+        "sha256": "30ea99c4b3c4eb1781b7b287a6b399253776649eb176bffda1f7ff81e6050e4d"
+      }
+    },
+    {
+      "reference_id": "log-025",
+      "turn": 2,
+      "text": "烈咬陆鲨使出了大地之力！",
+      "original_event_time": null,
+      "frame_index": 6,
+      "evidence": {
+        "timestamp": 405.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000802.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#405.00166666666667",
+        "sha256": "95e99445adc55953d29fa403d5da05b522cef167f09a3fcd13af2abd2b2939e5"
+      }
+    },
+    {
+      "reference_id": "log-026",
+      "turn": 2,
+      "text": "铝钢桥龙 HP 40% → 0%",
+      "original_event_time": null,
+      "frame_index": 6,
+      "evidence": {
+        "timestamp": 405.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000802.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#405.00166666666667",
+        "sha256": "95e99445adc55953d29fa403d5da05b522cef167f09a3fcd13af2abd2b2939e5"
+      }
+    },
+    {
+      "reference_id": "log-027",
+      "turn": 2,
+      "text": "对对手的铝钢桥龙效果绝佳！",
+      "original_event_time": null,
+      "frame_index": 6,
+      "evidence": {
+        "timestamp": 405.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000802.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#405.00166666666667",
+        "sha256": "95e99445adc55953d29fa403d5da05b522cef167f09a3fcd13af2abd2b2939e5"
+      }
+    },
+    {
+      "reference_id": "log-028",
+      "turn": 2,
+      "text": "对手的铝钢桥龙倒下了！",
+      "original_event_time": null,
+      "frame_index": 14,
+      "evidence": {
+        "timestamp": 409.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000810.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#409.00166666666667",
+        "sha256": "716e1fdc8272da8b0e1a58dd2893a3f9c4cd2233ae43ded3e01ad805665cd084"
+      }
+    },
+    {
+      "reference_id": "log-029",
+      "turn": 2,
+      "text": "对手的化石翼龙使出了顺风！",
+      "original_event_time": null,
+      "frame_index": 14,
+      "evidence": {
+        "timestamp": 409.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000810.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#409.00166666666667",
+        "sha256": "716e1fdc8272da8b0e1a58dd2893a3f9c4cd2233ae43ded3e01ad805665cd084"
+      }
+    },
+    {
+      "reference_id": "log-030",
+      "turn": 2,
+      "text": "从对手身后吹起了顺风！",
+      "original_event_time": null,
+      "frame_index": 14,
+      "evidence": {
+        "timestamp": 409.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000810.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#409.00166666666667",
+        "sha256": "716e1fdc8272da8b0e1a58dd2893a3f9c4cd2233ae43ded3e01ad805665cd084"
+      }
+    },
+    {
+      "reference_id": "log-031",
+      "turn": 2,
+      "text": "Tickle wikle派出了百变怪！",
+      "original_event_time": null,
+      "frame_index": 14,
+      "evidence": {
+        "timestamp": 409.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000810.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#409.00166666666667",
+        "sha256": "716e1fdc8272da8b0e1a58dd2893a3f9c4cd2233ae43ded3e01ad805665cd084"
+      }
+    },
+    {
+      "reference_id": "log-032",
+      "turn": 2,
+      "text": "百变怪的变身者",
+      "original_event_time": null,
+      "frame_index": 14,
+      "evidence": {
+        "timestamp": 409.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000810.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#409.00166666666667",
+        "sha256": "716e1fdc8272da8b0e1a58dd2893a3f9c4cd2233ae43ded3e01ad805665cd084"
+      }
+    },
+    {
+      "reference_id": "log-033",
+      "turn": 2,
+      "text": "对手的百变怪变身成了烈咬陆鲨！",
+      "original_event_time": null,
+      "frame_index": 14,
+      "evidence": {
+        "timestamp": 409.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000810.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#409.00166666666667",
+        "sha256": "716e1fdc8272da8b0e1a58dd2893a3f9c4cd2233ae43ded3e01ad805665cd084"
+      }
+    },
+    {
+      "reference_id": "log-034",
+      "turn": 3,
+      "text": "大嘴鸥，回来！",
+      "original_event_time": null,
+      "frame_index": 4,
+      "evidence": {
+        "timestamp": 404.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000800.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#404.00166666666667",
+        "sha256": "d86e13de1a4207b7027dbeb6d659884ae9bd15343d748c6f81c52c9ba1bbbda2"
+      }
+    },
+    {
+      "reference_id": "log-035",
+      "turn": 3,
+      "text": "上吧！铝钢桥龙！",
+      "original_event_time": null,
+      "frame_index": 4,
+      "evidence": {
+        "timestamp": 404.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000800.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#404.00166666666667",
+        "sha256": "d86e13de1a4207b7027dbeb6d659884ae9bd15343d748c6f81c52c9ba1bbbda2"
+      }
+    },
+    {
+      "reference_id": "log-036",
+      "turn": 3,
+      "text": "烈咬陆鲨使出了守住！（优先度+4）",
+      "original_event_time": null,
+      "frame_index": 4,
+      "evidence": {
+        "timestamp": 404.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000800.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#404.00166666666667",
+        "sha256": "d86e13de1a4207b7027dbeb6d659884ae9bd15343d748c6f81c52c9ba1bbbda2"
+      }
+    },
+    {
+      "reference_id": "log-037",
+      "turn": 3,
+      "text": "烈咬陆鲨摆出了防守的架势！",
+      "original_event_time": null,
+      "frame_index": 4,
+      "evidence": {
+        "timestamp": 404.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000800.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#404.00166666666667",
+        "sha256": "d86e13de1a4207b7027dbeb6d659884ae9bd15343d748c6f81c52c9ba1bbbda2"
+      }
+    },
+    {
+      "reference_id": "log-038",
+      "turn": 3,
+      "text": "对手的百变怪使出了龙之波动！",
+      "original_event_time": null,
+      "frame_index": 2,
+      "evidence": {
+        "timestamp": 403.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000798.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#403.00166666666667",
+        "sha256": "d4c5b880bc419b24ff03036aa4e3a613dd90d01374cf84d3d1a193ac2dd00a7f"
+      }
+    },
+    {
+      "reference_id": "log-039",
+      "turn": 3,
+      "text": "烈咬陆鲨在攻击中守护住了自己！",
+      "original_event_time": null,
+      "frame_index": 2,
+      "evidence": {
+        "timestamp": 403.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000798.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#403.00166666666667",
+        "sha256": "d4c5b880bc419b24ff03036aa4e3a613dd90d01374cf84d3d1a193ac2dd00a7f"
+      }
+    },
+    {
+      "reference_id": "log-040",
+      "turn": 3,
+      "text": "对手的化石翼龙使出了岩崩！",
+      "original_event_time": null,
+      "frame_index": 2,
+      "evidence": {
+        "timestamp": 403.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000798.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#403.00166666666667",
+        "sha256": "d4c5b880bc419b24ff03036aa4e3a613dd90d01374cf84d3d1a193ac2dd00a7f"
+      }
+    },
+    {
+      "reference_id": "log-041",
+      "turn": 3,
+      "text": "烈咬陆鲨在攻击中守护住了自己！",
+      "original_event_time": null,
+      "frame_index": 2,
+      "evidence": {
+        "timestamp": 403.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000798.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#403.00166666666667",
+        "sha256": "d4c5b880bc419b24ff03036aa4e3a613dd90d01374cf84d3d1a193ac2dd00a7f"
+      }
+    },
+    {
+      "reference_id": "log-042",
+      "turn": 3,
+      "text": "铝钢桥龙 HP 194 → 178",
+      "original_event_time": null,
+      "frame_index": 0,
+      "evidence": {
+        "timestamp": 402.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000796.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#402.00166666666667",
+        "sha256": "e538b89a86cef48aa6162fb2bff9521f7e91b29f14040e0bca1c1b098247be30"
+      }
+    },
+    {
+      "reference_id": "log-043",
+      "turn": 3,
+      "text": "对铝钢桥龙效果不好。",
+      "original_event_time": null,
+      "frame_index": 0,
+      "evidence": {
+        "timestamp": 402.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000796.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#402.00166666666667",
+        "sha256": "e538b89a86cef48aa6162fb2bff9521f7e91b29f14040e0bca1c1b098247be30"
+      }
+    },
+    {
+      "reference_id": "log-044",
+      "turn": 3,
+      "text": "铝钢桥龙的持久力",
+      "original_event_time": null,
+      "frame_index": 0,
+      "evidence": {
+        "timestamp": 402.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000796.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#402.00166666666667",
+        "sha256": "e538b89a86cef48aa6162fb2bff9521f7e91b29f14040e0bca1c1b098247be30"
+      }
+    },
+    {
+      "reference_id": "log-045",
+      "turn": 3,
+      "text": "铝钢桥龙的防御提高了！",
+      "original_event_time": null,
+      "frame_index": 0,
+      "evidence": {
+        "timestamp": 402.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000796.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#402.00166666666667",
+        "sha256": "e538b89a86cef48aa6162fb2bff9521f7e91b29f14040e0bca1c1b098247be30"
+      }
+    },
+    {
+      "reference_id": "log-046",
+      "turn": 3,
+      "text": "铝钢桥龙的吃剩的东西",
+      "original_event_time": null,
+      "frame_index": 0,
+      "evidence": {
+        "timestamp": 402.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000796.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#402.00166666666667",
+        "sha256": "e538b89a86cef48aa6162fb2bff9521f7e91b29f14040e0bca1c1b098247be30"
+      }
+    },
+    {
+      "reference_id": "log-047",
+      "turn": 3,
+      "text": "铝钢桥龙 HP 178 → 190",
+      "original_event_time": null,
+      "frame_index": 0,
+      "evidence": {
+        "timestamp": 402.00166666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000796.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#402.00166666666667",
+        "sha256": "e538b89a86cef48aa6162fb2bff9521f7e91b29f14040e0bca1c1b098247be30"
+      }
+    },
+    {
+      "reference_id": "log-048",
+      "turn": 4,
+      "text": "烈咬陆鲨，回来！",
+      "original_event_time": null,
+      "frame_index": 22,
+      "evidence": {
+        "timestamp": 459.51,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000911.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#459.51",
+        "sha256": "128ed3a259f0d4f7ef34cd2a453e605b3216299f132cbaeb13a0b30ca90d3d22"
+      }
+    },
+    {
+      "reference_id": "log-049",
+      "turn": 4,
+      "text": "上吧！长毛巨魔！",
+      "original_event_time": null,
+      "frame_index": 22,
+      "evidence": {
+        "timestamp": 459.51,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000911.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#459.51",
+        "sha256": "128ed3a259f0d4f7ef34cd2a453e605b3216299f132cbaeb13a0b30ca90d3d22"
+      }
+    },
+    {
+      "reference_id": "log-050",
+      "turn": 4,
+      "text": "对手的百变怪使出了龙之波动！",
+      "original_event_time": null,
+      "frame_index": 22,
+      "evidence": {
+        "timestamp": 459.51,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000911.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#459.51",
+        "sha256": "128ed3a259f0d4f7ef34cd2a453e605b3216299f132cbaeb13a0b30ca90d3d22"
+      }
+    },
+    {
+      "reference_id": "log-051",
+      "turn": 4,
+      "text": "对于长毛巨魔，好像没有效果……",
+      "original_event_time": null,
+      "frame_index": 22,
+      "evidence": {
+        "timestamp": 459.51,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000911.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#459.51",
+        "sha256": "128ed3a259f0d4f7ef34cd2a453e605b3216299f132cbaeb13a0b30ca90d3d22"
+      }
+    },
+    {
+      "reference_id": "log-052",
+      "turn": 4,
+      "text": "对手的化石翼龙使出了岩崩！",
+      "original_event_time": null,
+      "frame_index": 21,
+      "evidence": {
+        "timestamp": 459.01,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000910.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#459.01",
+        "sha256": "f552a448afd41e4ee17428db54d6845ee8bd4c9d93c1afb7ee504566c2908877"
+      }
+    },
+    {
+      "reference_id": "log-053",
+      "turn": 4,
+      "text": "长毛巨魔 HP 201 → 156",
+      "original_event_time": null,
+      "frame_index": 21,
+      "evidence": {
+        "timestamp": 459.01,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000910.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#459.01",
+        "sha256": "f552a448afd41e4ee17428db54d6845ee8bd4c9d93c1afb7ee504566c2908877"
+      }
+    },
+    {
+      "reference_id": "log-054",
+      "turn": 4,
+      "text": "铝钢桥龙 HP 190 → 181",
+      "original_event_time": null,
+      "frame_index": 21,
+      "evidence": {
+        "timestamp": 459.01,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000910.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#459.01",
+        "sha256": "f552a448afd41e4ee17428db54d6845ee8bd4c9d93c1afb7ee504566c2908877"
+      }
+    },
+    {
+      "reference_id": "log-055",
+      "turn": 4,
+      "text": "对铝钢桥龙效果不好。",
+      "original_event_time": null,
+      "frame_index": 20,
+      "evidence": {
+        "timestamp": 458.51,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000909.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#458.51",
+        "sha256": "f58cfdbae88231ddcb2bd496cd551cfcb45185ba2615313a8a5adae0b75987a5"
+      }
+    },
+    {
+      "reference_id": "log-056",
+      "turn": 4,
+      "text": "铝钢桥龙的持久力",
+      "original_event_time": null,
+      "frame_index": 20,
+      "evidence": {
+        "timestamp": 458.51,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000909.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#458.51",
+        "sha256": "f58cfdbae88231ddcb2bd496cd551cfcb45185ba2615313a8a5adae0b75987a5"
+      }
+    },
+    {
+      "reference_id": "log-057",
+      "turn": 4,
+      "text": "铝钢桥龙的防御提高了！",
+      "original_event_time": null,
+      "frame_index": 20,
+      "evidence": {
+        "timestamp": 458.51,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000909.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#458.51",
+        "sha256": "f58cfdbae88231ddcb2bd496cd551cfcb45185ba2615313a8a5adae0b75987a5"
+      }
+    },
+    {
+      "reference_id": "log-058",
+      "turn": 4,
+      "text": "铝钢桥龙畏缩了，无法使出招式！",
+      "original_event_time": null,
+      "frame_index": 20,
+      "evidence": {
+        "timestamp": 458.51,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000909.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#458.51",
+        "sha256": "f58cfdbae88231ddcb2bd496cd551cfcb45185ba2615313a8a5adae0b75987a5"
+      }
+    },
+    {
+      "reference_id": "log-059",
+      "turn": 4,
+      "text": "铝钢桥龙的吃剩的东西",
+      "original_event_time": null,
+      "frame_index": 20,
+      "evidence": {
+        "timestamp": 458.51,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000909.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#458.51",
+        "sha256": "f58cfdbae88231ddcb2bd496cd551cfcb45185ba2615313a8a5adae0b75987a5"
+      }
+    },
+    {
+      "reference_id": "log-060",
+      "turn": 4,
+      "text": "铝钢桥龙 HP 181 → 193",
+      "original_event_time": null,
+      "frame_index": 20,
+      "evidence": {
+        "timestamp": 458.51,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000909.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#458.51",
+        "sha256": "f58cfdbae88231ddcb2bd496cd551cfcb45185ba2615313a8a5adae0b75987a5"
+      }
+    },
+    {
+      "reference_id": "log-061",
+      "turn": 5,
+      "text": "Tickle wikle换下了化石翼龙！",
+      "original_event_time": null,
+      "frame_index": 31,
+      "evidence": {
+        "timestamp": 609.0033333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001202.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#609.0033333333333",
+        "sha256": "b8495240220aba9dfcd36de9178aa5fdde7ef6ac52062c1cdc8ef0add3cd03bd"
+      }
+    },
+    {
+      "reference_id": "log-062",
+      "turn": 5,
+      "text": "Tickle wikle派出了巨金怪！",
+      "original_event_time": null,
+      "frame_index": 31,
+      "evidence": {
+        "timestamp": 609.0033333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001202.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#609.0033333333333",
+        "sha256": "b8495240220aba9dfcd36de9178aa5fdde7ef6ac52062c1cdc8ef0add3cd03bd"
+      }
+    },
+    {
+      "reference_id": "log-063",
+      "turn": 5,
+      "text": "铝钢桥龙使出了守住！（优先度+4）",
+      "original_event_time": null,
+      "frame_index": 31,
+      "evidence": {
+        "timestamp": 609.0033333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001202.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#609.0033333333333",
+        "sha256": "b8495240220aba9dfcd36de9178aa5fdde7ef6ac52062c1cdc8ef0add3cd03bd"
+      }
+    },
+    {
+      "reference_id": "log-064",
+      "turn": 5,
+      "text": "铝钢桥龙摆出了防守的架势！",
+      "original_event_time": null,
+      "frame_index": 31,
+      "evidence": {
+        "timestamp": 609.0033333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001202.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#609.0033333333333",
+        "sha256": "b8495240220aba9dfcd36de9178aa5fdde7ef6ac52062c1cdc8ef0add3cd03bd"
+      }
+    },
+    {
+      "reference_id": "log-065",
+      "turn": 5,
+      "text": "对手的百变怪使出了龙之波动！",
+      "original_event_time": null,
+      "frame_index": 30,
+      "evidence": {
+        "timestamp": 608.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001201.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#608.5016666666667",
+        "sha256": "b3a4d662e36bd99914dba8b229780a4b3cff48ce5cfa82b301d65bfc6563f1f3"
+      }
+    },
+    {
+      "reference_id": "log-066",
+      "turn": 5,
+      "text": "铝钢桥龙在攻击中守护住了自己！",
+      "original_event_time": null,
+      "frame_index": 30,
+      "evidence": {
+        "timestamp": 608.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001201.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#608.5016666666667",
+        "sha256": "b3a4d662e36bd99914dba8b229780a4b3cff48ce5cfa82b301d65bfc6563f1f3"
+      }
+    },
+    {
+      "reference_id": "log-067",
+      "turn": 5,
+      "text": "长毛巨魔使出了灵魂冲击！",
+      "original_event_time": null,
+      "frame_index": 30,
+      "evidence": {
+        "timestamp": 608.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001201.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#608.5016666666667",
+        "sha256": "b3a4d662e36bd99914dba8b229780a4b3cff48ce5cfa82b301d65bfc6563f1f3"
+      }
+    },
+    {
+      "reference_id": "log-068",
+      "turn": 5,
+      "text": "百变怪 HP 100% → 22%",
+      "original_event_time": null,
+      "frame_index": 29,
+      "evidence": {
+        "timestamp": 608.0016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001200.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#608.0016666666667",
+        "sha256": "b48279af66e72fffc6fb720f9bae445d7a711d97945cd6086090daa6bc92de0e"
+      }
+    },
+    {
+      "reference_id": "log-069",
+      "turn": 5,
+      "text": "对对手的百变怪效果绝佳！",
+      "original_event_time": null,
+      "frame_index": 29,
+      "evidence": {
+        "timestamp": 608.0016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001200.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#608.0016666666667",
+        "sha256": "b48279af66e72fffc6fb720f9bae445d7a711d97945cd6086090daa6bc92de0e"
+      }
+    },
+    {
+      "reference_id": "log-070",
+      "turn": 5,
+      "text": "对手的百变怪的特攻降低了！",
+      "original_event_time": null,
+      "frame_index": 29,
+      "evidence": {
+        "timestamp": 608.0016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001200.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#608.0016666666667",
+        "sha256": "b48279af66e72fffc6fb720f9bae445d7a711d97945cd6086090daa6bc92de0e"
+      }
+    },
+    {
+      "reference_id": "log-071",
+      "turn": 5,
+      "text": "雨停了！",
+      "original_event_time": null,
+      "frame_index": 28,
+      "evidence": {
+        "timestamp": 607.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001199.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#607.5016666666667",
+        "sha256": "db224f08ecd9787fc090885764a297c4b47a6f33be8c3b00f5a4e080251680bc"
+      }
+    },
+    {
+      "reference_id": "log-072",
+      "turn": 5,
+      "text": "铝钢桥龙的吃剩的东西",
+      "original_event_time": null,
+      "frame_index": 28,
+      "evidence": {
+        "timestamp": 607.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001199.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#607.5016666666667",
+        "sha256": "db224f08ecd9787fc090885764a297c4b47a6f33be8c3b00f5a4e080251680bc"
+      }
+    },
+    {
+      "reference_id": "log-073",
+      "turn": 5,
+      "text": "铝钢桥龙 HP 193 → 194",
+      "original_event_time": null,
+      "frame_index": 28,
+      "evidence": {
+        "timestamp": 607.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001199.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#607.5016666666667",
+        "sha256": "db224f08ecd9787fc090885764a297c4b47a6f33be8c3b00f5a4e080251680bc"
+      }
+    },
+    {
+      "reference_id": "log-074",
+      "turn": 5,
+      "text": "对手的顺风停止了！",
+      "original_event_time": null,
+      "frame_index": 28,
+      "evidence": {
+        "timestamp": 607.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001199.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#607.5016666666667",
+        "sha256": "db224f08ecd9787fc090885764a297c4b47a6f33be8c3b00f5a4e080251680bc"
+      }
+    },
+    {
+      "reference_id": "log-075",
+      "turn": 6,
+      "text": "Tickle wikle换下了百变怪！",
+      "original_event_time": null,
+      "frame_index": 27,
+      "evidence": {
+        "timestamp": 607.0016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001198.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#607.0016666666667",
+        "sha256": "250c9e136ada463070049dd21142e622f88ca5de3a097574a7bf1418036e0c58"
+      }
+    },
+    {
+      "reference_id": "log-076",
+      "turn": 6,
+      "text": "Tickle wikle派出了化石翼龙！",
+      "original_event_time": null,
+      "frame_index": 27,
+      "evidence": {
+        "timestamp": 607.0016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001198.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#607.0016666666667",
+        "sha256": "250c9e136ada463070049dd21142e622f88ca5de3a097574a7bf1418036e0c58"
+      }
+    },
+    {
+      "reference_id": "log-077",
+      "turn": 6,
+      "text": "化石翼龙的紧张感",
+      "original_event_time": null,
+      "frame_index": 26,
+      "evidence": {
+        "timestamp": 606.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001197.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#606.5016666666667",
+        "sha256": "41e353a8238a596e8545b04b4d96b5bd0d2d9bf79e717a3bd29a9e8ce3fbed8b"
+      }
+    },
+    {
+      "reference_id": "log-078",
+      "turn": 6,
+      "text": "我方因太紧张而无法食用树果！",
+      "original_event_time": null,
+      "frame_index": 26,
+      "evidence": {
+        "timestamp": 606.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001197.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#606.5016666666667",
+        "sha256": "41e353a8238a596e8545b04b4d96b5bd0d2d9bf79e717a3bd29a9e8ce3fbed8b"
+      }
+    },
+    {
+      "reference_id": "log-079",
+      "turn": 6,
+      "text": "对手的巨金怪的巨金怪进化石和Tickle wikle的全一环起了反应！",
+      "original_event_time": null,
+      "frame_index": 26,
+      "evidence": {
+        "timestamp": 606.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001197.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#606.5016666666667",
+        "sha256": "41e353a8238a596e8545b04b4d96b5bd0d2d9bf79e717a3bd29a9e8ce3fbed8b"
+      }
+    },
+    {
+      "reference_id": "log-080",
+      "turn": 6,
+      "text": "对手的巨金怪超级进化成了超级巨金怪！",
+      "original_event_time": null,
+      "frame_index": 25,
+      "evidence": {
+        "timestamp": 606.0016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001196.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#606.0016666666667",
+        "sha256": "6c02b7671f1fc327d2c457926d64d3acf5de83b9dabaa3a8a2af07c19f8f1925"
+      }
+    },
+    {
+      "reference_id": "log-081",
+      "turn": 6,
+      "text": "长毛巨魔使出了光墙！",
+      "original_event_time": null,
+      "frame_index": 24,
+      "evidence": {
+        "timestamp": 605.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001195.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#605.5016666666667",
+        "sha256": "9df2154dfd7529fc8ffaa431c6a23db6670c372cb65fea6d3dce1541a552bb8f"
+      }
+    },
+    {
+      "reference_id": "log-082",
+      "turn": 6,
+      "text": "光墙使我方的特殊抗性提高了！",
+      "original_event_time": null,
+      "frame_index": 24,
+      "evidence": {
+        "timestamp": 605.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001195.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#605.5016666666667",
+        "sha256": "9df2154dfd7529fc8ffaa431c6a23db6670c372cb65fea6d3dce1541a552bb8f"
+      }
+    },
+    {
+      "reference_id": "log-083",
+      "turn": 6,
+      "text": "对手的巨金怪使出了臂锤！",
+      "original_event_time": null,
+      "frame_index": 24,
+      "evidence": {
+        "timestamp": 605.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001195.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#605.5016666666667",
+        "sha256": "9df2154dfd7529fc8ffaa431c6a23db6670c372cb65fea6d3dce1541a552bb8f"
+      }
+    },
+    {
+      "reference_id": "log-084",
+      "turn": 6,
+      "text": "没有击中铝钢桥龙！",
+      "original_event_time": null,
+      "frame_index": 24,
+      "evidence": {
+        "timestamp": 605.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001195.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#605.5016666666667",
+        "sha256": "9df2154dfd7529fc8ffaa431c6a23db6670c372cb65fea6d3dce1541a552bb8f"
+      }
+    },
+    {
+      "reference_id": "log-085",
+      "turn": 6,
+      "text": "铝钢桥龙使出了龙之波动！",
+      "original_event_time": null,
+      "frame_index": 24,
+      "evidence": {
+        "timestamp": 605.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001195.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#605.5016666666667",
+        "sha256": "9df2154dfd7529fc8ffaa431c6a23db6670c372cb65fea6d3dce1541a552bb8f"
+      }
+    },
+    {
+      "reference_id": "log-086",
+      "turn": 6,
+      "text": "化石翼龙 HP 100% → 43%",
+      "original_event_time": null,
+      "frame_index": 24,
+      "evidence": {
+        "timestamp": 605.5016666666667,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001195.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#605.5016666666667",
+        "sha256": "9df2154dfd7529fc8ffaa431c6a23db6670c372cb65fea6d3dce1541a552bb8f"
+      }
+    },
+    {
+      "reference_id": "log-087",
+      "turn": 7,
+      "text": "铝钢桥龙使出了守住！（优先度+4）",
+      "original_event_time": null,
+      "frame_index": 43,
+      "evidence": {
+        "timestamp": 775.53,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001533.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#775.53",
+        "sha256": "f0895be12fa76223dfdc307439dee9c06b59fb2b25eda6f8dc26ac993d153d60"
+      }
+    },
+    {
+      "reference_id": "log-088",
+      "turn": 7,
+      "text": "铝钢桥龙摆出了防守的架势！",
+      "original_event_time": null,
+      "frame_index": 43,
+      "evidence": {
+        "timestamp": 775.53,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001533.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#775.53",
+        "sha256": "f0895be12fa76223dfdc307439dee9c06b59fb2b25eda6f8dc26ac993d153d60"
+      }
+    },
+    {
+      "reference_id": "log-089",
+      "turn": 7,
+      "text": "长毛巨魔使出了反射壁！",
+      "original_event_time": null,
+      "frame_index": 43,
+      "evidence": {
+        "timestamp": 775.53,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001533.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#775.53",
+        "sha256": "f0895be12fa76223dfdc307439dee9c06b59fb2b25eda6f8dc26ac993d153d60"
+      }
+    },
+    {
+      "reference_id": "log-090",
+      "turn": 7,
+      "text": "反射壁使我方的物理抗性提高了！",
+      "original_event_time": null,
+      "frame_index": 42,
+      "evidence": {
+        "timestamp": 775.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001532.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#775.03",
+        "sha256": "b3ac9c9ab0c492b048c957ce8f2cd3bb15c0a400374559690e8a00357d8fea1e"
+      }
+    },
+    {
+      "reference_id": "log-091",
+      "turn": 7,
+      "text": "对手的化石翼龙使出了顺风！",
+      "original_event_time": null,
+      "frame_index": 42,
+      "evidence": {
+        "timestamp": 775.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001532.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#775.03",
+        "sha256": "b3ac9c9ab0c492b048c957ce8f2cd3bb15c0a400374559690e8a00357d8fea1e"
+      }
+    },
+    {
+      "reference_id": "log-092",
+      "turn": 7,
+      "text": "从对手身后吹起了顺风！",
+      "original_event_time": null,
+      "frame_index": 42,
+      "evidence": {
+        "timestamp": 775.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001532.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#775.03",
+        "sha256": "b3ac9c9ab0c492b048c957ce8f2cd3bb15c0a400374559690e8a00357d8fea1e"
+      }
+    },
+    {
+      "reference_id": "log-093",
+      "turn": 7,
+      "text": "对手的巨金怪使出了铁头！",
+      "original_event_time": null,
+      "frame_index": 42,
+      "evidence": {
+        "timestamp": 775.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001532.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#775.03",
+        "sha256": "b3ac9c9ab0c492b048c957ce8f2cd3bb15c0a400374559690e8a00357d8fea1e"
+      }
+    },
+    {
+      "reference_id": "log-094",
+      "turn": 7,
+      "text": "长毛巨魔 HP 156 → 0",
+      "original_event_time": null,
+      "frame_index": 40,
+      "evidence": {
+        "timestamp": 774.0466666666666,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001530.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#774.0466666666666",
+        "sha256": "20a723888423a1018edffd4f1f7805574c8848df1f693e5c727ba08d016d4f89"
+      }
+    },
+    {
+      "reference_id": "log-095",
+      "turn": 7,
+      "text": "对长毛巨魔效果绝佳！",
+      "original_event_time": null,
+      "frame_index": 40,
+      "evidence": {
+        "timestamp": 774.0466666666666,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001530.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#774.0466666666666",
+        "sha256": "20a723888423a1018edffd4f1f7805574c8848df1f693e5c727ba08d016d4f89"
+      }
+    },
+    {
+      "reference_id": "log-096",
+      "turn": 7,
+      "text": "长毛巨魔倒下了！",
+      "original_event_time": null,
+      "frame_index": 40,
+      "evidence": {
+        "timestamp": 774.0466666666666,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001530.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#774.0466666666666",
+        "sha256": "20a723888423a1018edffd4f1f7805574c8848df1f693e5c727ba08d016d4f89"
+      }
+    },
+    {
+      "reference_id": "log-097",
+      "turn": 7,
+      "text": "上吧！大嘴鸥！",
+      "original_event_time": null,
+      "frame_index": 40,
+      "evidence": {
+        "timestamp": 774.0466666666666,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001530.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#774.0466666666666",
+        "sha256": "20a723888423a1018edffd4f1f7805574c8848df1f693e5c727ba08d016d4f89"
+      }
+    },
+    {
+      "reference_id": "log-098",
+      "turn": 7,
+      "text": "大嘴鸥的降雨",
+      "original_event_time": null,
+      "frame_index": 40,
+      "evidence": {
+        "timestamp": 774.0466666666666,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001530.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#774.0466666666666",
+        "sha256": "20a723888423a1018edffd4f1f7805574c8848df1f693e5c727ba08d016d4f89"
+      }
+    },
+    {
+      "reference_id": "log-099",
+      "turn": 7,
+      "text": "开始下雨了！",
+      "original_event_time": null,
+      "frame_index": 40,
+      "evidence": {
+        "timestamp": 774.0466666666666,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001530.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#774.0466666666666",
+        "sha256": "20a723888423a1018edffd4f1f7805574c8848df1f693e5c727ba08d016d4f89"
+      }
+    },
+    {
+      "reference_id": "log-100",
+      "turn": 8,
+      "text": "大嘴鸥使出了广域防守！（优先度+3）",
+      "original_event_time": null,
+      "frame_index": 39,
+      "evidence": {
+        "timestamp": 773.5133333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001529.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#773.5133333333333",
+        "sha256": "4c45aef77e9a532c71e18403fcb61ef349a49aad254fadb457a73865608c0770"
+      }
+    },
+    {
+      "reference_id": "log-101",
+      "turn": 8,
+      "text": "我方周围正受到广域防守的保护！",
+      "original_event_time": null,
+      "frame_index": 39,
+      "evidence": {
+        "timestamp": 773.5133333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001529.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#773.5133333333333",
+        "sha256": "4c45aef77e9a532c71e18403fcb61ef349a49aad254fadb457a73865608c0770"
+      }
+    },
+    {
+      "reference_id": "log-102",
+      "turn": 8,
+      "text": "对手的化石翼龙使出了双翼！",
+      "original_event_time": null,
+      "frame_index": 39,
+      "evidence": {
+        "timestamp": 773.5133333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001529.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#773.5133333333333",
+        "sha256": "4c45aef77e9a532c71e18403fcb61ef349a49aad254fadb457a73865608c0770"
+      }
+    },
+    {
+      "reference_id": "log-103",
+      "turn": 8,
+      "text": "大嘴鸥 HP 72 → 51",
+      "original_event_time": null,
+      "frame_index": 38,
+      "evidence": {
+        "timestamp": 773.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001528.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#773.03",
+        "sha256": "7e94186322359e1ae5d24f26fd2a84a98d7783bcd00dee05eac390af6c472156"
+      }
+    },
+    {
+      "reference_id": "log-104",
+      "turn": 8,
+      "text": "大嘴鸥 HP 51 → 27",
+      "original_event_time": null,
+      "frame_index": 38,
+      "evidence": {
+        "timestamp": 773.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001528.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#773.03",
+        "sha256": "7e94186322359e1ae5d24f26fd2a84a98d7783bcd00dee05eac390af6c472156"
+      }
+    },
+    {
+      "reference_id": "log-105",
+      "turn": 8,
+      "text": "击中了2次！",
+      "original_event_time": null,
+      "frame_index": 38,
+      "evidence": {
+        "timestamp": 773.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001528.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#773.03",
+        "sha256": "7e94186322359e1ae5d24f26fd2a84a98d7783bcd00dee05eac390af6c472156"
+      }
+    },
+    {
+      "reference_id": "log-106",
+      "turn": 8,
+      "text": "对手的巨金怪使出了臂锤！",
+      "original_event_time": null,
+      "frame_index": 37,
+      "evidence": {
+        "timestamp": 772.53,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001527.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#772.53",
+        "sha256": "d2c7ba76d74081eae1edae97d078b5b50ee7657bd48575148263c68ac25d651b"
+      }
+    },
+    {
+      "reference_id": "log-107",
+      "turn": 8,
+      "text": "铝钢桥龙 HP 194 → 150",
+      "original_event_time": null,
+      "frame_index": 37,
+      "evidence": {
+        "timestamp": 772.53,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001527.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#772.53",
+        "sha256": "d2c7ba76d74081eae1edae97d078b5b50ee7657bd48575148263c68ac25d651b"
+      }
+    },
+    {
+      "reference_id": "log-108",
+      "turn": 8,
+      "text": "对铝钢桥龙效果绝佳！",
+      "original_event_time": null,
+      "frame_index": 37,
+      "evidence": {
+        "timestamp": 772.53,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001527.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#772.53",
+        "sha256": "d2c7ba76d74081eae1edae97d078b5b50ee7657bd48575148263c68ac25d651b"
+      }
+    },
+    {
+      "reference_id": "log-109",
+      "turn": 8,
+      "text": "对手的巨金怪的速度降低了！",
+      "original_event_time": null,
+      "frame_index": 36,
+      "evidence": {
+        "timestamp": 772.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001526.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#772.03",
+        "sha256": "ffe6b04b71aad0a54ad95a898fd5189664fd92b0af873af7937ab3f9297d5946"
+      }
+    },
+    {
+      "reference_id": "log-110",
+      "turn": 8,
+      "text": "铝钢桥龙的持久力",
+      "original_event_time": null,
+      "frame_index": 36,
+      "evidence": {
+        "timestamp": 772.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001526.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#772.03",
+        "sha256": "ffe6b04b71aad0a54ad95a898fd5189664fd92b0af873af7937ab3f9297d5946"
+      }
+    },
+    {
+      "reference_id": "log-111",
+      "turn": 8,
+      "text": "铝钢桥龙的防御提高了！",
+      "original_event_time": null,
+      "frame_index": 36,
+      "evidence": {
+        "timestamp": 772.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001526.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#772.03",
+        "sha256": "ffe6b04b71aad0a54ad95a898fd5189664fd92b0af873af7937ab3f9297d5946"
+      }
+    },
+    {
+      "reference_id": "log-112",
+      "turn": 8,
+      "text": "铝钢桥龙使出了电光束！",
+      "original_event_time": null,
+      "frame_index": 35,
+      "evidence": {
+        "timestamp": 771.53,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001525.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#771.53",
+        "sha256": "362b265074ab5995dabd70fdca97ea2e93d1a17addc9ba3c2a65679468c3ab13"
+      }
+    },
+    {
+      "reference_id": "log-113",
+      "turn": 8,
+      "text": "铝钢桥龙吸收了电力！",
+      "original_event_time": null,
+      "frame_index": 35,
+      "evidence": {
+        "timestamp": 771.53,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001525.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#771.53",
+        "sha256": "362b265074ab5995dabd70fdca97ea2e93d1a17addc9ba3c2a65679468c3ab13"
+      }
+    },
+    {
+      "reference_id": "log-114",
+      "turn": 8,
+      "text": "铝钢桥龙的特攻提高了！",
+      "original_event_time": null,
+      "frame_index": 35,
+      "evidence": {
+        "timestamp": 771.53,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001525.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#771.53",
+        "sha256": "362b265074ab5995dabd70fdca97ea2e93d1a17addc9ba3c2a65679468c3ab13"
+      }
+    },
+    {
+      "reference_id": "log-115",
+      "turn": 8,
+      "text": "化石翼龙 HP 43% → 0%",
+      "original_event_time": null,
+      "frame_index": 35,
+      "evidence": {
+        "timestamp": 771.53,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001525.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#771.53",
+        "sha256": "362b265074ab5995dabd70fdca97ea2e93d1a17addc9ba3c2a65679468c3ab13"
+      }
+    },
+    {
+      "reference_id": "log-116",
+      "turn": 8,
+      "text": "对对手的化石翼龙效果绝佳！",
+      "original_event_time": null,
+      "frame_index": 34,
+      "evidence": {
+        "timestamp": 771.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001524.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#771.03",
+        "sha256": "c3db414ff46c6343eb8facaf724390edd963d58813d9f53d0900ccfd0d4ebaae"
+      }
+    },
+    {
+      "reference_id": "log-117",
+      "turn": 8,
+      "text": "对手的化石翼龙倒下了！",
+      "original_event_time": null,
+      "frame_index": 34,
+      "evidence": {
+        "timestamp": 771.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001524.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#771.03",
+        "sha256": "c3db414ff46c6343eb8facaf724390edd963d58813d9f53d0900ccfd0d4ebaae"
+      }
+    },
+    {
+      "reference_id": "log-118",
+      "turn": 8,
+      "text": "大嘴鸥的文柚果",
+      "original_event_time": null,
+      "frame_index": 33,
+      "evidence": {
+        "timestamp": 770.5133333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001523.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#770.5133333333333",
+        "sha256": "fc4165ada0b7129cb438384081c471e6fd3927d0afdf54868ef93d757e853ddd"
+      }
+    },
+    {
+      "reference_id": "log-119",
+      "turn": 8,
+      "text": "大嘴鸥 HP 27 → 68",
+      "original_event_time": null,
+      "frame_index": 33,
+      "evidence": {
+        "timestamp": 770.5133333333333,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001523.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#770.5133333333333",
+        "sha256": "fc4165ada0b7129cb438384081c471e6fd3927d0afdf54868ef93d757e853ddd"
+      }
+    },
+    {
+      "reference_id": "log-120",
+      "turn": 8,
+      "text": "铝钢桥龙的吃剩的东西",
+      "original_event_time": null,
+      "frame_index": 32,
+      "evidence": {
+        "timestamp": 770.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001522.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#770.03",
+        "sha256": "6b8106773fd6a3f8494e615935695578a4a9dedbe6d1eca8c9560acbf11932cd"
+      }
+    },
+    {
+      "reference_id": "log-121",
+      "turn": 8,
+      "text": "铝钢桥龙 HP 150 → 162",
+      "original_event_time": null,
+      "frame_index": 32,
+      "evidence": {
+        "timestamp": 770.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001522.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#770.03",
+        "sha256": "6b8106773fd6a3f8494e615935695578a4a9dedbe6d1eca8c9560acbf11932cd"
+      }
+    },
+    {
+      "reference_id": "log-122",
+      "turn": 8,
+      "text": "Tickle wikle派出了百变怪！",
+      "original_event_time": null,
+      "frame_index": 32,
+      "evidence": {
+        "timestamp": 770.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001522.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#770.03",
+        "sha256": "6b8106773fd6a3f8494e615935695578a4a9dedbe6d1eca8c9560acbf11932cd"
+      }
+    },
+    {
+      "reference_id": "log-123",
+      "turn": 8,
+      "text": "百变怪的变身者",
+      "original_event_time": null,
+      "frame_index": 32,
+      "evidence": {
+        "timestamp": 770.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001522.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#770.03",
+        "sha256": "6b8106773fd6a3f8494e615935695578a4a9dedbe6d1eca8c9560acbf11932cd"
+      }
+    },
+    {
+      "reference_id": "log-124",
+      "turn": 8,
+      "text": "对手的百变怪变身成了大嘴鸥！",
+      "original_event_time": null,
+      "frame_index": 32,
+      "evidence": {
+        "timestamp": 770.03,
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001522.png",
+        "source_id": "tests/fixtures/sample_battle_22.mp4#770.03",
+        "sha256": "6b8106773fd6a3f8494e615935695578a4a9dedbe6d1eca8c9560acbf11932cd"
+      }
+    }
+  ]
+}

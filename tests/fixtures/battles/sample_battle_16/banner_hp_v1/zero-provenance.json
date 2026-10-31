@@ -1,0 +1,89 @@
+[
+  {
+    "side": "own",
+    "species_id": 3,
+    "unit": "absolute",
+    "value": 0,
+    "source_time": 366.51166666666666,
+    "sampling_tolerance": 0.75,
+    "evidence": {
+      "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/hud-pixels/source-366512.png",
+      "sha256": "1da029f6fe5958c356c4f54fbd235a6c4a6c80d74177fa443934cea7c7f30a4b",
+      "capture_metadata": {
+        "timestamp": 366.51166666666666,
+        "source_pts": 0,
+        "source_time_base": "1/600",
+        "seek_origin_seconds": 366.51166666666666,
+        "target_timestamp": 366.5
+      },
+      "pixel_review": "agent: visible HUD name, own/opponent layout and zero numeric value; no live output used"
+    },
+    "bounds": [
+      325,
+      497,
+      540,
+      579
+    ],
+    "offset": 0.168,
+    "index": 1,
+    "fixture": "zero-0.png"
+  },
+  {
+    "side": "own",
+    "species_id": 279,
+    "unit": "absolute",
+    "value": 0,
+    "source_time": 690.5,
+    "sampling_tolerance": 0.75,
+    "evidence": {
+      "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/hud-pixels/source-690500.png",
+      "sha256": "9a1e802d26e7c6a03e8a598e5e1ac7d211dd982b62200acad42ca4554484e2b0",
+      "capture_metadata": {
+        "timestamp": 690.5,
+        "source_pts": 0,
+        "source_time_base": "1/600",
+        "seek_origin_seconds": 690.5,
+        "target_timestamp": 690.5
+      },
+      "pixel_review": "agent: visible HUD name, own/opponent layout and zero numeric value; no live output used"
+    },
+    "bounds": [
+      105,
+      497,
+      320,
+      579
+    ],
+    "offset": 0,
+    "index": 0,
+    "fixture": "zero-1.png"
+  },
+  {
+    "side": "opponent",
+    "species_id": 6,
+    "unit": "displayed_percent",
+    "value": 0,
+    "source_time": 720.005,
+    "sampling_tolerance": 0.75,
+    "evidence": {
+      "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/hud-pixels/source-720005.png",
+      "sha256": "94455561aa8781515f3705677b3dd1627c14ac0e65b9e3065363945f59f1bea9",
+      "capture_metadata": {
+        "timestamp": 720.005,
+        "source_pts": 0,
+        "source_time_base": "1/600",
+        "seek_origin_seconds": 720.005,
+        "target_timestamp": 720.0
+      },
+      "pixel_review": "agent: visible HUD name, own/opponent layout and zero numeric value; no live output used"
+    },
+    "bounds": [
+      956,
+      18,
+      1171,
+      95
+    ],
+    "offset": 0.166,
+    "index": 1,
+    "fixture": "zero-2.png"
+  }
+]

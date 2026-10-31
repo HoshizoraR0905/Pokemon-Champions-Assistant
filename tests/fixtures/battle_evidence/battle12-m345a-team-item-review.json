@@ -1,0 +1,78 @@
+{
+  "milestone": "M3.4.5a",
+  "base_review": "tests/fixtures/battle_evidence/battle12-m345a-item-review.json",
+  "events": [
+    {
+      "id": "review:b12:m345a-incineroar-original-life-orb",
+      "battle_id": "sample_battle_12",
+      "individual": "sample_battle_12:opponent:encounter:13602f7dde98f1c5",
+      "item": "Life Orb",
+      "kind": "initial_owner_options",
+      "timestamp": 167.01166666666666,
+      "available_at": 167.01166666666666,
+      "action_id": "event:75039a1637e4f403c3b3032d",
+      "activation_basis": "reviewed_item_message",
+      "reviewer": "codex-source-frame-review-2026-10-23",
+      "sources": [
+        {
+          "source_id": "tests/fixtures/sample_battle_12.mp4#105.50166666666667",
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000212.png",
+          "sha256": "771c1b3e46c062ca123715772b0acf5b749f1c2b84e9948eaaeccb3d5624be39"
+        },
+        {
+          "source_id": "tests/fixtures/sample_battle_12.mp4#116.00333333333333",
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000233.png",
+          "sha256": "995a44df33b5118b19e4f0bd1f2096d63bb624b6281d420c7b644744a09e8270"
+        },
+        {
+          "source_id": "tests/fixtures/sample_battle_12.mp4#163.51166666666666",
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000294.png",
+          "sha256": "4ee6c8fd28b2e3407f273acbcf2c19928d2e5ecb106405cf395f3c8d0ec41e5f"
+        },
+        {
+          "source_id": "tests/fixtures/sample_battle_12.mp4#167.01166666666666",
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000301.png",
+          "sha256": "2dca4ed2199bafaec9fa1abb12dfc92053fcc18b8ede541c0024967e9e7dea19"
+        }
+      ],
+      "basis": "Direct popup confirms current Incineroar Life Orb. Preserve initial-owner disjunction and conditional Symbiosis requirement, not a confirmed transfer or confirmed Incineroar original assignment.",
+      "team_rule": "champions-reviewed-item-clause-v1",
+      "exact_wording": "炽焰咆哮虎的\n生命宝珠",
+      "initial_ownership_review": {
+        "unchanged_since_start": false,
+        "basis": "first_action_named_activation",
+        "action_id": "event:75039a1637e4f403c3b3032d",
+        "since": 105.50166666666667,
+        "reviewed_on": "2026-10-23",
+        "reason": "Original holder is unresolved: Incineroar may have started with Life Orb, or may have consumed Normal Gem on the first Fake Out and received ally Oranguru Life Orb via Symbiosis. No prior executed moves or item-changing entry abilities observed; either compatible initial owner is on this same starting opponent team. Sampled source frames do not certify the absence of a brief transfer popup.",
+        "transition_history": []
+      },
+      "initial_owner_options": [
+        "sample_battle_12:opponent:encounter:13602f7dde98f1c5",
+        "sample_battle_12:opponent:encounter:50a5e4ebb92539e8"
+      ],
+      "owner_requirements": {
+        "sample_battle_12:opponent:encounter:50a5e4ebb92539e8": {
+          "ability": "Symbiosis",
+          "recipient_initial_item": "Normal Gem",
+          "recipient": "sample_battle_12:opponent:encounter:13602f7dde98f1c5"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "No cross-battle team identity is asserted.",
+    "No absence claim for Hatterene; item clause concerns initial items.",
+    "Source review remains subject to independent human acceptance.",
+    "Symbiosis/Normal Gem is a pinned-reference compatible alternative, not a verified observed Champions transfer. Do not assert Incineroar original Life Orb. Life Orb initial-owner set remains within the two starting opponent members; other members are excluded by the shared item clause under this reviewed transition envelope."
+  ],
+  "current_possession_interpretations": {
+    "review:b12:m345a-incineroar-life-orb": {
+      "compatible_initial_items": [
+        "Life Orb",
+        "Normal Gem"
+      ],
+      "interpretation_basis": "Original owner unresolved because ally Oranguru may have Symbiosis; Normal Gem branch has an unresolved transfer during the first action, not a confirmed original Life Orb."
+    }
+  }
+}

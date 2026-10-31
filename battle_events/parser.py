@@ -55,23 +55,31 @@ class EventParser:
             from copy import deepcopy
             c=deepcopy(c)  # Low-confidence candidates cannot seed later attribution.
         raw=entry['raw_text'];text=re.sub(r'\s+','',raw)
+        from .message_patterns import normalize_message, outcome, ACTOR_OUTCOME, hp_cause_notice
+        text, normalizations=normalize_message(text,self.kb)
+        hp_notice=hp_cause_notice(text,self.identity)
         subject=None;target=None;refs={};attrs={};unc=[];typ='unknown';basis=[]
+        if normalizations:attrs['text_normalizations']=normalizations
         identity_text=text
         from .aliases import substitutions
         from .aliases import alias_key
         trainer_match=re.fullmatch(r'(.+?)换下了(.+?)[！!。.]?',text)
         recall=re.fullmatch(r'(.+?)[，,]回来[！!。.]?',text)
         returning=re.fullmatch(r'(对手的)?(.+?)要回到(.+?)的身边了[！!。.]?',text)
+        ejecting=re.fullmatch(r'(对手的)?(.+?)要用逃脱按键回去了[！!。.]?',text)
         trainer_send=re.fullmatch(r'(.+?)派出了.+',text)
         faint_literal=re.fullmatch(r'(对手的)?(.+?)倒下了[！!。.]?',text)
         live_actor=re.fullmatch(r'(对手的)?(.+?)(?:使出了.+[！!。.]|'
             r'的(?:特攻|特防|攻击|防御|速度|命中率|闪避率)(?:大幅)?(?:提高了|降低了)[！!。.]?|'
-            r'(?:被)?(?:中毒了|麻痹了|睡着了|灼伤了|冰冻了)[！!。.]?)',text) if region=='battle_message' else None
+            r'(?:被)?(?:中毒了|麻痹了|睡着了|灼伤了|冰冻了)[！!。.]?|变身成了.+[！!。.]|'
+            + ACTOR_OUTCOME + r'[！!。.]?)',text) if region=='battle_message' else None
         trainer_literal=(trainer_match[1] if trainer_match else returning[3] if returning else trainer_send[1] if trainer_send else None)
         trainer_sides={side for side,p in c.participants.items() if trainer_literal and p.display_name
             and p.display_name!='训练家' and alias_key(p.display_name)==alias_key(trainer_literal)}
         route='unknown';actor_literal=None
         if recall and region=='battle_message':route='self';actor_literal=recall[1]
+        elif ejecting and region=='battle_message':
+            route='opponent' if ejecting[1] else 'self';actor_literal=ejecting[2]
         elif trainer_match:
             route=next(iter(trainer_sides)) if len(trainer_sides)==1 else 'unknown';actor_literal=trainer_match[2]
             if not trainer_sides:unc.append('trainer_id_not_observed')
@@ -98,12 +106,19 @@ class EventParser:
                 basis.append('observed_trainer_display_name')
             elif len(prefixed)>1:
                 route='unknown';unc.append('ambiguous_trainer_display_name')
+        if hp_notice:
+            actor_literal,route,_=hp_notice
+            attrs['hp_cause_basis']='explicit_literal_message'
         if actor_literal:attrs['actor_display_reference']=actor_literal
         if trainer_literal:attrs['trainer_display_text']=trainer_literal
         receiver_literal=re.fullmatch(r'对(?:于)?(对手的)?(.+?)[，,]?(?:好像)?(?:效果不好|效果绝佳|没有效果)[！!。.]*',text) if region=='battle_message' else None
         if receiver_literal:
             route='opponent' if receiver_literal[1] else 'self'
             attrs['receiver_display_reference']=receiver_literal[2].rstrip('，,')
+        miss_literal=re.fullmatch(r'没有击中(对手的)?(.+?)[！!。.]?',text)
+        if miss_literal:
+            route='opponent' if miss_literal[1] else 'self'
+            attrs['receiver_display_reference']=miss_literal[2]
         alias_side=route if route!='unknown' else 'opponent' if text.startswith('对手') else entry.get('side_hint','unknown')
         if alias_side=='unknown' and region=='battle_message' and c.display_aliases:
             # Establish literal actor grammar before consulting side-owned aliases.
@@ -146,8 +161,35 @@ class EventParser:
         if 'trainer_name_conflict' in unc or 'trainer_id_not_observed' in unc:side='unknown'
         from .visible_endings import ending
         ended = ending(text)
-        if ended:
+        literal_outcome = outcome(text)
+        if (restriction:=re.fullmatch(r'(我方|对手|对方)因太紧张而无法食用树果[！!。.]?',text)):
+            typ='move_effect';subject=None
+            side='self' if restriction[1]=='我方' else 'opponent'
+            attrs.update(effect='berry_consumption_prevention',cause=dict(kind='ability',ability='unnerve'),
+                         affected_side=side,scope='per_side',change='observe')
+            basis=['explicit_affected_side_message']
+        elif miss_literal:
+            typ='move_miss';subject=None
+            literal,_,_=substitutions(miss_literal[2],c.display_aliases,route)
+            target=self.identity(literal,'species')
+            side=route;attrs.update(target_side=route,outcome='missed')
+            basis.append('explicit_named_missed_target')
+            if target is None:unc.append('target_unresolved')
+        elif hp_notice:
+            typ='hp_change';attrs.update(hp_notice[2]);basis.append('explicit_hp_cause_message')
+        elif literal_outcome:
+            typ, routed_side, fields=literal_outcome;attrs.update(fields)
+            if routed_side is not None:side=routed_side;basis=['explicit_outcome_text']
+        elif ended:
             typ, side, fields = ended; attrs.update(fields); basis=['explicit_termination_text']
+        elif ejecting and region=='battle_message':
+            typ='switch_out'
+            attrs.update(cause='eject_button',invalidate_unverified_persistence=True)
+            item=self.identity('逃脱按键','item')
+            rule=self.kb.resolution_effect(item['canonical_id']) if item else None
+            if rule and rule.get('consumed_on_explicit_withdrawal'):
+                refs['item']=item
+                attrs['item_consumption_rule']=rule
         elif ('换下了' in text or '回来' in text
               or re.fullmatch(r'(?:对手的)?.+要回到.+的身边了[！!。.]?',text)):typ='switch_out'
         elif '派出了' in text or text.startswith('上吧'):
@@ -197,13 +239,21 @@ class EventParser:
         elif re.search(r'HP\d+%?[→➡➜>-]+\d+%?',text):
             typ='hp_change';m=re.search(r'HP(\d+)(%?)[→➡➜>-]+(\d+)(%?)',text)
             attrs.update(before=int(m[1]),after=int(m[3]),unit='displayed_percent' if m[2] or m[4] else 'absolute')
-            if c.previous_move:attrs['associated_move']=c.previous_move['move']
+            # Numeric HP evidence alone establishes neither source nor cause.
         elif '倒下了' in text:typ='faint'
         elif '超级进化成了' in text:
             typ='transformation'
             name=text.split('超级进化成了',1)[1].rstrip('！!。.')
             attrs.update(mechanic='mega_evolution',identity=self.identity(name,'species'))
-            if not attrs['identity']:unc.append('transformation_identity_unknown')
+            if not attrs['identity']:
+                if subject and name=='超级'+subject['name']:
+                    attrs.update(completed_transformation=True, form_unresolved=True, reported_form=name)
+                else:unc.append('transformation_identity_unknown')
+        elif re.fullmatch(r'(?:对手的)?.+变身成了.+[！!。.]?',text):
+            typ='transformation'
+            name=text.split('变身成了',1)[1].rstrip('！!。.')
+            attrs.update(mechanic='transform',reported_species=name,
+                         copied_identity=self.identity(name,'species'),completed_transformation=True)
         elif '摆出了防守的架势' in text:
             typ='move_effect';attrs['effect']='protection_established'
         elif '畏缩了' in text and '无法使出招式' in text:
@@ -238,9 +288,14 @@ class EventParser:
         elif '效果不好' in text or '效果绝佳' in text or '没有效果' in text:
             typ='effectiveness';target=subject;subject=None
             attrs['effect']='not_very_effective' if '效果不好' in text else ('super_effective' if '效果绝佳' in text else 'immune')
-        elif '击中了要害' in text or '命中要害' in text:typ='critical_hit'
+        elif any(s in text for s in ('击中了要害','命中要害','命中了要害')):
+            typ='critical_hit'
+            if subject is None and re.fullmatch(r'(?:击中|命中)(?:了)?要害[！!。.]?',text):
+                side='field';basis.append('literal_unscoped_hit_notice')
         elif re.search(r'(击中|命中).*[0-9]+次',text):
             typ='multi_hit';attrs['hits']=int(re.search(r'([0-9]+)次',text)[1])
+            if subject is None and re.fullmatch(r'(?:击中|命中)(?:了)?[0-9]+次[！!。.]?',text):
+                side='field';basis.append('literal_unscoped_hit_notice')
         elif any(s in text for s in ('提高了','降低了','大幅提高','大幅降低')):
             typ='stat_change';stats={'特攻':'special_attack','特防':'special_defense','攻击':'attack','防御':'defense','速度':'speed','命中率':'accuracy','闪避率':'evasion'}
             attrs.update(stats=[v for k,v in stats.items() if k in text], direction='down' if '降低' in text else 'up',stages=None)
@@ -267,7 +322,8 @@ class EventParser:
             grammar = (r'(?:对手的)?'+actor_name+r'(?:使出了.+[！!。.]|倒下了[！!。.]?|'
                        r'要回到.+的身边了[！!。.]?|的(?:特攻|特防|攻击|防御|速度|命中率|闪避率)'
                        r'(?:大幅)?(?:提高了|降低了)[！!。.]?|的生命被少量削减了[！!。.]?|'
-                       r'超级进化成了.+[！!。.]|摆出了防守的架势[！!。.]?|'
+                       r'(?:超级进化成了|变身成了).+[！!。.]|摆出了防守的架势[！!。.]?|'
+                       + ACTOR_OUTCOME + r'[！!。.]?|'
                        r'的.+进化石(?:[XYZxyz])?和.+起了反应[！!。.]?)')
             if re.fullmatch(grammar,identity_text):
                 grammar_side=route if live_actor and trainer_literal and route!='unknown' else 'opponent' if identity_text.startswith('对手的') else 'self'
@@ -307,7 +363,7 @@ class EventParser:
         elif typ!='terrain_change':c.previous_subject=None
         if typ not in {'weather_change','terrain_change'} and side=='unknown':unc.append('side_unknown')
         if typ=='unknown':unc.append('unrecognized_message')
-        if subject is None and typ in {'switch_out','send_out','move_execution','hp_change','ability_activation','item_activation','stat_change','faint','transformation'}:unc.append('actor_unresolved')
+        if subject is None and typ in {'switch_out','send_out','move_execution','hp_change','ability_activation','item_activation','stat_change','faint','transformation','volatile_change'}:unc.append('actor_unresolved')
         # A move announcement alone does not name its target. Later HP messages
         # are separate evidence and do not silently rewrite an earlier candidate.
         if typ=='move_execution':unc.append('target_not_in_entry')
@@ -316,7 +372,7 @@ class EventParser:
         if entry.get('ocr_confidence') is not None and entry['ocr_confidence']<.75:unc.append('low_ocr_confidence')
         attrs['side_basis']=basis
         if entry.get('side_hint_evidence'):attrs['side_hint_evidence']=entry['side_hint_evidence']
-        evidence=Evidence('battle_log',entry.get('source_id','unknown'),entry.get('observation_ids',[]),{'turn':entry.get('turn'),'entry_id':entry['entry_id']})
+        evidence=Evidence('video_message' if live else 'battle_log',entry.get('source_id','unknown'),entry.get('observation_ids',[]),{'turn':entry.get('turn'),'entry_id':entry['entry_id']})
         return BattleEvent(stable_id(battle_id,entry['entry_id']),typ,side,subject,target,raw,refs,
                            entry.get('log_order'),[evidence],entry.get('ocr_confidence'),
                            'uncertain' if unc else 'supported',unc,attrs)

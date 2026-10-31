@@ -136,7 +136,7 @@ def test_diagnostic_for_ambiguous_missing_and_unknown_data(kwargs):
 def test_identity_form_mismatch_and_unknown_forward_mechanics():
     req=request();req['champions']['identity']='Sneasler'
     assert infer_champions_attack_stat(**req)['status']=='insufficient_information'
-    req=request();req['observations'][0]['input']['move']='Foul Play'
+    req=request();req['observations'][0]['input']['move']='Beat Up'  # Multi-hit remains unsupported; Foul Play now has a selector.
     assert infer_champions_attack_stat(**req)['status']=='unsupported'
 
 

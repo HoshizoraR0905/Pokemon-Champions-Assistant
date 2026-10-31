@@ -1,0 +1,400 @@
+{
+  "manually_verified_self_roster": {
+    "species_ids": [
+      3,
+      6,
+      279,
+      445,
+      861,
+      1018
+    ],
+    "species": [
+      "妙蛙花",
+      "喷火龙",
+      "大嘴鸥",
+      "烈咬陆鲨",
+      "长毛巨魔",
+      "铝钢桥龙"
+    ],
+    "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000031.png",
+    "sha256": "d34f86357620a60bf70655710cffc1faeafd8726b10eac8e2536ef845ab81bc7",
+    "timestamp": 15.003333333333334,
+    "matches_team7": true,
+    "reviewer": "Codex visual inspection after initial freeze; not production input",
+    "production_linkage": {
+      "status": "unbound",
+      "reason": "complete_reliable_self_roster_not_available",
+      "self_rows": 0
+    },
+    "root_cause": "EventSchedule.acquire_team reads self only in team_configuration; team_preview acquires opponent. The video shows own six on preview, but no self structured rows were emitted."
+  },
+  "deferred": [
+    {
+      "history_index": 0,
+      "event_id": "event:15855a50af37d90ccad82b94",
+      "time": 14.501666666666667,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "opponent",
+      "uncertainty": []
+    },
+    {
+      "history_index": 1,
+      "event_id": "event:2079c48381a01488efcbcb63",
+      "time": 14.501666666666667,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 585,
+      "event_id": "event:6252b4fa227246fd96ed5f36",
+      "time": 307.0183333333333,
+      "type": "move_effect",
+      "text": "烈咬陆鲨\n畏缩了，无法使出招式！",
+      "reason": "unresolved_candidate_fields",
+      "side": "unknown",
+      "uncertainty": [
+        "side_unknown",
+        "actor_variant_unresolved"
+      ]
+    },
+    {
+      "history_index": 701,
+      "event_id": "event:8569eebb474b26a113d9a7d8",
+      "time": 351.025,
+      "type": "stat_change",
+      "text": "烈咬陆鲨的\n攻击、特攻降低了！",
+      "reason": "unresolved_candidate_fields",
+      "side": "unknown",
+      "uncertainty": [
+        "side_unknown",
+        "actor_variant_unresolved"
+      ]
+    },
+    {
+      "history_index": 712,
+      "event_id": "event:1aa092a301c696de58f5ed29",
+      "time": 371.53,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 713,
+      "event_id": "event:108eec5d72c6ae06e13f7039",
+      "time": 372.03,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 714,
+      "event_id": "event:9f3297e0f0a82c744279c45d",
+      "time": 372.53,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 715,
+      "event_id": "event:bef04ad656c7a81e7887b9c8",
+      "time": 373.03,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 716,
+      "event_id": "event:c4f0ea69a7d12ed6851eb03b",
+      "time": 373.53,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 717,
+      "event_id": "event:c2badc951797307e4c9bf806",
+      "time": 374.03,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 718,
+      "event_id": "event:7d86e59858de2a95de48b624",
+      "time": 374.5133333333333,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 719,
+      "event_id": "event:0e9be18ac889378000eb2249",
+      "time": 375.03,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 721,
+      "event_id": "event:02a5679591f6f49ac06207fd",
+      "time": 375.53,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 724,
+      "event_id": "event:3fb0333a86125fe2cdd7a88e",
+      "time": 376.03,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 725,
+      "event_id": "event:00f86c2da177a75911a22170",
+      "time": 376.53,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 728,
+      "event_id": "event:78d846b0f53030c87fa0ba24",
+      "time": 377.03,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 729,
+      "event_id": "event:0ae3d86e2404db48b76e0ede",
+      "time": 377.53,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 731,
+      "event_id": "event:e0d445e0cbdd493da39670fc",
+      "time": 378.03,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 732,
+      "event_id": "event:00ccc72440afb24edb961705",
+      "time": 378.53,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 733,
+      "event_id": "event:2451a367ac7b7213d257072e",
+      "time": 379.03,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 734,
+      "event_id": "event:fd0f1771c284c6362ac08cf2",
+      "time": 379.53,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 735,
+      "event_id": "event:e3cfb0df885e9b8b9678d9b8",
+      "time": 380.03,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 736,
+      "event_id": "event:33c61a1f798ac62ef5867a4b",
+      "time": 380.53,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 737,
+      "event_id": "event:5ee1f8da5f0d4ef924da61f3",
+      "time": 381.03,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 738,
+      "event_id": "event:3356da8cca7f73547b214a4d",
+      "time": 381.5316666666667,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 740,
+      "event_id": "event:4b86551570482bf5dc973582",
+      "time": 382.015,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 742,
+      "event_id": "event:c857eb877a62d6bfe02d70c6",
+      "time": 382.5316666666667,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 744,
+      "event_id": "event:fb22dd4f0edd5343fa31e7c1",
+      "time": 383.0316666666667,
+      "type": "hud_observation",
+      "text": "HUD reading",
+      "reason": "message_episode_occupancy_unresolved",
+      "side": "self",
+      "uncertainty": []
+    },
+    {
+      "history_index": 1529,
+      "event_id": "event:b09e4ab28684e5f49954ae4a",
+      "time": 591.5,
+      "type": "status_change",
+      "text": "烈咬陆鲨麻痹了，\n很难使出招式！",
+      "reason": "unresolved_candidate_fields",
+      "side": "unknown",
+      "uncertainty": [
+        "side_unknown",
+        "actor_variant_unresolved"
+      ]
+    },
+    {
+      "history_index": 1546,
+      "event_id": "event:a2ee5e65b6c09754e6cc36a6",
+      "time": 607.0016666666667,
+      "type": "stat_change",
+      "text": "烈咬陆鲨的\n攻击、特攻降低了！",
+      "reason": "unresolved_candidate_fields",
+      "side": "unknown",
+      "uncertainty": [
+        "side_unknown",
+        "actor_variant_unresolved"
+      ]
+    }
+  ],
+  "unknown_occurrences": [
+    {
+      "id": "event:531b9af3e68bcc04442dcd52",
+      "first_time": 420.00333333333333,
+      "emitted": false,
+      "texts": [
+        "对手的火神蛾\n变得万众瞩目了！"
+      ]
+    },
+    {
+      "id": "event:d5885597f0a55fe93be6a414",
+      "first_time": 425.505,
+      "emitted": false,
+      "texts": [
+        "对对手的火神蛾\n效果无比绝佳！！"
+      ]
+    },
+    {
+      "id": "event:df32e465dac0a57856734053",
+      "first_time": 741.5083333333333,
+      "emitted": false,
+      "texts": [
+        "对大嘴鸥\n效果无比绝佳！！"
+      ]
+    }
+  ],
+  "hp_conflict": {
+    "event_id": "event:c35c87b102117de87bef549f",
+    "timestamp": 695.0166666666667,
+    "raw_ocr": "54/94",
+    "visually_read": "54/194",
+    "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/001383.png",
+    "existing_maximum": 194,
+    "conflict": {
+      "event_id": "event:c35c87b102117de87bef549f",
+      "reason": "maximum_hp_disagreement",
+      "proposed_value": {
+        "current": 54,
+        "maximum": 94
+      }
+    },
+    "outcome": "Existing maximum retained, conflicting HUD reading not silently overwrites it."
+  },
+  "identity_return": {
+    "time": 459.01,
+    "old_instance": "sample_battle_23:opponent:encounter:c11de1e8665ea33e",
+    "new_instance": "sample_battle_23:opponent:encounter:fc33d523176fa46c",
+    "persistent_identity_status": "unproven",
+    "old_final_hp_percent": 76,
+    "new_final_hp_percent": 46,
+    "basis": "new_entry_without_species_only_party_merge",
+    "note": "Candidate prior-instance relation retained; no claim of two distinct biological individuals. Existing conservative general return policy, not a newly repaired mechanism."
+  },
+  "source_routing_diagnosis": "Four Garchomp messages have side_unknown and actor_variant_unresolved. Literal routing excludes flinch/paralysis-action wording and comma-separated attack+special_attack drops; generic active fallback requires no existing uncertainty. ApplicationPolicy defers side_unknown. No repair applied.",
+  "repairs_applied": false
+}

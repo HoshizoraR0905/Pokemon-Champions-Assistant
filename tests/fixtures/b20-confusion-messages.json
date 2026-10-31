@@ -1,0 +1,39 @@
+{
+  "battle_id": "sample_battle_20",
+  "run_id": "fresh-b20-postfix-v1",
+  "observations_sha256": "18b9403b22ed1a62a90c9ab437ca7f413adb48c79b6e181a1c3271c4b96ef5e3",
+  "messages": [
+    {
+      "text": "对手的风妖精\n混乱了！",
+      "first_source_id": "tests/fixtures/sample_battle_20.mp4#212.50166666666667",
+      "first_timestamp": 212.50166666666667,
+      "ocr_confidence": 0.9751999999999998,
+      "partial_log_entries": [
+        "log-entry:51c9d2d548368b8b1e99ece3"
+      ],
+      "evidence_kind": "frozen_observed_text"
+    },
+    {
+      "text": "对手的风妖精\n正在混乱中！",
+      "first_source_id": "tests/fixtures/sample_battle_20.mp4#232.005",
+      "first_timestamp": 232.005,
+      "ocr_confidence": 0.9945,
+      "partial_log_entries": [
+        "log-entry:36cd3383b018bb04689661e8",
+        "log-entry:381a6eebce4a3d886be7c28e"
+      ],
+      "evidence_kind": "frozen_observed_text"
+    },
+    {
+      "text": "不知所以地攻击了自己！",
+      "first_source_id": "tests/fixtures/sample_battle_20.mp4#289.015",
+      "first_timestamp": 289.015,
+      "ocr_confidence": 0.97,
+      "partial_log_entries": [
+        "log-entry:65c2b38c6503deac100b8380"
+      ],
+      "evidence_kind": "frozen_observed_text"
+    }
+  ],
+  "limits": "No confusion-end or Struggle footage observed. Tests of those cases are synthetic."
+}

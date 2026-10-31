@@ -141,7 +141,15 @@ class StateEngine:
                                  'retracted':record.retracted,'reason':reason})
         record.retracted=True;self.replay()
 
-    def replay(self, *, snapshot_callback=None):
+    def replay(self, *, snapshot_callback=None, _confusion_bindings=None):
+        if (snapshot_callback is not None and _confusion_bindings is None and any(
+                not r.retracted and r.event['attributes'].get('requires_confusion_context') for r in self.history)):
+            # Resolve any HP-backed correction before publishing final snapshots;
+            # consumers must receive each final receipt exactly once per replay.
+            self.replay()
+            bindings={r.event['event_id']:deepcopy(r.bindings['resolved_event']['attributes']['confusion_hp_evidence'])
+                for r in self.history if r.bindings.get('resolved_event',{}).get('attributes',{}).get('confusion_hp_evidence')}
+            return self.replay(snapshot_callback=snapshot_callback,_confusion_bindings=bindings)
         self.state=deepcopy(self.initial)
         active=[r for r in self.history if not r.retracted and r.ordering]
         domains={r.ordering['domain'] for r in active}
@@ -156,6 +164,7 @@ class StateEngine:
         ordered=sorted((r for r in active if r.reason is None),key=lambda r:tuple(r.ordering['key']))
         # Stop at an ambiguous ordering collision rather than leap over it.
         barrier=min(duplicate_keys) if duplicate_keys and len(domains)==1 else None
+        processed=[]
         for record in ordered:
             if barrier is not None and tuple(record.ordering['key'])>barrier:
                 record.reason='earlier_order_tie';continue
@@ -166,10 +175,15 @@ class StateEngine:
             trial=deepcopy(self.state)
             try:
                 from .evidence_fusion import prepare_message, move_revelation
-                event=prepare_message(trial,event)
+                event=prepare_message(trial,event,records=processed,confusion_bindings=_confusion_bindings)
                 if trial.knowledge.get('message_identity_v1') and event.event_type=='send_out':
                     from recognition.identity_modes import message_identity
                     event=message_identity(event)
+                    # Preserve non-admitted arrival evidence for the existing
+                    # double-faint verifier; this creates no Pokemon or slot.
+                    from .double_faint import retain_candidate
+                    if retain_candidate(self.state,event):
+                        trial.knowledge['double_faint_candidates']=deepcopy(self.state.knowledge['double_faint_candidates'])
                 from .active_continuity import prepare_unidentified
                 event=prepare_unidentified(trial,event)
                 if event.event_type=='move_execution' and event.attributes.get('fusion_context'):
@@ -177,6 +191,7 @@ class StateEngine:
                     self.state=trial
                     record.application_status='applied_partial'
                     record.reason='move_revelation_only'
+                    processed.append(record)
                     record.state_hash=hash_state(self.state)
                     if snapshot_callback is not None:snapshot_callback(record,self.state)
                     continue
@@ -188,6 +203,8 @@ class StateEngine:
                     self._set_turn(trial,next(iter(turns)),event,tick=False)
                 recorded=self._transition(trial,event,record)
                 self.mechanic_registry.after_event(trial,self.state,event,record,self.mechanic_rules)
+                from .unnerve import refresh
+                refresh(trial,event)
                 self._available(trial,event)
                 self.state=trial
                 record.application_status='recorded_observation' if recorded else ('applied_candidate' if event.status=='candidate' else 'applied_confirmed')
@@ -196,9 +213,20 @@ class StateEngine:
             except (Contradiction,ValueError,TypeError,KeyError) as exc:
                 record.application_status='rejected';record.reason=str(exc);record.bindings={}
                 self.state.conflicts.append({'event_id':event.event_id,'reason':str(exc),'proposed_event':event.to_dict(),'state_unchanged':True})
+            processed.append(record)
+            from .hp_causes import bind_recipient, enrich
+            if record.application_status in {'recorded_observation','applied_candidate','applied_confirmed'}:
+                bind_recipient(self.state,event,record)
+            if event.event_type in {'hud_observation','hp_change','effectiveness'}:
+                enrich(self,processed)
             record.state_hash=hash_state(self.state)
             if snapshot_callback is not None:
                 snapshot_callback(record,self.state)
+        if _confusion_bindings is None:
+            from .hp_causes import confusion_hp_bindings
+            bindings=confusion_hp_bindings(self)
+            if bindings:
+                return self.replay(snapshot_callback=snapshot_callback,_confusion_bindings=bindings)
         return self.state
 
     def evidence_projection(self, *, as_of):
@@ -208,6 +236,11 @@ class StateEngine:
     def decision_state(self,hidden_engine=None):
         from .decision_state import decision_state
         return decision_state(self.state,self.mechanic_rules,hidden_engine=hidden_engine)
+
+    def hp_resolutions(self, **options):
+        """Action-level HP projection; rebuild after corrections/retractions."""
+        from .hp_causes import action_resolutions
+        return action_resolutions(self, **options)
 
     def to_dict(self):
         return {'schema_version':2,'policy':asdict(self.policy),'mechanic_rules':self.mechanic_rules.to_dict(),'mechanic_handlers':[h.mechanic_id for h in self.mechanic_registry.handlers],'initial_state':self.initial.to_dict(),
@@ -255,7 +288,12 @@ class StateEngine:
         matches=[state.pokemon[i] for i in team.party_instance_ids if state.pokemon[i].species.known
                  and state.pokemon[i].species.value.get('species_id')==ref['species_id']]
         if sending:
-            if len(matches)==1 and team.party_complete.known and team.party_complete.value:
+            from .identity_ledger import ditto_return
+            returned=ditto_return(state,event,matches)
+            if returned:
+                p,proof=returned;basis='ditto_unique_observed_roster_and_departure'
+                record.bindings['persistent_continuity']=proof
+            elif len(matches)==1 and team.party_complete.known and team.party_complete.value:
                 p=matches[0];basis='unique_species_in_verified_complete_party'
             elif matches and not state.knowledge.get('active_continuity_v1'):raise Deferred('ambiguous_existing_instance_in_partial_or_duplicate_party')
             elif matches and team.party_complete.known and team.party_complete.value:raise Deferred('ambiguous_existing_instance_in_partial_or_duplicate_party')
@@ -328,15 +366,55 @@ class StateEngine:
             actions=[x for x in state.knowledge.get('causal_actions',[]) if x['event_id']==a['effect_of']]
             if len(actions)==1 and a.get('outcome') in {'failed','blocked','uncertain'}:
                 actions[0]['outcome']=a['outcome']
+        if kind=='move_effect' and a.get('recipient_observation'):
+            p=self._resolve(state,e,record)
+            observation=dict(event_id=e.event_id,event_type=kind,attributes=deepcopy(a),
+                pokemon_instance_id=p.pokemon_instance_id,evidence=evidence_link(e))
+            # A completed outcome is a scoped record, not a persistent protection timer.
+            from .battle_state import MechanicState
+            m=MechanicState('message_outcome:'+e.event_id,'per_action')
+            m.current['effect']=fact(a['effect'],evidence_link(e))
+            m.trigger_event_ids=[e.event_id];m.provenance=[evidence_link(e)]
+            p.mechanics[m.mechanic_id]=m
+            state.observations.append(observation)
+            return False
+        if kind=='move_effect' and a.get('effect')=='berry_consumption_prevention':
+            if (a.get('cause') or {}).get('ability')!='unnerve' or e.side not in state.sides:
+                raise Deferred('berry_restriction_cause_or_side_unresolved')
+            from .unnerve import observe
+            observe(state,e,record)
+            return False
         if kind in {'effectiveness','move_effect','critical_hit','multi_hit'}:
             observation={'event_id':e.event_id,'event_type':kind,'attributes':deepcopy(a),'evidence':evidence_link(e)}
             state.observations.append(observation)
             if kind in {'critical_hit','multi_hit'} and e.actor:
                 p=self._resolve(state,e,record);p.moves.hit_observations.append(observation)
             return True
+        if kind=='move_miss':
+            p=self._resolve(state,e,record,role='target')
+            a['target_instance_id']=p.pokemon_instance_id
+            earlier=sorted((r for r in self.history if not r.retracted and r.ordering and record.ordering
+                and r.ordering['domain']==record.ordering['domain'] and tuple(r.ordering['key'])<tuple(record.ordering['key'])),
+                key=lambda r:tuple(r.ordering['key']))
+            from .hp_causes import ADMITTED
+            for prior in reversed(earlier):
+                old=prior.bindings.get('resolved_event') or prior.event
+                if old['event_type'] in {'phase_observation','turn_boundary','switch_out','send_out','unknown'}:break
+                if old['event_type']=='hp_change' and old['attributes'].get('end_of_turn_resolution_id'):break
+                if old['event_type']=='move_execution':
+                    if prior.application_status in ADMITTED:
+                        a['effect_of']=old['event_id'];record.bindings['missed_action']=dict(event_id=old['event_id'],
+                            actor_instance_id=prior.bindings.get('actor',{}).get('pokemon_instance_id'))
+                    break
+            record.bindings['resolved_event']=e.to_dict()
+            state.observations.append(dict(event_id=e.event_id,event_type=kind,target_instance_id=p.pokemon_instance_id,
+                attributes=deepcopy(a),evidence=evidence_link(e)))
+            return True
         if kind=='unknown':raise Deferred('unsupported_event_type')
         if kind=='phase_observation':
             if 'phase' not in a:raise Deferred('phase_unknown')
+            if a.get('resolution_cycle_start') or a['phase']=='end_of_turn':
+                record.bindings['resolution_active_instance_ids']=[pid for team in state.sides.values() for pid in team.active_slots.values()]
             self._assign(state,'phase',a['phase'],e);return False
         if kind=='turn_boundary':
             turn=a.get('turn');boundary=a.get('boundary')
@@ -360,8 +438,27 @@ class StateEngine:
             state.observations.append({'event_id':e.event_id,'kind':'intermediate_hp_sample','attributes':deepcopy(a),'evidence':evidence_link(e)});return True
         if kind=='hp_change' and a.get('qualitative_only'):
             p=self._resolve(state,e,record)
-            observation=dict(event_id=e.event_id,kind='qualitative_hp_loss',direction=a.get('direction'),
-                magnitude=a.get('magnitude'),before=None,after=None,cause=None,evidence=evidence_link(e))
+            if a.get('explicit_recovery_recipient') and a.get('direction')=='up':
+                from .hp_causes import grassy_recovery_context
+                from .evidence_fusion import knowledge
+                earlier=sorted((r for r in self.history if r.ordering and record.ordering and
+                    r.ordering['domain']==record.ordering['domain'] and tuple(r.ordering['key'])<tuple(record.ordering['key'])),
+                    key=lambda r:tuple(r.ordering['key']))
+                grassy_recovery_context(state,e,p,earlier,knowledge())
+                record.bindings['resolved_event']=e.to_dict()
+            observation=dict(event_id=e.event_id,kind='qualitative_hp_loss' if a.get('direction')=='down' else 'qualitative_hp_change',direction=a.get('direction'),
+                magnitude=a.get('magnitude'),before=None,after=None,cause=deepcopy(a.get('cause')),
+                affected_instance_id=p.pokemon_instance_id,evidence=evidence_link(e))
+            if a.get('end_of_turn_resolution_id'):
+                observation.update(end_of_turn_resolution_id=a['end_of_turn_resolution_id'],
+                    recovery_order_index=a['recovery_order_index'],cause_basis=a.get('hp_cause_basis'))
+            cause=a.get('cause') or {}
+            source_side=state.sides.get(cause.get('holder_side'))
+            holder=cause.get('holder') or {}
+            if source_side and holder:
+                sources=[pid for pid in source_side.active_slots.values() if state.pokemon[pid].species.known
+                    and state.pokemon[pid].species.value.get('species_id')==holder.get('species_id')]
+                if len(sources)==1:observation['source_instance_id']=sources[0]
             p.hp.observations.append(observation);state.observations.append(deepcopy(observation));return True
         p=self._resolve(state,e,record,sending=kind=='send_out',allow_identity_change=kind=='transformation')
         team=state.sides[p.side_id]
@@ -384,6 +481,8 @@ class StateEngine:
             team.active_slots[slot]=p.pokemon_instance_id
             if slot in team.vacant_slots:team.vacant_slots.remove(slot)
             self._assign(p,'location',{'kind':'active','slot':slot},e);self._assign(p,'fainted',False,e)
+            from .knowledge_grounding import bind_attached_profile
+            bind_attached_profile(state,p,e)
         elif kind in {'switch_out','faint'}:
             slots=[s for s,i in team.active_slots.items() if i==p.pokemon_instance_id]
             if state.knowledge.get('active_continuity_v1'):
@@ -396,6 +495,19 @@ class StateEngine:
                 del team.active_slots[slot]
                 if slot not in team.vacant_slots:team.vacant_slots.append(slot)
             self._assign(p,'location',{'kind':'fainted' if kind=='faint' else 'bench','slot':None},e)
+            if kind=='switch_out':
+                from .transformation import end
+                end(p,e)
+            if (kind=='switch_out' and a.get('cause')=='eject_button'
+                    and (a.get('item_consumption_rule') or {}).get('consumed_on_explicit_withdrawal')):
+                consumed=deepcopy(e);consumed.event_type='item_change'
+                consumed.attributes={**a,'change':'consume'}
+                self._item(state,p,consumed,record)
+                for item_fact in (p.item.identity,p.item.status):
+                    item_fact.knowledge='derived'
+                    item_fact.provenance[-1]['rule_evidence']=deepcopy(a['item_consumption_rule'])
+                record.bindings['item_consumption']=dict(item=e.canonical_references['item'],
+                    rule=deepcopy(a['item_consumption_rule']))
             if kind=='faint':
                 self._assign(p,'fainted',True,e)
                 # A prior positive HP display is no longer current. Preserve
@@ -428,6 +540,9 @@ class StateEngine:
             p.moves.executed.append(execution)
             if a.get('move_slot') is not None:p.moves.known_slots[str(a['move_slot'])]=fact(ref,evidence_link(e))
             if a.get('pp') is not None:p.moves.pp[ref['canonical_id']]=fact(a['pp'],evidence_link(e))
+            from .transformation import execution
+            execution(state,p,e,record)
+            if a.get('move_origin')=='transformed':record.bindings['resolved_event']=e.to_dict()
         elif kind=='move_observation':
             ref=e.canonical_references.get('move')
             if not ref:raise Deferred('move_identity_unknown')
@@ -444,8 +559,11 @@ class StateEngine:
         elif kind=='ability_activation':
             ref=e.canonical_references.get('ability')
             if not ref:raise Deferred('ability_identity_unknown')
-            self._consistent_fact(p.ability,'current',ref,e)
+            from .transformation import IMPOSTER,current,begin
+            if not (ref.get('canonical_id')==IMPOSTER and current(p)):
+                self._consistent_fact(p.ability,'current',ref,e)
             p.ability.revealed.append({'ability':deepcopy(ref),'activation':True,'evidence':evidence_link(e)})
+            if ref.get('canonical_id')==IMPOSTER:begin(state,p,e,record,trigger='imposter')
         elif kind=='ability_change':
             if 'suppressed' in a:
                 if not isinstance(a['suppressed'],bool):raise Contradiction('invalid_ability_suppression')
@@ -456,7 +574,15 @@ class StateEngine:
             else:raise Deferred('ability_change_unknown')
             p.ability.modifications.append({'attributes':deepcopy(a),'evidence':evidence_link(e)})
         elif kind in {'item_activation','item_change'}:self._item(state,p,e,record)
-        elif kind=='transformation':self._transform(state,p,e)
+        elif kind=='transformation':
+            if a.get('mechanic')=='transform':
+                from .transformation import result
+                result(state,p,e,record)
+            else:
+                from .form_stats import resolve_mega
+                resolved=resolve_mega(state,p,e)
+                self._transform(state,p,resolved)
+                record.bindings['resolved_event']=resolved.to_dict()
         elif kind=='volatile_change':
             name=a.get('condition')
             if not isinstance(name,str) or not name:raise Deferred('volatile_condition_unknown')
@@ -494,7 +620,9 @@ class StateEngine:
                 self._assign(p.hp,'percent_interval',interval,e)
             else:p.hp.percent_interval=Fact(provenance=[evidence_link(e)])
         self._assign(p.hp,'unit',unit,e)
-        p.hp.observations.append({'before':before,'after':after,'unit':unit,'maximum':maximum,'evidence':evidence_link(e)})
+        from .hp_causes import observed_change
+        change=observed_change(self,p,e,unit,after)
+        p.hp.observations.append({'before':before,'after':after,'unit':unit,'maximum':maximum,'evidence':evidence_link(e),**change})
         # Zero HP is retained as HP evidence; explicit faint establishes the
         # faint record. Never manufacture opponent absolute HP from percentage.
 
@@ -535,7 +663,7 @@ class StateEngine:
         if change=='remove':
             if status and p.major_status.known and p.major_status.value not in {status,'none'}:raise Contradiction('status_removal_mismatch')
             self._assign(p,'major_status','none',e);p.status_counters={}
-        elif change in {'apply','replace'}:
+        elif change in {'apply','replace','observe'}:
             if status not in MAJOR_STATUS or status in {'none','unknown'}:raise Deferred('major_status_unknown')
             if change!='replace' and p.major_status.known and p.major_status.value not in {'none',status}:raise Contradiction('conflicting_major_status')
             self._assign(p,'major_status',status,e)
@@ -579,11 +707,19 @@ class StateEngine:
 
     def _transform(self,state,p,e):
         a=e.attributes;identity=a.get('identity');mechanic=a.get('mechanic')
-        if not isinstance(identity,dict) or not identity.get('canonical_identity'):raise Deferred('observed_transformation_variant_unknown')
+        generic=a.get('completed_transformation') is True and a.get('form_unresolved') is True
+        if not generic and (not isinstance(identity,dict) or not identity.get('canonical_identity')):raise Deferred('observed_transformation_variant_unknown')
+        if generic and not (mechanic=='mega_evolution' and p.species.known
+                and a.get('reported_form')=='超级'+p.species.value.get('name','')):
+            raise Deferred('observed_transformation_identity_unknown')
         if mechanic is None:raise Deferred('transformation_mechanic_unknown')
         before=deepcopy(p.species.value) if p.species.known else None
-        self._assign(p,'species',identity,e);self._assign(p,'current_variant',identity['canonical_identity'],e)
-        p.transformations.append({'mechanic':mechanic,'before':before,'after':deepcopy(identity),'evidence':evidence_link(e)})
+        if generic:
+            p.current_variant=Fact(provenance=[evidence_link(e)])
+        else:
+            self._assign(p,'species',identity,e);self._assign(p,'current_variant',identity['canonical_identity'],e)
+        p.transformations.append({'mechanic':mechanic,'before':before,'after':deepcopy(identity),'evidence':evidence_link(e),
+                                  'reported_form':a.get('reported_form'),'form_unresolved':generic})
         p.current_types=Fact(provenance=[evidence_link(e)])
         # Original identity, instance ID, item history, HP and location survive.
         team=state.sides[p.side_id]
@@ -596,6 +732,8 @@ class StateEngine:
             p.ability.current=Fact(provenance=[evidence_link(e)])
             p.ability.suppressed=Fact(provenance=[evidence_link(e)])
         # Transformation is not evidence for a hidden stone or alternate choice.
+        from .form_stats import update_stats
+        update_stats(state,p,e)
 
     def _field_event(self,state,e):
         a=e.attributes;kind=e.event_type

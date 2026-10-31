@@ -1,0 +1,437 @@
+{
+  "date": "2026-10-30",
+  "validation_run": "b22-focused-v6",
+  "scope": "Local saved evidence only; not whole-match accuracy",
+  "counts": {
+    "recovered_messages": 4,
+    "ditto_instances": 1,
+    "transformations": 2,
+    "preserved_nonzero_numeric_hp": 45,
+    "changed_original_statuses": 0,
+    "conflicts": 3,
+    "changed_projection_totals_or_support": 0,
+    "deferred": 12,
+    "projection_episodes": 22
+  },
+  "selected_events": 325,
+  "original_events": 321,
+  "added_events": 4,
+  "test_result": {
+    "passed": 333,
+    "deselected_local_artifacts": 3,
+    "focused_ditto_unnerve_tests": 22
+  },
+  "integrity": {
+    "integrity_before": {
+      "verified_files": 11729
+    },
+    "focused_replay": "complete",
+    "semantic_and_hp_checks": "complete",
+    "integrity_after": "complete"
+  },
+  "input_hashes": {
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/replay.json": "8bf4e8926c331a53127ca9bc2aafad00f2498dcaef7d14d1ecdb19a6b4f7360c",
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/observations.json": "2566075c176eb852ddb69ecc07f9f77f397cab7c31e46395d4011027682b0652",
+    ".cache/battles/sample_battle_22/fresh-benchmark/fresh-b22-ditto-20261030-v1/initial-freeze.json": "fb7fe37b2db94dfc4bcdb0ebbe7ee003a691a2c61c963e6c384299661e7e4765",
+    ".cache/battles/sample_battle_22/fresh-benchmark/fresh-b22-ditto-20261030-v1/hp-resolutions.json": "0533a87bb93d54c55ff2fa43e53592140ae378433dcee744e7367f164de61109"
+  },
+  "source_hashes": {
+    "battle_events/parser.py": "2f74babbc27d31fd2004c908aaaeaeb45b4822bceb4a824e23000fcde1ad0768",
+    "recognition/message_occurrences.py": "fce84089e871445b288c09295d59d0563108c304419aaabd9a82e91aa1460856",
+    "tracking/state_engine.py": "fceffa7a692033f53abac39d711db601db0a0f9e54ab213b011517a6c1c6ca6a",
+    "tracking/evidence_fusion.py": "c5230a827c0309b31c91d8512f64734fbe42da78dfeb8cf77289a61d534cb693",
+    "tracking/identity_ledger.py": "dceb85e8eb1a7c6e6b9e2e254f75f645c9b6937183bd7e360479a4d08202a770",
+    "tracking/active_continuity.py": "20c45c4d8aef464daa544e041b94fe79f08ea121464624890d135b33e1ee6ad6",
+    "tracking/transformation.py": "7519ef9969cd63b75f5cc1191352565ac08ba12c48da23f05900fb74548d6d57",
+    "tracking/unnerve.py": "b99135529ea5fa7b5eae545d5e8666b5c5781fa443d910627a47a8a53c3b2edb",
+    "tracking/decision_state.py": "f2c8dfdb32c3a6e784015b6f7f7c9239de4577e03fdc670b783f11ce1eee6726",
+    "tracking/mechanics.py": "74a9cd017a264e3c6adaa286add23a42fdcb012bda13394b896e4a4e2581dde0",
+    "tracking/hp_causes.py": "25532d9a4d147b53debe4c53a51947853e33449898cd5175ba57d8632fb692c3",
+    "scripts/validate_b22_implementation.py": "0f95b865e6b2a07c486570bdc2682af38a037b4e8bec927bc371bc6aaa45184b"
+  },
+  "recovered": [
+    {
+      "time": 142.52333333333334,
+      "event_id": "event:20cd8c7ffef8633d735f38a8",
+      "text": "我方因太紧张\n而无法食用树果！",
+      "before": "unknown_not_emitted",
+      "after": "applied_candidate"
+    },
+    {
+      "time": 314.52,
+      "event_id": "event:46e904d83c753d73fcd6fb3b",
+      "text": "对手的百变怪\n变身成了烈咬陆鲨！",
+      "before": "unknown_not_emitted",
+      "after": "applied_candidate"
+    },
+    {
+      "time": 555.51,
+      "event_id": "event:791a0ae025b2718dee1dda40",
+      "text": "我方因太紧张\n而无法食用树果！",
+      "before": "unknown_not_emitted",
+      "after": "applied_candidate"
+    },
+    {
+      "time": 767.03,
+      "event_id": "event:d13d165a5a0527406f05e1ac",
+      "text": "对手的百变怪\n变身成了大嘴鸥！",
+      "before": "unknown_not_emitted",
+      "after": "applied_candidate"
+    }
+  ],
+  "ditto": {
+    "instance_id": "sample_battle_22:opponent:encounter:953d14c88dcaadc1",
+    "episode_ids": [
+      "event:48771de7ea7a4f52eda5bb04",
+      "event:ac38cef74fbe31d41ab78195"
+    ],
+    "final_hp": {
+      "value": 0,
+      "knowledge": "observed"
+    },
+    "snapshots": [
+      {
+        "source_event_id": "event:0dd2d6ef0402ad94e903be43",
+        "active": false,
+        "target": "sample_battle_22:self:encounter:c812d2333b451851",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "identity_status": "species_only",
+            "form_unresolved": true,
+            "reported_appearance": "超级烈咬陆鲨"
+          },
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "event_id": "event:d2201709835d77572b639ce6",
+              "event_status": "candidate",
+              "ocr_confidence": 0.9911764705882353,
+              "parsing_confidence": "uncertain",
+              "uncertainty": [
+                "actor_variant_unresolved"
+              ],
+              "sources": [
+                {
+                  "source_type": "video_message",
+                  "source_id": "tests/fixtures/sample_battle_22.mp4#208.00166666666667",
+                  "observation_ids": [
+                    "0a358228bdafa19722e6c897b26c218ca26935ec2c7afa4c9156f1e86f5cf722"
+                  ],
+                  "details": {
+                    "timestamp": 208.00166666666667,
+                    "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000412.png",
+                    "source_region_type": "battle_message",
+                    "occurrence_id": "event:5432e9778a8138414d38a035",
+                    "row_evidence": [
+                      {
+                        "bounds": [
+                          289,
+                          411,
+                          509,
+                          443
+                        ],
+                        "text": "烈咬陆鲨超级进化成了",
+                        "confidence": 0.999,
+                        "tokens": {
+                          "text": "烈咬陆鲨超级进化成了",
+                          "confidence": 0.999,
+                          "region": [
+                            289,
+                            411,
+                            509,
+                            443
+                          ],
+                          "language": "zh-Hans+en",
+                          "engine": "PP-OCRv6_medium_rec-onnx-cpu",
+                          "tokens": [
+                            {
+                              "text": "烈咬陆鲨超级进化成了",
+                              "confidence": 0.9987913966178894
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "bounds": [
+                          290,
+                          444,
+                          431,
+                          478
+                        ],
+                        "text": "超级烈咬陆鲨！",
+                        "confidence": 0.98,
+                        "tokens": {
+                          "text": "超级烈咬陆鲨！",
+                          "confidence": 0.98,
+                          "region": [
+                            290,
+                            444,
+                            431,
+                            478
+                          ],
+                          "language": "zh-Hans+en",
+                          "engine": "PP-OCRv6_medium_rec-onnx-cpu",
+                          "tokens": [
+                            {
+                              "text": "超级烈咬陆鲨！",
+                              "confidence": 0.9799319505691528
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "event_id": "event:0dd2d6ef0402ad94e903be43",
+              "event_status": "candidate",
+              "ocr_confidence": null,
+              "parsing_confidence": "supported",
+              "uncertainty": [],
+              "sources": [
+                {
+                  "source_type": "video_popup",
+                  "source_id": "tests/fixtures/sample_battle_22.mp4#311.035",
+                  "observation_ids": [
+                    "756dcb8a0accf4da1305ec115a36fce4959a926643153ada8b428b963c96c7b8"
+                  ],
+                  "details": {
+                    "timestamp": 311.035,
+                    "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000617.png",
+                    "readings": {
+                      "species": [
+                        {
+                          "text": "百变怪的",
+                          "confidence": 0.9999351501464844,
+                          "config_id": "species:native",
+                          "box": [
+                            1056,
+                            208,
+                            1133,
+                            228
+                          ]
+                        },
+                        {
+                          "text": "百变怪的",
+                          "confidence": 0.999744176864624,
+                          "config_id": "species:double",
+                          "box": [
+                            1056,
+                            208,
+                            1133,
+                            228
+                          ]
+                        }
+                      ],
+                      "ability": [
+                        {
+                          "text": "变身者",
+                          "confidence": 0.9998885989189148,
+                          "config_id": "ability:native",
+                          "box": [
+                            1074,
+                            232,
+                            1133,
+                            254
+                          ]
+                        },
+                        {
+                          "text": "变身者",
+                          "confidence": 0.9994019865989685,
+                          "config_id": "ability:double",
+                          "box": [
+                            1074,
+                            232,
+                            1133,
+                            254
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "rule": "transform_snapshot"
+            }
+          ],
+          "alternatives": []
+        },
+        "form_knowledge": "unknown",
+        "ability": null,
+        "known_move_members": [
+          "pokeapi:move:414"
+        ],
+        "exact_move_slots": {},
+        "pp_status": {
+          "pokeapi:move:414": "unknown"
+        }
+      },
+      {
+        "source_event_id": "event:f1cc94501018f2e2f66d006d",
+        "active": true,
+        "target": "sample_battle_22:self:encounter:cddd4f82f09160aa",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "derived",
+          "provenance": [
+            {
+              "event_id": "event:37d7f728de34d9da1b2cf943",
+              "event_status": "candidate",
+              "ocr_confidence": 0.999,
+              "parsing_confidence": "supported",
+              "uncertainty": [],
+              "sources": [
+                {
+                  "source_type": "video_message",
+                  "source_id": "tests/fixtures/sample_battle_22.mp4#656.01",
+                  "observation_ids": [
+                    "59bbd4f657f839adc441ec3fc3cc3a8ad424dabee16e100d6d87b0c1c2a0837b"
+                  ],
+                  "details": {
+                    "timestamp": 656.01,
+                    "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001294.png",
+                    "source_region_type": "battle_message",
+                    "occurrence_id": "event:537893ef665f0811e582028a",
+                    "row_evidence": [
+                      {
+                        "bounds": [
+                          289,
+                          411,
+                          431,
+                          443
+                        ],
+                        "text": "上吧！大嘴鸥！",
+                        "confidence": 0.999,
+                        "tokens": {
+                          "text": "上吧！大嘴鸥！",
+                          "confidence": 0.999,
+                          "region": [
+                            289,
+                            411,
+                            431,
+                            443
+                          ],
+                          "language": "zh-Hans+en",
+                          "engine": "PP-OCRv6_medium_rec-onnx-cpu",
+                          "tokens": [
+                            {
+                              "text": "上吧！大嘴鸥！",
+                              "confidence": 0.9993041157722473
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "event_id": "event:f1cc94501018f2e2f66d006d",
+              "event_status": "candidate",
+              "ocr_confidence": null,
+              "parsing_confidence": "supported",
+              "uncertainty": [],
+              "sources": [
+                {
+                  "source_type": "video_popup",
+                  "source_id": "tests/fixtures/sample_battle_22.mp4#763.5283333333333",
+                  "observation_ids": [
+                    "49a8a77cf1aedde3a09feb481033e9c281c79d0293949de3222721436f07e5a9"
+                  ],
+                  "details": {
+                    "timestamp": 763.5283333333333,
+                    "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/001509.png",
+                    "readings": {
+                      "species": [
+                        {
+                          "text": "百变怪的",
+                          "confidence": 0.9999420642852783,
+                          "config_id": "species:native",
+                          "box": [
+                            1056,
+                            208,
+                            1133,
+                            228
+                          ]
+                        },
+                        {
+                          "text": "百变怪的",
+                          "confidence": 0.9707005023956299,
+                          "config_id": "species:double",
+                          "box": [
+                            1056,
+                            208,
+                            1133,
+                            228
+                          ]
+                        }
+                      ],
+                      "ability": [
+                        {
+                          "text": "变身者",
+                          "confidence": 0.9998951554298401,
+                          "config_id": "ability:native",
+                          "box": [
+                            1074,
+                            231,
+                            1133,
+                            254
+                          ]
+                        },
+                        {
+                          "text": "变身者",
+                          "confidence": 0.9992842674255371,
+                          "config_id": "ability:double",
+                          "box": [
+                            1074,
+                            231,
+                            1133,
+                            254
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "rule": "transform_snapshot"
+            }
+          ],
+          "alternatives": []
+        },
+        "form_knowledge": "derived",
+        "ability": {
+          "canonical_id": "pokeapi:ability:2",
+          "kind": "ability",
+          "name": "降雨",
+          "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+        },
+        "known_move_members": [
+          "pokeapi:move:469"
+        ],
+        "exact_move_slots": {},
+        "pp_status": {
+          "pokeapi:move:469": "unknown"
+        }
+      }
+    ]
+  }
+}

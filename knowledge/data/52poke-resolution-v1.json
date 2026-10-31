@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "supplement_id": "52poke-resolution-v1",
+  "game": "Champions",
+  "license": "CC BY-NC-SA 3.0",
+  "attribution": "神奇宝贝百科 contributors (52Poké)",
+  "limits": [
+    "Categorical compatibility only; no HP calculations, probabilities, equipped-move or exact-hit assumptions. Struggle includes its requested max-HP fraction as descriptive metadata only.",
+    "Article contact flags are documented separately from the Champions description rows.",
+    "Documented community source assertions, not official exhaustive Champions verification.",
+    "Struggle contract is explicitly requested for this task; general 52Poke text has no Champions-specific row. Its HP fraction is descriptive only, never a generated HP endpoint."
+  ],
+  "assertions": [
+    {
+      "canonical_id": "pokeapi:ability:24",
+      "kind": "ability",
+      "game": "Champions",
+      "verification": "52poke_champions_documented",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/粗糙皮肤（特性）",
+        "revision_id": 2561788,
+        "retrieved": "2026-10-28",
+        "section": "Champions row in version-specific description table"
+      },
+      "effect": "contact_attacker_damage",
+      "direction": "down",
+      "recipient": "parent_actor",
+      "requires_contact": true
+    },
+    {
+      "canonical_id": "pokeapi:item:583",
+      "kind": "item",
+      "game": "Champions",
+      "verification": "52poke_champions_documented",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/凸凸头盔（道具）",
+        "revision_id": 2635522,
+        "retrieved": "2026-10-28",
+        "section": "Champions row in version-specific description table"
+      },
+      "effect": "contact_attacker_damage",
+      "direction": "down",
+      "recipient": "parent_actor",
+      "requires_contact": true
+    },
+    {
+      "canonical_id": "pokeapi:item:247",
+      "kind": "item",
+      "game": "Champions",
+      "verification": "52poke_champions_documented",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/生命宝珠（道具）",
+        "revision_id": 2635482,
+        "retrieved": "2026-10-28",
+        "section": "Champions row in version-specific description table"
+      },
+      "effect": "post_attack_holder_cost",
+      "direction": "down",
+      "recipient": "holder",
+      "requires_parent_actor": true
+    },
+    {
+      "canonical_id": "pokeapi:ability:192",
+      "kind": "ability",
+      "game": "Champions",
+      "verification": "52poke_champions_documented",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/持久力（特性）",
+        "revision_id": 2561918,
+        "retrieved": "2026-10-28",
+        "section": "Champions row in version-specific description table"
+      },
+      "effect": "stat_only",
+      "hp_effect": false,
+      "stats": [
+        "defense"
+      ]
+    },
+    {
+      "canonical_id": "pokeapi:item:211",
+      "kind": "item",
+      "game": "Champions",
+      "verification": "52poke_champions_documented",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/吃剩的东西（道具）",
+        "revision_id": 2635264,
+        "retrieved": "2026-10-28",
+        "section": "Champions row in version-specific description table"
+      },
+      "effect": "holder_recovery",
+      "direction": "up",
+      "recipient": "holder",
+      "timing": "turn_end"
+    },
+    {
+      "canonical_id": "pokeapi:item:135",
+      "kind": "item",
+      "game": "Champions",
+      "verification": "52poke_champions_documented",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/文柚果（道具）",
+        "revision_id": 2629174,
+        "retrieved": "2026-10-28",
+        "section": "Champions row in version-specific description table"
+      },
+      "effect": "holder_recovery",
+      "direction": "up",
+      "recipient": "holder",
+      "timing": "triggered"
+    },
+    {
+      "canonical_id": "pokeapi:move:813",
+      "kind": "move",
+      "game": "Champions",
+      "verification": "52poke_champions_documented",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/三旋击（招式）",
+        "revision_id": 2554133,
+        "retrieved": "2026-10-28",
+        "section": "Champions row in version-specific description table"
+      },
+      "effect": "multi_hit",
+      "hit_range": [
+        1,
+        3
+      ],
+      "contact": true,
+      "contact_scope": "article_move_flag",
+      "early_stop": "miss; do not infer actual count"
+    },
+    {
+      "canonical_id": "pokeapi:move:369",
+      "kind": "move",
+      "game": "Champions",
+      "verification": "52poke_champions_documented",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/急速折返（招式）",
+        "revision_id": 2553580,
+        "retrieved": "2026-10-28",
+        "section": "Champions row in version-specific description table"
+      },
+      "effect": "pivot",
+      "pivot": true,
+      "contact": true,
+      "contact_scope": "article_move_flag"
+    },
+    {
+      "canonical_id": "pokeapi:move:575",
+      "kind": "move",
+      "game": "Champions",
+      "verification": "52poke_champions_documented",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/抛下狠话（招式）",
+        "revision_id": 2564097,
+        "retrieved": "2026-10-28",
+        "section": "Champions row in version-specific description table"
+      },
+      "effect": "pivot_stat_change",
+      "pivot": true,
+      "hp_effect": false,
+      "stats": [
+        "attack",
+        "special_attack"
+      ]
+    },
+    {
+      "canonical_id": "pokeapi:item:590",
+      "kind": "item",
+      "game": "Champions",
+      "verification": "52poke_champions_documented",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/逃脱按键（道具）",
+        "revision_id": 2635531,
+        "retrieved": "2026-10-28",
+        "section": "Champions row in version-specific description table"
+      },
+      "effect": "explicit_withdrawal_item_consumption",
+      "hp_effect": false,
+      "consumed_on_explicit_withdrawal": true,
+      "trigger": "Explicit Eject Button withdrawal message; an item banner alone is insufficient."
+    },
+    {
+      "canonical_id": "pokeapi:move:165",
+      "kind": "move",
+      "game": "Champions",
+      "verification": "user_requested_champions_contract",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/挣扎（招式）",
+        "revision_id": 2528170,
+        "retrieved": "2026-10-29",
+        "section": "General move effects; no Champions-specific row found",
+        "applicability": "User-specified Champions task contract, corroborated by general article; not independent Champions verification"
+      },
+      "effect": "struggle",
+      "category": "Physical",
+      "base_power": 50,
+      "damage_type": "typeless",
+      "recipient": "target_and_user_separately",
+      "recoil": {
+        "kind": "struggle_recoil",
+        "basis": "user_maximum_hp",
+        "fraction": [
+          1,
+          4
+        ],
+        "independent_of_target_damage": true
+      },
+      "infer_execution_from_missing_pp": false
+    },
+    {
+      "canonical_id": "pokeapi:move:580",
+      "kind": "move",
+      "game": "Champions",
+      "verification": "user_requested_champions_contract",
+      "source": {
+        "url": "https://wiki.52poke.com/wiki/青草场地（状态）",
+        "revision_id": 2566979,
+        "retrieved": "2026-10-29",
+        "section": "General end-of-turn recovery; Champions attribution conditions explicitly requested in this task",
+        "champions_description": {
+          "url": "https://wiki.52poke.com/wiki/青草场地（招式）",
+          "revision_id": 2553663,
+          "section": "Champions description row"
+        },
+        "applicability": "Field must be observed active; completed end-of-turn resolution and no other explicit recovery source. No inferred groundedness, duration, fractions or numerical healing."
+      },
+      "effect": "grassy_terrain_recovery",
+      "timing": "turn_end",
+      "direction": "up",
+      "recipient": "explicit_named_recipient",
+      "maximum_occurrences_per_recipient_per_resolution": 1
+    },
+    {
+      "canonical_id": "pokeapi:move:814",
+      "kind": "move",
+      "game": "Champions",
+      "verification": "52poke_champions_documented",
+      "source": {
+        "url": "https://wiki.52poke.com/index.php?title=双翼（招式）&oldid=2554134",
+        "revision_id": 2554134,
+        "retrieved": "2026-10-30",
+        "section": "Champions row in version-specific description table",
+        "applicability": "Two-hit capability only; does not prove successful hits, completion, target, damage values, or learnability in a particular build."
+      },
+      "hit_range": [2, 2]
+    }
+  ]
+}

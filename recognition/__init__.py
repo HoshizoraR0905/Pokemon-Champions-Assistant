@@ -1,4 +1,5 @@
 """Fixed-layout recognizer for the supplied landscape doubles interface."""
+from recognition.regions import hud_roi, MESSAGE_ROI
 from pathlib import Path
 from dataclasses import replace
 import re
@@ -196,11 +197,11 @@ class Recognizer:
             for side, offsets in [('own', [0,.168]), ('opponent',[0,.166])]:
                 for i, offset in enumerate(offsets):
                     if side == 'own':
-                        name_roi = (.139+offset,.847,.226+offset,.887)
+                        name_roi = hud_roi('own',offset,'name')
                         hp_roi = (.176+offset,.915,.243+offset,.955)
                     else:
-                        name_roi = (.624+offset,.051,.722+offset,.084)
-                        hp_roi = (.681+offset,.113,.727+offset,.154)
+                        name_roi = hud_roi('opponent',offset,'name')
+                        hp_roi = hud_roi('opponent',offset,'percent')
                     name = read(f'{side}_name_{i}', name_roi,italic=True)
                     if side == 'own':
                         icon_roi=(.084+offset,.854,.135+offset,.959)
@@ -208,8 +209,8 @@ class Recognizer:
                         icon_roi=(.567+offset,.061,.621+offset,.154)
                     result.regions[f'{side}_icon_{i}'] = box(image,icon_roi)
                     if side == 'own':
-                        hp = read_ratio(f'{side}_hp_{i}',(.177+offset,.915,.213+offset,.955),
-                                        (.220+offset,.925,.243+offset,.955))
+                        hp = read_ratio(f'{side}_hp_{i}',hud_roi('own',offset,'current'),
+                                        hud_roi('own',offset,'maximum'))
                     else:
                         hp = percentage(read(f'{side}_hp_{i}',hp_roi,True))
                     result.pokemon.append(Pokemon(f'{side}_active_{i+1}', name, hp))
@@ -225,7 +226,7 @@ class Recognizer:
                 result.moves.append(Move(i+1, name, pp))
         if screen == 'unknown' and 'ambiguous_target_panel' not in components:
             # The battle message uses white text over a translucent lower-left band.
-            bounds = box(image, (.22,.685,.64,.797))
+            bounds = box(image, MESSAGE_ROI)
             x1,y1,x2,y2 = bounds
             crop = image[y1:y2,x1:x2]
             hsv = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
@@ -234,7 +235,7 @@ class Recognizer:
             glyphs = sum(1 for c in contours if 8 < cv2.boundingRect(c)[3] < crop.shape[0]*.55
                          and cv2.contourArea(c) > 10)
             if glyphs >= 8:
-                message = read('battle_message',(.22,.685,.64,.797),multiline=True)
+                message = read('battle_message',MESSAGE_ROI,multiline=True)
                 if message.value and message.confidence >= .8:
                     result.message = message
                     result.screen, result.confidence = 'battle_message', message.confidence

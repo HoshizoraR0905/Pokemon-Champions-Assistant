@@ -1,5 +1,7 @@
 # M3.2.2 offline deterministic Speed replay
 
+**M3.4.2 received-damage extension:** [joint offensive-stat inference and validation](../reports/M3.4.2-offensive-stat-inference.md). Use `?battle=11&damage=1` or the checkbox for the optional, precomputed two-layer damage overlay; Speed-only artifacts and historical figures are preserved.
+
 **Latest Mega ability correction:** [mapping, corrected counts and current packages](../reports/M3.3-M3.2.2-mega-ability-mapping.md). The previous direct current-form ability filter is superseded; all 68 complete Mega Raichu Y member records are eligible.
 
 **Battle 11 showcase:** [standalone report, captured figures and nature audit](m3.2.2-battle11-speed-report.md).

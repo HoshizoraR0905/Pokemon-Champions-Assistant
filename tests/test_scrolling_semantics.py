@@ -115,6 +115,9 @@ def test_explicit_multi_target_attack_drops_do_not_need_ability_order():
         assert len(events)==2
         banner=parse('对手的暴飞龙的威吓').to_dict()
         banner['attributes'].update(observation_time=2,fusion_context=True,source_region_type='ability_banner')
+        # This synthetic event models a banner, not the live-message region
+        # used by the parser helper. Keep source provenance consistent.
+        banner['evidence'][0]['source_type']='ability_banner'
         ordered=[banner,*events] if banner_first else [*events,banner]
         for i,e in enumerate(ordered,4):
             receipt=engine.apply(event_from_dict(e),sequence=i)

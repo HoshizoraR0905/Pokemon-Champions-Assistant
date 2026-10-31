@@ -1,0 +1,134 @@
+{
+  "version": "own-hp-damage-review-v1",
+  "battle_id": "sample_battle_11",
+  "origin": "recorded",
+  "reviewer": "codex-original-frame-review-2026-10-22",
+  "events": [
+    {
+      "id": "review:b11:fakeout-hp",
+      "source_event_id": "event:332575fdd733592512dae10b",
+      "attacker": "sample_battle_11:opponent:encounter:3a97ce2b12c2c2fe",
+      "attacker_form": "pokeapi:form:10530",
+      "target": "sample_battle_11:self:encounter:08cf976ab95a28c4",
+      "target_form": "pokeapi:species:445",
+      "move": "pokeapi:move:252",
+      "segment_id": "visual-turn:c6de4bb6bfc6f22830654c46b1757b67ef73fbd930ebc4b1c86c7bf11045d101",
+      "pre_hp": 184,
+      "post_hp": 168,
+      "maximum_hp": 184,
+      "pre_source": "000264.png",
+      "post_source": "000294.png",
+      "available_at": 163.02833333333334,
+      "action_time": 160.52666666666667,
+      "sources": {
+        "000264.png": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000264.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "d186af88dd81e48177e1c34474daea23023eed5b4e97f7eece11d669b41c4633",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#148.025",
+          "source_pts": 88815,
+          "source_time_base": "1/600",
+          "target_timestamp": 148.0,
+          "timestamp": 148.025
+        },
+        "000284.png": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000284.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "9eb448d8708043a3dad4e0fef2d195755d51c425fd6503ac4ea784955877b41f",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#158.02666666666667",
+          "source_pts": 94816,
+          "source_time_base": "1/600",
+          "target_timestamp": 158.0,
+          "timestamp": 158.02666666666667
+        },
+        "000289.png": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000289.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "d02553d0dd6c3d9f02edaaa1258cfdd280eef6f65370f14100ac389e09fa5325",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#160.52666666666667",
+          "source_pts": 96316,
+          "source_time_base": "1/600",
+          "target_timestamp": 160.5,
+          "timestamp": 160.52666666666667
+        },
+        "000292.png": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000292.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "926a7e69dd53c7ba05216512a7ef0ba7b73654893a0e84873704d1972f953669",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#162.02666666666667",
+          "source_pts": 97216,
+          "source_time_base": "1/600",
+          "target_timestamp": 162.0,
+          "timestamp": 162.02666666666667
+        },
+        "000294.png": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000294.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "8be6bd2eaa90be1f9727e876e87e0bf47da57c56273de9a43157ccd143c04ac9",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#163.02833333333334",
+          "source_pts": 97817,
+          "source_time_base": "1/600",
+          "target_timestamp": 163.0,
+          "timestamp": 163.02833333333334
+        }
+      },
+      "critical_alternatives": [
+        false,
+        true
+      ],
+      "assumptions": [
+        "Opening baseline has no unobserved relevant stage/status/field modification before this first hit",
+        "Complete single-hit Fake Out bracket: one own HP loss, no healing/Substitute/residual/other own-HP cause",
+        "Rough Skin retaliation affects the opponent separately; it is not subtracted from our HP loss",
+        "Level 50 and exact own configured defensive stats use previously user-bound Team7",
+        "Pinned Champions community formula/modifier profile; not independent in-game rounding certification"
+      ],
+      "note": "184/184 before transformation; hit visibly targets Garchomp; 181 and 169 are intermediate animation readings; Rough Skin banner begins with final 168/184, confirmed again by later command frame. Constraint availability uses the first reviewed final HP frame; later command frame is corroboration, not required for admission.",
+      "corroboration_sources": {
+        "later_command": {
+          "image": ".cache/battles/sample_battle_11/event-driven/m341-actions-acquisition-v1/frames/000329.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "e97eb4146db50912ae8b12afbfb0f608c62208149e0ab25ba00629d20509f5bc",
+          "source_id": "tests/fixtures/sample_battle_11.mp4#180.53",
+          "source_pts": 108318,
+          "source_time_base": "1/600",
+          "target_timestamp": 180.5,
+          "timestamp": 180.53
+        }
+      },
+      "context": {
+        "field": {
+          "format": "doubles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": null,
+          "defender_grounded": null,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        },
+        "attacker_status": "none",
+        "defender_status": "none",
+        "attacker_stages": {
+          "attack": 0,
+          "defense": 0,
+          "special_attack": 0,
+          "special_defense": 0,
+          "speed": 0
+        },
+        "defender_stages": {
+          "attack": 0,
+          "defense": 0,
+          "special_attack": 0,
+          "special_defense": 0,
+          "speed": 0
+        }
+      }
+    }
+  ]
+}

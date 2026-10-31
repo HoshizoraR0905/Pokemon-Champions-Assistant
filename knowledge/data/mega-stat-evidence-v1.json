@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "game": "Champions",
+  "limits": [
+    "Base-stat assertions only; do not establish equipped items or an observed evolution.",
+    "Stone reaction plus completed evolution are required to disambiguate a generic form result."
+  ],
+  "forms": [
+    {
+      "canonical_id": "pokeapi:form:10133",
+      "canonical_variant": "pokeapi:pokemon:10033",
+      "species_id": 3,
+      "base_stats": {
+        "hp": 80,
+        "attack": 100,
+        "defense": 123,
+        "special_attack": 122,
+        "special_defense": 120,
+        "speed": 80
+      },
+      "stone": "妙蛙花进化石",
+      "source": {
+        "url": "https://wiki.52poke.com/index.php?title=妙蛙花&oldid=2637065",
+        "revision_id": 2637065,
+        "retrieved_date": "2026-10-30",
+        "section": "Form-specific base-stat tables; Champions ability-point columns separately identified",
+        "license": "CC BY-NC-SA 3.0",
+        "attribution": "52Poké contributors"
+      }
+    },
+    {
+      "canonical_id": "pokeapi:form:10134",
+      "canonical_variant": "pokeapi:pokemon:10034",
+      "species_id": 6,
+      "base_stats": {
+        "hp": 78,
+        "attack": 130,
+        "defense": 111,
+        "special_attack": 130,
+        "special_defense": 85,
+        "speed": 100
+      },
+      "stone": "喷火龙进化石X",
+      "source": {
+        "url": "https://wiki.52poke.com/index.php?title=喷火龙&oldid=2637071",
+        "revision_id": 2637071,
+        "retrieved_date": "2026-10-30",
+        "section": "Form-specific base-stat tables; Champions ability-point columns separately identified",
+        "license": "CC BY-NC-SA 3.0",
+        "attribution": "52Poké contributors"
+      }
+    },
+    {
+      "canonical_id": "pokeapi:form:10135",
+      "canonical_variant": "pokeapi:pokemon:10035",
+      "species_id": 6,
+      "base_stats": {
+        "hp": 78,
+        "attack": 104,
+        "defense": 78,
+        "special_attack": 159,
+        "special_defense": 115,
+        "speed": 100
+      },
+      "stone": "喷火龙进化石Y",
+      "source": {
+        "url": "https://wiki.52poke.com/index.php?title=喷火龙&oldid=2637071",
+        "revision_id": 2637071,
+        "retrieved_date": "2026-10-30",
+        "section": "Form-specific base-stat tables; Champions ability-point columns separately identified",
+        "license": "CC BY-NC-SA 3.0",
+        "attribution": "52Poké contributors"
+      }
+    },
+    {
+      "canonical_id": "pokeapi:form:10158",
+      "canonical_variant": "pokeapi:pokemon:10058",
+      "species_id": 445,
+      "base_stats": {
+        "hp": 108,
+        "attack": 170,
+        "defense": 115,
+        "special_attack": 120,
+        "special_defense": 95,
+        "speed": 92
+      },
+      "stone": "烈咬陆鲨进化石",
+      "source": {
+        "url": "https://wiki.52poke.com/index.php?title=烈咬陆鲨&oldid=2637261",
+        "revision_id": 2637261,
+        "retrieved_date": "2026-10-30",
+        "section": "Form-specific base-stat tables; Champions ability-point columns separately identified",
+        "license": "CC BY-NC-SA 3.0",
+        "attribution": "52Poké contributors"
+      }
+    },
+    {
+      "canonical_id": "pokeapi:form:10534",
+      "canonical_variant": "pokeapi:pokemon:10309",
+      "species_id": 445,
+      "base_stats": {
+        "hp": 108,
+        "attack": 130,
+        "defense": 85,
+        "special_attack": 141,
+        "special_defense": 85,
+        "speed": 151
+      },
+      "stone": "烈咬陆鲨进化石Z",
+      "source": {
+        "url": "https://wiki.52poke.com/index.php?title=烈咬陆鲨&oldid=2637261",
+        "revision_id": 2637261,
+        "retrieved_date": "2026-10-30",
+        "section": "Form-specific base-stat tables; Champions ability-point columns separately identified",
+        "license": "CC BY-NC-SA 3.0",
+        "attribution": "52Poké contributors"
+      }
+    }
+  ]
+}

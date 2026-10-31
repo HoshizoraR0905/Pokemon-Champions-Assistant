@@ -4,7 +4,7 @@ from typing import Literal
 import hashlib
 
 Side = Literal['self', 'opponent', 'unknown', 'field']
-EVENT_TYPES = {'switch_out','send_out','move_execution','hp_change','ability_activation',
+EVENT_TYPES = {'switch_out','send_out','move_execution','move_miss','hp_change','ability_activation',
                'item_activation','weather_change','terrain_change','stat_change','faint',
                'status_change','critical_hit','multi_hit','effectiveness','move_effect','unknown',
                'item_change','ability_change','trick_room_change','side_condition_change',

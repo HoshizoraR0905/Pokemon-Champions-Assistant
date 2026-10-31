@@ -1,0 +1,9 @@
+{
+  "version": "damage-knowledge-compatibility-v1",
+  "original_manifest_sha256": "baede21b38040373e0771ebef7d7af39ae71708326485c5501204917b26bb612",
+  "accepted_manifest_sha256": [
+    "d2246404a3523b215d787e41a67244c0ae5f78f231420b2897ecd600cbf339c0"
+  ],
+  "reason": "M-C Follow Me/Rage Powder priority correction only; canonical entities, damage supplement and all direct-damage power/category/type/stat facts unchanged",
+  "reviewed_date": "2026-10-22"
+}

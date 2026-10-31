@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "title": "百变怪/Champions招式表",
+      "url": "https://wiki.52poke.com/index.php?title=百变怪/Champions招式表&oldid=2608731",
+      "revision_id": 2608731,
+      "applicability": "Champions natural learnset; not copied move membership or equipped slots",
+      "summary": "Champions table lists Transform with PP 12; does not establish copied moves or their usage probabilities.",
+      "retrieved_date": "2026-10-30",
+      "attribution": "52Poké / 神奇宝贝百科 contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "runtime_imported": false
+    },
+    {
+      "title": "变身者（特性）",
+      "url": "https://wiki.52poke.com/index.php?title=变身者（特性）&oldid=2561888",
+      "revision_id": 2561888,
+      "applicability": "Champions description separately present; general effects have broader game scope",
+      "summary": "Entry activation uses facing target. Champions description distinguishes HP from copied attributes. Task-provided fixed mapping governs this audit.",
+      "retrieved_date": "2026-10-30",
+      "attribution": "52Poké / 神奇宝贝百科 contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "runtime_imported": false
+    },
+    {
+      "title": "烈咬陆鲨",
+      "url": "https://wiki.52poke.com/index.php?title=烈咬陆鲨&oldid=2637261",
+      "revision_id": 2637261,
+      "applicability": "Species/form distinction; not independent proof of Champions availability or numeric mechanics",
+      "summary": "Distinguishes Mega Garchomp and Mega Garchomp Z. Footage stone-Z clue is not certified by frozen regular Mega canonical assignment.",
+      "retrieved_date": "2026-10-30",
+      "attribution": "52Poké / 神奇宝贝百科 contributors",
+      "license": "CC BY-NC-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "runtime_imported": false
+    }
+  ],
+  "primary_audit_rules": "User supplied task; no mechanics implementation in this task."
+}

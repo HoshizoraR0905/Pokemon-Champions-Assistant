@@ -4,9 +4,9 @@ Reuse established detectors. A geometrically expected crop is never sufficient
 visibility evidence. Fixed message rows are calibrated at 1311x603 only; other
 scales are unknown until independently validated.
 """
+from recognition.regions import hud_roi, FIELD_ROI
 from dataclasses import asdict,dataclass,field
 import cv2
-import numpy as np
 from recognition import box,classify,color_fraction
 from recognition.battle_log import detect_log
 from recognition.party_panel import layout as party_layout
@@ -124,13 +124,13 @@ def inspect_ui(image):
     cards={(s,i):(s,i,o,name) for s,i,o,name in hud_cards(image)}
     for side,offsets in [('own',[0,.168]),('opponent',[0,.166])]:
         for i,o in enumerate(offsets):
-            name=(.139+o,.847,.226+o,.887) if side=='own' else (.624+o,.051,.722+o,.084)
+            name=hud_roi('own',o,'name') if side=='own' else hud_roi('opponent',o,'name')
             exists=(side,i) in cards
-            bar=(.177+o,.898,.232+o,.920) if side=='own' else (.650+o,.094,.713+o,.117)
+            bar=hud_roi('own',o,'bar') if side=='own' else hud_roi('opponent',o,'bar')
             a,b,A,B=box(image,bar);hsv=cv2.cvtColor(image[b:B,a:A],cv2.COLOR_BGR2HSV)
             green=((hsv[:,:,0]<85)&(hsv[:,:,1]>100)&(hsv[:,:,2]>90)).mean()
             faded=(not exists and color_fraction(image,name,'purple' if side=='own' else 'pink')>.12 and green>.15)
-            card=(.08+o,.825,.244+o,.961) if side=='own' else (.563+o,.030,.727+o,.157)
+            card=hud_roi('own',o,'card') if side=='own' else hud_roi('opponent',o,'card')
             add(f'{side}_active_{i+1}','active_hud',card,'visible' if exists else 'partial' if faded else 'absent',
                 ['Independent name panel and HP-bar structure'] if exists else ['No qualifying card; biological presence unchanged'],
                 logical_slot=('self' if side=='own' else 'opponent')+(' / left' if i==0 else ' / right'),
@@ -146,7 +146,7 @@ def inspect_ui(image):
         fields=geometry,semantics='live_message_candidate')
     # Field indicator is a distinct top-left label + counter structure. Glyphs
     # alone remain partial until both literal crops are independently read.
-    field_bounds=(.204,.043,.424,.095);fb=box(image,field_bounds)
+    field_bounds=FIELD_ROI;fb=box(image,field_bounds)
     lines=line_boxes(image,fb)
     add('field','field_indicator',field_bounds,'partial' if lines else 'absent',
         ['Possible header glyphs; label/counter confirmation required'] if lines else ['No coherent field-label text'],

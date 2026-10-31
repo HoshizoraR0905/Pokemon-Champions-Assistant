@@ -15,6 +15,6 @@ def ratio(observation: Observation) -> Observation:
 
 
 def percentage(observation: Observation) -> Observation:
-    match = re.fullmatch(r"(\d{1,3})%", re.sub(r"\s+", "", str(observation.value or "")))
+    match = re.fullmatch(r"(\d{1,3})%", re.sub(r"\s+", "", str(observation.value if observation.value is not None else "")))
     value = int(match[1]) if match and int(match[1]) <= 100 else None
     return replace(observation, value=value)

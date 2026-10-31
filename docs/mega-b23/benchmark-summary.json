@@ -1,0 +1,495 @@
+{
+  "run_id": "mega-b23-20261030-v1",
+  "performance": {
+    "status": "complete",
+    "battle_id": "sample_battle_23",
+    "run_id": "mega-b23-20261030-v1",
+    "command": [
+      "/Users/yyi/Pokemon-Champions-Assistant/.venv/bin/python",
+      "/Users/yyi/Pokemon-Champions-Assistant/main.py",
+      "--video",
+      "/Users/yyi/Pokemon-Champions-Assistant/tests/fixtures/sample_battle_23.mp4",
+      "--profile",
+      "event-driven",
+      "--identity-mode",
+      "lightweight",
+      "--sample-fps",
+      "2",
+      "--run-id",
+      "mega-b23-20261030-v1"
+    ],
+    "input": {
+      "path": "/Users/yyi/Pokemon-Champions-Assistant/tests/fixtures/sample_battle_23.mp4",
+      "resolved_path": "/Users/yyi/Pokemon-Champions-Assistant/tests/fixtures/sample_battle_23.mp4",
+      "sha256": "9ea84465153c9ab639ac1f0467ca21892d2ea6af9af096b0b501325e6248ea83",
+      "bytes": 1477578620,
+      "duration_seconds": 787.28,
+      "source_frames": 27260,
+      "source_average_fps": 34.62686567164179,
+      "width": 2622,
+      "height": 1206,
+      "stream_frames_over_average_fps_seconds": 787.2500000000001,
+      "metadata_method": "OpenCV/FFmpeg container headers; frame count cross-checked against production decoder",
+      "fps_note": "Average stream rate; not a claim of constant source-frame intervals.",
+      "header_command": [
+        "/Users/yyi/Pokemon-Champions-Assistant/.venv/lib/python3.10/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+        "-hide_banner",
+        "-i",
+        "/Users/yyi/Pokemon-Champions-Assistant/tests/fixtures/sample_battle_23.mp4"
+      ]
+    },
+    "driver_pid": 3236,
+    "attempts": [
+      {
+        "started_at": "2026-10-30T12:49:12.864801+00:00",
+        "status": "complete",
+        "command": [
+          "/Users/yyi/Pokemon-Champions-Assistant/.venv/bin/python",
+          "/Users/yyi/Pokemon-Champions-Assistant/main.py",
+          "--video",
+          "/Users/yyi/Pokemon-Champions-Assistant/tests/fixtures/sample_battle_23.mp4",
+          "--profile",
+          "event-driven",
+          "--identity-mode",
+          "lightweight",
+          "--sample-fps",
+          "2",
+          "--run-id",
+          "mega-b23-20261030-v1"
+        ],
+        "driver_pid": 3236,
+        "subprocess_start_epoch_ns": 1793364552885791000,
+        "child_pid": 3244,
+        "elapsed_checkpoint_seconds": 780.1498866670299,
+        "subprocess_end_epoch_ns": 1793365356602373000,
+        "returncode": 0,
+        "wall_seconds": 803.7169601251371,
+        "finished_at": "2026-10-30T13:02:36.602632+00:00"
+      }
+    ],
+    "hardware": {
+      "platform": "macOS-26.3.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.10.4 (v3.10.4:9d38120e33, Mar 23 2022, 17:29:05) [Clang 13.0.0 (clang-1300.0.29.30)]",
+      "logical_cpus": 8
+    },
+    "prediction_namespace_initially_absent": true,
+    "profiler_enabled": false,
+    "runner_sha256": "2aea2179c529892126ca1e28ad0b8bc5c3f1abddc5a9ad6520856b5688210bb7",
+    "cache_policy": "Fresh per-battle frames/recognition/state; shared pinned model/icon/knowledge assets only; no imported recognition caches",
+    "normal_time_definition": "External perf_counter around actual production subprocess startup through exit, including final reconstruction/viewer export. Separate projection/sealing/verification/reporting excluded.",
+    "child_pid": 3244,
+    "returncode": 0,
+    "normal_cli_wall_seconds": 803.7169601251371,
+    "sampled_frames": 1575,
+    "monitored_frames": 1575,
+    "detailed_inspection_frames": 1566,
+    "ocr_model_invocations": 5764,
+    "source_decoded_frames": 27260,
+    "ms_per_sampled_frame": 510.2964826191347,
+    "ms_per_inspected_frame": 513.2292210249918,
+    "PTR": 1.0208781629472832,
+    "effective_sampled_fps": 1.9596450966454355,
+    "internal_pipeline_seconds": 802.6580212921835,
+    "internal_active_seconds": 802.6544107501395,
+    "cold_run": true,
+    "full_cold_timing_comparable": true,
+    "production_manifest_sha256": "02dc6103ef91daa98e4809bee2184342c0fc7a4798a02ed631aba65b6d352910"
+  },
+  "production_counts": {
+    "ocr_invocations_performed": 5764,
+    "icon_invocations_performed": 12,
+    "frames_materialized_at_2fps": 1575,
+    "cheap_monitor_frames": 1575,
+    "frames_sampled": 1566,
+    "frames_classified": 1566,
+    "phase:unknown": 171,
+    "unknown_inspection_frames": 171,
+    "unknown_fallback_checkpoints": 56,
+    "inspected_frames_at_2fps": 1097,
+    "frames_without_model_ocr": 302,
+    "frames_rejected_before_ocr": 241,
+    "frame_rejected:empty_or_animation_or_menu": 198,
+    "region_selected:newly_visible": 572,
+    "ocr_read_requests": 5104,
+    "ocr_prediction_requests": 5764,
+    "ocr_invocations_attempted": 5764,
+    "ocr_seconds": 319.8981194726657,
+    "hud_hp_reading_invocations": 1897,
+    "phase:team_preview": 172,
+    "trainer_label_read_requests": 2,
+    "field_condition_reading_invocations": 657,
+    "icon_invocations_attempted": 12,
+    "icon_seconds": 4.956418502377346,
+    "preview_icon_requests": 6,
+    "opponent_preview_acquisitions": 1,
+    "region_selected:changed_region": 851,
+    "preview_row_reads_suppressed": 1026,
+    "ocr_region_reads_reused": 1476,
+    "ocr_invocations_avoided_unchanged": 1702,
+    "region_selected:retry_unreliable": 36,
+    "double_faint_prefix_observations": 14,
+    "double_faint_prefix_replays_avoided": 14,
+    "region_rejected:unchanged_region": 135,
+    "frame_rejected:unchanged_regions": 42,
+    "battle_message_ocr_invocations": 430,
+    "ability_banner_reading_invocations": 373,
+    "phase:battle_message": 64,
+    "message_ocr_invocations_avoided_unchanged": 226,
+    "phase:battle_animation": 668,
+    "phase:battle_screen": 219,
+    "region_selected:changed_hp_region": 1181,
+    "inspected_frames_at_1fps": 469,
+    "phase:move_selection": 144,
+    "region_rejected:unchanged_hp_region": 125,
+    "region_selected:hp_periodic": 6,
+    "region_selected:hp_opportunity": 510,
+    "phase:pokemon_selection": 4,
+    "frames_not_inspected_adaptive_1fps": 9,
+    "phase:move_target_selection": 108,
+    "frame_rejected:full_screen_flash": 1,
+    "phase:switch_selection": 16,
+    "source_decoded_frames": 27260
+  },
+  "production_summary": {
+    "profile": "event-driven-v1",
+    "battle_id": "sample_battle_23",
+    "video_duration": 787.0,
+    "sampled_frames": 1566,
+    "source_event_candidates": 2036,
+    "reconstructed_event_count": 126,
+    "receipt_statuses": {
+      "deferred": 30,
+      "recorded_observation": 34,
+      "applied_candidate": 1941,
+      "applied_partial": 31
+    },
+    "command_cycles": 10,
+    "verified_game_turns": 0,
+    "battle_log_event_coverage": null,
+    "acceptance": "partial; independent comparison and human review required",
+    "replay_seconds": 357.96734191593714
+  },
+  "event_types": {
+    "hud_observation": 1897,
+    "preview_observation": 6,
+    "trainer_observation": 2,
+    "entry_observation": 7,
+    "send_out": 9,
+    "ability_activation": 7,
+    "stat_change": 16,
+    "phase_observation": 9,
+    "move_execution": 31,
+    "move_effect": 12,
+    "transformation": 2,
+    "side_condition_change": 3,
+    "effectiveness": 7,
+    "faint": 4,
+    "status_change": 4,
+    "hp_change": 8,
+    "switch_out": 2,
+    "item_activation": 7,
+    "move_miss": 1,
+    "visual_observation": 1,
+    "weather_change": 1
+  },
+  "receipt_statuses": {
+    "deferred": 30,
+    "recorded_observation": 34,
+    "applied_candidate": 1941,
+    "applied_partial": 31
+  },
+  "deferred_reasons": {
+    "message_episode_occupancy_unresolved": 26,
+    "unresolved_candidate_fields": 4
+  },
+  "conflicts": [
+    {
+      "event_id": "event:c35c87b102117de87bef549f",
+      "reason": "maximum_hp_disagreement",
+      "proposed_value": {
+        "current": 54,
+        "maximum": 94
+      }
+    }
+  ],
+  "hp": {
+    "episodes": 36,
+    "complete_endpoints": 25,
+    "attribution_statuses": {
+      "supported": 25,
+      "ambiguous": 11
+    },
+    "hit_statuses": {
+      "unknown": 36
+    },
+    "projection_stage": {
+      "status": "complete",
+      "wall_seconds": 0.31209066696465015,
+      "state_and_receipts_unchanged": true,
+      "observed_nonzero_numeric_segments": 68,
+      "projected_membership_exact": true,
+      "normal_cli_time_included": false,
+      "targeted_high_fps_passes": 0,
+      "targeted_high_fps_frames": 0,
+      "reason": "Production adaptive 3/4 FPS attempts are recorded separately; this projection itself invokes no recognition."
+    }
+  },
+  "team_profile_linkage": {
+    "status": "unbound",
+    "reason": "complete_reliable_self_roster_not_available",
+    "self_rows": 0
+  },
+  "configured_instances": [],
+  "instances": [
+    {
+      "instance_id": "sample_battle_23:opponent:encounter:cefb39a0bd9401c7",
+      "side": "opponent",
+      "original": {
+        "canonical_id": "pokeapi:species:445",
+        "kind": "species",
+        "name": "烈咬陆鲨",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "species_id": 445,
+        "pokemon_id": null,
+        "form_id": null,
+        "canonical_identity": null,
+        "identity_status": "species_only"
+      },
+      "current_variant": null,
+      "hp": {
+        "current": null,
+        "maximum": null,
+        "displayed_percent": 0
+      },
+      "item": null,
+      "calculated_stats": {},
+      "transformations": []
+    },
+    {
+      "instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e",
+      "side": "opponent",
+      "original": {
+        "canonical_id": "pokeapi:species:727",
+        "kind": "species",
+        "name": "炽焰咆哮虎",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "species_id": 727,
+        "pokemon_id": 727,
+        "form_id": null,
+        "canonical_identity": "pokeapi:pokemon:727",
+        "identity_status": "resolved_unique"
+      },
+      "current_variant": "pokeapi:pokemon:727",
+      "hp": {
+        "current": null,
+        "maximum": null,
+        "displayed_percent": 76
+      },
+      "item": null,
+      "calculated_stats": {},
+      "transformations": []
+    },
+    {
+      "instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698",
+      "side": "self",
+      "original": {
+        "canonical_id": "pokeapi:species:445",
+        "kind": "species",
+        "name": "烈咬陆鲨",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "species_id": 445,
+        "pokemon_id": null,
+        "form_id": null,
+        "canonical_identity": null,
+        "identity_status": "species_only"
+      },
+      "current_variant": "pokeapi:pokemon:10309",
+      "hp": {
+        "current": 138,
+        "maximum": 184,
+        "displayed_percent": null
+      },
+      "item": null,
+      "calculated_stats": {},
+      "transformations": [
+        {
+          "event_id": null,
+          "mechanic": "mega_evolution",
+          "form": null
+        }
+      ]
+    },
+    {
+      "instance_id": "sample_battle_23:self:encounter:83d24e88c9557402",
+      "side": "self",
+      "original": {
+        "canonical_id": "pokeapi:species:861",
+        "kind": "species",
+        "name": "长毛巨魔",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "species_id": 861,
+        "pokemon_id": 861,
+        "form_id": null,
+        "canonical_identity": "pokeapi:pokemon:861",
+        "identity_status": "resolved_unique"
+      },
+      "current_variant": "pokeapi:pokemon:861",
+      "hp": {
+        "current": 0,
+        "maximum": 201,
+        "displayed_percent": null
+      },
+      "item": null,
+      "calculated_stats": {},
+      "transformations": []
+    },
+    {
+      "instance_id": "sample_battle_23:opponent:encounter:a3dcf1795f735076",
+      "side": "opponent",
+      "original": {
+        "canonical_id": "pokeapi:species:26",
+        "kind": "species",
+        "name": "雷丘",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "species_id": 26,
+        "pokemon_id": null,
+        "form_id": null,
+        "canonical_identity": null,
+        "identity_status": "species_only"
+      },
+      "current_variant": null,
+      "hp": {
+        "current": null,
+        "maximum": null,
+        "displayed_percent": 0
+      },
+      "item": null,
+      "calculated_stats": {},
+      "transformations": [
+        {
+          "event_id": null,
+          "mechanic": "mega_evolution",
+          "form": null
+        }
+      ]
+    },
+    {
+      "instance_id": "sample_battle_23:opponent:encounter:03b937d84d9ebe52",
+      "side": "opponent",
+      "original": {
+        "canonical_id": "pokeapi:species:637",
+        "kind": "species",
+        "name": "火神蛾",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "species_id": 637,
+        "pokemon_id": 637,
+        "form_id": null,
+        "canonical_identity": "pokeapi:pokemon:637",
+        "identity_status": "resolved_unique"
+      },
+      "current_variant": "pokeapi:pokemon:637",
+      "hp": {
+        "current": null,
+        "maximum": null,
+        "displayed_percent": 0
+      },
+      "item": null,
+      "calculated_stats": {},
+      "transformations": []
+    },
+    {
+      "instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3",
+      "side": "self",
+      "original": {
+        "canonical_id": "pokeapi:species:1018",
+        "kind": "species",
+        "name": "铝钢桥龙",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "species_id": 1018,
+        "pokemon_id": 1018,
+        "form_id": null,
+        "canonical_identity": "pokeapi:pokemon:1018",
+        "identity_status": "resolved_unique"
+      },
+      "current_variant": "pokeapi:pokemon:1018",
+      "hp": {
+        "current": 15,
+        "maximum": 194,
+        "displayed_percent": null
+      },
+      "item": {
+        "canonical_id": "pokeapi:item:211",
+        "kind": "item",
+        "name": "吃剩的东西",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+      },
+      "calculated_stats": {},
+      "transformations": []
+    },
+    {
+      "instance_id": "sample_battle_23:opponent:encounter:fc33d523176fa46c",
+      "side": "opponent",
+      "original": {
+        "canonical_id": "pokeapi:species:727",
+        "kind": "species",
+        "name": "炽焰咆哮虎",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "species_id": 727,
+        "pokemon_id": 727,
+        "form_id": null,
+        "canonical_identity": "pokeapi:pokemon:727",
+        "identity_status": "resolved_unique"
+      },
+      "current_variant": "pokeapi:pokemon:727",
+      "hp": {
+        "current": null,
+        "maximum": null,
+        "displayed_percent": 46
+      },
+      "item": {
+        "canonical_id": "pokeapi:item:135",
+        "kind": "item",
+        "name": "文柚果",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+      },
+      "calculated_stats": {},
+      "transformations": []
+    },
+    {
+      "instance_id": "sample_battle_23:self:encounter:afba62ae13ba6ce7",
+      "side": "self",
+      "original": {
+        "canonical_id": "pokeapi:species:279",
+        "kind": "species",
+        "name": "大嘴鸥",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+        "species_id": 279,
+        "pokemon_id": 279,
+        "form_id": null,
+        "canonical_identity": "pokeapi:pokemon:279",
+        "identity_status": "resolved_unique"
+      },
+      "current_variant": "pokeapi:pokemon:279",
+      "hp": {
+        "current": 93,
+        "maximum": 164,
+        "displayed_percent": null
+      },
+      "item": {
+        "canonical_id": "pokeapi:item:135",
+        "kind": "item",
+        "name": "文柚果",
+        "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+      },
+      "calculated_stats": {},
+      "transformations": []
+    }
+  ],
+  "adaptive": {
+    "planned_windows": 0,
+    "completed": [],
+    "dense_episode_ids": []
+  },
+  "accuracy_measured": false
+}

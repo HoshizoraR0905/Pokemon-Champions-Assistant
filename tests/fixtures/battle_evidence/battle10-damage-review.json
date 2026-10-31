@@ -1,0 +1,261 @@
+{
+  "version": "own-hp-damage-review-v1",
+  "battle_id": "sample_battle_10",
+  "origin": "recorded",
+  "reviewer": "codex-cached-source-review-2026-10-22",
+  "events": [
+    {
+      "id": "review:b10:received-6",
+      "source_event_id": "event:323cafaaab709fd0df906502",
+      "attacker": "sample_battle_10:opponent:encounter:4fb3a254e61d9935",
+      "attacker_form": "pokeapi:species:279",
+      "target": "sample_battle_10:self:encounter:079be01139a8cba9",
+      "target_form": "pokeapi:species:1018",
+      "move": "pokeapi:move:58",
+      "segment_id": "visual-turn:1048aceb46fc8b0f5476336722b49997e15e308f6725bf82edf53cc5290e220b",
+      "pre_hp": 102,
+      "post_hp": 48,
+      "maximum_hp": 194,
+      "pre_source": "000797.png",
+      "post_source": "000831.png",
+      "available_at": 488.015,
+      "action_time": 481.015,
+      "sources": {
+        "000814.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000814.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "dd0206dd5c9b220ddc1330bd6f559d4aca5ec5105672359cf096f090f96cf469",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#479.5133333333333",
+          "source_pts": 287708,
+          "source_time_base": "1/600",
+          "target_timestamp": 479.5,
+          "timestamp": 479.5133333333333
+        },
+        "000815.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000815.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "ce8ae52d20ed6562a65bf8dcb8471621e44da3aec355e504bf06652eff70a7fc",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#480.0133333333333",
+          "source_pts": 288008,
+          "source_time_base": "1/600",
+          "target_timestamp": 480.0,
+          "timestamp": 480.0133333333333
+        },
+        "000816.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000816.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "6d12040e0ba3c5378c6d6957fed05c41c86b23315688697fd2005640d6ecf00d",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#480.515",
+          "source_pts": 288309,
+          "source_time_base": "1/600",
+          "target_timestamp": 480.5,
+          "timestamp": 480.515
+        },
+        "000817.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000817.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "d203b2b25fd10767f851f4a5d39873fad713a5b215f1dcc5d84878435854391b",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#481.015",
+          "source_pts": 288609,
+          "source_time_base": "1/600",
+          "target_timestamp": 481.0,
+          "timestamp": 481.015
+        },
+        "000818.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000818.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "7b759e014c93ef53c3263bb5063d61e394d05f37b71852aa206577a59b10d0ec",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#481.515",
+          "source_pts": 288909,
+          "source_time_base": "1/600",
+          "target_timestamp": 481.5,
+          "timestamp": 481.515
+        },
+        "000819.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000819.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "a8f96757e664e6e5ab3261e3949a5874305bfe69b64412ff7fafe0cf390f844b",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#482.015",
+          "source_pts": 289209,
+          "source_time_base": "1/600",
+          "target_timestamp": 482.0,
+          "timestamp": 482.015
+        },
+        "000820.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000820.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "8d6bb4e82488a39d78d42f843d73828f64fa6ee1072695adcbd2a4d6b151b67d",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#482.515",
+          "source_pts": 289509,
+          "source_time_base": "1/600",
+          "target_timestamp": 482.5,
+          "timestamp": 482.515
+        },
+        "000821.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000821.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "1744e42d6d0cb15d550a97d1f41975401784d5d067a0fe75928b39538f7d522e",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#483.015",
+          "source_pts": 289809,
+          "source_time_base": "1/600",
+          "target_timestamp": 483.0,
+          "timestamp": 483.015
+        },
+        "000822.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000822.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "427ff030b70c46ad2547975b358844cf5d11691aee7cc7b4e5e561b58acbb260",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#483.515",
+          "source_pts": 290109,
+          "source_time_base": "1/600",
+          "target_timestamp": 483.5,
+          "timestamp": 483.515
+        },
+        "000823.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000823.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "0b52a2d1b8f3d5c88ad576c2235fc1a040f8caa732c61aa678d91b4e68a83468",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#484.015",
+          "source_pts": 290409,
+          "source_time_base": "1/600",
+          "target_timestamp": 484.0,
+          "timestamp": 484.015
+        },
+        "000824.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000824.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "61cd8a61f71227143a17ee2ee8d164bca5262720637fafb0ad254c915d756aab",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#484.515",
+          "source_pts": 290709,
+          "source_time_base": "1/600",
+          "target_timestamp": 484.5,
+          "timestamp": 484.515
+        },
+        "000825.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000825.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "568482373c1ed271e115bb40f24dec8f7b1f5ad24c87903b58a374f67ba2db5d",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#485.015",
+          "source_pts": 291009,
+          "source_time_base": "1/600",
+          "target_timestamp": 485.0,
+          "timestamp": 485.015
+        },
+        "000826.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000826.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "4bd3bb5d5c19375801cf437bc7a367875f5968539570f6b0e6bd251bd0c04659",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#485.515",
+          "source_pts": 291309,
+          "source_time_base": "1/600",
+          "target_timestamp": 485.5,
+          "timestamp": 485.515
+        },
+        "000827.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000827.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "fa08bec867546aa6a8ee2f1f39aa5389a25794cd8a646fc42e2c0b20c5690b93",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#486.015",
+          "source_pts": 291609,
+          "source_time_base": "1/600",
+          "target_timestamp": 486.0,
+          "timestamp": 486.015
+        },
+        "000828.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000828.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "0b01bd58d5a7925a96fb01b985f8c9dad62eacff4a9b70753b5162b8bb5e1d0c",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#486.515",
+          "source_pts": 291909,
+          "source_time_base": "1/600",
+          "target_timestamp": 486.5,
+          "timestamp": 486.515
+        },
+        "000829.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000829.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "27aff039b556beb40b8ea23c879325c0b56611d27c54ba53879fca93aa862af9",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#487.015",
+          "source_pts": 292209,
+          "source_time_base": "1/600",
+          "target_timestamp": 487.0,
+          "timestamp": 487.015
+        },
+        "000830.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000830.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "55551cd740d7ff9a01b56bc62b5a72bad950c04bd2b25d43c519dad4ead4ca17",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#487.515",
+          "source_pts": 292509,
+          "source_time_base": "1/600",
+          "target_timestamp": 487.5,
+          "timestamp": 487.515
+        },
+        "000831.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000831.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "e9ad034836e7c79afbe952f4cf603b2ef2475c6ca09d7efb8b746776f7331a90",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#488.015",
+          "source_pts": 292809,
+          "source_time_base": "1/600",
+          "target_timestamp": 488.0,
+          "timestamp": 488.015
+        },
+        "000797.png": {
+          "image": ".cache/battles/sample_battle_10/event-driven/m34-v21-holdout-frozen-v1/frames/000797.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "a1b4fa10877796b7080e82cee37410cede7634d9b7230e3b230801e2634a8086",
+          "source_id": "tests/fixtures/sample_battle_10.mp4#469.01166666666666",
+          "source_pts": 281407,
+          "source_time_base": "1/600",
+          "target_timestamp": 469.0,
+          "timestamp": 469.01166666666666
+        }
+      },
+      "critical_alternatives": [
+        false,
+        true
+      ],
+      "assumptions": [
+        "Level 50; existing user-bound Team7 build and current form",
+        "Pinned Champions community-reference mechanics, not independently certified Champions rounding",
+        "No unobserved relevant stage/status/screen/Helping Hand/Friend Guard change in this bracket; neutral relevant stages are conditional",
+        "Both critical alternatives retained; no prior over items, abilities or rolls"
+      ],
+      "note": "Source-reviewed single-target hit and stable endpoint. Stamina changes Defense after the hit, not Special Defense; later Leftovers recovery excluded.",
+      "context": {
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        },
+        "attacker_status": "none",
+        "defender_status": "none",
+        "attacker_stages": {
+          "attack": 0,
+          "defense": 0,
+          "special_attack": 0,
+          "special_defense": 0,
+          "speed": 0
+        },
+        "defender_stages": {
+          "attack": 0,
+          "defense": 0,
+          "special_attack": 0,
+          "special_defense": 0,
+          "speed": 0
+        }
+      }
+    }
+  ]
+}

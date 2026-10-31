@@ -13,7 +13,7 @@ import time
 
 
 class Recorder:
-    def __init__(self, folder, clock=time.monotonic):
+    def __init__(self, folder, clock=time.perf_counter):
         self.folder=folder;folder.mkdir(parents=True,exist_ok=True)
         self.clock=clock;self.origin=clock();self.stack=[];self.source=None
         self.purpose='unclassified';self.stage='startup';self.overhead=0.;self.operations=0
@@ -133,7 +133,7 @@ class Recorder:
         self.patch(schedule.EventInspection,'monitor','inspection_schedule',after=lambda r,*_:self.frame.update(inspected=bool(r)) if self.frame is not None else None)
         self.patch(schedule.IdentitySchedule,'acquire_trainers','trainer_acquisition',purpose='trainer_ids')
         self.patch(schedule.IdentitySchedule,'acquire_team','team_acquisition',purpose='team_roster_configuration')
-        self.patch(schedule.IdentitySchedule,'recognize','hud_acquisition',purpose='active_hud')
+        self.patch(modes,'read_hp','hud_acquisition',purpose='active_hud')
         self.patch(ui,'read_message','message_reading',purpose='battle_message')
         self.patch(occurrences.MessageOccurrences,'observe','message_occurrences',purpose='battle_message')
         self.patch(EventParser,'parse','event_parsing')

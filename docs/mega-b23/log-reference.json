@@ -1,0 +1,1198 @@
+{
+  "method": "Codex independent visual transcription of all 23 saved overlay frames, before prediction/receipt contents. Not human-reviewed truth; partial readable rows only; UI turn labels are not independent event timing.",
+  "windows": [
+    {
+      "start": 201.0,
+      "end": 202.0,
+      "frames": 3
+    },
+    {
+      "start": 465.51166666666666,
+      "end": 473.5133333333333,
+      "frames": 17
+    },
+    {
+      "start": 539.5083333333333,
+      "end": 540.5083333333333,
+      "frames": 3
+    }
+  ],
+  "rows": [
+    {
+      "reference_id": "b23-log-001",
+      "turn": 1,
+      "event_type": "send_out",
+      "side": "opponent",
+      "text": "AjayVGC派出了烈咬陆鲨和炽焰咆哮虎！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#202.0",
+        "timestamp": 202.0,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000401.png",
+        "sha256": "ebaac51d89b394a4d014be83eeb9968133955807db30b6cee75b23e4115bdee3"
+      }
+    },
+    {
+      "reference_id": "b23-log-002",
+      "turn": 1,
+      "event_type": "send_out",
+      "side": "self",
+      "text": "上吧！烈咬陆鲨！长毛巨魔！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#202.0",
+        "timestamp": 202.0,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000401.png",
+        "sha256": "ebaac51d89b394a4d014be83eeb9968133955807db30b6cee75b23e4115bdee3"
+      }
+    },
+    {
+      "reference_id": "b23-log-003",
+      "turn": 1,
+      "event_type": "ability_activation",
+      "side": "opponent",
+      "text": "炽焰咆哮虎的威吓",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#202.0",
+        "timestamp": 202.0,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000401.png",
+        "sha256": "ebaac51d89b394a4d014be83eeb9968133955807db30b6cee75b23e4115bdee3"
+      }
+    },
+    {
+      "reference_id": "b23-log-004",
+      "turn": 1,
+      "event_type": "stat_change",
+      "side": "self",
+      "text": "烈咬陆鲨和长毛巨魔的攻击降低了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#202.0",
+        "timestamp": 202.0,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000401.png",
+        "sha256": "ebaac51d89b394a4d014be83eeb9968133955807db30b6cee75b23e4115bdee3"
+      }
+    },
+    {
+      "reference_id": "b23-log-005",
+      "turn": 1,
+      "event_type": "move_execution",
+      "side": "self",
+      "text": "烈咬陆鲨使出了守住！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#202.0",
+        "timestamp": 202.0,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000401.png",
+        "sha256": "ebaac51d89b394a4d014be83eeb9968133955807db30b6cee75b23e4115bdee3"
+      }
+    },
+    {
+      "reference_id": "b23-log-006",
+      "turn": 1,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "烈咬陆鲨摆出了防守的架势！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#201.0",
+        "timestamp": 201.0,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000399.png",
+        "sha256": "4651898d0f84fb8cd50b06fbb8eb420af51327e32e6229a4a7826eb7e25b9000"
+      }
+    },
+    {
+      "reference_id": "b23-log-007",
+      "turn": 1,
+      "event_type": "move_execution",
+      "side": "opponent",
+      "text": "对手的炽焰咆哮虎使出了击掌奇袭！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#201.0",
+        "timestamp": 201.0,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000399.png",
+        "sha256": "4651898d0f84fb8cd50b06fbb8eb420af51327e32e6229a4a7826eb7e25b9000"
+      }
+    },
+    {
+      "reference_id": "b23-log-008",
+      "turn": 1,
+      "event_type": "hp_numeric",
+      "side": "self",
+      "text": "长毛巨魔 HP 201 → 181",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#201.0",
+        "timestamp": 201.0,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000399.png",
+        "sha256": "4651898d0f84fb8cd50b06fbb8eb420af51327e32e6229a4a7826eb7e25b9000"
+      }
+    },
+    {
+      "reference_id": "b23-log-009",
+      "turn": 1,
+      "event_type": "move_execution",
+      "side": "opponent",
+      "text": "对手的烈咬陆鲨使出了龙之波动！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#201.0",
+        "timestamp": 201.0,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000399.png",
+        "sha256": "4651898d0f84fb8cd50b06fbb8eb420af51327e32e6229a4a7826eb7e25b9000"
+      }
+    },
+    {
+      "reference_id": "b23-log-010",
+      "turn": 1,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "烈咬陆鲨在攻击中守护住了自己！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#201.0",
+        "timestamp": 201.0,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000399.png",
+        "sha256": "4651898d0f84fb8cd50b06fbb8eb420af51327e32e6229a4a7826eb7e25b9000"
+      }
+    },
+    {
+      "reference_id": "b23-log-011",
+      "turn": 1,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "长毛巨魔畏缩了，无法使出招式！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#201.0",
+        "timestamp": 201.0,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000399.png",
+        "sha256": "4651898d0f84fb8cd50b06fbb8eb420af51327e32e6229a4a7826eb7e25b9000"
+      }
+    },
+    {
+      "reference_id": "b23-log-012",
+      "turn": 2,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "烈咬陆鲨的烈咬陆鲨进化石Z和Hoshi的全一环起了反应！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#473.5133333333333",
+        "timestamp": 473.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000942.png",
+        "sha256": "73cdb6adbdca4d56d0ea422ceed4e1ef0969558546e6cc8b0867e6cd1ad278b5"
+      }
+    },
+    {
+      "reference_id": "b23-log-013",
+      "turn": 2,
+      "event_type": "transformation",
+      "side": "self",
+      "text": "烈咬陆鲨超级进化成了超级烈咬陆鲨！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#473.5133333333333",
+        "timestamp": 473.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000942.png",
+        "sha256": "73cdb6adbdca4d56d0ea422ceed4e1ef0969558546e6cc8b0867e6cd1ad278b5"
+      }
+    },
+    {
+      "reference_id": "b23-log-014",
+      "turn": 2,
+      "event_type": "move_execution",
+      "side": "self",
+      "text": "长毛巨魔使出了光墙！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#473.5133333333333",
+        "timestamp": 473.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000942.png",
+        "sha256": "73cdb6adbdca4d56d0ea422ceed4e1ef0969558546e6cc8b0867e6cd1ad278b5"
+      }
+    },
+    {
+      "reference_id": "b23-log-015",
+      "turn": 2,
+      "event_type": "side_condition_change",
+      "side": "self",
+      "text": "光墙使我方的特殊抗性提高了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#473.5133333333333",
+        "timestamp": 473.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000942.png",
+        "sha256": "73cdb6adbdca4d56d0ea422ceed4e1ef0969558546e6cc8b0867e6cd1ad278b5"
+      }
+    },
+    {
+      "reference_id": "b23-log-016",
+      "turn": 2,
+      "event_type": "move_execution",
+      "side": "self",
+      "text": "烈咬陆鲨使出了龙之波动！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#473.5133333333333",
+        "timestamp": 473.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000942.png",
+        "sha256": "73cdb6adbdca4d56d0ea422ceed4e1ef0969558546e6cc8b0867e6cd1ad278b5"
+      }
+    },
+    {
+      "reference_id": "b23-log-017",
+      "turn": 2,
+      "event_type": "hp_numeric",
+      "side": "opponent",
+      "text": "烈咬陆鲨 HP 100% → 0%",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#473.0133333333333",
+        "timestamp": 473.0133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000941.png",
+        "sha256": "0766af6723723e945004f339746dacf212b6187775a98a0d54f08d993c45355a"
+      }
+    },
+    {
+      "reference_id": "b23-log-018",
+      "turn": 2,
+      "event_type": "effectiveness",
+      "side": "opponent",
+      "text": "对对手的烈咬陆鲨效果绝佳！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#473.0133333333333",
+        "timestamp": 473.0133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000941.png",
+        "sha256": "0766af6723723e945004f339746dacf212b6187775a98a0d54f08d993c45355a"
+      }
+    },
+    {
+      "reference_id": "b23-log-019",
+      "turn": 2,
+      "event_type": "faint",
+      "side": "opponent",
+      "text": "对手的烈咬陆鲨倒下了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#473.0133333333333",
+        "timestamp": 473.0133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000941.png",
+        "sha256": "0766af6723723e945004f339746dacf212b6187775a98a0d54f08d993c45355a"
+      }
+    },
+    {
+      "reference_id": "b23-log-020",
+      "turn": 2,
+      "event_type": "move_execution",
+      "side": "opponent",
+      "text": "对手的炽焰咆哮虎使出了闪焰冲锋！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#473.0133333333333",
+        "timestamp": 473.0133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000941.png",
+        "sha256": "0766af6723723e945004f339746dacf212b6187775a98a0d54f08d993c45355a"
+      }
+    },
+    {
+      "reference_id": "b23-log-021",
+      "turn": 2,
+      "event_type": "status_change",
+      "side": "self",
+      "text": "长毛巨魔被灼伤了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.5133333333333",
+        "timestamp": 472.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000940.png",
+        "sha256": "5f44f0e5c762496dccdad7ec37334aeffab041368cc66b7bba31972b967b6f6a"
+      }
+    },
+    {
+      "reference_id": "b23-log-022",
+      "turn": 2,
+      "event_type": "move_effect",
+      "side": "opponent",
+      "text": "对手的炽焰咆哮虎受到了反作用力造成的伤害！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.5133333333333",
+        "timestamp": 472.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000940.png",
+        "sha256": "5f44f0e5c762496dccdad7ec37334aeffab041368cc66b7bba31972b967b6f6a"
+      }
+    },
+    {
+      "reference_id": "b23-log-023",
+      "turn": 2,
+      "event_type": "hp_numeric",
+      "side": "opponent",
+      "text": "炽焰咆哮虎 HP 100% → 86%",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.5133333333333",
+        "timestamp": 472.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000940.png",
+        "sha256": "5f44f0e5c762496dccdad7ec37334aeffab041368cc66b7bba31972b967b6f6a"
+      }
+    },
+    {
+      "reference_id": "b23-log-024",
+      "turn": 2,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "长毛巨魔受到了灼伤的伤害！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.5133333333333",
+        "timestamp": 472.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000940.png",
+        "sha256": "5f44f0e5c762496dccdad7ec37334aeffab041368cc66b7bba31972b967b6f6a"
+      }
+    },
+    {
+      "reference_id": "b23-log-025",
+      "turn": 2,
+      "event_type": "hp_numeric",
+      "side": "self",
+      "text": "长毛巨魔 HP 97 → 85",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.5133333333333",
+        "timestamp": 472.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000940.png",
+        "sha256": "5f44f0e5c762496dccdad7ec37334aeffab041368cc66b7bba31972b967b6f6a"
+      }
+    },
+    {
+      "reference_id": "b23-log-026",
+      "turn": 2,
+      "event_type": "send_out",
+      "side": "opponent",
+      "text": "AjayVGC派出了雷丘！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.5133333333333",
+        "timestamp": 472.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000940.png",
+        "sha256": "5f44f0e5c762496dccdad7ec37334aeffab041368cc66b7bba31972b967b6f6a"
+      }
+    },
+    {
+      "reference_id": "b23-log-027",
+      "turn": 3,
+      "event_type": "move_effect",
+      "side": "opponent",
+      "text": "对手的雷丘的雷丘进化石Y和AjayVGC的全一环起了反应！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.0133333333333",
+        "timestamp": 472.0133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000939.png",
+        "sha256": "94bd9ba68e4e0713712b12a3a81155516f10375454a45bfa847577b76bbdcd1f"
+      }
+    },
+    {
+      "reference_id": "b23-log-028",
+      "turn": 3,
+      "event_type": "transformation",
+      "side": "opponent",
+      "text": "对手的雷丘超级进化成了超级雷丘！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.0133333333333",
+        "timestamp": 472.0133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000939.png",
+        "sha256": "94bd9ba68e4e0713712b12a3a81155516f10375454a45bfa847577b76bbdcd1f"
+      }
+    },
+    {
+      "reference_id": "b23-log-029",
+      "turn": 3,
+      "event_type": "move_execution",
+      "side": "opponent",
+      "text": "对手的雷丘使出了击掌奇袭！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.0133333333333",
+        "timestamp": 472.0133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000939.png",
+        "sha256": "94bd9ba68e4e0713712b12a3a81155516f10375454a45bfa847577b76bbdcd1f"
+      }
+    },
+    {
+      "reference_id": "b23-log-030",
+      "turn": 3,
+      "event_type": "hp_numeric",
+      "side": "self",
+      "text": "烈咬陆鲨 HP 184 → 168",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.0133333333333",
+        "timestamp": 472.0133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000939.png",
+        "sha256": "94bd9ba68e4e0713712b12a3a81155516f10375454a45bfa847577b76bbdcd1f"
+      }
+    },
+    {
+      "reference_id": "b23-log-031",
+      "turn": 3,
+      "event_type": "move_execution",
+      "side": "self",
+      "text": "长毛巨魔使出了反射壁！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.0133333333333",
+        "timestamp": 472.0133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000939.png",
+        "sha256": "94bd9ba68e4e0713712b12a3a81155516f10375454a45bfa847577b76bbdcd1f"
+      }
+    },
+    {
+      "reference_id": "b23-log-032",
+      "turn": 3,
+      "event_type": "side_condition_change",
+      "side": "self",
+      "text": "反射壁使我方的物理抗性提高了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#472.0133333333333",
+        "timestamp": 472.0133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000939.png",
+        "sha256": "94bd9ba68e4e0713712b12a3a81155516f10375454a45bfa847577b76bbdcd1f"
+      }
+    },
+    {
+      "reference_id": "b23-log-033",
+      "turn": 3,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "烈咬陆鲨畏缩了，无法使出招式！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#471.0133333333333",
+        "timestamp": 471.0133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000937.png",
+        "sha256": "6ea4cb86398cd265f8b3e361d3b035218153166a785965a198774fa083f339cd"
+      }
+    },
+    {
+      "reference_id": "b23-log-034",
+      "turn": 3,
+      "event_type": "move_execution",
+      "side": "opponent",
+      "text": "对手的炽焰咆哮虎使出了闪焰冲锋！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.5133333333333",
+        "timestamp": 470.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000936.png",
+        "sha256": "dcdf9e7ab8b28e2c31a0ee8a4f9af92699f5b9c42b95265030ddb508c8841af3"
+      }
+    },
+    {
+      "reference_id": "b23-log-035",
+      "turn": 3,
+      "event_type": "hp_numeric",
+      "side": "self",
+      "text": "长毛巨魔 HP 85 → 23",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.5133333333333",
+        "timestamp": 470.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000936.png",
+        "sha256": "dcdf9e7ab8b28e2c31a0ee8a4f9af92699f5b9c42b95265030ddb508c8841af3"
+      }
+    },
+    {
+      "reference_id": "b23-log-036",
+      "turn": 3,
+      "event_type": "move_effect",
+      "side": "opponent",
+      "text": "对手的炽焰咆哮虎受到了反作用力造成的伤害！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.5133333333333",
+        "timestamp": 470.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000936.png",
+        "sha256": "dcdf9e7ab8b28e2c31a0ee8a4f9af92699f5b9c42b95265030ddb508c8841af3"
+      }
+    },
+    {
+      "reference_id": "b23-log-037",
+      "turn": 3,
+      "event_type": "hp_numeric",
+      "side": "opponent",
+      "text": "炽焰咆哮虎 HP 86% → 76%",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.5133333333333",
+        "timestamp": 470.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000936.png",
+        "sha256": "dcdf9e7ab8b28e2c31a0ee8a4f9af92699f5b9c42b95265030ddb508c8841af3"
+      }
+    },
+    {
+      "reference_id": "b23-log-038",
+      "turn": 3,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "长毛巨魔受到了灼伤的伤害！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.5133333333333",
+        "timestamp": 470.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000936.png",
+        "sha256": "dcdf9e7ab8b28e2c31a0ee8a4f9af92699f5b9c42b95265030ddb508c8841af3"
+      }
+    },
+    {
+      "reference_id": "b23-log-039",
+      "turn": 3,
+      "event_type": "hp_numeric",
+      "side": "self",
+      "text": "长毛巨魔 HP 23 → 11",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.5133333333333",
+        "timestamp": 470.5133333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000936.png",
+        "sha256": "dcdf9e7ab8b28e2c31a0ee8a4f9af92699f5b9c42b95265030ddb508c8841af3"
+      }
+    },
+    {
+      "reference_id": "b23-log-040",
+      "turn": 4,
+      "event_type": "move_execution",
+      "side": "opponent",
+      "text": "对手的雷丘使出了守住！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.01166666666666",
+        "timestamp": 470.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000935.png",
+        "sha256": "be8b8cf551d29622c868951f348d9321d61dd1149a3949adbf327f2c78790f16"
+      }
+    },
+    {
+      "reference_id": "b23-log-041",
+      "turn": 4,
+      "event_type": "move_effect",
+      "side": "opponent",
+      "text": "对手的雷丘摆出了防守的架势！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.01166666666666",
+        "timestamp": 470.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000935.png",
+        "sha256": "be8b8cf551d29622c868951f348d9321d61dd1149a3949adbf327f2c78790f16"
+      }
+    },
+    {
+      "reference_id": "b23-log-042",
+      "turn": 4,
+      "event_type": "move_execution",
+      "side": "self",
+      "text": "长毛巨魔使出了抛下狠话！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.01166666666666",
+        "timestamp": 470.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000935.png",
+        "sha256": "be8b8cf551d29622c868951f348d9321d61dd1149a3949adbf327f2c78790f16"
+      }
+    },
+    {
+      "reference_id": "b23-log-043",
+      "turn": 4,
+      "event_type": "move_effect",
+      "side": "opponent",
+      "text": "对对手的炽焰咆哮虎，好像没有效果……",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.01166666666666",
+        "timestamp": 470.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000935.png",
+        "sha256": "be8b8cf551d29622c868951f348d9321d61dd1149a3949adbf327f2c78790f16"
+      }
+    },
+    {
+      "reference_id": "b23-log-044",
+      "turn": 4,
+      "event_type": "move_execution",
+      "side": "self",
+      "text": "烈咬陆鲨使出了大地之力！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.01166666666666",
+        "timestamp": 470.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000935.png",
+        "sha256": "be8b8cf551d29622c868951f348d9321d61dd1149a3949adbf327f2c78790f16"
+      }
+    },
+    {
+      "reference_id": "b23-log-045",
+      "turn": 4,
+      "event_type": "move_effect",
+      "side": "opponent",
+      "text": "对手的雷丘在攻击中守护住了自己！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#470.01166666666666",
+        "timestamp": 470.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000935.png",
+        "sha256": "be8b8cf551d29622c868951f348d9321d61dd1149a3949adbf327f2c78790f16"
+      }
+    },
+    {
+      "reference_id": "b23-log-046",
+      "turn": 4,
+      "event_type": "move_execution",
+      "side": "opponent",
+      "text": "对手的炽焰咆哮虎使出了抛下狠话！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#469.01166666666666",
+        "timestamp": 469.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000933.png",
+        "sha256": "af3c911e9e385cee7bd307367108c079081c0c4fd77a363fdea4e05db4adfb8a"
+      }
+    },
+    {
+      "reference_id": "b23-log-047",
+      "turn": 4,
+      "event_type": "stat_change",
+      "side": "self",
+      "text": "烈咬陆鲨的攻击、特攻降低了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#469.01166666666666",
+        "timestamp": 469.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000933.png",
+        "sha256": "af3c911e9e385cee7bd307367108c079081c0c4fd77a363fdea4e05db4adfb8a"
+      }
+    },
+    {
+      "reference_id": "b23-log-048",
+      "turn": 4,
+      "event_type": "switch_out",
+      "side": "opponent",
+      "text": "对手的炽焰咆哮虎要回到AjayVGC的身边了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#469.01166666666666",
+        "timestamp": 469.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000933.png",
+        "sha256": "af3c911e9e385cee7bd307367108c079081c0c4fd77a363fdea4e05db4adfb8a"
+      }
+    },
+    {
+      "reference_id": "b23-log-049",
+      "turn": 4,
+      "event_type": "send_out",
+      "side": "opponent",
+      "text": "AjayVGC派出了火神蛾！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#469.01166666666666",
+        "timestamp": 469.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000933.png",
+        "sha256": "af3c911e9e385cee7bd307367108c079081c0c4fd77a363fdea4e05db4adfb8a"
+      }
+    },
+    {
+      "reference_id": "b23-log-050",
+      "turn": 4,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "长毛巨魔受到了灼伤的伤害！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#468.51166666666666",
+        "timestamp": 468.51166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000932.png",
+        "sha256": "4bc6f29fb08c1ba7acc5b5ce47638f4af8735c101171c818f11429c1bf2e40b1"
+      }
+    },
+    {
+      "reference_id": "b23-log-051",
+      "turn": 4,
+      "event_type": "hp_numeric",
+      "side": "self",
+      "text": "长毛巨魔 HP 11 → 0",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#468.51166666666666",
+        "timestamp": 468.51166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000932.png",
+        "sha256": "4bc6f29fb08c1ba7acc5b5ce47638f4af8735c101171c818f11429c1bf2e40b1"
+      }
+    },
+    {
+      "reference_id": "b23-log-052",
+      "turn": 4,
+      "event_type": "faint",
+      "side": "self",
+      "text": "长毛巨魔倒下了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#468.51166666666666",
+        "timestamp": 468.51166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000932.png",
+        "sha256": "4bc6f29fb08c1ba7acc5b5ce47638f4af8735c101171c818f11429c1bf2e40b1"
+      }
+    },
+    {
+      "reference_id": "b23-log-053",
+      "turn": 4,
+      "event_type": "send_out",
+      "side": "self",
+      "text": "上吧！铝钢桥龙！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#468.51166666666666",
+        "timestamp": 468.51166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000932.png",
+        "sha256": "4bc6f29fb08c1ba7acc5b5ce47638f4af8735c101171c818f11429c1bf2e40b1"
+      }
+    },
+    {
+      "reference_id": "b23-log-054",
+      "turn": 5,
+      "event_type": "move_execution",
+      "side": "opponent",
+      "text": "对手的火神蛾使出了愤怒粉！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#468.01166666666666",
+        "timestamp": 468.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000931.png",
+        "sha256": "6ac9e0b0885761deac39e81b34d1cea9421bc12ee5c9035cd4e258655145368d"
+      }
+    },
+    {
+      "reference_id": "b23-log-055",
+      "turn": 5,
+      "event_type": "move_effect",
+      "side": "opponent",
+      "text": "对手的火神蛾变得万众瞩目了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#468.01166666666666",
+        "timestamp": 468.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000931.png",
+        "sha256": "6ac9e0b0885761deac39e81b34d1cea9421bc12ee5c9035cd4e258655145368d"
+      }
+    },
+    {
+      "reference_id": "b23-log-056",
+      "turn": 5,
+      "event_type": "move_execution",
+      "side": "self",
+      "text": "烈咬陆鲨使出了力量宝石！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#468.01166666666666",
+        "timestamp": 468.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000931.png",
+        "sha256": "6ac9e0b0885761deac39e81b34d1cea9421bc12ee5c9035cd4e258655145368d"
+      }
+    },
+    {
+      "reference_id": "b23-log-057",
+      "turn": 5,
+      "event_type": "hp_numeric",
+      "side": "opponent",
+      "text": "火神蛾 HP 100% → 5%",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#468.01166666666666",
+        "timestamp": 468.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000931.png",
+        "sha256": "6ac9e0b0885761deac39e81b34d1cea9421bc12ee5c9035cd4e258655145368d"
+      }
+    },
+    {
+      "reference_id": "b23-log-058",
+      "turn": 5,
+      "event_type": "effectiveness",
+      "side": "opponent",
+      "text": "对对手的火神蛾效果无比绝佳！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#468.01166666666666",
+        "timestamp": 468.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000931.png",
+        "sha256": "6ac9e0b0885761deac39e81b34d1cea9421bc12ee5c9035cd4e258655145368d"
+      }
+    },
+    {
+      "reference_id": "b23-log-059",
+      "turn": 5,
+      "event_type": "move_execution",
+      "side": "opponent",
+      "text": "对手的雷丘使出了真气弹！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#468.01166666666666",
+        "timestamp": 468.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000931.png",
+        "sha256": "6ac9e0b0885761deac39e81b34d1cea9421bc12ee5c9035cd4e258655145368d"
+      }
+    },
+    {
+      "reference_id": "b23-log-060",
+      "turn": 5,
+      "event_type": "hp_numeric",
+      "side": "self",
+      "text": "铝钢桥龙 HP 194 → 94",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#467.01166666666666",
+        "timestamp": 467.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000929.png",
+        "sha256": "90cd433eb2be7ef9f6dd4d3452156aa49ca69f2cee305cda7bf8539137bc4eec"
+      }
+    },
+    {
+      "reference_id": "b23-log-061",
+      "turn": 5,
+      "event_type": "effectiveness",
+      "side": "self",
+      "text": "对铝钢桥龙效果绝佳！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#467.01166666666666",
+        "timestamp": 467.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000929.png",
+        "sha256": "90cd433eb2be7ef9f6dd4d3452156aa49ca69f2cee305cda7bf8539137bc4eec"
+      }
+    },
+    {
+      "reference_id": "b23-log-062",
+      "turn": 5,
+      "event_type": "stat_change",
+      "side": "self",
+      "text": "铝钢桥龙的特防降低了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#467.01166666666666",
+        "timestamp": 467.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000929.png",
+        "sha256": "90cd433eb2be7ef9f6dd4d3452156aa49ca69f2cee305cda7bf8539137bc4eec"
+      }
+    },
+    {
+      "reference_id": "b23-log-063",
+      "turn": 5,
+      "event_type": "ability_activation",
+      "side": "self",
+      "text": "铝钢桥龙的持久力",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#467.01166666666666",
+        "timestamp": 467.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000929.png",
+        "sha256": "90cd433eb2be7ef9f6dd4d3452156aa49ca69f2cee305cda7bf8539137bc4eec"
+      }
+    },
+    {
+      "reference_id": "b23-log-064",
+      "turn": 5,
+      "event_type": "stat_change",
+      "side": "self",
+      "text": "铝钢桥龙的防御提高了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#466.51166666666666",
+        "timestamp": 466.51166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000928.png",
+        "sha256": "d1fb8df7a286f89b802a36331ac32331b7235eaf7c554f3da96c05a6fdce7bdc"
+      }
+    },
+    {
+      "reference_id": "b23-log-065",
+      "turn": 5,
+      "event_type": "move_execution",
+      "side": "self",
+      "text": "铝钢桥龙使出了大声咆哮！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#466.51166666666666",
+        "timestamp": 466.51166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000928.png",
+        "sha256": "d1fb8df7a286f89b802a36331ac32331b7235eaf7c554f3da96c05a6fdce7bdc"
+      }
+    },
+    {
+      "reference_id": "b23-log-066",
+      "turn": 5,
+      "event_type": "hp_numeric",
+      "side": "opponent",
+      "text": "雷丘 HP 100% → 83%",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#466.51166666666666",
+        "timestamp": 466.51166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000928.png",
+        "sha256": "d1fb8df7a286f89b802a36331ac32331b7235eaf7c554f3da96c05a6fdce7bdc"
+      }
+    },
+    {
+      "reference_id": "b23-log-067",
+      "turn": 5,
+      "event_type": "hp_numeric",
+      "side": "opponent",
+      "text": "火神蛾 HP 5% → 0%",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#466.51166666666666",
+        "timestamp": 466.51166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000928.png",
+        "sha256": "d1fb8df7a286f89b802a36331ac32331b7235eaf7c554f3da96c05a6fdce7bdc"
+      }
+    },
+    {
+      "reference_id": "b23-log-068",
+      "turn": 5,
+      "event_type": "stat_change",
+      "side": "opponent",
+      "text": "对手的雷丘的特攻降低了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#466.51166666666666",
+        "timestamp": 466.51166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000928.png",
+        "sha256": "d1fb8df7a286f89b802a36331ac32331b7235eaf7c554f3da96c05a6fdce7bdc"
+      }
+    },
+    {
+      "reference_id": "b23-log-069",
+      "turn": 5,
+      "event_type": "faint",
+      "side": "opponent",
+      "text": "对手的火神蛾倒下了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#466.01166666666666",
+        "timestamp": 466.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000927.png",
+        "sha256": "258e53b3c06456e8ac8e9eb77fe686f4238667c19cde39a7e1308e48e57ad5f8"
+      }
+    },
+    {
+      "reference_id": "b23-log-070",
+      "turn": 5,
+      "event_type": "item_activation",
+      "side": "self",
+      "text": "铝钢桥龙的吃剩的东西",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#466.01166666666666",
+        "timestamp": 466.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000927.png",
+        "sha256": "258e53b3c06456e8ac8e9eb77fe686f4238667c19cde39a7e1308e48e57ad5f8"
+      }
+    },
+    {
+      "reference_id": "b23-log-071",
+      "turn": 5,
+      "event_type": "hp_numeric",
+      "side": "self",
+      "text": "铝钢桥龙 HP 94 → 106",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#466.01166666666666",
+        "timestamp": 466.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000927.png",
+        "sha256": "258e53b3c06456e8ac8e9eb77fe686f4238667c19cde39a7e1308e48e57ad5f8"
+      }
+    },
+    {
+      "reference_id": "b23-log-072",
+      "turn": 5,
+      "event_type": "send_out",
+      "side": "opponent",
+      "text": "AjayVGC派出了炽焰咆哮虎！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#466.01166666666666",
+        "timestamp": 466.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000927.png",
+        "sha256": "258e53b3c06456e8ac8e9eb77fe686f4238667c19cde39a7e1308e48e57ad5f8"
+      }
+    },
+    {
+      "reference_id": "b23-log-073",
+      "turn": 5,
+      "event_type": "ability_activation",
+      "side": "opponent",
+      "text": "炽焰咆哮虎的威吓",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#466.01166666666666",
+        "timestamp": 466.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000927.png",
+        "sha256": "258e53b3c06456e8ac8e9eb77fe686f4238667c19cde39a7e1308e48e57ad5f8"
+      }
+    },
+    {
+      "reference_id": "b23-log-074",
+      "turn": 5,
+      "event_type": "stat_change",
+      "side": "self",
+      "text": "烈咬陆鲨和铝钢桥龙的攻击降低了！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#466.01166666666666",
+        "timestamp": 466.01166666666666,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000927.png",
+        "sha256": "258e53b3c06456e8ac8e9eb77fe686f4238667c19cde39a7e1308e48e57ad5f8"
+      }
+    },
+    {
+      "reference_id": "b23-log-075",
+      "turn": 6,
+      "event_type": "move_execution",
+      "side": "self",
+      "text": "烈咬陆鲨使出了守住！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#540.0083333333333",
+        "timestamp": 540.0083333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/001075.png",
+        "sha256": "fe1d490f943e98e7d7183c50b141bf9b3cb954f4bf8004947ed8984c56f5d957"
+      }
+    },
+    {
+      "reference_id": "b23-log-076",
+      "turn": 6,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "烈咬陆鲨摆出了防守的架势！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#540.0083333333333",
+        "timestamp": 540.0083333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/001075.png",
+        "sha256": "fe1d490f943e98e7d7183c50b141bf9b3cb954f4bf8004947ed8984c56f5d957"
+      }
+    },
+    {
+      "reference_id": "b23-log-077",
+      "turn": 6,
+      "event_type": "move_execution",
+      "side": "self",
+      "text": "铝钢桥龙使出了守住！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#540.0083333333333",
+        "timestamp": 540.0083333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/001075.png",
+        "sha256": "fe1d490f943e98e7d7183c50b141bf9b3cb954f4bf8004947ed8984c56f5d957"
+      }
+    },
+    {
+      "reference_id": "b23-log-078",
+      "turn": 6,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "铝钢桥龙摆出了防守的架势！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#540.0083333333333",
+        "timestamp": 540.0083333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/001075.png",
+        "sha256": "fe1d490f943e98e7d7183c50b141bf9b3cb954f4bf8004947ed8984c56f5d957"
+      }
+    },
+    {
+      "reference_id": "b23-log-079",
+      "turn": 6,
+      "event_type": "move_execution",
+      "side": "opponent",
+      "text": "对手的炽焰咆哮虎使出了击掌奇袭！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#540.0083333333333",
+        "timestamp": 540.0083333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/001075.png",
+        "sha256": "fe1d490f943e98e7d7183c50b141bf9b3cb954f4bf8004947ed8984c56f5d957"
+      }
+    },
+    {
+      "reference_id": "b23-log-080",
+      "turn": 6,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "铝钢桥龙在攻击中守护住了自己！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#539.5083333333333",
+        "timestamp": 539.5083333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/001074.png",
+        "sha256": "f32378c298546ac0c5bce37ff1172ed8a06d4ee0adadb1ae8a67f3d9bd7d1419"
+      }
+    },
+    {
+      "reference_id": "b23-log-081",
+      "turn": 6,
+      "event_type": "move_execution",
+      "side": "opponent",
+      "text": "对手的雷丘使出了真气弹！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#539.5083333333333",
+        "timestamp": 539.5083333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/001074.png",
+        "sha256": "f32378c298546ac0c5bce37ff1172ed8a06d4ee0adadb1ae8a67f3d9bd7d1419"
+      }
+    },
+    {
+      "reference_id": "b23-log-082",
+      "turn": 6,
+      "event_type": "move_effect",
+      "side": "self",
+      "text": "铝钢桥龙在攻击中守护住了自己！",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#539.5083333333333",
+        "timestamp": 539.5083333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/001074.png",
+        "sha256": "f32378c298546ac0c5bce37ff1172ed8a06d4ee0adadb1ae8a67f3d9bd7d1419"
+      }
+    },
+    {
+      "reference_id": "b23-log-083",
+      "turn": 6,
+      "event_type": "item_activation",
+      "side": "self",
+      "text": "铝钢桥龙的吃剩的东西",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#539.5083333333333",
+        "timestamp": 539.5083333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/001074.png",
+        "sha256": "f32378c298546ac0c5bce37ff1172ed8a06d4ee0adadb1ae8a67f3d9bd7d1419"
+      }
+    },
+    {
+      "reference_id": "b23-log-084",
+      "turn": 6,
+      "event_type": "hp_numeric",
+      "side": "self",
+      "text": "铝钢桥龙 HP 106 → 118",
+      "original_event_time": null,
+      "evidence": {
+        "source_id": "tests/fixtures/sample_battle_23.mp4#539.5083333333333",
+        "timestamp": 539.5083333333333,
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/001074.png",
+        "sha256": "f32378c298546ac0c5bce37ff1172ed8a06d4ee0adadb1ae8a67f3d9bd7d1419"
+      }
+    }
+  ]
+}

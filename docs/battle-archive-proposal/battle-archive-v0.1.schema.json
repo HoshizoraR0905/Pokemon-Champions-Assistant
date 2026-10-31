@@ -1,0 +1,979 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pokemon-champions-assistant:proposal:battle-archive:0.1.0",
+  "title": "Proposed Battle Archive 0.1.0 (design only)",
+  "description": "An immutable export view of saved evidence, not a new runtime state model. Referential, chronological and loss-accounting validation is specified in README.md.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "battle": {
+      "type": "object",
+      "properties": {
+        "battle_id": {
+          "type": "string"
+        },
+        "game": {
+          "type": "string"
+        },
+        "format_claim_ref": {
+          "type": "string"
+        },
+        "rule_profile_ref": {
+          "type": "string"
+        },
+        "run_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_video_ref": {
+          "type": "string"
+        },
+        "archive_revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "supersedes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "battle_id",
+        "game",
+        "format_claim_ref",
+        "rule_profile_ref",
+        "run_ids",
+        "source_video_ref",
+        "archive_revision",
+        "supersedes"
+      ],
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "subjects": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/subject"
+      }
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/fact"
+      }
+    },
+    "opponent_roster": {
+      "type": "object",
+      "properties": {
+        "complete_claim_ref": {
+          "type": "string"
+        },
+        "slots": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "properties": {
+              "slot": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+              },
+              "subject_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "identity_claim_ref": {
+                "type": "string"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "slot",
+              "subject_ref",
+              "identity_claim_ref",
+              "evidence_refs"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "complete_claim_ref",
+        "slots"
+      ],
+      "additionalProperties": false
+    },
+    "opponent_selection": {
+      "type": "object",
+      "properties": {
+        "required_count_claim_ref": {
+          "type": "string"
+        },
+        "selected_subject_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "confirmed_lead_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "revealed_backline_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "unresolved_slots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "slot": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "identity_claim_ref": {
+                "type": "string"
+              },
+              "candidate_subject_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "slot",
+              "identity_claim_ref",
+              "candidate_subject_refs"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "exhaustive_claim_ref": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "required_count_claim_ref",
+        "selected_subject_refs",
+        "confirmed_lead_refs",
+        "revealed_backline_refs",
+        "unresolved_slots",
+        "exhaustive_claim_ref"
+      ],
+      "additionalProperties": false
+    },
+    "events": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "description": "Original event payload, unchanged (including ID, raw text, evidence and uncertainty)."
+      }
+    },
+    "receipts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "receipt_id": {
+            "type": "string"
+          },
+          "event_ref": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object",
+            "description": "Every original receipt field except event, which is interned by event_ref."
+          }
+        },
+        "required": [
+          "receipt_id",
+          "event_ref",
+          "payload"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "timeline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action_id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "event_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "receipt_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "actor_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "target_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "occurred_interval": {
+            "$ref": "#/$defs/timeInterval"
+          },
+          "available_at": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "turn_claim_ref": {
+            "type": "string"
+          },
+          "fact_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "action_id",
+          "kind",
+          "event_refs",
+          "receipt_refs",
+          "actor_refs",
+          "target_refs",
+          "occurred_interval",
+          "available_at",
+          "turn_claim_ref",
+          "fact_refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "damage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "resolution_id": {
+            "type": "string"
+          },
+          "action_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "actor_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "target_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "move_claim_ref": {
+            "type": "string"
+          },
+          "before_hp_claim_ref": {
+            "type": "string"
+          },
+          "after_hp_claim_ref": {
+            "type": "string"
+          },
+          "unit_claim_ref": {
+            "type": "string"
+          },
+          "aggregate_damage_claim_ref": {
+            "type": "string"
+          },
+          "individual_hit_claim_refs": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "segment_event_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "attribution_claim_ref": {
+            "type": "string"
+          },
+          "context_claim_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "resolution_id",
+          "action_ref",
+          "actor_ref",
+          "target_ref",
+          "move_claim_ref",
+          "before_hp_claim_ref",
+          "after_hp_claim_ref",
+          "unit_claim_ref",
+          "aggregate_damage_claim_ref",
+          "individual_hit_claim_refs",
+          "segment_event_refs",
+          "attribution_claim_ref",
+          "context_claim_refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "speed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "witness_id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "action_order",
+              "end_of_turn_order"
+            ]
+          },
+          "ordered_event_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "actor_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "priority_claim_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "context_claim_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "constraint_claim_ref": {
+            "type": "string"
+          },
+          "admissibility": {
+            "enum": [
+              "supported",
+              "conditional",
+              "unresolved",
+              "retracted"
+            ]
+          }
+        },
+        "required": [
+          "witness_id",
+          "kind",
+          "ordered_event_refs",
+          "actor_refs",
+          "priority_claim_refs",
+          "context_claim_refs",
+          "constraint_claim_ref",
+          "admissibility"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "state_checkpoint": {
+      "type": "object",
+      "properties": {
+        "source_ref": {
+          "type": "string"
+        },
+        "source_pointer": {
+          "type": "string"
+        },
+        "payload": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "availability": {
+          "enum": [
+            "embedded",
+            "external_required",
+            "missing"
+          ]
+        }
+      },
+      "required": [
+        "source_ref",
+        "source_pointer",
+        "payload",
+        "availability"
+      ],
+      "additionalProperties": false
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "source_pointer_dispositions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_ref": {
+                "type": "string"
+              },
+              "source_pointer": {
+                "type": "string"
+              },
+              "disposition": {
+                "enum": [
+                  "mapped",
+                  "raw_preserved",
+                  "external_required",
+                  "unsupported",
+                  "missing"
+                ]
+              },
+              "archive_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "source_ref",
+              "source_pointer",
+              "disposition",
+              "archive_refs",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "unresolved": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "accepted_for_structured_retention": {
+          "type": "boolean"
+        },
+        "self_contained": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "source_pointer_dispositions",
+        "unresolved",
+        "accepted_for_structured_retention",
+        "self_contained"
+      ],
+      "additionalProperties": false
+    },
+    "residuals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_ref": {
+            "type": "string"
+          },
+          "source_pointer": {
+            "type": "string"
+          },
+          "payload": {}
+        },
+        "required": [
+          "source_ref",
+          "source_pointer",
+          "payload"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "population_kind": {
+      "const": "censored_battle_evidence"
+    }
+  },
+  "required": [
+    "schema_version",
+    "battle",
+    "sources",
+    "subjects",
+    "facts",
+    "opponent_roster",
+    "opponent_selection",
+    "events",
+    "receipts",
+    "timeline",
+    "damage",
+    "speed",
+    "state_checkpoint",
+    "coverage",
+    "residuals",
+    "extensions",
+    "population_kind"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "timeInterval": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "video",
+            "saved_event",
+            "saved_state",
+            "saved_projection",
+            "curated_annotation",
+            "rule_snapshot",
+            "public_build_snapshot",
+            "synthetic_fixture",
+            "public_aggregate_snapshot"
+          ]
+        },
+        "path_or_uri": {
+          "type": "string"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hash_missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "timestamp_seconds": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "source_pts": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "time_base": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "available_at": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "confidence": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          ]
+        },
+        "provenance": {
+          "type": "object"
+        },
+        "retention": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "retained",
+                "external_required",
+                "missing",
+                "removed_authorized"
+              ]
+            },
+            "pixel_dependency": {
+              "enum": [
+                "none",
+                "required",
+                "optional"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "pixel_dependency"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "kind",
+        "path_or_uri",
+        "sha256",
+        "hash_missing_reason",
+        "source_id",
+        "timestamp_seconds",
+        "source_pts",
+        "time_base",
+        "available_at",
+        "confidence",
+        "provenance",
+        "retention"
+      ],
+      "additionalProperties": false
+    },
+    "subject": {
+      "type": "object",
+      "properties": {
+        "side": {
+          "enum": [
+            "self",
+            "opponent"
+          ]
+        },
+        "source_instance_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "identity_status": {
+          "enum": [
+            "persistent_supported",
+            "preview_only",
+            "unresolved_continuity"
+          ]
+        },
+        "possible_same_as": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "identity_claim_ref": {
+          "type": "string"
+        },
+        "native_build_claim_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "temporary_state_claim_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "entry_episodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "episode_id": {
+                "type": "string"
+              },
+              "source_episode_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "entry_event_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "exit_event_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_encounter_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "interval": {
+                "$ref": "#/$defs/timeInterval"
+              },
+              "continuity_claim_ref": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "episode_id",
+              "source_episode_id",
+              "entry_event_ref",
+              "exit_event_ref",
+              "source_encounter_id",
+              "interval",
+              "continuity_claim_ref"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "side",
+        "source_instance_ids",
+        "identity_status",
+        "possible_same_as",
+        "identity_claim_ref",
+        "native_build_claim_refs",
+        "temporary_state_claim_refs",
+        "entry_episodes"
+      ],
+      "additionalProperties": false
+    },
+    "fact": {
+      "type": "object",
+      "properties": {
+        "subject_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "field": {
+          "type": "string"
+        },
+        "value": {},
+        "knowledge": {
+          "enum": [
+            "observed",
+            "inferred",
+            "assumed",
+            "unknown",
+            "conflicting"
+          ]
+        },
+        "basis": {
+          "enum": [
+            "direct",
+            "deterministic",
+            "constraint",
+            "provisional",
+            "unresolved"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "premise_claim_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "available_at": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "valid_interval": {
+          "$ref": "#/$defs/timeInterval"
+        },
+        "source_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_pointer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {}
+        },
+        "scope": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "subject_ref",
+        "field",
+        "value",
+        "knowledge",
+        "basis",
+        "evidence_refs",
+        "premise_claim_refs",
+        "available_at",
+        "valid_interval",
+        "source_ref",
+        "source_pointer",
+        "alternatives",
+        "scope"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "knowledge": {
+                "const": "unknown"
+              }
+            },
+            "required": [
+              "knowledge"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "knowledge": {
+                "enum": [
+                  "observed",
+                  "inferred"
+                ]
+              }
+            },
+            "required": [
+              "knowledge"
+            ]
+          },
+          "then": {
+            "properties": {
+              "evidence_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

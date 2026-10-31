@@ -1,0 +1,6000 @@
+{
+  "extraction_sha256": "11c9dfb2df9b42989c61b2de197f69aabfd1a17072b5e23cbd653e3ab9c7e0a2",
+  "method": "Agent-authored labels after reviewing fresh log crops and rejected original pages, before loading live prediction",
+  "curated_entries": [
+    {
+      "entry_id": "log-entry:ac71a2023c7db0c365af6cfe",
+      "turn": 1,
+      "log_order": 1,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#405.001667",
+      "raw_text": "MasterKays派出了精力充沛的大嘴鸥\n和聪慧的铝钢桥龙！",
+      "ocr_confidence": 0.9991,
+      "color": null,
+      "observation_ids": [
+        "log-row:6f9a0aa09a8ba1cccc568164",
+        "log-row:7a80f3177312220533adc9a3"
+      ],
+      "selected_observation_id": "log-row:6f9a0aa09a8ba1cccc568164",
+      "text_variants": [
+        "MasterKays派出了精力充沛的大嘴鸥\n和聪慧的铝钢桥龙！"
+      ],
+      "index": 1,
+      "partial": false,
+      "inspection_timestamp": 405.00166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000810.png",
+        "frame_sha256": "de58eea8f07185a5bfc68465b0073a9a976b91b6a15917dca4bb91315e02f5a5",
+        "box": [
+          200,
+          49,
+          1111,
+          143
+        ],
+        "selected_observation_id": "log-row:6f9a0aa09a8ba1cccc568164",
+        "all_observation_ids": [
+          "log-row:6f9a0aa09a8ba1cccc568164",
+          "log-row:7a80f3177312220533adc9a3"
+        ]
+      },
+      "extraction_index": 1,
+      "reference_log_order": 1
+    },
+    {
+      "entry_id": "log-entry:4851d978a2091712091c0473",
+      "turn": 1,
+      "log_order": 2,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#405.501667",
+      "raw_text": "上吧！喷火龙！\n妙蛙花！",
+      "ocr_confidence": 0.9773636363636363,
+      "color": null,
+      "observation_ids": [
+        "log-row:d6a88fdd320241229b7d538f",
+        "log-row:bdedcf87e85c5569927fd47d",
+        "log-row:9ab85e6a35e5bd4f29a3b74d"
+      ],
+      "selected_observation_id": "log-row:bdedcf87e85c5569927fd47d",
+      "text_variants": [
+        "上吧！喷火龙！\n妙蛙花！"
+      ],
+      "index": 2,
+      "partial": false,
+      "inspection_timestamp": 405.50166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000811.png",
+        "frame_sha256": "8d16095dbe8aeb2c1f6bb93e4f364370bdc0035b036de2a839251054f67dbd81",
+        "box": [
+          200,
+          140,
+          1111,
+          221
+        ],
+        "selected_observation_id": "log-row:bdedcf87e85c5569927fd47d",
+        "all_observation_ids": [
+          "log-row:d6a88fdd320241229b7d538f",
+          "log-row:bdedcf87e85c5569927fd47d",
+          "log-row:9ab85e6a35e5bd4f29a3b74d"
+        ]
+      },
+      "extraction_index": 2,
+      "reference_log_order": 2
+    },
+    {
+      "entry_id": "log-entry:d622e47d110bda7f5c64b3b8",
+      "turn": 1,
+      "log_order": 3,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#405.501667",
+      "raw_text": "大嘴鸥的\n降雨",
+      "ocr_confidence": 1.0,
+      "color": "red",
+      "observation_ids": [
+        "log-row:001f05f46bffa48c3ef183d4",
+        "log-row:843e3295063a36876f4ad822",
+        "log-row:65c614f76431e994394a16f6"
+      ],
+      "selected_observation_id": "log-row:843e3295063a36876f4ad822",
+      "text_variants": [
+        "大嘴鸥的\n降雨"
+      ],
+      "index": 3,
+      "partial": false,
+      "inspection_timestamp": 405.50166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000811.png",
+        "frame_sha256": "8d16095dbe8aeb2c1f6bb93e4f364370bdc0035b036de2a839251054f67dbd81",
+        "box": [
+          200,
+          221,
+          1111,
+          301
+        ],
+        "selected_observation_id": "log-row:843e3295063a36876f4ad822",
+        "all_observation_ids": [
+          "log-row:001f05f46bffa48c3ef183d4",
+          "log-row:843e3295063a36876f4ad822",
+          "log-row:65c614f76431e994394a16f6"
+        ]
+      },
+      "extraction_index": 3,
+      "reference_log_order": 3
+    },
+    {
+      "entry_id": "log-entry:3ef85d03c12432ef1381d840",
+      "turn": 1,
+      "log_order": 4,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#405.501667",
+      "raw_text": "开始下雨了！",
+      "ocr_confidence": 0.995,
+      "color": null,
+      "observation_ids": [
+        "log-row:4137e2fc61955b4135ded192",
+        "log-row:bab2d6078b1fb8030b10af42",
+        "log-row:95e85c7f2bfd65db7f5f3bdc"
+      ],
+      "selected_observation_id": "log-row:bab2d6078b1fb8030b10af42",
+      "text_variants": [
+        "开始下雨了！"
+      ],
+      "index": 4,
+      "partial": false,
+      "inspection_timestamp": 405.50166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000811.png",
+        "frame_sha256": "8d16095dbe8aeb2c1f6bb93e4f364370bdc0035b036de2a839251054f67dbd81",
+        "box": [
+          200,
+          301,
+          1111,
+          382
+        ],
+        "selected_observation_id": "log-row:bab2d6078b1fb8030b10af42",
+        "all_observation_ids": [
+          "log-row:4137e2fc61955b4135ded192",
+          "log-row:bab2d6078b1fb8030b10af42",
+          "log-row:95e85c7f2bfd65db7f5f3bdc"
+        ]
+      },
+      "extraction_index": 4,
+      "reference_log_order": 4
+    },
+    {
+      "entry_id": "log-entry:2cfdcd25c50f44f5df5042ac",
+      "turn": 1,
+      "log_order": 5,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#404.501667",
+      "raw_text": "喷火龙的喷火龙进化石Y和\nHoshi的全一环起了反应！",
+      "ocr_confidence": 0.9952307692307691,
+      "color": null,
+      "observation_ids": [
+        "log-row:ce6c533cfb5e3bf2550b5695",
+        "log-row:5041c47b482e4111e1f3b310",
+        "log-row:0c3699a7160d5b981d56eca7"
+      ],
+      "selected_observation_id": "log-row:0c3699a7160d5b981d56eca7",
+      "text_variants": [
+        "喷火龙的喷火龙进化石Y和\nHoshi的全一环起了反应！"
+      ],
+      "index": 5,
+      "partial": false,
+      "inspection_timestamp": 404.50166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000809.png",
+        "frame_sha256": "20321b314d55d2b6501b81bfa630234ece708ec7292521127e0a24f3a7113d0a",
+        "box": [
+          200,
+          275,
+          1111,
+          356
+        ],
+        "selected_observation_id": "log-row:0c3699a7160d5b981d56eca7",
+        "all_observation_ids": [
+          "log-row:ce6c533cfb5e3bf2550b5695",
+          "log-row:5041c47b482e4111e1f3b310",
+          "log-row:0c3699a7160d5b981d56eca7"
+        ]
+      },
+      "extraction_index": 5,
+      "reference_log_order": 5
+    },
+    {
+      "entry_id": "log-entry:39648207fbefb433e955c2f3",
+      "turn": 1,
+      "log_order": 6,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#404.501667",
+      "raw_text": "喷火龙超级进化成了\n超级喷火龙！",
+      "ocr_confidence": 0.9976,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:4a38b69f1b64118ac3a49bff",
+        "log-row:d0d82dafce8ee84591569678",
+        "log-row:1baa171b58b3d8fd689c6716",
+        "log-row:106f9d7464db050032483c5f"
+      ],
+      "selected_observation_id": "log-row:1baa171b58b3d8fd689c6716",
+      "text_variants": [
+        "喷火龙超级进化成了\n超级喷火龙！"
+      ],
+      "index": 6,
+      "partial": false,
+      "inspection_timestamp": 404.50166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000809.png",
+        "frame_sha256": "20321b314d55d2b6501b81bfa630234ece708ec7292521127e0a24f3a7113d0a",
+        "box": [
+          200,
+          356,
+          1111,
+          436
+        ],
+        "selected_observation_id": "log-row:1baa171b58b3d8fd689c6716",
+        "all_observation_ids": [
+          "log-row:4a38b69f1b64118ac3a49bff",
+          "log-row:d0d82dafce8ee84591569678",
+          "log-row:1baa171b58b3d8fd689c6716",
+          "log-row:106f9d7464db050032483c5f"
+        ]
+      },
+      "extraction_index": 6,
+      "reference_log_order": 6
+    },
+    {
+      "entry_id": "log-entry:9670657d40e727679e4af7e5",
+      "turn": 1,
+      "log_order": 7,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#404.001667",
+      "raw_text": "喷火龙的\n日照",
+      "ocr_confidence": 0.9993333333333334,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:87e01eb3ccf4eba833f1496e",
+        "log-row:95c2e48cb9023329fc41c7a3"
+      ],
+      "selected_observation_id": "log-row:95c2e48cb9023329fc41c7a3",
+      "text_variants": [
+        "喷火龙的\n日照"
+      ],
+      "index": 7,
+      "partial": false,
+      "inspection_timestamp": 404.00166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000808.png",
+        "frame_sha256": "1e8d454ccf59ee94ef407c7b49cd1d448b4e555dfb3857c0b50dc6714c4c03d1",
+        "box": [
+          200,
+          148,
+          1111,
+          228
+        ],
+        "selected_observation_id": "log-row:95c2e48cb9023329fc41c7a3",
+        "all_observation_ids": [
+          "log-row:87e01eb3ccf4eba833f1496e",
+          "log-row:95c2e48cb9023329fc41c7a3"
+        ]
+      },
+      "extraction_index": 7,
+      "reference_log_order": 7
+    },
+    {
+      "entry_id": "log-entry:fe415cb7a352fb824f49c7ca",
+      "turn": 1,
+      "log_order": 8,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#404.001667",
+      "raw_text": "日照变强了！",
+      "ocr_confidence": 0.936,
+      "color": null,
+      "observation_ids": [
+        "log-row:6ce5c3429957a2697352aea3",
+        "log-row:c76802d4414519c2eab87182"
+      ],
+      "selected_observation_id": "log-row:6ce5c3429957a2697352aea3",
+      "text_variants": [
+        "日照变强了！"
+      ],
+      "index": 8,
+      "partial": false,
+      "inspection_timestamp": 404.00166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000808.png",
+        "frame_sha256": "1e8d454ccf59ee94ef407c7b49cd1d448b4e555dfb3857c0b50dc6714c4c03d1",
+        "box": [
+          200,
+          228,
+          1111,
+          309
+        ],
+        "selected_observation_id": "log-row:6ce5c3429957a2697352aea3",
+        "all_observation_ids": [
+          "log-row:6ce5c3429957a2697352aea3",
+          "log-row:c76802d4414519c2eab87182"
+        ]
+      },
+      "extraction_index": 8,
+      "reference_log_order": 8
+    },
+    {
+      "entry_id": "log-entry:3b48cba2ccaba948d661aec7",
+      "turn": 1,
+      "log_order": 9,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#404.001667",
+      "raw_text": "妙蛙花使出了\n催眠粉！",
+      "ocr_confidence": 0.9878,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:07f20c876c8eb2602d09eb1c",
+        "log-row:8030885bf4e34a65edc29037"
+      ],
+      "selected_observation_id": "log-row:07f20c876c8eb2602d09eb1c",
+      "text_variants": [
+        "妙蛙花使出了\n催眠粉！"
+      ],
+      "index": 9,
+      "partial": false,
+      "inspection_timestamp": 404.00166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000808.png",
+        "frame_sha256": "1e8d454ccf59ee94ef407c7b49cd1d448b4e555dfb3857c0b50dc6714c4c03d1",
+        "box": [
+          200,
+          309,
+          1111,
+          389
+        ],
+        "selected_observation_id": "log-row:07f20c876c8eb2602d09eb1c",
+        "all_observation_ids": [
+          "log-row:07f20c876c8eb2602d09eb1c",
+          "log-row:8030885bf4e34a65edc29037"
+        ]
+      },
+      "extraction_index": 9,
+      "reference_log_order": 9
+    },
+    {
+      "entry_id": "log-entry:7c2558a1d0ab4764d9031686",
+      "turn": 1,
+      "log_order": 10,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#403.018333",
+      "raw_text": "对手的大嘴鸥\n睡着了!",
+      "ocr_confidence": 0.982,
+      "color": null,
+      "observation_ids": [
+        "log-row:23351e29a7c58762b80cdba0",
+        "log-row:93f8a73186af173ec6260cb4",
+        "log-row:eef5ddd12afabf69bb9f6e0c"
+      ],
+      "selected_observation_id": "log-row:eef5ddd12afabf69bb9f6e0c",
+      "text_variants": [
+        "对手的大嘴鸥\n睡着了!"
+      ],
+      "index": 10,
+      "partial": false,
+      "inspection_timestamp": 403.0183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000806.png",
+        "frame_sha256": "12fe3e4125fdc85bc3dac564007958ccb79b6da177bfa7eee4653fcc2e49fe2a",
+        "box": [
+          200,
+          49,
+          1111,
+          116
+        ],
+        "selected_observation_id": "log-row:eef5ddd12afabf69bb9f6e0c",
+        "all_observation_ids": [
+          "log-row:23351e29a7c58762b80cdba0",
+          "log-row:93f8a73186af173ec6260cb4",
+          "log-row:eef5ddd12afabf69bb9f6e0c"
+        ]
+      },
+      "extraction_index": 10,
+      "reference_log_order": 10
+    },
+    {
+      "entry_id": "log-entry:16ba7efbcd3672a2c524da52",
+      "turn": 1,
+      "log_order": 11,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#403.018333",
+      "raw_text": "喷火龙使出了\n气象球！",
+      "ocr_confidence": 0.9964000000000001,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:416c30c3117d4155b5555ba6",
+        "log-row:b57b88d50c1277624fd9685a",
+        "log-row:447793fb74ba3c71ddcb779c"
+      ],
+      "selected_observation_id": "log-row:447793fb74ba3c71ddcb779c",
+      "text_variants": [
+        "喷火龙使出了\n气色球！",
+        "喷火龙使出了\n气象球！"
+      ],
+      "index": 11,
+      "partial": false,
+      "inspection_timestamp": 403.0183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000806.png",
+        "frame_sha256": "12fe3e4125fdc85bc3dac564007958ccb79b6da177bfa7eee4653fcc2e49fe2a",
+        "box": [
+          200,
+          116,
+          1111,
+          197
+        ],
+        "selected_observation_id": "log-row:447793fb74ba3c71ddcb779c",
+        "all_observation_ids": [
+          "log-row:416c30c3117d4155b5555ba6",
+          "log-row:b57b88d50c1277624fd9685a",
+          "log-row:447793fb74ba3c71ddcb779c"
+        ]
+      },
+      "extraction_index": 11,
+      "reference_log_order": 11
+    },
+    {
+      "entry_id": "log-entry:85bc0bd94a90c4d8573a326d",
+      "turn": 1,
+      "log_order": 12,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#403.518333",
+      "raw_text": "铝钢桥龙\nHP 100% → 13%",
+      "ocr_confidence": 0.9977058823529411,
+      "color": "red",
+      "observation_ids": [
+        "log-row:a96e1c78221b9547e8ff36ef",
+        "log-row:f5c4d05ce998254ffab5f827"
+      ],
+      "selected_observation_id": "log-row:a96e1c78221b9547e8ff36ef",
+      "text_variants": [
+        "铝钢桥龙\nHP 100% → 13%"
+      ],
+      "index": 12,
+      "partial": false,
+      "inspection_timestamp": 403.5183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000807.png",
+        "frame_sha256": "5947dc511beb6e8b5c10917cf3707cbac1b4530a3507b59183cf287e708a918f",
+        "box": [
+          200,
+          367,
+          1111,
+          447
+        ],
+        "selected_observation_id": "log-row:a96e1c78221b9547e8ff36ef",
+        "all_observation_ids": [
+          "log-row:a96e1c78221b9547e8ff36ef",
+          "log-row:f5c4d05ce998254ffab5f827"
+        ]
+      },
+      "extraction_index": 12,
+      "reference_log_order": 12
+    },
+    {
+      "entry_id": "log-entry:6d597e7be42ea47b85fb3f09",
+      "turn": 1,
+      "log_order": 13,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#403.518333",
+      "raw_text": "铝钢桥龙的\n持久力",
+      "ocr_confidence": 1.0,
+      "color": "red",
+      "observation_ids": [
+        "log-row:6585e5f665ff623b7a7ad26f",
+        "log-row:5c43acb21f49ff395f7d94b0"
+      ],
+      "selected_observation_id": "log-row:6585e5f665ff623b7a7ad26f",
+      "text_variants": [
+        "铝钢桥龙的\n持久力"
+      ],
+      "index": 13,
+      "partial": false,
+      "inspection_timestamp": 403.5183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000807.png",
+        "frame_sha256": "5947dc511beb6e8b5c10917cf3707cbac1b4530a3507b59183cf287e708a918f",
+        "box": [
+          200,
+          447,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:6585e5f665ff623b7a7ad26f",
+        "all_observation_ids": [
+          "log-row:6585e5f665ff623b7a7ad26f",
+          "log-row:5c43acb21f49ff395f7d94b0"
+        ]
+      },
+      "extraction_index": 13,
+      "reference_log_order": 13
+    },
+    {
+      "entry_id": "log-entry:41df0652bfd7656b2e500a41",
+      "turn": 1,
+      "log_order": 14,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#403.018333",
+      "raw_text": "对手的铝钢桥龙的\n防御提高了！",
+      "ocr_confidence": 0.9875714285714287,
+      "color": null,
+      "observation_ids": [
+        "log-row:a389f1665339a84da218fba9"
+      ],
+      "selected_observation_id": "log-row:a389f1665339a84da218fba9",
+      "text_variants": [
+        "对手的铝钢桥龙的\n防御提高了！"
+      ],
+      "index": 14,
+      "partial": false,
+      "inspection_timestamp": 403.0183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000806.png",
+        "frame_sha256": "12fe3e4125fdc85bc3dac564007958ccb79b6da177bfa7eee4653fcc2e49fe2a",
+        "box": [
+          200,
+          357,
+          1111,
+          438
+        ],
+        "selected_observation_id": "log-row:a389f1665339a84da218fba9",
+        "all_observation_ids": [
+          "log-row:a389f1665339a84da218fba9"
+        ]
+      },
+      "extraction_index": 14,
+      "reference_log_order": 14
+    },
+    {
+      "entry_id": "log-entry:1c692b1ffe0856341688d7b0",
+      "turn": 1,
+      "log_order": 15,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#403.018333",
+      "raw_text": "对手的铝钢桥龙使出了\n大声咆哮！",
+      "ocr_confidence": 0.9953333333333333,
+      "color": "red",
+      "observation_ids": [
+        "log-row:faefd55b28c77fd4280aab89"
+      ],
+      "selected_observation_id": "log-row:faefd55b28c77fd4280aab89",
+      "text_variants": [
+        "对手的铝钢桥龙使出了\n大声咆哮！"
+      ],
+      "index": 15,
+      "partial": false,
+      "inspection_timestamp": 403.0183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000806.png",
+        "frame_sha256": "12fe3e4125fdc85bc3dac564007958ccb79b6da177bfa7eee4653fcc2e49fe2a",
+        "box": [
+          200,
+          438,
+          1111,
+          518
+        ],
+        "selected_observation_id": "log-row:faefd55b28c77fd4280aab89",
+        "all_observation_ids": [
+          "log-row:faefd55b28c77fd4280aab89"
+        ]
+      },
+      "extraction_index": 15,
+      "reference_log_order": 15
+    },
+    {
+      "entry_id": "reference-row:log-row:a71eab02f7028cb8d76c081a",
+      "turn": 1,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#402.018333",
+      "raw_text": "喷火龙\nHP 184 → 164",
+      "inspection_timestamp": 402.0183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000804.png",
+        "frame_sha256": "71b71b5ed06e708b2c2a11925a73266c2afc191e1632b30a12b17605436fb067",
+        "box": [
+          200,
+          49,
+          1111,
+          119
+        ],
+        "selected_observation_id": "log-row:a71eab02f7028cb8d76c081a",
+        "all_observation_ids": [
+          "log-row:a71eab02f7028cb8d76c081a"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 395
+      },
+      "index": 16,
+      "reference_log_order": 16
+    },
+    {
+      "entry_id": "reference-row:log-row:494a676f2c1e881e21b37e78",
+      "turn": 1,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#402.018333",
+      "raw_text": "妙蛙花\nHP 156 → 129",
+      "inspection_timestamp": 402.0183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000804.png",
+        "frame_sha256": "71b71b5ed06e708b2c2a11925a73266c2afc191e1632b30a12b17605436fb067",
+        "box": [
+          200,
+          119,
+          1111,
+          199
+        ],
+        "selected_observation_id": "log-row:494a676f2c1e881e21b37e78",
+        "all_observation_ids": [
+          "log-row:494a676f2c1e881e21b37e78"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 395
+      },
+      "index": 17,
+      "reference_log_order": 17
+    },
+    {
+      "entry_id": "reference-row:log-row:3a3bb7e132bb56f411f45d83",
+      "turn": 1,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#402.018333",
+      "raw_text": "喷火龙和妙蛙花的\n特攻降低了！",
+      "inspection_timestamp": 402.0183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000804.png",
+        "frame_sha256": "71b71b5ed06e708b2c2a11925a73266c2afc191e1632b30a12b17605436fb067",
+        "box": [
+          200,
+          199,
+          1111,
+          280
+        ],
+        "selected_observation_id": "log-row:3a3bb7e132bb56f411f45d83",
+        "all_observation_ids": [
+          "log-row:3a3bb7e132bb56f411f45d83"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 395
+      },
+      "index": 18,
+      "reference_log_order": 18
+    },
+    {
+      "entry_id": "reference-row:log-row:f4493338fac627949201d98c",
+      "turn": 1,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#402.018333",
+      "raw_text": "对手的大嘴鸥\n正在呼呼大睡。",
+      "inspection_timestamp": 402.0183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000804.png",
+        "frame_sha256": "71b71b5ed06e708b2c2a11925a73266c2afc191e1632b30a12b17605436fb067",
+        "box": [
+          200,
+          280,
+          1111,
+          360
+        ],
+        "selected_observation_id": "log-row:f4493338fac627949201d98c",
+        "all_observation_ids": [
+          "log-row:f4493338fac627949201d98c"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 395
+      },
+      "index": 19,
+      "reference_log_order": 19
+    },
+    {
+      "entry_id": "reference-row:log-row:0f52bc526be45173854c7b68",
+      "turn": 1,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#402.018333",
+      "raw_text": "铝钢桥龙的\n吃剩的东西",
+      "inspection_timestamp": 402.0183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000804.png",
+        "frame_sha256": "71b71b5ed06e708b2c2a11925a73266c2afc191e1632b30a12b17605436fb067",
+        "box": [
+          200,
+          360,
+          1111,
+          440
+        ],
+        "selected_observation_id": "log-row:0f52bc526be45173854c7b68",
+        "all_observation_ids": [
+          "log-row:0f52bc526be45173854c7b68"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 395
+      },
+      "index": 20,
+      "reference_log_order": 20
+    },
+    {
+      "entry_id": "reference-row:log-row:3c7db3db363a7f3c584d78e3",
+      "turn": 1,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#402.018333",
+      "raw_text": "铝钢桥龙\nHP 13% → 19%",
+      "inspection_timestamp": 402.0183333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000804.png",
+        "frame_sha256": "71b71b5ed06e708b2c2a11925a73266c2afc191e1632b30a12b17605436fb067",
+        "box": [
+          200,
+          440,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:3c7db3db363a7f3c584d78e3",
+        "all_observation_ids": [
+          "log-row:3c7db3db363a7f3c584d78e3"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 395
+      },
+      "index": 21,
+      "reference_log_order": 21
+    },
+    {
+      "entry_id": "log-entry:8e4dbb528a0985b2db172cfc",
+      "turn": 2,
+      "log_order": 1,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#401.001667",
+      "raw_text": "对手的铝钢桥龙使出了\n守住!",
+      "ocr_confidence": 0.9822307692307692,
+      "color": "red",
+      "observation_ids": [
+        "log-row:e713a86a3b5da4144f5a53fc",
+        "log-row:25c2075c4da433503fe5a2bf"
+      ],
+      "selected_observation_id": "log-row:e713a86a3b5da4144f5a53fc",
+      "text_variants": [
+        "对手的铝钢桥龙使出了\n守住!"
+      ],
+      "index": 22,
+      "partial": false,
+      "inspection_timestamp": 401.00166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000802.png",
+        "frame_sha256": "e726ca184d8561fcedb4979beeb33588d8137474c134421f9b9d32c2dbac2b89",
+        "box": [
+          200,
+          49,
+          1111,
+          161
+        ],
+        "selected_observation_id": "log-row:e713a86a3b5da4144f5a53fc",
+        "all_observation_ids": [
+          "log-row:e713a86a3b5da4144f5a53fc",
+          "log-row:25c2075c4da433503fe5a2bf"
+        ]
+      },
+      "extraction_index": 16,
+      "reference_log_order": 1
+    },
+    {
+      "entry_id": "log-entry:30ac9ceb50ba1ea8d8de53b6",
+      "turn": 2,
+      "log_order": 2,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#401.501667",
+      "raw_text": "对手的铝钢桥龙\n摆出了防守的架势！",
+      "ocr_confidence": 0.9994375,
+      "color": null,
+      "observation_ids": [
+        "log-row:6ffe1b6439b27dbe62a15f4c",
+        "log-row:2c7824c185db648ed135209f"
+      ],
+      "selected_observation_id": "log-row:2c7824c185db648ed135209f",
+      "text_variants": [
+        "对手的铝钢桥龙\n摆出了防守的架势！"
+      ],
+      "index": 23,
+      "partial": false,
+      "inspection_timestamp": 401.50166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000803.png",
+        "frame_sha256": "a4cd2489740f2c69bd2d516b904aedb7872892efd09d173722debeab761ec2f4",
+        "box": [
+          200,
+          140,
+          1111,
+          221
+        ],
+        "selected_observation_id": "log-row:2c7824c185db648ed135209f",
+        "all_observation_ids": [
+          "log-row:6ffe1b6439b27dbe62a15f4c",
+          "log-row:2c7824c185db648ed135209f"
+        ]
+      },
+      "extraction_index": 17,
+      "reference_log_order": 2
+    },
+    {
+      "entry_id": "log-entry:005a0139f6cfcbaf3f9ce6e9",
+      "turn": 2,
+      "log_order": 3,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#401.001667",
+      "raw_text": "妙蛙花使出了\n污泥炸弹！",
+      "ocr_confidence": 0.9962727272727272,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:a75ec3cb27aadec5a3e6a082",
+        "log-row:ea59ccb242e5d31d2bfa28ef",
+        "log-row:aebf39eed03744e2a62470f8"
+      ],
+      "selected_observation_id": "log-row:a75ec3cb27aadec5a3e6a082",
+      "text_variants": [
+        "妙蛙花使出了\n污泥炸弹！"
+      ],
+      "index": 24,
+      "partial": false,
+      "inspection_timestamp": 401.00166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000802.png",
+        "frame_sha256": "e726ca184d8561fcedb4979beeb33588d8137474c134421f9b9d32c2dbac2b89",
+        "box": [
+          200,
+          241,
+          1111,
+          321
+        ],
+        "selected_observation_id": "log-row:a75ec3cb27aadec5a3e6a082",
+        "all_observation_ids": [
+          "log-row:a75ec3cb27aadec5a3e6a082",
+          "log-row:ea59ccb242e5d31d2bfa28ef",
+          "log-row:aebf39eed03744e2a62470f8"
+        ]
+      },
+      "extraction_index": 18,
+      "reference_log_order": 3
+    },
+    {
+      "entry_id": "log-entry:e83e29c0e4df0cb8221467b6",
+      "turn": 2,
+      "log_order": 4,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#400.000000",
+      "raw_text": "大嘴鸥\nHP 100% → 68%",
+      "ocr_confidence": 0.97725,
+      "color": "red",
+      "observation_ids": [
+        "log-row:6e71df0d23961ce4690dc7f9",
+        "log-row:5edbbd4329ef6792d1e3c6d7",
+        "log-row:a9f80ab2fff4c0348fd94ff7",
+        "log-row:2433440162e44bb45e1e8ebf"
+      ],
+      "selected_observation_id": "log-row:2433440162e44bb45e1e8ebf",
+      "text_variants": [
+        "大嘴鸥\nHP 100% → 68%"
+      ],
+      "index": 25,
+      "partial": false,
+      "inspection_timestamp": 400.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000800.png",
+        "frame_sha256": "95cb171ae58d10221745c1dccf439e45e98d05ea350401f0cb9227db78cf2912",
+        "box": [
+          200,
+          49,
+          1111,
+          119
+        ],
+        "selected_observation_id": "log-row:2433440162e44bb45e1e8ebf",
+        "all_observation_ids": [
+          "log-row:6e71df0d23961ce4690dc7f9",
+          "log-row:5edbbd4329ef6792d1e3c6d7",
+          "log-row:a9f80ab2fff4c0348fd94ff7",
+          "log-row:2433440162e44bb45e1e8ebf"
+        ]
+      },
+      "extraction_index": 19,
+      "reference_log_order": 4
+    },
+    {
+      "entry_id": "log-entry:712717790f94ec81670de51d",
+      "turn": 2,
+      "log_order": 5,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#401.001667",
+      "raw_text": "喷火龙使出了\n气象球！",
+      "ocr_confidence": 0.9955999999999999,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:6cae9c9a3e550dbf1a32a39c",
+        "log-row:cc2d6157444c2c9c41dd1ee1",
+        "log-row:3495d52141e1277436f3856f",
+        "log-row:9393fa0a084c16d999d278cb"
+      ],
+      "selected_observation_id": "log-row:6cae9c9a3e550dbf1a32a39c",
+      "text_variants": [
+        "喷火龙使出了\n气象球！"
+      ],
+      "index": 26,
+      "partial": false,
+      "inspection_timestamp": 401.00166666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000802.png",
+        "frame_sha256": "e726ca184d8561fcedb4979beeb33588d8137474c134421f9b9d32c2dbac2b89",
+        "box": [
+          200,
+          402,
+          1111,
+          482
+        ],
+        "selected_observation_id": "log-row:6cae9c9a3e550dbf1a32a39c",
+        "all_observation_ids": [
+          "log-row:6cae9c9a3e550dbf1a32a39c",
+          "log-row:cc2d6157444c2c9c41dd1ee1",
+          "log-row:3495d52141e1277436f3856f",
+          "log-row:9393fa0a084c16d999d278cb"
+        ]
+      },
+      "extraction_index": 20,
+      "reference_log_order": 5
+    },
+    {
+      "entry_id": "log-entry:119979070f330defa4f21f29",
+      "turn": 2,
+      "log_order": 6,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#400.500000",
+      "raw_text": "对手的铝钢桥龙\n在攻击中守护住了自己！",
+      "ocr_confidence": 0.9859444444444444,
+      "color": null,
+      "observation_ids": [
+        "log-row:51428b3e8c89b3b7001f86b7",
+        "log-row:1e050a0b317568c74ed090f7",
+        "log-row:76a492b0137b7edf3eda32d5",
+        "log-row:419c9f7d65c0a1b98ec66a0d"
+      ],
+      "selected_observation_id": "log-row:76a492b0137b7edf3eda32d5",
+      "text_variants": [
+        "对手的铝钢桥龙",
+        "对手的铝钢桥龙\n在攻击中守护住了自己！"
+      ],
+      "index": 27,
+      "partial": false,
+      "inspection_timestamp": 400.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000801.png",
+        "frame_sha256": "606691acd71ef33eb105b5d8f283c22bdc55629edb2e9cc38bb60ef306a6df0a",
+        "box": [
+          200,
+          301,
+          1111,
+          382
+        ],
+        "selected_observation_id": "log-row:76a492b0137b7edf3eda32d5",
+        "all_observation_ids": [
+          "log-row:51428b3e8c89b3b7001f86b7",
+          "log-row:1e050a0b317568c74ed090f7",
+          "log-row:76a492b0137b7edf3eda32d5",
+          "log-row:419c9f7d65c0a1b98ec66a0d"
+        ]
+      },
+      "extraction_index": 21,
+      "reference_log_order": 6
+    },
+    {
+      "entry_id": "log-entry:e7485554bd6067835b7d3ba4",
+      "turn": 2,
+      "log_order": 7,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#400.000000",
+      "raw_text": "对手的大嘴鸥\n正在呼呼大睡。",
+      "ocr_confidence": 1.0,
+      "color": null,
+      "observation_ids": [
+        "log-row:be29786d280475b7028b63fd",
+        "log-row:d576e1f884d6400015d5fe14"
+      ],
+      "selected_observation_id": "log-row:d576e1f884d6400015d5fe14",
+      "text_variants": [
+        "对手的大嘴鸥\n正在呼呼大睡。"
+      ],
+      "index": 28,
+      "partial": false,
+      "inspection_timestamp": 400.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000800.png",
+        "frame_sha256": "95cb171ae58d10221745c1dccf439e45e98d05ea350401f0cb9227db78cf2912",
+        "box": [
+          200,
+          280,
+          1111,
+          360
+        ],
+        "selected_observation_id": "log-row:d576e1f884d6400015d5fe14",
+        "all_observation_ids": [
+          "log-row:be29786d280475b7028b63fd",
+          "log-row:d576e1f884d6400015d5fe14"
+        ]
+      },
+      "extraction_index": 22,
+      "reference_log_order": 7
+    },
+    {
+      "entry_id": "log-entry:e4b50d1ce9e5533a391cb905",
+      "turn": 2,
+      "log_order": 8,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#400.000000",
+      "raw_text": "铝钢桥龙的\n吃剩的东西",
+      "ocr_confidence": 1.0,
+      "color": "red",
+      "observation_ids": [
+        "log-row:4b708c3b76c0130774167eb0",
+        "log-row:32ec538b7107d3d5fdfe9279"
+      ],
+      "selected_observation_id": "log-row:32ec538b7107d3d5fdfe9279",
+      "text_variants": [
+        "铝钢桥龙的\n吃剩的东西"
+      ],
+      "index": 29,
+      "partial": false,
+      "inspection_timestamp": 400.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000800.png",
+        "frame_sha256": "95cb171ae58d10221745c1dccf439e45e98d05ea350401f0cb9227db78cf2912",
+        "box": [
+          200,
+          360,
+          1111,
+          440
+        ],
+        "selected_observation_id": "log-row:32ec538b7107d3d5fdfe9279",
+        "all_observation_ids": [
+          "log-row:4b708c3b76c0130774167eb0",
+          "log-row:32ec538b7107d3d5fdfe9279"
+        ]
+      },
+      "extraction_index": 23,
+      "reference_log_order": 8
+    },
+    {
+      "entry_id": "log-entry:a3a9c59c38f979ccf175d6e6",
+      "turn": 2,
+      "log_order": 9,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#400.000000",
+      "raw_text": "铝钢桥龙\nHP 19% → 25%",
+      "ocr_confidence": 0.9955,
+      "color": "red",
+      "observation_ids": [
+        "log-row:ade849bc27ee08fac79e9ded"
+      ],
+      "selected_observation_id": "log-row:ade849bc27ee08fac79e9ded",
+      "text_variants": [
+        "铝钢桥龙\nHP 19% → 25%"
+      ],
+      "index": 30,
+      "partial": false,
+      "inspection_timestamp": 400.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000800.png",
+        "frame_sha256": "95cb171ae58d10221745c1dccf439e45e98d05ea350401f0cb9227db78cf2912",
+        "box": [
+          200,
+          440,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:ade849bc27ee08fac79e9ded",
+        "all_observation_ids": [
+          "log-row:ade849bc27ee08fac79e9ded"
+        ]
+      },
+      "extraction_index": 24,
+      "reference_log_order": 9
+    },
+    {
+      "entry_id": "log-entry:4d278015f97d7772ae4db937",
+      "turn": 3,
+      "log_order": 1,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#399.500000",
+      "raw_text": "MasterKays换下了\n铝钢桥龙！",
+      "ocr_confidence": 0.9905555555555554,
+      "color": null,
+      "observation_ids": [
+        "log-row:1feab676c2bc064b413c65da",
+        "log-row:77703daa9b5d86193a3c5ae1"
+      ],
+      "selected_observation_id": "log-row:77703daa9b5d86193a3c5ae1",
+      "text_variants": [
+        "MasterKays换下了\n铝钢桥龙！"
+      ],
+      "index": 31,
+      "partial": false,
+      "inspection_timestamp": 399.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000799.png",
+        "frame_sha256": "91e54920b84de753aa383bb88a94bd82999a7aace151804380978ff5c1f1bdac",
+        "box": [
+          200,
+          49,
+          1111,
+          140
+        ],
+        "selected_observation_id": "log-row:77703daa9b5d86193a3c5ae1",
+        "all_observation_ids": [
+          "log-row:1feab676c2bc064b413c65da",
+          "log-row:77703daa9b5d86193a3c5ae1"
+        ]
+      },
+      "extraction_index": 25,
+      "reference_log_order": 1
+    },
+    {
+      "entry_id": "log-entry:1c4e7823dd5e06caeb367b8c",
+      "turn": 3,
+      "log_order": 2,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#399.500000",
+      "raw_text": "MasterKays\n派出了烈咬陆鲨！",
+      "ocr_confidence": 0.9977777777777779,
+      "color": null,
+      "observation_ids": [
+        "log-row:528ca84361d7543599c6f7f8",
+        "log-row:e835f7dbdb0e3e24e70d2869"
+      ],
+      "selected_observation_id": "log-row:e835f7dbdb0e3e24e70d2869",
+      "text_variants": [
+        "MasterKays\n派出了烈咬陆鲨！"
+      ],
+      "index": 32,
+      "partial": false,
+      "inspection_timestamp": 399.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000799.png",
+        "frame_sha256": "91e54920b84de753aa383bb88a94bd82999a7aace151804380978ff5c1f1bdac",
+        "box": [
+          200,
+          140,
+          1111,
+          221
+        ],
+        "selected_observation_id": "log-row:e835f7dbdb0e3e24e70d2869",
+        "all_observation_ids": [
+          "log-row:528ca84361d7543599c6f7f8",
+          "log-row:e835f7dbdb0e3e24e70d2869"
+        ]
+      },
+      "extraction_index": 26,
+      "reference_log_order": 2
+    },
+    {
+      "entry_id": "log-entry:fa7292100445ea72f4a18a02",
+      "turn": 3,
+      "log_order": 3,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#399.000000",
+      "raw_text": "妙蛙花使出了\n污泥炸弹！",
+      "ocr_confidence": 0.9939999999999999,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:69493bc00914e8c5fe75ce1a",
+        "log-row:827f1923179db3d319ce8398",
+        "log-row:af74b66c1497a314ccd65465"
+      ],
+      "selected_observation_id": "log-row:69493bc00914e8c5fe75ce1a",
+      "text_variants": [
+        "妙蛙花使出了\n污泥炸弹！",
+        "污泥炸弹！"
+      ],
+      "index": 33,
+      "partial": false,
+      "inspection_timestamp": 399.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000798.png",
+        "frame_sha256": "cf7c2890ae1fa328972c37553e5a48c779c01e3fb195c3db6be6af8f45a90c63",
+        "box": [
+          200,
+          228,
+          1111,
+          309
+        ],
+        "selected_observation_id": "log-row:69493bc00914e8c5fe75ce1a",
+        "all_observation_ids": [
+          "log-row:69493bc00914e8c5fe75ce1a",
+          "log-row:827f1923179db3d319ce8398",
+          "log-row:af74b66c1497a314ccd65465"
+        ]
+      },
+      "extraction_index": 27,
+      "reference_log_order": 3
+    },
+    {
+      "entry_id": "log-entry:d00f213a050da195fb16f8c1",
+      "turn": 3,
+      "log_order": 4,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#399.500000",
+      "raw_text": "大嘴鸥\nHP 68% → 37%",
+      "ocr_confidence": 0.9968,
+      "color": "red",
+      "observation_ids": [
+        "log-row:85612bedaaeff7537d55355e",
+        "log-row:dfc4c9fc4e1549183a75116f",
+        "log-row:3aaa6a1116e759db51400dd3"
+      ],
+      "selected_observation_id": "log-row:dfc4c9fc4e1549183a75116f",
+      "text_variants": [
+        "大嘴鸥\nHP 68% → 37%"
+      ],
+      "index": 34,
+      "partial": false,
+      "inspection_timestamp": 399.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000799.png",
+        "frame_sha256": "91e54920b84de753aa383bb88a94bd82999a7aace151804380978ff5c1f1bdac",
+        "box": [
+          200,
+          301,
+          1111,
+          382
+        ],
+        "selected_observation_id": "log-row:dfc4c9fc4e1549183a75116f",
+        "all_observation_ids": [
+          "log-row:85612bedaaeff7537d55355e",
+          "log-row:dfc4c9fc4e1549183a75116f",
+          "log-row:3aaa6a1116e759db51400dd3"
+        ]
+      },
+      "extraction_index": 28,
+      "reference_log_order": 4
+    },
+    {
+      "entry_id": "log-entry:ca697987e84efcc3b5615c38",
+      "turn": 3,
+      "log_order": 5,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#399.000000",
+      "raw_text": "大嘴鸥的\n文柚果",
+      "ocr_confidence": 0.9995714285714286,
+      "color": "red",
+      "observation_ids": [
+        "log-row:6e0186598a03339c690450f7",
+        "log-row:380e86bc9ad0af615521c1c0",
+        "log-row:29ad861a62ff65e11d015f44"
+      ],
+      "selected_observation_id": "log-row:6e0186598a03339c690450f7",
+      "text_variants": [
+        "大嘴鸥的\n文柚果"
+      ],
+      "index": 35,
+      "partial": false,
+      "inspection_timestamp": 399.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000798.png",
+        "frame_sha256": "cf7c2890ae1fa328972c37553e5a48c779c01e3fb195c3db6be6af8f45a90c63",
+        "box": [
+          200,
+          389,
+          1111,
+          470
+        ],
+        "selected_observation_id": "log-row:6e0186598a03339c690450f7",
+        "all_observation_ids": [
+          "log-row:6e0186598a03339c690450f7",
+          "log-row:380e86bc9ad0af615521c1c0",
+          "log-row:29ad861a62ff65e11d015f44"
+        ]
+      },
+      "extraction_index": 29,
+      "reference_log_order": 5
+    },
+    {
+      "entry_id": "log-entry:2a248fb18548831fa5e673fe",
+      "turn": 3,
+      "log_order": 6,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#398.500000",
+      "raw_text": "大嘴鸥\nHP 37% → 62%",
+      "ocr_confidence": 0.9912,
+      "color": "red",
+      "observation_ids": [
+        "log-row:5938dfdd435fce8b4876bb3b",
+        "log-row:df9cced2843bedc912a8913e",
+        "log-row:afe135980ae041e6ee05da38",
+        "log-row:f1f2621db3b28ede05bedd9f"
+      ],
+      "selected_observation_id": "log-row:afe135980ae041e6ee05da38",
+      "text_variants": [
+        "HP 37% → 62%",
+        "大嘴鸥\nHP 37% → 62%",
+        "大嘴鸥\nHP.37% → 62%"
+      ],
+      "index": 36,
+      "partial": false,
+      "inspection_timestamp": 398.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000797.png",
+        "frame_sha256": "8080943e329c4e172b366f94ded6d7dbe7dee16a11aeef8c0eb729042c84128c",
+        "box": [
+          200,
+          268,
+          1111,
+          348
+        ],
+        "selected_observation_id": "log-row:afe135980ae041e6ee05da38",
+        "all_observation_ids": [
+          "log-row:5938dfdd435fce8b4876bb3b",
+          "log-row:df9cced2843bedc912a8913e",
+          "log-row:afe135980ae041e6ee05da38",
+          "log-row:f1f2621db3b28ede05bedd9f"
+        ]
+      },
+      "extraction_index": 30,
+      "reference_log_order": 6
+    },
+    {
+      "entry_id": "log-entry:60ea0942f1d52db1fc6bf64b",
+      "turn": 3,
+      "log_order": 7,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#398.500000",
+      "raw_text": "喷火龙使出了\n气象球！",
+      "ocr_confidence": 0.9968,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:6e319e9cedf61d70bf985c97",
+        "log-row:fe44d8f6a3088f12108c93c7",
+        "log-row:6412d299e5848c4ffd40793e"
+      ],
+      "selected_observation_id": "log-row:6e319e9cedf61d70bf985c97",
+      "text_variants": [
+        "0\n喷火龙使出了\n气象球！",
+        "喷火龙使出了\n气象球！"
+      ],
+      "index": 37,
+      "partial": false,
+      "inspection_timestamp": 398.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000797.png",
+        "frame_sha256": "8080943e329c4e172b366f94ded6d7dbe7dee16a11aeef8c0eb729042c84128c",
+        "box": [
+          200,
+          348,
+          1111,
+          429
+        ],
+        "selected_observation_id": "log-row:6e319e9cedf61d70bf985c97",
+        "all_observation_ids": [
+          "log-row:6e319e9cedf61d70bf985c97",
+          "log-row:fe44d8f6a3088f12108c93c7",
+          "log-row:6412d299e5848c4ffd40793e"
+        ]
+      },
+      "extraction_index": 31,
+      "reference_log_order": 7
+    },
+    {
+      "entry_id": "log-entry:a6485943b2a21c63baa1fc28",
+      "turn": 3,
+      "log_order": 8,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#398.500000",
+      "raw_text": "烈咬陆鲨\nHP 100% → 67%",
+      "ocr_confidence": 0.9760588235294118,
+      "color": "red",
+      "observation_ids": [
+        "log-row:8c4da5ccbb99e6aded9c8b9d",
+        "log-row:3974ec855e30dbc8932542c1",
+        "log-row:edabdc56550a13ba832bddc9"
+      ],
+      "selected_observation_id": "log-row:8c4da5ccbb99e6aded9c8b9d",
+      "text_variants": [
+        "烈咬陆鲨\nHP 100% → 67%"
+      ],
+      "index": 38,
+      "partial": false,
+      "inspection_timestamp": 398.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000797.png",
+        "frame_sha256": "8080943e329c4e172b366f94ded6d7dbe7dee16a11aeef8c0eb729042c84128c",
+        "box": [
+          200,
+          429,
+          1111,
+          509
+        ],
+        "selected_observation_id": "log-row:8c4da5ccbb99e6aded9c8b9d",
+        "all_observation_ids": [
+          "log-row:8c4da5ccbb99e6aded9c8b9d",
+          "log-row:3974ec855e30dbc8932542c1",
+          "log-row:edabdc56550a13ba832bddc9"
+        ]
+      },
+      "extraction_index": 32,
+      "reference_log_order": 8
+    },
+    {
+      "entry_id": "log-entry:72b557cabc6781a3dcad5af0",
+      "turn": 3,
+      "log_order": 9,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#397.500000",
+      "raw_text": "对对手的烈咬陆鲨\n效果不好。",
+      "ocr_confidence": 1.0,
+      "color": null,
+      "observation_ids": [
+        "log-row:f34131fe3dcae20918eb3e12",
+        "log-row:ffe59f44ae970e6e6b66c64a"
+      ],
+      "selected_observation_id": "log-row:ffe59f44ae970e6e6b66c64a",
+      "text_variants": [
+        "对对手的烈咬陆鲨\n效果不好。"
+      ],
+      "index": 39,
+      "partial": false,
+      "inspection_timestamp": 397.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000795.png",
+        "frame_sha256": "e7be8c6f0abe486b487ebf08fa076e42fde4646ef8b31b62d0851e60e68fefc9",
+        "box": [
+          200,
+          199,
+          1111,
+          280
+        ],
+        "selected_observation_id": "log-row:ffe59f44ae970e6e6b66c64a",
+        "all_observation_ids": [
+          "log-row:f34131fe3dcae20918eb3e12",
+          "log-row:ffe59f44ae970e6e6b66c64a"
+        ]
+      },
+      "extraction_index": 33,
+      "reference_log_order": 9
+    },
+    {
+      "entry_id": "log-entry:908f7bfa7d4413ef78a1e5c2",
+      "turn": 3,
+      "log_order": 10,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#398.000000",
+      "raw_text": "对手的大嘴鸥\n醒过来了！",
+      "ocr_confidence": 0.994090909090909,
+      "color": null,
+      "observation_ids": [
+        "log-row:9f888d03fea653c0b2eb0ae2",
+        "log-row:9c3cc218079a806753a4e88f"
+      ],
+      "selected_observation_id": "log-row:9f888d03fea653c0b2eb0ae2",
+      "text_variants": [
+        "对手的大嘴鸥\n醒过来了！"
+      ],
+      "index": 40,
+      "partial": false,
+      "inspection_timestamp": 398.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000796.png",
+        "frame_sha256": "756fc109eae0084d18109e231f2531f6f4ee54c6521598f74b7665b55652299f",
+        "box": [
+          200,
+          338,
+          1111,
+          419
+        ],
+        "selected_observation_id": "log-row:9f888d03fea653c0b2eb0ae2",
+        "all_observation_ids": [
+          "log-row:9f888d03fea653c0b2eb0ae2",
+          "log-row:9c3cc218079a806753a4e88f"
+        ]
+      },
+      "extraction_index": 34,
+      "reference_log_order": 10
+    },
+    {
+      "entry_id": "log-entry:7a3bc78e0fb572874520c56f",
+      "turn": 3,
+      "log_order": 11,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#397.500000",
+      "raw_text": "对手的大嘴鸥使出了\n顺风！",
+      "ocr_confidence": 0.98025,
+      "color": "red",
+      "observation_ids": [
+        "log-row:da7b17b5c013aaeda3a87769",
+        "log-row:22403f94fa855abc8bcece64"
+      ],
+      "selected_observation_id": "log-row:22403f94fa855abc8bcece64",
+      "text_variants": [
+        "对手的大嘴鸥使出了\n顺风！"
+      ],
+      "index": 41,
+      "partial": false,
+      "inspection_timestamp": 397.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000795.png",
+        "frame_sha256": "e7be8c6f0abe486b487ebf08fa076e42fde4646ef8b31b62d0851e60e68fefc9",
+        "box": [
+          200,
+          360,
+          1111,
+          440
+        ],
+        "selected_observation_id": "log-row:22403f94fa855abc8bcece64",
+        "all_observation_ids": [
+          "log-row:da7b17b5c013aaeda3a87769",
+          "log-row:22403f94fa855abc8bcece64"
+        ]
+      },
+      "extraction_index": 35,
+      "reference_log_order": 11
+    },
+    {
+      "entry_id": "log-entry:24490202db197b398404268b",
+      "turn": 3,
+      "log_order": 12,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#397.500000",
+      "raw_text": "从对手身后\n吹起了顺风！",
+      "ocr_confidence": 0.9989090909090909,
+      "color": null,
+      "observation_ids": [
+        "log-row:cd4fbfeb9ce916af4a035e46"
+      ],
+      "selected_observation_id": "log-row:cd4fbfeb9ce916af4a035e46",
+      "text_variants": [
+        "从对手身后\n吹起了顺风！"
+      ],
+      "index": 42,
+      "partial": false,
+      "inspection_timestamp": 397.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000795.png",
+        "frame_sha256": "e7be8c6f0abe486b487ebf08fa076e42fde4646ef8b31b62d0851e60e68fefc9",
+        "box": [
+          200,
+          440,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:cd4fbfeb9ce916af4a035e46",
+        "all_observation_ids": [
+          "log-row:cd4fbfeb9ce916af4a035e46"
+        ]
+      },
+      "extraction_index": 36,
+      "reference_log_order": 12
+    },
+    {
+      "entry_id": "log-entry:6aa2c01bca4c3fd4267446e0",
+      "turn": 4,
+      "log_order": 1,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#396.500000",
+      "raw_text": "喷火龙使出了\n守住!",
+      "ocr_confidence": 0.9736666666666667,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:8fe73a72fa9fc53c0489b5b3",
+        "log-row:20f397e96500fbc8ec6214ca"
+      ],
+      "selected_observation_id": "log-row:8fe73a72fa9fc53c0489b5b3",
+      "text_variants": [
+        "喷火龙使出了\n守住!"
+      ],
+      "index": 43,
+      "partial": false,
+      "inspection_timestamp": 396.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000793.png",
+        "frame_sha256": "4fc600da8a341e1b6e40684a37d205a67953aa6c289d773667e4b91262a5cbbc",
+        "box": [
+          200,
+          49,
+          1111,
+          143
+        ],
+        "selected_observation_id": "log-row:8fe73a72fa9fc53c0489b5b3",
+        "all_observation_ids": [
+          "log-row:8fe73a72fa9fc53c0489b5b3",
+          "log-row:20f397e96500fbc8ec6214ca"
+        ]
+      },
+      "extraction_index": 37,
+      "reference_log_order": 1
+    },
+    {
+      "entry_id": "log-entry:e6cf959c81f024997e2e0772",
+      "turn": 4,
+      "log_order": 2,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#397.000000",
+      "raw_text": "喷火龙\n摆出了防守的架势！",
+      "ocr_confidence": 0.999,
+      "color": null,
+      "observation_ids": [
+        "log-row:b4303ac840cf02c7914fd354",
+        "log-row:6acaea52588d9fae7f93fe3c",
+        "log-row:2fae4ee1da091da0e8a563b9"
+      ],
+      "selected_observation_id": "log-row:6acaea52588d9fae7f93fe3c",
+      "text_variants": [
+        "喷火龙\n摆出了防守的架势！",
+        "明八化\n摆出了防守的架势！"
+      ],
+      "index": 44,
+      "partial": false,
+      "inspection_timestamp": 397.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000794.png",
+        "frame_sha256": "005b21ccbeeeb030ade983301b0f8a5c0b208e611f64f1efb590f885bb7c67d6",
+        "box": [
+          200,
+          140,
+          1111,
+          221
+        ],
+        "selected_observation_id": "log-row:6acaea52588d9fae7f93fe3c",
+        "all_observation_ids": [
+          "log-row:b4303ac840cf02c7914fd354",
+          "log-row:6acaea52588d9fae7f93fe3c",
+          "log-row:2fae4ee1da091da0e8a563b9"
+        ]
+      },
+      "extraction_index": 38,
+      "reference_log_order": 2
+    },
+    {
+      "entry_id": "log-entry:71c67681b302b44409958618",
+      "turn": 4,
+      "log_order": 3,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#397.000000",
+      "raw_text": "对手的烈咬陆鲨使出了\n岩崩！",
+      "ocr_confidence": 0.9833076923076924,
+      "color": "red",
+      "observation_ids": [
+        "log-row:bad15a80c6de75a946622ae6",
+        "log-row:361e903a791173f594084b81",
+        "log-row:0f9516ce2bfc802b4c83ff8b"
+      ],
+      "selected_observation_id": "log-row:361e903a791173f594084b81",
+      "text_variants": [
+        "对手的烈咬陆鲨使出了\n岩崩！"
+      ],
+      "index": 45,
+      "partial": false,
+      "inspection_timestamp": 397.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000794.png",
+        "frame_sha256": "005b21ccbeeeb030ade983301b0f8a5c0b208e611f64f1efb590f885bb7c67d6",
+        "box": [
+          200,
+          221,
+          1111,
+          301
+        ],
+        "selected_observation_id": "log-row:361e903a791173f594084b81",
+        "all_observation_ids": [
+          "log-row:bad15a80c6de75a946622ae6",
+          "log-row:361e903a791173f594084b81",
+          "log-row:0f9516ce2bfc802b4c83ff8b"
+        ]
+      },
+      "extraction_index": 39,
+      "reference_log_order": 3
+    },
+    {
+      "entry_id": "log-entry:a6d8840dacd530d29c030b53",
+      "turn": 4,
+      "log_order": 4,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#396.500000",
+      "raw_text": "喷火龙\n在攻击中守护住了自己！",
+      "ocr_confidence": 0.9895714285714285,
+      "color": null,
+      "observation_ids": [
+        "log-row:acbf578d528aa18579008d2b",
+        "log-row:e28d5b912ae262fab6e830d4",
+        "log-row:8335e8e5115369998b9047ed"
+      ],
+      "selected_observation_id": "log-row:acbf578d528aa18579008d2b",
+      "text_variants": [
+        "喷火龙\n在攻击中守护住了自己！"
+      ],
+      "index": 46,
+      "partial": false,
+      "inspection_timestamp": 396.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000793.png",
+        "frame_sha256": "4fc600da8a341e1b6e40684a37d205a67953aa6c289d773667e4b91262a5cbbc",
+        "box": [
+          200,
+          304,
+          1111,
+          384
+        ],
+        "selected_observation_id": "log-row:acbf578d528aa18579008d2b",
+        "all_observation_ids": [
+          "log-row:acbf578d528aa18579008d2b",
+          "log-row:e28d5b912ae262fab6e830d4",
+          "log-row:8335e8e5115369998b9047ed"
+        ]
+      },
+      "extraction_index": 40,
+      "reference_log_order": 4
+    },
+    {
+      "entry_id": "log-entry:0a2a80d782f4a03cd0402c69",
+      "turn": 4,
+      "log_order": 5,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#396.500000",
+      "raw_text": "妙蛙花\nHP 129 → 84",
+      "ocr_confidence": 0.999,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:5f30b9286a70f5e41772b4bd",
+        "log-row:eebbbe83e47f74cb9a586c8f",
+        "log-row:78dc786f7645a9c5e9c13c55",
+        "log-row:111cac7efc5191e65672ce45"
+      ],
+      "selected_observation_id": "log-row:5f30b9286a70f5e41772b4bd",
+      "text_variants": [
+        "妙蛙花\nHP 129 → 84"
+      ],
+      "index": 47,
+      "partial": false,
+      "inspection_timestamp": 396.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000793.png",
+        "frame_sha256": "4fc600da8a341e1b6e40684a37d205a67953aa6c289d773667e4b91262a5cbbc",
+        "box": [
+          200,
+          384,
+          1111,
+          465
+        ],
+        "selected_observation_id": "log-row:5f30b9286a70f5e41772b4bd",
+        "all_observation_ids": [
+          "log-row:5f30b9286a70f5e41772b4bd",
+          "log-row:eebbbe83e47f74cb9a586c8f",
+          "log-row:78dc786f7645a9c5e9c13c55",
+          "log-row:111cac7efc5191e65672ce45"
+        ]
+      },
+      "extraction_index": 41,
+      "reference_log_order": 5
+    },
+    {
+      "entry_id": "log-entry:7042ce7496e36112c573a6ad",
+      "turn": 4,
+      "log_order": 6,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#396.000000",
+      "raw_text": "妙蛙花使出了\n催眠粉！",
+      "ocr_confidence": 0.9922000000000001,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:6901eb60c7b3ebe4fb704870",
+        "log-row:07d47c6ad49103b5426f0d28",
+        "log-row:b2ccd0e0fa413195e1976710",
+        "log-row:02da485f5d7d98eec53b6c80"
+      ],
+      "selected_observation_id": "log-row:b2ccd0e0fa413195e1976710",
+      "text_variants": [
+        "妙蛙花使出了\n催眠粉！"
+      ],
+      "index": 48,
+      "partial": false,
+      "inspection_timestamp": 396.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000792.png",
+        "frame_sha256": "f9b5f97752f8c1f09438785baa7153c6db53e94701a740e5cb2560c15b10ff6d",
+        "box": [
+          200,
+          350,
+          1111,
+          430
+        ],
+        "selected_observation_id": "log-row:b2ccd0e0fa413195e1976710",
+        "all_observation_ids": [
+          "log-row:6901eb60c7b3ebe4fb704870",
+          "log-row:07d47c6ad49103b5426f0d28",
+          "log-row:b2ccd0e0fa413195e1976710",
+          "log-row:02da485f5d7d98eec53b6c80"
+        ]
+      },
+      "extraction_index": 42,
+      "reference_log_order": 6
+    },
+    {
+      "entry_id": "log-entry:3369a36d9c57d67e9fe789ba",
+      "turn": 4,
+      "log_order": 7,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#394.500000",
+      "raw_text": "对手的烈咬陆鲨\n睡着了!",
+      "ocr_confidence": 0.9760909090909091,
+      "color": null,
+      "observation_ids": [
+        "log-row:33950815559cb529d38ffd94",
+        "log-row:5688432147375fe733f31244",
+        "log-row:9d5e9b429369ed38f1ed588f",
+        "log-row:910c472cc4f11ec49a933180"
+      ],
+      "selected_observation_id": "log-row:9d5e9b429369ed38f1ed588f",
+      "text_variants": [
+        "对手的烈咬陆鲨\n睡着了!"
+      ],
+      "index": 49,
+      "partial": false,
+      "inspection_timestamp": 394.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000789.png",
+        "frame_sha256": "df0b1605a8ad04cc56b6fb959c40bd23051df95bf839abe86c3cf4bc58e4b41a",
+        "box": [
+          200,
+          49,
+          1111,
+          119
+        ],
+        "selected_observation_id": "log-row:9d5e9b429369ed38f1ed588f",
+        "all_observation_ids": [
+          "log-row:33950815559cb529d38ffd94",
+          "log-row:5688432147375fe733f31244",
+          "log-row:9d5e9b429369ed38f1ed588f",
+          "log-row:910c472cc4f11ec49a933180"
+        ]
+      },
+      "extraction_index": 43,
+      "reference_log_order": 7
+    },
+    {
+      "entry_id": "log-entry:cbe91960ee03a3c59db545a5",
+      "turn": 4,
+      "log_order": 8,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#395.500000",
+      "raw_text": "对手的大嘴鸥使出了\n气象球！",
+      "ocr_confidence": 0.9978461538461538,
+      "color": "red",
+      "observation_ids": [
+        "log-row:afd8f0d53fa09baef7da5c78",
+        "log-row:9ffdc77afcba88b45e855ae6",
+        "log-row:5c31870371119765d2943150"
+      ],
+      "selected_observation_id": "log-row:afd8f0d53fa09baef7da5c78",
+      "text_variants": [
+        "对手的大嘴鸥使出了\n气象球！"
+      ],
+      "index": 50,
+      "partial": false,
+      "inspection_timestamp": 395.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000791.png",
+        "frame_sha256": "3db4553970d00f66d1239a334545e194f61e26c0b66a3a8d5d42803185254503",
+        "box": [
+          200,
+          326,
+          1111,
+          407
+        ],
+        "selected_observation_id": "log-row:afd8f0d53fa09baef7da5c78",
+        "all_observation_ids": [
+          "log-row:afd8f0d53fa09baef7da5c78",
+          "log-row:9ffdc77afcba88b45e855ae6",
+          "log-row:5c31870371119765d2943150"
+        ]
+      },
+      "extraction_index": 44,
+      "reference_log_order": 8
+    },
+    {
+      "entry_id": "log-entry:d94734bfae12b31ae6e020d6",
+      "turn": 4,
+      "log_order": 9,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#395.500000",
+      "raw_text": "妙蛙花\nHP 84 → 0",
+      "ocr_confidence": 0.9907499999999999,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:77599900f5cf3e761f013d3d",
+        "log-row:b3a0230a228774c3d908f77a",
+        "log-row:538d8b3915482fa54fa1be99"
+      ],
+      "selected_observation_id": "log-row:77599900f5cf3e761f013d3d",
+      "text_variants": [
+        "妙蛙花\nHP 84 → 0"
+      ],
+      "index": 51,
+      "partial": false,
+      "inspection_timestamp": 395.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000791.png",
+        "frame_sha256": "3db4553970d00f66d1239a334545e194f61e26c0b66a3a8d5d42803185254503",
+        "box": [
+          200,
+          407,
+          1111,
+          487
+        ],
+        "selected_observation_id": "log-row:77599900f5cf3e761f013d3d",
+        "all_observation_ids": [
+          "log-row:77599900f5cf3e761f013d3d",
+          "log-row:b3a0230a228774c3d908f77a",
+          "log-row:538d8b3915482fa54fa1be99"
+        ]
+      },
+      "extraction_index": 45,
+      "reference_log_order": 9
+    },
+    {
+      "entry_id": "log-entry:07c9d3ae77823fcc732cacaa",
+      "turn": 4,
+      "log_order": 10,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#395.000000",
+      "raw_text": "对妙蛙花\n效果绝佳！",
+      "ocr_confidence": 0.9802222222222221,
+      "color": null,
+      "observation_ids": [
+        "log-row:fa5fd91913f8196f43e5bbd7",
+        "log-row:1735578b080eda31248ec552"
+      ],
+      "selected_observation_id": "log-row:1735578b080eda31248ec552",
+      "text_variants": [
+        "对妙蛙花\n效果绝佳！"
+      ],
+      "index": 52,
+      "partial": false,
+      "inspection_timestamp": 395.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000790.png",
+        "frame_sha256": "ee88c41621120593e17a1c06c238970bed6ee02cdcda2e6769ae7dcc7bfed682",
+        "box": [
+          200,
+          280,
+          1111,
+          360
+        ],
+        "selected_observation_id": "log-row:1735578b080eda31248ec552",
+        "all_observation_ids": [
+          "log-row:fa5fd91913f8196f43e5bbd7",
+          "log-row:1735578b080eda31248ec552"
+        ]
+      },
+      "extraction_index": 46,
+      "reference_log_order": 10
+    },
+    {
+      "entry_id": "log-entry:7b1f3bf5aac7828118856df5",
+      "turn": 4,
+      "log_order": 11,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#395.000000",
+      "raw_text": "妙蛙花倒下了！",
+      "ocr_confidence": 0.9799999999999999,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:7ff923a0bb5cc5d53db2d4a9",
+        "log-row:cea75015c7f6f068d3d53308"
+      ],
+      "selected_observation_id": "log-row:cea75015c7f6f068d3d53308",
+      "text_variants": [
+        "妙蛙花倒下了！"
+      ],
+      "index": 53,
+      "partial": false,
+      "inspection_timestamp": 395.0,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000790.png",
+        "frame_sha256": "ee88c41621120593e17a1c06c238970bed6ee02cdcda2e6769ae7dcc7bfed682",
+        "box": [
+          200,
+          360,
+          1111,
+          440
+        ],
+        "selected_observation_id": "log-row:cea75015c7f6f068d3d53308",
+        "all_observation_ids": [
+          "log-row:7ff923a0bb5cc5d53db2d4a9",
+          "log-row:cea75015c7f6f068d3d53308"
+        ]
+      },
+      "extraction_index": 47,
+      "reference_log_order": 11
+    },
+    {
+      "entry_id": "log-entry:f93207c0cc4a30c9846361f4",
+      "turn": 4,
+      "log_order": 12,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#394.500000",
+      "raw_text": "上吧！铝钢桥龙！",
+      "ocr_confidence": 0.999,
+      "color": null,
+      "observation_ids": [
+        "log-row:c4f255f004f93379bc0f5387",
+        "log-row:202ae3d8905193a8d6e2871e"
+      ],
+      "selected_observation_id": "log-row:c4f255f004f93379bc0f5387",
+      "text_variants": [
+        "上吧！铝钢桥龙！"
+      ],
+      "index": 54,
+      "partial": false,
+      "inspection_timestamp": 394.5,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/000789.png",
+        "frame_sha256": "df0b1605a8ad04cc56b6fb959c40bd23051df95bf839abe86c3cf4bc58e4b41a",
+        "box": [
+          200,
+          440,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:c4f255f004f93379bc0f5387",
+        "all_observation_ids": [
+          "log-row:c4f255f004f93379bc0f5387",
+          "log-row:202ae3d8905193a8d6e2871e"
+        ]
+      },
+      "extraction_index": 48,
+      "reference_log_order": 12
+    },
+    {
+      "entry_id": "log-entry:45fdd6bcc6865da63e62c0be",
+      "turn": 5,
+      "log_order": 1,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#643.525000",
+      "raw_text": "MasterKays换下了\n大嘴鸥！",
+      "ocr_confidence": 0.9865882352941175,
+      "color": null,
+      "observation_ids": [
+        "log-row:5e4b5e79a1bb47a7f0d8c5a5",
+        "log-row:74f757dc36267c0d06a8f7aa"
+      ],
+      "selected_observation_id": "log-row:74f757dc36267c0d06a8f7aa",
+      "text_variants": [
+        "MasterKays换下了\n大嘴鸥！"
+      ],
+      "index": 55,
+      "partial": false,
+      "inspection_timestamp": 643.525,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001287.png",
+        "frame_sha256": "0ae87de34992afce14ae8f622d2463b22f8a7aaea0640330ea9c1a54af77771b",
+        "box": [
+          200,
+          49,
+          1111,
+          140
+        ],
+        "selected_observation_id": "log-row:74f757dc36267c0d06a8f7aa",
+        "all_observation_ids": [
+          "log-row:5e4b5e79a1bb47a7f0d8c5a5",
+          "log-row:74f757dc36267c0d06a8f7aa"
+        ]
+      },
+      "extraction_index": 49,
+      "reference_log_order": 1
+    },
+    {
+      "entry_id": "log-entry:c1a2f69db50ae93550c729d5",
+      "turn": 5,
+      "log_order": 2,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#643.525000",
+      "raw_text": "MasterKays\n派出了聪慧的铝钢桥龙！",
+      "ocr_confidence": 0.9984285714285713,
+      "color": null,
+      "observation_ids": [
+        "log-row:f3adb91d0a8af7050cc66d3f",
+        "log-row:30dd9ee6bf4288a2048a005b"
+      ],
+      "selected_observation_id": "log-row:30dd9ee6bf4288a2048a005b",
+      "text_variants": [
+        "MasterKays\n派出了聪慧的铝钢桥龙！"
+      ],
+      "index": 56,
+      "partial": false,
+      "inspection_timestamp": 643.525,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001287.png",
+        "frame_sha256": "0ae87de34992afce14ae8f622d2463b22f8a7aaea0640330ea9c1a54af77771b",
+        "box": [
+          200,
+          140,
+          1111,
+          221
+        ],
+        "selected_observation_id": "log-row:30dd9ee6bf4288a2048a005b",
+        "all_observation_ids": [
+          "log-row:f3adb91d0a8af7050cc66d3f",
+          "log-row:30dd9ee6bf4288a2048a005b"
+        ]
+      },
+      "extraction_index": 50,
+      "reference_log_order": 2
+    },
+    {
+      "entry_id": "log-entry:9a38238116481c92e1364c6b",
+      "turn": 5,
+      "log_order": 3,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#643.025000",
+      "raw_text": "喷火龙，\n回来！",
+      "ocr_confidence": 0.9445714285714286,
+      "color": null,
+      "observation_ids": [
+        "log-row:aaa88044d222059080f91960",
+        "log-row:0a2d333713268d4d10941718"
+      ],
+      "selected_observation_id": "log-row:aaa88044d222059080f91960",
+      "text_variants": [
+        "喷火龙，\n回来！"
+      ],
+      "index": 57,
+      "partial": false,
+      "inspection_timestamp": 643.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001286.png",
+        "frame_sha256": "918047fb89e58003ae255e7d875bfab5898dfecda8d06409024c0c6a36a8417c",
+        "box": [
+          200,
+          233,
+          1111,
+          313
+        ],
+        "selected_observation_id": "log-row:aaa88044d222059080f91960",
+        "all_observation_ids": [
+          "log-row:aaa88044d222059080f91960",
+          "log-row:0a2d333713268d4d10941718"
+        ]
+      },
+      "extraction_index": 51,
+      "reference_log_order": 3
+    },
+    {
+      "entry_id": "log-entry:a9ecb1c259407c4238cdfe4b",
+      "turn": 5,
+      "log_order": 4,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#642.025000",
+      "raw_text": "上吧！大嘴鸥！",
+      "ocr_confidence": 0.998,
+      "color": null,
+      "observation_ids": [
+        "log-row:cb795c494fcdcb438f71a98e",
+        "log-row:93b3c905f7e994bf0830a063",
+        "log-row:5056b7dc7a29b9e8595460ef"
+      ],
+      "selected_observation_id": "log-row:5056b7dc7a29b9e8595460ef",
+      "text_variants": [
+        "上吧！大嘴鸥！"
+      ],
+      "index": 58,
+      "partial": false,
+      "inspection_timestamp": 642.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001284.png",
+        "frame_sha256": "97e015b5dc8838bdd83f6c4a8b0abdad5d40f662d3e9774338e9931ac9afb9bd",
+        "box": [
+          200,
+          49,
+          1111,
+          130
+        ],
+        "selected_observation_id": "log-row:5056b7dc7a29b9e8595460ef",
+        "all_observation_ids": [
+          "log-row:cb795c494fcdcb438f71a98e",
+          "log-row:93b3c905f7e994bf0830a063",
+          "log-row:5056b7dc7a29b9e8595460ef"
+        ]
+      },
+      "extraction_index": 52,
+      "reference_log_order": 4
+    },
+    {
+      "entry_id": "log-entry:65f897a9fda2d13a27ec3a16",
+      "turn": 5,
+      "log_order": 5,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#643.025000",
+      "raw_text": "大嘴鸥的\n降雨",
+      "ocr_confidence": 1.0,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:cfbedfeba8bf8644210d65c2",
+        "log-row:26d5d7a35953ea6ca95b28a4",
+        "log-row:6efe0f7c030eab749bcc4d29"
+      ],
+      "selected_observation_id": "log-row:cfbedfeba8bf8644210d65c2",
+      "text_variants": [
+        "大嘴鸥的\n降雨"
+      ],
+      "index": 59,
+      "partial": false,
+      "inspection_timestamp": 643.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001286.png",
+        "frame_sha256": "918047fb89e58003ae255e7d875bfab5898dfecda8d06409024c0c6a36a8417c",
+        "box": [
+          200,
+          393,
+          1111,
+          474
+        ],
+        "selected_observation_id": "log-row:cfbedfeba8bf8644210d65c2",
+        "all_observation_ids": [
+          "log-row:cfbedfeba8bf8644210d65c2",
+          "log-row:26d5d7a35953ea6ca95b28a4",
+          "log-row:6efe0f7c030eab749bcc4d29"
+        ]
+      },
+      "extraction_index": 53,
+      "reference_log_order": 5
+    },
+    {
+      "entry_id": "log-entry:f0bd125ea86796ca23703502",
+      "turn": 5,
+      "log_order": 6,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#642.025000",
+      "raw_text": "开始下雨了！",
+      "ocr_confidence": 0.995,
+      "color": null,
+      "observation_ids": [
+        "log-row:1e96347615966b4c926648fc",
+        "log-row:93982506dcb86805510feff8",
+        "log-row:5dbad0675e8fb4c8481c9a7a"
+      ],
+      "selected_observation_id": "log-row:5dbad0675e8fb4c8481c9a7a",
+      "text_variants": [
+        "开始下雨了！"
+      ],
+      "index": 60,
+      "partial": false,
+      "inspection_timestamp": 642.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001284.png",
+        "frame_sha256": "97e015b5dc8838bdd83f6c4a8b0abdad5d40f662d3e9774338e9931ac9afb9bd",
+        "box": [
+          200,
+          211,
+          1111,
+          291
+        ],
+        "selected_observation_id": "log-row:5dbad0675e8fb4c8481c9a7a",
+        "all_observation_ids": [
+          "log-row:1e96347615966b4c926648fc",
+          "log-row:93982506dcb86805510feff8",
+          "log-row:5dbad0675e8fb4c8481c9a7a"
+        ]
+      },
+      "extraction_index": 54,
+      "reference_log_order": 6
+    },
+    {
+      "entry_id": "log-entry:dbec8144f1f3bbe2f97bd448",
+      "turn": 5,
+      "log_order": 7,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#642.025000",
+      "raw_text": "对手的烈咬陆鲨\n正在呼呼大睡。",
+      "ocr_confidence": 1.0,
+      "color": null,
+      "observation_ids": [
+        "log-row:020eb42b420b433b280551c9"
+      ],
+      "selected_observation_id": "log-row:020eb42b420b433b280551c9",
+      "text_variants": [
+        "对手的烈咬陆鲨\n正在呼呼大睡。"
+      ],
+      "index": 61,
+      "partial": false,
+      "inspection_timestamp": 642.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001284.png",
+        "frame_sha256": "97e015b5dc8838bdd83f6c4a8b0abdad5d40f662d3e9774338e9931ac9afb9bd",
+        "box": [
+          200,
+          291,
+          1111,
+          372
+        ],
+        "selected_observation_id": "log-row:020eb42b420b433b280551c9",
+        "all_observation_ids": [
+          "log-row:020eb42b420b433b280551c9"
+        ]
+      },
+      "extraction_index": 55,
+      "reference_log_order": 7
+    },
+    {
+      "entry_id": "log-entry:2acb0ea2a7bac8370a3244f7",
+      "turn": 5,
+      "log_order": 8,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#642.025000",
+      "raw_text": "铝钢桥龙使出了\n电光束！",
+      "ocr_confidence": 0.9843636363636363,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:9a01288b3d6fb2141c7c7206"
+      ],
+      "selected_observation_id": "log-row:9a01288b3d6fb2141c7c7206",
+      "text_variants": [
+        "铝钢桥龙使出了\n电光束！"
+      ],
+      "index": 62,
+      "partial": false,
+      "inspection_timestamp": 642.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001284.png",
+        "frame_sha256": "97e015b5dc8838bdd83f6c4a8b0abdad5d40f662d3e9774338e9931ac9afb9bd",
+        "box": [
+          200,
+          372,
+          1111,
+          452
+        ],
+        "selected_observation_id": "log-row:9a01288b3d6fb2141c7c7206",
+        "all_observation_ids": [
+          "log-row:9a01288b3d6fb2141c7c7206"
+        ]
+      },
+      "extraction_index": 56,
+      "reference_log_order": 8
+    },
+    {
+      "entry_id": "log-entry:ab781d4250c5e86e303238b2",
+      "turn": 5,
+      "log_order": 9,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#642.025000",
+      "raw_text": "铝钢桥龙\n吸收了电力！",
+      "ocr_confidence": 0.9982,
+      "color": null,
+      "observation_ids": [
+        "log-row:d8654576e73da53c7ddffe64"
+      ],
+      "selected_observation_id": "log-row:d8654576e73da53c7ddffe64",
+      "text_variants": [
+        "铝钢桥龙\n吸收了电力！"
+      ],
+      "index": 63,
+      "partial": false,
+      "inspection_timestamp": 642.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001284.png",
+        "frame_sha256": "97e015b5dc8838bdd83f6c4a8b0abdad5d40f662d3e9774338e9931ac9afb9bd",
+        "box": [
+          200,
+          452,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:d8654576e73da53c7ddffe64",
+        "all_observation_ids": [
+          "log-row:d8654576e73da53c7ddffe64"
+        ]
+      },
+      "extraction_index": 57,
+      "reference_log_order": 9
+    },
+    {
+      "entry_id": "reference-row:log-row:70d24d4f9f8ba3d56524874e",
+      "turn": 5,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#641.008333",
+      "raw_text": "铝钢桥龙的\n特攻提高了！",
+      "inspection_timestamp": 641.0083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001282.png",
+        "frame_sha256": "760ea09b1f48f45bf9fa16eac3010e2ac7f889fb0d1a26ef3dee88f5600d4624",
+        "box": [
+          200,
+          119,
+          1111,
+          199
+        ],
+        "selected_observation_id": "log-row:70d24d4f9f8ba3d56524874e",
+        "all_observation_ids": [
+          "log-row:70d24d4f9f8ba3d56524874e"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 332
+      },
+      "index": 64,
+      "reference_log_order": 10
+    },
+    {
+      "entry_id": "reference-row:log-row:04d92231a019abc1711f4392",
+      "turn": 5,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#641.008333",
+      "raw_text": "铝钢桥龙\nHP 25% → 0%",
+      "inspection_timestamp": 641.0083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001282.png",
+        "frame_sha256": "760ea09b1f48f45bf9fa16eac3010e2ac7f889fb0d1a26ef3dee88f5600d4624",
+        "box": [
+          200,
+          199,
+          1111,
+          280
+        ],
+        "selected_observation_id": "log-row:04d92231a019abc1711f4392",
+        "all_observation_ids": [
+          "log-row:04d92231a019abc1711f4392"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 332
+      },
+      "index": 65,
+      "reference_log_order": 11
+    },
+    {
+      "entry_id": "reference-row:log-row:52f94bb43efc52bf1235cbab",
+      "turn": 5,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#641.008333",
+      "raw_text": "对对手的铝钢桥龙\n效果不好。",
+      "inspection_timestamp": 641.0083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001282.png",
+        "frame_sha256": "760ea09b1f48f45bf9fa16eac3010e2ac7f889fb0d1a26ef3dee88f5600d4624",
+        "box": [
+          200,
+          280,
+          1111,
+          360
+        ],
+        "selected_observation_id": "log-row:52f94bb43efc52bf1235cbab",
+        "all_observation_ids": [
+          "log-row:52f94bb43efc52bf1235cbab"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 332
+      },
+      "index": 66,
+      "reference_log_order": 12
+    },
+    {
+      "entry_id": "reference-row:log-row:4eaf8df6bca678c27b7a39eb",
+      "turn": 5,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#641.008333",
+      "raw_text": "对手的铝钢桥龙倒下了！",
+      "inspection_timestamp": 641.0083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001282.png",
+        "frame_sha256": "760ea09b1f48f45bf9fa16eac3010e2ac7f889fb0d1a26ef3dee88f5600d4624",
+        "box": [
+          200,
+          360,
+          1111,
+          440
+        ],
+        "selected_observation_id": "log-row:4eaf8df6bca678c27b7a39eb",
+        "all_observation_ids": [
+          "log-row:4eaf8df6bca678c27b7a39eb"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 332
+      },
+      "index": 67,
+      "reference_log_order": 13
+    },
+    {
+      "entry_id": "reference-row:log-row:46fe2117e08d8a62e8ce772a",
+      "turn": 5,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#641.008333",
+      "raw_text": "MasterKays\n派出了参加了活动的喷火龙！",
+      "inspection_timestamp": 641.0083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001282.png",
+        "frame_sha256": "760ea09b1f48f45bf9fa16eac3010e2ac7f889fb0d1a26ef3dee88f5600d4624",
+        "box": [
+          200,
+          440,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:46fe2117e08d8a62e8ce772a",
+        "all_observation_ids": [
+          "log-row:46fe2117e08d8a62e8ce772a"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 332
+      },
+      "index": 68,
+      "reference_log_order": 14
+    },
+    {
+      "entry_id": "log-entry:5358630394f44287002d4667",
+      "turn": 6,
+      "log_order": 1,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#640.025000",
+      "raw_text": "对手的喷火龙的喷火龙进化石Y和\nMasterKays的全一环起了反应！",
+      "ocr_confidence": 0.996205882352941,
+      "color": null,
+      "observation_ids": [
+        "log-row:be41d02daaaad52aa570ad83",
+        "log-row:fdb3fdbcbecaae864594cd38"
+      ],
+      "selected_observation_id": "log-row:fdb3fdbcbecaae864594cd38",
+      "text_variants": [
+        "对手的喷火龙的喷火龙进化石Y和\nMasterKays的全一环起了反应！"
+      ],
+      "index": 69,
+      "partial": false,
+      "inspection_timestamp": 640.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001280.png",
+        "frame_sha256": "eeb8943996733564379e3bedba4f1091fb6febe9b03ec44317daa8feaff0921a",
+        "box": [
+          200,
+          49,
+          1111,
+          135
+        ],
+        "selected_observation_id": "log-row:fdb3fdbcbecaae864594cd38",
+        "all_observation_ids": [
+          "log-row:be41d02daaaad52aa570ad83",
+          "log-row:fdb3fdbcbecaae864594cd38"
+        ]
+      },
+      "extraction_index": 58,
+      "reference_log_order": 1
+    },
+    {
+      "entry_id": "log-entry:54e75f63dfeb89e74e3af5f4",
+      "turn": 6,
+      "log_order": 2,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#640.525000",
+      "raw_text": "对手的喷火龙超级进化成了\n超级喷火龙！",
+      "ocr_confidence": 0.9963333333333334,
+      "color": "red",
+      "observation_ids": [
+        "log-row:c9797e5c59b67b745880c90d",
+        "log-row:4e516daa1eed2b09e4316469"
+      ],
+      "selected_observation_id": "log-row:c9797e5c59b67b745880c90d",
+      "text_variants": [
+        "对手的喷火龙超级进化成了\n超级喷火龙！"
+      ],
+      "index": 70,
+      "partial": false,
+      "inspection_timestamp": 640.525,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001281.png",
+        "frame_sha256": "2abe167edbbce077dbde6061adcdc2286d74f4eaefa4f0d9fc28776776f6b3fe",
+        "box": [
+          200,
+          140,
+          1111,
+          221
+        ],
+        "selected_observation_id": "log-row:c9797e5c59b67b745880c90d",
+        "all_observation_ids": [
+          "log-row:c9797e5c59b67b745880c90d",
+          "log-row:4e516daa1eed2b09e4316469"
+        ]
+      },
+      "extraction_index": 59,
+      "reference_log_order": 2
+    },
+    {
+      "entry_id": "log-entry:e37eca4f87c71e2fb00ec64f",
+      "turn": 6,
+      "log_order": 3,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#640.025000",
+      "raw_text": "喷火龙的\n日照",
+      "ocr_confidence": 1.0,
+      "color": "red",
+      "observation_ids": [
+        "log-row:5348b5e0fb8dbdaabe560736",
+        "log-row:88998acc7a6f8d1bb6d7317c"
+      ],
+      "selected_observation_id": "log-row:88998acc7a6f8d1bb6d7317c",
+      "text_variants": [
+        "喷火龙的\n日照"
+      ],
+      "index": 71,
+      "partial": false,
+      "inspection_timestamp": 640.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001280.png",
+        "frame_sha256": "eeb8943996733564379e3bedba4f1091fb6febe9b03ec44317daa8feaff0921a",
+        "box": [
+          200,
+          215,
+          1111,
+          295
+        ],
+        "selected_observation_id": "log-row:88998acc7a6f8d1bb6d7317c",
+        "all_observation_ids": [
+          "log-row:5348b5e0fb8dbdaabe560736",
+          "log-row:88998acc7a6f8d1bb6d7317c"
+        ]
+      },
+      "extraction_index": 60,
+      "reference_log_order": 3
+    },
+    {
+      "entry_id": "log-entry:e7afeb9bb7182d19c868f5ce",
+      "turn": 6,
+      "log_order": 4,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#640.525000",
+      "raw_text": "日照变强了！",
+      "ocr_confidence": 0.965,
+      "color": null,
+      "observation_ids": [
+        "log-row:07a1a872cba5a51cd7ec5c18",
+        "log-row:23b04901c710609392c4c947"
+      ],
+      "selected_observation_id": "log-row:07a1a872cba5a51cd7ec5c18",
+      "text_variants": [
+        "日照变强了！"
+      ],
+      "index": 72,
+      "partial": false,
+      "inspection_timestamp": 640.525,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001281.png",
+        "frame_sha256": "2abe167edbbce077dbde6061adcdc2286d74f4eaefa4f0d9fc28776776f6b3fe",
+        "box": [
+          200,
+          301,
+          1111,
+          382
+        ],
+        "selected_observation_id": "log-row:07a1a872cba5a51cd7ec5c18",
+        "all_observation_ids": [
+          "log-row:07a1a872cba5a51cd7ec5c18",
+          "log-row:23b04901c710609392c4c947"
+        ]
+      },
+      "extraction_index": 61,
+      "reference_log_order": 4
+    },
+    {
+      "entry_id": "log-entry:c2a190e5634b9e134e467e1c",
+      "turn": 6,
+      "log_order": 5,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#640.525000",
+      "raw_text": "铝钢桥龙使出了\n守住!",
+      "ocr_confidence": 0.9682000000000001,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:c00e0e154bb50565c88d3a84",
+        "log-row:20c3f1ba966feaae268dc836"
+      ],
+      "selected_observation_id": "log-row:c00e0e154bb50565c88d3a84",
+      "text_variants": [
+        "铝钢桥龙使出了\n守住!"
+      ],
+      "index": 73,
+      "partial": false,
+      "inspection_timestamp": 640.525,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001281.png",
+        "frame_sha256": "2abe167edbbce077dbde6061adcdc2286d74f4eaefa4f0d9fc28776776f6b3fe",
+        "box": [
+          200,
+          382,
+          1111,
+          462
+        ],
+        "selected_observation_id": "log-row:c00e0e154bb50565c88d3a84",
+        "all_observation_ids": [
+          "log-row:c00e0e154bb50565c88d3a84",
+          "log-row:20c3f1ba966feaae268dc836"
+        ]
+      },
+      "extraction_index": 62,
+      "reference_log_order": 5
+    },
+    {
+      "entry_id": "log-entry:d4dfcba62c21bc3c07e84a72",
+      "turn": 6,
+      "log_order": 6,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#640.025000",
+      "raw_text": "铝钢桥龙\n摆出了防守的架势！",
+      "ocr_confidence": 0.997923076923077,
+      "color": null,
+      "observation_ids": [
+        "log-row:0372c4336be9cd7ea0b1d187",
+        "log-row:947d0f7cbe3f7e76e39b66a8"
+      ],
+      "selected_observation_id": "log-row:947d0f7cbe3f7e76e39b66a8",
+      "text_variants": [
+        "铝钢桥龙\n摆出了防守的架势！"
+      ],
+      "index": 74,
+      "partial": false,
+      "inspection_timestamp": 640.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001280.png",
+        "frame_sha256": "eeb8943996733564379e3bedba4f1091fb6febe9b03ec44317daa8feaff0921a",
+        "box": [
+          200,
+          456,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:947d0f7cbe3f7e76e39b66a8",
+        "all_observation_ids": [
+          "log-row:0372c4336be9cd7ea0b1d187",
+          "log-row:947d0f7cbe3f7e76e39b66a8"
+        ]
+      },
+      "extraction_index": 63,
+      "reference_log_order": 6
+    },
+    {
+      "entry_id": "reference-row:log-row:3171bd22fe17556875d7f872",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#639.025000",
+      "raw_text": "对手的烈咬陆鲨\n正在呼呼大睡。",
+      "inspection_timestamp": 639.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001278.png",
+        "frame_sha256": "1652418eb5030973b27ef35eb74c5bea37c372de82f3a4e2aed04a220fbf636e",
+        "box": [
+          200,
+          49,
+          1111,
+          130
+        ],
+        "selected_observation_id": "log-row:3171bd22fe17556875d7f872",
+        "all_observation_ids": [
+          "log-row:3171bd22fe17556875d7f872"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 217
+      },
+      "index": 75,
+      "reference_log_order": 7
+    },
+    {
+      "entry_id": "reference-row:log-row:561c16c4e6e650c42eacc550",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#639.025000",
+      "raw_text": "对手的喷火龙使出了\n热风！",
+      "inspection_timestamp": 639.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001278.png",
+        "frame_sha256": "1652418eb5030973b27ef35eb74c5bea37c372de82f3a4e2aed04a220fbf636e",
+        "box": [
+          200,
+          130,
+          1111,
+          210
+        ],
+        "selected_observation_id": "log-row:561c16c4e6e650c42eacc550",
+        "all_observation_ids": [
+          "log-row:561c16c4e6e650c42eacc550"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 217
+      },
+      "index": 76,
+      "reference_log_order": 8
+    },
+    {
+      "entry_id": "reference-row:log-row:cf8783a385a3358a8cd6fa8a",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#639.025000",
+      "raw_text": "铝钢桥龙\n在攻击中守护住了自己！",
+      "inspection_timestamp": 639.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001278.png",
+        "frame_sha256": "1652418eb5030973b27ef35eb74c5bea37c372de82f3a4e2aed04a220fbf636e",
+        "box": [
+          200,
+          210,
+          1111,
+          290
+        ],
+        "selected_observation_id": "log-row:cf8783a385a3358a8cd6fa8a",
+        "all_observation_ids": [
+          "log-row:cf8783a385a3358a8cd6fa8a"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 217
+      },
+      "index": 77,
+      "reference_log_order": 9
+    },
+    {
+      "entry_id": "reference-row:log-row:31299ae3ef57abbf783bff22",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#639.025000",
+      "raw_text": "大嘴鸥\nHP 164 → 110",
+      "inspection_timestamp": 639.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001278.png",
+        "frame_sha256": "1652418eb5030973b27ef35eb74c5bea37c372de82f3a4e2aed04a220fbf636e",
+        "box": [
+          200,
+          290,
+          1111,
+          371
+        ],
+        "selected_observation_id": "log-row:31299ae3ef57abbf783bff22",
+        "all_observation_ids": [
+          "log-row:31299ae3ef57abbf783bff22"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 217
+      },
+      "index": 78,
+      "reference_log_order": 10
+    },
+    {
+      "entry_id": "reference-row:log-row:2e4aa07c5d88bdfb0cb6138a",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#639.025000",
+      "raw_text": "对大嘴鸥\n效果不好。",
+      "inspection_timestamp": 639.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001278.png",
+        "frame_sha256": "1652418eb5030973b27ef35eb74c5bea37c372de82f3a4e2aed04a220fbf636e",
+        "box": [
+          200,
+          371,
+          1111,
+          451
+        ],
+        "selected_observation_id": "log-row:2e4aa07c5d88bdfb0cb6138a",
+        "all_observation_ids": [
+          "log-row:2e4aa07c5d88bdfb0cb6138a"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 217
+      },
+      "index": 79,
+      "reference_log_order": 11
+    },
+    {
+      "entry_id": "reference-row:log-row:4dbf1bca2b73b1b37adbb388",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#639.025000",
+      "raw_text": "大嘴鸥\n被灼伤了！",
+      "inspection_timestamp": 639.025,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001278.png",
+        "frame_sha256": "1652418eb5030973b27ef35eb74c5bea37c372de82f3a4e2aed04a220fbf636e",
+        "box": [
+          200,
+          451,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:4dbf1bca2b73b1b37adbb388",
+        "all_observation_ids": [
+          "log-row:4dbf1bca2b73b1b37adbb388"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 217
+      },
+      "index": 80,
+      "reference_log_order": 12
+    },
+    {
+      "entry_id": "reference-row:log-row:9f0ed764d7808f60c274e886",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#638.023333",
+      "raw_text": "大嘴鸥使出了\n气象球！",
+      "inspection_timestamp": 638.0233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001276.png",
+        "frame_sha256": "a399166324faa760cb1c58760e267b98c562bdb3e3f1abaab707b5bb43f421b8",
+        "box": [
+          200,
+          49,
+          1111,
+          119
+        ],
+        "selected_observation_id": "log-row:9f0ed764d7808f60c274e886",
+        "all_observation_ids": [
+          "log-row:9f0ed764d7808f60c274e886"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 374
+      },
+      "index": 81,
+      "reference_log_order": 13
+    },
+    {
+      "entry_id": "reference-row:log-row:0fbc766bd3d1497fb131471d",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#638.023333",
+      "raw_text": "烈咬陆鲨\nHP 67% → 48%",
+      "inspection_timestamp": 638.0233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001276.png",
+        "frame_sha256": "a399166324faa760cb1c58760e267b98c562bdb3e3f1abaab707b5bb43f421b8",
+        "box": [
+          200,
+          119,
+          1111,
+          199
+        ],
+        "selected_observation_id": "log-row:0fbc766bd3d1497fb131471d",
+        "all_observation_ids": [
+          "log-row:0fbc766bd3d1497fb131471d"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 374
+      },
+      "index": 82,
+      "reference_log_order": 14
+    },
+    {
+      "entry_id": "reference-row:log-row:7870a75dc4b47af5d8cc6a3c",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#638.023333",
+      "raw_text": "对对手的烈咬陆鲨\n效果不好。",
+      "inspection_timestamp": 638.0233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001276.png",
+        "frame_sha256": "a399166324faa760cb1c58760e267b98c562bdb3e3f1abaab707b5bb43f421b8",
+        "box": [
+          200,
+          199,
+          1111,
+          280
+        ],
+        "selected_observation_id": "log-row:7870a75dc4b47af5d8cc6a3c",
+        "all_observation_ids": [
+          "log-row:7870a75dc4b47af5d8cc6a3c"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 374
+      },
+      "index": 83,
+      "reference_log_order": 15
+    },
+    {
+      "entry_id": "reference-row:log-row:09c16d50df95e32980970240",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#638.023333",
+      "raw_text": "大嘴鸥\n受到了灼伤的伤害！",
+      "inspection_timestamp": 638.0233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001276.png",
+        "frame_sha256": "a399166324faa760cb1c58760e267b98c562bdb3e3f1abaab707b5bb43f421b8",
+        "box": [
+          200,
+          280,
+          1111,
+          360
+        ],
+        "selected_observation_id": "log-row:09c16d50df95e32980970240",
+        "all_observation_ids": [
+          "log-row:09c16d50df95e32980970240"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 374
+      },
+      "index": 84,
+      "reference_log_order": 16
+    },
+    {
+      "entry_id": "reference-row:log-row:49ddeae2e1f2882ea81b55d7",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#638.023333",
+      "raw_text": "大嘴鸥\nHP 110 → 100",
+      "inspection_timestamp": 638.0233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001276.png",
+        "frame_sha256": "a399166324faa760cb1c58760e267b98c562bdb3e3f1abaab707b5bb43f421b8",
+        "box": [
+          200,
+          360,
+          1111,
+          440
+        ],
+        "selected_observation_id": "log-row:49ddeae2e1f2882ea81b55d7",
+        "all_observation_ids": [
+          "log-row:49ddeae2e1f2882ea81b55d7"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 374
+      },
+      "index": 85,
+      "reference_log_order": 17
+    },
+    {
+      "entry_id": "reference-row:log-row:c255ce6cac53c7f8d03c5a87",
+      "turn": 6,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#638.023333",
+      "raw_text": "对手的顺风停止了！",
+      "inspection_timestamp": 638.0233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001276.png",
+        "frame_sha256": "a399166324faa760cb1c58760e267b98c562bdb3e3f1abaab707b5bb43f421b8",
+        "box": [
+          200,
+          440,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:c255ce6cac53c7f8d03c5a87",
+        "all_observation_ids": [
+          "log-row:c255ce6cac53c7f8d03c5a87"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 374
+      },
+      "index": 86,
+      "reference_log_order": 18
+    },
+    {
+      "entry_id": "log-entry:3abfc3f917aec8b547947c2d",
+      "turn": 7,
+      "log_order": 1,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#637.506667",
+      "raw_text": "大嘴鸥使出了\n广域防守！",
+      "ocr_confidence": 0.9927272727272727,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:34033c7d4d0f01eb656dbd73",
+        "log-row:72688ff7b3eebd4f2e21b00c"
+      ],
+      "selected_observation_id": "log-row:72688ff7b3eebd4f2e21b00c",
+      "text_variants": [
+        "大嘴鸥使出了\n广域防守！"
+      ],
+      "index": 87,
+      "partial": false,
+      "inspection_timestamp": 637.5066666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001275.png",
+        "frame_sha256": "aaab8fee7d5e29c827b9866d14db37f079816a126919306e9d455c474f411b4c",
+        "box": [
+          200,
+          49,
+          1111,
+          140
+        ],
+        "selected_observation_id": "log-row:72688ff7b3eebd4f2e21b00c",
+        "all_observation_ids": [
+          "log-row:34033c7d4d0f01eb656dbd73",
+          "log-row:72688ff7b3eebd4f2e21b00c"
+        ]
+      },
+      "extraction_index": 64,
+      "reference_log_order": 1
+    },
+    {
+      "entry_id": "log-entry:76f00d39be5d4c0d96cf0e6c",
+      "turn": 7,
+      "log_order": 2,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#637.023333",
+      "raw_text": "我方周围正受到\n广域防守的保护！",
+      "ocr_confidence": 0.9994666666666667,
+      "color": null,
+      "observation_ids": [
+        "log-row:f2df8c7bdfb9e6724d65d339",
+        "log-row:3485129eb72295e3ae57991c"
+      ],
+      "selected_observation_id": "log-row:f2df8c7bdfb9e6724d65d339",
+      "text_variants": [
+        "我方周围正受到\n广域防守的保护！"
+      ],
+      "index": 88,
+      "partial": false,
+      "inspection_timestamp": 637.0233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001274.png",
+        "frame_sha256": "bde24bcefe32b4a1edae6c6344cbeb7d5b29e4716e2fed35328b4a3c5cd22085",
+        "box": [
+          200,
+          142,
+          1111,
+          223
+        ],
+        "selected_observation_id": "log-row:f2df8c7bdfb9e6724d65d339",
+        "all_observation_ids": [
+          "log-row:f2df8c7bdfb9e6724d65d339",
+          "log-row:3485129eb72295e3ae57991c"
+        ]
+      },
+      "extraction_index": 65,
+      "reference_log_order": 2
+    },
+    {
+      "entry_id": "log-entry:2a33cb8b1c592ee8fe22ae3e",
+      "turn": 7,
+      "log_order": 3,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#636.523333",
+      "raw_text": "对手的烈咬陆鲨\n醒过来了！",
+      "ocr_confidence": 0.99275,
+      "color": null,
+      "observation_ids": [
+        "log-row:793fb6166633d4b62575d288",
+        "log-row:2e85478e7c154706b4b6719b",
+        "log-row:3bf704020d7d5ab97558ad52"
+      ],
+      "selected_observation_id": "log-row:3bf704020d7d5ab97558ad52",
+      "text_variants": [
+        "对手的烈咬陆鲨\n醒过来了！"
+      ],
+      "index": 89,
+      "partial": false,
+      "inspection_timestamp": 636.5233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001273.png",
+        "frame_sha256": "dc9cbdabdad4ea8df43be78fb13b318305815d7f1bd97dfed368d650fc4e6d0e",
+        "box": [
+          200,
+          87,
+          1111,
+          167
+        ],
+        "selected_observation_id": "log-row:3bf704020d7d5ab97558ad52",
+        "all_observation_ids": [
+          "log-row:793fb6166633d4b62575d288",
+          "log-row:2e85478e7c154706b4b6719b",
+          "log-row:3bf704020d7d5ab97558ad52"
+        ]
+      },
+      "extraction_index": 66,
+      "reference_log_order": 3
+    },
+    {
+      "entry_id": "log-entry:36db97058382b280e967d2c9",
+      "turn": 7,
+      "log_order": 4,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#637.023333",
+      "raw_text": "对手的烈咬陆鲨使出了\n岩崩！",
+      "ocr_confidence": 0.9794615384615385,
+      "color": "red",
+      "observation_ids": [
+        "log-row:c9a34a375cf7d2d7f5bf5caf",
+        "log-row:d0fa6e8b9ea4034024bed7a0",
+        "log-row:a18278ec8cbe49f887bf5b07"
+      ],
+      "selected_observation_id": "log-row:c9a34a375cf7d2d7f5bf5caf",
+      "text_variants": [
+        "对手的烈咬陆鲨使出了\n岩崩!",
+        "对手的烈咬陆鲨使出了\n岩崩！"
+      ],
+      "index": 90,
+      "partial": false,
+      "inspection_timestamp": 637.0233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001274.png",
+        "frame_sha256": "bde24bcefe32b4a1edae6c6344cbeb7d5b29e4716e2fed35328b4a3c5cd22085",
+        "box": [
+          200,
+          303,
+          1111,
+          383
+        ],
+        "selected_observation_id": "log-row:c9a34a375cf7d2d7f5bf5caf",
+        "all_observation_ids": [
+          "log-row:c9a34a375cf7d2d7f5bf5caf",
+          "log-row:d0fa6e8b9ea4034024bed7a0",
+          "log-row:a18278ec8cbe49f887bf5b07"
+        ]
+      },
+      "extraction_index": 67,
+      "reference_log_order": 4
+    },
+    {
+      "entry_id": "log-entry:21d3c535b0448de82f7d03a7",
+      "turn": 7,
+      "log_order": 5,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#637.506667",
+      "raw_text": "大嘴鸥\n受到了广域防守的保护！",
+      "ocr_confidence": 1.0,
+      "color": null,
+      "observation_ids": [
+        "log-row:28672a977a4044ec96f60c6e",
+        "log-row:3c94ae62d0321fa1da93f660",
+        "log-row:2f42fc27e814967aaff16e3b"
+      ],
+      "selected_observation_id": "log-row:3c94ae62d0321fa1da93f660",
+      "text_variants": [
+        "大嘴鸥\n受到了广域防守的保护！"
+      ],
+      "index": 91,
+      "partial": false,
+      "inspection_timestamp": 637.5066666666667,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001275.png",
+        "frame_sha256": "aaab8fee7d5e29c827b9866d14db37f079816a126919306e9d455c474f411b4c",
+        "box": [
+          200,
+          382,
+          1111,
+          462
+        ],
+        "selected_observation_id": "log-row:3c94ae62d0321fa1da93f660",
+        "all_observation_ids": [
+          "log-row:28672a977a4044ec96f60c6e",
+          "log-row:3c94ae62d0321fa1da93f660",
+          "log-row:2f42fc27e814967aaff16e3b"
+        ]
+      },
+      "extraction_index": 68,
+      "reference_log_order": 5
+    },
+    {
+      "entry_id": "log-entry:793ef808eb71426e9aedea80",
+      "turn": 7,
+      "log_order": 6,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#636.523333",
+      "raw_text": "铝钢桥龙\n受到了广域防守的保护！",
+      "ocr_confidence": 0.9992666666666667,
+      "color": null,
+      "observation_ids": [
+        "log-row:a5aaa78f452da9bf41889eda",
+        "log-row:f499e371836fb7fd535f9f65",
+        "log-row:c81080489e225a6708b47d37"
+      ],
+      "selected_observation_id": "log-row:c81080489e225a6708b47d37",
+      "text_variants": [
+        "铝钢桥龙\n受到了广域防守的保护！"
+      ],
+      "index": 92,
+      "partial": false,
+      "inspection_timestamp": 636.5233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001273.png",
+        "frame_sha256": "dc9cbdabdad4ea8df43be78fb13b318305815d7f1bd97dfed368d650fc4e6d0e",
+        "box": [
+          200,
+          328,
+          1111,
+          409
+        ],
+        "selected_observation_id": "log-row:c81080489e225a6708b47d37",
+        "all_observation_ids": [
+          "log-row:a5aaa78f452da9bf41889eda",
+          "log-row:f499e371836fb7fd535f9f65",
+          "log-row:c81080489e225a6708b47d37"
+        ]
+      },
+      "extraction_index": 69,
+      "reference_log_order": 6
+    },
+    {
+      "entry_id": "log-entry:292d6c0e13e930207080680f",
+      "turn": 7,
+      "log_order": 7,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#636.523333",
+      "raw_text": "对手的喷火龙使出了\n气象球！",
+      "ocr_confidence": 0.9963076923076923,
+      "color": "red",
+      "observation_ids": [
+        "log-row:64179710c670c158cf51d110"
+      ],
+      "selected_observation_id": "log-row:64179710c670c158cf51d110",
+      "text_variants": [
+        "对手的喷火龙使出了\n气象球！"
+      ],
+      "index": 93,
+      "partial": false,
+      "inspection_timestamp": 636.5233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001273.png",
+        "frame_sha256": "dc9cbdabdad4ea8df43be78fb13b318305815d7f1bd97dfed368d650fc4e6d0e",
+        "box": [
+          200,
+          409,
+          1111,
+          489
+        ],
+        "selected_observation_id": "log-row:64179710c670c158cf51d110",
+        "all_observation_ids": [
+          "log-row:64179710c670c158cf51d110"
+        ]
+      },
+      "extraction_index": 70,
+      "reference_log_order": 7
+    },
+    {
+      "entry_id": "reference-row:log-row:d17bf63f18a5225fbcd9370b",
+      "turn": 7,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#635.523333",
+      "raw_text": "铝钢桥龙\nHP 194 → 0",
+      "inspection_timestamp": 635.5233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001271.png",
+        "frame_sha256": "c705f377f4b00ee33cd984e9373e57f41c22acd58da15579048748aaba4802ec",
+        "box": [
+          200,
+          119,
+          1111,
+          199
+        ],
+        "selected_observation_id": "log-row:d17bf63f18a5225fbcd9370b",
+        "all_observation_ids": [
+          "log-row:d17bf63f18a5225fbcd9370b"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 301
+      },
+      "index": 94,
+      "reference_log_order": 8
+    },
+    {
+      "entry_id": "reference-row:log-row:01e09fe234d20a2422b3066d",
+      "turn": 7,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#635.523333",
+      "raw_text": "铝钢桥龙倒下了！",
+      "inspection_timestamp": 635.5233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001271.png",
+        "frame_sha256": "c705f377f4b00ee33cd984e9373e57f41c22acd58da15579048748aaba4802ec",
+        "box": [
+          200,
+          199,
+          1111,
+          280
+        ],
+        "selected_observation_id": "log-row:01e09fe234d20a2422b3066d",
+        "all_observation_ids": [
+          "log-row:01e09fe234d20a2422b3066d"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 301
+      },
+      "index": 95,
+      "reference_log_order": 9
+    },
+    {
+      "entry_id": "reference-row:log-row:ac389b316f414989b89e6c5c",
+      "turn": 7,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#635.523333",
+      "raw_text": "大嘴鸥\n受到了灼伤的伤害！",
+      "inspection_timestamp": 635.5233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001271.png",
+        "frame_sha256": "c705f377f4b00ee33cd984e9373e57f41c22acd58da15579048748aaba4802ec",
+        "box": [
+          200,
+          280,
+          1111,
+          360
+        ],
+        "selected_observation_id": "log-row:ac389b316f414989b89e6c5c",
+        "all_observation_ids": [
+          "log-row:ac389b316f414989b89e6c5c"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 301
+      },
+      "index": 96,
+      "reference_log_order": 10
+    },
+    {
+      "entry_id": "reference-row:log-row:0796a68e2a941a7b3ca2da6f",
+      "turn": 7,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#635.523333",
+      "raw_text": "大嘴鸥\nHP 100 → 90",
+      "inspection_timestamp": 635.5233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001271.png",
+        "frame_sha256": "c705f377f4b00ee33cd984e9373e57f41c22acd58da15579048748aaba4802ec",
+        "box": [
+          200,
+          360,
+          1111,
+          440
+        ],
+        "selected_observation_id": "log-row:0796a68e2a941a7b3ca2da6f",
+        "all_observation_ids": [
+          "log-row:0796a68e2a941a7b3ca2da6f"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 301
+      },
+      "index": 97,
+      "reference_log_order": 11
+    },
+    {
+      "entry_id": "reference-row:log-row:d8cee23e4bc9b1a693c6c52e",
+      "turn": 7,
+      "log_order": null,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#635.523333",
+      "raw_text": "上吧！喷火龙！",
+      "inspection_timestamp": 635.5233333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001271.png",
+        "frame_sha256": "c705f377f4b00ee33cd984e9373e57f41c22acd58da15579048748aaba4802ec",
+        "box": [
+          200,
+          440,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:d8cee23e4bc9b1a693c6c52e",
+        "all_observation_ids": [
+          "log-row:d8cee23e4bc9b1a693c6c52e"
+        ]
+      },
+      "manual_recovery": {
+        "reason": "No two-row overlap at scroll boundary; independent pixel review preserves within-turn order",
+        "source_scroll_top": 301
+      },
+      "index": 98,
+      "reference_log_order": 12
+    },
+    {
+      "entry_id": "log-entry:830b2e419af9e4bf7bcd44ae",
+      "turn": 8,
+      "log_order": 1,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#749.010000",
+      "raw_text": "MasterKays换下了\n烈咬陆鲨！",
+      "ocr_confidence": 0.9866666666666666,
+      "color": null,
+      "observation_ids": [
+        "log-row:156a5e622d43b8f241d99c72",
+        "log-row:2675f6f9b2168fb8fc7beac7"
+      ],
+      "selected_observation_id": "log-row:156a5e622d43b8f241d99c72",
+      "text_variants": [
+        "MasterKays换下了\n烈咬陆鲨！"
+      ],
+      "index": 99,
+      "partial": false,
+      "inspection_timestamp": 749.01,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001498.png",
+        "frame_sha256": "eb3a7cc55d02c1d7e4e9a0d70297642c3a1afb1252fb5b6a1550fa56fb83f4d3",
+        "box": [
+          200,
+          49,
+          1111,
+          140
+        ],
+        "selected_observation_id": "log-row:156a5e622d43b8f241d99c72",
+        "all_observation_ids": [
+          "log-row:156a5e622d43b8f241d99c72",
+          "log-row:2675f6f9b2168fb8fc7beac7"
+        ]
+      },
+      "extraction_index": 71,
+      "reference_log_order": 1
+    },
+    {
+      "entry_id": "log-entry:f17bcdc08545b4ce96cdd3ff",
+      "turn": 8,
+      "log_order": 2,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#748.510000",
+      "raw_text": "MasterKays\n派出了精力充沛的大嘴鸥！",
+      "ocr_confidence": 0.9994545454545455,
+      "color": null,
+      "observation_ids": [
+        "log-row:5c72bc65093158e79db54881",
+        "log-row:fad8400356fd74506e22daca"
+      ],
+      "selected_observation_id": "log-row:fad8400356fd74506e22daca",
+      "text_variants": [
+        "MasterKays\n派出了精力充沛的大嘴鸥！"
+      ],
+      "index": 100,
+      "partial": false,
+      "inspection_timestamp": 748.51,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001497.png",
+        "frame_sha256": "b3b09b5beecd43e723cad90df24af5d49201ca8cd9a8b68e8a1077235ce8fddb",
+        "box": [
+          200,
+          131,
+          1111,
+          212
+        ],
+        "selected_observation_id": "log-row:fad8400356fd74506e22daca",
+        "all_observation_ids": [
+          "log-row:5c72bc65093158e79db54881",
+          "log-row:fad8400356fd74506e22daca"
+        ]
+      },
+      "extraction_index": 72,
+      "reference_log_order": 2
+    },
+    {
+      "entry_id": "log-entry:5d62c135d9e35b3394d67cd5",
+      "turn": 8,
+      "log_order": 3,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#748.510000",
+      "raw_text": "大嘴鸥的\n降雨",
+      "ocr_confidence": 1.0,
+      "color": "red",
+      "observation_ids": [
+        "log-row:25e83a773a574bab0063226d",
+        "log-row:507ec131a40367c88e42a151",
+        "log-row:e575e25d2ea5f2e3e70dc9ba"
+      ],
+      "selected_observation_id": "log-row:507ec131a40367c88e42a151",
+      "text_variants": [
+        "大嘴鸥的\n降雨",
+        "降雨"
+      ],
+      "index": 101,
+      "partial": false,
+      "inspection_timestamp": 748.51,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001497.png",
+        "frame_sha256": "b3b09b5beecd43e723cad90df24af5d49201ca8cd9a8b68e8a1077235ce8fddb",
+        "box": [
+          200,
+          212,
+          1111,
+          292
+        ],
+        "selected_observation_id": "log-row:507ec131a40367c88e42a151",
+        "all_observation_ids": [
+          "log-row:25e83a773a574bab0063226d",
+          "log-row:507ec131a40367c88e42a151",
+          "log-row:e575e25d2ea5f2e3e70dc9ba"
+        ]
+      },
+      "extraction_index": 73,
+      "reference_log_order": 3
+    },
+    {
+      "entry_id": "log-entry:1ea38da85a63338e9949cdca",
+      "turn": 8,
+      "log_order": 4,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#748.510000",
+      "raw_text": "开始下雨了！",
+      "ocr_confidence": 0.995,
+      "color": null,
+      "observation_ids": [
+        "log-row:7e67c2700131c5165211323d",
+        "log-row:c24b151ed5e63fc9b37105c4",
+        "log-row:c06c08c4bb3642ebe9e8e4d5"
+      ],
+      "selected_observation_id": "log-row:c24b151ed5e63fc9b37105c4",
+      "text_variants": [
+        "开始下雨了！"
+      ],
+      "index": 102,
+      "partial": false,
+      "inspection_timestamp": 748.51,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001497.png",
+        "frame_sha256": "b3b09b5beecd43e723cad90df24af5d49201ca8cd9a8b68e8a1077235ce8fddb",
+        "box": [
+          200,
+          292,
+          1111,
+          373
+        ],
+        "selected_observation_id": "log-row:c24b151ed5e63fc9b37105c4",
+        "all_observation_ids": [
+          "log-row:7e67c2700131c5165211323d",
+          "log-row:c24b151ed5e63fc9b37105c4",
+          "log-row:c06c08c4bb3642ebe9e8e4d5"
+        ]
+      },
+      "extraction_index": 74,
+      "reference_log_order": 4
+    },
+    {
+      "entry_id": "log-entry:c72d0285aaeaf51274ab40fd",
+      "turn": 8,
+      "log_order": 5,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#748.010000",
+      "raw_text": "大嘴鸥使出了\n广域防守！",
+      "ocr_confidence": 0.995909090909091,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:57684b2081fff8f826415349",
+        "log-row:4ceb75155d855535160d3881",
+        "log-row:87a0026694d254c0924e3ae1"
+      ],
+      "selected_observation_id": "log-row:87a0026694d254c0924e3ae1",
+      "text_variants": [
+        "大嘴鸥使出了\n广域防守！"
+      ],
+      "index": 103,
+      "partial": false,
+      "inspection_timestamp": 748.01,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001496.png",
+        "frame_sha256": "b01ea6b8fb70546db855043356a31e8113aac30c2ab140fabb9cff9718fa26fd",
+        "box": [
+          200,
+          187,
+          1111,
+          268
+        ],
+        "selected_observation_id": "log-row:87a0026694d254c0924e3ae1",
+        "all_observation_ids": [
+          "log-row:57684b2081fff8f826415349",
+          "log-row:4ceb75155d855535160d3881",
+          "log-row:87a0026694d254c0924e3ae1"
+        ]
+      },
+      "extraction_index": 75,
+      "reference_log_order": 5
+    },
+    {
+      "entry_id": "log-entry:d883a7ac499393df72716452",
+      "turn": 8,
+      "log_order": 6,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#748.010000",
+      "raw_text": "我方周围正受到\n广域防守的保护！",
+      "ocr_confidence": 1.0,
+      "color": null,
+      "observation_ids": [
+        "log-row:456d8784514f148350cd9e8c",
+        "log-row:0d82462a1649d4adbd9d28b5",
+        "log-row:cc63178e8c295b2a85ca7c9e",
+        "log-row:fac0d7afb01f5a8e3e6bdb50"
+      ],
+      "selected_observation_id": "log-row:cc63178e8c295b2a85ca7c9e",
+      "text_variants": [
+        "广域防守的保护！",
+        "我方周围正受到\n广域防守的保护！"
+      ],
+      "index": 104,
+      "partial": false,
+      "inspection_timestamp": 748.01,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001496.png",
+        "frame_sha256": "b01ea6b8fb70546db855043356a31e8113aac30c2ab140fabb9cff9718fa26fd",
+        "box": [
+          200,
+          268,
+          1111,
+          348
+        ],
+        "selected_observation_id": "log-row:cc63178e8c295b2a85ca7c9e",
+        "all_observation_ids": [
+          "log-row:456d8784514f148350cd9e8c",
+          "log-row:0d82462a1649d4adbd9d28b5",
+          "log-row:cc63178e8c295b2a85ca7c9e",
+          "log-row:fac0d7afb01f5a8e3e6bdb50"
+        ]
+      },
+      "extraction_index": 76,
+      "reference_log_order": 6
+    },
+    {
+      "entry_id": "log-entry:c8a1c97cf60b74b12a8f4284",
+      "turn": 8,
+      "log_order": 7,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#748.010000",
+      "raw_text": "喷火龙使出了\n气象球！",
+      "ocr_confidence": 0.9960000000000001,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:90acb070ea2674f036655517",
+        "log-row:aa1431a40694b3142b66c250",
+        "log-row:58b325a1bbb4c10dc104e627"
+      ],
+      "selected_observation_id": "log-row:90acb070ea2674f036655517",
+      "text_variants": [
+        "喷火龙使出了\n气象球！"
+      ],
+      "index": 105,
+      "partial": false,
+      "inspection_timestamp": 748.01,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001496.png",
+        "frame_sha256": "b01ea6b8fb70546db855043356a31e8113aac30c2ab140fabb9cff9718fa26fd",
+        "box": [
+          200,
+          348,
+          1111,
+          429
+        ],
+        "selected_observation_id": "log-row:90acb070ea2674f036655517",
+        "all_observation_ids": [
+          "log-row:90acb070ea2674f036655517",
+          "log-row:aa1431a40694b3142b66c250",
+          "log-row:58b325a1bbb4c10dc104e627"
+        ]
+      },
+      "extraction_index": 77,
+      "reference_log_order": 7
+    },
+    {
+      "entry_id": "log-entry:fd0689bc125e393987953895",
+      "turn": 8,
+      "log_order": 8,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#747.508333",
+      "raw_text": "大嘴鸥\nHP 62% → 33%",
+      "ocr_confidence": 0.9928,
+      "color": "red",
+      "observation_ids": [
+        "log-row:c639e7f8642c2d2461a1bf6f",
+        "log-row:d0c36c45e246bcfb3ef0c85e",
+        "log-row:c80af5ad1edf038c0020a354"
+      ],
+      "selected_observation_id": "log-row:d0c36c45e246bcfb3ef0c85e",
+      "text_variants": [
+        "大嘴鸥\nHP 62% → 33%"
+      ],
+      "index": 106,
+      "partial": false,
+      "inspection_timestamp": 747.5083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001495.png",
+        "frame_sha256": "abf8474658540973d29acc521de559fdd77b9512df76c3d15a4ecee92e085694",
+        "box": [
+          200,
+          184,
+          1111,
+          264
+        ],
+        "selected_observation_id": "log-row:d0c36c45e246bcfb3ef0c85e",
+        "all_observation_ids": [
+          "log-row:c639e7f8642c2d2461a1bf6f",
+          "log-row:d0c36c45e246bcfb3ef0c85e",
+          "log-row:c80af5ad1edf038c0020a354"
+        ]
+      },
+      "extraction_index": 78,
+      "reference_log_order": 8
+    },
+    {
+      "entry_id": "log-entry:ed3c9d31ad770824772d69e9",
+      "turn": 8,
+      "log_order": 9,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#747.008333",
+      "raw_text": "对对手的大嘴鸥\n效果不好。",
+      "ocr_confidence": 1.0,
+      "color": null,
+      "observation_ids": [
+        "log-row:685020dfe09023fbe1544a83",
+        "log-row:81d8ab588da4e927117217cc"
+      ],
+      "selected_observation_id": "log-row:81d8ab588da4e927117217cc",
+      "text_variants": [
+        "对对手的大嘴鸥\n效果不好。"
+      ],
+      "index": 107,
+      "partial": false,
+      "inspection_timestamp": 747.0083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001494.png",
+        "frame_sha256": "bbf6adcfa5e726fc19d10999b93829ee5c270438cb1ebaa42eb9d2ca3562622f",
+        "box": [
+          200,
+          199,
+          1111,
+          280
+        ],
+        "selected_observation_id": "log-row:81d8ab588da4e927117217cc",
+        "all_observation_ids": [
+          "log-row:685020dfe09023fbe1544a83",
+          "log-row:81d8ab588da4e927117217cc"
+        ]
+      },
+      "extraction_index": 79,
+      "reference_log_order": 9
+    },
+    {
+      "entry_id": "log-entry:beadea5fefc04277b878b544",
+      "turn": 8,
+      "log_order": 10,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#747.508333",
+      "raw_text": "对手的喷火龙使出了\n暴风！",
+      "ocr_confidence": 0.97675,
+      "color": "red",
+      "observation_ids": [
+        "log-row:5ec61a971948bc64624fc5ef",
+        "log-row:b85a319a821b6ce192f83b44"
+      ],
+      "selected_observation_id": "log-row:5ec61a971948bc64624fc5ef",
+      "text_variants": [
+        "对手的喷火龙使出了\n暴风！"
+      ],
+      "index": 108,
+      "partial": false,
+      "inspection_timestamp": 747.5083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001495.png",
+        "frame_sha256": "abf8474658540973d29acc521de559fdd77b9512df76c3d15a4ecee92e085694",
+        "box": [
+          200,
+          345,
+          1111,
+          425
+        ],
+        "selected_observation_id": "log-row:5ec61a971948bc64624fc5ef",
+        "all_observation_ids": [
+          "log-row:5ec61a971948bc64624fc5ef",
+          "log-row:b85a319a821b6ce192f83b44"
+        ]
+      },
+      "extraction_index": 80,
+      "reference_log_order": 10
+    },
+    {
+      "entry_id": "log-entry:beb9b90f6fa6fe7f64b201f6",
+      "turn": 8,
+      "log_order": 11,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#747.508333",
+      "raw_text": "大嘴鸥\nHP 90 → 0",
+      "ocr_confidence": 0.9895,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:0f42401d5abfb64587a4e792",
+        "log-row:77e484c54024631125f4c297"
+      ],
+      "selected_observation_id": "log-row:0f42401d5abfb64587a4e792",
+      "text_variants": [
+        "大嘴鸥\nHP 90 → 0"
+      ],
+      "index": 109,
+      "partial": false,
+      "inspection_timestamp": 747.5083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001495.png",
+        "frame_sha256": "abf8474658540973d29acc521de559fdd77b9512df76c3d15a4ecee92e085694",
+        "box": [
+          200,
+          425,
+          1111,
+          506
+        ],
+        "selected_observation_id": "log-row:0f42401d5abfb64587a4e792",
+        "all_observation_ids": [
+          "log-row:0f42401d5abfb64587a4e792",
+          "log-row:77e484c54024631125f4c297"
+        ]
+      },
+      "extraction_index": 81,
+      "reference_log_order": 11
+    },
+    {
+      "entry_id": "log-entry:ff414bcc77741345bc786b44",
+      "turn": 8,
+      "log_order": 12,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#747.008333",
+      "raw_text": "大嘴鸥倒下了！",
+      "ocr_confidence": 0.982,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:16bc965cb49bda55b3b3c41d"
+      ],
+      "selected_observation_id": "log-row:16bc965cb49bda55b3b3c41d",
+      "text_variants": [
+        "大嘴鸥倒下了！"
+      ],
+      "index": 110,
+      "partial": false,
+      "inspection_timestamp": 747.0083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001494.png",
+        "frame_sha256": "bbf6adcfa5e726fc19d10999b93829ee5c270438cb1ebaa42eb9d2ca3562622f",
+        "box": [
+          200,
+          440,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:16bc965cb49bda55b3b3c41d",
+        "all_observation_ids": [
+          "log-row:16bc965cb49bda55b3b3c41d"
+        ]
+      },
+      "extraction_index": 82,
+      "reference_log_order": 12
+    },
+    {
+      "entry_id": "log-entry:17142e491b8e272f1938d7b3",
+      "turn": 9,
+      "log_order": 1,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#746.508333",
+      "raw_text": "喷火龙使出了\n气象球！",
+      "ocr_confidence": 0.9964000000000001,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:f30ac3ca2421967491cf4856",
+        "log-row:a0ae29463b65481c3dad2403"
+      ],
+      "selected_observation_id": "log-row:a0ae29463b65481c3dad2403",
+      "text_variants": [
+        "喷火龙使出了\n气象球！"
+      ],
+      "index": 111,
+      "partial": false,
+      "inspection_timestamp": 746.5083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001493.png",
+        "frame_sha256": "584d5b47dd3dc2da10f3879d821014608c50548680172dd4e86da7f83880e7e2",
+        "box": [
+          200,
+          49,
+          1111,
+          140
+        ],
+        "selected_observation_id": "log-row:a0ae29463b65481c3dad2403",
+        "all_observation_ids": [
+          "log-row:f30ac3ca2421967491cf4856",
+          "log-row:a0ae29463b65481c3dad2403"
+        ]
+      },
+      "extraction_index": 83,
+      "reference_log_order": 1
+    },
+    {
+      "entry_id": "log-entry:d17a8fda5987ec681a4d6e6c",
+      "turn": 9,
+      "log_order": 2,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#746.008333",
+      "raw_text": "喷火龙\nHP 100% → 0%",
+      "ocr_confidence": 0.9696,
+      "color": "red",
+      "observation_ids": [
+        "log-row:2f4f1b7ebeedca8ce57014d3",
+        "log-row:6b0d5a2fdc86c493bf4faa0c"
+      ],
+      "selected_observation_id": "log-row:2f4f1b7ebeedca8ce57014d3",
+      "text_variants": [
+        "喷火龙\nHP 100% → 0%"
+      ],
+      "index": 112,
+      "partial": false,
+      "inspection_timestamp": 746.0083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001492.png",
+        "frame_sha256": "c3cf70940ccba6dcbe2ada32a4110e43ddec8e6683541504fe37731a08c3059a",
+        "box": [
+          200,
+          174,
+          1111,
+          254
+        ],
+        "selected_observation_id": "log-row:2f4f1b7ebeedca8ce57014d3",
+        "all_observation_ids": [
+          "log-row:2f4f1b7ebeedca8ce57014d3",
+          "log-row:6b0d5a2fdc86c493bf4faa0c"
+        ]
+      },
+      "extraction_index": 84,
+      "reference_log_order": 2
+    },
+    {
+      "entry_id": "log-entry:cdc73d403b7ce339e9e6104b",
+      "turn": 9,
+      "log_order": 3,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#746.508333",
+      "raw_text": "对对手的喷火龙\n效果绝佳！",
+      "ocr_confidence": 0.9908333333333333,
+      "color": null,
+      "observation_ids": [
+        "log-row:89f48cbde0e16b7a24faf568",
+        "log-row:de2cfc422fde55403ce77fdd",
+        "log-row:b98f6c19c621a73892ad0a1d",
+        "log-row:cee925fdfa0b3e50540db62a",
+        "log-row:a23709ec7a68d8ef5473f527"
+      ],
+      "selected_observation_id": "log-row:de2cfc422fde55403ce77fdd",
+      "text_variants": [
+        "对对手的喷火龙\n效果绝佳！"
+      ],
+      "index": 113,
+      "partial": false,
+      "inspection_timestamp": 746.5083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001493.png",
+        "frame_sha256": "584d5b47dd3dc2da10f3879d821014608c50548680172dd4e86da7f83880e7e2",
+        "box": [
+          200,
+          221,
+          1111,
+          301
+        ],
+        "selected_observation_id": "log-row:de2cfc422fde55403ce77fdd",
+        "all_observation_ids": [
+          "log-row:89f48cbde0e16b7a24faf568",
+          "log-row:de2cfc422fde55403ce77fdd",
+          "log-row:b98f6c19c621a73892ad0a1d",
+          "log-row:cee925fdfa0b3e50540db62a",
+          "log-row:a23709ec7a68d8ef5473f527"
+        ]
+      },
+      "extraction_index": 85,
+      "reference_log_order": 3
+    },
+    {
+      "entry_id": "log-entry:914dca4957830b1fa6c06d13",
+      "turn": 9,
+      "log_order": 4,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#746.508333",
+      "raw_text": "对手的喷火龙倒下了！",
+      "ocr_confidence": 0.993,
+      "color": "red",
+      "observation_ids": [
+        "log-row:c2694cda77f76a15c1b048d2",
+        "log-row:1363eb49fc8319daab956297",
+        "log-row:faf12bcf3aa29193ea447419",
+        "log-row:e65017b07caffcb144fd3a05",
+        "log-row:377b3858d2e4234e9ded0546"
+      ],
+      "selected_observation_id": "log-row:1363eb49fc8319daab956297",
+      "text_variants": [
+        "对手的喷火龙倒下了！",
+        "对手的晚火龙倒下了！"
+      ],
+      "index": 114,
+      "partial": false,
+      "inspection_timestamp": 746.5083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001493.png",
+        "frame_sha256": "584d5b47dd3dc2da10f3879d821014608c50548680172dd4e86da7f83880e7e2",
+        "box": [
+          200,
+          301,
+          1111,
+          382
+        ],
+        "selected_observation_id": "log-row:1363eb49fc8319daab956297",
+        "all_observation_ids": [
+          "log-row:c2694cda77f76a15c1b048d2",
+          "log-row:1363eb49fc8319daab956297",
+          "log-row:faf12bcf3aa29193ea447419",
+          "log-row:e65017b07caffcb144fd3a05",
+          "log-row:377b3858d2e4234e9ded0546"
+        ]
+      },
+      "extraction_index": 86,
+      "reference_log_order": 4
+    },
+    {
+      "entry_id": "log-entry:33bac762407d47f54b40255c",
+      "turn": 9,
+      "log_order": 5,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#745.508333",
+      "raw_text": "对手的大嘴鸥使出了\n气象球！",
+      "ocr_confidence": 0.9972307692307693,
+      "color": "red",
+      "observation_ids": [
+        "log-row:10256e0e31ce12b505ba3ece",
+        "log-row:bee8659c9a2a7249fdce2bd2",
+        "log-row:1299c2ce4d2907400ec0e862",
+        "log-row:149d3f3f371d9bb8fcc343a7",
+        "log-row:ed956baadbf184c1f7e4d85c"
+      ],
+      "selected_observation_id": "log-row:149d3f3f371d9bb8fcc343a7",
+      "text_variants": [
+        "对手的大嘴鸥使出了\n气象球！"
+      ],
+      "index": 115,
+      "partial": false,
+      "inspection_timestamp": 745.5083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001491.png",
+        "frame_sha256": "a5642f53d5f80df0606c39d481e01b3c8a832e2dbd8a1a937a0ab400c17bcbb8",
+        "box": [
+          200,
+          199,
+          1111,
+          280
+        ],
+        "selected_observation_id": "log-row:149d3f3f371d9bb8fcc343a7",
+        "all_observation_ids": [
+          "log-row:10256e0e31ce12b505ba3ece",
+          "log-row:bee8659c9a2a7249fdce2bd2",
+          "log-row:1299c2ce4d2907400ec0e862",
+          "log-row:149d3f3f371d9bb8fcc343a7",
+          "log-row:ed956baadbf184c1f7e4d85c"
+        ]
+      },
+      "extraction_index": 87,
+      "reference_log_order": 5
+    },
+    {
+      "entry_id": "log-entry:96a406c83c39cd406f9c7622",
+      "turn": 9,
+      "log_order": 6,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#745.008333",
+      "raw_text": "喷火龙\nHP 164 → 12",
+      "ocr_confidence": 0.9982142857142857,
+      "color": "purple",
+      "observation_ids": [
+        "log-row:f2c598c675448f3a1fe8a2d7",
+        "log-row:a9ae13c0cb0498690711b2d4",
+        "log-row:9b2b5430fe78ce1a7a88675f",
+        "log-row:76294638e39ea498480f3649"
+      ],
+      "selected_observation_id": "log-row:a9ae13c0cb0498690711b2d4",
+      "text_variants": [
+        "喷火龙\nHP 164 → 12"
+      ],
+      "index": 116,
+      "partial": false,
+      "inspection_timestamp": 745.0083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001490.png",
+        "frame_sha256": "428311048a05e6b66365f0ce46a4c8575ac0bbff799ccdb0c1af6a76c7ca2e50",
+        "box": [
+          200,
+          280,
+          1111,
+          360
+        ],
+        "selected_observation_id": "log-row:a9ae13c0cb0498690711b2d4",
+        "all_observation_ids": [
+          "log-row:f2c598c675448f3a1fe8a2d7",
+          "log-row:a9ae13c0cb0498690711b2d4",
+          "log-row:9b2b5430fe78ce1a7a88675f",
+          "log-row:76294638e39ea498480f3649"
+        ]
+      },
+      "extraction_index": 88,
+      "reference_log_order": 6
+    },
+    {
+      "entry_id": "log-entry:d1c21cc108d9d7beb2905198",
+      "turn": 9,
+      "log_order": 7,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#745.508333",
+      "raw_text": "对喷火龙\n效果绝佳！",
+      "ocr_confidence": 0.9874444444444445,
+      "color": null,
+      "observation_ids": [
+        "log-row:8da80a5e78f824082a574629",
+        "log-row:3c7b87ed5fe8954dd4d054a5",
+        "log-row:4027b11f412d77426906806b"
+      ],
+      "selected_observation_id": "log-row:3c7b87ed5fe8954dd4d054a5",
+      "text_variants": [
+        "对喷火龙\n效果绝佳！"
+      ],
+      "index": 117,
+      "partial": false,
+      "inspection_timestamp": 745.5083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001491.png",
+        "frame_sha256": "a5642f53d5f80df0606c39d481e01b3c8a832e2dbd8a1a937a0ab400c17bcbb8",
+        "box": [
+          200,
+          360,
+          1111,
+          440
+        ],
+        "selected_observation_id": "log-row:3c7b87ed5fe8954dd4d054a5",
+        "all_observation_ids": [
+          "log-row:8da80a5e78f824082a574629",
+          "log-row:3c7b87ed5fe8954dd4d054a5",
+          "log-row:4027b11f412d77426906806b"
+        ]
+      },
+      "extraction_index": 89,
+      "reference_log_order": 7
+    },
+    {
+      "entry_id": "log-entry:a17aec12638dc72c0687d366",
+      "turn": 9,
+      "log_order": 8,
+      "source_id": "tests/fixtures/sample_battle_16.mp4#745.008333",
+      "raw_text": "MasterKays\n派出了烈咬陆鲨！",
+      "ocr_confidence": 0.9973333333333332,
+      "color": null,
+      "observation_ids": [
+        "log-row:80b81bfc43a6947026a08ef9",
+        "log-row:13d66a9f69c470226e53cd5b",
+        "log-row:58a2a21cce9994efdf86d08c"
+      ],
+      "selected_observation_id": "log-row:80b81bfc43a6947026a08ef9",
+      "text_variants": [
+        "MasterKays\n派出了烈咬陆鲨！"
+      ],
+      "index": 118,
+      "partial": false,
+      "inspection_timestamp": 745.0083333333333,
+      "original_action_timestamp": null,
+      "pixel_evidence": {
+        "image": ".cache/battles/sample_battle_16/evaluation/b16-semantic-state-20261027-v1/state-benchmark/log-pixels/001490.png",
+        "frame_sha256": "428311048a05e6b66365f0ce46a4c8575ac0bbff799ccdb0c1af6a76c7ca2e50",
+        "box": [
+          200,
+          440,
+          1111,
+          521
+        ],
+        "selected_observation_id": "log-row:80b81bfc43a6947026a08ef9",
+        "all_observation_ids": [
+          "log-row:80b81bfc43a6947026a08ef9",
+          "log-row:13d66a9f69c470226e53cd5b",
+          "log-row:58a2a21cce9994efdf86d08c"
+        ]
+      },
+      "extraction_index": 90,
+      "reference_log_order": 8
+    }
+  ],
+  "records": [
+    {
+      "index": 1,
+      "text": "MasterKays派出了精力充沛的大嘴鸥\n和聪慧的铝钢桥龙！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 279,
+          "action": "send_out"
+        },
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 1018,
+          "action": "send_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 2,
+      "text": "上吧！喷火龙！\n妙蛙花！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "self",
+          "species_id": 6,
+          "action": "send_out"
+        },
+        {
+          "category": "switching",
+          "side": "self",
+          "species_id": 3,
+          "action": "send_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 3,
+      "text": "大嘴鸥的\n降雨",
+      "claims": [
+        {
+          "category": "ability_activation",
+          "side": "opponent",
+          "species_id": 279,
+          "ability": "降雨"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 4,
+      "text": "开始下雨了！",
+      "claims": [
+        {
+          "category": "weather",
+          "side": "field",
+          "weather": "rain",
+          "active": true
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 5,
+      "text": "喷火龙的喷火龙进化石Y和\nHoshi的全一环起了反应！",
+      "claims": [
+        {
+          "category": "other_effects",
+          "side": "self",
+          "species_id": 6,
+          "effect": "mega_stone_reaction_notice"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 6,
+      "text": "喷火龙超级进化成了\n超级喷火龙！",
+      "claims": [
+        {
+          "category": "mega_evolution",
+          "side": "self",
+          "species_id": 6,
+          "completed": true,
+          "exact_form": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 7,
+      "text": "喷火龙的\n日照",
+      "claims": [
+        {
+          "category": "ability_activation",
+          "side": "self",
+          "species_id": 6,
+          "ability": "日照"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 8,
+      "text": "日照变强了！",
+      "claims": [
+        {
+          "category": "weather",
+          "side": "field",
+          "weather": "sun",
+          "active": true
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 9,
+      "text": "妙蛙花使出了\n催眠粉！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 3,
+          "move": "催眠粉"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 10,
+      "text": "对手的大嘴鸥\n睡着了!",
+      "claims": [
+        {
+          "category": "status",
+          "side": "opponent",
+          "species_id": 279,
+          "status": "sleep",
+          "change": "apply"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 11,
+      "text": "喷火龙使出了\n气象球！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 6,
+          "move": "气象球"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 12,
+      "text": "铝钢桥龙\nHP 100% → 13%",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "opponent",
+          "species_id": 1018,
+          "before": 100,
+          "after": 13,
+          "unit": "displayed_percent",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 13,
+      "text": "铝钢桥龙的\n持久力",
+      "claims": [
+        {
+          "category": "ability_activation",
+          "side": "opponent",
+          "species_id": 1018,
+          "ability": "持久力"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 14,
+      "text": "对手的铝钢桥龙的\n防御提高了！",
+      "claims": [
+        {
+          "category": "stat_stages",
+          "side": "opponent",
+          "species_id": 1018,
+          "stat": "defense",
+          "direction": "up",
+          "exact_stage": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 15,
+      "text": "对手的铝钢桥龙使出了\n大声咆哮！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "opponent",
+          "species_id": 1018,
+          "move": "大声咆哮"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 16,
+      "text": "喷火龙\nHP 184 → 164",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "self",
+          "species_id": 6,
+          "before": 184,
+          "after": 164,
+          "unit": "absolute",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 17,
+      "text": "妙蛙花\nHP 156 → 129",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "self",
+          "species_id": 3,
+          "before": 156,
+          "after": 129,
+          "unit": "absolute",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 18,
+      "text": "喷火龙和妙蛙花的\n特攻降低了！",
+      "claims": [
+        {
+          "category": "stat_stages",
+          "side": "self",
+          "species_id": 6,
+          "stat": "special_attack",
+          "direction": "down",
+          "exact_stage": null
+        },
+        {
+          "category": "stat_stages",
+          "side": "self",
+          "species_id": 3,
+          "stat": "special_attack",
+          "direction": "down",
+          "exact_stage": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 19,
+      "text": "对手的大嘴鸥\n正在呼呼大睡。",
+      "claims": [
+        {
+          "category": "status",
+          "side": "opponent",
+          "species_id": 279,
+          "status": "sleep",
+          "change": "observe"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 20,
+      "text": "铝钢桥龙的\n吃剩的东西",
+      "claims": [
+        {
+          "category": "item_activation",
+          "side": "opponent",
+          "species_id": 1018,
+          "item": "吃剩的东西"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 21,
+      "text": "铝钢桥龙\nHP 13% → 19%",
+      "claims": [
+        {
+          "category": "healing",
+          "side": "opponent",
+          "species_id": 1018,
+          "before": 13,
+          "after": 19,
+          "unit": "displayed_percent",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 22,
+      "text": "对手的铝钢桥龙使出了\n守住!",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "opponent",
+          "species_id": 1018,
+          "move": "守住"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 23,
+      "text": "对手的铝钢桥龙\n摆出了防守的架势！",
+      "claims": [
+        {
+          "category": "protective_effects",
+          "side": "opponent",
+          "species_id": 1018,
+          "effect": "protection_established"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 24,
+      "text": "妙蛙花使出了\n污泥炸弹！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 3,
+          "move": "污泥炸弹"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 25,
+      "text": "大嘴鸥\nHP 100% → 68%",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "opponent",
+          "species_id": 279,
+          "before": 100,
+          "after": 68,
+          "unit": "displayed_percent",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 26,
+      "text": "喷火龙使出了\n气象球！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 6,
+          "move": "气象球"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 27,
+      "text": "对手的铝钢桥龙\n在攻击中守护住了自己！",
+      "claims": [
+        {
+          "category": "protective_effects",
+          "side": "opponent",
+          "species_id": 1018,
+          "effect": "protected_from_attack"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 28,
+      "text": "对手的大嘴鸥\n正在呼呼大睡。",
+      "claims": [
+        {
+          "category": "status",
+          "side": "opponent",
+          "species_id": 279,
+          "status": "sleep",
+          "change": "observe"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 29,
+      "text": "铝钢桥龙的\n吃剩的东西",
+      "claims": [
+        {
+          "category": "item_activation",
+          "side": "opponent",
+          "species_id": 1018,
+          "item": "吃剩的东西"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 30,
+      "text": "铝钢桥龙\nHP 19% → 25%",
+      "claims": [
+        {
+          "category": "healing",
+          "side": "opponent",
+          "species_id": 1018,
+          "before": 19,
+          "after": 25,
+          "unit": "displayed_percent",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 31,
+      "text": "MasterKays换下了\n铝钢桥龙！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 1018,
+          "action": "switch_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 32,
+      "text": "MasterKays\n派出了烈咬陆鲨！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 445,
+          "action": "send_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 33,
+      "text": "妙蛙花使出了\n污泥炸弹！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 3,
+          "move": "污泥炸弹"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 34,
+      "text": "大嘴鸥\nHP 68% → 37%",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "opponent",
+          "species_id": 279,
+          "before": 68,
+          "after": 37,
+          "unit": "displayed_percent",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 35,
+      "text": "大嘴鸥的\n文柚果",
+      "claims": [
+        {
+          "category": "item_activation",
+          "side": "opponent",
+          "species_id": 279,
+          "item": "文柚果"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 36,
+      "text": "大嘴鸥\nHP 37% → 62%",
+      "claims": [
+        {
+          "category": "healing",
+          "side": "opponent",
+          "species_id": 279,
+          "before": 37,
+          "after": 62,
+          "unit": "displayed_percent",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 37,
+      "text": "喷火龙使出了\n气象球！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 6,
+          "move": "气象球"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 38,
+      "text": "烈咬陆鲨\nHP 100% → 67%",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "opponent",
+          "species_id": 445,
+          "before": 100,
+          "after": 67,
+          "unit": "displayed_percent",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 39,
+      "text": "对对手的烈咬陆鲨\n效果不好。",
+      "claims": [
+        {
+          "category": "other_effects",
+          "side": "opponent",
+          "species_id": 445,
+          "effect": "effectiveness:not_very_effective"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 40,
+      "text": "对手的大嘴鸥\n醒过来了！",
+      "claims": [
+        {
+          "category": "status",
+          "side": "opponent",
+          "species_id": 279,
+          "status": "none",
+          "change": "remove"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 41,
+      "text": "对手的大嘴鸥使出了\n顺风！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "opponent",
+          "species_id": 279,
+          "move": "顺风"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 42,
+      "text": "从对手身后\n吹起了顺风！",
+      "claims": [
+        {
+          "category": "tailwind",
+          "side": "opponent",
+          "active": true
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 43,
+      "text": "喷火龙使出了\n守住!",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 6,
+          "move": "守住"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 44,
+      "text": "喷火龙\n摆出了防守的架势！",
+      "claims": [
+        {
+          "category": "protective_effects",
+          "side": "self",
+          "species_id": 6,
+          "effect": "protection_established"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 45,
+      "text": "对手的烈咬陆鲨使出了\n岩崩！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "opponent",
+          "species_id": 445,
+          "move": "岩崩"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 46,
+      "text": "喷火龙\n在攻击中守护住了自己！",
+      "claims": [
+        {
+          "category": "protective_effects",
+          "side": "self",
+          "species_id": 6,
+          "effect": "protected_from_attack"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 47,
+      "text": "妙蛙花\nHP 129 → 84",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "self",
+          "species_id": 3,
+          "before": 129,
+          "after": 84,
+          "unit": "absolute",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 48,
+      "text": "妙蛙花使出了\n催眠粉！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 3,
+          "move": "催眠粉"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 49,
+      "text": "对手的烈咬陆鲨\n睡着了!",
+      "claims": [
+        {
+          "category": "status",
+          "side": "opponent",
+          "species_id": 445,
+          "status": "sleep",
+          "change": "apply"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 50,
+      "text": "对手的大嘴鸥使出了\n气象球！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "opponent",
+          "species_id": 279,
+          "move": "气象球"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 51,
+      "text": "妙蛙花\nHP 84 → 0",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "self",
+          "species_id": 3,
+          "before": 84,
+          "after": 0,
+          "unit": "absolute",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 52,
+      "text": "对妙蛙花\n效果绝佳！",
+      "claims": [
+        {
+          "category": "other_effects",
+          "side": "self",
+          "species_id": 3,
+          "effect": "effectiveness:super_effective"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 53,
+      "text": "妙蛙花倒下了！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "self",
+          "species_id": 3,
+          "action": "faint"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 54,
+      "text": "上吧！铝钢桥龙！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "self",
+          "species_id": 1018,
+          "action": "send_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 55,
+      "text": "MasterKays换下了\n大嘴鸥！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 279,
+          "action": "switch_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 56,
+      "text": "MasterKays\n派出了聪慧的铝钢桥龙！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 1018,
+          "action": "send_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 57,
+      "text": "喷火龙，\n回来！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "self",
+          "species_id": 6,
+          "action": "switch_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 58,
+      "text": "上吧！大嘴鸥！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "self",
+          "species_id": 279,
+          "action": "send_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 59,
+      "text": "大嘴鸥的\n降雨",
+      "claims": [
+        {
+          "category": "ability_activation",
+          "side": "self",
+          "species_id": 279,
+          "ability": "降雨"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 60,
+      "text": "开始下雨了！",
+      "claims": [
+        {
+          "category": "weather",
+          "side": "field",
+          "weather": "rain",
+          "active": true
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 61,
+      "text": "对手的烈咬陆鲨\n正在呼呼大睡。",
+      "claims": [
+        {
+          "category": "status",
+          "side": "opponent",
+          "species_id": 445,
+          "status": "sleep",
+          "change": "observe"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 62,
+      "text": "铝钢桥龙使出了\n电光束！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 1018,
+          "move": "电光束"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 63,
+      "text": "铝钢桥龙\n吸收了电力！",
+      "claims": [
+        {
+          "category": "other_effects",
+          "side": "self",
+          "species_id": 1018,
+          "effect": "absorbed_electricity"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 64,
+      "text": "铝钢桥龙的\n特攻提高了！",
+      "claims": [
+        {
+          "category": "stat_stages",
+          "side": "self",
+          "species_id": 1018,
+          "stat": "special_attack",
+          "direction": "up",
+          "exact_stage": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 65,
+      "text": "铝钢桥龙\nHP 25% → 0%",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "opponent",
+          "species_id": 1018,
+          "before": 25,
+          "after": 0,
+          "unit": "displayed_percent",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 66,
+      "text": "对对手的铝钢桥龙\n效果不好。",
+      "claims": [
+        {
+          "category": "other_effects",
+          "side": "opponent",
+          "species_id": 1018,
+          "effect": "effectiveness:not_very_effective"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 67,
+      "text": "对手的铝钢桥龙倒下了！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 1018,
+          "action": "faint"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 68,
+      "text": "MasterKays\n派出了参加了活动的喷火龙！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 6,
+          "action": "send_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 69,
+      "text": "对手的喷火龙的喷火龙进化石Y和\nMasterKays的全一环起了反应！",
+      "claims": [
+        {
+          "category": "other_effects",
+          "side": "opponent",
+          "species_id": 6,
+          "effect": "mega_stone_reaction_notice"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 70,
+      "text": "对手的喷火龙超级进化成了\n超级喷火龙！",
+      "claims": [
+        {
+          "category": "mega_evolution",
+          "side": "opponent",
+          "species_id": 6,
+          "completed": true,
+          "exact_form": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 71,
+      "text": "喷火龙的\n日照",
+      "claims": [
+        {
+          "category": "ability_activation",
+          "side": "opponent",
+          "species_id": 6,
+          "ability": "日照"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 72,
+      "text": "日照变强了！",
+      "claims": [
+        {
+          "category": "weather",
+          "side": "field",
+          "weather": "sun",
+          "active": true
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 73,
+      "text": "铝钢桥龙使出了\n守住!",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 1018,
+          "move": "守住"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 74,
+      "text": "铝钢桥龙\n摆出了防守的架势！",
+      "claims": [
+        {
+          "category": "protective_effects",
+          "side": "self",
+          "species_id": 1018,
+          "effect": "protection_established"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 75,
+      "text": "对手的烈咬陆鲨\n正在呼呼大睡。",
+      "claims": [
+        {
+          "category": "status",
+          "side": "opponent",
+          "species_id": 445,
+          "status": "sleep",
+          "change": "observe"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 76,
+      "text": "对手的喷火龙使出了\n热风！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "opponent",
+          "species_id": 6,
+          "move": "热风"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 77,
+      "text": "铝钢桥龙\n在攻击中守护住了自己！",
+      "claims": [
+        {
+          "category": "protective_effects",
+          "side": "self",
+          "species_id": 1018,
+          "effect": "protected_from_attack"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 78,
+      "text": "大嘴鸥\nHP 164 → 110",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "self",
+          "species_id": 279,
+          "before": 164,
+          "after": 110,
+          "unit": "absolute",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 79,
+      "text": "对大嘴鸥\n效果不好。",
+      "claims": [
+        {
+          "category": "other_effects",
+          "side": "self",
+          "species_id": 279,
+          "effect": "effectiveness:not_very_effective"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 80,
+      "text": "大嘴鸥\n被灼伤了！",
+      "claims": [
+        {
+          "category": "status",
+          "side": "self",
+          "species_id": 279,
+          "status": "burn",
+          "change": "apply"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 81,
+      "text": "大嘴鸥使出了\n气象球！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 279,
+          "move": "气象球"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 82,
+      "text": "烈咬陆鲨\nHP 67% → 48%",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "opponent",
+          "species_id": 445,
+          "before": 67,
+          "after": 48,
+          "unit": "displayed_percent",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 83,
+      "text": "对对手的烈咬陆鲨\n效果不好。",
+      "claims": [
+        {
+          "category": "other_effects",
+          "side": "opponent",
+          "species_id": 445,
+          "effect": "effectiveness:not_very_effective"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 84,
+      "text": "大嘴鸥\n受到了灼伤的伤害！",
+      "claims": [
+        {
+          "category": "qualitative_damage",
+          "side": "self",
+          "species_id": 279,
+          "direction": "down",
+          "cause": {
+            "kind": "status",
+            "status": "burn"
+          },
+          "amount": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 85,
+      "text": "大嘴鸥\nHP 110 → 100",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "self",
+          "species_id": 279,
+          "before": 110,
+          "after": 100,
+          "unit": "absolute",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 86,
+      "text": "对手的顺风停止了！",
+      "claims": [
+        {
+          "category": "tailwind",
+          "side": "opponent",
+          "active": false
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 87,
+      "text": "大嘴鸥使出了\n广域防守！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 279,
+          "move": "广域防守"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 88,
+      "text": "我方周围正受到\n广域防守的保护！",
+      "claims": [
+        {
+          "category": "protective_effects",
+          "side": "self",
+          "effect": "wide_guard_established"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 89,
+      "text": "对手的烈咬陆鲨\n醒过来了！",
+      "claims": [
+        {
+          "category": "status",
+          "side": "opponent",
+          "species_id": 445,
+          "status": "none",
+          "change": "remove"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 90,
+      "text": "对手的烈咬陆鲨使出了\n岩崩！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "opponent",
+          "species_id": 445,
+          "move": "岩崩"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 91,
+      "text": "大嘴鸥\n受到了广域防守的保护！",
+      "claims": [
+        {
+          "category": "protective_effects",
+          "side": "self",
+          "species_id": 279,
+          "effect": "wide_guard_received"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 92,
+      "text": "铝钢桥龙\n受到了广域防守的保护！",
+      "claims": [
+        {
+          "category": "protective_effects",
+          "side": "self",
+          "species_id": 1018,
+          "effect": "wide_guard_received"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 93,
+      "text": "对手的喷火龙使出了\n气象球！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "opponent",
+          "species_id": 6,
+          "move": "气象球"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 94,
+      "text": "铝钢桥龙\nHP 194 → 0",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "self",
+          "species_id": 1018,
+          "before": 194,
+          "after": 0,
+          "unit": "absolute",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 95,
+      "text": "铝钢桥龙倒下了！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "self",
+          "species_id": 1018,
+          "action": "faint"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 96,
+      "text": "大嘴鸥\n受到了灼伤的伤害！",
+      "claims": [
+        {
+          "category": "qualitative_damage",
+          "side": "self",
+          "species_id": 279,
+          "direction": "down",
+          "cause": {
+            "kind": "status",
+            "status": "burn"
+          },
+          "amount": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 97,
+      "text": "大嘴鸥\nHP 100 → 90",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "self",
+          "species_id": 279,
+          "before": 100,
+          "after": 90,
+          "unit": "absolute",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 98,
+      "text": "上吧！喷火龙！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "self",
+          "species_id": 6,
+          "action": "send_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 99,
+      "text": "MasterKays换下了\n烈咬陆鲨！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 445,
+          "action": "switch_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 100,
+      "text": "MasterKays\n派出了精力充沛的大嘴鸥！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 279,
+          "action": "send_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 101,
+      "text": "大嘴鸥的\n降雨",
+      "claims": [
+        {
+          "category": "ability_activation",
+          "side": "opponent",
+          "species_id": 279,
+          "ability": "降雨"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 102,
+      "text": "开始下雨了！",
+      "claims": [
+        {
+          "category": "weather",
+          "side": "field",
+          "weather": "rain",
+          "active": true
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 103,
+      "text": "大嘴鸥使出了\n广域防守！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 279,
+          "move": "广域防守"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 104,
+      "text": "我方周围正受到\n广域防守的保护！",
+      "claims": [
+        {
+          "category": "protective_effects",
+          "side": "self",
+          "effect": "wide_guard_established"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 105,
+      "text": "喷火龙使出了\n气象球！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 6,
+          "move": "气象球"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 106,
+      "text": "大嘴鸥\nHP 62% → 33%",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "opponent",
+          "species_id": 279,
+          "before": 62,
+          "after": 33,
+          "unit": "displayed_percent",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 107,
+      "text": "对对手的大嘴鸥\n效果不好。",
+      "claims": [
+        {
+          "category": "other_effects",
+          "side": "opponent",
+          "species_id": 279,
+          "effect": "effectiveness:not_very_effective"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 108,
+      "text": "对手的喷火龙使出了\n暴风！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "opponent",
+          "species_id": 6,
+          "move": "暴风"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 109,
+      "text": "大嘴鸥\nHP 90 → 0",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "self",
+          "species_id": 279,
+          "before": 90,
+          "after": 0,
+          "unit": "absolute",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 110,
+      "text": "大嘴鸥倒下了！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "self",
+          "species_id": 279,
+          "action": "faint"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 111,
+      "text": "喷火龙使出了\n气象球！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "self",
+          "species_id": 6,
+          "move": "气象球"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 112,
+      "text": "喷火龙\nHP 100% → 0%",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "opponent",
+          "species_id": 6,
+          "before": 100,
+          "after": 0,
+          "unit": "displayed_percent",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 113,
+      "text": "对对手的喷火龙\n效果绝佳！",
+      "claims": [
+        {
+          "category": "other_effects",
+          "side": "opponent",
+          "species_id": 6,
+          "effect": "effectiveness:super_effective"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 114,
+      "text": "对手的喷火龙倒下了！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 6,
+          "action": "faint"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 115,
+      "text": "对手的大嘴鸥使出了\n气象球！",
+      "claims": [
+        {
+          "category": "move_execution",
+          "side": "opponent",
+          "species_id": 279,
+          "move": "气象球"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 116,
+      "text": "喷火龙\nHP 164 → 12",
+      "claims": [
+        {
+          "category": "damage",
+          "side": "self",
+          "species_id": 6,
+          "before": 164,
+          "after": 12,
+          "unit": "absolute",
+          "cause": null
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 117,
+      "text": "对喷火龙\n效果绝佳！",
+      "claims": [
+        {
+          "category": "other_effects",
+          "side": "self",
+          "species_id": 6,
+          "effect": "effectiveness:super_effective"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    },
+    {
+      "index": 118,
+      "text": "MasterKays\n派出了烈咬陆鲨！",
+      "claims": [
+        {
+          "category": "switching",
+          "side": "opponent",
+          "species_id": 445,
+          "action": "send_out"
+        }
+      ],
+      "review": "agent read original log pixels; not human annotation"
+    }
+  ],
+  "manual_recovered_rows": 28,
+  "automatic_unique_rows": 90,
+  "order_evidence": "Actual turn headings, within-page row order, shared visible boundary anchors and scroll positions; log inspection times never action times",
+  "limitations": [
+    "Original extractor still reports 11 overlap issues; curated recovery uses source pixels, not parser predictions.",
+    "No move targets or damage-to-move attribution asserted. Burn residual announcement explicitly names status cause."
+  ]
+}

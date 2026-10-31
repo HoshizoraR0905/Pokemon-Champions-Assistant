@@ -1,6 +1,7 @@
 """Portable safety regressions for adaptive region-driven recognition."""
 import numpy as np
-from recognition.fast_profile import AdaptiveInspection,RegionGate
+from recognition.experimental import AdaptiveInspection
+from recognition.fast_profile import RegionGate
 from recognition.fast_report import compare_receipts,compare_occurrences
 
 

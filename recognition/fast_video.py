@@ -10,7 +10,6 @@ from fractions import Fraction
 import hashlib
 import json
 import math
-import os
 from pathlib import Path
 import queue
 import re
@@ -21,8 +20,8 @@ import cv2
 import numpy as np
 from battle_artifacts import BattleArtifacts, canonical_id
 from capture import Frame
-from recognition.fast_profile import (VERSION, FastConfig, AdaptiveInspection, RegionGate,
-    inspect, normalized, difference, recognize_cards, MENUS)
+from recognition.fast_profile import (RegionGate,
+    inspect, normalized, recognize_cards, MENUS)
 from recognition.video_sampling import atomic_json, fingerprint
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -35,8 +34,8 @@ def digest(path):
     return h.hexdigest()
 
 
-def decoded_frames(video,log,*,start=0.,end=None):
-    """FFmpeg decodes source frames; materialize first source PTS per 0.5s cell.
+def decoded_frames(video,log,*,start=0.,end=None,sample_fps=2.):
+    """FFmpeg decodes source frames; materialize first source PTS per configured sampling cell.
 
     Count source-decoded frames with a pre-select showinfo, independently of
     the selected raw frames. Drain logs concurrently; preserve integer PTS.
@@ -46,7 +45,7 @@ def decoded_frames(video,log,*,start=0.,end=None):
     if start:command+=['-ss',str(start)]
     command+=['-i',str(video)]
     if end is not None:command+=['-t',str(end-start)]
-    expr=f'isnan(prev_selected_t)+gt(floor((t+{start})*2+0.000000001),floor((prev_selected_t+{start})*2+0.000000001))'
+    expr=f'isnan(prev_selected_t)+gt(floor((t+{start})*{sample_fps}+0.000000001),floor((prev_selected_t+{start})*{sample_fps}+0.000000001))'
     command+=['-an','-vf',f"showinfo@source=checksum=0,select='{expr}',scale=1311:603,showinfo@sample=checksum=0",
               '-fps_mode','vfr','-pix_fmt','bgr24','-f','rawvideo','pipe:1']
     process=subprocess.Popen(command,stdout=subprocess.PIPE,stderr=subprocess.PIPE,bufsize=1024*1024)
@@ -80,7 +79,7 @@ def decoded_frames(video,log,*,start=0.,end=None):
             if pts is None:raise RuntimeError('Missing source PTS')
             ticks,base=pts;t=float(Fraction(str(start))+ticks*base)
             yield np.frombuffer(data,dtype=np.uint8).reshape(603,1311,3),dict(timestamp=t,source_pts=ticks,
-                source_time_base=str(base),seek_origin_seconds=start,target_timestamp=math.floor(t*2+1e-7)/2)
+                source_time_base=str(base),seek_origin_seconds=start,target_timestamp=math.floor(t*sample_fps+1e-7)/sample_fps)
         if process.wait()!=0:raise RuntimeError(f'FFmpeg failed; see {log}')
         thread.join();return
     finally:
@@ -166,19 +165,21 @@ class CachedIcons:
         return result
 
 
-def cached_frames(manifest,paths,video,*,start=0.,end=None):
+def cached_frames(manifest,paths,video,*,start=0.,end=None,sample_fps=2.):
     """Read acquisition metadata and pixels only; no historical OCR or labels."""
     from scripts.validate_m232 import video_identity
     manifest=Path(manifest).resolve()
     if not manifest.is_relative_to(paths.cache_dir.resolve()):raise ValueError('Frame cache belongs outside this battle namespace')
     data=json.loads(manifest.read_text());media=video_identity(video)
+    if data.get('sampling',{}).get('sample_fps',2.) != sample_fps:
+        raise ValueError('Frame cache sampling FPS mismatch; acquire a compatible grid')
     prior=data['video'];paths.check_identity(prior['battle_id'])
     for key in ['size_bytes','sampled_sha256']:
         if prior[key]!=media[key]:raise ValueError('Cached video fingerprint mismatch: '+key)
     cells={}
     for row in data['frames']:
-        target=row['target_timestamp'];cell=round(target*2)
-        if abs(target*2-cell)>1e-6 or not start<=target or end is not None and target>=end:continue
+        target=row['target_timestamp'];cell=round(target*sample_fps)
+        if abs(target*sample_fps-cell)>1e-6 or not start<=target or end is not None and target>=end:continue
         if cell not in cells or row['timestamp']<cells[cell]['timestamp']:cells[cell]=row
     try:
         for cell,row in sorted(cells.items()):
@@ -193,16 +194,17 @@ def cached_frames(manifest,paths,video,*,start=0.,end=None):
             container_duration_seconds=prior['metadata']['duration_seconds'])
 
 
-def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagnostic_menus=False,icons=True,event_driven=False,frame_cache=None,recognition_caches=None,reconstruct_from=None,identity_mode='lightweight'):
+def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagnostic_menus=False,icons=True,event_driven=False,frame_cache=None,recognition_caches=None,reconstruct_from=None,identity_mode='lightweight',sample_fps=2.):
     from recognition import Recognizer,box
-    from recognition.identity_modes import EntryVerifier,read_hp
+    from recognition.identity_modes import EntryVerifier,read_hp,hp_signature,hp_refresh
+    if sample_fps not in {2.,3.}:raise ValueError('sample_fps must be 2 or 3')
     if identity_mode not in {'lightweight','development'}:raise ValueError('Unknown identity mode')
     from recognition.ui_regions import read_message
     from recognition.identity_flow import preview_rows
     from recognition.message_occurrences import MessageOccurrences
     from recognition.visual_evidence import variants,parse_popup,DETAIL_ROIS,parse_detail,stage_arrows,detail_layout
     from recognition.visual_adapter import selected_panel_side
-    from scripts.process_m237 import context_dump,context_restore
+    from recognition.context import context_dump,context_restore
     if end is not None and (not math.isfinite(end) or end<=0):raise ValueError('end must be positive and finite')
     if max_frames is not None and max_frames<1:raise ValueError('max_frames must be positive')
     if frame_cache and not event_driven:raise ValueError('--frame-cache requires --profile event-driven')
@@ -216,11 +218,13 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
     manifest_path=folder/'manifest.json'
     if manifest_path.exists() and not resume:raise ValueError(f'Run exists: {folder}; use --resume or a new --run-id')
     folder.mkdir(parents=True,exist_ok=True)
-    config=FastConfig(diagnostic_menus=diagnostic_menus)
     controller=None
     if event_driven:
         from recognition.event_schedule import EventConfig,EventInspection,IdentitySchedule,command_label
-        config=EventConfig();controller=IdentitySchedule()
+        config=EventConfig(active_fps=sample_fps);controller=IdentitySchedule()
+    else:
+        from recognition.experimental import FastConfig, AdaptiveInspection
+        config=FastConfig(diagnostic_menus=diagnostic_menus,active_fps=sample_fps)
     sources={str(p.relative_to(ROOT)):digest(p) for directory in ['recognition','tracking','battle_events','models','knowledge','capture']
              for p in (ROOT/directory).rglob('*') if p.suffix in {'.py','.json','.yaml','.yml'} and '__pycache__' not in p.parts}
     for p in [Path(__file__),ROOT/'main.py',ROOT/'scripts/report_m237.py',ROOT/'scripts/process_m237.py',ROOT/'recognition/fast_report.py',ROOT/'scripts/templates/fast_review.html',ROOT/'battle_artifacts.py',ROOT/'scripts/benchmark_fast.py']:
@@ -230,7 +234,7 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
             sources[str(p.relative_to(ROOT))]=digest(p)
     identity=dict(version=config.version,config=asdict(config),video_path=str(video),video_sha256=digest(video),sources=sources,
                   ocr_manifest=digest(ROOT/'.cache/m15-onnx-medium/local-manifest.json'),icon_index=digest(ROOT/'.cache/champions-icons/index.json'),
-                  end=end,max_frames=max_frames,icons=icons)
+                  end=end,max_frames=max_frames,icons=icons,sample_fps=sample_fps)
     if event_driven:identity['identity_mode']=identity_mode
     if frame_cache:identity['frame_cache']=dict(path=str(Path(frame_cache).resolve()),sha256=digest(frame_cache))
     cache_sources=[]
@@ -266,8 +270,8 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
     if reconstruct_from:
         from recognition.event_report import reconstruct_cached
         return reconstruct_cached(paths,folder,report,source,identity)
-    counts=Counter({'ocr_invocations_performed':0,'icon_invocations_performed':0});rows=[];roster=[];scheduler=AdaptiveInspection(config);gate=RegionGate(config.region_difference)
-    if event_driven:scheduler=EventInspection(config)
+    counts=Counter({'ocr_invocations_performed':0,'icon_invocations_performed':0});rows=[];roster=[];gate=RegionGate(config.region_difference)
+    scheduler=EventInspection(config) if event_driven else AdaptiveInspection(config)
     command_schedule=None
     if event_driven:
         from recognition.command_checkpoint import CommandCheckpointSchedule,schedule_checkpoint
@@ -292,6 +296,9 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
         for key,old in saved['gate'].items():old['signature']=np.asarray(old['signature'],dtype=np.uint8);gate.regions[key]=old
         # OCR/icon fuzzy caches intentionally start empty on resume. Exact crop
         # caches remain available; additional calls are recorded as resumed cost.
+    from recognition.double_faint import DoubleFaintVerifier
+    double_verifier=DoubleFaintVerifier(paths.battle_id) if event_driven else None
+    if double_verifier and rows:double_verifier.observe_prefix(rows,roster)
     verifier=EntryVerifier(paths.battle_id) if event_driven and identity_mode=='development' else None
     if verifier and rows:
         verifier.observe_prefix(rows)
@@ -301,6 +308,8 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
         prior_active_seconds=prior.get('active_seconds',0) if prior else 0,completed_stages=[],report=str(report),counts=dict(counts))
     atomic_json(manifest_path,manifest)
     def save(status='running',error=None):
+        if double_verifier:
+            for key,value in double_verifier.counts.items():counts['double_faint_'+key]=value
         if verifier:atomic_json(folder/'identity-verification-checkpoint.json',verifier.predictions)
         serialgate={k:{**v,'signature':v['signature'].tolist()} for k,v in gate.regions.items()}
         atomic_json(checkpoint,dict(row_count=len(rows),roster=roster,context=context_dump(recognizer.context),counts=dict(counts),
@@ -312,12 +321,12 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
         manifest.update(status=status,active_seconds=manifest['prior_active_seconds']+time.monotonic()-started,counts=dict(counts),
             last_timestamp=rows[-1]['timestamp'] if rows else None,error=error)
         atomic_json(manifest_path,manifest)
-    start_cell=(math.floor(rows[-1]['timestamp']*2)+1)/2 if rows else 0.
+    start_cell=(math.floor(rows[-1]['timestamp']*sample_fps)+1)/sample_fps if rows else 0.
     try:
-        decoder=(cached_frames(frame_cache,paths,video,start=start_cell,end=end) if frame_cache else
-                 decoded_frames(video,folder/('decode-resume.log' if prior else 'decode.log'),start=start_cell,end=end))
+        decoder=(cached_frames(frame_cache,paths,video,start=start_cell,end=end,sample_fps=sample_fps) if frame_cache else
+                 decoded_frames(video,folder/('decode-resume.log' if prior else 'decode.log'),start=start_cell,end=end,sample_fps=sample_fps))
         for image,raw in decoder:
-            counts['frames_materialized_at_2fps']+=1
+            counts[f'frames_materialized_at_{int(sample_fps)}fps']+=1
             t=raw['timestamp']
             ui=None
             if event_driven:
@@ -330,10 +339,13 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
                     for region in ui['regions']:
                         if region['region_type']=='active_hud':
                             region.update(visibility='occluded',routing_reason='verified_team_layout_owns_card_pixels')
-                eligible=scheduler.monitor(t,command_label(image),ui['message_visible'])
+                hud_changed=any(hp_refresh(gate.regions.get(f'{side}_active_{i+1}'),hp_signature(image,side,o),t)[0]
+                    for side,i,o,_ in ui['cards'])
+                eligible=scheduler.monitor(t,command_label(image),ui['message_visible'],hud_changed=hud_changed,
+                    banner_visible=any(r['region_type']=='ability_banner' and r['visibility']=='visible' for r in ui['regions']))
                 counts['cheap_monitor_frames']+=1
                 # Persist every candidate decision, including unscheduled frames.
-                atomic_json(folder/'monitor'/f'{round(raw["target_timestamp"]*2):06d}.json',
+                atomic_json(folder/'monitor'/f'{round(raw["target_timestamp"]*sample_fps):06d}.json',
                     dict(**raw,command=deepcopy(scheduler.last_monitor),inspected=eligible))
             else:eligible=scheduler.due(t)
             if not eligible:
@@ -385,9 +397,13 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
                 visible.add(key)
                 if typ=='battle_message':
                     sig=cv2.resize(ui['message_mask'],(128,24),interpolation=cv2.INTER_AREA)
+                elif typ=='active_hud' and event_driven:
+                    sig=hp_signature(image,region['fields']['side'],region['fields']['offset'])
                 else:sig=normalized(image,region['bounds'],text=typ!='active_hud')
                 threshold=gate.threshold;gate.threshold=.008 if typ=='active_hud' else config.region_difference
                 selected,reason,old=gate.choose(key,sig,True,t);gate.threshold=threshold
+                if typ=='active_hud' and event_driven:
+                    selected,reason=hp_refresh(old,sig,t,opportunity=t<=scheduler.hp_until)
                 decisions.append(dict(region=key,reason=reason,selected=selected))
                 if not selected:
                     counts['region_rejected:'+reason]+=1
@@ -431,11 +447,18 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
                 frame=Frame(image,raw['source_id'],counts['frames_sampled'],t,raw)
                 if event_driven:row['snapshot']=read_hp(recognizer,frame,selected_cards,counts)
                 else:row['snapshot']=recognize_cards(recognizer,frame,selected_cards).to_dict()
+                if event_driven:
+                    for mon in row['snapshot']['pokemon']:
+                        gate.regions[mon['slot']]['reliable']=mon['hp_read_status']=='observed'
             if event_driven:
+                row['hp_acquisition']=dict(visible_slots=[f'{s}_active_{i+1}' for s,i,_,_ in ui['cards']],
+                    status='visible' if ui['cards'] else 'hidden',opportunity=t<=scheduler.hp_until)
+            if event_driven:
+                preview_entered=controller.observe_phase(ui['phase'])
                 if ui['phase'] in {'team_configuration','team_preview'}:
                     key='team:'+ui['phase'];sig=normalized(image,box(image,(.08,.04,.95,.97)),text=True)
                     choose,reason,_=gate.choose(key,sig,True,t)
-                    if choose:
+                    if choose or preview_entered:
                         roster+=controller.acquire_team(recognizer,Frame(image,raw['source_id'],counts['frames_sampled'],t,raw),ui['phase'],paths.battle_id,counts)
                         gate.store(key,sig,t,{},raw['source_id'])
             elif ui['phase']=='team_preview' or (diagnostic_menus and ui['phase'] in MENUS|{'team_configuration'}):
@@ -468,10 +491,13 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
                 from recognition.command_checkpoint import inspect_command
                 row['command_inspection']=inspect_command(image)
                 for event in row['occurrence_decision']['events']:
-                    controller.invalidate(event)
                     if event['event_type'] in {'send_out','switch_out','faint','transformation','position_change'}:
                         for key in list(gate.regions):
                             if '_active_' in key:gate.regions.pop(key,None)
+            if double_verifier:
+                if any(e['event_type'] in {'send_out','switch_out','faint','position_change'} for e in row['occurrence_decision']['events']) or row.get('trainer_observations'):
+                    double_verifier.observe_prefix([*rows,row],roster)
+                double_verifier.verify(recognizer,Frame(image,raw['source_id'],counts['frames_sampled'],t,raw),ui['cards'],counts,row)
             if verifier:
                 # Replay only when message/trainer evidence changes. No HUD enters this prefix.
                 if any(e['event_type'] in {'send_out','switch_out','faint','position_change'} for e in row['occurrence_decision']['events']) or row.get('trainer_observations'):
@@ -504,7 +530,9 @@ def analyze(video,*,run_id='fast-v1',resume=False,end=None,max_frames=None,diagn
             from recognition.event_report import reconstruct_and_package
         else:
             from recognition.fast_report import reconstruct_and_package
-        result=reconstruct_and_package(paths,folder,report,rows,roster,occurrences.groups)
+        if event_driven:
+            result=reconstruct_and_package(paths,folder,report,rows,roster,occurrences.groups,adaptive_multi_hit=True)
+        else:result=reconstruct_and_package(paths,folder,report,rows,roster,occurrences.groups)
         manifest['completed_stages']+=['reconstruction','viewer_packaging'];manifest['results']=result
         save('complete')
         result['video_duration']=manifest['decoder'].get('container_duration_seconds',result['video_duration'])

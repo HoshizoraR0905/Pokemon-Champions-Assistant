@@ -1,0 +1,464 @@
+{
+  "version": "own-hp-damage-review-v1",
+  "battle_id": "sample_battle_12",
+  "origin": "recorded",
+  "reviewer": "codex-cached-source-review-2026-10-22",
+  "events": [
+    {
+      "id": "review:b12:received-4",
+      "source_event_id": "event:fd792a9bb653012405fc39b1",
+      "attacker": "sample_battle_12:opponent:encounter:29f64303ef101514",
+      "attacker_form": "pokeapi:species:858",
+      "target": "sample_battle_12:self:encounter:e73927722697aba4",
+      "target_form": "pokeapi:form:10135",
+      "move": "pokeapi:move:473",
+      "segment_id": "visual-turn:766323d4eb36c4d2d033c6b1038ecc123f227bcc53f2858715f378cbdb09031f",
+      "pre_hp": 184,
+      "post_hp": 58,
+      "maximum_hp": 184,
+      "pre_source": "000597.png",
+      "post_source": "000631.png",
+      "available_at": 365.51166666666666,
+      "action_time": 359.51,
+      "sources": {
+        "000615.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000615.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "7bb20d5de62d0b8723880026a76379db717a3f8d8b9ce761de526f756ce68e43",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#357.51",
+          "source_pts": 214506,
+          "source_time_base": "1/600",
+          "target_timestamp": 357.5,
+          "timestamp": 357.51
+        },
+        "000616.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000616.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "c7803eacc271d0060ef86330e5f98241fb57227fea42c617ea563ea0b6841e83",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#358.01",
+          "source_pts": 214806,
+          "source_time_base": "1/600",
+          "target_timestamp": 358.0,
+          "timestamp": 358.01
+        },
+        "000617.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000617.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "cb548d1600e342801c8741e5023f9aaa1bafbcc46a9ac6f1cd527a82859ded77",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#358.51",
+          "source_pts": 215106,
+          "source_time_base": "1/600",
+          "target_timestamp": 358.5,
+          "timestamp": 358.51
+        },
+        "000618.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000618.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "304e975255afde19457f5b2b6664ab94936e0101f515a6474eb10b228bbbfbce",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#359.01",
+          "source_pts": 215406,
+          "source_time_base": "1/600",
+          "target_timestamp": 359.0,
+          "timestamp": 359.01
+        },
+        "000619.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000619.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "938d78ed79a2bd7e239b17a97659e5929a7e78f8f2998af0d3d955ed1eda21ce",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#359.51",
+          "source_pts": 215706,
+          "source_time_base": "1/600",
+          "target_timestamp": 359.5,
+          "timestamp": 359.51
+        },
+        "000620.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000620.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "fe3a7b7e389c16a4eea7c8905c7c9c297327a251d7dae910b50ffeeff2974c17",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#360.01",
+          "source_pts": 216006,
+          "source_time_base": "1/600",
+          "target_timestamp": 360.0,
+          "timestamp": 360.01
+        },
+        "000621.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000621.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "a814cfe4be233b51c695c98bdc790443851cb2e66b3398069b2da626867abd99",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#360.51",
+          "source_pts": 216306,
+          "source_time_base": "1/600",
+          "target_timestamp": 360.5,
+          "timestamp": 360.51
+        },
+        "000622.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000622.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "0694fd131e23d45f64b30ba0e6ca219bc1b26ec920cd32ff5ac3b0bfa41691e8",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#361.01",
+          "source_pts": 216606,
+          "source_time_base": "1/600",
+          "target_timestamp": 361.0,
+          "timestamp": 361.01
+        },
+        "000623.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000623.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "708e6f45c6fd4611551cdd3f122c9a1646e891e7966c8d8088a2dc76229a2292",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#361.51166666666666",
+          "source_pts": 216907,
+          "source_time_base": "1/600",
+          "target_timestamp": 361.5,
+          "timestamp": 361.51166666666666
+        },
+        "000624.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000624.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "4da02439907e28e6a30fe7d95740d7588603c81d8be98afffc4361cb97c3d736",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#362.01166666666666",
+          "source_pts": 217207,
+          "source_time_base": "1/600",
+          "target_timestamp": 362.0,
+          "timestamp": 362.01166666666666
+        },
+        "000625.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000625.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "1c2718b9ef682840db9be3a212bdb327f1e4784af0f1b83d97ee41480f9d63e6",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#362.51166666666666",
+          "source_pts": 217507,
+          "source_time_base": "1/600",
+          "target_timestamp": 362.5,
+          "timestamp": 362.51166666666666
+        },
+        "000626.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000626.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "7e5099dd929583dd38047979defcb5021fc14828935894a48506ec9229122969",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#363.01166666666666",
+          "source_pts": 217807,
+          "source_time_base": "1/600",
+          "target_timestamp": 363.0,
+          "timestamp": 363.01166666666666
+        },
+        "000627.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000627.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "9f90e008f0cb60e13334b16b7f24ae7be10e5d39260be17568762a9c3bae095b",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#363.51166666666666",
+          "source_pts": 218107,
+          "source_time_base": "1/600",
+          "target_timestamp": 363.5,
+          "timestamp": 363.51166666666666
+        },
+        "000628.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000628.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "3fe2af2868483dc9ea46ea3443856163927a1ba496719e22515f7290f5838256",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#364.01166666666666",
+          "source_pts": 218407,
+          "source_time_base": "1/600",
+          "target_timestamp": 364.0,
+          "timestamp": 364.01166666666666
+        },
+        "000629.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000629.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "d21e01ba0ac05be345d9e481842fdf6dbee9646fb90b8c14ba006138ee56065c",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#364.51166666666666",
+          "source_pts": 218707,
+          "source_time_base": "1/600",
+          "target_timestamp": 364.5,
+          "timestamp": 364.51166666666666
+        },
+        "000630.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000630.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "ee4fe71c54f510725f63e64ca79d4ba9e27e039af2bea48335d275bcb9c9a7e9",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#365.01166666666666",
+          "source_pts": 219007,
+          "source_time_base": "1/600",
+          "target_timestamp": 365.0,
+          "timestamp": 365.01166666666666
+        },
+        "000631.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000631.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "f89c572f1b7a6bfde480ac86d5daf4bf711ccce2caeda0bc5206c1dc032a3b63",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#365.51166666666666",
+          "source_pts": 219307,
+          "source_time_base": "1/600",
+          "target_timestamp": 365.5,
+          "timestamp": 365.51166666666666
+        },
+        "000597.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000597.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "7e14a6050c7e6b79c88009a69134213dd09f993c883d05102bfc8ee693aaf34d",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#348.0083333333333",
+          "source_pts": 208805,
+          "source_time_base": "1/600",
+          "target_timestamp": 348.0,
+          "timestamp": 348.0083333333333
+        }
+      },
+      "critical_alternatives": [
+        false,
+        true
+      ],
+      "assumptions": [
+        "Level 50; existing user-bound Team7 build and current form",
+        "Pinned Champions community-reference mechanics, not independently certified Champions rounding",
+        "No unobserved relevant stage/status/screen/Helping Hand/Friend Guard change in this bracket; neutral relevant stages are conditional",
+        "Both critical alternatives retained; no prior over items, abilities or rolls"
+      ],
+      "note": "Source-reviewed single-target hit and stable endpoint. Charizard later Instruct Psyshock is a separate censored KO.",
+      "context": {
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        },
+        "attacker_status": "none",
+        "defender_status": "none",
+        "attacker_stages": {
+          "attack": 0,
+          "defense": 0,
+          "special_attack": 0,
+          "special_defense": 0,
+          "speed": 0
+        },
+        "defender_stages": {
+          "attack": 0,
+          "defense": 0,
+          "special_attack": 0,
+          "special_defense": 0,
+          "speed": 0
+        }
+      }
+    },
+    {
+      "id": "review:b12:received-6",
+      "source_event_id": "event:528af6e4f41aa51aa977b83c",
+      "attacker": "sample_battle_12:opponent:encounter:29f64303ef101514",
+      "attacker_form": "pokeapi:species:858",
+      "target": "sample_battle_12:self:encounter:bc18eb30a1f3a68a",
+      "target_form": "pokeapi:species:279",
+      "move": "pokeapi:move:473",
+      "segment_id": "visual-turn:6a760e0f93f2d29d934760742714a7dace0532e7e296b5abf1f91952b46452ad",
+      "pre_hp": 119,
+      "post_hp": 19,
+      "maximum_hp": 164,
+      "pre_source": "000733.png",
+      "post_source": "000747.png",
+      "available_at": 448.0083333333333,
+      "action_time": 442.025,
+      "sources": {
+        "000733.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000733.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "1c1c8740f5942bc85c15c5e3c5f279809c3cd3419a309c9e63fc364d1c0e764a",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#441.025",
+          "source_pts": 264615,
+          "source_time_base": "1/600",
+          "target_timestamp": 441.0,
+          "timestamp": 441.025
+        },
+        "000734.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000734.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "77b1b8737717cea4014aefb6e9c4e7f99487398a7919b56275f4791c6d8a7994",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#441.525",
+          "source_pts": 264915,
+          "source_time_base": "1/600",
+          "target_timestamp": 441.5,
+          "timestamp": 441.525
+        },
+        "000735.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000735.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "e8231b472ff141b5998a3811c08737917cb2982873637a9c7be222e650f736eb",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#442.025",
+          "source_pts": 265215,
+          "source_time_base": "1/600",
+          "target_timestamp": 442.0,
+          "timestamp": 442.025
+        },
+        "000736.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000736.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "1f53495aa585eea8c21bf94dc3a8640f018b81c7d21bdd22caffa2530ad91d1c",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#442.525",
+          "source_pts": 265515,
+          "source_time_base": "1/600",
+          "target_timestamp": 442.5,
+          "timestamp": 442.525
+        },
+        "000737.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000737.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "a48db54befbe43e5a48fc7884d17e9754035ce4e0aa64a4e3b07bb633c4da634",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#443.025",
+          "source_pts": 265815,
+          "source_time_base": "1/600",
+          "target_timestamp": 443.0,
+          "timestamp": 443.025
+        },
+        "000738.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000738.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "7b683be6aa774527c3dcc8692441181777dff55bc3fcf05b96f3ec535a3f9e0f",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#443.525",
+          "source_pts": 266115,
+          "source_time_base": "1/600",
+          "target_timestamp": 443.5,
+          "timestamp": 443.525
+        },
+        "000739.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000739.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "475c9ded6e18e7a3c4ec2ae3a4dc7d0ec39c2f0f943ec8d8b197f622358dd0c7",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#444.025",
+          "source_pts": 266415,
+          "source_time_base": "1/600",
+          "target_timestamp": 444.0,
+          "timestamp": 444.025
+        },
+        "000740.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000740.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "5fffb9eb05e88219eaf33bb8aef14730a7d08965ac6d5afe4d21c33fe8c7a0bd",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#444.525",
+          "source_pts": 266715,
+          "source_time_base": "1/600",
+          "target_timestamp": 444.5,
+          "timestamp": 444.525
+        },
+        "000741.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000741.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "28917c084e006096006400ce844afb9e2490d484f55d17743b7ad8fbe647fd9e",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#445.025",
+          "source_pts": 267015,
+          "source_time_base": "1/600",
+          "target_timestamp": 445.0,
+          "timestamp": 445.025
+        },
+        "000742.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000742.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "3e88fbc130e3bbfad09937235d2a2bced574dc03ce0913f10aec1180c4200d04",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#445.525",
+          "source_pts": 267315,
+          "source_time_base": "1/600",
+          "target_timestamp": 445.5,
+          "timestamp": 445.525
+        },
+        "000743.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000743.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "5a58d91dc9a0040f2bca54f6d398939efb2f3ac4b6c1243cc4c8b973fea1c074",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#446.025",
+          "source_pts": 267615,
+          "source_time_base": "1/600",
+          "target_timestamp": 446.0,
+          "timestamp": 446.025
+        },
+        "000744.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000744.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "bdf2ecca95d599fc3cf73fc404b25abf6bcc8d45d7cb1bce818d8cd7c7ab71fb",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#446.525",
+          "source_pts": 267915,
+          "source_time_base": "1/600",
+          "target_timestamp": 446.5,
+          "timestamp": 446.525
+        },
+        "000745.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000745.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "5a6e58006082373e3114b48e595447b5400640062477bf72428e0c66b9d6032a",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#447.0083333333333",
+          "source_pts": 268205,
+          "source_time_base": "1/600",
+          "target_timestamp": 447.0,
+          "timestamp": 447.0083333333333
+        },
+        "000746.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000746.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "1c4936a0a694150f0ac2f7ace757c6e4e1a333951308081c949a936f62cd560c",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#447.525",
+          "source_pts": 268515,
+          "source_time_base": "1/600",
+          "target_timestamp": 447.5,
+          "timestamp": 447.525
+        },
+        "000747.png": {
+          "image": ".cache/battles/sample_battle_12/event-driven/m341-actions-acquisition-v1/frames/000747.png",
+          "seek_origin_seconds": 0.0,
+          "sha256": "52cbb055b6569dfc04d334d12fc80b94cbd15416fb79e4f671e3dbdfcf51cfd7",
+          "source_id": "tests/fixtures/sample_battle_12.mp4#448.0083333333333",
+          "source_pts": 268805,
+          "source_time_base": "1/600",
+          "target_timestamp": 448.0,
+          "timestamp": 448.0083333333333
+        }
+      },
+      "critical_alternatives": [
+        false,
+        true
+      ],
+      "assumptions": [
+        "Level 50; existing user-bound Team7 build and current form",
+        "Pinned Champions community-reference mechanics, not independently certified Champions rounding",
+        "No unobserved relevant stage/status/screen/Helping Hand/Friend Guard change in this bracket; neutral relevant stages are conditional",
+        "Both critical alternatives retained; no prior over items, abilities or rolls"
+      ],
+      "note": "Source-reviewed single-target hit and stable endpoint. Pelipper Sitrus recovery 19→60 is subsequent and excluded; 59 is net loss, not damage.",
+      "context": {
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        },
+        "attacker_status": "none",
+        "defender_status": "none",
+        "attacker_stages": {
+          "attack": 0,
+          "defense": 0,
+          "special_attack": 0,
+          "special_defense": 0,
+          "speed": 0
+        },
+        "defender_stages": {
+          "attack": 0,
+          "defense": 0,
+          "special_attack": 0,
+          "special_defense": 0,
+          "speed": 0
+        }
+      }
+    }
+  ]
+}

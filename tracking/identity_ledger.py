@@ -1,7 +1,66 @@
 """Replay-owned identity claims; no recognition, probabilities or scene geometry."""
 from copy import deepcopy
 import re
+import json
 from battle_events.aliases import alias_key
+
+
+def ditto_return(state,event,matches):
+    """Scoped return proof: a unique Ditto in a fully observed six-row preview.
+
+    This is not a species-only merge or a change to other species' policies.
+    Require the same accepted trainer, a recorded withdrawal and one candidate.
+    """
+    if (event.actor or {}).get('species_id')!=132 or len(matches)!=1:
+        return None
+    p=matches[0];team=state.sides[event.side]
+    if (not state.knowledge.get('active_continuity_v1') or p.location.value!=dict(kind='bench',slot=None)
+            or p.fainted.value is True or team.trainer.get('status')!='accepted'
+            or not event.attributes.get('trainer_display_text')
+            or alias_key(event.attributes['trainer_display_text'])!=alias_key(team.trainer.get('display_name',''))):
+        return None
+    by_row={}
+    for row in state.knowledge.get('identity_ledger',{}).get('roster',[]):
+        if row.get('side')==event.side and row.get('battle_id')==state.battle_id:
+            by_row.setdefault(row.get('preview_row'),[]).append(row)
+    if set(by_row)!=set(range(1,7)) or not all(
+            all(r.get('status')=='resolved' and r.get('species_id') for r in rows)
+            and len({r['species_id'] for r in rows})==1 for rows in by_row.values()):
+        return None
+    ditto_rows=[rows for rows in by_row.values() if rows[0]['species_id']==132]
+    if len(ditto_rows)!=1:
+        return None
+    previous=next((ep for ep in reversed(state.knowledge.get('active_entry_episodes',[]))
+                   if ep['instance_id']==p.pokemon_instance_id),None)
+    if not previous or not previous.get('departure') or previous['departure'].get('reason')!='switch_out':
+        return None
+    from .state_engine import evidence_link
+    proof=dict(policy='ditto_unique_observed_roster_and_departure_v1',
+        instance_id=p.pokemon_instance_id, previous_episode_id=previous['episode_id'],
+        roster_evidence=deepcopy(ditto_rows[0]), departure=deepcopy(previous['departure']),
+        return_evidence=evidence_link(event))
+    ledger=state.knowledge['identity_ledger']
+    ledger.setdefault('persistent_returns',[]).append(deepcopy(proof))
+    return p,proof
+
+
+def preview_semantics(value):
+    """Keep identities/status/candidate membership, not matching pixel jitter.
+
+    Full observations and their original source IDs remain in event history.
+    A score change that changes admission status is retained via that status;
+    uncalibrated score/geometry/latency changes alone are not new roster facts.
+    """
+    if isinstance(value, dict):
+        incidental={'evidence','confidence','similarity','latency_ms','region','scale','location'}
+        result={k:preview_semantics(v) for k,v in value.items() if k not in incidental}
+        if isinstance(result.get('candidates'),list):
+            # Reordering below-threshold alternatives is matching jitter, while
+            # membership changes (including forms) remain independent evidence.
+            result['candidates']=sorted(result['candidates'],key=lambda c:json.dumps(c,sort_keys=True))
+        return result
+    if isinstance(value, list):return [preview_semantics(v) for v in value]
+    return value
 
 
 def trainer_from_opening_hud(engine, state, event, record):
@@ -201,7 +260,18 @@ def transition(engine,state,event,record):
     elif event.event_type=='preview_observation':
         row=deepcopy(a['row'])
         if row.get('battle_id')!=state.battle_id or row.get('side')!=event.side or event.side not in state.sides:raise Contradiction('preview_ownership_mismatch')
-        ledger['roster'].append(row);record.bindings['preview']=row
+        semantic=preview_semantics(row)
+        index=next((i for i,old in enumerate(ledger['roster']) if preview_semantics(old)==semantic),None)
+        if index is None:
+            ledger['roster'].append(row);record.bindings['preview']=row
+        else:
+            # Keep a small provenance link; the full independently observed
+            # candidate payload is still available in record.event.
+            reference=dict(kind='preview_repeat',event_id=event.event_id,roster_index=index,
+                timestamp=a['observation_time'],sources=[dict(source_id=e.source_id,
+                    observation_ids=list(e.observation_ids)) for e in event.evidence])
+            state.observations.append(reference)
+            record.bindings['preview_reference']=dict(roster_index=index)
     elif event.event_type=='entry_observation':
         ledger['entries'].append(dict(event_id=event.event_id,side=event.side,
             raw_text=event.original_text,slot=None,species=None,status='unresolved',evidence=evidence_link(event)))

@@ -1,0 +1,4064 @@
+{
+  "method": "Reviewed chronological one-to-one accepted message record alignment; not full-state accuracy or precision.",
+  "reference_sha256": "e1bcd9bd495e2e733dce4efe7c616db521209b54ee0e97fc6b70713b2d50ebf4",
+  "frozen_inputs": {
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/replay.json": "8bf4e8926c331a53127ca9bc2aafad00f2498dcaef7d14d1ecdb19a6b4f7360c",
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/observations.json": "2566075c176eb852ddb69ecc07f9f77f397cab7c31e46395d4011027682b0652",
+    ".cache/battles/sample_battle_22/fresh-benchmark/fresh-b22-ditto-20261030-v1/hp-resolutions.json": "0533a87bb93d54c55ff2fa43e53592140ae378433dcee744e7367f164de61109"
+  },
+  "summary": {
+    "semantic_records": {
+      "matched": 100,
+      "total": 104
+    },
+    "move_execution": {
+      "matched": 24,
+      "total": 24
+    },
+    "per_turn": {
+      "1": {
+        "matched": 17,
+        "total": 18
+      },
+      "2": {
+        "matched": 9,
+        "total": 10
+      },
+      "3": {
+        "matched": 12,
+        "total": 12
+      },
+      "4": {
+        "matched": 10,
+        "total": 10
+      },
+      "5": {
+        "matched": 12,
+        "total": 12
+      },
+      "6": {
+        "matched": 10,
+        "total": 11
+      },
+      "7": {
+        "matched": 12,
+        "total": 12
+      },
+      "8": {
+        "matched": 18,
+        "total": 19
+      }
+    },
+    "matched_receipts": 102,
+    "hp_total": 20,
+    "hp": {
+      "raw_ordered_endpoints": 18,
+      "exact_projection": 16,
+      "complete_endpoints": 13,
+      "program_supported": 13
+    }
+  },
+  "limitations": [
+    "Codex visual reference, not human reviewed; visible rows only.",
+    "Mega reaction notices do not encode stone identity; Garchomp Z form is unresolved.",
+    "Accepted partial/revelation-only/observation receipts do not establish applied mechanics.",
+    "No turn boundary or precise original-event-time ground truth; no precision denominator."
+  ],
+  "semantic_rows": [
+    {
+      "reference_id": "log-001",
+      "turn": 1,
+      "text": "Tickle wikle派出了化石翼龙和巨金怪！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 19,
+          "event_id": "event:79c346e0657a33a4647f0f6a",
+          "event_type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "trainer_display_text": "Ticklewikle"
+          },
+          "observation_time": 134.52333333333334,
+          "application_status": "applied_candidate"
+        },
+        {
+          "history_index": 20,
+          "event_id": "event:cc9ac101e6b520f8294109e7",
+          "event_type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:376",
+            "kind": "species",
+            "name": "巨金怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 376,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "trainer_display_text": "Ticklewikle"
+          },
+          "observation_time": 134.52333333333334,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-002",
+      "turn": 1,
+      "text": "上吧！烈咬陆鲨！大嘴鸥！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 22,
+          "event_id": "event:bcdf07b0907d3b1eb26cd0a5",
+          "event_type": "send_out",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "observation_time": 138.52333333333334,
+          "application_status": "applied_candidate"
+        },
+        {
+          "history_index": 23,
+          "event_id": "event:82c7c0f8521942499a58a49b",
+          "event_type": "send_out",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "observation_time": 138.52333333333334,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-003",
+      "turn": 1,
+      "text": "化石翼龙的紧张感",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 24,
+          "event_id": "event:1315fe6ad623db61bb62dc4e",
+          "event_type": "ability_activation",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:127",
+              "kind": "ability",
+              "name": "紧张感",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:9a2e99a27bfb75ce"
+          },
+          "observation_time": 142.02333333333334,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-004",
+      "turn": 1,
+      "text": "我方因太紧张而无法食用树果！",
+      "matched": false,
+      "receipts": [],
+      "missing_occurrences": [
+        {
+          "occurrence_id": "event:cb4829edfe5a7221c09c3bb7",
+          "emitted": false,
+          "first_time": 142.52333333333334,
+          "types": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "log-005",
+      "turn": 1,
+      "text": "大嘴鸥的降雨",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 26,
+          "event_id": "event:9edab7213ba3b30853fda6fa",
+          "event_type": "ability_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:2",
+              "kind": "ability",
+              "name": "降雨",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:a8b6c4247cef8311"
+          },
+          "observation_time": 144.525,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-006",
+      "turn": 1,
+      "text": "开始下雨了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 27,
+          "event_id": "event:0a9b1c32cb2981240c101368",
+          "event_type": "weather_change",
+          "side": "field",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "weather": "rain",
+            "change": "start"
+          },
+          "observation_time": 144.525,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-007",
+      "turn": 1,
+      "text": "Tickle wikle换下了巨金怪！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 315,
+          "event_id": "event:37cf0c5e211a66dea902f382",
+          "event_type": "switch_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:376",
+            "kind": "species",
+            "name": "巨金怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 376,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "trainer_display_text": "Ticklewikle",
+            "actor_instance_id": "sample_battle_22:opponent:encounter:9f83b0d8e2d66b0e"
+          },
+          "observation_time": 192.015,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-008",
+      "turn": 1,
+      "text": "Tickle wikle派出了铝钢桥龙！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 317,
+          "event_id": "event:a993ee579373ac4efe869c5b",
+          "event_type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "trainer_display_text": "Ticklewikle"
+          },
+          "observation_time": 195.0,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-009",
+      "turn": 1,
+      "text": "烈咬陆鲨的烈咬陆鲨进化石Z和Hoshi的全一环起了反应！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 318,
+          "event_id": "event:6c2109b507250073239ff013",
+          "event_type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "mega_stone_reaction_notice",
+            "trainer_display_text": "Hoshi",
+            "actor_instance_id": "sample_battle_22:self:encounter:c812d2333b451851"
+          },
+          "observation_time": 198.5,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-010",
+      "turn": 1,
+      "text": "烈咬陆鲨超级进化成了超级烈咬陆鲨！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 319,
+          "event_id": "event:d2201709835d77572b639ce6",
+          "event_type": "transformation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "mechanic": "mega_evolution",
+            "identity": {
+              "canonical_id": "pokeapi:form:10158",
+              "kind": "species",
+              "name": "超级烈咬陆鲨",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+              "species_id": 445,
+              "pokemon_id": 10058,
+              "form_id": null,
+              "canonical_identity": "pokeapi:pokemon:10058",
+              "identity_status": "resolved_variant"
+            },
+            "actor_instance_id": "sample_battle_22:self:encounter:c812d2333b451851"
+          },
+          "observation_time": 208.00166666666667,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-011",
+      "turn": 1,
+      "text": "烈咬陆鲨使出了大地之力！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 320,
+          "event_id": "event:4920a8b5fdf251a3c56bc265",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:414",
+              "kind": "move",
+              "name": "大地之力",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:c812d2333b451851"
+          },
+          "observation_time": 210.00166666666667,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-013",
+      "turn": 1,
+      "text": "对对手的铝钢桥龙效果绝佳！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 327,
+          "event_id": "event:8f8d81e8bcc3044e63ee0ed5",
+          "event_type": "effectiveness",
+          "side": "opponent",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "super_effective"
+          },
+          "observation_time": 215.00333333333333,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-014",
+      "turn": 1,
+      "text": "铝钢桥龙的持久力",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 332,
+          "event_id": "event:74a14d745b5fa7678abd133a",
+          "event_type": "ability_activation",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:192",
+              "kind": "ability",
+              "name": "持久力",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:2ae86fce086c5a50"
+          },
+          "observation_time": 217.00333333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-015",
+      "turn": 1,
+      "text": "对手的铝钢桥龙的防御提高了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 334,
+          "event_id": "event:255b13104a3ff567339dc009",
+          "event_type": "stat_change",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "defense"
+            ],
+            "direction": "up",
+            "stages": null,
+            "actor_instance_id": "sample_battle_22:opponent:encounter:2ae86fce086c5a50"
+          },
+          "observation_time": 217.50333333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-016",
+      "turn": 1,
+      "text": "对手的化石翼龙使出了岩崩！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 339,
+          "event_id": "event:d24e0b323de01ffc29e2fb4d",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:157",
+              "kind": "move",
+              "name": "岩崩",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:9a2e99a27bfb75ce"
+          },
+          "observation_time": 220.50333333333333,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-019",
+      "turn": 1,
+      "text": "对大嘴鸥效果绝佳！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 356,
+          "event_id": "event:de76c3deff8271fbfb052d89",
+          "event_type": "effectiveness",
+          "side": "self",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "super_effective"
+          },
+          "observation_time": 225.505,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-020",
+      "turn": 1,
+      "text": "大嘴鸥畏缩了，无法使出招式！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 365,
+          "event_id": "event:b1a4e5a4068cebf402a80be4",
+          "event_type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "flinch_prevented_action",
+            "actor_instance_id": "sample_battle_22:self:encounter:a8b6c4247cef8311"
+          },
+          "observation_time": 228.005,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-021",
+      "turn": 1,
+      "text": "铝钢桥龙的吃剩的东西",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 366,
+          "event_id": "event:5a33e159bf5d4885db40a94a",
+          "event_type": "item_activation",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "item": {
+              "canonical_id": "pokeapi:item:211",
+              "kind": "item",
+              "name": "吃剩的东西",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:2ae86fce086c5a50"
+          },
+          "observation_time": 230.005,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-023",
+      "turn": 2,
+      "text": "大嘴鸥使出了广域防守！（优先度+3）",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 660,
+          "event_id": "event:f82911c57582f8d83edb5af5",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:469",
+              "kind": "move",
+              "name": "广域防守",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:a8b6c4247cef8311"
+          },
+          "observation_time": 278.0133333333333,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-024",
+      "turn": 2,
+      "text": "我方周围正受到广域防守的保护！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 661,
+          "event_id": "event:c7fcc6aecd798d463c20bc3a",
+          "event_type": "side_condition_change",
+          "side": "self",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "condition": "wide_guard",
+            "change": "start"
+          },
+          "observation_time": 282.515,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-025",
+      "turn": 2,
+      "text": "烈咬陆鲨使出了大地之力！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 662,
+          "event_id": "event:b8fb2ab4fe7bd086d00e6056",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:414",
+              "kind": "move",
+              "name": "大地之力",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:c812d2333b451851"
+          },
+          "observation_time": 284.015,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-027",
+      "turn": 2,
+      "text": "对对手的铝钢桥龙效果绝佳！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 670,
+          "event_id": "event:97f51376fc7de8e163261bb7",
+          "event_type": "effectiveness",
+          "side": "opponent",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "super_effective"
+          },
+          "observation_time": 289.015,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-028",
+      "turn": 2,
+      "text": "对手的铝钢桥龙倒下了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 675,
+          "event_id": "event:e761c80d2c27da1761e4042c",
+          "event_type": "faint",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:2ae86fce086c5a50"
+          },
+          "observation_time": 291.015,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-029",
+      "turn": 2,
+      "text": "对手的化石翼龙使出了顺风！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 676,
+          "event_id": "event:0b2beb96a69d0c75c1fa864a",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:366",
+              "kind": "move",
+              "name": "顺风",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:9a2e99a27bfb75ce"
+          },
+          "observation_time": 295.5,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-030",
+      "turn": 2,
+      "text": "从对手身后吹起了顺风！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 677,
+          "event_id": "event:281229c230f955876615cd0c",
+          "event_type": "side_condition_change",
+          "side": "opponent",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "condition": "tailwind",
+            "change": "start"
+          },
+          "observation_time": 299.01666666666665,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-031",
+      "turn": 2,
+      "text": "Tickle wikle派出了百变怪！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 679,
+          "event_id": "event:6771c68e2b02c949591d7eb5",
+          "event_type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:132",
+            "kind": "species",
+            "name": "百变怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 132,
+            "pokemon_id": 132,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:132",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "trainer_display_text": "Ticklewikle"
+          },
+          "observation_time": 307.0183333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-032",
+      "turn": 2,
+      "text": "百变怪的变身者",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 680,
+          "event_id": "event:0dd2d6ef0402ad94e903be43",
+          "event_type": "ability_activation",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:132",
+            "kind": "species",
+            "name": "百变怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 132,
+            "pokemon_id": 132,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:132",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:150",
+              "kind": "ability",
+              "name": "变身者",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:953d14c88dcaadc1"
+          },
+          "observation_time": 311.035,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-033",
+      "turn": 2,
+      "text": "对手的百变怪变身成了烈咬陆鲨！",
+      "matched": false,
+      "receipts": [],
+      "missing_occurrences": [
+        {
+          "occurrence_id": "event:27dce19f643c5d8985386b6d",
+          "emitted": false,
+          "first_time": 314.52,
+          "types": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "log-034",
+      "turn": 3,
+      "text": "大嘴鸥，回来！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 729,
+          "event_id": "event:3635c716f9fd3f407fac898b",
+          "event_type": "switch_out",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:a8b6c4247cef8311"
+          },
+          "observation_time": 355.52666666666664,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-035",
+      "turn": 3,
+      "text": "上吧！铝钢桥龙！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 731,
+          "event_id": "event:50f0ed512a834690973906c8",
+          "event_type": "send_out",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "observation_time": 359.02666666666664,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-036",
+      "turn": 3,
+      "text": "烈咬陆鲨使出了守住！（优先度+4）",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 732,
+          "event_id": "event:06683e89fd221368ea0162a6",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:182",
+              "kind": "move",
+              "name": "守住",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:c812d2333b451851"
+          },
+          "observation_time": 362.51166666666666,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-037",
+      "turn": 3,
+      "text": "烈咬陆鲨摆出了防守的架势！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 733,
+          "event_id": "event:47d25fdbf01973080ceee9bd",
+          "event_type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protection_established",
+            "actor_instance_id": "sample_battle_22:self:encounter:c812d2333b451851"
+          },
+          "observation_time": 365.51166666666666,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-038",
+      "turn": 3,
+      "text": "对手的百变怪使出了龙之波动！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 734,
+          "event_id": "event:0fc8c20a665206ed40005cf4",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:132",
+            "kind": "species",
+            "name": "百变怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 132,
+            "pokemon_id": 132,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:132",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:406",
+              "kind": "move",
+              "name": "龙之波动",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:953d14c88dcaadc1"
+          },
+          "observation_time": 367.51166666666666,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-039",
+      "turn": 3,
+      "text": "烈咬陆鲨在攻击中守护住了自己！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 735,
+          "event_id": "event:5f89a936bed37f7893c5f984",
+          "event_type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protected_from_attack",
+            "actor_instance_id": "sample_battle_22:self:encounter:c812d2333b451851"
+          },
+          "observation_time": 370.01166666666666,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-040",
+      "turn": 3,
+      "text": "对手的化石翼龙使出了岩崩！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 736,
+          "event_id": "event:120e130c29debfd55865e573",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:157",
+              "kind": "move",
+              "name": "岩崩",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:9a2e99a27bfb75ce"
+          },
+          "observation_time": 372.03,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-041",
+      "turn": 3,
+      "text": "烈咬陆鲨在攻击中守护住了自己！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 737,
+          "event_id": "event:d3fae14c25588fac7bfd83b3",
+          "event_type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protected_from_attack",
+            "actor_instance_id": "sample_battle_22:self:encounter:c812d2333b451851"
+          },
+          "observation_time": 374.53,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-043",
+      "turn": 3,
+      "text": "对铝钢桥龙效果不好。",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 745,
+          "event_id": "event:e99c053d6c0cbf6a90778f5e",
+          "event_type": "effectiveness",
+          "side": "self",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "not_very_effective"
+          },
+          "observation_time": 380.53,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-044",
+      "turn": 3,
+      "text": "铝钢桥龙的持久力",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 750,
+          "event_id": "event:f50dd7eaf1412ce767a61848",
+          "event_type": "ability_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:192",
+              "kind": "ability",
+              "name": "持久力",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 382.5316666666667,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-045",
+      "turn": 3,
+      "text": "铝钢桥龙的防御提高了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 752,
+          "event_id": "event:98dcab21e9ba34fdf21aaaf4",
+          "event_type": "stat_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "defense"
+            ],
+            "direction": "up",
+            "stages": null,
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 383.0316666666667,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-046",
+      "turn": 3,
+      "text": "铝钢桥龙的吃剩的东西",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 757,
+          "event_id": "event:36f8aa80c19b330275befddc",
+          "event_type": "item_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "item": {
+              "canonical_id": "pokeapi:item:211",
+              "kind": "item",
+              "name": "吃剩的东西",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 385.5316666666667,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-048",
+      "turn": 4,
+      "text": "烈咬陆鲨，回来！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 986,
+          "event_id": "event:b9fd104d6bb007adee3e36da",
+          "event_type": "switch_out",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:c812d2333b451851"
+          },
+          "observation_time": 429.505,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-049",
+      "turn": 4,
+      "text": "上吧！长毛巨魔！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 988,
+          "event_id": "event:51ead5ce662b8269bed2f9c3",
+          "event_type": "send_out",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "observation_time": 433.00666666666666,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-050",
+      "turn": 4,
+      "text": "对手的百变怪使出了龙之波动！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 989,
+          "event_id": "event:7f5b5f4545643de64f463a5a",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:132",
+            "kind": "species",
+            "name": "百变怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 132,
+            "pokemon_id": 132,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:132",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:406",
+              "kind": "move",
+              "name": "龙之波动",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:953d14c88dcaadc1"
+          },
+          "observation_time": 436.50666666666666,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-051",
+      "turn": 4,
+      "text": "对于长毛巨魔，好像没有效果……",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 990,
+          "event_id": "event:29d6198dcea1a03b2c28684d",
+          "event_type": "effectiveness",
+          "side": "self",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "immune"
+          },
+          "observation_time": 438.00666666666666,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-052",
+      "turn": 4,
+      "text": "对手的化石翼龙使出了岩崩！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 991,
+          "event_id": "event:054f71a42009bf3956b8f270",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:157",
+              "kind": "move",
+              "name": "岩崩",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:9a2e99a27bfb75ce"
+          },
+          "observation_time": 440.00666666666666,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-055",
+      "turn": 4,
+      "text": "对铝钢桥龙效果不好。",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1008,
+          "event_id": "event:e4159c10d4b88191cf345fd3",
+          "event_type": "effectiveness",
+          "side": "self",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "not_very_effective"
+          },
+          "observation_time": 445.0083333333333,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-056",
+      "turn": 4,
+      "text": "铝钢桥龙的持久力",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1017,
+          "event_id": "event:a4453dfdca3cf91eaf6ccc61",
+          "event_type": "ability_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:192",
+              "kind": "ability",
+              "name": "持久力",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 447.0083333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-057",
+      "turn": 4,
+      "text": "铝钢桥龙的防御提高了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1020,
+          "event_id": "event:0293de82a4a1938dfc3e5481",
+          "event_type": "stat_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "defense"
+            ],
+            "direction": "up",
+            "stages": null,
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 447.5083333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-058",
+      "turn": 4,
+      "text": "铝钢桥龙畏缩了，无法使出招式！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1027,
+          "event_id": "event:49acaa73fac3abeaefb24ff7",
+          "event_type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "flinch_prevented_action",
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 450.51,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-059",
+      "turn": 4,
+      "text": "铝钢桥龙的吃剩的东西",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1028,
+          "event_id": "event:9e34bb1a9b71797397d460eb",
+          "event_type": "item_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "item": {
+              "canonical_id": "pokeapi:item:211",
+              "kind": "item",
+              "name": "吃剩的东西",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 452.01,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-061",
+      "turn": 5,
+      "text": "Tickle wikle换下了化石翼龙！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1200,
+          "event_id": "event:131ca2b55c1fbe21ad9153ef",
+          "event_type": "switch_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "trainer_display_text": "Ticklewikle",
+            "actor_instance_id": "sample_battle_22:opponent:encounter:9a2e99a27bfb75ce"
+          },
+          "observation_time": 489.015,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-062",
+      "turn": 5,
+      "text": "Tickle wikle派出了巨金怪！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1202,
+          "event_id": "event:0ba7ae68f8397e726bca62c0",
+          "event_type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:376",
+            "kind": "species",
+            "name": "巨金怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 376,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "trainer_display_text": "Ticklewikle"
+          },
+          "observation_time": 492.01666666666665,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-063",
+      "turn": 5,
+      "text": "铝钢桥龙使出了守住！（优先度+4）",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1203,
+          "event_id": "event:4294ffd5cfa093253dc991d4",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:182",
+              "kind": "move",
+              "name": "守住",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 495.51666666666665,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-064",
+      "turn": 5,
+      "text": "铝钢桥龙摆出了防守的架势！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1204,
+          "event_id": "event:ea4c628b36113be024390daa",
+          "event_type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protection_established",
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 499.01666666666665,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-065",
+      "turn": 5,
+      "text": "对手的百变怪使出了龙之波动！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1205,
+          "event_id": "event:d0a671fa76f7a20198d7db27",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:132",
+            "kind": "species",
+            "name": "百变怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 132,
+            "pokemon_id": 132,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:132",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:406",
+              "kind": "move",
+              "name": "龙之波动",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:953d14c88dcaadc1"
+          },
+          "observation_time": 500.5183333333333,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-066",
+      "turn": 5,
+      "text": "铝钢桥龙在攻击中守护住了自己！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1206,
+          "event_id": "event:dd5a5377cfd0f994ed0807ad",
+          "event_type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protected_from_attack",
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 503.0183333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-067",
+      "turn": 5,
+      "text": "长毛巨魔使出了灵魂冲击！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1207,
+          "event_id": "event:8b46dd10417bca7323ecc58a",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:789",
+              "kind": "move",
+              "name": "灵魂冲击",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:59b1b6b99605daa8"
+          },
+          "observation_time": 505.5183333333333,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-069",
+      "turn": 5,
+      "text": "对对手的百变怪效果绝佳！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1215,
+          "event_id": "event:bbaf29a36d80d4598499d72d",
+          "event_type": "effectiveness",
+          "side": "opponent",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:132",
+            "kind": "species",
+            "name": "百变怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 132,
+            "pokemon_id": 132,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:132",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "super_effective"
+          },
+          "observation_time": 510.52,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-070",
+      "turn": 5,
+      "text": "对手的百变怪的特攻降低了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1220,
+          "event_id": "event:68ea77b997df6915f3adc1bf",
+          "event_type": "stat_change",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:132",
+            "kind": "species",
+            "name": "百变怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 132,
+            "pokemon_id": 132,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:132",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "special_attack"
+            ],
+            "direction": "down",
+            "stages": null,
+            "actor_instance_id": "sample_battle_22:opponent:encounter:953d14c88dcaadc1"
+          },
+          "observation_time": 512.52,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-071",
+      "turn": 5,
+      "text": "雨停了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1225,
+          "event_id": "event:54164a3856ac3358fb9ea559",
+          "event_type": "weather_change",
+          "side": "field",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "weather": "rain",
+            "change": "end"
+          },
+          "observation_time": 515.02,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-072",
+      "turn": 5,
+      "text": "铝钢桥龙的吃剩的东西",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1226,
+          "event_id": "event:5547033a2d0da82e97a80fda",
+          "event_type": "item_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "item": {
+              "canonical_id": "pokeapi:item:211",
+              "kind": "item",
+              "name": "吃剩的东西",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 517.02,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-074",
+      "turn": 5,
+      "text": "对手的顺风停止了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1230,
+          "event_id": "event:ad8b7be1afa1a47d233fa805",
+          "event_type": "side_condition_change",
+          "side": "opponent",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "condition": "tailwind",
+            "change": "end"
+          },
+          "observation_time": 521.0216666666666,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-075",
+      "turn": 6,
+      "text": "Tickle wikle换下了百变怪！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1351,
+          "event_id": "event:83d525a8764ba7fe457ac83b",
+          "event_type": "switch_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:132",
+            "kind": "species",
+            "name": "百变怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 132,
+            "pokemon_id": 132,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:132",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "trainer_display_text": "Ticklewikle",
+            "actor_instance_id": "sample_battle_22:opponent:encounter:953d14c88dcaadc1"
+          },
+          "observation_time": 549.025,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-076",
+      "turn": 6,
+      "text": "Tickle wikle派出了化石翼龙！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1355,
+          "event_id": "event:a918f5187a35a20c67bd394e",
+          "event_type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "trainer_display_text": "Ticklewikle"
+          },
+          "observation_time": 552.0266666666666,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-077",
+      "turn": 6,
+      "text": "化石翼龙的紧张感",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1357,
+          "event_id": "event:344174113fe91444f8bfc854",
+          "event_type": "ability_activation",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:127",
+              "kind": "ability",
+              "name": "紧张感",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:09edb388d36073d3"
+          },
+          "observation_time": 555.51,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-078",
+      "turn": 6,
+      "text": "我方因太紧张而无法食用树果！",
+      "matched": false,
+      "receipts": [],
+      "missing_occurrences": [
+        {
+          "occurrence_id": "event:f6776c7b6421bd85b8105204",
+          "emitted": false,
+          "first_time": 555.51,
+          "types": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "log-079",
+      "turn": 6,
+      "text": "对手的巨金怪的巨金怪进化石和Tickle wikle的全一环起了反应！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1358,
+          "event_id": "event:90d20f187d370121c7922e09",
+          "event_type": "move_effect",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:376",
+            "kind": "species",
+            "name": "巨金怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 376,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "mega_stone_reaction_notice",
+            "trainer_display_text": "Ticklewikle",
+            "actor_instance_id": "sample_battle_22:opponent:encounter:1efc511d2d254d17"
+          },
+          "observation_time": 557.51,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-080",
+      "turn": 6,
+      "text": "对手的巨金怪超级进化成了超级巨金怪！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1359,
+          "event_id": "event:db0d967526a144174f3a8bf8",
+          "event_type": "transformation",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:376",
+            "kind": "species",
+            "name": "巨金怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 376,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "mechanic": "mega_evolution",
+            "identity": {
+              "canonical_id": "pokeapi:form:10178",
+              "kind": "species",
+              "name": "超级巨金怪",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+              "species_id": 376,
+              "pokemon_id": 10076,
+              "form_id": null,
+              "canonical_identity": "pokeapi:pokemon:10076",
+              "identity_status": "resolved_variant"
+            },
+            "actor_instance_id": "sample_battle_22:opponent:encounter:1efc511d2d254d17"
+          },
+          "observation_time": 567.5116666666667,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-081",
+      "turn": 6,
+      "text": "长毛巨魔使出了光墙！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1360,
+          "event_id": "event:401a75d34eb1933e1657a17b",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:113",
+              "kind": "move",
+              "name": "光墙",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:59b1b6b99605daa8"
+          },
+          "observation_time": 569.53,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-082",
+      "turn": 6,
+      "text": "光墙使我方的特殊抗性提高了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1361,
+          "event_id": "event:ef5a8cec1f9a9cd58ede3228",
+          "event_type": "side_condition_change",
+          "side": "self",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "condition": "light_screen",
+            "change": "observe"
+          },
+          "observation_time": 573.53,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-083",
+      "turn": 6,
+      "text": "对手的巨金怪使出了臂锤！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1362,
+          "event_id": "event:42b667889694f2334de8b5c1",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:376",
+            "kind": "species",
+            "name": "巨金怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 376,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:359",
+              "kind": "move",
+              "name": "臂锤",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:1efc511d2d254d17"
+          },
+          "observation_time": 575.5133333333333,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-084",
+      "turn": 6,
+      "text": "没有击中铝钢桥龙！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1363,
+          "event_id": "event:50dd50e5fd0b05dd975acede",
+          "event_type": "move_miss",
+          "side": "self",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {},
+          "observation_time": 577.5133333333333,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-085",
+      "turn": 6,
+      "text": "铝钢桥龙使出了龙之波动！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1364,
+          "event_id": "event:af5f0ec8f8d5037530a51bd4",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:406",
+              "kind": "move",
+              "name": "龙之波动",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 579.5316666666666,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-087",
+      "turn": 7,
+      "text": "铝钢桥龙使出了守住！（优先度+4）",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1595,
+          "event_id": "event:eb2ea5ced425318769aa522c",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:182",
+              "kind": "move",
+              "name": "守住",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 624.005,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-088",
+      "turn": 7,
+      "text": "铝钢桥龙摆出了防守的架势！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1596,
+          "event_id": "event:86318f394254d962e0c6f0b5",
+          "event_type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protection_established",
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 627.005,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-089",
+      "turn": 7,
+      "text": "长毛巨魔使出了反射壁！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1597,
+          "event_id": "event:46de04d1e269b22a589f5604",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:115",
+              "kind": "move",
+              "name": "反射壁",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:59b1b6b99605daa8"
+          },
+          "observation_time": 629.5066666666667,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-090",
+      "turn": 7,
+      "text": "反射壁使我方的物理抗性提高了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1598,
+          "event_id": "event:24fcead57ed8af2b6dd58d7b",
+          "event_type": "side_condition_change",
+          "side": "self",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "condition": "reflect",
+            "change": "observe"
+          },
+          "observation_time": 633.5066666666667,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-091",
+      "turn": 7,
+      "text": "对手的化石翼龙使出了顺风！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1599,
+          "event_id": "event:ed1c29b5b7381ff39cfff3e5",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:366",
+              "kind": "move",
+              "name": "顺风",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:09edb388d36073d3"
+          },
+          "observation_time": 635.5066666666667,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-092",
+      "turn": 7,
+      "text": "从对手身后吹起了顺风！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1600,
+          "event_id": "event:51008f03df31732a4cbf9dfb",
+          "event_type": "side_condition_change",
+          "side": "opponent",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "condition": "tailwind",
+            "change": "start"
+          },
+          "observation_time": 639.0083333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-093",
+      "turn": 7,
+      "text": "对手的巨金怪使出了铁头！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1601,
+          "event_id": "event:ee8a7e0e0121100d0fc1f5cb",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:376",
+            "kind": "species",
+            "name": "巨金怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 376,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:442",
+              "kind": "move",
+              "name": "铁头",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:1efc511d2d254d17"
+          },
+          "observation_time": 641.5083333333333,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-095",
+      "turn": 7,
+      "text": "对长毛巨魔效果绝佳！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1606,
+          "event_id": "event:d4b4f9f1a4cbb57216736521",
+          "event_type": "effectiveness",
+          "side": "self",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "super_effective"
+          },
+          "observation_time": 645.5083333333333,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-096",
+      "turn": 7,
+      "text": "长毛巨魔倒下了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1611,
+          "event_id": "event:05e10fb867e618553bcd77fb",
+          "event_type": "faint",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:59b1b6b99605daa8"
+          },
+          "observation_time": 648.0083333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-097",
+      "turn": 7,
+      "text": "上吧！大嘴鸥！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1619,
+          "event_id": "event:37d7f728de34d9da1b2cf943",
+          "event_type": "send_out",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "observation_time": 656.01,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-098",
+      "turn": 7,
+      "text": "大嘴鸥的降雨",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1620,
+          "event_id": "event:b00cd2ce4061a23e3b1bdfb9",
+          "event_type": "ability_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:2",
+              "kind": "ability",
+              "name": "降雨",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:cddd4f82f09160aa"
+          },
+          "observation_time": 660.0116666666667,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-099",
+      "turn": 7,
+      "text": "开始下雨了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1621,
+          "event_id": "event:bd961f63586c61e84fcf720d",
+          "event_type": "weather_change",
+          "side": "field",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "weather": "rain",
+            "change": "start"
+          },
+          "observation_time": 660.0116666666667,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-100",
+      "turn": 8,
+      "text": "大嘴鸥使出了广域防守！（优先度+3）",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1888,
+          "event_id": "event:8d3aa89b60eacfc49adf69fb",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:469",
+              "kind": "move",
+              "name": "广域防守",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:cddd4f82f09160aa"
+          },
+          "observation_time": 699.5183333333333,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-101",
+      "turn": 8,
+      "text": "我方周围正受到广域防守的保护！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1889,
+          "event_id": "event:a3fc4c11b0d2695b2f98a0b5",
+          "event_type": "side_condition_change",
+          "side": "self",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "condition": "wide_guard",
+            "change": "start"
+          },
+          "observation_time": 704.0183333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-102",
+      "turn": 8,
+      "text": "对手的化石翼龙使出了双翼！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1890,
+          "event_id": "event:7660e24568ad4b208a0c26c2",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:814",
+              "kind": "move",
+              "name": "双翼",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:09edb388d36073d3"
+          },
+          "observation_time": 706.5183333333333,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-105",
+      "turn": 8,
+      "text": "击中了2次！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1900,
+          "event_id": "event:8231d056e5febb0b02c3041c",
+          "event_type": "multi_hit",
+          "side": "field",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "hits": 2
+          },
+          "observation_time": 711.52,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-106",
+      "turn": 8,
+      "text": "对手的巨金怪使出了臂锤！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1904,
+          "event_id": "event:114053eb3b05d0dae4c0b9fa",
+          "event_type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:376",
+            "kind": "species",
+            "name": "巨金怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 376,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:359",
+              "kind": "move",
+              "name": "臂锤",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:1efc511d2d254d17"
+          },
+          "observation_time": 714.52,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-108",
+      "turn": 8,
+      "text": "对铝钢桥龙效果绝佳！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1909,
+          "event_id": "event:1e259089734fc06d4d9b04f8",
+          "event_type": "effectiveness",
+          "side": "self",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "super_effective"
+          },
+          "observation_time": 717.52,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-109",
+      "turn": 8,
+      "text": "对手的巨金怪的速度降低了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1914,
+          "event_id": "event:a2a4d2760779ada88ae11066",
+          "event_type": "stat_change",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:376",
+            "kind": "species",
+            "name": "巨金怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 376,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "speed"
+            ],
+            "direction": "down",
+            "stages": null,
+            "actor_instance_id": "sample_battle_22:opponent:encounter:1efc511d2d254d17"
+          },
+          "observation_time": 719.5216666666666,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-110",
+      "turn": 8,
+      "text": "铝钢桥龙的持久力",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1918,
+          "event_id": "event:a61704e56083d03300df50be",
+          "event_type": "ability_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:192",
+              "kind": "ability",
+              "name": "持久力",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 721.0216666666666,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-111",
+      "turn": 8,
+      "text": "铝钢桥龙的防御提高了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1920,
+          "event_id": "event:d25dbb3b4a95aab900157b36",
+          "event_type": "stat_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "defense"
+            ],
+            "direction": "up",
+            "stages": null,
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 721.5216666666666,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-112",
+      "turn": 8,
+      "text": "铝钢桥龙使出了电光束！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1925,
+          "event_id": "event:e4fd40bf0e3f5522ffb1cc51",
+          "event_type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:905",
+              "kind": "move",
+              "name": "电光束",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 724.5216666666666,
+          "application_status": "applied_partial"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-113",
+      "turn": 8,
+      "text": "铝钢桥龙吸收了电力！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1926,
+          "event_id": "event:b5405c79c6a260371bd22db7",
+          "event_type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "absorbed_electricity",
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 731.0233333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-114",
+      "turn": 8,
+      "text": "铝钢桥龙的特攻提高了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1927,
+          "event_id": "event:0f0926306b075008f52955ed",
+          "event_type": "stat_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "special_attack"
+            ],
+            "direction": "up",
+            "stages": null,
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 733.0233333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-116",
+      "turn": 8,
+      "text": "对对手的化石翼龙效果绝佳！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1937,
+          "event_id": "event:abd1fa324927d082f8832c06",
+          "event_type": "effectiveness",
+          "side": "opponent",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "super_effective"
+          },
+          "observation_time": 740.525,
+          "application_status": "recorded_observation"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-117",
+      "turn": 8,
+      "text": "对手的化石翼龙倒下了！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1942,
+          "event_id": "event:0fef96d8858558d9ea493cce",
+          "event_type": "faint",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:09edb388d36073d3"
+          },
+          "observation_time": 742.525,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-118",
+      "turn": 8,
+      "text": "大嘴鸥的文柚果",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1943,
+          "event_id": "event:8f2aaeaad5e20e29a625a624",
+          "event_type": "item_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "item": {
+              "canonical_id": "pokeapi:item:135",
+              "kind": "item",
+              "name": "文柚果",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:cddd4f82f09160aa"
+          },
+          "observation_time": 746.025,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-120",
+      "turn": 8,
+      "text": "铝钢桥龙的吃剩的东西",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1947,
+          "event_id": "event:f894fa0ed6872319952a9a66",
+          "event_type": "item_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "item": {
+              "canonical_id": "pokeapi:item:211",
+              "kind": "item",
+              "name": "吃剩的东西",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+          },
+          "observation_time": 750.0266666666666,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-122",
+      "turn": 8,
+      "text": "Tickle wikle派出了百变怪！",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1952,
+          "event_id": "event:54688db6fe2fb38393ee6ab2",
+          "event_type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:132",
+            "kind": "species",
+            "name": "百变怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 132,
+            "pokemon_id": 132,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:132",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "trainer_display_text": "Ticklewikle"
+          },
+          "observation_time": 760.0283333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-123",
+      "turn": 8,
+      "text": "百变怪的变身者",
+      "matched": true,
+      "receipts": [
+        {
+          "history_index": 1954,
+          "event_id": "event:f1cc94501018f2e2f66d006d",
+          "event_type": "ability_activation",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:132",
+            "kind": "species",
+            "name": "百变怪",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 132,
+            "pokemon_id": 132,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:132",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:150",
+              "kind": "ability",
+              "name": "变身者",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_22:opponent:encounter:ada26cd86ace72ee"
+          },
+          "observation_time": 763.5283333333333,
+          "application_status": "applied_candidate"
+        }
+      ],
+      "missing_occurrences": []
+    },
+    {
+      "reference_id": "log-124",
+      "turn": 8,
+      "text": "对手的百变怪变身成了大嘴鸥！",
+      "matched": false,
+      "receipts": [],
+      "missing_occurrences": [
+        {
+          "occurrence_id": "event:6a234642fd9a8feac555abf8",
+          "emitted": false,
+          "first_time": 767.03,
+          "types": [
+            "unknown"
+          ]
+        }
+      ]
+    }
+  ],
+  "hp_rows": [
+    {
+      "reference_id": "log-012",
+      "turn": 1,
+      "text": "铝钢桥龙 HP 100% → 34%",
+      "instance_id": "sample_battle_22:opponent:encounter:2ae86fce086c5a50",
+      "episode_id": "event:4920a8b5fdf251a3c56bc265:hp:sample_battle_22:opponent:encounter:2ae86fce086c5a50",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:d2048e2fcabc67d05a415436",
+        "event:420d5609683ca6eadf367e32"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 100,
+      "projection_after": 34
+    },
+    {
+      "reference_id": "log-017",
+      "turn": 1,
+      "text": "烈咬陆鲨 HP 184 → 132",
+      "instance_id": "sample_battle_22:self:encounter:c812d2333b451851",
+      "episode_id": "event:d24e0b323de01ffc29e2fb4d:hp:sample_battle_22:self:encounter:c812d2333b451851",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:c45d09f38fd66a64cf91d82d",
+        "event:f5daa99202fec74eb4f5c1fd"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 184,
+      "projection_after": 132
+    },
+    {
+      "reference_id": "log-018",
+      "turn": 1,
+      "text": "大嘴鸥 HP 164 → 72",
+      "instance_id": "sample_battle_22:self:encounter:a8b6c4247cef8311",
+      "episode_id": "event:d24e0b323de01ffc29e2fb4d:hp:sample_battle_22:self:encounter:a8b6c4247cef8311",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:c5c882a1f765d752e6117b59",
+        "event:5a1ad22afc3ba80c5fc8a0c5"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 164,
+      "projection_after": 72
+    },
+    {
+      "reference_id": "log-022",
+      "turn": 1,
+      "text": "铝钢桥龙 HP 34% → 40%",
+      "instance_id": "sample_battle_22:opponent:encounter:2ae86fce086c5a50",
+      "episode_id": "event:5a33e159bf5d4885db40a94a:hp:sample_battle_22:opponent:encounter:2ae86fce086c5a50",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:802aeb1e03110df3da0a06ad",
+        "event:c2f7ddd77b641a01bd07c20d"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 34,
+      "projection_after": 40
+    },
+    {
+      "reference_id": "log-026",
+      "turn": 2,
+      "text": "铝钢桥龙 HP 40% → 0%",
+      "instance_id": "sample_battle_22:opponent:encounter:2ae86fce086c5a50",
+      "episode_id": "event:b8fb2ab4fe7bd086d00e6056:hp:sample_battle_22:opponent:encounter:2ae86fce086c5a50",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:59c38b3d8b09db4a77218728",
+        "event:b5396da27ba96d122aba7735"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 40,
+      "projection_after": 0
+    },
+    {
+      "reference_id": "log-042",
+      "turn": 3,
+      "text": "铝钢桥龙 HP 194 → 178",
+      "instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246",
+      "episode_id": "event:120e130c29debfd55865e573:hp:sample_battle_22:self:encounter:2f79a788a9f65246",
+      "raw_ordered_endpoints": false,
+      "raw_endpoint_event_ids": [],
+      "exact_projection": false,
+      "complete_endpoints": false,
+      "program_supported": false,
+      "projection_before": null,
+      "projection_after": 178
+    },
+    {
+      "reference_id": "log-047",
+      "turn": 3,
+      "text": "铝钢桥龙 HP 178 → 190",
+      "instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246",
+      "episode_id": "event:36f8aa80c19b330275befddc:hp:sample_battle_22:self:encounter:2f79a788a9f65246",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:ab3e2d281937c3d0f2e13ea7",
+        "event:d44f7ab6fa3667fa5902cf47"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 178,
+      "projection_after": 190
+    },
+    {
+      "reference_id": "log-053",
+      "turn": 4,
+      "text": "长毛巨魔 HP 201 → 156",
+      "instance_id": "sample_battle_22:self:encounter:59b1b6b99605daa8",
+      "episode_id": "event:054f71a42009bf3956b8f270:hp:sample_battle_22:self:encounter:59b1b6b99605daa8",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:cb4a7e36bdc5141e1534560b",
+        "event:8f7ab888124fe70a6dda5bbf"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 201,
+      "projection_after": 156
+    },
+    {
+      "reference_id": "log-054",
+      "turn": 4,
+      "text": "铝钢桥龙 HP 190 → 181",
+      "instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246",
+      "episode_id": "event:054f71a42009bf3956b8f270:hp:sample_battle_22:self:encounter:2f79a788a9f65246",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:6ad63fe3be4b50a5ac5819e3",
+        "event:ff0fe1c25453e7d669afb347"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 190,
+      "projection_after": 181
+    },
+    {
+      "reference_id": "log-060",
+      "turn": 4,
+      "text": "铝钢桥龙 HP 181 → 193",
+      "instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246",
+      "episode_id": "event:9e34bb1a9b71797397d460eb:hp:sample_battle_22:self:encounter:2f79a788a9f65246",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:dcc843cd6c8a7a35fb43d32a",
+        "event:44cde3aeff19438762bee897"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 181,
+      "projection_after": 193
+    },
+    {
+      "reference_id": "log-068",
+      "turn": 5,
+      "text": "百变怪 HP 100% → 22%",
+      "instance_id": "sample_battle_22:opponent:encounter:953d14c88dcaadc1",
+      "episode_id": "event:8b46dd10417bca7323ecc58a:hp:sample_battle_22:opponent:encounter:953d14c88dcaadc1",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:209509ade8eb6325d739ed8e",
+        "event:e2ae2e2ac108e46563e1e590"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 100,
+      "projection_after": 22
+    },
+    {
+      "reference_id": "log-073",
+      "turn": 5,
+      "text": "铝钢桥龙 HP 193 → 194",
+      "instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246",
+      "episode_id": "event:5547033a2d0da82e97a80fda:hp:sample_battle_22:self:encounter:2f79a788a9f65246",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:b49856aefaac836bc44b9531",
+        "event:c3b422dbabde2cc7f4767289"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": false,
+      "program_supported": false,
+      "projection_before": 193,
+      "projection_after": 194
+    },
+    {
+      "reference_id": "log-086",
+      "turn": 6,
+      "text": "化石翼龙 HP 100% → 43%",
+      "instance_id": "sample_battle_22:opponent:encounter:09edb388d36073d3",
+      "episode_id": "event:af5f0ec8f8d5037530a51bd4:hp:sample_battle_22:opponent:encounter:09edb388d36073d3",
+      "raw_ordered_endpoints": false,
+      "raw_endpoint_event_ids": [],
+      "exact_projection": false,
+      "complete_endpoints": false,
+      "program_supported": false,
+      "projection_before": null,
+      "projection_after": 43
+    },
+    {
+      "reference_id": "log-094",
+      "turn": 7,
+      "text": "长毛巨魔 HP 156 → 0",
+      "instance_id": "sample_battle_22:self:encounter:59b1b6b99605daa8",
+      "episode_id": "event:ee8a7e0e0121100d0fc1f5cb:hp:sample_battle_22:self:encounter:59b1b6b99605daa8",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:3183b42e2358b67b7504902a",
+        "event:bb70d4468f29aff61547d571"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 156,
+      "projection_after": 0
+    },
+    {
+      "reference_id": "log-103",
+      "turn": 8,
+      "text": "大嘴鸥 HP 72 → 51",
+      "instance_id": "sample_battle_22:self:encounter:cddd4f82f09160aa",
+      "episode_id": "event:7660e24568ad4b208a0c26c2:hp:sample_battle_22:self:encounter:cddd4f82f09160aa",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:4c87767fb18a27e493d4aa36",
+        "event:ff1536c46e0939b2a00cbce4"
+      ],
+      "exact_projection": false,
+      "complete_endpoints": false,
+      "program_supported": false,
+      "projection_before": 72,
+      "projection_after": 27
+    },
+    {
+      "reference_id": "log-104",
+      "turn": 8,
+      "text": "大嘴鸥 HP 51 → 27",
+      "instance_id": "sample_battle_22:self:encounter:cddd4f82f09160aa",
+      "episode_id": "event:7660e24568ad4b208a0c26c2:hp:sample_battle_22:self:encounter:cddd4f82f09160aa",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:ff1536c46e0939b2a00cbce4",
+        "event:19ad6b4a69f642c5f677f0ee"
+      ],
+      "exact_projection": false,
+      "complete_endpoints": false,
+      "program_supported": false,
+      "projection_before": 72,
+      "projection_after": 27
+    },
+    {
+      "reference_id": "log-107",
+      "turn": 8,
+      "text": "铝钢桥龙 HP 194 → 150",
+      "instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246",
+      "episode_id": "event:114053eb3b05d0dae4c0b9fa:hp:sample_battle_22:self:encounter:2f79a788a9f65246",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:09d1a52003562ef3d3d453e0",
+        "event:2a3f96abfcb11e72ea3be3ed"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 194,
+      "projection_after": 150
+    },
+    {
+      "reference_id": "log-115",
+      "turn": 8,
+      "text": "化石翼龙 HP 43% → 0%",
+      "instance_id": "sample_battle_22:opponent:encounter:09edb388d36073d3",
+      "episode_id": "event:e4fd40bf0e3f5522ffb1cc51:hp:sample_battle_22:opponent:encounter:09edb388d36073d3",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:043f635f51fefdc42c3c7dde",
+        "event:353061edd0aaf8cfc7345ad8"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true,
+      "projection_before": 43,
+      "projection_after": 0
+    },
+    {
+      "reference_id": "log-119",
+      "turn": 8,
+      "text": "大嘴鸥 HP 27 → 68",
+      "instance_id": "sample_battle_22:self:encounter:cddd4f82f09160aa",
+      "episode_id": "event:8f2aaeaad5e20e29a625a624:hp:sample_battle_22:self:encounter:cddd4f82f09160aa",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:3a86e1f13c12a2a6e2149c21",
+        "event:4e53b59a6611e5d77e902820"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": false,
+      "program_supported": false,
+      "projection_before": 27,
+      "projection_after": 68
+    },
+    {
+      "reference_id": "log-121",
+      "turn": 8,
+      "text": "铝钢桥龙 HP 150 → 162",
+      "instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246",
+      "episode_id": "event:f894fa0ed6872319952a9a66:hp:sample_battle_22:self:encounter:2f79a788a9f65246",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:b34cdf9f1c0ddf43d5a6c20f",
+        "event:ec0b1de3a3dc5fb40f24afbb"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": false,
+      "program_supported": false,
+      "projection_before": 150,
+      "projection_after": 162
+    }
+  ]
+}

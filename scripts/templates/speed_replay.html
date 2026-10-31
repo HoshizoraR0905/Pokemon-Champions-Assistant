@@ -5,20 +5,26 @@
 <link rel="stylesheet" href="speed_replay.css">
 <header><div><small>POKÉMON CHAMPIONS ASSISTANT · M3.2.2</small><h1>速度证据回放</h1></div>
 <label>录像 <select id="battle"><option value="10">Battle 10</option><option value="11" selected>Battle 11</option><option value="12">Battle 12</option></select></label><span id="status" role="status">加载本地缓存…</span></header>
-<main>
+<div class="review-toolbar"><label><input id="damageMode" type="checkbox"> 加入承伤证据</label>
+<label>道具策略 <select id="itemProfile"><option value="practical">Practical（默认）</option><option value="comprehensive">Comprehensive（诊断）</option></select></label>
+<details class="scoring-settings"><summary>评分与参考范围</summary><p id="itemPolicyNote" class="muted"></p>
+<label>经验招式权重 α <select id="empiricalAlpha"><option value="0">0</option><option value="0.25">0.25</option><option value="0.5" selected>0.5（实验默认）</option><option value="0.6">0.6</option><option value="0.75">0.75</option><option value="1">1</option></select></label>
+</details></div><main>
 <section class="viewer"><a id="source" target="_blank" rel="noopener"><img id="frame" alt="当前时间的原始战斗截图"></a>
 <div class="caption"><strong id="clock">—</strong><span id="turn">—</span><span id="phase">—</span></div>
 <div class="controls"><button id="prevFrame" aria-label="上一帧">← 帧</button><button id="nextFrame" aria-label="下一帧">帧 →</button><button id="prevTurn">上一回合</button><button id="nextTurn">下一回合</button><button id="prevEvent">上一事件</button><button id="nextEvent">下一事件</button><button id="seekVideo">原视频定位</button></div>
+<div class="review-navigation"><label>跳转目标 <select id="reviewUpdate" aria-label="选择承伤或速度支持更新"></select></label><button id="reviewBefore">证据前</button><button id="reviewAfter">证据后</button></div>
 <label for="timeline">原帧时间轴 <span id="frameCount"></span></label><input id="timeline" type="range" min="0" max="0" value="0" step="1"><div id="markers" aria-label="证据事件标记"></div>
-<p class="muted">● 指令　◆ 换人　◇ Mega　▲ 行动　■ 状态变化　★ 约束。拖动只读取预计算快照。</p>
+<p class="muted">● 指令　◆ 换人　◇ Mega　▲ 行动　■ 状态变化　★ 速度约束　▼ 承伤约束。拖动只读取预计算快照。</p>
 <details id="videoPanel"><summary>原始视频</summary><video id="video" controls preload="none"></video></details>
 <details><summary>当前帧来源</summary><pre id="provenance"></pre></details>
-<article><h2>本回合 · 已知行动</h2><p class="muted">已执行、已选择和被阻止分别记录；尚未发生的行动不会列出。</p><div id="actions"></div></article>
-<article><h2>最近观察状态</h2><pre id="field"></pre><div id="individualState"></div><p id="occupants"></p></article>
+<article id="damagePanel" hidden><h2>我方承伤证据</h2><p class="muted">整数 HP 来源审查；数值推断依赖列明的 Champions 参考机制与行动时条件。</p><div id="damageEvidence"></div></article>
+<details class="review-panel"><summary>本回合 · 已知行动</summary><p class="muted">已执行、已选择和被阻止分别记录。</p><div id="actions"></div></details>
+<details class="review-panel"><summary>最近观察状态与来源</summary><pre id="field"></pre><div id="individualState"></div><p id="occupants"></p></details>
 </section>
-<aside><div class="legend"><span class="badge direct">来源审查约束</span><span class="badge conditional">带条件计算</span><span class="badge empirical">M3.3 经验子集</span><p>“完整”仅指当前固定目录、原生特性、SP 与列明机制条件下的支持。经验配置支持 → 完整参考模型。经验频率不代表对手概率；未知状态保持未知。</p></div>
-<section><h2>对方速度候选</h2><div id="opponents"></div></section>
-<section><h2>候选变化与证据</h2><div id="deductions"></div></section>
+<aside><p class="inference-legend">参考范围保留整数间隙；VGC 份额仅描述条件样本。未知信息保持未知。</p>
+<section><h2>对手 · 数值与 VGC 样本</h2><div id="opponents"></div></section>
+<details class="review-panel"><summary>行动顺序约束与历史诊断</summary><div id="deductions"></div></details>
 <details><summary>当前事件与未决原因</summary><pre id="eventDetails"></pre></details>
 <a id="empiricalFile" target="_blank" rel="noopener">M3.3 完整配置、缺失字段与来源</a>
 </aside>

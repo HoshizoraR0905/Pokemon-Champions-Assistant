@@ -1,0 +1,868 @@
+{
+  "battle_id": "sample_battle_20",
+  "run_id": "fresh-b20-postfix-v1",
+  "reviewer": "Codex visual source review; not human-supplied annotations",
+  "review_method": "Read all19 saved source frames via four contact sheets before inspecting prediction event contents or automatic historical extraction. Transcribed43 visible row occurrences independently; overlaps preserve turn and row order.",
+  "source_video_sha256": "17df9027239cd411d9c55ec5125e8fe35afcd58a069b628cfd9dd942d3d0eecd",
+  "coverage": {
+    "inspection_window_seconds": [
+      320.00333333333333,
+      329.02166666666665
+    ],
+    "observed_turns": [
+      1,
+      2,
+      3
+    ],
+    "row_count": 43,
+    "whole_match_coverage": false,
+    "turn_completeness_asserted": false,
+    "policy": "Only these visible row occurrences are compared. No event-time substitution from log inspection, no labels for turns4+ or unshown rows. Pronoun-only actor deduction is separate from direct text."
+  },
+  "rows": [
+    {
+      "reference_id": "b20-log-t1-01",
+      "turn": 1,
+      "source": {
+        "time": 329.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000654.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#329.02166666666665",
+        "sha256": "7feb429e6af9d7f11e01f801b08b032a1db3eaf0c92558731bbf97c3c7b8b055"
+      },
+      "original_event_time": null,
+      "text": "K派出了姆克鹰和风妖精！",
+      "kind": "send_out",
+      "side": "opponent",
+      "actor": null,
+      "facts": {
+        "actors": [
+          "姆克鹰",
+          "风妖精"
+        ]
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-02",
+      "turn": 1,
+      "source": {
+        "time": 329.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000654.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#329.02166666666665",
+        "sha256": "7feb429e6af9d7f11e01f801b08b032a1db3eaf0c92558731bbf97c3c7b8b055"
+      },
+      "original_event_time": null,
+      "text": "上吧！大嘴鸥！烈咬陆鲨！",
+      "kind": "send_out",
+      "side": "self",
+      "actor": null,
+      "facts": {
+        "actors": [
+          "大嘴鸥",
+          "烈咬陆鲨"
+        ]
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-03",
+      "turn": 1,
+      "source": {
+        "time": 329.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000654.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#329.02166666666665",
+        "sha256": "7feb429e6af9d7f11e01f801b08b032a1db3eaf0c92558731bbf97c3c7b8b055"
+      },
+      "original_event_time": null,
+      "text": "姆克鹰的威吓",
+      "kind": "ability_activation",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "ability": "威吓"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-04",
+      "turn": 1,
+      "source": {
+        "time": 329.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000654.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#329.02166666666665",
+        "sha256": "7feb429e6af9d7f11e01f801b08b032a1db3eaf0c92558731bbf97c3c7b8b055"
+      },
+      "original_event_time": null,
+      "text": "大嘴鸥和烈咬陆鲨的攻击降低了！",
+      "kind": "stat_change",
+      "side": "self",
+      "actor": null,
+      "facts": {
+        "actors": [
+          "大嘴鸥",
+          "烈咬陆鲨"
+        ],
+        "stats": [
+          "attack"
+        ],
+        "direction": "down"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-05",
+      "turn": 1,
+      "source": {
+        "time": 329.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000654.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#329.02166666666665",
+        "sha256": "7feb429e6af9d7f11e01f801b08b032a1db3eaf0c92558731bbf97c3c7b8b055"
+      },
+      "original_event_time": null,
+      "text": "大嘴鸥的降雨",
+      "kind": "ability_activation",
+      "side": "self",
+      "actor": "大嘴鸥",
+      "facts": {
+        "ability": "降雨"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-06",
+      "turn": 1,
+      "source": {
+        "time": 329.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000654.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#329.02166666666665",
+        "sha256": "7feb429e6af9d7f11e01f801b08b032a1db3eaf0c92558731bbf97c3c7b8b055"
+      },
+      "original_event_time": null,
+      "text": "开始下雨了！",
+      "kind": "weather_change",
+      "side": "field",
+      "actor": null,
+      "facts": {
+        "weather": "rain",
+        "change": "start"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-07",
+      "turn": 1,
+      "source": {
+        "time": 327.52166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000651.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#327.52166666666665",
+        "sha256": "b438832bb912aac7372b190276638db144320519426b8d156e6806e79945fdff"
+      },
+      "original_event_time": null,
+      "text": "对手的姆克鹰的姆克鹰进化石和K的全一环起了反应！",
+      "kind": "mega_reaction",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {},
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-08",
+      "turn": 1,
+      "source": {
+        "time": 327.52166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000651.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#327.52166666666665",
+        "sha256": "b438832bb912aac7372b190276638db144320519426b8d156e6806e79945fdff"
+      },
+      "original_event_time": null,
+      "text": "对手的姆克鹰超级进化成了超级姆克鹰！",
+      "kind": "transformation",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "form": "超级姆克鹰"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-09",
+      "turn": 1,
+      "source": {
+        "time": 327.52166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000651.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#327.52166666666665",
+        "sha256": "b438832bb912aac7372b190276638db144320519426b8d156e6806e79945fdff"
+      },
+      "original_event_time": null,
+      "text": "烈咬陆鲨的烈咬陆鲨进化石和Hoshi的全一环起了反应！",
+      "kind": "mega_reaction",
+      "side": "self",
+      "actor": "烈咬陆鲨",
+      "facts": {},
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-10",
+      "turn": 1,
+      "source": {
+        "time": 327.52166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000651.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#327.52166666666665",
+        "sha256": "b438832bb912aac7372b190276638db144320519426b8d156e6806e79945fdff"
+      },
+      "original_event_time": null,
+      "text": "烈咬陆鲨超级进化成了超级烈咬陆鲨！",
+      "kind": "transformation",
+      "side": "self",
+      "actor": "烈咬陆鲨",
+      "facts": {
+        "form": "超级烈咬陆鲨"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-11",
+      "turn": 1,
+      "source": {
+        "time": 326.52166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000649.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#326.52166666666665",
+        "sha256": "3f8d4c75adc9c1a7359ee307d91f17803b00508d25b54f9ed943b9dc18699f03"
+      },
+      "original_event_time": null,
+      "text": "对手的风妖精使出了顺风！",
+      "kind": "move_execution",
+      "side": "opponent",
+      "actor": "风妖精",
+      "facts": {
+        "move": "顺风"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-12",
+      "turn": 1,
+      "source": {
+        "time": 326.52166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000649.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#326.52166666666665",
+        "sha256": "3f8d4c75adc9c1a7359ee307d91f17803b00508d25b54f9ed943b9dc18699f03"
+      },
+      "original_event_time": null,
+      "text": "从对手身后吹起了顺风！",
+      "kind": "side_condition_change",
+      "side": "opponent",
+      "actor": null,
+      "facts": {
+        "condition": "tailwind",
+        "change": "start"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-13",
+      "turn": 1,
+      "source": {
+        "time": 326.03833333333336,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000648.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#326.03833333333336",
+        "sha256": "6ae98c926f6d6bfd0663d653fea155280383d2c10627a92dfcc238e80ef73bc1"
+      },
+      "original_event_time": null,
+      "text": "对手的姆克鹰使出了近身战！",
+      "kind": "move_execution",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "move": "近身战"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-14",
+      "turn": 1,
+      "source": {
+        "time": 326.03833333333336,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000648.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#326.03833333333336",
+        "sha256": "6ae98c926f6d6bfd0663d653fea155280383d2c10627a92dfcc238e80ef73bc1"
+      },
+      "original_event_time": null,
+      "text": "烈咬陆鲨 HP 184 → 66",
+      "kind": "hp_change",
+      "side": "self",
+      "actor": "烈咬陆鲨",
+      "facts": {
+        "before": 184,
+        "after": 66,
+        "unit": "absolute"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-15",
+      "turn": 1,
+      "source": {
+        "time": 326.03833333333336,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000648.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#326.03833333333336",
+        "sha256": "6ae98c926f6d6bfd0663d653fea155280383d2c10627a92dfcc238e80ef73bc1"
+      },
+      "original_event_time": null,
+      "text": "对手的姆克鹰的防御、特防提高了！",
+      "kind": "stat_change",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "stats": [
+          "defense",
+          "special_defense"
+        ],
+        "direction": "up"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-16",
+      "turn": 1,
+      "source": {
+        "time": 325.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000646.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#325.02166666666665",
+        "sha256": "e1920eb0e29ff7211b43beafa0ba763b271263d04e7ce8ba94e53ad89b485f84"
+      },
+      "original_event_time": null,
+      "text": "烈咬陆鲨使出了力量宝石！",
+      "kind": "move_execution",
+      "side": "self",
+      "actor": "烈咬陆鲨",
+      "facts": {
+        "move": "力量宝石"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-17",
+      "turn": 1,
+      "source": {
+        "time": 325.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000646.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#325.02166666666665",
+        "sha256": "e1920eb0e29ff7211b43beafa0ba763b271263d04e7ce8ba94e53ad89b485f84"
+      },
+      "original_event_time": null,
+      "text": "姆克鹰 HP 100% → 76%",
+      "kind": "hp_change",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "before": 100,
+        "after": 76,
+        "unit": "percent"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-18",
+      "turn": 1,
+      "source": {
+        "time": 325.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000646.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#325.02166666666665",
+        "sha256": "e1920eb0e29ff7211b43beafa0ba763b271263d04e7ce8ba94e53ad89b485f84"
+      },
+      "original_event_time": null,
+      "text": "大嘴鸥使出了暴风！",
+      "kind": "move_execution",
+      "side": "self",
+      "actor": "大嘴鸥",
+      "facts": {
+        "move": "暴风"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-19",
+      "turn": 1,
+      "source": {
+        "time": 325.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000646.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#325.02166666666665",
+        "sha256": "e1920eb0e29ff7211b43beafa0ba763b271263d04e7ce8ba94e53ad89b485f84"
+      },
+      "original_event_time": null,
+      "text": "风妖精 HP 100% → 17%",
+      "kind": "hp_change",
+      "side": "opponent",
+      "actor": "风妖精",
+      "facts": {
+        "before": 100,
+        "after": 17,
+        "unit": "percent"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-20",
+      "turn": 1,
+      "source": {
+        "time": 325.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000646.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#325.02166666666665",
+        "sha256": "e1920eb0e29ff7211b43beafa0ba763b271263d04e7ce8ba94e53ad89b485f84"
+      },
+      "original_event_time": null,
+      "text": "对对手的风妖精效果绝佳！",
+      "kind": "effectiveness",
+      "side": "opponent",
+      "actor": null,
+      "facts": {
+        "target": "风妖精",
+        "effect": "super_effective"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t1-21",
+      "turn": 1,
+      "source": {
+        "time": 325.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000646.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#325.02166666666665",
+        "sha256": "e1920eb0e29ff7211b43beafa0ba763b271263d04e7ce8ba94e53ad89b485f84"
+      },
+      "original_event_time": null,
+      "text": "对手的风妖精混乱了！",
+      "kind": "confusion_start",
+      "side": "opponent",
+      "actor": "风妖精",
+      "facts": {},
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t2-01",
+      "turn": 2,
+      "source": {
+        "time": 324.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000644.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#324.02166666666665",
+        "sha256": "b068fcddae375cc03e76d8b263a527edf8241acba3cca0e61305faf0fe08e1cb"
+      },
+      "original_event_time": null,
+      "text": "烈咬陆鲨使出了守住！",
+      "kind": "move_execution",
+      "side": "self",
+      "actor": "烈咬陆鲨",
+      "facts": {
+        "move": "守住",
+        "displayed_priority": 4
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t2-02",
+      "turn": 2,
+      "source": {
+        "time": 324.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000644.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#324.02166666666665",
+        "sha256": "b068fcddae375cc03e76d8b263a527edf8241acba3cca0e61305faf0fe08e1cb"
+      },
+      "original_event_time": null,
+      "text": "烈咬陆鲨摆出了防守的架势！",
+      "kind": "protect_start",
+      "side": "self",
+      "actor": "烈咬陆鲨",
+      "facts": {},
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t2-03",
+      "turn": 2,
+      "source": {
+        "time": 324.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000644.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#324.02166666666665",
+        "sha256": "b068fcddae375cc03e76d8b263a527edf8241acba3cca0e61305faf0fe08e1cb"
+      },
+      "original_event_time": null,
+      "text": "对手的风妖精正在混乱中！",
+      "kind": "confusion_notice",
+      "side": "opponent",
+      "actor": "风妖精",
+      "facts": {},
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t2-04",
+      "turn": 2,
+      "source": {
+        "time": 324.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000644.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#324.02166666666665",
+        "sha256": "b068fcddae375cc03e76d8b263a527edf8241acba3cca0e61305faf0fe08e1cb"
+      },
+      "original_event_time": null,
+      "text": "对手的风妖精使出了撒娇！",
+      "kind": "move_execution",
+      "side": "opponent",
+      "actor": "风妖精",
+      "facts": {
+        "move": "撒娇"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t2-05",
+      "turn": 2,
+      "source": {
+        "time": 324.02166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000644.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#324.02166666666665",
+        "sha256": "b068fcddae375cc03e76d8b263a527edf8241acba3cca0e61305faf0fe08e1cb"
+      },
+      "original_event_time": null,
+      "text": "对手的姆克鹰的攻击大幅提高了！",
+      "kind": "stat_change",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "stats": [
+          "attack"
+        ],
+        "direction": "up",
+        "magnitude_literal": "大幅"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t2-06",
+      "turn": 2,
+      "source": {
+        "time": 323.53833333333336,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000643.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#323.53833333333336",
+        "sha256": "bbba4d0c0d4ee3121a7ed170caeb06668cd92228f38f0104e572355cdcfbbd13"
+      },
+      "original_event_time": null,
+      "text": "对手的姆克鹰使出了近身战！",
+      "kind": "move_execution",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "move": "近身战"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t2-07",
+      "turn": 2,
+      "source": {
+        "time": 323.53833333333336,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000643.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#323.53833333333336",
+        "sha256": "bbba4d0c0d4ee3121a7ed170caeb06668cd92228f38f0104e572355cdcfbbd13"
+      },
+      "original_event_time": null,
+      "text": "烈咬陆鲨在攻击中守护住了自己！",
+      "kind": "protect_block",
+      "side": "self",
+      "actor": "烈咬陆鲨",
+      "facts": {},
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t2-08",
+      "turn": 2,
+      "source": {
+        "time": 323.005,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000642.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#323.005",
+        "sha256": "bbfc4e7a1aeae88cbd19525dc64a767da13af5e018a09b46f21f5a42d60ab298"
+      },
+      "original_event_time": null,
+      "text": "大嘴鸥使出了暴风！",
+      "kind": "move_execution",
+      "side": "self",
+      "actor": "大嘴鸥",
+      "facts": {
+        "move": "暴风"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t2-09",
+      "turn": 2,
+      "source": {
+        "time": 323.005,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000642.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#323.005",
+        "sha256": "bbfc4e7a1aeae88cbd19525dc64a767da13af5e018a09b46f21f5a42d60ab298"
+      },
+      "original_event_time": null,
+      "text": "姆克鹰 HP 76% → 24%",
+      "kind": "hp_change",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "before": 76,
+        "after": 24,
+        "unit": "percent"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t2-10",
+      "turn": 2,
+      "source": {
+        "time": 322.52166666666665,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000641.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#322.52166666666665",
+        "sha256": "823d92d0955a8a2fea536ba398e4dd932de046eb00ca59966cc7c754faeeb1f4"
+      },
+      "original_event_time": null,
+      "text": "对对手的姆克鹰效果绝佳！",
+      "kind": "effectiveness",
+      "side": "opponent",
+      "actor": null,
+      "facts": {
+        "target": "姆克鹰",
+        "effect": "super_effective"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-01",
+      "turn": 3,
+      "source": {
+        "time": 322.005,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000640.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#322.005",
+        "sha256": "9b757fc75b0af56a44ee3c3cba26969f24e2d501d83a0dc4d28f0c00e3120c86"
+      },
+      "original_event_time": null,
+      "text": "对手的姆克鹰使出了羽栖！",
+      "kind": "move_execution",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "move": "羽栖"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-02",
+      "turn": 3,
+      "source": {
+        "time": 322.005,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000640.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#322.005",
+        "sha256": "9b757fc75b0af56a44ee3c3cba26969f24e2d501d83a0dc4d28f0c00e3120c86"
+      },
+      "original_event_time": null,
+      "text": "姆克鹰 HP 24% → 74%",
+      "kind": "hp_change",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "before": 24,
+        "after": 74,
+        "unit": "percent"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-03",
+      "turn": 3,
+      "source": {
+        "time": 322.005,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000640.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#322.005",
+        "sha256": "9b757fc75b0af56a44ee3c3cba26969f24e2d501d83a0dc4d28f0c00e3120c86"
+      },
+      "original_event_time": null,
+      "text": "对手的风妖精正在混乱中！",
+      "kind": "confusion_notice",
+      "side": "opponent",
+      "actor": "风妖精",
+      "facts": {},
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-04",
+      "turn": 3,
+      "source": {
+        "time": 322.005,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000640.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#322.005",
+        "sha256": "9b757fc75b0af56a44ee3c3cba26969f24e2d501d83a0dc4d28f0c00e3120c86"
+      },
+      "original_event_time": null,
+      "text": "不知所以地攻击了自己！",
+      "kind": "confusion_self_hit",
+      "side": null,
+      "actor": null,
+      "facts": {
+        "context_actor": "风妖精",
+        "context_basis": "immediately_preceding_confusion_notice",
+        "actor_evidence_kind": "ordered_context_deduction"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-05",
+      "turn": 3,
+      "source": {
+        "time": 322.005,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000640.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#322.005",
+        "sha256": "9b757fc75b0af56a44ee3c3cba26969f24e2d501d83a0dc4d28f0c00e3120c86"
+      },
+      "original_event_time": null,
+      "text": "风妖精 HP 17% → 10%",
+      "kind": "hp_change",
+      "side": "opponent",
+      "actor": "风妖精",
+      "facts": {
+        "before": 17,
+        "after": 10,
+        "unit": "percent"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-06",
+      "turn": 3,
+      "source": {
+        "time": 322.005,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000640.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#322.005",
+        "sha256": "9b757fc75b0af56a44ee3c3cba26969f24e2d501d83a0dc4d28f0c00e3120c86"
+      },
+      "original_event_time": null,
+      "text": "烈咬陆鲨使出了龙之波动！",
+      "kind": "move_execution",
+      "side": "self",
+      "actor": "烈咬陆鲨",
+      "facts": {
+        "move": "龙之波动"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-07",
+      "turn": 3,
+      "source": {
+        "time": 321.00333333333333,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000638.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#321.00333333333333",
+        "sha256": "5754c65f040523b6ec3b843b6b160e299af59f6f22a44c6302cfc3abe37084a9"
+      },
+      "original_event_time": null,
+      "text": "姆克鹰 HP 74% → 37%",
+      "kind": "hp_change",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "before": 74,
+        "after": 37,
+        "unit": "percent"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-08",
+      "turn": 3,
+      "source": {
+        "time": 321.00333333333333,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000638.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#321.00333333333333",
+        "sha256": "5754c65f040523b6ec3b843b6b160e299af59f6f22a44c6302cfc3abe37084a9"
+      },
+      "original_event_time": null,
+      "text": "大嘴鸥使出了暴风！",
+      "kind": "move_execution",
+      "side": "self",
+      "actor": "大嘴鸥",
+      "facts": {
+        "move": "暴风"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-09",
+      "turn": 3,
+      "source": {
+        "time": 321.00333333333333,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000638.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#321.00333333333333",
+        "sha256": "5754c65f040523b6ec3b843b6b160e299af59f6f22a44c6302cfc3abe37084a9"
+      },
+      "original_event_time": null,
+      "text": "姆克鹰 HP 37% → 0%",
+      "kind": "hp_change",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {
+        "before": 37,
+        "after": 0,
+        "unit": "percent"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-10",
+      "turn": 3,
+      "source": {
+        "time": 320.50333333333333,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000637.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#320.50333333333333",
+        "sha256": "6d5a9b458fa96480794c1941f01723ba19347ce5e4c0168087f404a178a98214"
+      },
+      "original_event_time": null,
+      "text": "对对手的姆克鹰效果绝佳！",
+      "kind": "effectiveness",
+      "side": "opponent",
+      "actor": null,
+      "facts": {
+        "target": "姆克鹰",
+        "effect": "super_effective"
+      },
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-11",
+      "turn": 3,
+      "source": {
+        "time": 320.50333333333333,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000637.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#320.50333333333333",
+        "sha256": "6d5a9b458fa96480794c1941f01723ba19347ce5e4c0168087f404a178a98214"
+      },
+      "original_event_time": null,
+      "text": "对手的姆克鹰倒下了！",
+      "kind": "faint",
+      "side": "opponent",
+      "actor": "姆克鹰",
+      "facts": {},
+      "evidence_kind": "direct_visible_log_text"
+    },
+    {
+      "reference_id": "b20-log-t3-12",
+      "turn": 3,
+      "source": {
+        "time": 320.50333333333333,
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000637.png",
+        "source_id": "tests/fixtures/sample_battle_20.mp4#320.50333333333333",
+        "sha256": "6d5a9b458fa96480794c1941f01723ba19347ce5e4c0168087f404a178a98214"
+      },
+      "original_event_time": null,
+      "text": "K派出了晶光花！",
+      "kind": "send_out",
+      "side": "opponent",
+      "actor": "晶光花",
+      "facts": {},
+      "evidence_kind": "direct_visible_log_text"
+    }
+  ]
+}

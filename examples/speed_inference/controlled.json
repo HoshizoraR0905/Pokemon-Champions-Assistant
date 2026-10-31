@@ -37,7 +37,7 @@
         "unmodified_speed": 122
       }
     ],
-    "fingerprint": "bf93fa4d6a7f6cd353eef5699be46d32455679e9e27b8c160c705ee0e9d3aae5",
+    "fingerprint": "635c33e0db6bb95f98e679d282f1bced9777d0ff3fdfd1177df315e3b9fced40",
     "form": "base",
     "identity": "pokeapi:species:6",
     "known_other_points": {},
@@ -89,7 +89,7 @@
         ],
         "training_points_total_max": 66
       },
-      "facts_sha256": "c9203fdf1cdad92bb37e88c3f56763fc910ce03e566f851e3f8389cac5d3f93b",
+      "facts_sha256": "186df39ded2bfffa0b3c13a56c5a85bf430053b3d1bad1b635a7885d0777ff76",
       "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
       "limitations": [
         "Community encyclopedia documentation, not independently certified official mechanics.",

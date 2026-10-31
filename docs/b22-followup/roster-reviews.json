@@ -1,0 +1,156 @@
+{
+  "method": "Visible complete self-preview six names/items/genders; no OCR rerun",
+  "historical_review_source": "tests/fixtures/battle_evidence/team7-roster-bindings.json",
+  "reviews": [
+    {
+      "battle_id": "sample_battle_13",
+      "image": ".cache/battles/sample_battle_13/event-driven/fresh-heldout-20261026-v1/frames/000159.png",
+      "sha256": "9b57fa3a6b8fe28c92d878db2b312975e6d55fd9674d6b915fea6953c0483884",
+      "species_ids": [
+        727,
+        812,
+        94,
+        445,
+        666,
+        730
+      ],
+      "matches_team7": false,
+      "reviewer": "Codex visual inspection 2026-10-30; not human-reviewed"
+    },
+    {
+      "battle_id": "sample_battle_14",
+      "image": ".cache/battles/sample_battle_14/event-driven/fresh-heldout-20261026-v1/frames/000064.png",
+      "sha256": "19f1bec51e5dcfee6efa96f71c1aad39436118e016dff5b44e414c863caaabde",
+      "species_ids": [
+        727,
+        812,
+        94,
+        445,
+        666,
+        730
+      ],
+      "matches_team7": false,
+      "reviewer": "Codex visual inspection 2026-10-30; not human-reviewed"
+    },
+    {
+      "battle_id": "sample_battle_15",
+      "image": ".cache/battles/sample_battle_15/event-driven/fresh-heldout-20261026-v1/frames/000083.png",
+      "sha256": "d2979e5c132823241763c21c99f5102d0c92d1232fff27b124b96ec3e8e04b0e",
+      "species_ids": [
+        727,
+        812,
+        94,
+        445,
+        666,
+        730
+      ],
+      "matches_team7": false,
+      "reviewer": "Codex visual inspection 2026-10-30; not human-reviewed"
+    },
+    {
+      "battle_id": "sample_battle_16",
+      "image": ".cache/battles/sample_battle_16/event-driven/b16-semantic-state-20261027-v1/frames/000083.png",
+      "sha256": "ff3fb6c896e4cfd71918cd86c5e297edb9e1ed93ca07057b3538c9f47dbd7552",
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ],
+      "matches_team7": true,
+      "reviewer": "Codex visual inspection 2026-10-30; not human-reviewed"
+    },
+    {
+      "battle_id": "sample_battle_17",
+      "image": ".cache/battles/sample_battle_17/event-driven/fresh-b17-b18-20261028-v1/frames/000077.png",
+      "sha256": "af467fe6d97af4f6af1bf490a39f89fc920d7a593e651c537440845e5fcd2667",
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ],
+      "matches_team7": true,
+      "reviewer": "Codex visual inspection 2026-10-30; not human-reviewed"
+    },
+    {
+      "battle_id": "sample_battle_18",
+      "image": ".cache/battles/sample_battle_18/event-driven/fresh-b17-b18-20261028-v1/frames/000119.png",
+      "sha256": "3be3dd7324a29e599654f2fb8a91058b4e98a872cb48113435bb95ab13112bcc",
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ],
+      "matches_team7": true,
+      "reviewer": "Codex visual inspection 2026-10-30; not human-reviewed"
+    },
+    {
+      "battle_id": "sample_battle_19",
+      "image": ".cache/battles/sample_battle_19/event-driven/fresh-b19-postfix-v1/frames/000063.png",
+      "sha256": "10e4e0dfb1706b5141e9195dd8a4e73eacad2256bd0e426735cc22b8354c7ba3",
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ],
+      "matches_team7": true,
+      "reviewer": "Codex visual inspection 2026-10-30; not human-reviewed"
+    },
+    {
+      "battle_id": "sample_battle_20",
+      "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000104.png",
+      "sha256": "f9087d7e801f9880bf4cf42f8b045c89c732cd7a6e348c6bda177912d1f2e631",
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ],
+      "matches_team7": true,
+      "reviewer": "Codex visual inspection 2026-10-30; not human-reviewed"
+    },
+    {
+      "battle_id": "sample_battle_21",
+      "image": ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/frames/000116.png",
+      "sha256": "c6a8caeb96721f2db219f138aba27ab7154d94a1763a0411339f75b9040a1cb2",
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ],
+      "matches_team7": true,
+      "reviewer": "Codex visual inspection 2026-10-30; not human-reviewed"
+    },
+    {
+      "battle_id": "sample_battle_22",
+      "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000059.png",
+      "sha256": "b88b400b2a25089766c3afcb79b991654efbc448f77fc393ed245dcb6a2ba28c",
+      "species_ids": [
+        3,
+        6,
+        279,
+        445,
+        861,
+        1018
+      ],
+      "matches_team7": true,
+      "reviewer": "Codex visual inspection 2026-10-30; not human-reviewed"
+    }
+  ]
+}

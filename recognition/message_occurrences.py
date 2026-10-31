@@ -90,4 +90,7 @@ class MessageOccurrences:
                     for o in observations]
                 events.append(event.to_dict())
             current.update(emitted=True,semantic=semantic,canonical_move=(parsed[0].canonical_references.get('move') or {}).get('canonical_id'),interpretation_time=t)
-        return dict(events=events,occurrence=deepcopy(current),reason='supported_now' if events else 'provisional_or_repeat')
+        return dict(events=events,occurrence=deepcopy(current),reason='supported_now' if events else 'provisional_or_repeat',
+            semantic_candidates=[e.to_dict() for e in parsed] if not supported else [],
+            semantic_admission='emitted' if events else 'repeat' if supported else
+                'below_occurrence_confidence' if msg['confidence']<.9 else 'unsupported_semantics')

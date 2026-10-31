@@ -6,7 +6,6 @@ from pathlib import Path
 import sys
 from capture import load_image, video_frames
 from recognition import Recognizer, annotate
-from recognition.ocr import OCR
 from tracking import Tracker
 from recognition.context import RecognitionContext
 from recognition.entities import EntityResolver
@@ -29,10 +28,11 @@ def main() -> int:
     parser.add_argument('--frame-cache',type=Path,help='Event-driven: reuse a compatible acquisition manifest; no video decoding')
     parser.add_argument('--recognition-cache',type=Path,nargs='+',help='Event-driven: reuse verified same-model pixel predictions from prior runs')
     parser.add_argument('--reconstruct-from',type=Path,help='Event-driven: reuse a sealed compatible recognition stage; no decoding, OCR or icons')
-    parser.add_argument('--interval',type=float,default=1.0,help='Video sampling interval in seconds')
+    parser.add_argument('--interval',type=float,help='Standard screenshot/video adapter only: seconds between frames (default 1)')
+    parser.add_argument('--sample-fps',type=float,choices=[2.,3.],help='Event-driven/fast acquisition and live monitoring FPS (default 2); COMMAND inspection remains 1 FPS')
     parser.add_argument('--max-frames',type=int)
     parser.add_argument('--language',default='chi_sim+eng')
-    parser.add_argument('--ocr',choices=['auto','paddle-v6','paddle-v5','tesseract'],default='auto')
+    parser.add_argument('--ocr',choices=['auto','paddle-v6','paddle-v5','tesseract'],default=None)
     parser.add_argument('--verbose',action='store_true',help='Print full diagnostic JSON')
     parser.add_argument('--json-out',type=Path,help='Write full machine-readable JSON')
     parser.add_argument('--no-icons',action='store_true',help='Disable local visual matching')
@@ -47,16 +47,20 @@ def main() -> int:
     try:
         if args.profile in {'fast','diagnostic','event-driven'}:
             if not args.video:
-                parser.error('--profile fast/diagnostic requires --video')
+                parser.error('--profile fast/diagnostic/event-driven requires --video')
             if args.no_knowledge or args.verified_team or args.collect_team or args.images or args.image:
                 parser.error('Fast profile uses the existing evidence policy; team configuration options require standard profile')
+            if args.interval is not None or args.ocr is not None:
+                parser.error('--interval/--ocr apply only to standard; use --sample-fps for production sampling (PP-OCRv6 ONNX CPU)')
             from recognition.fast_video import analyze
             result=analyze(args.video,run_id=args.run_id,resume=args.resume,end=args.end_seconds,
                 max_frames=args.max_frames,diagnostic_menus=args.profile=='diagnostic',icons=not args.no_icons,
                 event_driven=args.profile=='event-driven',frame_cache=args.frame_cache,recognition_caches=args.recognition_cache,
-                reconstruct_from=args.reconstruct_from,identity_mode=args.identity_mode)
+                reconstruct_from=args.reconstruct_from,identity_mode=args.identity_mode,sample_fps=args.sample_fps or 2.)
             print(json.dumps(result,ensure_ascii=False,indent=2))
             return 0
+        if args.sample_fps is not None:
+            parser.error('--sample-fps requires event-driven/fast/diagnostic')
         collecting = args.collect_team or bool(args.images)
         if not (args.image or args.images or args.video or args.team_summary or args.team_corrections):
             parser.error('provide --image, --images, --video, --team-summary, or --team-corrections')
@@ -87,12 +91,12 @@ def main() -> int:
         context = RecognitionContext(resolver.knowledge if resolver else None)
         if args.verified_team:
             context.load_verified(args.verified_team,resolver.knowledge)
-        recognizer = Recognizer(create_ocr(args.ocr,args.language),knowledge=not args.no_knowledge,
+        recognizer = Recognizer(create_ocr(args.ocr or 'auto',args.language),knowledge=not args.no_knowledge,
                                 resolver=resolver,context=context,icons=not args.no_icons)
         tracker = Tracker()
         frames = ([load_image(path) for path in args.images] if args.images else
                   [load_image(args.image)] if args.image else
-                  video_frames(args.video,args.interval,args.max_frames))
+                  video_frames(args.video,args.interval if args.interval is not None else 1.,args.max_frames))
         for frame in frames:
             result = recognizer.recognize(frame)
             if team and collecting and team.ingest(result):

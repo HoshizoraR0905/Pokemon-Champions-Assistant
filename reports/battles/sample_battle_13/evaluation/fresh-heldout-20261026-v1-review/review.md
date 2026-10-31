@@ -1,0 +1,23 @@
+# sample_battle_13: first-pass human review
+
+[Original complete video](../../../../../tests/fixtures/sample_battle_13.mp4) · [Four-slot timeline and source screenshots](review.html) · [Live prediction viewer](../../event-driven/fresh-heldout-20261026-v1/review.html) · [Automatic Battle Log predictions](../fresh-heldout-20261026-v1-logs/review.html)
+
+Ground truth: **pending**. Machine log output, model confidence and state acceptance are not ground truth. Do not edit sealed predictions. Video log inspection time is not original action time. COMMAND cycles are not verified turns.
+
+1. Watch the original video with predictions hidden; record exhaustively reviewed time intervals and visible events in `ground-truth.json`. Include missing events even if no prediction exists. Assign stable truth IDs. Record channel `live_message` versus `historical_log`, visibility intervals, text, species/form, side/slot, move, user/target and HP units only where visible. Unknown stays unknown. Replay short ranges in the original player for transient states.
+2. Check active identity, HP and stages at independent decision-screen timestamps and before/after switches, fainting and Mega Evolution. Fill `checkpoints` from video; use `state-review.csv` and the timeline to compare. Do not use displayed game turn numbers or predicted boundaries as proof of turn completeness. Battle 13's shared team may be manually transcribed and verified for all three videos separately; no team configuration was fed to runtime.
+3. Compare to `predictions-review.csv` and the existing viewer. Use `correct_recognition`, `wrong_attribution`, `missing_event`, `extra_duplicate_event`, `wrong_semantics`, `wrong_state`, or `unresolved` (multiple error categories allowed). Keep unmatched predictions as extra only inside exhaustively reviewed intervals. Mark unreviewed rows blank. CSV/JSON hold field-level annotations; the existing viewer's export button supports log comparisons when log rows exist. Retain any exported notes beside this review.
+
+Match true event occurrences one-to-one by source visibility interval and chronological evidence, independently of OCR text; repeated screenshots of one occurrence are not new truth events. Do not merge recurrent uses of the same move. Live and retrospective log channels are scored separately; a log row is not a second execution. An extra repeated prediction is an FP once verified, even if its text is correct. `deferred` is a state-application outcome, not automatically an FN or FP.
+
+## Denominators after annotation
+
+- Detection precision = matched unique predictions / all event predictions in exhaustively reviewed intervals; recall = matched truth occurrences / all visible truth occurrences in those intervals. Report FP, FN and duplicate FP counts. Exclude HUD/preview/checkpoint observations from gameplay-event detection. Score detection separately from semantic correctness.
+- Strict text = exact transcription matches / matched events with verified readable text (ignore whitespace/line breaks only; retain punctuation). Report any additional normalization separately.
+- Move = correct canonical move / verified executed-move occurrences, including unresolved/missed recognitions in the denominator. Menu options do not prove execution. User/target attribution = correct attribution / matched events with independently verifiable user/target, separately. Unknown targets are excluded with an explicit excluded count.
+- Species/form and slot = correct fields / independently verified visible fields, separately. Species alone does not establish form or stable instance continuity. Separate raw HUD extraction from reconstructed active occupancy.
+- HP = exact values or current/maximum pairs / verified readable values or pairs, separately for exact HP and percentages. HP-change endpoints, instance attribution and damage cause are distinct. Do not infer opponent exact HP from percentages.
+- State = correct fields / verified checkpoint fields, separately for identity/slot, HP, stages/status/field effects and revealed moves. Also report fully correct checkpoints / reviewed checkpoints; unsupported/unknown predictions count as misses for visible verified fields.
+- Event types and switching/faint/Mega/special mechanisms = correct / verified occurrences of each type, including misses. No positive examples means unmeasured, not 100%.
+
+Keep reviewer identity, original-frame/time evidence, uncertainty and reviewed intervals. Pool numerators and denominators only across compatible definitions; never average percentages or claim an overall accuracy from this checklist.

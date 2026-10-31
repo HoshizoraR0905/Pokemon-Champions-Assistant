@@ -1,0 +1,2404 @@
+{
+  "oracle": {
+    "package": "@smogon/calc",
+    "version": "0.12.0",
+    "generation": 0,
+    "adapter": "actual raw stats; direct Champions mechanics; ability/level defaults overwritten",
+    "inspected_commit": "9c57e9b8c1d8a7403b71c10042136ea5e001593b",
+    "license": "MIT",
+    "source_sha256": "d93f27bf742c55e8feb8faca967402329eedd810bbc8681f49e111499658f3bb"
+  },
+  "cases": [
+    {
+      "id": "Healer-none-crit0",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Healer",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        112,
+        114,
+        115,
+        117,
+        118,
+        120,
+        120,
+        121,
+        123,
+        124,
+        126,
+        127,
+        129,
+        130,
+        132,
+        133
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Healer-none-crit1",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Healer",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        169,
+        171,
+        172,
+        175,
+        177,
+        178,
+        181,
+        183,
+        184,
+        187,
+        189,
+        190,
+        193,
+        195,
+        196,
+        199
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Healer-Life Orb-crit0",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Healer",
+          "item": "Life Orb",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        146,
+        148,
+        149,
+        152,
+        153,
+        156,
+        156,
+        157,
+        160,
+        161,
+        164,
+        165,
+        168,
+        169,
+        172,
+        173
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false,
+        "attackerItem": "Life Orb"
+      }
+    },
+    {
+      "id": "Healer-Life Orb-crit1",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Healer",
+          "item": "Life Orb",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        220,
+        222,
+        224,
+        227,
+        230,
+        231,
+        235,
+        238,
+        239,
+        243,
+        246,
+        247,
+        251,
+        253,
+        255,
+        259
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false,
+        "attackerItem": "Life Orb"
+      }
+    },
+    {
+      "id": "Healer-Twisted Spoon-crit0",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Healer",
+          "item": "Twisted Spoon",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        135,
+        138,
+        139,
+        141,
+        142,
+        144,
+        145,
+        147,
+        148,
+        150,
+        151,
+        153,
+        154,
+        156,
+        157,
+        160
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackerItem": "Twisted Spoon",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Healer-Twisted Spoon-crit1",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Healer",
+          "item": "Twisted Spoon",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        204,
+        205,
+        208,
+        210,
+        213,
+        216,
+        217,
+        220,
+        222,
+        225,
+        228,
+        229,
+        232,
+        234,
+        237,
+        240
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackerItem": "Twisted Spoon",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Anticipation-none-crit0",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Anticipation",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        112,
+        114,
+        115,
+        117,
+        118,
+        120,
+        120,
+        121,
+        123,
+        124,
+        126,
+        127,
+        129,
+        130,
+        132,
+        133
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Anticipation-none-crit1",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Anticipation",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        169,
+        171,
+        172,
+        175,
+        177,
+        178,
+        181,
+        183,
+        184,
+        187,
+        189,
+        190,
+        193,
+        195,
+        196,
+        199
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Anticipation-Life Orb-crit0",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Anticipation",
+          "item": "Life Orb",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        146,
+        148,
+        149,
+        152,
+        153,
+        156,
+        156,
+        157,
+        160,
+        161,
+        164,
+        165,
+        168,
+        169,
+        172,
+        173
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false,
+        "attackerItem": "Life Orb"
+      }
+    },
+    {
+      "id": "Anticipation-Life Orb-crit1",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Anticipation",
+          "item": "Life Orb",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        220,
+        222,
+        224,
+        227,
+        230,
+        231,
+        235,
+        238,
+        239,
+        243,
+        246,
+        247,
+        251,
+        253,
+        255,
+        259
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false,
+        "attackerItem": "Life Orb"
+      }
+    },
+    {
+      "id": "Anticipation-Twisted Spoon-crit0",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Anticipation",
+          "item": "Twisted Spoon",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        135,
+        138,
+        139,
+        141,
+        142,
+        144,
+        145,
+        147,
+        148,
+        150,
+        151,
+        153,
+        154,
+        156,
+        157,
+        160
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackerItem": "Twisted Spoon",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Anticipation-Twisted Spoon-crit1",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Anticipation",
+          "item": "Twisted Spoon",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        204,
+        205,
+        208,
+        210,
+        213,
+        216,
+        217,
+        220,
+        222,
+        225,
+        228,
+        229,
+        232,
+        234,
+        237,
+        240
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackerItem": "Twisted Spoon",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Magic Bounce-none-crit0",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Magic Bounce",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        112,
+        114,
+        115,
+        117,
+        118,
+        120,
+        120,
+        121,
+        123,
+        124,
+        126,
+        127,
+        129,
+        130,
+        132,
+        133
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Magic Bounce-none-crit1",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Magic Bounce",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        169,
+        171,
+        172,
+        175,
+        177,
+        178,
+        181,
+        183,
+        184,
+        187,
+        189,
+        190,
+        193,
+        195,
+        196,
+        199
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Magic Bounce-Life Orb-crit0",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Magic Bounce",
+          "item": "Life Orb",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        146,
+        148,
+        149,
+        152,
+        153,
+        156,
+        156,
+        157,
+        160,
+        161,
+        164,
+        165,
+        168,
+        169,
+        172,
+        173
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false,
+        "attackerItem": "Life Orb"
+      }
+    },
+    {
+      "id": "Magic Bounce-Life Orb-crit1",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Magic Bounce",
+          "item": "Life Orb",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        220,
+        222,
+        224,
+        227,
+        230,
+        231,
+        235,
+        238,
+        239,
+        243,
+        246,
+        247,
+        251,
+        253,
+        255,
+        259
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false,
+        "attackerItem": "Life Orb"
+      }
+    },
+    {
+      "id": "Magic Bounce-Twisted Spoon-crit0",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Magic Bounce",
+          "item": "Twisted Spoon",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        135,
+        138,
+        139,
+        141,
+        142,
+        144,
+        145,
+        147,
+        148,
+        150,
+        151,
+        153,
+        154,
+        156,
+        157,
+        160
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackerItem": "Twisted Spoon",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Magic Bounce-Twisted Spoon-crit1",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Hatterene",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Magic Bounce",
+          "item": "Twisted Spoon",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        204,
+        205,
+        208,
+        210,
+        213,
+        216,
+        217,
+        220,
+        222,
+        225,
+        228,
+        229,
+        232,
+        234,
+        237,
+        240
+      ],
+      "oracle_description": {
+        "attackerName": "Hatterene",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackerItem": "Twisted Spoon",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Dedenne-Pickup",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Dedenne",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Pickup",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ],
+      "oracle_description": {
+        "attackerName": "Dedenne",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "pokeapi:species:828-Run Away",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "pokeapi:species:828",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Run Away",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ],
+      "oracle_description": {
+        "attackerName": "Thievul",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Audino-Healer",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Audino",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Healer",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "psychic",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ],
+      "oracle_description": {
+        "attackerName": "Audino",
+        "moveName": "Psyshock",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "terrain": "Psychic",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Drought-explicit-rain",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Ninetales",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Flamethrower",
+        "field": {
+          "format": "doubles",
+          "weather": "rain",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        15,
+        15,
+        15,
+        16,
+        16,
+        16,
+        16,
+        17,
+        17,
+        17,
+        17,
+        18,
+        18,
+        18,
+        18,
+        18
+      ],
+      "oracle_description": {
+        "attackerName": "Ninetales",
+        "moveName": "Flamethrower",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 SpD",
+        "weather": "Rain",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Drought-explicit-sun",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Ninetales",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 190,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 160,
+          "maximum_hp": 160,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "pokeapi:form:10135",
+          "form": "as_named",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 99,
+            "special_attack": 100,
+            "special_defense": 151,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 184,
+          "maximum_hp": 184,
+          "ability": "Drought",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Flamethrower",
+        "field": {
+          "format": "doubles",
+          "weather": "sun",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": true,
+          "defender_grounded": false,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        48,
+        48,
+        49,
+        49,
+        50,
+        51,
+        51,
+        51,
+        52,
+        53,
+        54,
+        54,
+        54,
+        55,
+        56,
+        57
+      ],
+      "oracle_description": {
+        "attackerName": "Ninetales",
+        "moveName": "Flamethrower",
+        "defenderName": "Charizard-Mega-Y",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 SpD",
+        "weather": "Sun",
+        "isBurned": false
+      }
+    }
+  ],
+  "fixture_scope": "Synthetic mechanism vectors with supplied actual stats, not recorded battle evidence"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "drizzle-right",
+    "source": ".cache/battles/sample_battle_16/event-driven/b16-semantic-state-20261027-v1/frames/000263.png",
+    "source_sha256": "e3ddecfe312649b2c020fc61384b024561a49a62c724553a8bb0c24920d39470",
+    "timestamp": 131.005,
+    "bounds": [
+      105,
+      187,
+      1232,
+      277
+    ],
+    "frame_shape": [
+      603,
+      1311,
+      3
+    ],
+    "review": "agent original-source-pixel review; development/regression"
+  },
+  {
+    "name": "drought-left",
+    "source": ".cache/battles/sample_battle_16/event-driven/b16-semantic-state-20261027-v1/frames/000334.png",
+    "source_sha256": "ad6f451990c53fd83392f78102c046824b1994746f11f9e86c8c8bee2c77e880",
+    "timestamp": 187.015,
+    "bounds": [
+      105,
+      187,
+      1232,
+      277
+    ],
+    "frame_shape": [
+      603,
+      1311,
+      3
+    ],
+    "review": "agent original-source-pixel review; development/regression"
+  },
+  {
+    "name": "drizzle-rain-right",
+    "source": ".cache/battles/sample_battle_16/event-driven/b16-semantic-state-20261027-v1/frames/001114.png",
+    "source_sha256": "323932d82e19104242e754fdd756392480c812ae6039c6eb26d496fbdfd79193",
+    "timestamp": 668.53,
+    "bounds": [
+      105,
+      187,
+      1232,
+      277
+    ],
+    "frame_shape": [
+      603,
+      1311,
+      3
+    ],
+    "review": "agent source-pixel review; rain scene falsely classified as detail_layout"
+  }
+]

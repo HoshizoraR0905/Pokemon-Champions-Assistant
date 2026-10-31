@@ -1,0 +1,39 @@
+{
+  "id": "champions-reviewed-item-clause-v1",
+  "version": 1,
+  "game": "Pokémon Champions",
+  "scope": "Explicitly reviewed ranked/Flat Rules opponent team in Battle 12; no automatic applicability to other formats",
+  "sources": [
+    {
+      "url": "https://news.pokemon-home.com/ja/page/816.html",
+      "path": ".cache/m345a/rules/official-mc.html",
+      "sha256": "bc60bdc8fb1b7b4b8a89820a51e90281f7e59c9809cec18e38027f2f56854c0d",
+      "retrieved_on": "2026-10-23",
+      "revision_id": null,
+      "license": "Official Pokémon notice; attribution/link, local review only"
+    },
+    {
+      "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/config/formats.ts",
+      "path": ".cache/m345a/rules/ps-formats.ts",
+      "sha256": "c10c80f8e8b32b618dcf8d15572f2573593d478ee8e7c6d6cfe22ab28cd5faea",
+      "retrieved_on": "2026-10-23",
+      "revision_id": null,
+      "license": "MIT"
+    },
+    {
+      "url": "https://github.com/smogon/pokemon-showdown/blob/3a766f2cfb5e51c1e428cfe87d0dba91a8f01640/data/mods/champions/rulesets.ts",
+      "path": ".cache/m345a/rules/ps-champions-rulesets.ts",
+      "sha256": "31671152a6ff1f09d81a5306baadaa1593ef235e5c7cdcc9180c67bac8e84cd9",
+      "retrieved_on": "2026-10-23",
+      "revision_id": null,
+      "license": "MIT"
+    }
+  ],
+  "official_rule": "No two participating Pokémon may have the same held item.",
+  "exceptions": [
+    "none is absence of an item and has unlimited capacity",
+    "Showdown Champions standarddraft explicitly disables Item Clause; random doubles does not inherit Flat Rules. Do not generalize."
+  ],
+  "semantics": "All-different original identities within (battle_id, side); consumption/removal/transfer/replacement/restoration change current possession, not original assignment. Current possession alone cannot reserve original ownership.",
+  "applicability_basis": "User specifies applicable Champions team-building rules; official M-C and pinned Flat Rules corroborate clause. No assertion that historical recording date is proven M-C."
+}

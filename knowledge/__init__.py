@@ -101,3 +101,8 @@ class KnowledgeBase:
                     'regulation':self.regulation, 'legality':'unknown',
                     'reason':'community_catalog_assertion' if present else 'no_explicit_availability_evidence'}
         return self.roster.availability(canonical_id, game_version=self.game_version, regulation=self.regulation)
+
+    def resolution_effect(self, canonical_id):
+        """Source-specific Champions effect semantics; never an activation claim."""
+        from .resolution_effects import query
+        return query(self, canonical_id)

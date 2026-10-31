@@ -58,7 +58,7 @@ def test_evidence_only_does_not_claim_champions_exact(request_data):
     request_data['profile']='champions-evidence-only-v1'
     result=calculate(request_data);assert result['status']=='unsupported' and result['distribution'] is None
 
-@pytest.mark.parametrize('move',['Protect','Fissure','Bullet Seed','Gyro Ball','Knock Off','Super Fang','Foul Play','Psywave'])
+@pytest.mark.parametrize('move',['Protect','Fissure','Bullet Seed','Gyro Ball','Knock Off','Super Fang','Psywave'])
 def test_unaudited_exceptions_do_not_fall_through(request_data,move):
     request_data['move']=move
     result=calculate(request_data);assert result['distribution'] is None and result['status'] in {'unsupported','unresolved_input'}

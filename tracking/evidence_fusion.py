@@ -122,6 +122,8 @@ def hud_transition(engine, state, event, record):
         raise Contradiction('invalid_hud_timestamp')
     if state.knowledge.get('message_identity_v1'):
         from .active_continuity import current_episode
+        from .double_faint import verify
+        verify(engine,state,event,record)
         pid=state.sides[event.side].active_slots.get(a['slot'])
         if not pid or not context_supported(state,event.side,a['slot'],timestamp):
             raise Deferred('message_episode_occupancy_unresolved')
@@ -407,7 +409,7 @@ def episode_hud(state, side, slot, timestamp):
     return last
 
 
-def prepare_message(state, event):
+def prepare_message(state, event, *, records=(), confusion_bindings=None):
     """Reparse only opt-in fusion messages against this replay prefix."""
     if not event.attributes.get('fusion_context'):
         return event
@@ -453,6 +455,10 @@ def prepare_message(state, event):
                  source_region_type=event.attributes.get('source_region_type') if any(p.source_type=='video_message' for p in event.evidence) else None,
                  move_ocr_alternatives=[a for a in event.attributes.get('move_ocr_alternatives',[])
                     if a.get('source_sha256') in {oid for source in event.evidence for oid in source.observation_ids}])
+    banner=event.attributes.get('banner_side_evidence') or {}
+    if (event.event_type in {'ability_activation','item_activation'} and
+            banner.get('calibration_id')=='champions-banner-1311x603-v1' and banner.get('side') in state.sides):
+        entry.update(side_hint=banner['side'],side_hint_evidence=deepcopy(banner))
     parsed = EventParser(knowledge()).parse(entry, context, state.battle_id)
     if 'observed_trainer_display_name' in parsed.attributes.get('side_basis', []):
         parsed.attributes['trainer_side_evidence'] = deepcopy(state.sides[parsed.side].trainer)
@@ -460,6 +466,52 @@ def prepare_message(state, event):
     parsed.event_id = event.event_id; parsed.evidence = deepcopy(event.evidence)
     parsed.attributes.update({k:deepcopy(v) for k,v in event.attributes.items() if k not in {'side_basis','display_alias_evidence','move_resolution','actor_display_reference'}})
     parsed.status = event.status
+    # Pronoun-only outcomes use message sequence, or a completed observed HP
+    # resolution, never the last move or an arbitrary confused party member.
+    from .hp_causes import ADMITTED, event_time, battle_message
+    cause=parsed.attributes.get('cause') or {}
+    if parsed.attributes.get('requires_confusion_context'):
+        prior=next((r for r in reversed(records) if battle_message(r.bindings.get('resolved_event') or r.event)),None)
+        resolved=(prior.bindings.get('resolved_event') or prior.event) if prior else {}
+        pid=prior.bindings.get('actor',{}).get('pokemon_instance_id') if prior else None
+        mon=state.pokemon.get(pid);effect=mon.volatile.get('confusion') if mon else None
+        if (prior and prior.application_status in ADMITTED and resolved['event_type']=='volatile_change'
+                and resolved['attributes'].get('condition')=='confusion'
+                and resolved['attributes'].get('change')=='observe'
+                and effect and effect.active.value is True
+                and pid in state.sides[mon.side_id].active_slots.values()):
+            parsed.actor=deepcopy(mon.species.value);parsed.side=mon.side_id
+            parsed.attributes.update(actor_instance_id=pid,binding_basis='chronological_confusion_notice',
+                confusion_context_event_id=resolved['event_id'])
+            parsed.uncertainty=[u for u in parsed.uncertainty if u not in {'actor_unresolved','side_unknown'}]
+        else:
+            parsed.attributes['confusion_active_instance_ids']=[p for team in state.sides.values() for p in team.active_slots.values()]
+            proof=(confusion_bindings or {}).get(event.event_id)
+            mon=state.pokemon.get(proof['instance_id']) if proof else None
+            if mon and proof['instance_id'] in parsed.attributes['confusion_active_instance_ids']:
+                parsed.actor=deepcopy(mon.species.value);parsed.side=mon.side_id
+                parsed.attributes.update(actor_instance_id=mon.pokemon_instance_id,
+                    binding_basis='unique_observed_confusion_hp_decrease',confusion_hp_evidence=deepcopy(proof))
+                parsed.uncertainty=[u for u in parsed.uncertainty if u not in {'actor_unresolved','side_unknown'}]
+        return parsed
+    if parsed.attributes.get('requires_struggle_context') or cause.get('kind')=='move_recoil':
+        for prior in reversed(records):
+            prev=prior.bindings.get('resolved_event') or prior.event
+            if prev['event_type'] in {'switch_out','send_out','faint','volatile_change','unknown','coverage_observation'}:break
+            if prev['event_type']!='move_execution':continue
+            pid=prior.bindings.get('actor',{}).get('pokemon_instance_id');mon=state.pokemon.get(pid)
+            t=event_time(prev)
+            if (prior.application_status in ADMITTED and mon and
+                    prev.get('canonical_references',{}).get('move',{}).get('canonical_id')=='pokeapi:move:165'
+                    and t is not None and 0<timestamp-t<=10
+                    and pid in state.sides[mon.side_id].active_slots.values()
+                    and (parsed.actor is None or parsed.actor.get('species_id')==mon.species.value.get('species_id')
+                         and parsed.side in {mon.side_id,'unknown'})):
+                parsed.actor=deepcopy(mon.species.value);parsed.side=mon.side_id
+                parsed.attributes.update(actor_instance_id=pid,binding_basis='observed_struggle_recoil_notice',
+                    struggle_context_event_id=prev['event_id'],cause=dict(kind='struggle_recoil',source=deepcopy(prev['canonical_references']['move'])))
+                parsed.uncertainty=[u for u in parsed.uncertainty if u not in {'actor_unresolved','side_unknown'}]
+            break
     # New arrivals cannot bind to an already-active or inactive old alias.
     if parsed.event_type=='send_out' and state.knowledge.get('active_continuity_v1'):
         return parsed
@@ -475,7 +527,7 @@ def prepare_message(state, event):
                     and context_supported(state,parsed.side,slot,timestamp)):
                 matches.append(pid)
         if len(matches)==1:
-            role='target' if parsed.event_type=='effectiveness' else 'actor'
+            role='target' if parsed.event_type in {'effectiveness','move_miss'} else 'actor'
             parsed.attributes[role+'_instance_id']=matches[0]
             parsed.attributes['binding_basis']='explicit_episode_name_and_side'
             if role=='actor':
@@ -541,6 +593,13 @@ def move_revelation(engine, state, event, record):
         raise Deferred('move_identity_unknown')
     p.moves.executed.append(dict(event_id=event.event_id, move=deepcopy(move),
         evidence=evidence_link(event), admission='revealed_move_only', target=None))
+    from .transformation import execution
+    execution(state,p,event,record)
+    from .unnerve import refresh
+    refresh(state,event)
     record.bindings['admissibility'] = dict(actor=True, move=True, target=False, effects=False,
                                            reason='target_and_effects_not_established')
+    if record.bindings.get('transformation',{}).get('status')=='snapshot_created':
+        record.bindings['admissibility'].update(target=True,effects='transform_snapshot_only',
+            reason='explicit_observed_transform_target')
     record.bindings['resolved_event'] = event.to_dict()

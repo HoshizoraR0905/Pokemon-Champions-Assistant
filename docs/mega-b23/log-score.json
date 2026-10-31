@@ -1,0 +1,3059 @@
+{
+  "reference_sha256": "0e678c7125fae12a1af606d382c26b06d6e5a96fddcb252d46f28a92afe3d05b",
+  "frozen_inputs": {
+    ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/replay.json": "ce4079a01223b02219d45e3741f00875479efff81c9f1092ca02cf029dd80785",
+    ".cache/battles/sample_battle_23/fresh-benchmark/mega-b23-20261030-v1/hp-resolutions.json": "be3a1ef8ed3f36bcc7d8fdd0c97eccad3c4d56f12253ad2025305efec06c6926"
+  },
+  "method": "Reviewed chronological one-to-one accepted message records; not complete semantic/state accuracy.",
+  "limitations": [
+    "Partial visible log only; Codex visual reference without human review.",
+    "No original game-turn boundaries verified; reference timestamps are inspection times.",
+    "Two reviewed live/log wording differences retained, including Y→丫 OCR error.",
+    "Raichu exact Mega form unresolved; stone notices lack canonical item structure.",
+    "Accepted move-revelation/observation receipts do not establish applied effects.",
+    "No precision, complete six-stat runtime, stage-state or whole-match accuracy measured."
+  ],
+  "summary": {
+    "semantic_records": {
+      "matched": 65,
+      "total": 69
+    },
+    "move_execution": {
+      "matched": 21,
+      "total": 21
+    },
+    "matched_receipts": 69,
+    "per_turn": {
+      "1": {
+        "matched": 10,
+        "total": 10
+      },
+      "2": {
+        "matched": 12,
+        "total": 12
+      },
+      "3": {
+        "matched": 8,
+        "total": 9
+      },
+      "4": {
+        "matched": 12,
+        "total": 13
+      },
+      "5": {
+        "matched": 14,
+        "total": 16
+      },
+      "6": {
+        "matched": 9,
+        "total": 9
+      }
+    },
+    "hp_total": 15,
+    "hp": {
+      "raw_ordered_endpoints": 15,
+      "exact_projection": 15,
+      "complete_endpoints": 12,
+      "program_supported": 12
+    }
+  },
+  "semantic_rows": [
+    {
+      "reference_id": "b23-log-001",
+      "turn": 1,
+      "text": "AjayVGC派出了烈咬陆鲨和炽焰咆哮虎！",
+      "type": "send_out",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 11,
+          "event_id": "event:f2664c420e56e7a4ce18cde9",
+          "type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "text": "AjayVGC派出了烈咬陆鲨\n和炽焰咆哮虎！",
+          "time": 117.52,
+          "status": "applied_candidate",
+          "reason": null
+        },
+        {
+          "index": 12,
+          "event_id": "event:5e43c275a44865dac5a7fa0c",
+          "type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "text": "AjayVGC派出了烈咬陆鲨\n和炽焰咆哮虎！",
+          "time": 117.52,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-002",
+      "turn": 1,
+      "text": "上吧！烈咬陆鲨！长毛巨魔！",
+      "type": "send_out",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 14,
+          "event_id": "event:71214ece101db24fcf7b061e",
+          "type": "send_out",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "text": "上吧！烈咬陆鲨！\n长毛巨魔！",
+          "time": 121.02,
+          "status": "applied_candidate",
+          "reason": null
+        },
+        {
+          "index": 15,
+          "event_id": "event:a76c403b34132438ad472351",
+          "type": "send_out",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "text": "上吧！烈咬陆鲨！\n长毛巨魔！",
+          "time": 121.02,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-003",
+      "turn": 1,
+      "text": "炽焰咆哮虎的威吓",
+      "type": "ability_activation",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 18,
+          "event_id": "event:b48ce2aeaa963e584c0fad7e",
+          "type": "ability_activation",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:22",
+              "kind": "ability",
+              "name": "威吓",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e"
+          },
+          "text": "炽焰咆哮虎的威吓",
+          "time": 124.52166666666666,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-004",
+      "turn": 1,
+      "text": "烈咬陆鲨和长毛巨魔的攻击降低了！",
+      "type": "stat_change",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 19,
+          "event_id": "event:0a270101a7e308d430bde234",
+          "type": "stat_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "attack"
+            ],
+            "direction": "down",
+            "stages": null,
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨和长毛巨魔的\n攻击降低了！",
+          "time": 125.02166666666666,
+          "status": "applied_candidate",
+          "reason": null
+        },
+        {
+          "index": 20,
+          "event_id": "event:5501c57bc6d3b3da41ffc23e",
+          "type": "stat_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "attack"
+            ],
+            "direction": "down",
+            "stages": null,
+            "actor_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+          },
+          "text": "烈咬陆鲨和长毛巨魔的\n攻击降低了！",
+          "time": 125.02166666666666,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-005",
+      "turn": 1,
+      "text": "烈咬陆鲨使出了守住！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 255,
+          "event_id": "event:9dd66604119b44014d26bcf1",
+          "type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:182",
+              "kind": "move",
+              "name": "守住",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨使出了\n守住！",
+          "time": 169.02833333333334,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-006",
+      "turn": 1,
+      "text": "烈咬陆鲨摆出了防守的架势！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 256,
+          "event_id": "event:38835eee1d76cd8322219f5c",
+          "type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protection_established",
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨\n摆出了防守的架势！",
+          "time": 172.52833333333334,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-007",
+      "turn": 1,
+      "text": "对手的炽焰咆哮虎使出了击掌奇袭！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 257,
+          "event_id": "event:22c1e4b051a4f82f6a5524cb",
+          "type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:252",
+              "kind": "move",
+              "name": "击掌奇袭",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e"
+          },
+          "text": "对手的炽焰咆哮虎使出了\n击掌奇袭！",
+          "time": 174.53,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-009",
+      "turn": 1,
+      "text": "对手的烈咬陆鲨使出了龙之波动！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 261,
+          "event_id": "event:2ba5b5f6eca69d0a311145d6",
+          "type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:406",
+              "kind": "move",
+              "name": "龙之波动",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:cefb39a0bd9401c7"
+          },
+          "text": "对手的烈咬陆鲨使出了\n龙之波动！",
+          "time": 178.03,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-010",
+      "turn": 1,
+      "text": "烈咬陆鲨在攻击中守护住了自己！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 262,
+          "event_id": "event:7ac3301ccdd291e6dc11645f",
+          "type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protected_from_attack",
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨\n在攻击中守护住了自己！",
+          "time": 181.03,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-011",
+      "turn": 1,
+      "text": "长毛巨魔畏缩了，无法使出招式！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 263,
+          "event_id": "event:d36267884b82a347b3526555",
+          "type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "flinch_prevented_action",
+            "actor_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+          },
+          "text": "长毛巨魔\n畏缩了，无法使出招式！",
+          "time": 182.53,
+          "status": "recorded_observation",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-012",
+      "turn": 2,
+      "text": "烈咬陆鲨的烈咬陆鲨进化石Z和Hoshi的全一环起了反应！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 442,
+          "event_id": "event:7e8f707087a3e602d1f44d04",
+          "type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "mega_stone_reaction_notice",
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨的烈咬陆鲨进化石Z和\nHoshi的全一环起了反应!",
+          "time": 221.00333333333333,
+          "status": "recorded_observation",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-013",
+      "turn": 2,
+      "text": "烈咬陆鲨超级进化成了超级烈咬陆鲨！",
+      "type": "transformation",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 443,
+          "event_id": "event:8233eb837e851e6eeff036e0",
+          "type": "transformation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "mechanic": "mega_evolution",
+            "identity": {
+              "canonical_id": "pokeapi:form:10534",
+              "kind": "species",
+              "name": "超级烈咬陆鲨Ｚ",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+              "species_id": 445,
+              "pokemon_id": 10309,
+              "form_id": null,
+              "canonical_identity": "pokeapi:pokemon:10309",
+              "identity_status": "resolved_variant"
+            },
+            "form_unresolved": false,
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨超级进化成了\n超级烈咬陆鲨！",
+          "time": 230.505,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-014",
+      "turn": 2,
+      "text": "长毛巨魔使出了光墙！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 444,
+          "event_id": "event:9e944796473db85498a9970c",
+          "type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:113",
+              "kind": "move",
+              "name": "光墙",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+          },
+          "text": "长毛巨魔使出了\n光墙!",
+          "time": 232.505,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-015",
+      "turn": 2,
+      "text": "光墙使我方的特殊抗性提高了！",
+      "type": "side_condition_change",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 445,
+          "event_id": "event:0801e2a483fadddf87136f70",
+          "type": "side_condition_change",
+          "side": "self",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "change": "observe",
+            "condition": "light_screen"
+          },
+          "text": "光墙使我方的\n特殊抗性提高了！",
+          "time": 236.50666666666666,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-016",
+      "turn": 2,
+      "text": "烈咬陆鲨使出了龙之波动！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 446,
+          "event_id": "event:ab63879c8a0786c41e5ef31b",
+          "type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:406",
+              "kind": "move",
+              "name": "龙之波动",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨使出了\n龙之波动！",
+          "time": 239.00666666666666,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-018",
+      "turn": 2,
+      "text": "对对手的烈咬陆鲨效果绝佳！",
+      "type": "effectiveness",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 453,
+          "event_id": "event:148674fb1474d7fa4e7f1b34",
+          "type": "effectiveness",
+          "side": "opponent",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "super_effective"
+          },
+          "text": "对对手的烈咬陆鲨\n效果绝佳！",
+          "time": 244.00833333333333,
+          "status": "recorded_observation",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-019",
+      "turn": 2,
+      "text": "对手的烈咬陆鲨倒下了！",
+      "type": "faint",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 458,
+          "event_id": "event:d960ba27896f8ac87a641557",
+          "type": "faint",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:cefb39a0bd9401c7"
+          },
+          "text": "对手的烈咬陆鲨倒下了！",
+          "time": 246.00833333333333,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-020",
+      "turn": 2,
+      "text": "对手的炽焰咆哮虎使出了闪焰冲锋！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 459,
+          "event_id": "event:67b00b7f768441876d74e81f",
+          "type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:394",
+              "kind": "move",
+              "name": "闪焰冲锋",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e"
+          },
+          "text": "对手的炽焰咆哮虎使出了\n闪焰冲锋！",
+          "time": 250.00833333333333,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-021",
+      "turn": 2,
+      "text": "长毛巨魔被灼伤了！",
+      "type": "status_change",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 469,
+          "event_id": "event:373f62f3239add81ee8f4a65",
+          "type": "status_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "change": "apply",
+            "actor_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+          },
+          "text": "长毛巨魔\n被灼伤了！",
+          "time": 257.01,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-022",
+      "turn": 2,
+      "text": "对手的炽焰咆哮虎受到了反作用力造成的伤害！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 473,
+          "event_id": "event:df1b81be0f9cc13c941444aa",
+          "type": "hp_change",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "direction": "down",
+            "actor_instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e"
+          },
+          "text": "对手的炽焰咆哮虎\n受到了反作用力造成的伤害！",
+          "time": 259.51,
+          "status": "recorded_observation",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-024",
+      "turn": 2,
+      "text": "长毛巨魔受到了灼伤的伤害！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 477,
+          "event_id": "event:9c03d766c56080a5024f8072",
+          "type": "hp_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "direction": "down",
+            "actor_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+          },
+          "text": "长毛巨魔\n受到了灼伤的伤害！",
+          "time": 261.51,
+          "status": "recorded_observation",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-026",
+      "turn": 2,
+      "text": "AjayVGC派出了雷丘！",
+      "type": "send_out",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 481,
+          "event_id": "event:bb1c6a3eb85061bc06de6e1e",
+          "type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "text": "AjayVGC\n派出了雷丘！",
+          "time": 267.51166666666666,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-027",
+      "turn": 3,
+      "text": "对手的雷丘的雷丘进化石Y和AjayVGC的全一环起了反应！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": true,
+      "receipts": [
+        {
+          "index": 576,
+          "event_id": "event:e9712c6d9c5b2aa7752aff0a",
+          "type": "move_effect",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "mega_stone_reaction_notice",
+            "actor_instance_id": "sample_battle_23:opponent:encounter:a3dcf1795f735076"
+          },
+          "text": "对手的雷丘的雷丘进化石丫和\nAjayVGC的全一环起了反应！",
+          "time": 286.515,
+          "status": "recorded_observation",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-028",
+      "turn": 3,
+      "text": "对手的雷丘超级进化成了超级雷丘！",
+      "type": "transformation",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 577,
+          "event_id": "event:42101b2b9b0031b3e2b70732",
+          "type": "transformation",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "mechanic": "mega_evolution",
+            "identity": null,
+            "form_unresolved": true,
+            "actor_instance_id": "sample_battle_23:opponent:encounter:a3dcf1795f735076"
+          },
+          "text": "对手的雷丘超级进化成了\n超级雷丘！",
+          "time": 295.01666666666665,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-029",
+      "turn": 3,
+      "text": "对手的雷丘使出了击掌奇袭！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 578,
+          "event_id": "event:974703ab451060344d906156",
+          "type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:252",
+              "kind": "move",
+              "name": "击掌奇袭",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:a3dcf1795f735076"
+          },
+          "text": "对手的雷丘使出了\n击掌奇袭！",
+          "time": 297.01666666666665,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-031",
+      "turn": 3,
+      "text": "长毛巨魔使出了反射壁！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 583,
+          "event_id": "event:52a2862ee88ff990076c3e44",
+          "type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:115",
+              "kind": "move",
+              "name": "反射壁",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+          },
+          "text": "长毛巨魔使出了\n反射壁！",
+          "time": 301.01666666666665,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-032",
+      "turn": 3,
+      "text": "反射壁使我方的物理抗性提高了！",
+      "type": "side_condition_change",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 584,
+          "event_id": "event:c7bc3f67f4d5a3ad3b22d94a",
+          "type": "side_condition_change",
+          "side": "self",
+          "actor": null,
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "change": "observe",
+            "condition": "reflect"
+          },
+          "text": "反射壁使我方的\n物理抗性提高了！",
+          "time": 305.0183333333333,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-033",
+      "turn": 3,
+      "text": "烈咬陆鲨畏缩了，无法使出招式！",
+      "type": "move_effect",
+      "matched": false,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 585,
+          "event_id": "event:6252b4fa227246fd96ed5f36",
+          "type": "move_effect",
+          "side": "unknown",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "flinch_prevented_action"
+          },
+          "text": "烈咬陆鲨\n畏缩了，无法使出招式！",
+          "time": 307.0183333333333,
+          "status": "deferred",
+          "reason": "unresolved_candidate_fields"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-034",
+      "turn": 3,
+      "text": "对手的炽焰咆哮虎使出了闪焰冲锋！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 586,
+          "event_id": "event:db59f962a8accf2c0e2e8dae",
+          "type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:394",
+              "kind": "move",
+              "name": "闪焰冲锋",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e"
+          },
+          "text": "对手的炽焰咆哮虎使出了\n闪焰冲锋！",
+          "time": 309.0183333333333,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-036",
+      "turn": 3,
+      "text": "对手的炽焰咆哮虎受到了反作用力造成的伤害！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 594,
+          "event_id": "event:d44e28c4e5fcdb67090b514c",
+          "type": "hp_change",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "direction": "down",
+            "actor_instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e"
+          },
+          "text": "对手的炽焰咆哮虎\n受到了反作用力造成的伤害！",
+          "time": 314.52,
+          "status": "recorded_observation",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-038",
+      "turn": 3,
+      "text": "长毛巨魔受到了灼伤的伤害！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 601,
+          "event_id": "event:157ca86386454394e416e211",
+          "type": "hp_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "direction": "down",
+            "actor_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+          },
+          "text": "长毛巨魔\n受到了灼伤的伤害！",
+          "time": 317.02,
+          "status": "recorded_observation",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-040",
+      "turn": 4,
+      "text": "对手的雷丘使出了守住！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 694,
+          "event_id": "event:097fa7bfb754dde1ad7dc34c",
+          "type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:182",
+              "kind": "move",
+              "name": "守住",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:a3dcf1795f735076"
+          },
+          "text": "对手的雷丘使出了\n守住!",
+          "time": 334.0233333333333,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-041",
+      "turn": 4,
+      "text": "对手的雷丘摆出了防守的架势！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 695,
+          "event_id": "event:e08e0056e60f431e7aaa03d8",
+          "type": "move_effect",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protection_established",
+            "actor_instance_id": "sample_battle_23:opponent:encounter:a3dcf1795f735076"
+          },
+          "text": "对手的雷丘\n摆出了防守的架势！",
+          "time": 337.5233333333333,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-042",
+      "turn": 4,
+      "text": "长毛巨魔使出了抛下狠话！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 696,
+          "event_id": "event:7a1591c5078f650758b4f09e",
+          "type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:575",
+              "kind": "move",
+              "name": "抛下狠话",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+          },
+          "text": "长毛巨魔使出了\n抛下狠话！",
+          "time": 339.5233333333333,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-043",
+      "turn": 4,
+      "text": "对对手的炽焰咆哮虎，好像没有效果……",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": true,
+      "receipts": [
+        {
+          "index": 697,
+          "event_id": "event:bde35fe027c8f22ed8c53c05",
+          "type": "effectiveness",
+          "side": "opponent",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "immune"
+          },
+          "text": "对于对手的炽焰咆哮虎，\n好像没有效果......",
+          "time": 341.525,
+          "status": "recorded_observation",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-044",
+      "turn": 4,
+      "text": "烈咬陆鲨使出了大地之力！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 698,
+          "event_id": "event:46a8197eef52fe7eb42365f9",
+          "type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:414",
+              "kind": "move",
+              "name": "大地之力",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨使出了\n大地之力！",
+          "time": 343.025,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-045",
+      "turn": 4,
+      "text": "对手的雷丘在攻击中守护住了自己！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 699,
+          "event_id": "event:9cb8bc50241b7267dcd3da6c",
+          "type": "move_effect",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protected_from_attack",
+            "actor_instance_id": "sample_battle_23:opponent:encounter:a3dcf1795f735076"
+          },
+          "text": "对手的雷丘\n在攻击中守护住了自己！",
+          "time": 345.525,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-046",
+      "turn": 4,
+      "text": "对手的炽焰咆哮虎使出了抛下狠话！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 700,
+          "event_id": "event:fc0fa1e41a796537a6e63b42",
+          "type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:575",
+              "kind": "move",
+              "name": "抛下狠话",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e"
+          },
+          "text": "对手的炽焰咆哮虎使出了\n抛下狠话！",
+          "time": 347.525,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-047",
+      "turn": 4,
+      "text": "烈咬陆鲨的攻击、特攻降低了！",
+      "type": "stat_change",
+      "matched": false,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 701,
+          "event_id": "event:8569eebb474b26a113d9a7d8",
+          "type": "stat_change",
+          "side": "unknown",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "special_attack",
+              "attack"
+            ],
+            "direction": "down",
+            "stages": null
+          },
+          "text": "烈咬陆鲨的\n攻击、特攻降低了！",
+          "time": 351.025,
+          "status": "deferred",
+          "reason": "unresolved_candidate_fields"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-048",
+      "turn": 4,
+      "text": "对手的炽焰咆哮虎要回到AjayVGC的身边了！",
+      "type": "switch_out",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 702,
+          "event_id": "event:29319d7db071153f517efecc",
+          "type": "switch_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e"
+          },
+          "text": "对手的炽焰咆哮虎\n要回到AjayVGC的身边了！",
+          "time": 353.02666666666664,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-049",
+      "turn": 4,
+      "text": "AjayVGC派出了火神蛾！",
+      "type": "send_out",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 704,
+          "event_id": "event:86cd922e3779d95bcad64fe1",
+          "type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:637",
+            "kind": "species",
+            "name": "火神蛾",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 637,
+            "pokemon_id": 637,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:637",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "text": "AjayVGC\n派出了火神蛾！",
+          "time": 360.01,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-050",
+      "turn": 4,
+      "text": "长毛巨魔受到了灼伤的伤害！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 707,
+          "event_id": "event:e604969ee8cde67a652672b1",
+          "type": "hp_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "direction": "down",
+            "actor_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+          },
+          "text": "长毛巨魔\n受到了灼伤的伤害！",
+          "time": 365.0283333333333,
+          "status": "recorded_observation",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-052",
+      "turn": 4,
+      "text": "长毛巨魔倒下了！",
+      "type": "faint",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 711,
+          "event_id": "event:efc75b353b07fc32b76c84f0",
+          "type": "faint",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+          },
+          "text": "长毛巨魔倒下了！",
+          "time": 367.0283333333333,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-053",
+      "turn": 4,
+      "text": "上吧！铝钢桥龙！",
+      "type": "send_out",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 746,
+          "event_id": "event:836499c2240c0b6ab7f647f8",
+          "type": "send_out",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "text": "上吧！铝钢桥龙！",
+          "time": 385.5316666666667,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-054",
+      "turn": 5,
+      "text": "对手的火神蛾使出了愤怒粉！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 923,
+          "event_id": "event:0fce1b0a5216da88883cbb48",
+          "type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:637",
+            "kind": "species",
+            "name": "火神蛾",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 637,
+            "pokemon_id": 637,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:637",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:476",
+              "kind": "move",
+              "name": "愤怒粉",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:03b937d84d9ebe52"
+          },
+          "text": "对手的火神蛾使出了\n愤怒粉！",
+          "time": 415.50333333333333,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-055",
+      "turn": 5,
+      "text": "对手的火神蛾变得万众瞩目了！",
+      "type": "move_effect",
+      "matched": false,
+      "text_difference": false,
+      "receipts": []
+    },
+    {
+      "reference_id": "b23-log-056",
+      "turn": 5,
+      "text": "烈咬陆鲨使出了力量宝石！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 924,
+          "event_id": "event:c784b5a0c641ddab7859c13d",
+          "type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:408",
+              "kind": "move",
+              "name": "力量宝石",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨使出了\n力量宝石！",
+          "time": 422.02166666666665,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-058",
+      "turn": 5,
+      "text": "对对手的火神蛾效果无比绝佳！",
+      "type": "effectiveness",
+      "matched": false,
+      "text_difference": false,
+      "receipts": []
+    },
+    {
+      "reference_id": "b23-log-059",
+      "turn": 5,
+      "text": "对手的雷丘使出了真气弹！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 935,
+          "event_id": "event:1e5365fdf00e186c2cc7a2d7",
+          "type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:411",
+              "kind": "move",
+              "name": "真气弹",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:a3dcf1795f735076"
+          },
+          "text": "对手的雷丘使出了\n真气弹!",
+          "time": 429.005,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-061",
+      "turn": 5,
+      "text": "对铝钢桥龙效果绝佳！",
+      "type": "effectiveness",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 941,
+          "event_id": "event:a68121c1802d3cc8d479db3f",
+          "type": "effectiveness",
+          "side": "self",
+          "actor": null,
+          "target": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "canonical_references": {},
+          "fields": {
+            "effect": "super_effective"
+          },
+          "text": "对铝钢桥龙\n效果绝佳！",
+          "time": 434.50666666666666,
+          "status": "recorded_observation",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-062",
+      "turn": 5,
+      "text": "铝钢桥龙的特防降低了！",
+      "type": "stat_change",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 945,
+          "event_id": "event:2a1b03b83992b38678be1fb5",
+          "type": "stat_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "special_defense"
+            ],
+            "direction": "down",
+            "stages": null,
+            "actor_instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3"
+          },
+          "text": "铝钢桥龙的\n特防降低了！",
+          "time": 436.00666666666666,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-063",
+      "turn": 5,
+      "text": "铝钢桥龙的持久力",
+      "type": "ability_activation",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 950,
+          "event_id": "event:fea4f4143f8029929fbea122",
+          "type": "ability_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:192",
+              "kind": "ability",
+              "name": "持久力",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3"
+          },
+          "text": "铝钢桥龙的持久力",
+          "time": 438.00666666666666,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-064",
+      "turn": 5,
+      "text": "铝钢桥龙的防御提高了！",
+      "type": "stat_change",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 952,
+          "event_id": "event:8800bcafcdad5d77cc39ae03",
+          "type": "stat_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "defense"
+            ],
+            "direction": "up",
+            "stages": null,
+            "actor_instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3"
+          },
+          "text": "铝钢桥龙的\n防御提高了！",
+          "time": 438.50666666666666,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-065",
+      "turn": 5,
+      "text": "铝钢桥龙使出了大声咆哮！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 957,
+          "event_id": "event:28d06d42f5639a2e8f3dd35e",
+          "type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:555",
+              "kind": "move",
+              "name": "大声咆哮",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3"
+          },
+          "text": "铝钢桥龙使出了\n大声咆哮！",
+          "time": 441.5083333333333,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-068",
+      "turn": 5,
+      "text": "对手的雷丘的特攻降低了！",
+      "type": "stat_change",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 970,
+          "event_id": "event:8a23d6bd9c1b3ac6050a66a1",
+          "type": "stat_change",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "special_attack"
+            ],
+            "direction": "down",
+            "stages": null,
+            "actor_instance_id": "sample_battle_23:opponent:encounter:a3dcf1795f735076"
+          },
+          "text": "对手的雷丘的\n特攻降低了！",
+          "time": 445.5083333333333,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-069",
+      "turn": 5,
+      "text": "对手的火神蛾倒下了！",
+      "type": "faint",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 979,
+          "event_id": "event:3055e7c38338dc7a61488992",
+          "type": "faint",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:637",
+            "kind": "species",
+            "name": "火神蛾",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 637,
+            "pokemon_id": 637,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:637",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:03b937d84d9ebe52"
+          },
+          "text": "对手的火神蛾倒下了！",
+          "time": 447.5083333333333,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-070",
+      "turn": 5,
+      "text": "铝钢桥龙的吃剩的东西",
+      "type": "item_activation",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 981,
+          "event_id": "event:284f2fc6c10b950afc51f9d2",
+          "type": "item_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "item": {
+              "canonical_id": "pokeapi:item:211",
+              "kind": "item",
+              "name": "吃剩的东西",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3"
+          },
+          "text": "铝钢桥龙的吃剩的东西",
+          "time": 451.01,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-072",
+      "turn": 5,
+      "text": "AjayVGC派出了炽焰咆哮虎！",
+      "type": "send_out",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 986,
+          "event_id": "event:020d9a596658d7516538afea",
+          "type": "send_out",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {},
+          "text": "AjayVGC\n派出了炽焰咆哮虎！",
+          "time": 459.01,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-073",
+      "turn": 5,
+      "text": "炽焰咆哮虎的威吓",
+      "type": "ability_activation",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 987,
+          "event_id": "event:50beb866f98f09287e12d96a",
+          "type": "ability_activation",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "ability": {
+              "canonical_id": "pokeapi:ability:22",
+              "kind": "ability",
+              "name": "威吓",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:fc33d523176fa46c"
+          },
+          "text": "炽焰咆哮虎的威吓",
+          "time": 462.51166666666666,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-074",
+      "turn": 5,
+      "text": "烈咬陆鲨和铝钢桥龙的攻击降低了！",
+      "type": "stat_change",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 988,
+          "event_id": "event:2579bc60773a98f2a4e8998a",
+          "type": "stat_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "attack"
+            ],
+            "direction": "down",
+            "stages": null,
+            "actor_instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3"
+          },
+          "text": "烈咬陆鲨和铝钢桥龙的\n攻击降低了！",
+          "time": 462.51166666666666,
+          "status": "applied_candidate",
+          "reason": null
+        },
+        {
+          "index": 989,
+          "event_id": "event:313c6fd92bb972ef00b12e3d",
+          "type": "stat_change",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "stats": [
+              "attack"
+            ],
+            "direction": "down",
+            "stages": null,
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨和铝钢桥龙的\n攻击降低了！",
+          "time": 462.51166666666666,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-075",
+      "turn": 6,
+      "text": "烈咬陆鲨使出了守住！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 1254,
+          "event_id": "event:7babbdeaa390602fbbe7b422",
+          "type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:182",
+              "kind": "move",
+              "name": "守住",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨使出了\n守住！",
+          "time": 504.0183333333333,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-076",
+      "turn": 6,
+      "text": "烈咬陆鲨摆出了防守的架势！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 1255,
+          "event_id": "event:31341ec2057b02a8ec6321ee",
+          "type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:445",
+            "kind": "species",
+            "name": "烈咬陆鲨",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 445,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protection_established",
+            "actor_instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698"
+          },
+          "text": "烈咬陆鲨\n摆出了防守的架势！",
+          "time": 507.00166666666667,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-077",
+      "turn": 6,
+      "text": "铝钢桥龙使出了守住！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 1256,
+          "event_id": "event:8b2e3cfe05506efa1c0bc11d",
+          "type": "move_execution",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:182",
+              "kind": "move",
+              "name": "守住",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3"
+          },
+          "text": "铝钢桥龙使出了\n守住！",
+          "time": 509.0183333333333,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-078",
+      "turn": 6,
+      "text": "铝钢桥龙摆出了防守的架势！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 1257,
+          "event_id": "event:50028e1931abe68171c45c48",
+          "type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protection_established",
+            "actor_instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3"
+          },
+          "text": "铝钢桥龙\n摆出了防守的架势！",
+          "time": 512.02,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-079",
+      "turn": 6,
+      "text": "对手的炽焰咆哮虎使出了击掌奇袭！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 1258,
+          "event_id": "event:2d8baaad2873616eb5ea007d",
+          "type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:727",
+            "kind": "species",
+            "name": "炽焰咆哮虎",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 727,
+            "pokemon_id": 727,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:727",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:252",
+              "kind": "move",
+              "name": "击掌奇袭",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:fc33d523176fa46c"
+          },
+          "text": "对手的炽焰咆哮虎使出了\n击掌奇袭！",
+          "time": 514.02,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-080",
+      "turn": 6,
+      "text": "铝钢桥龙在攻击中守护住了自己！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 1259,
+          "event_id": "event:74987604b24c583c3c39413c",
+          "type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protected_from_attack",
+            "actor_instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3"
+          },
+          "text": "铝钢桥龙\n在攻击中守护住了自己！",
+          "time": 516.52,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-081",
+      "turn": 6,
+      "text": "对手的雷丘使出了真气弹！",
+      "type": "move_execution",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 1260,
+          "event_id": "event:50753d3adc6ff34870e915b2",
+          "type": "move_execution",
+          "side": "opponent",
+          "actor": {
+            "canonical_id": "pokeapi:species:26",
+            "kind": "species",
+            "name": "雷丘",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 26,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "target": null,
+          "canonical_references": {
+            "move": {
+              "canonical_id": "pokeapi:move:411",
+              "kind": "move",
+              "name": "真气弹",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:opponent:encounter:a3dcf1795f735076"
+          },
+          "text": "对手的雷丘使出了\n真气弹！",
+          "time": 518.02,
+          "status": "applied_partial",
+          "reason": "move_revelation_only"
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-082",
+      "turn": 6,
+      "text": "铝钢桥龙在攻击中守护住了自己！",
+      "type": "move_effect",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 1261,
+          "event_id": "event:c1fcbff1dff0b205eb77c7c2",
+          "type": "move_effect",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {},
+          "fields": {
+            "effect": "protected_from_attack",
+            "actor_instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3"
+          },
+          "text": "铝钢桥龙\n在攻击中守护住了自己！",
+          "time": 520.5216666666666,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "reference_id": "b23-log-083",
+      "turn": 6,
+      "text": "铝钢桥龙的吃剩的东西",
+      "type": "item_activation",
+      "matched": true,
+      "text_difference": false,
+      "receipts": [
+        {
+          "index": 1262,
+          "event_id": "event:1ef43ea7328d9256f42bc3a3",
+          "type": "item_activation",
+          "side": "self",
+          "actor": {
+            "canonical_id": "pokeapi:species:1018",
+            "kind": "species",
+            "name": "铝钢桥龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 1018,
+            "pokemon_id": 1018,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:1018",
+            "identity_status": "resolved_unique"
+          },
+          "target": null,
+          "canonical_references": {
+            "item": {
+              "canonical_id": "pokeapi:item:211",
+              "kind": "item",
+              "name": "吃剩的东西",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            }
+          },
+          "fields": {
+            "actor_instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3"
+          },
+          "text": "铝钢桥龙的吃剩的东西",
+          "time": 522.5216666666666,
+          "status": "applied_candidate",
+          "reason": null
+        }
+      ]
+    }
+  ],
+  "hp_rows": [
+    {
+      "reference_id": "b23-log-008",
+      "turn": 1,
+      "text": "长毛巨魔 HP 201 → 181",
+      "episode_index": 0,
+      "episode_id": "event:22c1e4b051a4f82f6a5524cb:hp:sample_battle_23:self:encounter:83d24e88c9557402",
+      "instance_id": "sample_battle_23:self:encounter:83d24e88c9557402",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:1df9e6ca93f86135a01e4327",
+        "event:711f94fe279e41cf5598e5cc"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    },
+    {
+      "reference_id": "b23-log-017",
+      "turn": 2,
+      "text": "烈咬陆鲨 HP 100% → 0%",
+      "episode_index": 1,
+      "episode_id": "event:ab63879c8a0786c41e5ef31b:hp:sample_battle_23:opponent:encounter:cefb39a0bd9401c7",
+      "instance_id": "sample_battle_23:opponent:encounter:cefb39a0bd9401c7",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:4417f63ffdca811cb449af45",
+        "event:f87306a2222375c96c48800e"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    },
+    {
+      "reference_id": "b23-log-023",
+      "turn": 2,
+      "text": "炽焰咆哮虎 HP 100% → 86%",
+      "episode_index": 4,
+      "episode_id": "event:df1b81be0f9cc13c941444aa:hp:sample_battle_23:opponent:encounter:c11de1e8665ea33e",
+      "instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:a1f5c323472df7fe9713e0ff",
+        "event:26db6dd6d62a192989464e63"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    },
+    {
+      "reference_id": "b23-log-025",
+      "turn": 2,
+      "text": "长毛巨魔 HP 97 → 85",
+      "episode_index": 5,
+      "episode_id": "event:9c03d766c56080a5024f8072:hp:sample_battle_23:self:encounter:83d24e88c9557402",
+      "instance_id": "sample_battle_23:self:encounter:83d24e88c9557402",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:d382501c7c0689b5e225b78e",
+        "event:8e3ba8cbe2f9e1b18661b316"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": false,
+      "program_supported": false
+    },
+    {
+      "reference_id": "b23-log-030",
+      "turn": 3,
+      "text": "烈咬陆鲨 HP 184 → 168",
+      "episode_index": 6,
+      "episode_id": "event:974703ab451060344d906156:hp:sample_battle_23:self:encounter:c74c7ba8da0df698",
+      "instance_id": "sample_battle_23:self:encounter:c74c7ba8da0df698",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:8b4c7e7c4acb45d33f0b52c9",
+        "event:1ef0a8e716e913bf053da570"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    },
+    {
+      "reference_id": "b23-log-035",
+      "turn": 3,
+      "text": "长毛巨魔 HP 85 → 23",
+      "episode_index": 7,
+      "episode_id": "event:db59f962a8accf2c0e2e8dae:hp:sample_battle_23:self:encounter:83d24e88c9557402",
+      "instance_id": "sample_battle_23:self:encounter:83d24e88c9557402",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:c2748db4a95fc22a41890077",
+        "event:32e82678c2e4b731ca1dc1d2"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    },
+    {
+      "reference_id": "b23-log-037",
+      "turn": 3,
+      "text": "炽焰咆哮虎 HP 86% → 76%",
+      "episode_index": 9,
+      "episode_id": "event:d44e28c4e5fcdb67090b514c:hp:sample_battle_23:opponent:encounter:c11de1e8665ea33e",
+      "instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:ed84c8072243ded06f8181be",
+        "event:e2e74531eafa5d78523a29c1"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    },
+    {
+      "reference_id": "b23-log-039",
+      "turn": 3,
+      "text": "长毛巨魔 HP 23 → 11",
+      "episode_index": 10,
+      "episode_id": "event:157ca86386454394e416e211:hp:sample_battle_23:self:encounter:83d24e88c9557402",
+      "instance_id": "sample_battle_23:self:encounter:83d24e88c9557402",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:378288a4e1780e70ee1b7f21",
+        "event:293aa3d99de54c030cbe1369"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    },
+    {
+      "reference_id": "b23-log-051",
+      "turn": 4,
+      "text": "长毛巨魔 HP 11 → 0",
+      "episode_index": 11,
+      "episode_id": "event:e604969ee8cde67a652672b1:hp:sample_battle_23:self:encounter:83d24e88c9557402",
+      "instance_id": "sample_battle_23:self:encounter:83d24e88c9557402",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:51837eb0439cdd305f72f7c7",
+        "event:c4a81f4b56c50b070625cb9d"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    },
+    {
+      "reference_id": "b23-log-057",
+      "turn": 5,
+      "text": "火神蛾 HP 100% → 5%",
+      "episode_index": 12,
+      "episode_id": "event:c784b5a0c641ddab7859c13d:hp:sample_battle_23:opponent:encounter:03b937d84d9ebe52",
+      "instance_id": "sample_battle_23:opponent:encounter:03b937d84d9ebe52",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:bf701fa70c0a9c41b45e3077",
+        "event:0216ada77c54019b2e96e65c"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    },
+    {
+      "reference_id": "b23-log-060",
+      "turn": 5,
+      "text": "铝钢桥龙 HP 194 → 94",
+      "episode_index": 13,
+      "episode_id": "event:1e5365fdf00e186c2cc7a2d7:hp:sample_battle_23:self:encounter:74bd053d6a4841c3",
+      "instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:5686b994b7604ce42dcde956",
+        "event:c361f66826ab996cad3192c2"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    },
+    {
+      "reference_id": "b23-log-066",
+      "turn": 5,
+      "text": "雷丘 HP 100% → 83%",
+      "episode_index": 14,
+      "episode_id": "event:28d06d42f5639a2e8f3dd35e:hp:sample_battle_23:opponent:encounter:a3dcf1795f735076",
+      "instance_id": "sample_battle_23:opponent:encounter:a3dcf1795f735076",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:c6775e2bc02fd4841f54d3c6",
+        "event:82ddb121d0d56ad1278132cb"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": false,
+      "program_supported": false
+    },
+    {
+      "reference_id": "b23-log-067",
+      "turn": 5,
+      "text": "火神蛾 HP 5% → 0%",
+      "episode_index": 15,
+      "episode_id": "event:28d06d42f5639a2e8f3dd35e:hp:sample_battle_23:opponent:encounter:03b937d84d9ebe52",
+      "instance_id": "sample_battle_23:opponent:encounter:03b937d84d9ebe52",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:314f94a7e011c30128e7926f",
+        "event:6549565be8c8f3351d7c15c7"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    },
+    {
+      "reference_id": "b23-log-071",
+      "turn": 5,
+      "text": "铝钢桥龙 HP 94 → 106",
+      "episode_index": 16,
+      "episode_id": "event:284f2fc6c10b950afc51f9d2:hp:sample_battle_23:self:encounter:74bd053d6a4841c3",
+      "instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:b3902243ac9469a7309a7f22",
+        "event:a6c5cf03e35c448e6caa6677"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": false,
+      "program_supported": false
+    },
+    {
+      "reference_id": "b23-log-084",
+      "turn": 6,
+      "text": "铝钢桥龙 HP 106 → 118",
+      "episode_index": 17,
+      "episode_id": "event:1ef43ea7328d9256f42bc3a3:hp:sample_battle_23:self:encounter:74bd053d6a4841c3",
+      "instance_id": "sample_battle_23:self:encounter:74bd053d6a4841c3",
+      "raw_ordered_endpoints": true,
+      "raw_endpoint_event_ids": [
+        "event:a29e74f6863a5ba5528bd447",
+        "event:83af13b6b5ac7aed2c4fbc61"
+      ],
+      "exact_projection": true,
+      "complete_endpoints": true,
+      "program_supported": true
+    }
+  ]
+}

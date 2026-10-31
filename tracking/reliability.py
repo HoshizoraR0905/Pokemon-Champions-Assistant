@@ -89,13 +89,17 @@ def visual_transition(engine, state, event, record):
     accepted = {}
     def observe(obj, name, value, path):
         old = getattr(obj, name)
+        same_canonical=(isinstance(old.value,dict) and isinstance(value,dict)
+                        and old.value.get('canonical_id') and old.value.get('canonical_id')==value.get('canonical_id'))
         # Stable identity fields disagreeing across sources remain conflicts.
-        if old.known and old.value != value:
+        if old.known and old.value != value and not same_canonical:
             setattr(obj, name, Fact(None, 'conflicting', old.provenance+[link],
                 [{'value':deepcopy(old.value),'provenance':deepcopy(old.provenance)}, {'value':deepcopy(value),'provenance':[link]}]))
             state.conflicts.append(dict(event_id=event.event_id, reason='visual_fact_disagreement', field=path))
         elif old.knowledge != 'conflicting':
+            provenance=deepcopy(old.provenance)
             engine._assign(obj, name, value, event)
+            if same_canonical:getattr(obj,name).provenance=provenance+getattr(obj,name).provenance
             accepted[path] = deepcopy(value)
     if fields.get('ability'):
         observe(p.ability, 'current', fields['ability'], 'ability')

@@ -1,5 +1,5 @@
 """Observed recognition context, separate from explicitly verified team records."""
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 import json
 from pathlib import Path
 from knowledge import KnowledgeBase, normalize
@@ -123,3 +123,18 @@ class RecognitionContext:
         for move in result.moves:
             save('own_move_menu',f'move_{move.slot}',move.name)
         self.previous = {k:v for k,v in self.previous.items() if k in observed_keys}
+
+
+def context_dump(context):
+    return dict(observed_team={k: asdict(v) for k, v in context.observed_team.items()},
+                opponent_preview=sorted(context.opponent_preview), preview_observations=context.preview_observations,
+                previous=context.previous, last_source=context.last_source, last_index=context.last_index)
+
+
+def context_restore(context, saved):
+    from recognition.context import TeamMember
+    context.observed_team = {k: TeamMember(**v) for k, v in saved['observed_team'].items()}
+    context.opponent_preview = set(saved['opponent_preview'])
+    context.preview_observations = saved['preview_observations']
+    context.previous = {k: tuple(v) for k, v in saved['previous'].items()}
+    context.last_source, context.last_index = saved['last_source'], saved['last_index']

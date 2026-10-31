@@ -1,0 +1,1457 @@
+{
+  "oracle": {
+    "package": "@smogon/calc",
+    "version": "0.12.0",
+    "generation": 0,
+    "adapter": "actual raw stats; direct Champions mechanics; ability/level defaults overwritten"
+  },
+  "cases": [
+    {
+      "id": "Fake Out-critical-False",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 109,
+            "defense": 157,
+            "special_attack": 173,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": -1,
+            "defense": -2,
+            "special_attack": -1,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 131,
+            "defense": 127,
+            "special_attack": 100,
+            "special_defense": 241,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 2,
+            "defense": 1,
+            "special_attack": 0,
+            "special_defense": 2,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Fake Out",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        6,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        8
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Fake Out",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 Atk",
+        "attackBoost": -1,
+        "defenseEVs": "0 Def",
+        "defenseBoost": 1,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Fake Out-critical-True",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 109,
+            "defense": 157,
+            "special_attack": 173,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": -1,
+            "defense": -2,
+            "special_attack": -1,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 131,
+            "defense": 127,
+            "special_attack": 100,
+            "special_defense": 241,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 2,
+            "defense": 1,
+            "special_attack": 0,
+            "special_defense": 2,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Fake Out",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        21,
+        21,
+        21,
+        22,
+        22,
+        22,
+        22,
+        23,
+        23,
+        23,
+        23,
+        24,
+        24,
+        24,
+        24,
+        25
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Fake Out",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 Atk",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Body Press-critical-False",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 109,
+            "defense": 157,
+            "special_attack": 173,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": -1,
+            "defense": -2,
+            "special_attack": -1,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 131,
+            "defense": 127,
+            "special_attack": 100,
+            "special_defense": 241,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 2,
+            "defense": 1,
+            "special_attack": 0,
+            "special_defense": 2,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Body Press",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        26,
+        26,
+        26,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        32
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Body Press",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 Def",
+        "attackBoost": -2,
+        "defenseEVs": "0 Def",
+        "defenseBoost": 1,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Body Press-critical-True",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 109,
+            "defense": 157,
+            "special_attack": 173,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": -1,
+            "defense": -2,
+            "special_attack": -1,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 131,
+            "defense": 127,
+            "special_attack": 100,
+            "special_defense": 241,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 2,
+            "defense": 1,
+            "special_attack": 0,
+            "special_defense": 2,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Body Press",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        112,
+        114,
+        116,
+        116,
+        118,
+        120,
+        120,
+        122,
+        124,
+        124,
+        126,
+        128,
+        128,
+        130,
+        132,
+        134
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Body Press",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 Def",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Psyshock-critical-False",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 109,
+            "defense": 157,
+            "special_attack": 173,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": -1,
+            "defense": -2,
+            "special_attack": -1,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 131,
+            "defense": 127,
+            "special_attack": 100,
+            "special_defense": 241,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 2,
+            "defense": 1,
+            "special_attack": 0,
+            "special_defense": 2,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        19,
+        19,
+        20,
+        20,
+        20,
+        20,
+        20,
+        21,
+        21,
+        21,
+        21,
+        22,
+        22,
+        22,
+        22,
+        23
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Psyshock",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 SpA",
+        "attackBoost": -1,
+        "defenseEVs": "0 Def",
+        "defenseBoost": 1,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Psyshock-critical-True",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 109,
+            "defense": 157,
+            "special_attack": 173,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": -1,
+            "defense": -2,
+            "special_attack": -1,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 131,
+            "defense": 127,
+            "special_attack": 100,
+            "special_defense": 241,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 2,
+            "defense": 1,
+            "special_attack": 0,
+            "special_defense": 2,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Psyshock",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        62,
+        62,
+        63,
+        64,
+        64,
+        65,
+        66,
+        67,
+        67,
+        68,
+        69,
+        70,
+        70,
+        71,
+        72,
+        73
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Psyshock",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Foul Play-critical-False",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 109,
+            "defense": 157,
+            "special_attack": 173,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": -1,
+            "defense": -2,
+            "special_attack": -1,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 131,
+            "defense": 127,
+            "special_attack": 100,
+            "special_defense": 241,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 2,
+            "defense": 1,
+            "special_attack": 0,
+            "special_defense": 2,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Foul Play",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        50,
+        50,
+        51,
+        51,
+        52,
+        53,
+        53,
+        54,
+        54,
+        55,
+        56,
+        56,
+        57,
+        57,
+        58,
+        59
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Foul Play",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 Atk",
+        "attackBoost": 2,
+        "defenseEVs": "0 Def",
+        "defenseBoost": 1,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "Foul Play-critical-True",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 109,
+            "defense": 157,
+            "special_attack": 173,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": -1,
+            "defense": -2,
+            "special_attack": -1,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 131,
+            "defense": 127,
+            "special_attack": 100,
+            "special_defense": 241,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 2,
+            "defense": 1,
+            "special_attack": 0,
+            "special_defense": 2,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Foul Play",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": true,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        112,
+        113,
+        114,
+        116,
+        117,
+        118,
+        120,
+        121,
+        122,
+        124,
+        125,
+        126,
+        128,
+        129,
+        130,
+        132
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Foul Play",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 Atk",
+        "attackBoost": 2,
+        "defenseEVs": "0 Def",
+        "isCritical": true,
+        "isBurned": false
+      }
+    },
+    {
+      "id": "bodypress-burn-Guts",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "Guts",
+          "item": "none",
+          "status": "burn",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Body Press",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        90,
+        92,
+        92,
+        94,
+        96,
+        96,
+        98,
+        98,
+        100,
+        100,
+        102,
+        102,
+        104,
+        104,
+        106,
+        108
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Body Press",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 Def",
+        "attackerAbility": "Guts",
+        "defenseEVs": "0 Def",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "bodypress-burn-Huge Power",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "Huge Power",
+          "item": "none",
+          "status": "burn",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Body Press",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        61,
+        61,
+        62,
+        63,
+        64,
+        64,
+        65,
+        66,
+        66,
+        67,
+        68,
+        69,
+        69,
+        70,
+        71,
+        72
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Body Press",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 Def",
+        "attackerAbility": "Huge Power",
+        "defenseEVs": "0 Def",
+        "isBurned": true
+      }
+    },
+    {
+      "id": "bodypress-burn-Technician",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "Technician",
+          "item": "none",
+          "status": "burn",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Body Press",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        31,
+        31,
+        32,
+        32,
+        32,
+        33,
+        33,
+        34,
+        34,
+        34,
+        35,
+        35,
+        35,
+        36,
+        36,
+        37
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Body Press",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 Def",
+        "defenseEVs": "0 Def",
+        "isBurned": true
+      }
+    },
+    {
+      "id": "legal-item-Charcoal",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "Charcoal",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Flamethrower",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        61,
+        63,
+        63,
+        64,
+        64,
+        66,
+        66,
+        67,
+        67,
+        69,
+        69,
+        70,
+        70,
+        72,
+        72,
+        73
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Flamethrower",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackerItem": "Charcoal",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 SpD",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "legal-item-Magnet",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "Magnet",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Thunderbolt",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        41,
+        42,
+        42,
+        43,
+        43,
+        44,
+        44,
+        45,
+        45,
+        46,
+        46,
+        47,
+        47,
+        48,
+        48,
+        49
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Thunderbolt",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackerItem": "Magnet",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 SpD",
+        "isBurned": false
+      }
+    },
+    {
+      "id": "legal-item-Life Orb",
+      "input": {
+        "profile": "showdown-champions-reference-v1",
+        "attacker": {
+          "identity": "Charizard",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "Life Orb",
+          "status": "none",
+          "other_effects": []
+        },
+        "defender": {
+          "identity": "Snorlax",
+          "form": "base",
+          "level": 50,
+          "stats": {
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+          },
+          "stat_basis": "unmodified",
+          "stages": {
+            "attack": 0,
+            "defense": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+          },
+          "current_hp": 200,
+          "maximum_hp": 200,
+          "ability": "none",
+          "item": "none",
+          "status": "none",
+          "other_effects": []
+        },
+        "move": "Flamethrower",
+        "field": {
+          "format": "singles",
+          "weather": "none",
+          "terrain": "none",
+          "critical": false,
+          "reflect": false,
+          "light_screen": false,
+          "aurora_veil": false,
+          "targets_hit": 1,
+          "attacker_grounded": false,
+          "defender_grounded": true,
+          "helping_hand": false,
+          "friend_guard": false,
+          "other_effects": []
+        }
+      },
+      "rolls": [
+        66,
+        68,
+        68,
+        70,
+        70,
+        70,
+        71,
+        71,
+        74,
+        74,
+        74,
+        75,
+        75,
+        78,
+        78,
+        79
+      ],
+      "oracle_description": {
+        "attackerName": "Charizard",
+        "moveName": "Flamethrower",
+        "defenderName": "Snorlax",
+        "isWonderRoom": false,
+        "HPEVs": "0 HP",
+        "attackEVs": "0 SpA",
+        "defenseEVs": "0 SpD",
+        "isBurned": false,
+        "attackerItem": "Life Orb"
+      }
+    }
+  ],
+  "applicability_note": "Psystrike stat selector implemented but no move definition in pinned Champions move pool; generic constructor fallback excluded from positive oracle fixtures"
+}

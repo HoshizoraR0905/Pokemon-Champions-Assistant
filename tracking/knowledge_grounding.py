@@ -7,6 +7,78 @@ from dataclasses import asdict
 
 RULE_PATH = Path(__file__).resolve().parents[1] / 'data/move_mechanics_v1.json'
 
+
+def attach_verified_profile(state, configuration, roster_review, *, root):
+    """Opt-in existing user-confirmed exact-six build binding, not identity merging."""
+    import hashlib
+    expected = [m['species_id'] for m in configuration['members']]
+    policy = configuration.get('binding_policy', {})
+    if (not configuration.get('complete') or len(set(expected)) != 6
+            or roster_review.get('battle_id') != state.battle_id
+            or sorted(roster_review.get('species_ids', [])) != sorted(expected)
+            or roster_review.get('matches_team7') is not True or not roster_review.get('reviewer')
+            or policy.get('asserted_by') != 'user' or not policy.get('statement')):
+        raise ValueError('Verified complete roster and user same-build policy required')
+    image = Path(root) / roster_review['image']
+    if hashlib.sha256(image.read_bytes()).hexdigest() != roster_review['sha256']:
+        raise ValueError('Roster source fingerprint mismatch')
+    state = deepcopy(state)
+    state.knowledge['verified_team_profile'] = dict(configuration=deepcopy(configuration),
+        roster_review=deepcopy(roster_review), binding_policy=deepcopy(policy))
+    return state
+
+
+def bind_attached_profile(state, p, event):
+    """Attach only after an observed self entry; runtime needs no network/files."""
+    attachment = state.knowledge.get('verified_team_profile')
+    if (not attachment or p.side_id != 'self' or not p.original_identity.known
+            or p.pokemon_instance_id in state.knowledge.get('team', {}).get('instances', {})
+            or event.attributes.get('observation_time', float('-inf')) < attachment['roster_review']['observation_time']):
+        return
+    configuration = deepcopy(attachment['configuration'])
+    candidates = [m for m in configuration['members'] if m['species_id'] == p.original_identity.value.get('species_id')]
+    if len(candidates) != 1:
+        return
+    member = candidates[0]
+    configuration['sources'].append(dict(roster_review=deepcopy(attachment['roster_review']),
+        binding_policy=deepcopy(attachment['binding_policy']), entry_event_id=event.event_id))
+    # initialize_team owns reconciliation and configured fields. Do not replace
+    # the live state object or duplicate its facts in another build database.
+    updated = initialize_team(state, configuration, bindings={member['instance_id']:p.pokemon_instance_id})
+    state.knowledge['team'] = updated.knowledge['team']
+    for name in ('moves', 'ability', 'item', 'hp'):
+        setattr(p, name, getattr(updated.pokemon[p.pokemon_instance_id], name))
+    from .form_stats import update_stats
+    update_stats(state,p,event)
+
+
+def attach_matching_roster_profile(state, roster, *, root):
+    """Use already recognized complete self rows; do not add preview OCR."""
+    from team_configuration.profiles import TeamProfiles
+    rows={}
+    for row in roster:
+        if row.get('side')=='self':rows.setdefault(row['preview_row'],[]).append(row)
+    reliable=(set(rows)==set(range(1,7)) and all(
+        all(r.get('status')=='resolved' and r.get('species_id') and (r.get('species') or {}).get('confidence',0)>=.95 for r in group)
+        and len({r['species_id'] for r in group})==1 for group in rows.values()))
+    if not reliable:
+        state.knowledge['team_profile_linkage']=dict(status='unbound',reason='complete_reliable_self_roster_not_available',self_rows=len(rows))
+        return state
+    members=sorted(group[0]['species_id'] for group in rows.values())
+    profiles=TeamProfiles(Path(root)/'.cache/team-profiles')
+    matching=[profiles.load(p['profile_id']).data for p in profiles.list()
+              if sorted(m['species_id'] for m in profiles.load(p['profile_id']).data['members'])==members]
+    if len(matching)!=1:
+        state.knowledge['team_profile_linkage']=dict(status='unbound',reason='no_unique_verified_profile',matches=len(matching))
+        return state
+    evidence=next(iter(rows.values()))[0]['evidence']
+    review=dict(battle_id=state.battle_id,species_ids=members,matches_team7=True,
+        reviewer='existing structured self-roster recognition, not independent visual truth',
+        image=evidence['image'],sha256=evidence['sha256'],observation_time=max(r['evidence']['timestamp'] for g in rows.values() for r in g))
+    state=attach_verified_profile(state,matching[0],review,root=root)
+    state.knowledge['team_profile_linkage']=dict(status='existing_complete_self_roster_bound',team_id=matching[0]['team_id'],review=review)
+    return state
+
 class MoveKnowledge:
     def __init__(self, path=RULE_PATH):
         self.data = json.loads(Path(path).read_text())
@@ -55,6 +127,7 @@ def initialize_team(state, opening, *, saved=None, bindings=None, saved_match_ve
                     fields[name] = deepcopy(old)
                     fields[name]['reconciliation_source'] = {'team_id':saved['team_id'], 'sources':deepcopy(saved.get('sources',[]))}
         metadata['instances'][pid] = {'configuration_instance_id': member['instance_id'], 'team_id':opening['team_id'], 'fields': fields,
+            'stat_alignment':deepcopy(member.get('reviewed_stat_alignment')),
             'canonical_identity': member.get('canonical_identity'), 'sources': deepcopy(opening.get('sources', [])),
             'species_reference': deepcopy(member.get('species_reference', {}))}
         source = {'source_type': 'known_team_configuration', 'instance_id': member['instance_id'],
@@ -73,7 +146,7 @@ def initialize_team(state, opening, *, saved=None, bindings=None, saved_match_ve
             f = fields.get(key, {})
             if f.get('canonical_id') and f.get('status') in {'observed','manual_verified','knowledge_resolved'} and not f.get('conflicts'):
                 existing = getattr(obj, attr)
-                if existing.known and existing.value.get('canonical_id') != f['canonical_id']:
+                if existing.known and (existing.value or {}).get('canonical_id') != f['canonical_id']:
                     state.conflicts.append({'kind': 'opening_dynamic_conflict', 'instance_id': pid, 'field': key})
                 else:
                     setattr(obj, attr, configured_fact({'canonical_id': f['canonical_id'], 'name': f['value']}, source, existing))
