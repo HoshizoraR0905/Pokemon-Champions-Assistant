@@ -1,0 +1,3356 @@
+{
+  "schema_version": 2,
+  "date": "2026-11-01",
+  "scope": "Verified recovered production measurements plus separate frozen-state microbenchmarks; no recognition or replay",
+  "units": {
+    "durations": "wall-clock seconds unless explicitly cumulative model-call duration",
+    "sizes": "bytes; compact JSON bytes are derived structural measurements, not RSS",
+    "rates": "receipts divided by broad reconstruction timer, not isolated StateEngine throughput"
+  },
+  "battles": {
+    "21": {
+      "run_id": "fresh-b21-context-v1",
+      "source_directory": ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1",
+      "benchmark_directory": ".cache/battles/sample_battle_21/fresh-benchmark/fresh-b21-context-v1",
+      "report_directory": "reports/battles/sample_battle_21/event-driven/fresh-b21-context-v1",
+      "status": "complete",
+      "original_seal_verified": true,
+      "original_manifest_hash_verified": true,
+      "command": [
+        "/Users/yyi/Pokemon-Champions-Assistant/.venv/bin/python",
+        "/Users/yyi/Pokemon-Champions-Assistant/main.py",
+        "--video",
+        "/Users/yyi/Pokemon-Champions-Assistant/tests/fixtures/sample_battle_21.mp4",
+        "--profile",
+        "event-driven",
+        "--identity-mode",
+        "lightweight",
+        "--sample-fps",
+        "2",
+        "--run-id",
+        "fresh-b21-context-v1"
+      ],
+      "hardware": {
+        "platform": "macOS-26.3.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.10.4 (v3.10.4:9d38120e33, Mar 23 2022, 17:29:05) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "logical_cpus": 8
+      },
+      "cold_run": true,
+      "attempt_count": 1,
+      "profiler_enabled": false,
+      "video_seconds": 703.21,
+      "video_source_bytes": 1319351968,
+      "full_external_cli_wall_seconds": 559.7511872079922,
+      "subprocess_start_epoch_ns": 1793240695046903000,
+      "subprocess_end_epoch_ns": 1793241254797073000,
+      "PTR": 0.7959943504898852,
+      "internal_pipeline_seconds": 559.1555726249935,
+      "outside_internal_pipeline_seconds": 0.5956145829986781,
+      "sampled_materialized_frames": 1407,
+      "inspected_frames": 1385,
+      "source_decoded_frames": 23380,
+      "ocr_calls": 4120,
+      "ocr_cumulative_model_call_seconds": 212.8474039393477,
+      "ocr_mean_seconds_per_call": 0.051661991247414496,
+      "icon_calls": 12,
+      "icon_cumulative_model_call_seconds": 4.448823416838422,
+      "icon_mean_seconds_per_call": 0.3707352847365352,
+      "broad_reconstruction_seconds": 160.815247374936,
+      "isolated_StateEngine_replay_seconds": null,
+      "receipts": 1384,
+      "receipt_statuses": {
+        "recorded_observation": 28,
+        "applied_candidate": 1116,
+        "applied_partial": 21,
+        "deferred": 219
+      },
+      "applied_receipts": 1137,
+      "admitted_including_recorded_observations": 1165,
+      "event_types": {
+        "preview_observation": 6,
+        "trainer_observation": 2,
+        "entry_observation": 8,
+        "send_out": 10,
+        "hud_observation": 1271,
+        "ability_activation": 5,
+        "terrain_change": 3,
+        "move_execution": 24,
+        "move_effect": 12,
+        "side_condition_change": 1,
+        "hp_change": 11,
+        "switch_out": 2,
+        "faint": 7,
+        "stat_change": 8,
+        "item_activation": 3,
+        "weather_change": 1,
+        "transformation": 2,
+        "effectiveness": 6,
+        "visual_observation": 2
+      },
+      "receipts_per_broad_reconstruction_second": 8.606149121999886,
+      "broad_reconstruction_seconds_per_receipt": 0.11619598798767053,
+      "model_plus_reconstruction_remainder_seconds": 181.63971247687005,
+      "last_recognition_progress": {
+        "video_seconds": 700.5,
+        "inspected_frames": 1380,
+        "ocr_calls": 4118,
+        "internal_elapsed_wall_seconds": 396.3
+      },
+      "replay_progress": [
+        {
+          "processed_events": 100,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 139
+        },
+        {
+          "processed_events": 200,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 140
+        },
+        {
+          "processed_events": 300,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 141
+        },
+        {
+          "processed_events": 400,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 142
+        },
+        {
+          "processed_events": 500,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 143
+        },
+        {
+          "processed_events": 600,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 144
+        },
+        {
+          "processed_events": 700,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 145
+        },
+        {
+          "processed_events": 800,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 146
+        },
+        {
+          "processed_events": 900,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 147
+        },
+        {
+          "processed_events": 1000,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 148
+        },
+        {
+          "processed_events": 1100,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 149
+        },
+        {
+          "processed_events": 1200,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 150
+        },
+        {
+          "processed_events": 1300,
+          "total_events": 1384,
+          "elapsed_wall_seconds": null,
+          "source_line": 151
+        }
+      ],
+      "replay_progress_intervals": [
+        {
+          "event_index_start_exclusive": 0,
+          "event_index_end_inclusive": 800,
+          "event_count": 800,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "preview_observation": 6,
+            "trainer_observation": 2,
+            "entry_observation": 6,
+            "send_out": 8,
+            "hud_observation": 730,
+            "ability_activation": 3,
+            "terrain_change": 1,
+            "move_execution": 14,
+            "move_effect": 4,
+            "side_condition_change": 1,
+            "hp_change": 10,
+            "switch_out": 2,
+            "faint": 2,
+            "stat_change": 3,
+            "item_activation": 3,
+            "weather_change": 1,
+            "transformation": 1,
+            "effectiveness": 3
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        },
+        {
+          "event_index_start_exclusive": 800,
+          "event_index_end_inclusive": 1384,
+          "event_count": 584,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "hud_observation": 541,
+            "move_execution": 10,
+            "effectiveness": 3,
+            "faint": 5,
+            "move_effect": 8,
+            "stat_change": 5,
+            "terrain_change": 2,
+            "entry_observation": 2,
+            "send_out": 2,
+            "ability_activation": 2,
+            "visual_observation": 2,
+            "transformation": 1,
+            "hp_change": 1
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        }
+      ],
+      "filesystem_timestamps": {
+        "decode_log": {
+          "path": ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/decode.log",
+          "bytes": 6990405,
+          "birth_epoch_seconds": 1793240696.6597168,
+          "mtime_epoch_seconds": 1793241092.0229897,
+          "birth_relative_cli_seconds": 1.6128137111663818,
+          "mtime_relative_cli_seconds": 396.9760866165161
+        },
+        "recognition_aggregate": {
+          "path": ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/observations.json",
+          "bytes": 15135890,
+          "birth_epoch_seconds": 1793241092.4982452,
+          "mtime_epoch_seconds": 1793241092.5099618,
+          "birth_relative_cli_seconds": 397.4513421058655,
+          "mtime_relative_cli_seconds": 397.46305871009827
+        },
+        "prediction_cache": {
+          "path": ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/video-only.json",
+          "bytes": 7052251,
+          "birth_epoch_seconds": 1793241252.9280949,
+          "mtime_epoch_seconds": 1793241252.9359517,
+          "birth_relative_cli_seconds": 557.8811917304993,
+          "mtime_relative_cli_seconds": 557.889048576355
+        },
+        "replay_export": {
+          "path": ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/replay.json",
+          "bytes": 10803786,
+          "birth_epoch_seconds": 1793241253.1602147,
+          "mtime_epoch_seconds": 1793241253.171622,
+          "birth_relative_cli_seconds": 558.1133115291595,
+          "mtime_relative_cli_seconds": 558.1247189044952
+        },
+        "prediction_report": {
+          "path": "reports/battles/sample_battle_21/event-driven/fresh-b21-context-v1/video-only.json",
+          "bytes": 7052251,
+          "birth_epoch_seconds": 1793241253.3112524,
+          "mtime_epoch_seconds": 1793241253.3417847,
+          "birth_relative_cli_seconds": 558.2643492221832,
+          "mtime_relative_cli_seconds": 558.2948815822601
+        },
+        "summary": {
+          "path": "reports/battles/sample_battle_21/event-driven/fresh-b21-context-v1/summary.json",
+          "bytes": 547,
+          "birth_epoch_seconds": 1793241253.3437564,
+          "mtime_epoch_seconds": 1793241253.3438458,
+          "birth_relative_cli_seconds": 558.2968533039093,
+          "mtime_relative_cli_seconds": 558.2969427108765
+        },
+        "frames_index": {
+          "path": "reports/battles/sample_battle_21/event-driven/fresh-b21-context-v1/frames.json",
+          "bytes": 8580105,
+          "birth_epoch_seconds": 1793241254.2352147,
+          "mtime_epoch_seconds": 1793241254.2441227,
+          "birth_relative_cli_seconds": 559.1883115768433,
+          "mtime_relative_cli_seconds": 559.1972196102142
+        },
+        "monitoring_index": {
+          "path": "reports/battles/sample_battle_21/event-driven/fresh-b21-context-v1/monitoring.json",
+          "bytes": 737802,
+          "birth_epoch_seconds": 1793241254.46877,
+          "mtime_epoch_seconds": 1793241254.4692676,
+          "birth_relative_cli_seconds": 559.4218668937683,
+          "mtime_relative_cli_seconds": 559.4223644733429
+        },
+        "viewer": {
+          "path": "reports/battles/sample_battle_21/event-driven/fresh-b21-context-v1/review.html",
+          "bytes": 8718123,
+          "birth_epoch_seconds": 1793241254.5621834,
+          "mtime_epoch_seconds": 1793241254.5716963,
+          "birth_relative_cli_seconds": 559.5152802467346,
+          "mtime_relative_cli_seconds": 559.5247931480408
+        },
+        "prediction_seal": {
+          "path": ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/video-only-seal.json",
+          "bytes": 454,
+          "birth_epoch_seconds": 1793241254.5935886,
+          "mtime_epoch_seconds": 1793241254.5936913,
+          "birth_relative_cli_seconds": 559.5466854572296,
+          "mtime_relative_cli_seconds": 559.5467882156372
+        },
+        "manifest": {
+          "path": ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/manifest.json",
+          "bytes": 16583,
+          "birth_epoch_seconds": 1793241254.6338024,
+          "mtime_epoch_seconds": 1793241254.63391,
+          "birth_relative_cli_seconds": 559.5868992805481,
+          "mtime_relative_cli_seconds": 559.5870068073273
+        }
+      },
+      "filesystem_derived_approximation": {
+        "reconstruction_start_relative_cli_seconds": 397.4816059289733,
+        "pre_reconstruction_seconds": 397.4816059289733,
+        "post_reconstruction_seconds": 1.4543339040828869,
+        "before_first_prediction_file_birth_seconds": 160.39958580152597,
+        "first_prediction_birth_to_summary_birth_seconds": 0.4156615734100342,
+        "decode_log_lifetime_seconds": 395.36327290534973,
+        "limitations": "Filesystem-derived timestamps, not profiler timers. Atomic writer JSON-encodes before creating temp file; birth-to-mtime omits encoding and is not serialization cost. Filesystem timestamps not covered by content SHA seals."
+      },
+      "post_cli_projection": {
+        "status": "complete",
+        "wall_seconds": 0.12507254199590534,
+        "state_and_receipts_unchanged": true,
+        "observed_nonzero_numeric_segments": 48,
+        "projected_membership_exact": true,
+        "normal_cli_time_included": false,
+        "targeted_high_fps_passes": 0,
+        "targeted_high_fps_frames": 0,
+        "reason": "Targeted sampling is an independent tool, not integrated into the current production CLI."
+      },
+      "freeze_stage_wall_seconds": 5.26104104204569,
+      "HP_workload": {
+        "actions": 24,
+        "episodes": 25,
+        "supported_complete_episodes": 12,
+        "nonzero_numeric_segments": 48
+      },
+      "state_structure": {
+        "compact_json_bytes": 2167652,
+        "initial_compact_json_bytes": 9010,
+        "pokemon_instances": 9,
+        "hp_observations": 923,
+        "numeric_hp_observations": 921,
+        "nonzero_numeric_hp_observations": 48,
+        "active_entry_episodes": 9,
+        "active_entry_episodes_compact_bytes": 776166,
+        "episode_field_compact_bytes": {
+          "episode_id": 288,
+          "instance_id": 466,
+          "side": 70,
+          "species_id": 28,
+          "start": 139,
+          "entry_event_id": 288,
+          "entry_evidence": 9931,
+          "start_kind": 90,
+          "slot": 57,
+          "placements": 9237,
+          "departure": 751285,
+          "persistent_identity_status": 272,
+          "possible_prior_instance_ids": 122,
+          "distinct_biological_individual_asserted": 45,
+          "entry_display_reference": 126,
+          "species_known_at_entry": 36,
+          "hud_binding": 432,
+          "species_resolution_time": 139
+        },
+        "identity_ledger_compact_bytes": 45004,
+        "persistent_return_proofs": 0,
+        "persistent_return_proofs_compact_bytes": 2,
+        "team_linkage": null,
+        "bound_team_instances": 0
+      },
+      "static_one_pass_workload": {
+        "duplicate_ordering_comparisons": 1915456,
+        "enrich_trigger_records": 1288,
+        "prefix_event_references_enumerated_by_enrich": 897547,
+        "final_retained_numeric_observation_prefix_visit_proxy": 655161,
+        "prefix_visit_proxy_caveat": "Counts retained final observations by source-event birth; not a measured call/CPU counter and may omit transient histories",
+        "confusion_context_requested": 0,
+        "confusion_binding_found": 0
+      },
+      "adaptive": {
+        "available": false,
+        "status": null,
+        "planned_windows": null,
+        "completed_attempts": null
+      },
+      "output_sizes": {
+        "categories": {
+          "cache/top_level_files": {
+            "files": 8,
+            "logical_bytes": 40546648
+          },
+          "cache/monitor": {
+            "files": 1407,
+            "logical_bytes": 668856
+          },
+          "cache/source": {
+            "files": 104,
+            "logical_bytes": 11694925
+          },
+          "cache/frames": {
+            "files": 1385,
+            "logical_bytes": 1514381503
+          },
+          "cache/reads": {
+            "files": 4120,
+            "logical_bytes": 236271
+          },
+          "cache/icons": {
+            "files": 12,
+            "logical_bytes": 31046
+          },
+          "cache/observations": {
+            "files": 1385,
+            "logical_bytes": 11701648
+          },
+          "cache/reference": {
+            "files": 322,
+            "logical_bytes": 540959
+          },
+          "report/top_level_files": {
+            "files": 5,
+            "logical_bytes": 25088828
+          },
+          "report/assets": {
+            "files": 1379,
+            "logical_bytes": 1514318887
+          }
+        },
+        "total_logical_bytes": 3119209571,
+        "unique_inode_logical_bytes": 1604890684,
+        "file_count": 10127,
+        "write_cost_seconds": null,
+        "limitation": "Logical sizes; excludes source video/shared assets. Unique-inode total deduplicates hardlinks, not filesystem compression or clone sharing."
+      },
+      "frozen_function_AST_sha256": {
+        "tracking/state_engine.py": {
+          "replay": "cda44d03dc33e29d2144cbc8bf04eb50c6f6d7a0bd8515a84e3fa60b4fe9a34d",
+          "hash_state": "bb3d7dd5503638221a2af13a9d0e5b0b7162bc7f96946348e9b1419ca4e7b24c",
+          "_hp": "41bd0385e677f1db08829e284148bc6a50f4e3cdf527c7680db77045ed33d185",
+          "_transition": "b94a2ffc0bd1d1cea899f248d1cf65fca8c24ec623d909df934e51fb5fc82fa8"
+        },
+        "tracking/hp_causes.py": {
+          "enrich": "ab03cb940273ee8409581373428a4faeb5501a61a9a84a57da528e96fd1672b1",
+          "action_resolutions": "64be0829bf3e38eca0bba7568343159fe0bea54752f9d0f7d31f2e1953260496"
+        },
+        "tracking/knowledge_grounding.py": {
+          "attach_matching_roster_profile": null,
+          "bind_attached_profile": null,
+          "initialize_team": "6de090db63f1f07d7e5853cb1234bc2f2d5e524da6032fd4b3664557de0790a3"
+        },
+        "recognition/event_report.py": {
+          "reconstruct_and_package": "43ed338d32238410d72e1fd2d2c4153db2312cfbfc07e16cf68562634624dde0"
+        },
+        "tracking/battle_state.py": {
+          "to_dict": "1a1b396a27058fefefd7eacdb6b39d862a61883e650a5034f06592f8b5974916"
+        }
+      }
+    },
+    "22": {
+      "run_id": "fresh-b22-ditto-20261030-v1",
+      "source_directory": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1",
+      "benchmark_directory": ".cache/battles/sample_battle_22/fresh-benchmark/fresh-b22-ditto-20261030-v1",
+      "report_directory": "reports/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1",
+      "status": "complete",
+      "original_seal_verified": true,
+      "original_manifest_hash_verified": true,
+      "command": [
+        "/Users/yyi/Pokemon-Champions-Assistant/.venv/bin/python",
+        "/Users/yyi/Pokemon-Champions-Assistant/main.py",
+        "--video",
+        "/Users/yyi/Pokemon-Champions-Assistant/tests/fixtures/sample_battle_22.mp4",
+        "--profile",
+        "event-driven",
+        "--identity-mode",
+        "lightweight",
+        "--sample-fps",
+        "2",
+        "--run-id",
+        "fresh-b22-ditto-20261030-v1"
+      ],
+      "hardware": {
+        "platform": "macOS-26.3.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.10.4 (v3.10.4:9d38120e33, Mar 23 2022, 17:29:05) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "logical_cpus": 8
+      },
+      "cold_run": true,
+      "attempt_count": 1,
+      "profiler_enabled": false,
+      "video_seconds": 860.18,
+      "video_source_bytes": 1615648454,
+      "full_external_cli_wall_seconds": 850.0764559579547,
+      "subprocess_start_epoch_ns": 1793345737679974000,
+      "subprocess_end_epoch_ns": 1793346587755394000,
+      "PTR": 0.9882541514077923,
+      "internal_pipeline_seconds": 849.3078815409681,
+      "outside_internal_pipeline_seconds": 0.7685744169866666,
+      "sampled_materialized_frames": 1721,
+      "inspected_frames": 1697,
+      "source_decoded_frames": 33158,
+      "ocr_calls": 6333,
+      "ocr_cumulative_model_call_seconds": 330.6785754429875,
+      "ocr_mean_seconds_per_call": 0.05221515481493565,
+      "icon_calls": 12,
+      "icon_cumulative_model_call_seconds": 4.767636417993344,
+      "icon_mean_seconds_per_call": 0.3973030348327787,
+      "broad_reconstruction_seconds": 387.3610536250053,
+      "isolated_StateEngine_replay_seconds": null,
+      "receipts": 2212,
+      "receipt_statuses": {
+        "deferred": 12,
+        "recorded_observation": 35,
+        "applied_candidate": 2137,
+        "applied_partial": 28
+      },
+      "applied_receipts": 2165,
+      "admitted_including_recorded_observations": 2200,
+      "event_types": {
+        "hud_observation": 2068,
+        "preview_observation": 6,
+        "trainer_observation": 2,
+        "entry_observation": 10,
+        "send_out": 12,
+        "ability_activation": 10,
+        "weather_change": 3,
+        "phase_observation": 12,
+        "switch_out": 5,
+        "move_effect": 12,
+        "transformation": 2,
+        "move_execution": 28,
+        "effectiveness": 10,
+        "stat_change": 8,
+        "item_activation": 7,
+        "side_condition_change": 8,
+        "faint": 4,
+        "visual_observation": 2,
+        "move_miss": 2,
+        "multi_hit": 1
+      },
+      "receipts_per_broad_reconstruction_second": 5.710434694710901,
+      "broad_reconstruction_seconds_per_receipt": 0.17511801700949606,
+      "model_plus_reconstruction_remainder_seconds": 127.26919047196861,
+      "last_recognition_progress": {
+        "video_seconds": 856.5,
+        "inspected_frames": 1690,
+        "ocr_calls": 6321,
+        "internal_elapsed_wall_seconds": 458.6
+      },
+      "replay_progress": [
+        {
+          "processed_events": 100,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 170
+        },
+        {
+          "processed_events": 200,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 171
+        },
+        {
+          "processed_events": 300,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 172
+        },
+        {
+          "processed_events": 400,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 173
+        },
+        {
+          "processed_events": 500,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 174
+        },
+        {
+          "processed_events": 600,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 175
+        },
+        {
+          "processed_events": 700,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 176
+        },
+        {
+          "processed_events": 800,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 177
+        },
+        {
+          "processed_events": 900,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 178
+        },
+        {
+          "processed_events": 1000,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 179
+        },
+        {
+          "processed_events": 1100,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 180
+        },
+        {
+          "processed_events": 1200,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 181
+        },
+        {
+          "processed_events": 1300,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 182
+        },
+        {
+          "processed_events": 1400,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 183
+        },
+        {
+          "processed_events": 1500,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 184
+        },
+        {
+          "processed_events": 1600,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 185
+        },
+        {
+          "processed_events": 1700,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 186
+        },
+        {
+          "processed_events": 1800,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 187
+        },
+        {
+          "processed_events": 1900,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 188
+        },
+        {
+          "processed_events": 2000,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 189
+        },
+        {
+          "processed_events": 2100,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 190
+        },
+        {
+          "processed_events": 2200,
+          "total_events": 2212,
+          "elapsed_wall_seconds": null,
+          "source_line": 191
+        }
+      ],
+      "replay_progress_intervals": [
+        {
+          "event_index_start_exclusive": 0,
+          "event_index_end_inclusive": 800,
+          "event_count": 800,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "hud_observation": 743,
+            "preview_observation": 6,
+            "trainer_observation": 2,
+            "entry_observation": 5,
+            "send_out": 7,
+            "ability_activation": 5,
+            "weather_change": 1,
+            "phase_observation": 4,
+            "switch_out": 2,
+            "move_effect": 5,
+            "transformation": 1,
+            "move_execution": 8,
+            "effectiveness": 4,
+            "stat_change": 2,
+            "item_activation": 2,
+            "side_condition_change": 2,
+            "faint": 1
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        },
+        {
+          "event_index_start_exclusive": 800,
+          "event_index_end_inclusive": 1600,
+          "event_count": 800,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "hud_observation": 753,
+            "phase_observation": 6,
+            "switch_out": 3,
+            "entry_observation": 3,
+            "send_out": 3,
+            "move_execution": 11,
+            "effectiveness": 3,
+            "ability_activation": 2,
+            "stat_change": 2,
+            "move_effect": 5,
+            "item_activation": 2,
+            "visual_observation": 1,
+            "weather_change": 1,
+            "side_condition_change": 3,
+            "transformation": 1,
+            "move_miss": 1
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        },
+        {
+          "event_index_start_exclusive": 1600,
+          "event_index_end_inclusive": 2212,
+          "event_count": 612,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "side_condition_change": 3,
+            "move_execution": 9,
+            "hud_observation": 572,
+            "effectiveness": 3,
+            "faint": 3,
+            "entry_observation": 2,
+            "send_out": 2,
+            "ability_activation": 3,
+            "weather_change": 1,
+            "multi_hit": 1,
+            "stat_change": 4,
+            "move_effect": 2,
+            "item_activation": 3,
+            "phase_observation": 2,
+            "visual_observation": 1,
+            "move_miss": 1
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        }
+      ],
+      "filesystem_timestamps": {
+        "decode_log": {
+          "path": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/decode.log",
+          "bytes": 9822186,
+          "birth_epoch_seconds": 1793345739.5967245,
+          "mtime_epoch_seconds": 1793346197.5389538,
+          "birth_relative_cli_seconds": 1.9167506694793701,
+          "mtime_relative_cli_seconds": 459.85897994041443
+        },
+        "recognition_aggregate": {
+          "path": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/observations.json",
+          "bytes": 20032630,
+          "birth_epoch_seconds": 1793346198.3010988,
+          "mtime_epoch_seconds": 1793346198.3154442,
+          "birth_relative_cli_seconds": 460.62112498283386,
+          "mtime_relative_cli_seconds": 460.6354703903198
+        },
+        "prediction_cache": {
+          "path": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/video-only.json",
+          "bytes": 10649246,
+          "birth_epoch_seconds": 1793346585.114119,
+          "mtime_epoch_seconds": 1793346585.1239018,
+          "birth_relative_cli_seconds": 847.4341452121735,
+          "mtime_relative_cli_seconds": 847.4439280033112
+        },
+        "replay_export": {
+          "path": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/replay.json",
+          "bytes": 16396859,
+          "birth_epoch_seconds": 1793346585.4641562,
+          "mtime_epoch_seconds": 1793346585.4805622,
+          "birth_relative_cli_seconds": 847.7841823101044,
+          "mtime_relative_cli_seconds": 847.8005883693695
+        },
+        "prediction_report": {
+          "path": "reports/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/video-only.json",
+          "bytes": 10649246,
+          "birth_epoch_seconds": 1793346585.6945236,
+          "mtime_epoch_seconds": 1793346585.704003,
+          "birth_relative_cli_seconds": 848.0145497322083,
+          "mtime_relative_cli_seconds": 848.0240292549133
+        },
+        "summary": {
+          "path": "reports/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/summary.json",
+          "bytes": 549,
+          "birth_epoch_seconds": 1793346585.706228,
+          "mtime_epoch_seconds": 1793346585.7063317,
+          "birth_relative_cli_seconds": 848.0262541770935,
+          "mtime_relative_cli_seconds": 848.0263578891754
+        },
+        "frames_index": {
+          "path": "reports/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames.json",
+          "bytes": 11848560,
+          "birth_epoch_seconds": 1793346586.8899953,
+          "mtime_epoch_seconds": 1793346586.9029195,
+          "birth_relative_cli_seconds": 849.2100214958191,
+          "mtime_relative_cli_seconds": 849.222945690155
+        },
+        "monitoring_index": {
+          "path": "reports/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/monitoring.json",
+          "bytes": 901727,
+          "birth_epoch_seconds": 1793346587.2307463,
+          "mtime_epoch_seconds": 1793346587.2314227,
+          "birth_relative_cli_seconds": 849.5507724285126,
+          "mtime_relative_cli_seconds": 849.5514488220215
+        },
+        "viewer": {
+          "path": "reports/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/review.html",
+          "bytes": 12592992,
+          "birth_epoch_seconds": 1793346587.384274,
+          "mtime_epoch_seconds": 1793346587.4000995,
+          "birth_relative_cli_seconds": 849.7043001651764,
+          "mtime_relative_cli_seconds": 849.7201256752014
+        },
+        "prediction_seal": {
+          "path": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/video-only-seal.json",
+          "bytes": 454,
+          "birth_epoch_seconds": 1793346587.4387164,
+          "mtime_epoch_seconds": 1793346587.4392087,
+          "birth_relative_cli_seconds": 849.7587425708771,
+          "mtime_relative_cli_seconds": 849.7592349052429
+        },
+        "manifest": {
+          "path": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/manifest.json",
+          "bytes": 16464,
+          "birth_epoch_seconds": 1793346587.5067806,
+          "mtime_epoch_seconds": 1793346587.5068874,
+          "birth_relative_cli_seconds": 849.8268067836761,
+          "mtime_relative_cli_seconds": 849.8269135951996
+        }
+      },
+      "filesystem_derived_approximation": {
+        "reconstruction_start_relative_cli_seconds": 460.6652005520882,
+        "pre_reconstruction_seconds": 460.6652005520882,
+        "post_reconstruction_seconds": 2.0502017808612436,
+        "before_first_prediction_file_birth_seconds": 386.76894466008525,
+        "first_prediction_birth_to_summary_birth_seconds": 0.592108964920044,
+        "decode_log_lifetime_seconds": 457.94222927093506,
+        "limitations": "Filesystem-derived timestamps, not profiler timers. Atomic writer JSON-encodes before creating temp file; birth-to-mtime omits encoding and is not serialization cost. Filesystem timestamps not covered by content SHA seals."
+      },
+      "post_cli_projection": {
+        "status": "complete",
+        "wall_seconds": 0.23379991704132408,
+        "state_and_receipts_unchanged": true,
+        "observed_nonzero_numeric_segments": 45,
+        "projected_membership_exact": true,
+        "normal_cli_time_included": false,
+        "targeted_high_fps_passes": 0,
+        "targeted_high_fps_frames": 0,
+        "reason": "Targeted sampling is an independent tool, not integrated into the current production CLI."
+      },
+      "freeze_stage_wall_seconds": 8.438274292042479,
+      "HP_workload": {
+        "actions": 28,
+        "episodes": 22,
+        "supported_complete_episodes": 16,
+        "nonzero_numeric_segments": 45
+      },
+      "state_structure": {
+        "compact_json_bytes": 3474538,
+        "initial_compact_json_bytes": 9010,
+        "pokemon_instances": 12,
+        "hp_observations": 1817,
+        "numeric_hp_observations": 1817,
+        "nonzero_numeric_hp_observations": 45,
+        "active_entry_episodes": 12,
+        "active_entry_episodes_compact_bytes": 1171540,
+        "episode_field_compact_bytes": {
+          "episode_id": 384,
+          "instance_id": 628,
+          "side": 100,
+          "species_id": 38,
+          "start": 188,
+          "entry_event_id": 384,
+          "entry_evidence": 13626,
+          "start_kind": 120,
+          "slot": 76,
+          "placements": 14322,
+          "departure": 1135935,
+          "persistent_identity_status": 328,
+          "possible_prior_instance_ids": 236,
+          "distinct_biological_individual_asserted": 60,
+          "entry_display_reference": 150,
+          "species_known_at_entry": 48,
+          "hud_binding": 576,
+          "species_resolution_time": 188
+        },
+        "identity_ledger_compact_bytes": 48309,
+        "persistent_return_proofs": 0,
+        "persistent_return_proofs_compact_bytes": 2,
+        "team_linkage": null,
+        "bound_team_instances": 0
+      },
+      "static_one_pass_workload": {
+        "duplicate_ordering_comparisons": 4892944,
+        "enrich_trigger_records": 2078,
+        "prefix_event_references_enumerated_by_enrich": 2300091,
+        "final_retained_numeric_observation_prefix_visit_proxy": 1895457,
+        "prefix_visit_proxy_caveat": "Counts retained final observations by source-event birth; not a measured call/CPU counter and may omit transient histories",
+        "confusion_context_requested": 0,
+        "confusion_binding_found": 0
+      },
+      "adaptive": {
+        "available": false,
+        "status": null,
+        "planned_windows": null,
+        "completed_attempts": null
+      },
+      "output_sizes": {
+        "categories": {
+          "cache/top_level_files": {
+            "files": 8,
+            "logical_bytes": 57598774
+          },
+          "cache/monitor": {
+            "files": 1721,
+            "logical_bytes": 817395
+          },
+          "cache/source": {
+            "files": 104,
+            "logical_bytes": 11713680
+          },
+          "cache/frames": {
+            "files": 1697,
+            "logical_bytes": 1937907623
+          },
+          "cache/reads": {
+            "files": 6333,
+            "logical_bytes": 359107
+          },
+          "cache/icons": {
+            "files": 12,
+            "logical_bytes": 31398
+          },
+          "cache/observations": {
+            "files": 1697,
+            "logical_bytes": 15674747
+          },
+          "report/top_level_files": {
+            "files": 5,
+            "logical_bytes": 35993074
+          },
+          "report/assets": {
+            "files": 1695,
+            "logical_bytes": 1937886751
+          }
+        },
+        "total_logical_bytes": 3997982549,
+        "unique_inode_logical_bytes": 2060095798,
+        "file_count": 13272,
+        "write_cost_seconds": null,
+        "limitation": "Logical sizes; excludes source video/shared assets. Unique-inode total deduplicates hardlinks, not filesystem compression or clone sharing."
+      },
+      "frozen_function_AST_sha256": {
+        "tracking/state_engine.py": {
+          "replay": "b61c39af7f7fccc546f0cfd836d089e57b7af5ca9f9076a7902f25f5065d7cb7",
+          "hash_state": "bb3d7dd5503638221a2af13a9d0e5b0b7162bc7f96946348e9b1419ca4e7b24c",
+          "_hp": "41bd0385e677f1db08829e284148bc6a50f4e3cdf527c7680db77045ed33d185",
+          "_transition": "8384a2808575ed6bc20d25babf50251a89d16bb4f70d65cfa819488ef62de2fd"
+        },
+        "tracking/hp_causes.py": {
+          "enrich": "51e1aa3c76f4730796142f002261407bd5ada7740b654fdbc264c45f566b3d7f",
+          "action_resolutions": "64be0829bf3e38eca0bba7568343159fe0bea54752f9d0f7d31f2e1953260496"
+        },
+        "tracking/knowledge_grounding.py": {
+          "attach_matching_roster_profile": null,
+          "bind_attached_profile": null,
+          "initialize_team": "6de090db63f1f07d7e5853cb1234bc2f2d5e524da6032fd4b3664557de0790a3"
+        },
+        "recognition/event_report.py": {
+          "reconstruct_and_package": "43ed338d32238410d72e1fd2d2c4153db2312cfbfc07e16cf68562634624dde0"
+        },
+        "tracking/battle_state.py": {
+          "to_dict": "1a1b396a27058fefefd7eacdb6b39d862a61883e650a5034f06592f8b5974916"
+        }
+      }
+    },
+    "23": {
+      "run_id": "mega-b23-20261030-v1",
+      "source_directory": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1",
+      "benchmark_directory": ".cache/battles/sample_battle_23/fresh-benchmark/mega-b23-20261030-v1",
+      "report_directory": "reports/battles/sample_battle_23/event-driven/mega-b23-20261030-v1",
+      "status": "complete",
+      "original_seal_verified": true,
+      "original_manifest_hash_verified": true,
+      "command": [
+        "/Users/yyi/Pokemon-Champions-Assistant/.venv/bin/python",
+        "/Users/yyi/Pokemon-Champions-Assistant/main.py",
+        "--video",
+        "/Users/yyi/Pokemon-Champions-Assistant/tests/fixtures/sample_battle_23.mp4",
+        "--profile",
+        "event-driven",
+        "--identity-mode",
+        "lightweight",
+        "--sample-fps",
+        "2",
+        "--run-id",
+        "mega-b23-20261030-v1"
+      ],
+      "hardware": {
+        "platform": "macOS-26.3.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.10.4 (v3.10.4:9d38120e33, Mar 23 2022, 17:29:05) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "logical_cpus": 8
+      },
+      "cold_run": true,
+      "attempt_count": 1,
+      "profiler_enabled": false,
+      "video_seconds": 787.28,
+      "video_source_bytes": 1477578620,
+      "full_external_cli_wall_seconds": 803.7169601251371,
+      "subprocess_start_epoch_ns": 1793364552885791000,
+      "subprocess_end_epoch_ns": 1793365356602373000,
+      "PTR": 1.0208781629472832,
+      "internal_pipeline_seconds": 802.6580212921835,
+      "outside_internal_pipeline_seconds": 1.0589388329535723,
+      "sampled_materialized_frames": 1575,
+      "inspected_frames": 1566,
+      "source_decoded_frames": 27260,
+      "ocr_calls": 5764,
+      "ocr_cumulative_model_call_seconds": 319.8981194726657,
+      "ocr_mean_seconds_per_call": 0.055499326764862196,
+      "icon_calls": 12,
+      "icon_cumulative_model_call_seconds": 4.956418502377346,
+      "icon_mean_seconds_per_call": 0.41303487519811216,
+      "broad_reconstruction_seconds": 357.96734191593714,
+      "isolated_StateEngine_replay_seconds": null,
+      "receipts": 2036,
+      "receipt_statuses": {
+        "deferred": 30,
+        "recorded_observation": 34,
+        "applied_candidate": 1941,
+        "applied_partial": 31
+      },
+      "applied_receipts": 1972,
+      "admitted_including_recorded_observations": 2006,
+      "event_types": {
+        "hud_observation": 1897,
+        "preview_observation": 6,
+        "trainer_observation": 2,
+        "entry_observation": 7,
+        "send_out": 9,
+        "ability_activation": 7,
+        "stat_change": 16,
+        "phase_observation": 9,
+        "move_execution": 31,
+        "move_effect": 12,
+        "transformation": 2,
+        "side_condition_change": 3,
+        "effectiveness": 7,
+        "faint": 4,
+        "status_change": 4,
+        "hp_change": 8,
+        "switch_out": 2,
+        "item_activation": 7,
+        "move_miss": 1,
+        "visual_observation": 1,
+        "weather_change": 1
+      },
+      "receipts_per_broad_reconstruction_second": 5.687669688253633,
+      "broad_reconstruction_seconds_per_receipt": 0.17581893021411452,
+      "model_plus_reconstruction_remainder_seconds": 120.89508023415692,
+      "last_recognition_progress": {
+        "video_seconds": 784.0,
+        "inspected_frames": 1560,
+        "ocr_calls": 5757,
+        "internal_elapsed_wall_seconds": 441.7
+      },
+      "replay_progress": [
+        {
+          "processed_events": 100,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 157
+        },
+        {
+          "processed_events": 200,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 158
+        },
+        {
+          "processed_events": 300,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 159
+        },
+        {
+          "processed_events": 400,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 160
+        },
+        {
+          "processed_events": 500,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 161
+        },
+        {
+          "processed_events": 600,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 162
+        },
+        {
+          "processed_events": 700,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 163
+        },
+        {
+          "processed_events": 800,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 164
+        },
+        {
+          "processed_events": 900,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 165
+        },
+        {
+          "processed_events": 1000,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 166
+        },
+        {
+          "processed_events": 1100,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 167
+        },
+        {
+          "processed_events": 1200,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 168
+        },
+        {
+          "processed_events": 1300,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 169
+        },
+        {
+          "processed_events": 1400,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 170
+        },
+        {
+          "processed_events": 1500,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 171
+        },
+        {
+          "processed_events": 1600,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 172
+        },
+        {
+          "processed_events": 1700,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 173
+        },
+        {
+          "processed_events": 1800,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 174
+        },
+        {
+          "processed_events": 1900,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 175
+        },
+        {
+          "processed_events": 2000,
+          "total_events": 2036,
+          "elapsed_wall_seconds": null,
+          "source_line": 176
+        }
+      ],
+      "replay_progress_intervals": [
+        {
+          "event_index_start_exclusive": 0,
+          "event_index_end_inclusive": 800,
+          "event_count": 800,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "hud_observation": 735,
+            "preview_observation": 6,
+            "trainer_observation": 2,
+            "entry_observation": 5,
+            "send_out": 7,
+            "ability_activation": 1,
+            "stat_change": 3,
+            "phase_observation": 5,
+            "move_execution": 13,
+            "move_effect": 8,
+            "transformation": 2,
+            "side_condition_change": 2,
+            "effectiveness": 2,
+            "faint": 2,
+            "status_change": 1,
+            "hp_change": 5,
+            "switch_out": 1
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        },
+        {
+          "event_index_start_exclusive": 800,
+          "event_index_end_inclusive": 1600,
+          "event_count": 800,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "hud_observation": 759,
+            "move_execution": 12,
+            "effectiveness": 3,
+            "stat_change": 8,
+            "ability_activation": 2,
+            "faint": 1,
+            "item_activation": 4,
+            "entry_observation": 1,
+            "send_out": 1,
+            "phase_observation": 3,
+            "move_effect": 4,
+            "status_change": 1,
+            "move_miss": 1
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        },
+        {
+          "event_index_start_exclusive": 1600,
+          "event_index_end_inclusive": 2036,
+          "event_count": 436,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "hud_observation": 403,
+            "visual_observation": 1,
+            "switch_out": 1,
+            "entry_observation": 1,
+            "send_out": 1,
+            "ability_activation": 4,
+            "weather_change": 1,
+            "move_execution": 6,
+            "effectiveness": 2,
+            "stat_change": 5,
+            "status_change": 2,
+            "hp_change": 3,
+            "item_activation": 3,
+            "phase_observation": 1,
+            "faint": 1,
+            "side_condition_change": 1
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        }
+      ],
+      "filesystem_timestamps": {
+        "decode_log": {
+          "path": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/decode.log",
+          "bytes": 8130598,
+          "birth_epoch_seconds": 1793364554.7027693,
+          "mtime_epoch_seconds": 1793364995.3376832,
+          "birth_relative_cli_seconds": 1.8169782161712646,
+          "mtime_relative_cli_seconds": 442.45189213752747
+        },
+        "recognition_aggregate": {
+          "path": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/observations.json",
+          "bytes": 18657249,
+          "birth_epoch_seconds": 1793364996.1065633,
+          "mtime_epoch_seconds": 1793364996.1213229,
+          "birth_relative_cli_seconds": 443.22077226638794,
+          "mtime_relative_cli_seconds": 443.2355318069458
+        },
+        "prediction_cache": {
+          "path": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/video-only.json",
+          "bytes": 9977903,
+          "birth_epoch_seconds": 1793365353.540424,
+          "mtime_epoch_seconds": 1793365353.5477784,
+          "birth_relative_cli_seconds": 800.6546330451965,
+          "mtime_relative_cli_seconds": 800.6619873046875
+        },
+        "replay_export": {
+          "path": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/replay.json",
+          "bytes": 15168390,
+          "birth_epoch_seconds": 1793365353.882464,
+          "mtime_epoch_seconds": 1793365353.8925245,
+          "birth_relative_cli_seconds": 800.9966728687286,
+          "mtime_relative_cli_seconds": 801.006733417511
+        },
+        "prediction_report": {
+          "path": "reports/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/video-only.json",
+          "bytes": 9977903,
+          "birth_epoch_seconds": 1793365354.1095958,
+          "mtime_epoch_seconds": 1793365354.1154988,
+          "birth_relative_cli_seconds": 801.2238047122955,
+          "mtime_relative_cli_seconds": 801.2297077178955
+        },
+        "summary": {
+          "path": "reports/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/summary.json",
+          "bytes": 538,
+          "birth_epoch_seconds": 1793365354.1174502,
+          "mtime_epoch_seconds": 1793365354.1175487,
+          "birth_relative_cli_seconds": 801.2316591739655,
+          "mtime_relative_cli_seconds": 801.2317576408386
+        },
+        "frames_index": {
+          "path": "reports/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames.json",
+          "bytes": 10900456,
+          "birth_epoch_seconds": 1793365355.3472555,
+          "mtime_epoch_seconds": 1793365355.3564153,
+          "birth_relative_cli_seconds": 802.4614644050598,
+          "mtime_relative_cli_seconds": 802.4706242084503
+        },
+        "monitoring_index": {
+          "path": "reports/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/monitoring.json",
+          "bytes": 821290,
+          "birth_epoch_seconds": 1793365355.6357472,
+          "mtime_epoch_seconds": 1793365355.636452,
+          "birth_relative_cli_seconds": 802.7499561309814,
+          "mtime_relative_cli_seconds": 802.7506608963013
+        },
+        "viewer": {
+          "path": "reports/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/review.html",
+          "bytes": 11638876,
+          "birth_epoch_seconds": 1793365355.7825475,
+          "mtime_epoch_seconds": 1793365355.7975774,
+          "birth_relative_cli_seconds": 802.8967564105988,
+          "mtime_relative_cli_seconds": 802.9117863178253
+        },
+        "prediction_seal": {
+          "path": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/video-only-seal.json",
+          "bytes": 454,
+          "birth_epoch_seconds": 1793365355.8709157,
+          "mtime_epoch_seconds": 1793365355.872143,
+          "birth_relative_cli_seconds": 802.9851245880127,
+          "mtime_relative_cli_seconds": 802.9863519668579
+        },
+        "manifest": {
+          "path": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/manifest.json",
+          "bytes": 16839,
+          "birth_epoch_seconds": 1793365355.9833565,
+          "mtime_epoch_seconds": 1793365355.983502,
+          "birth_relative_cli_seconds": 803.0975654125214,
+          "mtime_relative_cli_seconds": 803.0977108478546
+        }
+      },
+      "filesystem_derived_approximation": {
+        "reconstruction_start_relative_cli_seconds": 443.2643172580283,
+        "pre_reconstruction_seconds": 443.2643172580283,
+        "post_reconstruction_seconds": 2.4853009511716664,
+        "before_first_prediction_file_birth_seconds": 357.3903157871682,
+        "first_prediction_birth_to_summary_birth_seconds": 0.5770261287689209,
+        "decode_log_lifetime_seconds": 440.6349139213562,
+        "limitations": "Filesystem-derived timestamps, not profiler timers. Atomic writer JSON-encodes before creating temp file; birth-to-mtime omits encoding and is not serialization cost. Filesystem timestamps not covered by content SHA seals."
+      },
+      "post_cli_projection": {
+        "status": "complete",
+        "wall_seconds": 0.31209066696465015,
+        "state_and_receipts_unchanged": true,
+        "observed_nonzero_numeric_segments": 68,
+        "projected_membership_exact": true,
+        "normal_cli_time_included": false,
+        "targeted_high_fps_passes": 0,
+        "targeted_high_fps_frames": 0,
+        "reason": "Production adaptive 3/4 FPS attempts are recorded separately; this projection itself invokes no recognition."
+      },
+      "freeze_stage_wall_seconds": 8.360570959048346,
+      "HP_workload": {
+        "actions": 31,
+        "episodes": 36,
+        "supported_complete_episodes": 25,
+        "nonzero_numeric_segments": 68
+      },
+      "state_structure": {
+        "compact_json_bytes": 3085150,
+        "initial_compact_json_bytes": 9123,
+        "pokemon_instances": 9,
+        "hp_observations": 1561,
+        "numeric_hp_observations": 1553,
+        "nonzero_numeric_hp_observations": 68,
+        "active_entry_episodes": 9,
+        "active_entry_episodes_compact_bytes": 1041059,
+        "episode_field_compact_bytes": {
+          "episode_id": 288,
+          "instance_id": 470,
+          "side": 74,
+          "species_id": 27,
+          "start": 88,
+          "entry_event_id": 288,
+          "entry_evidence": 10082,
+          "start_kind": 90,
+          "slot": 58,
+          "placements": 10552,
+          "departure": 1014836,
+          "persistent_identity_status": 298,
+          "possible_prior_instance_ids": 72,
+          "distinct_biological_individual_asserted": 45,
+          "entry_display_reference": 120,
+          "species_known_at_entry": 36,
+          "hud_binding": 432,
+          "species_resolution_time": 88
+        },
+        "identity_ledger_compact_bytes": 44181,
+        "persistent_return_proofs": 0,
+        "persistent_return_proofs_compact_bytes": 2,
+        "team_linkage": {
+          "status": "unbound",
+          "reason": "complete_reliable_self_roster_not_available",
+          "self_rows": 0
+        },
+        "bound_team_instances": 0
+      },
+      "static_one_pass_workload": {
+        "duplicate_ordering_comparisons": 4145296,
+        "enrich_trigger_records": 1912,
+        "prefix_event_references_enumerated_by_enrich": 1952612,
+        "final_retained_numeric_observation_prefix_visit_proxy": 1514790,
+        "prefix_visit_proxy_caveat": "Counts retained final observations by source-event birth; not a measured call/CPU counter and may omit transient histories",
+        "confusion_context_requested": 0,
+        "confusion_binding_found": 0
+      },
+      "adaptive": {
+        "available": true,
+        "status": "complete",
+        "planned_windows": 0,
+        "completed_attempts": 0
+      },
+      "output_sizes": {
+        "categories": {
+          "cache/top_level_files": {
+            "files": 9,
+            "logical_bytes": 52542172
+          },
+          "cache/monitor": {
+            "files": 1575,
+            "logical_bytes": 744112
+          },
+          "cache/source": {
+            "files": 108,
+            "logical_bytes": 11753631
+          },
+          "cache/frames": {
+            "files": 1566,
+            "logical_bytes": 1762114482
+          },
+          "cache/reads": {
+            "files": 5764,
+            "logical_bytes": 331960
+          },
+          "cache/icons": {
+            "files": 12,
+            "logical_bytes": 31137
+          },
+          "cache/observations": {
+            "files": 1566,
+            "logical_bytes": 14502685
+          },
+          "report/top_level_files": {
+            "files": 5,
+            "logical_bytes": 33339063
+          },
+          "report/assets": {
+            "files": 1560,
+            "logical_bytes": 1762051866
+          }
+        },
+        "total_logical_bytes": 3637411108,
+        "unique_inode_logical_bytes": 1875359242,
+        "file_count": 12165,
+        "write_cost_seconds": null,
+        "limitation": "Logical sizes; excludes source video/shared assets. Unique-inode total deduplicates hardlinks, not filesystem compression or clone sharing."
+      },
+      "frozen_function_AST_sha256": {
+        "tracking/state_engine.py": {
+          "replay": "708d71ba312e230bdef3b22294b77933f9a1481177e88899d8aa5c03a8f12027",
+          "hash_state": "bb3d7dd5503638221a2af13a9d0e5b0b7162bc7f96946348e9b1419ca4e7b24c",
+          "_hp": "41bd0385e677f1db08829e284148bc6a50f4e3cdf527c7680db77045ed33d185",
+          "_transition": "66be5463b80fd08c8e093f0a36badfd5c09144729cacb12d033902f9daec2c41"
+        },
+        "tracking/hp_causes.py": {
+          "enrich": "51e1aa3c76f4730796142f002261407bd5ada7740b654fdbc264c45f566b3d7f",
+          "action_resolutions": "64be0829bf3e38eca0bba7568343159fe0bea54752f9d0f7d31f2e1953260496"
+        },
+        "tracking/knowledge_grounding.py": {
+          "attach_matching_roster_profile": "493097ecb6db5025f9a69ae381e424058fac96fbc8a969e6e110fdf4e4074b81",
+          "bind_attached_profile": "50cf39abd59bf35d4edc279095cedf7566a8420c0a82febae5b3439566471929",
+          "initialize_team": "1a5e7156276fcf3bed991cfceb4d8c0665c48f205f487050748ccc850fc517fc"
+        },
+        "recognition/event_report.py": {
+          "reconstruct_and_package": "06a9c9a24b89d6675619e92842457b22b4c62ae7b8c4ea86e1b3a834cc59b073"
+        },
+        "tracking/battle_state.py": {
+          "to_dict": "1a1b396a27058fefefd7eacdb6b39d862a61883e650a5034f06592f8b5974916"
+        }
+      }
+    },
+    "24": {
+      "run_id": "fresh-b24-20261101-v1",
+      "source_directory": ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1",
+      "benchmark_directory": ".cache/battles/sample_battle_24/fresh-benchmark/fresh-b24-20261101-v1",
+      "report_directory": "reports/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1",
+      "status": "complete",
+      "original_seal_verified": true,
+      "original_manifest_hash_verified": true,
+      "command": [
+        "/Users/yyi/Pokemon-Champions-Assistant/.venv/bin/python",
+        "/Users/yyi/Pokemon-Champions-Assistant/main.py",
+        "--video",
+        "/Users/yyi/Pokemon-Champions-Assistant/tests/fixtures/sample_battle_24.mp4",
+        "--profile",
+        "event-driven",
+        "--identity-mode",
+        "lightweight",
+        "--sample-fps",
+        "2",
+        "--run-id",
+        "fresh-b24-20261101-v1"
+      ],
+      "hardware": {
+        "platform": "macOS-26.3.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.10.4 (v3.10.4:9d38120e33, Mar 23 2022, 17:29:05) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "logical_cpus": 8
+      },
+      "cold_run": true,
+      "attempt_count": 1,
+      "profiler_enabled": false,
+      "video_seconds": 1052.82,
+      "video_source_bytes": 1979912885,
+      "full_external_cli_wall_seconds": 1460.9837227498647,
+      "subprocess_start_epoch_ns": 1793515584730671000,
+      "subprocess_end_epoch_ns": 1793517045708033000,
+      "PTR": 1.3876861407931695,
+      "internal_pipeline_seconds": 1460.2857419578359,
+      "outside_internal_pipeline_seconds": 0.6979807920288295,
+      "sampled_materialized_frames": 2106,
+      "inspected_frames": 2073,
+      "source_decoded_frames": 43422,
+      "ocr_calls": 8504,
+      "ocr_cumulative_model_call_seconds": 428.594327542698,
+      "ocr_mean_seconds_per_call": 0.05039914481922601,
+      "icon_calls": 84,
+      "icon_cumulative_model_call_seconds": 28.63984662713483,
+      "icon_mean_seconds_per_call": 0.34095055508493843,
+      "broad_reconstruction_seconds": 858.5836793330964,
+      "isolated_StateEngine_replay_seconds": null,
+      "receipts": 2780,
+      "receipt_statuses": {
+        "recorded_observation": 77,
+        "applied_candidate": 2657,
+        "applied_partial": 34,
+        "deferred": 12
+      },
+      "applied_receipts": 2691,
+      "admitted_including_recorded_observations": 2768,
+      "event_types": {
+        "preview_observation": 48,
+        "trainer_observation": 2,
+        "entry_observation": 16,
+        "send_out": 18,
+        "hud_observation": 2570,
+        "phase_observation": 11,
+        "move_effect": 17,
+        "transformation": 2,
+        "move_execution": 34,
+        "side_condition_change": 5,
+        "trick_room_change": 2,
+        "effectiveness": 7,
+        "stat_change": 11,
+        "switch_out": 12,
+        "ability_activation": 10,
+        "weather_change": 3,
+        "item_activation": 4,
+        "hp_change": 2,
+        "visual_observation": 1,
+        "item_change": 1,
+        "faint": 4
+      },
+      "receipts_per_broad_reconstruction_second": 3.237890571317825,
+      "broad_reconstruction_seconds_per_receipt": 0.30884305011981883,
+      "model_plus_reconstruction_remainder_seconds": 145.16586924693547,
+      "last_recognition_progress": {
+        "video_seconds": 1051.0,
+        "inspected_frames": 2070,
+        "ocr_calls": 8501,
+        "internal_elapsed_wall_seconds": 598.8
+      },
+      "replay_progress": [
+        {
+          "processed_events": 100,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 208
+        },
+        {
+          "processed_events": 200,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 209
+        },
+        {
+          "processed_events": 300,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 210
+        },
+        {
+          "processed_events": 400,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 211
+        },
+        {
+          "processed_events": 500,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 212
+        },
+        {
+          "processed_events": 600,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 213
+        },
+        {
+          "processed_events": 700,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 214
+        },
+        {
+          "processed_events": 800,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 215
+        },
+        {
+          "processed_events": 900,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 216
+        },
+        {
+          "processed_events": 1000,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 217
+        },
+        {
+          "processed_events": 1100,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 218
+        },
+        {
+          "processed_events": 1200,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 219
+        },
+        {
+          "processed_events": 1300,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 220
+        },
+        {
+          "processed_events": 1400,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 221
+        },
+        {
+          "processed_events": 1500,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 222
+        },
+        {
+          "processed_events": 1600,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 223
+        },
+        {
+          "processed_events": 1700,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 224
+        },
+        {
+          "processed_events": 1800,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 225
+        },
+        {
+          "processed_events": 1900,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 226
+        },
+        {
+          "processed_events": 2000,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 227
+        },
+        {
+          "processed_events": 2100,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 228
+        },
+        {
+          "processed_events": 2200,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 229
+        },
+        {
+          "processed_events": 2300,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 230
+        },
+        {
+          "processed_events": 2400,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 231
+        },
+        {
+          "processed_events": 2500,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 232
+        },
+        {
+          "processed_events": 2600,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 233
+        },
+        {
+          "processed_events": 2700,
+          "total_events": 2780,
+          "elapsed_wall_seconds": null,
+          "source_line": 234
+        }
+      ],
+      "replay_progress_intervals": [
+        {
+          "event_index_start_exclusive": 0,
+          "event_index_end_inclusive": 800,
+          "event_count": 800,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "preview_observation": 30,
+            "trainer_observation": 2,
+            "entry_observation": 5,
+            "send_out": 7,
+            "hud_observation": 715,
+            "phase_observation": 4,
+            "move_effect": 6,
+            "transformation": 1,
+            "move_execution": 11,
+            "side_condition_change": 2,
+            "trick_room_change": 1,
+            "effectiveness": 2,
+            "stat_change": 3,
+            "switch_out": 3,
+            "ability_activation": 3,
+            "weather_change": 1,
+            "item_activation": 2,
+            "hp_change": 1,
+            "visual_observation": 1
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        },
+        {
+          "event_index_start_exclusive": 800,
+          "event_index_end_inclusive": 1600,
+          "event_count": 800,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "hud_observation": 740,
+            "switch_out": 5,
+            "entry_observation": 6,
+            "send_out": 6,
+            "move_execution": 7,
+            "move_effect": 2,
+            "item_activation": 1,
+            "phase_observation": 2,
+            "preview_observation": 18,
+            "ability_activation": 4,
+            "transformation": 1,
+            "effectiveness": 2,
+            "side_condition_change": 1,
+            "trick_room_change": 1,
+            "stat_change": 1,
+            "item_change": 1,
+            "faint": 1,
+            "weather_change": 1
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        },
+        {
+          "event_index_start_exclusive": 1600,
+          "event_index_end_inclusive": 2400,
+          "event_count": 800,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "hud_observation": 753,
+            "switch_out": 3,
+            "entry_observation": 4,
+            "send_out": 4,
+            "move_execution": 12,
+            "move_effect": 7,
+            "stat_change": 2,
+            "effectiveness": 3,
+            "phase_observation": 4,
+            "item_activation": 1,
+            "hp_change": 1,
+            "faint": 2,
+            "side_condition_change": 2,
+            "ability_activation": 2
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        },
+        {
+          "event_index_start_exclusive": 2400,
+          "event_index_end_inclusive": 2780,
+          "event_count": 380,
+          "elapsed_seconds": null,
+          "seconds_per_event": null,
+          "event_types": {
+            "hud_observation": 362,
+            "stat_change": 5,
+            "move_execution": 4,
+            "phase_observation": 1,
+            "move_effect": 2,
+            "switch_out": 1,
+            "entry_observation": 1,
+            "send_out": 1,
+            "ability_activation": 1,
+            "weather_change": 1,
+            "faint": 1
+          },
+          "reason": "Production replay progress lines contain no monotonic or wall timestamps"
+        }
+      ],
+      "filesystem_timestamps": {
+        "decode_log": {
+          "path": ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/decode.log",
+          "bytes": 12824066,
+          "birth_epoch_seconds": 1793515586.5499713,
+          "mtime_epoch_seconds": 1793516184.1244876,
+          "birth_relative_cli_seconds": 1.8193001747131348,
+          "mtime_relative_cli_seconds": 599.3938164710999
+        },
+        "recognition_aggregate": {
+          "path": ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/observations.json",
+          "bytes": 26459437,
+          "birth_epoch_seconds": 1793516184.8383036,
+          "mtime_epoch_seconds": 1793516184.8578014,
+          "birth_relative_cli_seconds": 600.1076323986053,
+          "mtime_relative_cli_seconds": 600.1271302700043
+        },
+        "prediction_cache": {
+          "path": ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/video-only.json",
+          "bytes": 18008966,
+          "birth_epoch_seconds": 1793517042.433246,
+          "mtime_epoch_seconds": 1793517042.448031,
+          "birth_relative_cli_seconds": 1457.7025747299194,
+          "mtime_relative_cli_seconds": 1457.7173597812653
+        },
+        "replay_export": {
+          "path": ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/replay.json",
+          "bytes": 29972252,
+          "birth_epoch_seconds": 1793517043.0700204,
+          "mtime_epoch_seconds": 1793517043.0925014,
+          "birth_relative_cli_seconds": 1458.339349269867,
+          "mtime_relative_cli_seconds": 1458.3618302345276
+        },
+        "prediction_report": {
+          "path": "reports/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/video-only.json",
+          "bytes": 18008966,
+          "birth_epoch_seconds": 1793517043.452472,
+          "mtime_epoch_seconds": 1793517043.4649565,
+          "birth_relative_cli_seconds": 1458.7218008041382,
+          "mtime_relative_cli_seconds": 1458.7342853546143
+        },
+        "summary": {
+          "path": "reports/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/summary.json",
+          "bytes": 539,
+          "birth_epoch_seconds": 1793517043.467756,
+          "mtime_epoch_seconds": 1793517043.467871,
+          "birth_relative_cli_seconds": 1458.73708486557,
+          "mtime_relative_cli_seconds": 1458.7371997833252
+        },
+        "frames_index": {
+          "path": "reports/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/frames.json",
+          "bytes": 14562822,
+          "birth_epoch_seconds": 1793517044.7971194,
+          "mtime_epoch_seconds": 1793517044.8049843,
+          "birth_relative_cli_seconds": 1460.06644821167,
+          "mtime_relative_cli_seconds": 1460.0743131637573
+        },
+        "monitoring_index": {
+          "path": "reports/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/monitoring.json",
+          "bytes": 1103023,
+          "birth_epoch_seconds": 1793517045.101308,
+          "mtime_epoch_seconds": 1793517045.1015308,
+          "birth_relative_cli_seconds": 1460.3706369400024,
+          "mtime_relative_cli_seconds": 1460.3708596229553
+        },
+        "viewer": {
+          "path": "reports/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/review.html",
+          "bytes": 17873144,
+          "birth_epoch_seconds": 1793517045.298956,
+          "mtime_epoch_seconds": 1793517045.3153803,
+          "birth_relative_cli_seconds": 1460.5682847499847,
+          "mtime_relative_cli_seconds": 1460.5847091674805
+        },
+        "prediction_seal": {
+          "path": ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/video-only-seal.json",
+          "bytes": 454,
+          "birth_epoch_seconds": 1793517045.35961,
+          "mtime_epoch_seconds": 1793517045.3597438,
+          "birth_relative_cli_seconds": 1460.6289389133453,
+          "mtime_relative_cli_seconds": 1460.6290726661682
+        },
+        "manifest": {
+          "path": ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/manifest.json",
+          "bytes": 16995,
+          "birth_epoch_seconds": 1793517045.4404724,
+          "mtime_epoch_seconds": 1793517045.4410155,
+          "birth_relative_cli_seconds": 1460.709801197052,
+          "mtime_relative_cli_seconds": 1460.7103443145752
+        }
+      },
+      "filesystem_derived_approximation": {
+        "reconstruction_start_relative_cli_seconds": 600.1534055324737,
+        "pre_reconstruction_seconds": 600.1534055324737,
+        "post_reconstruction_seconds": 2.246637884294614,
+        "before_first_prediction_file_birth_seconds": 857.5491691974457,
+        "first_prediction_birth_to_summary_birth_seconds": 1.0345101356506348,
+        "decode_log_lifetime_seconds": 597.5745162963867,
+        "limitations": "Filesystem-derived timestamps, not profiler timers. Atomic writer JSON-encodes before creating temp file; birth-to-mtime omits encoding and is not serialization cost. Filesystem timestamps not covered by content SHA seals."
+      },
+      "post_cli_projection": {
+        "status": "complete",
+        "wall_seconds": 0.08768787514418364,
+        "state_and_receipts_unchanged": true,
+        "observed_nonzero_numeric_segments": 38,
+        "projected_membership_exact": true,
+        "normal_cli_time_included": false,
+        "targeted_high_fps_passes": 0,
+        "targeted_high_fps_frames": 0,
+        "reason": "Production adaptive 3/4 FPS attempts are recorded separately; this projection itself invokes no recognition."
+      },
+      "freeze_stage_wall_seconds": 6.914007042068988,
+      "HP_workload": {
+        "actions": 34,
+        "episodes": 20,
+        "supported_complete_episodes": 13,
+        "nonzero_numeric_segments": 38
+      },
+      "state_structure": {
+        "compact_json_bytes": 6722458,
+        "initial_compact_json_bytes": 59059,
+        "pokemon_instances": 13,
+        "hp_observations": 2271,
+        "numeric_hp_observations": 2269,
+        "nonzero_numeric_hp_observations": 38,
+        "active_entry_episodes": 18,
+        "active_entry_episodes_compact_bytes": 2657993,
+        "episode_field_compact_bytes": {
+          "episode_id": 576,
+          "instance_id": 936,
+          "side": 144,
+          "species_id": 56,
+          "start": 242,
+          "entry_event_id": 576,
+          "entry_evidence": 19265,
+          "start_kind": 180,
+          "slot": 116,
+          "placements": 20271,
+          "departure": 1900763,
+          "persistent_identity_status": 463,
+          "possible_prior_instance_ids": 416,
+          "distinct_biological_individual_asserted": 90,
+          "entry_display_reference": 225,
+          "species_known_at_entry": 72,
+          "hud_binding": 864,
+          "species_resolution_time": 242,
+          "encounter_id": 250,
+          "continuity_evidence": 705822
+        },
+        "identity_ledger_compact_bytes": 926752,
+        "persistent_return_proofs": 5,
+        "persistent_return_proofs_compact_bytes": 705828,
+        "team_linkage": {
+          "status": "existing_complete_self_roster_bound",
+          "team_id": "sample_team_team7_20261021",
+          "review": {
+            "battle_id": "sample_battle_24",
+            "species_ids": [
+              3,
+              6,
+              279,
+              445,
+              861,
+              1018
+            ],
+            "matches_team7": true,
+            "reviewer": "existing structured self-roster recognition, not independent visual truth",
+            "image": ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/frames/000032.png",
+            "sha256": "a26738aff32d6948fc05a6a94e2196636054de5a2a60c82f5e1fb045ea6ca754",
+            "observation_time": 15.503333333333334
+          }
+        },
+        "bound_team_instances": 4
+      },
+      "static_one_pass_workload": {
+        "duplicate_ordering_comparisons": 7728400,
+        "enrich_trigger_records": 2579,
+        "prefix_event_references_enumerated_by_enrich": 3626317,
+        "final_retained_numeric_observation_prefix_visit_proxy": 2957911,
+        "prefix_visit_proxy_caveat": "Counts retained final observations by source-event birth; not a measured call/CPU counter and may omit transient histories",
+        "confusion_context_requested": 0,
+        "confusion_binding_found": 0
+      },
+      "adaptive": {
+        "available": true,
+        "status": "complete",
+        "planned_windows": 0,
+        "completed_attempts": 0
+      },
+      "output_sizes": {
+        "categories": {
+          "cache/top_level_files": {
+            "files": 8,
+            "logical_bytes": 88121592
+          },
+          "cache/monitor": {
+            "files": 2106,
+            "logical_bytes": 999826
+          },
+          "cache/source": {
+            "files": 109,
+            "logical_bytes": 11771660
+          },
+          "cache/frames": {
+            "files": 2073,
+            "logical_bytes": 2408737695
+          },
+          "cache/reads": {
+            "files": 8504,
+            "logical_bytes": 481038
+          },
+          "cache/icons": {
+            "files": 84,
+            "logical_bytes": 128914
+          },
+          "cache/observations": {
+            "files": 2073,
+            "logical_bytes": 20612532
+          },
+          "report/top_level_files": {
+            "files": 5,
+            "logical_bytes": 51548494
+          },
+          "report/assets": {
+            "files": 2072,
+            "logical_bytes": 2408727259
+          }
+        },
+        "total_logical_bytes": 4991129010,
+        "unique_inode_logical_bytes": 2582401751,
+        "file_count": 17034,
+        "write_cost_seconds": null,
+        "limitation": "Logical sizes; excludes source video/shared assets. Unique-inode total deduplicates hardlinks, not filesystem compression or clone sharing."
+      },
+      "frozen_function_AST_sha256": {
+        "tracking/state_engine.py": {
+          "replay": "708d71ba312e230bdef3b22294b77933f9a1481177e88899d8aa5c03a8f12027",
+          "hash_state": "bb3d7dd5503638221a2af13a9d0e5b0b7162bc7f96946348e9b1419ca4e7b24c",
+          "_hp": "41bd0385e677f1db08829e284148bc6a50f4e3cdf527c7680db77045ed33d185",
+          "_transition": "e4b7377ca83d13b06d12cc80102592c20e06e8971be7e75b2e3b4c67f8642539"
+        },
+        "tracking/hp_causes.py": {
+          "enrich": "51e1aa3c76f4730796142f002261407bd5ada7740b654fdbc264c45f566b3d7f",
+          "action_resolutions": "64be0829bf3e38eca0bba7568343159fe0bea54752f9d0f7d31f2e1953260496"
+        },
+        "tracking/knowledge_grounding.py": {
+          "attach_matching_roster_profile": "493097ecb6db5025f9a69ae381e424058fac96fbc8a969e6e110fdf4e4074b81",
+          "bind_attached_profile": "50cf39abd59bf35d4edc279095cedf7566a8420c0a82febae5b3439566471929",
+          "initialize_team": "1a5e7156276fcf3bed991cfceb4d8c0665c48f205f487050748ccc850fc517fc"
+        },
+        "recognition/event_report.py": {
+          "reconstruct_and_package": "06a9c9a24b89d6675619e92842457b22b4c62ae7b8c4ea86e1b3a834cc59b073"
+        },
+        "tracking/battle_state.py": {
+          "to_dict": "1a1b396a27058fefefd7eacdb6b39d862a61883e650a5034f06592f8b5974916"
+        }
+      }
+    }
+  },
+  "sources": {
+    ".cache/battles/sample_battle_21/fresh-benchmark/fresh-b21-context-v1/execution.json": "2bb08e7803a0ed369a508a96ebb76081f94f54bfe31217dd46e92723b30fc294",
+    ".cache/battles/sample_battle_21/fresh-benchmark/fresh-b21-context-v1/normal-pipeline-attempt-1.log": "5a2085746595766f79deefc41d1b4dd3f508599f160927c9c732c640702db080",
+    ".cache/battles/sample_battle_21/fresh-benchmark/fresh-b21-context-v1/projection-stage.json": "4917a90dd77db4e258cb79f1d74d4936a88472172af36a21104711f0c551521e",
+    ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/manifest.json": "6566e5a7e260458758d985ff0912093eb177a487284ff02aabbe074e40ad0999",
+    ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/video-only-seal.json": "5caa61e3ca6b4d38fdd4fe8d84228499b71e6960a35655dd12b81ab42f99c04c",
+    ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/source/tracking/state_engine.py": "ef4c3ed595351f17f8cf2c63b0dbc272e4f1c43eef7630a47099f8ad549ca955",
+    ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/source/tracking/hp_causes.py": "169f6ee06c2c356dea38fd0c579c4c3cef0cac4efc434eeeb43b528d7aecf889",
+    ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/source/tracking/knowledge_grounding.py": "43cd507fb2ea86f8c8931d711d5a5b69b0cd80b93b5f92a4ec5df28e6f56dbd0",
+    ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/source/recognition/event_report.py": "95df06bec79132afe05ca680667c4539576ddd657b7bf9c61e432713455709cb",
+    ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/source/tracking/battle_state.py": "e27e2672243984b0d24b6956dd8e3ec2f057177c20160ab32999c08e14f8a0b1",
+    ".cache/battles/sample_battle_22/fresh-benchmark/fresh-b22-ditto-20261030-v1/execution.json": "96171ef5cc11bd08f40582c7fbf5503e24bae792891b55313eb8dd650e2b677f",
+    ".cache/battles/sample_battle_22/fresh-benchmark/fresh-b22-ditto-20261030-v1/normal-pipeline-attempt-1.log": "e2df8d697a84e7453042ce6c7bf6ea9c5458e291e8b542f92af6faefd2be324f",
+    ".cache/battles/sample_battle_22/fresh-benchmark/fresh-b22-ditto-20261030-v1/projection-stage.json": "b181ba198bbf08f0e54f222b808f4668893f08144d1db4f76fa1d99ea9167e32",
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/manifest.json": "0d867d6941f9cb09ddf0995d2727db74cb0d940610ebab6b44f464b8f5aec23d",
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/video-only-seal.json": "7a20d0cfba5a49634736d283660eb0be35e43f13af3484e90645bc4f97c468df",
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/source/tracking/state_engine.py": "b51d0333a25e19504d7a52db4024a7e1e969013a3c22eb8cf72fdcd1cb77274a",
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/source/tracking/hp_causes.py": "25532d9a4d147b53debe4c53a51947853e33449898cd5175ba57d8632fb692c3",
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/source/tracking/knowledge_grounding.py": "43cd507fb2ea86f8c8931d711d5a5b69b0cd80b93b5f92a4ec5df28e6f56dbd0",
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/source/recognition/event_report.py": "de6452a40471b6a843d5b4ae27d8ec0a7b2fc4e24a76371b6cfbd4ecaf86d221",
+    ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/source/tracking/battle_state.py": "e27e2672243984b0d24b6956dd8e3ec2f057177c20160ab32999c08e14f8a0b1",
+    ".cache/battles/sample_battle_23/fresh-benchmark/mega-b23-20261030-v1/execution.json": "368f46ca659c104d196ecb9bf1beac43d1d5355620fecbb6b2fc3ddeaa8abe51",
+    ".cache/battles/sample_battle_23/fresh-benchmark/mega-b23-20261030-v1/normal-pipeline-attempt-1.log": "ff7f1c4c7b577ff0c19b3cd9644cad55cf85ab271f20a70a1c16282c2cc60af0",
+    ".cache/battles/sample_battle_23/fresh-benchmark/mega-b23-20261030-v1/projection-stage.json": "39e1873711856bd6cd4d98f6090a1928fcdb7d0715f4c64bb60ecec392c55de4",
+    ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/manifest.json": "02dc6103ef91daa98e4809bee2184342c0fc7a4798a02ed631aba65b6d352910",
+    ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/video-only-seal.json": "ffbb2a56bc3b18e3b9e6a68298cc75f0f6eb3d7fd2906c22b3165946cf10ff5f",
+    ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/state_engine.py": "c79266d8909f81e22714ef8ac550c4cb4a32151353f1c431b1960fe35d675de4",
+    ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/hp_causes.py": "b2036f5d0660c287f16c07197072ad281050a383a5673a5e1a2de0dd7c160ee4",
+    ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/knowledge_grounding.py": "8e83303821a83d936fb7107ed548d268e8ef452fe20c88b59be7551cb154c5e5",
+    ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/recognition/event_report.py": "49ddffb7fba7a572b5fb8300d28c080e80874b075829f568f944b424bb186c4f",
+    ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/battle_state.py": "e27e2672243984b0d24b6956dd8e3ec2f057177c20160ab32999c08e14f8a0b1",
+    ".cache/battles/sample_battle_24/fresh-benchmark/fresh-b24-20261101-v1/execution.json": "020533cf940f83ee7a5e225365703c8efe17631d1ded6808b64c7a1aa3b9d4a1",
+    ".cache/battles/sample_battle_24/fresh-benchmark/fresh-b24-20261101-v1/normal-pipeline-attempt-1.log": "b5f6b3587dcf42cb6977bef7dc95052af438daec73d182cef0e2c19678c221e0",
+    ".cache/battles/sample_battle_24/fresh-benchmark/fresh-b24-20261101-v1/projection-stage.json": "76221d23b7d0bb9ffbbe601b5c9a9522ba0efbbb642beb2255fd5ac2adbe7589",
+    ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/manifest.json": "3c4e6acea33fa7667b6ca35c5fc473233b4b664af5fa1c4772d0bf9c7032e1a3",
+    ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/video-only-seal.json": "53cb78569beddd22a9e9a6fc971f5e9beffef919edcf7ba4f2b5dcf7a4813ba8",
+    ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/state_engine.py": "7917b93859f333af692c9f8a567bd2444ae0b9d1807bba476f17c8a43a184e57",
+    ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/hp_causes.py": "b2036f5d0660c287f16c07197072ad281050a383a5673a5e1a2de0dd7c160ee4",
+    ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/knowledge_grounding.py": "8e83303821a83d936fb7107ed548d268e8ef452fe20c88b59be7551cb154c5e5",
+    ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/recognition/event_report.py": "49ddffb7fba7a572b5fb8300d28c080e80874b075829f568f944b424bb186c4f",
+    ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/battle_state.py": "e27e2672243984b0d24b6956dd8e3ec2f057177c20160ab32999c08e14f8a0b1"
+  },
+  "separate_diagnostic_contexts": [
+    {
+      "stage": "contexts:da213a54b8e86b2e",
+      "status": "complete",
+      "pid": 24323,
+      "output": "contexts-da213a54b8e86b2e-attempt-1.jsonl",
+      "started_epoch_seconds": 1793518050.535315,
+      "complete_wall_seconds": 1053.9198589324951,
+      "last_checkpoint_elapsed_seconds": 1031.0341670513153,
+      "last_checkpoint_event": 2750,
+      "intervals": [
+        {
+          "start_event": 0,
+          "end_event": 2750,
+          "elapsed_seconds": 1031.0341670513153,
+          "seconds_per_event": 0.3749215152913874,
+          "timer_scope": "diagnostic context stage including replay, callback projections, JSONL writes and fsync checkpoints"
+        },
+        {
+          "start_event": 2750,
+          "end_event": 2780,
+          "elapsed_seconds": 22.88569188117981,
+          "seconds_per_event": 0.762856396039327,
+          "timer_scope": "last receipts plus JSONL flush/fsync and context hashing before completion metadata; not pure event execution"
+        }
+      ],
+      "not_original_production": true
+    },
+    {
+      "stage": "contexts:8a25d0dd9e02c2d9",
+      "status": "interrupted",
+      "pid": 24323,
+      "output": "contexts-8a25d0dd9e02c2d9-attempt-1.jsonl",
+      "started_epoch_seconds": 1793519109.2042181,
+      "complete_wall_seconds": null,
+      "last_checkpoint_elapsed_seconds": 124.33788394927979,
+      "last_checkpoint_event": 1050,
+      "intervals": [
+        {
+          "start_event": 0,
+          "end_event": 1050,
+          "elapsed_seconds": 124.33788394927979,
+          "seconds_per_event": 0.11841703233264742,
+          "timer_scope": "diagnostic context stage including replay, callback projections, JSONL writes and fsync checkpoints"
+        }
+      ],
+      "not_original_production": true
+    },
+    {
+      "stage": "contexts:0853143dab85ff88",
+      "status": "interrupted",
+      "pid": 25307,
+      "output": "contexts-0853143dab85ff88-attempt-1.jsonl",
+      "started_epoch_seconds": 1793519239.58213,
+      "complete_wall_seconds": null,
+      "last_checkpoint_elapsed_seconds": 1313.1919951438904,
+      "last_checkpoint_event": 1400,
+      "intervals": [
+        {
+          "start_event": 0,
+          "end_event": 1400,
+          "elapsed_seconds": 1313.1919951438904,
+          "seconds_per_event": 0.937994282245636,
+          "timer_scope": "diagnostic context stage including replay, callback projections, JSONL writes and fsync checkpoints"
+        }
+      ],
+      "not_original_production": true
+    },
+    {
+      "stage": "contexts:119376ea8122799a",
+      "status": "complete",
+      "pid": 26158,
+      "output": "contexts-119376ea8122799a-attempt-1.jsonl",
+      "started_epoch_seconds": 1793520788.294517,
+      "complete_wall_seconds": 1048.2694070339203,
+      "last_checkpoint_elapsed_seconds": 1025.2091779708862,
+      "last_checkpoint_event": 2750,
+      "intervals": [
+        {
+          "start_event": 0,
+          "end_event": 2750,
+          "elapsed_seconds": 1025.2091779708862,
+          "seconds_per_event": 0.3728033374439586,
+          "timer_scope": "diagnostic context stage including replay, callback projections, JSONL writes and fsync checkpoints"
+        },
+        {
+          "start_event": 2750,
+          "end_event": 2780,
+          "elapsed_seconds": 23.060229063034058,
+          "seconds_per_event": 0.7686743021011353,
+          "timer_scope": "last receipts plus JSONL flush/fsync and context hashing before completion metadata; not pure event execution"
+        }
+      ],
+      "not_original_production": true
+    }
+  ],
+  "B24_minus_B23": {
+    "total_external_delta_seconds": 657.2667626247276,
+    "delta_components": {
+      "broad_reconstruction": {
+        "seconds": 500.61633741715923,
+        "percent_delta": 76.16638568760105
+      },
+      "ocr_cumulative": {
+        "seconds": 108.6962080700323,
+        "percent_delta": 16.537609118703205
+      },
+      "icon_cumulative": {
+        "seconds": 23.683428124757484,
+        "percent_delta": 3.603320519385483
+      },
+      "unattributed_residual": {
+        "seconds": 24.27078901277855,
+        "percent_delta": 3.692684674310266
+      }
+    },
+    "event_count_ratio": 1.3654223968565815,
+    "video_duration_ratio": 1.337287877248247,
+    "broad_reconstruction_ratio": 2.398497233679828,
+    "broad_per_receipt_ratio": 1.7565972545942912,
+    "final_state_compact_size_ratio": 2.1789728214187316,
+    "ocr_mean_call_ratio": 0.908103715073077
+  },
+  "not_measured_phases": [
+    "initialization alone",
+    "decoding CPU/wait alone",
+    "message parsing/event assembly alone",
+    "StateEngine.replay alone",
+    "production HP resolution/enrich alone",
+    "team profile linkage alone",
+    "per-function CPU/disk-I/O/RSS time series",
+    "JSON encoding or output-write cost alone",
+    "per-100-event production replay timing"
+  ],
+  "production_hidden_inverse_inference": {
+    "executed": false,
+    "basis": "Frozen reconstruct_and_package appends records once, invokes StateEngine.replay and optional resolution sampling; no ChronologicalTrace/inverse damage/speed inference. Diagnostic inference is later and outside CLI."
+  },
+  "user_900_seconds_1600_events": {
+    "status": "approximate user-reported observation; clock origin and exact timestamp not saved in production log",
+    "not_usable_as_exact_measurement": true,
+    "if_clock_is_total_cli": {
+      "estimated_pre_reconstruction_seconds": 600.1534055324737,
+      "estimated_time_since_reconstruction_start_at_1600": 299.8465944675263
+    },
+    "if_clock_is_replay_seconds": "900 exceeds original broad replay_seconds858.584; cannot be an exact point on that timer. May refer to later diagnostic replay or a different clock."
+  },
+  "original_measurements": {
+    "path": "docs/performance/b24-runtime-measurements.json",
+    "sha256": "e90307bb71740b2f776079df68d1f1ef08856c93189ebbbbbbeacf7810e3bc4e"
+  },
+  "verification": {
+    "recovered_source_hashes_checked": 40,
+    "mismatches": 0,
+    "battles": {
+      "21": {
+        "replay_sha256": "c30dff770466d43afad9500c6aa253dd9ec939d9a8334af7c7d72e1bb6985567",
+        "timing_and_workload_rechecked": true
+      },
+      "22": {
+        "replay_sha256": "8bf4e8926c331a53127ca9bc2aafad00f2498dcaef7d14d1ecdb19a6b4f7360c",
+        "timing_and_workload_rechecked": true
+      },
+      "23": {
+        "replay_sha256": "ce4079a01223b02219d45e3741f00875479efff81c9f1092ca02cf029dd80785",
+        "timing_and_workload_rechecked": true
+      },
+      "24": {
+        "replay_sha256": "9c986812e6913aa8947248135c713cf95e737cfa4bfda710fd1b0fb1699a99be",
+        "timing_and_workload_rechecked": true
+      }
+    }
+  },
+  "component_profiles": {
+    "23": {
+      "path": ".cache/battles/sample_battle_23/diagnosis/runtime-components-v2/manifest.json",
+      "sha256": "ac2375b6059919b9a6863f87bc61d11608c345b554ec496ac1b7eac8b50e701b",
+      "data": {
+        "status": "complete",
+        "identity": {
+          "script": "2afe19413923b3e8f85a28162a6d4055b71c8ef664e1ae1f1ed20205fc6491fe",
+          "replay": "ce4079a01223b02219d45e3741f00875479efff81c9f1092ca02cf029dd80785",
+          "repeats": 5,
+          "frozen": {
+            "battle_artifacts.py": "634bd643e055d16de81f19b7634833e06deada143618ad3aebb3972006811eeb",
+            "main.py": "806e67c844be6f8e3c90884c4f8f36c6c6a7d0fb7edf1d4fe03a72d90410c24b",
+            "capture/__init__.py": "514495aeb2e977b5de661765106538f4d7af98d969d69baf7dbb2cf115e20f5c",
+            "models/__init__.py": "a73d732af382b29dd1b8fc9b89d9df932f46ae3161520b12a0714573a92c0874",
+            "battle_events/evaluation.py": "2a1c66c2003b63365c8e91205268e42f5963666b8b3b42c2dc75af61e590c09c",
+            "battle_events/__init__.py": "b5b381b2b5df1c2ddacabb443ace52db897d293d696e83226f84e7277ae07dba",
+            "battle_events/message_patterns.py": "296f5a096b154a7f07bac5b77ec83a110f7bf0d77b7ddd715631b7353ce8bdce",
+            "battle_events/aliases.py": "5f56072c3bee1afd258f5d97123ebc71938c7eec59815b8a46cc8cd8d60b2a96",
+            "battle_events/parser.py": "2f74babbc27d31fd2004c908aaaeaeb45b4822bceb4a824e23000fcde1ad0768",
+            "battle_events/visible_endings.py": "badb532fce7957f1ea13a8ca0852dee1b5fbb7a5f175b6b26ccb2d68946fd2b9",
+            "battle_events/schema.py": "6c03ee087d61f437f3de831dda4bfe62c11a79e07cc91d39e7cf3230fd986689",
+            "knowledge/message_names.py": "7cbccfe190790d83081f06419dc833a5760fbdddf1ebc3541a98556e3ff59081",
+            "knowledge/stat_feasibility.py": "b71857bca2b661265ee634e7fccbe94ec52e4c4c28d69147d439b75d17af7d81",
+            "knowledge/resolution_effects.py": "ace2f8baf45ecc89451df9d1ec41d6178ac2083eb183a7d0e4330d4aee71d577",
+            "knowledge/__init__.py": "aeb72c6919a2d3a8a7a9dc8c1d6fe712f50917262635b442b15d0892d40718c6",
+            "knowledge/champions_stats.py": "b43fa3ed978a912705395089c3833b240900b356591032150f3eafe863cedf38",
+            "knowledge/identity.py": "9ef4f613b2236ab6df9a7168a2fc9c8af9beaa0ac08c9a04d62e95d1bf48817c",
+            "knowledge/roster.py": "97167846cc6b48e08cf073ebf35e0a7e6e99de833036c296ae31a0d9e2dcf807",
+            "scripts/report_m237.py": "a874f9fec14169291bf9640eb6e50359435a8aca68edfae0abbe56e39a527bee",
+            "scripts/process_m237.py": "d97693edd2cf307383054db052dcdbe0f05214c0177bacdaf861af9870b66888",
+            "scripts/benchmark_fast.py": "51f350ba608c3fc1c468dbbf00a8f9dcbdda599d76ae3e55710b07698d00836a",
+            "tracking/active_continuity.py": "20c45c4d8aef464daa544e041b94fe79f08ea121464624890d135b33e1ee6ad6",
+            "tracking/state_engine.py": "c79266d8909f81e22714ef8ac550c4cb4a32151353f1c431b1960fe35d675de4",
+            "tracking/battle_state.py": "e27e2672243984b0d24b6956dd8e3ec2f057177c20160ab32999c08e14f8a0b1",
+            "tracking/transformation.py": "508c1ac262e7413ecd6d49f3bbc87ddcb7558467bd03c124b4a8371e61ea2087",
+            "tracking/resolution_endpoints.py": "54a1c4eb0384a32ef503797c45ec91c9bb3dfc1c4055adefb6cdc2bfddb2c9d7",
+            "tracking/reliability.py": "8ffd0bda06ce1fea5e291035f0915bbbfdd28d98a60f54fa758c36fabd3c6472",
+            "tracking/hp_causes.py": "b2036f5d0660c287f16c07197072ad281050a383a5673a5e1a2de0dd7c160ee4",
+            "tracking/mechanic_rules.py": "df66003cd75e49206a622742a95fe8996fd823a2f3e4f67700e03ae2960c0154",
+            "tracking/evidence_projection.py": "2c6ec34f3cadc44fe8c930f0583e142e97b54a49843a6e3e95a567aa3103e167",
+            "tracking/double_faint.py": "b505c12e84816552723334274c4142e2931ca12bb50737e4e90625b0e4e700ea",
+            "tracking/knowledge_grounding.py": "8e83303821a83d936fb7107ed548d268e8ef452fe20c88b59be7551cb154c5e5",
+            "tracking/state_summary.py": "9c16db68d463393daf87ce333ece2f9a3bc5e6727568b06c54ffd676aa319c8f",
+            "tracking/__init__.py": "8ad55dac5577a85b7f15b1146810ebef2101f3af7b74a0ceadf08a5fccfb930d",
+            "tracking/unnerve.py": "b99135529ea5fa7b5eae545d5e8666b5c5781fa443d910627a47a8a53c3b2edb",
+            "tracking/mechanics.py": "74a9cd017a264e3c6adaa286add23a42fdcb012bda13394b896e4a4e2581dde0",
+            "tracking/decision_state.py": "f2c8dfdb32c3a6e784015b6f7f7c9239de4577e03fdc670b783f11ce1eee6726",
+            "tracking/command_reconciliation.py": "f0b3399c45abfe14350b7dbeb13b7f40f502e148ecf4de1fc4c934a7c76ff37c",
+            "tracking/resolution_context.py": "9f2d1b3d5df418468bfca966f97d1e3e711b1722e086b5feb3b43a9dd497b816",
+            "tracking/evidence_fusion.py": "c5230a827c0309b31c91d8512f64734fbe42da78dfeb8cf77289a61d534cb693",
+            "tracking/active_persistence.py": "5cae259dfdad8921dc042755ee257083ed331976d38ace27d537a8e355f4f717",
+            "tracking/state_timeline.py": "654dfbfeaf82a65e46d8e0bca449cd37367075aeb783f351b26918f4e270bbec",
+            "tracking/form_stats.py": "88bf9c207beb1ebc9e98283883bb55bbdc90f3b62c4fe258c9ea59f568b0111a",
+            "tracking/entry_hud.py": "2c9240b6ce728c8b8a98859178e4d656828329d14ccbc4c2269b7ef7ea37ed54",
+            "tracking/pokemon_knowledge.py": "66a370bacfadcddec320b80c24fa66d9e24f657479e62ba91464ff10ff427a85",
+            "tracking/hidden_state.py": "91990dab9e3505091aa3fb443381515d4a1740b44e0653d92bd29ab147e5fd5d",
+            "tracking/identity_ledger.py": "dceb85e8eb1a7c6e6b9e2e254f75f645c9b6937183bd7e360479a4d08202a770",
+            "recognition/event_report.py": "49ddffb7fba7a572b5fb8300d28c080e80874b075829f568f944b424bb186c4f",
+            "recognition/message_occurrences.py": "fce84089e871445b288c09295d59d0563108c304419aaabd9a82e91aa1460856",
+            "recognition/message_selection.py": "ceab059ec583557c4c654f112a873901c5682c2c0959b3805b366768563ef760",
+            "recognition/onnx_ocr.py": "b447298b55d1491b9322df7ca439986ed109fb1ec7291259bd360587785140fb",
+            "recognition/experimental.py": "d846f0f2876471e01e9da94a44a34e7cf3b4b7d7736d7d7b4bb2c50fdb3c9d36",
+            "recognition/move_resolution.py": "579ed3e74b22f225ba38f9fe122b51b7e11f78f877efa32030daf13bb86fc14f",
+            "recognition/video_sampling.py": "863b60ced08448fc9bcfb8eb11e6f3b72689f2182d046eef6b9639afc824d8d6",
+            "recognition/visual_adapter.py": "587c85b37edaa6a3fb607353c80e83c1c79b29b0af2bdc5c5e63ece56137950a",
+            "recognition/repeat_evidence.py": "b0d36c6f563cd69b6ad6a2b70c1f5e274f34e19f5fb26df24936cca6cdb527a4",
+            "recognition/sprite_shape.py": "1d62ae59ddbc81d08be1f4bf23b09cb4bed04ffdc6dd5e9e39ea2ba0fb5ef505",
+            "recognition/icons.py": "604dbfb45e1302ab5c23f366dfb3c1cead32c9ff2f47ec131102b3de720c7223",
+            "recognition/regions.py": "416121fcfee402eec334e503b7fc113212ec1ec0440edad28fde03fae7725a4e",
+            "recognition/paddle_ocr.py": "9dbd24cbf71b62da725084dcade37a5ef8a457c7dc7107144802e16ec2550b55",
+            "recognition/command_checkpoint.py": "81c3988cceed94a478b79b7c3595914f97a642ca557190eb4541d75ee6d41a44",
+            "recognition/double_faint.py": "8b2c38074fc0e55ef71037310cb48464619abc0eeb2954691d4df9799921b8a0",
+            "recognition/entry_model.py": "7b234765d5488116885260028470bea15bdbd75e560c7cecf2b4071028eb9139",
+            "recognition/__init__.py": "3692878de267d9f49bed20779dd0a7e6439e46e102059087c172b30901b192b9",
+            "recognition/fast_video.py": "8a5f534f09ed2356e5a6d99403ad3f5e58b09dd3c5a0dc0f20cf07e549a634e7",
+            "recognition/battle_log.py": "8935e365355fa8925e079b4d98ab508e573071119ec3cfd684a8e817946fc7fe",
+            "recognition/parsers.py": "0653cd620be2d771b0de6bcc2df147fb4947226410601978a8e31d248abb4b89",
+            "recognition/identity_modes.py": "1601203123965df8a0fcc6c73f7da66b507d64e6082b8e199684a8b13241005c",
+            "recognition/identity_flow.py": "d7196ce5f9b48a6419b213c125f93421f213dbb1e3a321a05bc6e8b508a43030",
+            "recognition/message_recovery.py": "03c5b7c37e7e420d4ab02fb1a0ccdf01ba27363cd5f4f38d7f2b7fe4e9cd4b95",
+            "recognition/phases.py": "e9d676c122aee8f4380616fa4841a935e209927962f2d7266bab506ffb4d3751",
+            "recognition/visual_evidence.py": "49e8564d231ad24d1944f763fb37bcff5df3f5128b64eb6b445a283389537fd4",
+            "recognition/ocr.py": "80ef4ad1d2e90f3fa5c6350894f32823e5cfb6913f99ce31f853610691a8378c",
+            "recognition/fast_report.py": "0ab1830cb92d8f4d71d1be8a1a3e359a87f212070671f3f9ad181325af69a4ec",
+            "recognition/ui_regions.py": "a0def1e472372e3ad884aee46d92cc52f6d20e999c6fbf44410db6bc5145339e",
+            "recognition/context.py": "0a11f239cbded94402cf1f16c0418477c1ff68290445fcc97480815a378affcb",
+            "recognition/event_schedule.py": "4c00ec880a7c6ad7a9fd5241e07f1b9ee6942c27933a393551120bfd34d84f42",
+            "recognition/fast_profile.py": "10f456bc273d4a69ae0c2f63ae3da34d3e43d579916cc0cbc581dab34a8b6d42",
+            "recognition/trainers.py": "f1d44adef09f98895f80c52e4c14c198e788f98302f84afbdee548676858bb85",
+            "recognition/log_comparison.py": "22dd7650b3010f695d19f3dc86c318bd7b031c067b633a09355df60d6a3b0a2f",
+            "recognition/hud_reuse.py": "bc49459f515de8cdaf4ac9a8a1db45b404782962909e2c8631c41d3c684eede8",
+            "recognition/entities.py": "6539cc4877b7ca50969c522bab6cd9514b7a73dcf21f3d8c15eb90fb576dc079",
+            "recognition/identity_events.py": "865e08ef2ce396135a88636d4735e4c5ab73f0f7f86f934d888e59c5ad5cd648",
+            "recognition/resolution_sampling.py": "596cffe8e4172bbb0b2317a76911c7d73fb6926bbdb63ad615c4c513fb6c3531",
+            "recognition/identity.py": "0cf7e949f4846f60a91a03f2f9b11cf69fa0d1657b0470cf50bc0ada7ac055b5",
+            "recognition/party_panel.py": "053f09ece04beeb86e3e59fe62ea6f1248b2b6fd7f6517a0888ce5a0d16885f7"
+          }
+        },
+        "battle": 23,
+        "scope": "initial/final saved-state microbenchmarks; not production replay or historical wall attribution",
+        "python": "3.10.4 (v3.10.4:9d38120e33, Mar 23 2022, 17:29:05) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "platform": "macOS-26.3.1-arm64-arm-64bit",
+        "measurements": {
+          "initial_state:deepcopy": {
+            "samples_seconds": [
+              0.0005527918692678213,
+              0.0005901248659938574,
+              0.0005709999240934849,
+              0.000547667033970356,
+              0.0005263749044388533
+            ],
+            "median_seconds": 0.0005527918692678213,
+            "minimum_seconds": 0.0005263749044388533,
+            "maximum_seconds": 0.0005901248659938574,
+            "cpu_samples_seconds": [
+              0.0005489999999999939,
+              0.0005830000000000002,
+              0.0005700000000000149,
+              0.0005419999999999869,
+              0.0005259999999999987
+            ],
+            "median_cpu_seconds": 0.0005489999999999939
+          },
+          "initial_state:to_dict": {
+            "samples_seconds": [
+              0.0004939590580761433,
+              0.0003892919048666954,
+              0.0003932919353246689,
+              0.000376041978597641,
+              0.0003752091433852911
+            ],
+            "median_seconds": 0.0003892919048666954,
+            "minimum_seconds": 0.0003752091433852911,
+            "maximum_seconds": 0.0004939590580761433,
+            "cpu_samples_seconds": [
+              0.0004790000000000072,
+              0.00038799999999999946,
+              0.00039200000000000346,
+              0.00037399999999998546,
+              0.00037399999999998546
+            ],
+            "median_cpu_seconds": 0.00038799999999999946
+          },
+          "initial_state:json_dumps_sorted": {
+            "samples_seconds": [
+              9.625009261071682e-05,
+              0.0001237918622791767,
+              0.00011908309534192085,
+              8.974992670118809e-05,
+              8.595804683864117e-05
+            ],
+            "median_seconds": 9.625009261071682e-05,
+            "minimum_seconds": 8.595804683864117e-05,
+            "maximum_seconds": 0.0001237918622791767,
+            "cpu_samples_seconds": [
+              9.400000000001074e-05,
+              0.00011099999999999999,
+              0.00011900000000000799,
+              8.899999999997799e-05,
+              8.500000000000174e-05
+            ],
+            "median_cpu_seconds": 9.400000000001074e-05
+          },
+          "initial_state:hash_state": {
+            "samples_seconds": [
+              0.0004712499212473631,
+              0.0004691248759627342,
+              0.0004780418239533901,
+              0.00046545802615582943,
+              0.000551166944205761
+            ],
+            "median_seconds": 0.0004712499212473631,
+            "minimum_seconds": 0.00046545802615582943,
+            "maximum_seconds": 0.000551166944205761,
+            "cpu_samples_seconds": [
+              0.0004699999999999982,
+              0.0004689999999999972,
+              0.0004770000000000052,
+              0.0004649999999999932,
+              0.0005440000000000167
+            ],
+            "median_cpu_seconds": 0.0004699999999999982
+          },
+          "state:deepcopy": {
+            "samples_seconds": [
+              0.08670058287680149,
+              0.06664650002494454,
+              0.09150574984960258,
+              0.0656690001487732,
+              0.08728237496688962
+            ],
+            "median_seconds": 0.08670058287680149,
+            "minimum_seconds": 0.0656690001487732,
+            "maximum_seconds": 0.09150574984960258,
+            "cpu_samples_seconds": [
+              0.08620699999999992,
+              0.066334,
+              0.087426,
+              0.06543300000000007,
+              0.08618999999999999
+            ],
+            "median_cpu_seconds": 0.08618999999999999
+          },
+          "state:to_dict": {
+            "samples_seconds": [
+              0.15458850003778934,
+              0.12885370897129178,
+              0.1296301670372486,
+              0.14699004078283906,
+              0.12836258299648762
+            ],
+            "median_seconds": 0.1296301670372486,
+            "minimum_seconds": 0.12836258299648762,
+            "maximum_seconds": 0.15458850003778934,
+            "cpu_samples_seconds": [
+              0.15387799999999996,
+              0.12841199999999997,
+              0.12862799999999996,
+              0.14649200000000007,
+              0.12800600000000006
+            ],
+            "median_cpu_seconds": 0.12862799999999996
+          },
+          "state:json_dumps_sorted": {
+            "samples_seconds": [
+              0.02829283382743597,
+              0.029376208083704114,
+              0.02803783304989338,
+              0.0278934589587152,
+              0.029458416858687997
+            ],
+            "median_seconds": 0.02829283382743597,
+            "minimum_seconds": 0.0278934589587152,
+            "maximum_seconds": 0.029458416858687997,
+            "cpu_samples_seconds": [
+              0.02819499999999997,
+              0.02915599999999996,
+              0.027915000000000134,
+              0.027815000000000145,
+              0.028769000000000045
+            ],
+            "median_cpu_seconds": 0.02819499999999997
+          },
+          "state:hash_state": {
+            "samples_seconds": [
+              0.16096008312888443,
+              0.18179312511347234,
+              0.15944641712121665,
+              0.18296862510032952,
+              0.15988804097287357
+            ],
+            "median_seconds": 0.16096008312888443,
+            "minimum_seconds": 0.15944641712121665,
+            "maximum_seconds": 0.18296862510032952,
+            "cpu_samples_seconds": [
+              0.15963199999999977,
+              0.18094600000000005,
+              0.15880899999999976,
+              0.18254500000000018,
+              0.159335
+            ],
+            "median_cpu_seconds": 0.15963199999999977
+          },
+          "final_prefix:hp_enrich": {
+            "samples_seconds": [
+              0.032625250052660704,
+              0.03331129206344485,
+              0.03342895791865885,
+              0.03204741585068405,
+              0.03221041685901582
+            ],
+            "median_seconds": 0.032625250052660704,
+            "minimum_seconds": 0.03204741585068405,
+            "maximum_seconds": 0.03342895791865885,
+            "cpu_samples_seconds": [
+              0.03251500000000007,
+              0.033170000000000144,
+              0.03327900000000028,
+              0.0319020000000001,
+              0.03215900000000005
+            ],
+            "median_cpu_seconds": 0.03251500000000007
+          }
+        },
+        "timing": "perf_counter plus process_time, warm process, default GC, 5 repetitions; setup/input loading and warmup excluded",
+        "copy_hash_profile_top_cumulative": [
+          {
+            "file": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/state_engine.py",
+            "line": 59,
+            "function": "hash_state",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 0.002255917,
+            "cumulative_seconds": 0.40566595800000005
+          },
+          {
+            "file": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/battle_state.py",
+            "line": 157,
+            "function": "to_dict",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 2.458e-06,
+            "cumulative_seconds": 0.374078083
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dataclasses.py",
+            "line": 1218,
+            "function": "asdict",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 2.875e-06,
+            "cumulative_seconds": 0.374075625
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dataclasses.py",
+            "line": 1242,
+            "function": "_asdict_inner",
+            "primitive_calls": 1,
+            "total_calls": 215875,
+            "self_seconds": 0.119955265,
+            "cumulative_seconds": 0.374069625
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dataclasses.py",
+            "line": 1276,
+            "function": "<genexpr>",
+            "primitive_calls": 251,
+            "total_calls": 110307,
+            "self_seconds": 0.025980669,
+            "cumulative_seconds": 0.37367830300000004
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dataclasses.py",
+            "line": 1274,
+            "function": "<genexpr>",
+            "primitive_calls": 3683,
+            "total_calls": 47863,
+            "self_seconds": 0.005968478,
+            "cumulative_seconds": 0.36480862000000003
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 128,
+            "function": "deepcopy",
+            "primitive_calls": 175274,
+            "total_calls": 396484,
+            "self_seconds": 0.21382830100000003,
+            "cumulative_seconds": 0.32572260000000003
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 259,
+            "function": "_reconstruct",
+            "primitive_calls": 1,
+            "total_calls": 836,
+            "self_seconds": 0.00109201,
+            "cumulative_seconds": 0.189249459
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 227,
+            "function": "_deepcopy_dict",
+            "primitive_calls": 1,
+            "total_calls": 17337,
+            "self_seconds": 0.026303808,
+            "cumulative_seconds": 0.18923625000000002
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 201,
+            "function": "_deepcopy_list",
+            "primitive_calls": 1608,
+            "total_calls": 23265,
+            "self_seconds": 0.010408351000000001,
+            "cumulative_seconds": 0.176502329
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dataclasses.py",
+            "line": 1206,
+            "function": "_is_dataclass_instance",
+            "primitive_calls": 215876,
+            "total_calls": 215876,
+            "self_seconds": 0.02202631,
+            "cumulative_seconds": 0.056455071
+          },
+          {
+            "file": "~",
+            "line": 0,
+            "function": "<built-in method builtins.hasattr>",
+            "primitive_calls": 216712,
+            "total_calls": 216712,
+            "self_seconds": 0.034480476,
+            "cumulative_seconds": 0.034480476
+          },
+          {
+            "file": "~",
+            "line": 0,
+            "function": "<method 'get' of 'dict' objects>",
+            "primitive_calls": 793804,
+            "total_calls": 793804,
+            "self_seconds": 0.031512247,
+            "cumulative_seconds": 0.031512247
+          },
+          {
+            "file": "~",
+            "line": 0,
+            "function": "<built-in method builtins.isinstance>",
+            "primitive_calls": 623526,
+            "total_calls": 623526,
+            "self_seconds": 0.026277143000000003,
+            "cumulative_seconds": 0.026277143000000003
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py",
+            "line": 183,
+            "function": "dumps",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 0.000221666,
+            "cumulative_seconds": 0.025703834000000002
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py",
+            "line": 182,
+            "function": "encode",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 1.0084e-05,
+            "cumulative_seconds": 0.025479959
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py",
+            "line": 204,
+            "function": "iterencode",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 0.024922416000000003,
+            "cumulative_seconds": 0.024922416000000003
+          },
+          {
+            "file": "~",
+            "line": 0,
+            "function": "<built-in method builtins.id>",
+            "primitive_calls": 479361,
+            "total_calls": 479361,
+            "self_seconds": 0.016138894,
+            "cumulative_seconds": 0.016138894
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 182,
+            "function": "_deepcopy_atomic",
+            "primitive_calls": 355046,
+            "total_calls": 355046,
+            "self_seconds": 0.013143061000000001,
+            "cumulative_seconds": 0.013143061000000001
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 243,
+            "function": "_keep_alive",
+            "primitive_calls": 41438,
+            "total_calls": 41438,
+            "self_seconds": 0.008197226,
+            "cumulative_seconds": 0.010874199000000001
+          }
+        ],
+        "source_replay_unchanged": true,
+        "finished_epoch": 1793539733.199112,
+        "loaded_source_modules": {
+          "tracking": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/__init__.py",
+          "tracking.battle_state": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/battle_state.py",
+          "battle_events.schema": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/battle_events/schema.py",
+          "battle_events.parser": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/battle_events/parser.py",
+          "battle_events": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/battle_events/__init__.py",
+          "tracking.mechanic_rules": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/mechanic_rules.py",
+          "tracking.mechanics": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/mechanics.py",
+          "tracking.state_engine": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/state_engine.py",
+          "tracking.hp_causes": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/source/tracking/hp_causes.py"
+        }
+      }
+    },
+    "24": {
+      "path": ".cache/battles/sample_battle_24/diagnosis/runtime-components-v2/manifest.json",
+      "sha256": "f8204773010171a7da92049ed1392e450ba0f924cb932e178e933c19706d1381",
+      "data": {
+        "status": "complete",
+        "identity": {
+          "script": "2afe19413923b3e8f85a28162a6d4055b71c8ef664e1ae1f1ed20205fc6491fe",
+          "replay": "9c986812e6913aa8947248135c713cf95e737cfa4bfda710fd1b0fb1699a99be",
+          "repeats": 5,
+          "frozen": {
+            "battle_artifacts.py": "634bd643e055d16de81f19b7634833e06deada143618ad3aebb3972006811eeb",
+            "main.py": "806e67c844be6f8e3c90884c4f8f36c6c6a7d0fb7edf1d4fe03a72d90410c24b",
+            "capture/__init__.py": "514495aeb2e977b5de661765106538f4d7af98d969d69baf7dbb2cf115e20f5c",
+            "models/__init__.py": "a73d732af382b29dd1b8fc9b89d9df932f46ae3161520b12a0714573a92c0874",
+            "battle_events/evaluation.py": "2a1c66c2003b63365c8e91205268e42f5963666b8b3b42c2dc75af61e590c09c",
+            "battle_events/__init__.py": "b5b381b2b5df1c2ddacabb443ace52db897d293d696e83226f84e7277ae07dba",
+            "battle_events/message_patterns.py": "296f5a096b154a7f07bac5b77ec83a110f7bf0d77b7ddd715631b7353ce8bdce",
+            "battle_events/aliases.py": "5f56072c3bee1afd258f5d97123ebc71938c7eec59815b8a46cc8cd8d60b2a96",
+            "battle_events/parser.py": "adce5e9cd8f6af1d1d8b5fe1f948f642611710c66df98469fe9906e7d23f26ed",
+            "battle_events/visible_endings.py": "badb532fce7957f1ea13a8ca0852dee1b5fbb7a5f175b6b26ccb2d68946fd2b9",
+            "battle_events/schema.py": "6c03ee087d61f437f3de831dda4bfe62c11a79e07cc91d39e7cf3230fd986689",
+            "knowledge/message_names.py": "7cbccfe190790d83081f06419dc833a5760fbdddf1ebc3541a98556e3ff59081",
+            "knowledge/stat_feasibility.py": "b71857bca2b661265ee634e7fccbe94ec52e4c4c28d69147d439b75d17af7d81",
+            "knowledge/resolution_effects.py": "ace2f8baf45ecc89451df9d1ec41d6178ac2083eb183a7d0e4330d4aee71d577",
+            "knowledge/__init__.py": "aeb72c6919a2d3a8a7a9dc8c1d6fe712f50917262635b442b15d0892d40718c6",
+            "knowledge/champions_stats.py": "b43fa3ed978a912705395089c3833b240900b356591032150f3eafe863cedf38",
+            "knowledge/identity.py": "9ef4f613b2236ab6df9a7168a2fc9c8af9beaa0ac08c9a04d62e95d1bf48817c",
+            "knowledge/roster.py": "97167846cc6b48e08cf073ebf35e0a7e6e99de833036c296ae31a0d9e2dcf807",
+            "scripts/report_m237.py": "a874f9fec14169291bf9640eb6e50359435a8aca68edfae0abbe56e39a527bee",
+            "scripts/process_m237.py": "d97693edd2cf307383054db052dcdbe0f05214c0177bacdaf861af9870b66888",
+            "scripts/benchmark_fast.py": "51f350ba608c3fc1c468dbbf00a8f9dcbdda599d76ae3e55710b07698d00836a",
+            "tracking/active_continuity.py": "058f1a7b8e0375c297177a6152d3cc991a2911e76bd2c289f399855b2a003384",
+            "tracking/state_engine.py": "7917b93859f333af692c9f8a567bd2444ae0b9d1807bba476f17c8a43a184e57",
+            "tracking/battle_state.py": "e27e2672243984b0d24b6956dd8e3ec2f057177c20160ab32999c08e14f8a0b1",
+            "tracking/transformation.py": "508c1ac262e7413ecd6d49f3bbc87ddcb7558467bd03c124b4a8371e61ea2087",
+            "tracking/resolution_endpoints.py": "b5d4a9f231801bc73a8e5d2f34112c05d4fb2bfb343ab9b9feadbfb1f564aa7f",
+            "tracking/reliability.py": "8ffd0bda06ce1fea5e291035f0915bbbfdd28d98a60f54fa758c36fabd3c6472",
+            "tracking/hp_causes.py": "b2036f5d0660c287f16c07197072ad281050a383a5673a5e1a2de0dd7c160ee4",
+            "tracking/mechanic_rules.py": "df66003cd75e49206a622742a95fe8996fd823a2f3e4f67700e03ae2960c0154",
+            "tracking/evidence_projection.py": "2c6ec34f3cadc44fe8c930f0583e142e97b54a49843a6e3e95a567aa3103e167",
+            "tracking/initial_conditions.py": "d972155369d1dd946356a48025670e0369f3e4bce8705a348b25cda360f6de2a",
+            "tracking/double_faint.py": "b505c12e84816552723334274c4142e2931ca12bb50737e4e90625b0e4e700ea",
+            "tracking/knowledge_grounding.py": "8e83303821a83d936fb7107ed548d268e8ef452fe20c88b59be7551cb154c5e5",
+            "tracking/state_summary.py": "9c16db68d463393daf87ce333ece2f9a3bc5e6727568b06c54ffd676aa319c8f",
+            "tracking/__init__.py": "8ad55dac5577a85b7f15b1146810ebef2101f3af7b74a0ceadf08a5fccfb930d",
+            "tracking/unnerve.py": "b99135529ea5fa7b5eae545d5e8666b5c5781fa443d910627a47a8a53c3b2edb",
+            "tracking/mechanics.py": "74a9cd017a264e3c6adaa286add23a42fdcb012bda13394b896e4a4e2581dde0",
+            "tracking/decision_state.py": "f2c8dfdb32c3a6e784015b6f7f7c9239de4577e03fdc670b783f11ce1eee6726",
+            "tracking/command_reconciliation.py": "f0b3399c45abfe14350b7dbeb13b7f40f502e148ecf4de1fc4c934a7c76ff37c",
+            "tracking/resolution_context.py": "9f2d1b3d5df418468bfca966f97d1e3e711b1722e086b5feb3b43a9dd497b816",
+            "tracking/evidence_fusion.py": "c5230a827c0309b31c91d8512f64734fbe42da78dfeb8cf77289a61d534cb693",
+            "tracking/active_persistence.py": "5cae259dfdad8921dc042755ee257083ed331976d38ace27d537a8e355f4f717",
+            "tracking/state_timeline.py": "654dfbfeaf82a65e46d8e0bca449cd37367075aeb783f351b26918f4e270bbec",
+            "tracking/form_stats.py": "88bf9c207beb1ebc9e98283883bb55bbdc90f3b62c4fe258c9ea59f568b0111a",
+            "tracking/entry_hud.py": "2c9240b6ce728c8b8a98859178e4d656828329d14ccbc4c2269b7ef7ea37ed54",
+            "tracking/pokemon_knowledge.py": "66a370bacfadcddec320b80c24fa66d9e24f657479e62ba91464ff10ff427a85",
+            "tracking/hidden_state.py": "91990dab9e3505091aa3fb443381515d4a1740b44e0653d92bd29ab147e5fd5d",
+            "tracking/identity_ledger.py": "83af8ac95fe7c3ff8e1646ec7b72449d8c688ad3b9ee86a664a711bf11202275",
+            "recognition/event_report.py": "49ddffb7fba7a572b5fb8300d28c080e80874b075829f568f944b424bb186c4f",
+            "recognition/message_occurrences.py": "fce84089e871445b288c09295d59d0563108c304419aaabd9a82e91aa1460856",
+            "recognition/message_selection.py": "ceab059ec583557c4c654f112a873901c5682c2c0959b3805b366768563ef760",
+            "recognition/onnx_ocr.py": "b447298b55d1491b9322df7ca439986ed109fb1ec7291259bd360587785140fb",
+            "recognition/experimental.py": "26bb8657840e5fb3a83b8dd82dece5704bbf73ac4ac60fc3bce4977cbe4cb94b",
+            "recognition/move_resolution.py": "579ed3e74b22f225ba38f9fe122b51b7e11f78f877efa32030daf13bb86fc14f",
+            "recognition/video_sampling.py": "863b60ced08448fc9bcfb8eb11e6f3b72689f2182d046eef6b9639afc824d8d6",
+            "recognition/visual_adapter.py": "587c85b37edaa6a3fb607353c80e83c1c79b29b0af2bdc5c5e63ece56137950a",
+            "recognition/repeat_evidence.py": "b0d36c6f563cd69b6ad6a2b70c1f5e274f34e19f5fb26df24936cca6cdb527a4",
+            "recognition/sprite_shape.py": "1d62ae59ddbc81d08be1f4bf23b09cb4bed04ffdc6dd5e9e39ea2ba0fb5ef505",
+            "recognition/icons.py": "604dbfb45e1302ab5c23f366dfb3c1cead32c9ff2f47ec131102b3de720c7223",
+            "recognition/regions.py": "416121fcfee402eec334e503b7fc113212ec1ec0440edad28fde03fae7725a4e",
+            "recognition/paddle_ocr.py": "9dbd24cbf71b62da725084dcade37a5ef8a457c7dc7107144802e16ec2550b55",
+            "recognition/command_checkpoint.py": "81c3988cceed94a478b79b7c3595914f97a642ca557190eb4541d75ee6d41a44",
+            "recognition/double_faint.py": "8b2c38074fc0e55ef71037310cb48464619abc0eeb2954691d4df9799921b8a0",
+            "recognition/entry_model.py": "7b234765d5488116885260028470bea15bdbd75e560c7cecf2b4071028eb9139",
+            "recognition/__init__.py": "3692878de267d9f49bed20779dd0a7e6439e46e102059087c172b30901b192b9",
+            "recognition/fast_video.py": "8a5f534f09ed2356e5a6d99403ad3f5e58b09dd3c5a0dc0f20cf07e549a634e7",
+            "recognition/battle_log.py": "8935e365355fa8925e079b4d98ab508e573071119ec3cfd684a8e817946fc7fe",
+            "recognition/parsers.py": "0653cd620be2d771b0de6bcc2df147fb4947226410601978a8e31d248abb4b89",
+            "recognition/identity_modes.py": "1601203123965df8a0fcc6c73f7da66b507d64e6082b8e199684a8b13241005c",
+            "recognition/identity_flow.py": "85caf013890ea1ea087a754c079b0e81083255e9cc2bc4f6ce188d94d6202d65",
+            "recognition/message_recovery.py": "03c5b7c37e7e420d4ab02fb1a0ccdf01ba27363cd5f4f38d7f2b7fe4e9cd4b95",
+            "recognition/phases.py": "e9d676c122aee8f4380616fa4841a935e209927962f2d7266bab506ffb4d3751",
+            "recognition/visual_evidence.py": "49e8564d231ad24d1944f763fb37bcff5df3f5128b64eb6b445a283389537fd4",
+            "recognition/ocr.py": "80ef4ad1d2e90f3fa5c6350894f32823e5cfb6913f99ce31f853610691a8378c",
+            "recognition/fast_report.py": "0ab1830cb92d8f4d71d1be8a1a3e359a87f212070671f3f9ad181325af69a4ec",
+            "recognition/ui_regions.py": "a0def1e472372e3ad884aee46d92cc52f6d20e999c6fbf44410db6bc5145339e",
+            "recognition/context.py": "0a11f239cbded94402cf1f16c0418477c1ff68290445fcc97480815a378affcb",
+            "recognition/event_schedule.py": "be0658da1e9028bd9092e65995d9e2f810752093595ba5d0fe7e48f31869e6d2",
+            "recognition/fast_profile.py": "10f456bc273d4a69ae0c2f63ae3da34d3e43d579916cc0cbc581dab34a8b6d42",
+            "recognition/trainers.py": "f1d44adef09f98895f80c52e4c14c198e788f98302f84afbdee548676858bb85",
+            "recognition/log_comparison.py": "22dd7650b3010f695d19f3dc86c318bd7b031c067b633a09355df60d6a3b0a2f",
+            "recognition/hud_reuse.py": "bc49459f515de8cdaf4ac9a8a1db45b404782962909e2c8631c41d3c684eede8",
+            "recognition/entities.py": "6539cc4877b7ca50969c522bab6cd9514b7a73dcf21f3d8c15eb90fb576dc079",
+            "recognition/identity_events.py": "865e08ef2ce396135a88636d4735e4c5ab73f0f7f86f934d888e59c5ad5cd648",
+            "recognition/resolution_sampling.py": "596cffe8e4172bbb0b2317a76911c7d73fb6926bbdb63ad615c4c513fb6c3531",
+            "recognition/identity.py": "0cf7e949f4846f60a91a03f2f9b11cf69fa0d1657b0470cf50bc0ada7ac055b5",
+            "recognition/party_panel.py": "053f09ece04beeb86e3e59fe62ea6f1248b2b6fd7f6517a0888ce5a0d16885f7"
+          }
+        },
+        "battle": 24,
+        "scope": "initial/final saved-state microbenchmarks; not production replay or historical wall attribution",
+        "python": "3.10.4 (v3.10.4:9d38120e33, Mar 23 2022, 17:29:05) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "platform": "macOS-26.3.1-arm64-arm-64bit",
+        "measurements": {
+          "initial_state:deepcopy": {
+            "samples_seconds": [
+              0.0016800409648567438,
+              0.0016369579825550318,
+              0.001548707950860262,
+              0.0015163749922066927,
+              0.0018473751842975616
+            ],
+            "median_seconds": 0.0016369579825550318,
+            "minimum_seconds": 0.0015163749922066927,
+            "maximum_seconds": 0.0018473751842975616,
+            "cpu_samples_seconds": [
+              0.0016700000000000048,
+              0.0016209999999999836,
+              0.001546999999999965,
+              0.0015160000000000173,
+              0.0018159999999999843
+            ],
+            "median_cpu_seconds": 0.0016209999999999836
+          },
+          "initial_state:to_dict": {
+            "samples_seconds": [
+              0.0026310000102967024,
+              0.0026748748496174812,
+              0.002621375024318695,
+              0.00247012497857213,
+              0.0024766670539975166
+            ],
+            "median_seconds": 0.002621375024318695,
+            "minimum_seconds": 0.00247012497857213,
+            "maximum_seconds": 0.0026748748496174812,
+            "cpu_samples_seconds": [
+              0.0026199999999999557,
+              0.0026550000000000185,
+              0.0026209999999999845,
+              0.0024700000000000277,
+              0.002475000000000005
+            ],
+            "median_cpu_seconds": 0.0026199999999999557
+          },
+          "initial_state:json_dumps_sorted": {
+            "samples_seconds": [
+              0.00048754108138382435,
+              0.00045691593550145626,
+              0.0004543750546872616,
+              0.00045437482185661793,
+              0.00045066699385643005
+            ],
+            "median_seconds": 0.0004543750546872616,
+            "minimum_seconds": 0.00045066699385643005,
+            "maximum_seconds": 0.00048754108138382435,
+            "cpu_samples_seconds": [
+              0.00048599999999998644,
+              0.0004569999999999852,
+              0.00045400000000000995,
+              0.00045400000000000995,
+              0.0004489999999999772
+            ],
+            "median_cpu_seconds": 0.00045400000000000995
+          },
+          "initial_state:hash_state": {
+            "samples_seconds": [
+              0.0031956660095602274,
+              0.0030015420634299517,
+              0.003179541090503335,
+              0.003358209040015936,
+              0.0030416250228881836
+            ],
+            "median_seconds": 0.003179541090503335,
+            "minimum_seconds": 0.0030015420634299517,
+            "maximum_seconds": 0.003358209040015936,
+            "cpu_samples_seconds": [
+              0.0031709999999999794,
+              0.0030000000000000027,
+              0.003163000000000027,
+              0.0033480000000000176,
+              0.0030409999999999604
+            ],
+            "median_cpu_seconds": 0.003163000000000027
+          },
+          "state:deepcopy": {
+            "samples_seconds": [
+              0.18357187509536743,
+              0.18260179203934968,
+              0.182649000082165,
+              0.13953012507408857,
+              0.1781137080397457
+            ],
+            "median_seconds": 0.18260179203934968,
+            "minimum_seconds": 0.13953012507408857,
+            "maximum_seconds": 0.18357187509536743,
+            "cpu_samples_seconds": [
+              0.18192399999999997,
+              0.1813309999999999,
+              0.18199699999999996,
+              0.13895499999999994,
+              0.17719400000000007
+            ],
+            "median_cpu_seconds": 0.1813309999999999
+          },
+          "state:to_dict": {
+            "samples_seconds": [
+              0.3169152920600027,
+              0.3165937499143183,
+              0.32558737485669553,
+              0.31894525000825524,
+              0.3227480831556022
+            ],
+            "median_seconds": 0.31894525000825524,
+            "minimum_seconds": 0.3165937499143183,
+            "maximum_seconds": 0.32558737485669553,
+            "cpu_samples_seconds": [
+              0.31541799999999975,
+              0.31548900000000035,
+              0.321774,
+              0.317777,
+              0.3205689999999999
+            ],
+            "median_cpu_seconds": 0.317777
+          },
+          "state:json_dumps_sorted": {
+            "samples_seconds": [
+              0.058041000040248036,
+              0.05738120782189071,
+              0.058197917183861136,
+              0.05760662513785064,
+              0.06001333310268819
+            ],
+            "median_seconds": 0.058041000040248036,
+            "minimum_seconds": 0.05738120782189071,
+            "maximum_seconds": 0.06001333310268819,
+            "cpu_samples_seconds": [
+              0.0575960000000002,
+              0.05705500000000008,
+              0.05788400000000049,
+              0.057028999999999996,
+              0.05845699999999976
+            ],
+            "median_cpu_seconds": 0.0575960000000002
+          },
+          "state:hash_state": {
+            "samples_seconds": [
+              0.34087483305484056,
+              0.3783434578217566,
+              0.37906545819714665,
+              0.38137850002385676,
+              0.38495774986222386
+            ],
+            "median_seconds": 0.37906545819714665,
+            "minimum_seconds": 0.34087483305484056,
+            "maximum_seconds": 0.38495774986222386,
+            "cpu_samples_seconds": [
+              0.3384299999999998,
+              0.3766569999999998,
+              0.3774809999999995,
+              0.37990800000000036,
+              0.38255700000000026
+            ],
+            "median_cpu_seconds": 0.3774809999999995
+          },
+          "final_prefix:hp_enrich": {
+            "samples_seconds": [
+              0.024640207877382636,
+              0.02506083296611905,
+              0.02642762497998774,
+              0.024717125110328197,
+              0.024643207900226116
+            ],
+            "median_seconds": 0.024717125110328197,
+            "minimum_seconds": 0.024640207877382636,
+            "maximum_seconds": 0.02642762497998774,
+            "cpu_samples_seconds": [
+              0.02459200000000017,
+              0.024990999999999985,
+              0.026054999999999495,
+              0.024672999999999945,
+              0.0246120000000003
+            ],
+            "median_cpu_seconds": 0.024672999999999945
+          }
+        },
+        "timing": "perf_counter plus process_time, warm process, default GC, 5 repetitions; setup/input loading and warmup excluded",
+        "copy_hash_profile_top_cumulative": [
+          {
+            "file": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/state_engine.py",
+            "line": 59,
+            "function": "hash_state",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 0.004529166,
+            "cumulative_seconds": 0.859550333
+          },
+          {
+            "file": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/battle_state.py",
+            "line": 157,
+            "function": "to_dict",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 2.251e-06,
+            "cumulative_seconds": 0.792711959
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dataclasses.py",
+            "line": 1218,
+            "function": "asdict",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 3.208e-06,
+            "cumulative_seconds": 0.7927097080000001
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dataclasses.py",
+            "line": 1242,
+            "function": "_asdict_inner",
+            "primitive_calls": 1,
+            "total_calls": 460327,
+            "self_seconds": 0.315411655,
+            "cumulative_seconds": 0.792704375
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dataclasses.py",
+            "line": 1276,
+            "function": "<genexpr>",
+            "primitive_calls": 250,
+            "total_calls": 238853,
+            "self_seconds": 0.056417422,
+            "cumulative_seconds": 0.7922878680000001
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 128,
+            "function": "deepcopy",
+            "primitive_calls": 377097,
+            "total_calls": 845153,
+            "self_seconds": 0.480953728,
+            "cumulative_seconds": 0.722028835
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dataclasses.py",
+            "line": 1274,
+            "function": "<genexpr>",
+            "primitive_calls": 5981,
+            "total_calls": 93435,
+            "self_seconds": 0.011467862,
+            "cumulative_seconds": 0.71069366
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 259,
+            "function": "_reconstruct",
+            "primitive_calls": 1,
+            "total_calls": 1212,
+            "self_seconds": 0.001649398,
+            "cumulative_seconds": 0.49329775000000003
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 227,
+            "function": "_deepcopy_dict",
+            "primitive_calls": 1,
+            "total_calls": 35314,
+            "self_seconds": 0.058559772,
+            "cumulative_seconds": 0.493283625
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 201,
+            "function": "_deepcopy_list",
+            "primitive_calls": 2612,
+            "total_calls": 47917,
+            "self_seconds": 0.020912431000000002,
+            "cumulative_seconds": 0.385345841
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dataclasses.py",
+            "line": 1206,
+            "function": "_is_dataclass_instance",
+            "primitive_calls": 460328,
+            "total_calls": 460328,
+            "self_seconds": 0.046894516000000004,
+            "cumulative_seconds": 0.120516068
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 264,
+            "function": "<genexpr>",
+            "primitive_calls": 2424,
+            "total_calls": 2424,
+            "self_seconds": 0.000283338,
+            "cumulative_seconds": 0.08931375200000001
+          },
+          {
+            "file": "~",
+            "line": 0,
+            "function": "<built-in method builtins.hasattr>",
+            "primitive_calls": 461540,
+            "total_calls": 461540,
+            "self_seconds": 0.073699972,
+            "cumulative_seconds": 0.073699972
+          },
+          {
+            "file": "~",
+            "line": 0,
+            "function": "<method 'get' of 'dict' objects>",
+            "primitive_calls": 1691518,
+            "total_calls": 1691518,
+            "self_seconds": 0.07156177700000001,
+            "cumulative_seconds": 0.07156177700000001
+          },
+          {
+            "file": "~",
+            "line": 0,
+            "function": "<built-in method builtins.isinstance>",
+            "primitive_calls": 1331854,
+            "total_calls": 1331854,
+            "self_seconds": 0.055681466000000006,
+            "cumulative_seconds": 0.055681466000000006
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py",
+            "line": 183,
+            "function": "dumps",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 0.000363917,
+            "cumulative_seconds": 0.05509650000000001
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py",
+            "line": 182,
+            "function": "encode",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 1.2250000000000001e-05,
+            "cumulative_seconds": 0.054729083000000005
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py",
+            "line": 204,
+            "function": "iterencode",
+            "primitive_calls": 1,
+            "total_calls": 1,
+            "self_seconds": 0.054288125000000007,
+            "cumulative_seconds": 0.054288125000000007
+          },
+          {
+            "file": "~",
+            "line": 0,
+            "function": "<built-in method builtins.id>",
+            "primitive_calls": 1014040,
+            "total_calls": 1014040,
+            "self_seconds": 0.034454313,
+            "cumulative_seconds": 0.034454313
+          },
+          {
+            "file": "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py",
+            "line": 182,
+            "function": "_deepcopy_atomic",
+            "primitive_calls": 760710,
+            "total_calls": 760710,
+            "self_seconds": 0.028173105,
+            "cumulative_seconds": 0.028173105
+          }
+        ],
+        "source_replay_unchanged": true,
+        "finished_epoch": 1793539782.8350122,
+        "loaded_source_modules": {
+          "tracking": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/__init__.py",
+          "tracking.battle_state": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/battle_state.py",
+          "battle_events.schema": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/battle_events/schema.py",
+          "battle_events.parser": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/battle_events/parser.py",
+          "battle_events": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/battle_events/__init__.py",
+          "tracking.mechanic_rules": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/mechanic_rules.py",
+          "tracking.mechanics": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/mechanics.py",
+          "tracking.state_engine": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/state_engine.py",
+          "tracking.hp_causes": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/source/tracking/hp_causes.py"
+        }
+      }
+    }
+  },
+  "scaling_diagnostics": {
+    "constant_B23_seconds_per_receipt_workload_delta_seconds": 130.8092840793012,
+    "remaining_broad_delta_seconds": 369.80705333785806,
+    "caveat": "Accounting counterfactual, not causal attribution; receipt mix and state size differ",
+    "quadratic_event_count_ratio": 1.864378321837572,
+    "broad_ratio_divided_by_squared_event_count_ratio": 1.286486334659704
+  },
+  "limitations_additional": [
+    "Microbenchmarks use initial/final snapshots, not historical receipt prefixes; do not multiply terminal cost by receipt count.",
+    "to_dict and JSON serialization overlap hash_state; cumulative profile rows overlap each other.",
+    "v1 profiles retained with noisy wall samples; v2 adds process CPU timing; no historical production function-share estimate."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "retrieved_date": "2026-11-01",
+  "game": "Pokémon Champions; reference-only mechanics where marked",
+  "files": {
+    "tracking/initial_conditions.py": "aad9d6d082f4934aaf14ada5d60329a4a773e7b571df49be310913050d70ca1f",
+    "tracking/state_engine.py": "040148c7cd9c993270c44e6fe5c7880d7eea6f73507a134e0a44f3b983078736",
+    "battle_evidence/inference_integration.py": "ab75b3df3c6d16134d075086f5cafbea1e1ecb203ee615caa832437c2c9a3567",
+    "battle_evidence/turns.py": "307eda2e487a4fd4ee4c468a42306cd8ea844a0bfdaedd3f757ef71e0cdc9764",
+    "damage/engine.py": "de6a9b4c7524960f88a07a5a4ec70b07be7f8c7b49a9c0408efab0ac13b2e605",
+    "knowledge/data/mega-stat-evidence-v1.json": "e733f0dd11f8de6a6907d492fa0df358addccc27787daadec8dac7e0ea226553",
+    ".cache/m31/oracle/node_modules/@smogon/calc/dist/mechanics/champions.js": "d93f27bf742c55e8feb8faca967402329eedd810bbc8681f49e111499658f3bb",
+    "tests/fixtures/battle_evidence/sample-team7-reviewed.json": "45ebd31add0d7ba2c61c69343680f7805196c9ed6e152f47a6eed460fb3facd8"
+  },
+  "sources": [
+    {
+      "url": "https://wiki.52poke.com/wiki/能力变化",
+      "revision_id": 2609641,
+      "retrieved_date": "2026-11-01",
+      "applicability": "general stat announcement / switch reference, not independent Champions UI certification",
+      "revision_basis": "Rendered page permanent-link target; fetching that revision URL returned HTTP 403",
+      "retrieval_method": "scoped rendered page and search, no runtime network dependency"
+    },
+    {
+      "url": "https://wiki.52poke.com/wiki/化石翼龙/Champions招式表",
+      "revision_id": 2608736,
+      "retrieved_date": "2026-11-01",
+      "applicability": "Champions-specific Rock Slide availability, 75 power, physical",
+      "revision_basis": "Rendered page permanent-link target; fetching that revision URL returned HTTP 403",
+      "retrieval_method": "scoped rendered page and search, no runtime network dependency"
+    },
+    {
+      "url": "https://wiki.52poke.com/wiki/巨金怪/Champions招式表",
+      "revision_id": 2608677,
+      "retrieved_date": "2026-11-01",
+      "applicability": "Champions-specific Hammer Arm availability, 100 power, physical",
+      "revision_basis": "Rendered page permanent-link target; fetching that revision URL returned HTTP 403",
+      "retrieval_method": "scoped rendered page and search, no runtime network dependency"
+    }
+  ],
+  "revision_limit": "Revision IDs are available from rendered permanent links, but revision-specific snapshot fetches returned HTTP 403. Current rendered pages and pinned existing local references were used; no revision contents were invented.",
+  "attribution": "52Poké contributors; article content CC BY-NC-SA 3.0 where applicable. No full article copied. Integer reference algorithm uses existing @smogon/calc 0.12.0 / MIT attribution in damage/data/LICENSE.smogon.txt."
+}

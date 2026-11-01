@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-01",
+  "task_1": "complete",
+  "task_2": "complete",
+  "speed_audit": ".cache/battles/sample_battle_24/diagnosis/speed-order-audit-v1/audit-v4.json",
+  "speed_tests": {
+    "command": ".venv/bin/python -m pytest -q tests/test_inference_integration.py tests/test_configuration_domain.py tests/test_constraint_trace.py tests/test_speed_order.py -m 'not local_artifacts'",
+    "passed": 124,
+    "seconds": 15.08
+  },
+  "additional_regressions": {
+    "command": ".venv/bin/python -m pytest -q tests/test_speed_inference.py tests/test_speed_replay.py tests/test_speed_replay_projection.py tests/test_speed_replay_extension.py tests/test_team_speed_context.py tests/test_b24_evaluation.py -m 'not local_artifacts'",
+    "passed": 124,
+    "deselected": 8,
+    "seconds": 5.21,
+    "overlap_caveat": "Do not sum suites as unique tests"
+  },
+  "integrity": {
+    "frozen_and_historical_verify": "passed",
+    "git_diff_check": "passed",
+    "recovered_performance_source_hashes": 40,
+    "mismatches": 0
+  },
+  "performance_measurements": "docs/performance/b24-runtime-diagnosis-measurements.json",
+  "performance_optimizations_implemented": false,
+  "video_recognition_or_production_reexecuted": false,
+  "committed_or_pushed": false
+}

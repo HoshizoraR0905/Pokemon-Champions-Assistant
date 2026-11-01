@@ -268,7 +268,7 @@ class EventParser:
             typ='move_effect';attrs['effect']='recoil_announcement'
         elif (screen:=re.fullmatch(r'(反射壁|光墙)使(我方|对手|对方)的(?:物理|特殊)抗性提高了[！!。.]?',text)):
             typ='side_condition_change';side='self' if screen[2]=='我方' else 'opponent'
-            attrs.update(condition={'反射壁':'reflect','光墙':'light_screen'}[screen[1]],change='observe')
+            attrs.update(condition={'反射壁':'reflect','光墙':'light_screen'}[screen[1]],change='start')
             basis.append('explicit_side_condition_text')
         elif re.fullmatch(r'从我方身后吹起了顺风[！!。.]?',text):
             typ='side_condition_change';side='self';attrs.update(condition='tailwind',change='start')

@@ -9,7 +9,7 @@ import pytest
 
 from battle_events.parser import EventParser
 from battle_events.schema import BattleEvent, Evidence
-from models import IconEvidence
+from models import IconEvidence, Observation
 from recognition import box
 from recognition.event_schedule import IdentitySchedule
 from recognition.message_occurrences import MessageOccurrences
@@ -86,6 +86,7 @@ def preview_recognizer():
         return IconEvidence(status='resolved' if sid else 'unresolved',species_id=sid,
             region=bounds,canonical_id=f'pokeapi:species:{sid}' if sid else None)
     recognizer=SimpleNamespace(icons=SimpleNamespace(identify=identify),resolve_entities=lambda r:None,
+        ocr=SimpleNamespace(read=lambda image,bounds:Observation(region=bounds)),
         context=SimpleNamespace(remember=lambda r:None))
     return recognizer,calls,identities
 

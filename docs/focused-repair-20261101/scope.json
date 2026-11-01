@@ -1,0 +1,30 @@
+{
+  "version": "focused-repair-v1",
+  "asserted_by": "user",
+  "date": "2026-11-01",
+  "request_sha256": "1258498fbbb64326ae9732a3b815176c0d5a7526cc57a1f1666f0d709e6d2689",
+  "rules": {
+    "unique_team_members": "one shared species identity per team including regional/gender forms",
+    "unique_original_items": true,
+    "full_hp_confirmed": {
+      "species_id": 1018,
+      "team": "sample_team_team7_20261021",
+      "maximum": 194,
+      "cases": {
+        "20": [
+          null,
+          152
+        ],
+        "21": [
+          null,
+          168
+        ],
+        "22": [
+          null,
+          178
+        ]
+      }
+    },
+    "ditto": "native Ditto on entry; only explicit Imposter activation or Transform execution/result establishes a temporary copy"
+  }
+}

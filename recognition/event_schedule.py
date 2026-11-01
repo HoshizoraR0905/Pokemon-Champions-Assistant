@@ -7,7 +7,7 @@ import re
 import cv2
 from recognition import box
 
-VERSION = 'event-driven-preview-bounded-v3'
+VERSION = 'event-driven-preview-bounded-v4'
 
 
 @dataclass(frozen=True)
@@ -175,6 +175,18 @@ class IdentitySchedule:
             import numpy as np
             result=Recognition(frame.source,frame.index,frame.timestamp,phase,.9,['team_preview'])
             result.capture_metadata=frame.metadata.copy()
+            # Reuse the established preview name regions and canonical resolver.
+            # The normal lightweight path previously acquired only opponents.
+            if len(self.team['self'])<6:
+                for i in range(6):
+                    key=str(i+1)
+                    previous=self.preview_reads.get('self:'+key)
+                    if key in self.team['self'] or previous and frame.timestamp-previous['timestamp']<10.:continue
+                    y=.13+i*.117
+                    bounds=box(frame.image,(.151,y,.263,y+.034))
+                    observed=recognizer.ocr.read(frame.image,bounds)
+                    self.preview_reads['self:'+key]=dict(timestamp=frame.timestamp)
+                    result.pokemon.append(Pokemon(f'own_team_{i+1}',observed))
             for i in range(6):
                 key=str(i+1)
                 y=.13+i*.117; bounds=box(frame.image,(.778,y-.01,.832,y+.095))
@@ -195,6 +207,6 @@ class IdentitySchedule:
             recognizer.resolve_entities(result);recognizer.context.remember(result)
             rows=preview_rows(result,battle_id)
             for row in rows:
-                if row['status']=='resolved':self.team['opponent'][str(row['preview_row'])]=row
+                if row['status']=='resolved':self.team[row['side']][str(row['preview_row'])]=row
             counts['opponent_preview_acquisitions']+=1
         return rows

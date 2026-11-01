@@ -57,7 +57,7 @@ def damage_equivalent(item, form, ability, move):
     if item in BERRIES:return 'none'  # supplied attacker HP/status/stages unchanged
     if rule(item) and rule(item)['forward_coverage']=='current_form_stone':return 'none'
     typ=move.get('type')
-    if typ=='Normal':typ={'Aerilate':'Flying','Pixilate':'Fairy','Refrigerate':'Ice'}.get(ability,typ)
+    if typ=='Normal' and move.get('name')!='Weather Ball':typ={'Aerilate':'Flying','Pixilate':'Fairy','Refrigerate':'Ice'}.get(ability,typ)
     if item=='Normal Gem' and typ!='Normal':return 'none'
     if item in TYPE_ITEMS and TYPE_ITEMS[item]!=typ:return 'none'
     if item=='Muscle Band' and move.get('category')!='Physical':return 'none'

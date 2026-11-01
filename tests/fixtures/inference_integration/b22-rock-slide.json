@@ -1,0 +1,1306 @@
+{
+  "classification": "curated projection of saved recognized evidence; not independent recognition ground truth",
+  "source_files": {
+    ".cache/battles/sample_battle_22/diagnosis/b22-followup-validation-v4/projection-with-hits.json": "0aa576137f6bddd1e64d85f46703d3c6de7212a715a542aa5d8ebae453fc0d73",
+    ".cache/battles/sample_battle_22/diagnosis/hidden-integration-20261101-v1/contexts-efec4d9d0358bc9f-attempt-1.jsonl": "d82cfdcae1037d371469e20970e3421fcaef3a58f37b16b5ba368ee8515bf85b"
+  },
+  "action_event_id": "event:054f71a42009bf3956b8f270",
+  "action_time": 440.00666666666666,
+  "available_at": 452.01,
+  "context": {
+    "field": {
+      "weather": {
+        "active": {
+          "value": true,
+          "knowledge": "observed",
+          "source_event_ids": [
+            "event:0a9b1c32cb2981240c101368"
+          ]
+        },
+        "kind": {
+          "value": "rain",
+          "knowledge": "observed",
+          "source_event_ids": [
+            "event:0a9b1c32cb2981240c101368"
+          ]
+        },
+        "duration": {
+          "remaining": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "expires_at_turn": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "timing": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "modifiers": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "last_tick": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          }
+        },
+        "initiated_by": {
+          "value": {
+            "event_id": "event:0a9b1c32cb2981240c101368",
+            "turn": null
+          },
+          "knowledge": "observed",
+          "source_event_ids": [
+            "event:0a9b1c32cb2981240c101368"
+          ]
+        }
+      },
+      "terrain": {
+        "active": {
+          "value": false,
+          "knowledge": "derived",
+          "source_event_ids": [
+            "event:79c346e0657a33a4647f0f6a"
+          ]
+        },
+        "kind": {
+          "value": "none",
+          "knowledge": "derived",
+          "source_event_ids": [
+            "event:79c346e0657a33a4647f0f6a"
+          ]
+        },
+        "duration": {
+          "remaining": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "expires_at_turn": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "timing": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "modifiers": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "last_tick": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          }
+        },
+        "initiated_by": {
+          "value": null,
+          "knowledge": "unknown",
+          "source_event_ids": []
+        }
+      },
+      "trick_room": {
+        "active": {
+          "value": false,
+          "knowledge": "derived",
+          "source_event_ids": [
+            "event:79c346e0657a33a4647f0f6a"
+          ]
+        },
+        "kind": {
+          "value": null,
+          "knowledge": "unknown",
+          "source_event_ids": []
+        },
+        "duration": {
+          "remaining": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "expires_at_turn": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "timing": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "modifiers": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "last_tick": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          }
+        },
+        "initiated_by": {
+          "value": null,
+          "knowledge": "unknown",
+          "source_event_ids": []
+        }
+      }
+    },
+    "sides": {
+      "self": {
+        "conditions": {
+          "tailwind": {
+            "active": {
+              "value": false,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            }
+          },
+          "reflect": {
+            "active": {
+              "value": false,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            }
+          },
+          "light_screen": {
+            "active": {
+              "value": false,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            }
+          },
+          "aurora_veil": {
+            "active": {
+              "value": false,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            }
+          },
+          "wide_guard": {
+            "active": {
+              "value": true,
+              "knowledge": "observed",
+              "source_event_ids": [
+                "event:c7fcc6aecd798d463c20bc3a"
+              ]
+            },
+            "kind": {
+              "value": "wide_guard",
+              "knowledge": "observed",
+              "source_event_ids": [
+                "event:c7fcc6aecd798d463c20bc3a"
+              ]
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              }
+            },
+            "initiated_by": {
+              "value": {
+                "event_id": "event:c7fcc6aecd798d463c20bc3a",
+                "turn": null
+              },
+              "knowledge": "observed",
+              "source_event_ids": [
+                "event:c7fcc6aecd798d463c20bc3a"
+              ]
+            }
+          }
+        }
+      },
+      "opponent": {
+        "conditions": {
+          "tailwind": {
+            "active": {
+              "value": true,
+              "knowledge": "observed",
+              "source_event_ids": [
+                "event:281229c230f955876615cd0c"
+              ]
+            },
+            "kind": {
+              "value": "tailwind",
+              "knowledge": "observed",
+              "source_event_ids": [
+                "event:281229c230f955876615cd0c"
+              ]
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              }
+            },
+            "initiated_by": {
+              "value": {
+                "event_id": "event:281229c230f955876615cd0c",
+                "turn": null
+              },
+              "knowledge": "observed",
+              "source_event_ids": [
+                "event:281229c230f955876615cd0c"
+              ]
+            }
+          },
+          "reflect": {
+            "active": {
+              "value": false,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            }
+          },
+          "light_screen": {
+            "active": {
+              "value": false,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            }
+          },
+          "aurora_veil": {
+            "active": {
+              "value": false,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown",
+                "source_event_ids": []
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown",
+              "source_event_ids": []
+            }
+          }
+        }
+      }
+    },
+    "pokemon": {
+      "sample_battle_22:opponent:encounter:9a2e99a27bfb75ce": {
+        "side": "opponent",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "knowledge": "observed",
+          "source_event_ids": [
+            "event:79c346e0657a33a4647f0f6a"
+          ]
+        },
+        "variant": {
+          "value": null,
+          "knowledge": "unknown",
+          "source_event_ids": []
+        },
+        "stages": {
+          "attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            }
+          },
+          "defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            }
+          },
+          "special_attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            }
+          },
+          "special_defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            }
+          },
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            }
+          },
+          "accuracy": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            }
+          },
+          "evasion": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:79c346e0657a33a4647f0f6a"
+              ]
+            }
+          }
+        },
+        "status": {
+          "value": "none",
+          "knowledge": "derived",
+          "source_event_ids": [
+            "event:79c346e0657a33a4647f0f6a"
+          ]
+        },
+        "hp": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": [
+              "event:b87a60b866850a5fa6e8d63e"
+            ]
+          },
+          "maximum": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "displayed_percent": {
+            "value": 100,
+            "knowledge": "observed",
+            "source_event_ids": [
+              "event:b87a60b866850a5fa6e8d63e"
+            ]
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": [
+              "event:b87a60b866850a5fa6e8d63e"
+            ]
+          },
+          "unit": {
+            "value": "displayed_percent",
+            "knowledge": "observed",
+            "source_event_ids": [
+              "event:b87a60b866850a5fa6e8d63e"
+            ]
+          }
+        },
+        "ability": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:ability:127",
+              "kind": "ability",
+              "name": "紧张感",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "knowledge": "observed",
+            "source_event_ids": [
+              "event:1315fe6ad623db61bb62dc4e"
+            ]
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "has_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          }
+        }
+      },
+      "sample_battle_22:self:encounter:59b1b6b99605daa8": {
+        "side": "self",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed",
+          "source_event_ids": [
+            "event:51ead5ce662b8269bed2f9c3"
+          ]
+        },
+        "variant": {
+          "value": "pokeapi:pokemon:861",
+          "knowledge": "observed",
+          "source_event_ids": [
+            "event:51ead5ce662b8269bed2f9c3"
+          ]
+        },
+        "stages": {
+          "attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            }
+          },
+          "defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            }
+          },
+          "special_attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            }
+          },
+          "special_defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            }
+          },
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            }
+          },
+          "accuracy": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            }
+          },
+          "evasion": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived",
+              "source_event_ids": [
+                "event:51ead5ce662b8269bed2f9c3"
+              ]
+            }
+          }
+        },
+        "status": {
+          "value": "none",
+          "knowledge": "derived",
+          "source_event_ids": [
+            "event:51ead5ce662b8269bed2f9c3"
+          ]
+        },
+        "hp": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "maximum": {
+            "value": 201,
+            "knowledge": "observed",
+            "source_event_ids": []
+          },
+          "displayed_percent": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "unit": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          }
+        },
+        "ability": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:ability:158",
+              "name": "恶作剧之心"
+            },
+            "knowledge": "observed",
+            "source_event_ids": []
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          }
+        },
+        "item": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:item:246",
+              "name": "光之黏土"
+            },
+            "knowledge": "observed",
+            "source_event_ids": []
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          },
+          "has_item": {
+            "value": null,
+            "knowledge": "unknown",
+            "source_event_ids": []
+          }
+        },
+        "mechanics": {
+          "battle_stats": {
+            "current": {
+              "hp": {
+                "value": 201,
+                "knowledge": "derived",
+                "source_event_ids": [
+                  "event:51ead5ce662b8269bed2f9c3"
+                ]
+              },
+              "attack": {
+                "value": 140,
+                "knowledge": "derived",
+                "source_event_ids": [
+                  "event:51ead5ce662b8269bed2f9c3"
+                ]
+              },
+              "defense": {
+                "value": 111,
+                "knowledge": "derived",
+                "source_event_ids": [
+                  "event:51ead5ce662b8269bed2f9c3"
+                ]
+              },
+              "special_attack": {
+                "value": 103,
+                "knowledge": "derived",
+                "source_event_ids": [
+                  "event:51ead5ce662b8269bed2f9c3"
+                ]
+              },
+              "special_defense": {
+                "value": 114,
+                "knowledge": "derived",
+                "source_event_ids": [
+                  "event:51ead5ce662b8269bed2f9c3"
+                ]
+              },
+              "speed": {
+                "value": 80,
+                "knowledge": "derived",
+                "source_event_ids": [
+                  "event:51ead5ce662b8269bed2f9c3"
+                ]
+              },
+              "canonical_variant": {
+                "value": "pokeapi:pokemon:861",
+                "knowledge": "derived",
+                "source_event_ids": [
+                  "event:51ead5ce662b8269bed2f9c3"
+                ]
+              },
+              "form_verified": {
+                "value": true,
+                "knowledge": "derived",
+                "source_event_ids": [
+                  "event:51ead5ce662b8269bed2f9c3"
+                ]
+              },
+              "stat_basis": {
+                "value": "unmodified_form_separate_from_stages",
+                "knowledge": "derived",
+                "source_event_ids": [
+                  "event:51ead5ce662b8269bed2f9c3"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "episode": {
+    "actor_instance_id": "sample_battle_22:opponent:encounter:9a2e99a27bfb75ce",
+    "target_instance_id": "sample_battle_22:self:encounter:59b1b6b99605daa8",
+    "attribution_status": "supported",
+    "complete_endpoints": true,
+    "unit": "absolute",
+    "source_move": {
+      "canonical_id": "pokeapi:move:157",
+      "kind": "move",
+      "name": "岩崩",
+      "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+    },
+    "before": 201,
+    "after": 156,
+    "delta": -45,
+    "critical_hit": null,
+    "episode_id": "event:054f71a42009bf3956b8f270:hp:sample_battle_22:self:encounter:59b1b6b99605daa8",
+    "source_event_id": "event:054f71a42009bf3956b8f270"
+  },
+  "native": "pokeapi:species:142",
+  "initial": {
+    "values": [
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172
+    ],
+    "minimum": 112,
+    "maximum": 172,
+    "hull": [
+      112,
+      172
+    ],
+    "count": 60,
+    "has_gaps": true,
+    "intervals": [
+      [
+        112,
+        163
+      ],
+      [
+        165,
+        172
+      ]
+    ]
+  },
+  "expected": {
+    "values": [
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158
+    ],
+    "minimum": 112,
+    "maximum": 158,
+    "hull": [
+      112,
+      158
+    ],
+    "count": 47,
+    "has_gaps": false,
+    "intervals": [
+      [
+        112,
+        158
+      ]
+    ]
+  }
+}

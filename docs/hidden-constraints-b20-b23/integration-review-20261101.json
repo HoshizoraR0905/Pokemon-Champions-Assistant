@@ -1,0 +1,197 @@
+{
+  "version": "b20-b23-integration-review-v1",
+  "battles": {
+    "20": {
+      "roster": {
+        "battle_id": "sample_battle_20",
+        "species_ids": [
+          3,
+          6,
+          279,
+          445,
+          861,
+          1018
+        ],
+        "matches_team7": true,
+        "reviewer": "codex visual review of saved full six-member preview 2026-11-01",
+        "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000015.png",
+        "sha256": "948c6547223e7562ecfe2d614881a20d30f10ab8f8ce23d91a1c376ad8dbfd10",
+        "observation_time": 7.001666666666667,
+        "method": "manual saved-image inspection, not new recognition",
+        "row_order": [
+          "Venusaur",
+          "Charizard",
+          "Pelipper",
+          "Garchomp",
+          "Grimmsnarl",
+          "Archaludon"
+        ]
+      },
+      "opening": {
+        "covers_start": true,
+        "event_id": "event:a190c76ffc5eb7daf2941ab1",
+        "reviewer": "codex saved preview-to-opening sequence review 2026-11-01",
+        "sources": [
+          {
+            "image": ".cache/battles/sample_battle_20/event-driven/fresh-b20-postfix-v1/frames/000015.png",
+            "sha256": "948c6547223e7562ecfe2d614881a20d30f10ab8f8ce23d91a1c376ad8dbfd10",
+            "timestamp": 7.001666666666667
+          },
+          {
+            "event_id": "event:a190c76ffc5eb7daf2941ab1",
+            "timestamp": 112.50166666666667,
+            "text": "K派出了姆克鹰\n和风妖精！"
+          }
+        ],
+        "verification": "observed opening sequence; neutral initialization supplied by user task; switching is pinned reference only"
+      },
+      "historical_profile_attached": false,
+      "sealed_linkage": null
+    },
+    "21": {
+      "roster": {
+        "battle_id": "sample_battle_21",
+        "species_ids": [
+          3,
+          6,
+          279,
+          445,
+          861,
+          1018
+        ],
+        "matches_team7": true,
+        "reviewer": "codex visual review of saved full six-member preview 2026-11-01",
+        "image": ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/frames/000036.png",
+        "sha256": "91c6e1e2a6cd72c38cff56431897a7400a38484a3a5fbc56c9ca33edc1877212",
+        "observation_time": 17.52,
+        "method": "manual saved-image inspection, not new recognition",
+        "row_order": [
+          "Venusaur",
+          "Charizard",
+          "Pelipper",
+          "Garchomp",
+          "Grimmsnarl",
+          "Archaludon"
+        ]
+      },
+      "opening": {
+        "covers_start": true,
+        "event_id": "event:044409c24b8edcd5b5212fde",
+        "reviewer": "codex saved preview-to-opening sequence review 2026-11-01",
+        "sources": [
+          {
+            "image": ".cache/battles/sample_battle_21/event-driven/fresh-b21-context-v1/frames/000036.png",
+            "sha256": "91c6e1e2a6cd72c38cff56431897a7400a38484a3a5fbc56c9ca33edc1877212",
+            "timestamp": 17.52
+          },
+          {
+            "event_id": "event:044409c24b8edcd5b5212fde",
+            "timestamp": 116.50333333333333,
+            "text": "MingYeezy派出了轰擂金刚猩\n和美纳斯！"
+          }
+        ],
+        "verification": "observed opening sequence; neutral initialization supplied by user task; switching is pinned reference only"
+      },
+      "historical_profile_attached": false,
+      "sealed_linkage": null
+    },
+    "22": {
+      "roster": {
+        "battle_id": "sample_battle_22",
+        "species_ids": [
+          3,
+          6,
+          279,
+          445,
+          861,
+          1018
+        ],
+        "matches_team7": true,
+        "reviewer": "codex visual review of saved full six-member preview 2026-11-01",
+        "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000059.png",
+        "sha256": "b88b400b2a25089766c3afcb79b991654efbc448f77fc393ed245dcb6a2ba28c",
+        "observation_time": 29.005,
+        "method": "manual saved-image inspection, not new recognition",
+        "row_order": [
+          "Venusaur",
+          "Charizard",
+          "Pelipper",
+          "Garchomp",
+          "Grimmsnarl",
+          "Archaludon"
+        ]
+      },
+      "opening": {
+        "covers_start": true,
+        "event_id": "event:79c346e0657a33a4647f0f6a",
+        "reviewer": "codex saved preview-to-opening sequence review 2026-11-01",
+        "sources": [
+          {
+            "image": ".cache/battles/sample_battle_22/event-driven/fresh-b22-ditto-20261030-v1/frames/000059.png",
+            "sha256": "b88b400b2a25089766c3afcb79b991654efbc448f77fc393ed245dcb6a2ba28c",
+            "timestamp": 29.005
+          },
+          {
+            "event_id": "event:79c346e0657a33a4647f0f6a",
+            "timestamp": 134.52333333333334,
+            "text": "Tickle wikle派出了化石翼龙\n和巨金怪！"
+          }
+        ],
+        "verification": "observed opening sequence; neutral initialization supplied by user task; switching is pinned reference only"
+      },
+      "historical_profile_attached": false,
+      "sealed_linkage": null
+    },
+    "23": {
+      "roster": {
+        "battle_id": "sample_battle_23",
+        "species_ids": [
+          3,
+          6,
+          279,
+          445,
+          861,
+          1018
+        ],
+        "matches_team7": true,
+        "reviewer": "codex visual review of saved full six-member preview 2026-11-01",
+        "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000031.png",
+        "sha256": "d34f86357620a60bf70655710cffc1faeafd8726b10eac8e2536ef845ab81bc7",
+        "observation_time": 15.003333333333334,
+        "method": "manual saved-image inspection, not new recognition",
+        "row_order": [
+          "Venusaur",
+          "Charizard",
+          "Pelipper",
+          "Garchomp",
+          "Grimmsnarl",
+          "Archaludon"
+        ]
+      },
+      "opening": {
+        "covers_start": true,
+        "event_id": "event:f2664c420e56e7a4ce18cde9",
+        "reviewer": "codex saved preview-to-opening sequence review 2026-11-01",
+        "sources": [
+          {
+            "image": ".cache/battles/sample_battle_23/event-driven/mega-b23-20261030-v1/frames/000031.png",
+            "sha256": "d34f86357620a60bf70655710cffc1faeafd8726b10eac8e2536ef845ab81bc7",
+            "timestamp": 15.003333333333334
+          },
+          {
+            "event_id": "event:f2664c420e56e7a4ce18cde9",
+            "timestamp": 117.52,
+            "text": "AjayVGC派出了烈咬陆鲨\n和炽焰咆哮虎！"
+          }
+        ],
+        "verification": "observed opening sequence; neutral initialization supplied by user task; switching is pinned reference only"
+      },
+      "historical_profile_attached": false,
+      "sealed_linkage": {
+        "status": "unbound",
+        "reason": "complete_reliable_self_roster_not_available",
+        "self_rows": 0
+      }
+    }
+  }
+}

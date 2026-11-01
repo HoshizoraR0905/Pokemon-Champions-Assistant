@@ -9,6 +9,39 @@ from copy import deepcopy
 RULE_ID = 'champions-reviewed-item-clause-v1'
 
 
+def six_member_exclusions(members,claims,*,battle_id,rule_verified):
+    """Apply all-different to original ownership, never to transferred possession.
+
+    The six roster identifiers can refer to preview-only members. Unreviewed
+    original ownership remains a conditional relation rather than an exclusion.
+    """
+    if len(members)!=6 or len(set(members))!=6:
+        raise ValueError('Exactly six distinct roster members required')
+    if any(scope(battle_id,m)!=(battle_id,'opponent') for m in members):
+        raise ValueError('Roster must remain in one opponent battle scope')
+    assignments={};updates=[];contradictions=[]
+    for c in claims:
+        if c['owner'] not in members or not c.get('sources'):
+            raise ValueError('Bound original owner and sources required')
+        if c.get('kind') in {'transferred','current_only'}:
+            continue
+        exact=rule_verified and c.get('original_equipped_verified') is True
+        owner=c['owner'];item=c['item']
+        if item=='none':continue
+        if exact:
+            if owner in assignments and assignments[owner]!=item:
+                contradictions.append(dict(owner=owner,items=[assignments[owner],item]))
+            if any(a!=owner and value==item for a,value in assignments.items()):
+                contradictions.append(dict(item=item,reason='duplicate_original_item'))
+            assignments[owner]=item
+        for target in members:
+            if target!=owner:
+                updates.append(dict(target=target,item=item,owner=owner,
+                    status='exact' if exact else 'conditional',sources=c['sources'],
+                    condition=None if exact else 'verified Item Clause AND confirmed original ownership'))
+    return dict(updates=updates,contradictions=contradictions,rule_verified=rule_verified)
+
+
 def scope(battle_id, individual):
     prefix = battle_id + ':'
     if not individual.startswith(prefix):

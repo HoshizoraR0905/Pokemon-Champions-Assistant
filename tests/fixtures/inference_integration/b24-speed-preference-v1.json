@@ -1,0 +1,309 @@
+{
+  "first": {
+    "event": {
+      "event_id": "event:b04c832694bde680a01262e4",
+      "canonical_references": {
+        "move": {
+          "canonical_id": "pokeapi:move:789",
+          "kind": "move",
+          "name": "灵魂冲击",
+          "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+        }
+      },
+      "original_text": "长毛巨魔使出了\n灵魂冲击！",
+      "attributes": {
+        "actor_display_reference": "长毛巨魔",
+        "move_resolution": {
+          "status": "confirmed",
+          "canonical_id": "pokeapi:move:789",
+          "raw_text": "灵魂冲击",
+          "normalized_text": "灵魂冲击",
+          "method": "exact_dictionary",
+          "candidates": [
+            "pokeapi:move:789"
+          ],
+          "alternatives": [],
+          "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+        },
+        "side_basis": [
+          "complete_withdrawal_grammar",
+          "complete_live_actor_grammar",
+          "complete_live_actor_grammar"
+        ],
+        "battle_id": "sample_battle_24",
+        "observation_time": 930.5066666666667,
+        "fusion_context": true,
+        "source_region_type": "battle_message",
+        "occurrence_id": "event:b7cf27e6b369e0900986fa76",
+        "reconstructed_logical_message": "长毛巨魔使出了\n灵魂冲击！",
+        "row_overlap": 0,
+        "sequence": 2390
+      }
+    },
+    "bindings": {
+      "actor": {
+        "pokemon_instance_id": "sample_battle_24:self:encounter:1be8e24381544df9",
+        "basis": "explicit_instance_id"
+      }
+    }
+  },
+  "second": {
+    "event": {
+      "event_id": "event:5785e44cdf6b514c0d4a86d5",
+      "canonical_references": {
+        "move": {
+          "canonical_id": "pokeapi:move:174",
+          "kind": "move",
+          "name": "诅咒",
+          "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+        }
+      },
+      "original_text": "对手的班基拉斯使出了\n咒术!",
+      "attributes": {
+        "actor_display_reference": "班基拉斯",
+        "move_resolution": {
+          "status": "confirmed",
+          "canonical_id": "pokeapi:move:174",
+          "raw_text": "咒术",
+          "normalized_text": "咒术",
+          "method": "exact_dictionary",
+          "candidates": [
+            "pokeapi:move:174"
+          ],
+          "alternatives": [],
+          "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+        },
+        "side_basis": [
+          "explicit_text",
+          "complete_withdrawal_grammar",
+          "complete_live_actor_grammar",
+          "complete_live_actor_grammar"
+        ],
+        "battle_id": "sample_battle_24",
+        "observation_time": 943.525,
+        "fusion_context": true,
+        "source_region_type": "battle_message",
+        "occurrence_id": "event:d7c64e3a7a9aeea32916e5c5",
+        "reconstructed_logical_message": "对手的班基拉斯使出了\n咒术!",
+        "row_overlap": 0,
+        "sequence": 2408
+      }
+    },
+    "bindings": {
+      "actor": {
+        "pokemon_instance_id": "sample_battle_24:opponent:encounter:759673a9a39eb3f5",
+        "basis": "explicit_instance_id"
+      }
+    }
+  },
+  "context": {
+    "pokemon": {
+      "sample_battle_24:self:encounter:1be8e24381544df9": {
+        "side": "self",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:861",
+            "kind": "species",
+            "name": "长毛巨魔",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 861,
+            "pokemon_id": 861,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:861",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed"
+        },
+        "variant": {
+          "value": "pokeapi:pokemon:861",
+          "knowledge": "observed"
+        },
+        "status": {
+          "value": "none",
+          "knowledge": "derived"
+        },
+        "stages": {
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            }
+          }
+        },
+        "ability": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:ability:158",
+              "name": "恶作剧之心"
+            },
+            "knowledge": "observed"
+          }
+        },
+        "item": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:item:246",
+              "name": "光之黏土"
+            },
+            "knowledge": "observed"
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "has_item": {
+            "value": null,
+            "knowledge": "unknown"
+          }
+        },
+        "mechanics": {
+          "battle_stats": {
+            "current": {
+              "speed": {
+                "value": 80,
+                "knowledge": "derived"
+              }
+            }
+          }
+        }
+      },
+      "sample_battle_24:opponent:encounter:759673a9a39eb3f5": {
+        "side": "opponent",
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:248",
+            "kind": "species",
+            "name": "班基拉斯",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 248,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "knowledge": "observed"
+        },
+        "variant": {
+          "value": null,
+          "knowledge": "unknown"
+        },
+        "status": {
+          "value": "none",
+          "knowledge": "derived"
+        },
+        "stages": {
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            }
+          }
+        },
+        "ability": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:ability:45",
+              "kind": "ability",
+              "name": "扬沙",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "knowledge": "observed"
+          }
+        },
+        "item": {
+          "identity": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "has_item": {
+            "value": null,
+            "knowledge": "unknown"
+          }
+        },
+        "mechanics": {
+          "battle_stats": {
+            "current": {}
+          }
+        }
+      }
+    },
+    "sides": {
+      "self": {
+        "conditions": {
+          "tailwind": {
+            "active": {
+              "value": false,
+              "knowledge": "observed"
+            }
+          }
+        }
+      },
+      "opponent": {
+        "conditions": {
+          "tailwind": {
+            "active": {
+              "value": false,
+              "knowledge": "derived"
+            }
+          }
+        }
+      }
+    },
+    "field": {
+      "weather": {
+        "kind": {
+          "value": "sandstorm",
+          "knowledge": "derived"
+        }
+      },
+      "terrain": {
+        "kind": {
+          "value": "none",
+          "knowledge": "derived"
+        }
+      },
+      "trick_room": {
+        "active": {
+          "value": false,
+          "knowledge": "observed"
+        }
+      }
+    },
+    "source_instance_aliases": {
+      "sample_battle_24:opponent:encounter:759673a9a39eb3f5": "sample_battle_24:opponent:encounter:f221ed853589d065"
+    }
+  },
+  "subject": "sample_battle_24:opponent:encounter:759673a9a39eb3f5",
+  "native": "pokeapi:species:248",
+  "battle_id": "sample_battle_24",
+  "proof": {
+    "status": "certified_local_membership",
+    "reasons": [],
+    "action_event_ids": [
+      "event:19a6c23b0dca455b28ab998e",
+      "event:df786c1b0e0ecc8541068975",
+      "event:b04c832694bde680a01262e4",
+      "event:5785e44cdf6b514c0d4a86d5"
+    ],
+    "original_opportunities": [
+      "sample_battle_24:self:encounter:541192e41906e9b9",
+      "sample_battle_24:opponent:encounter:35f95c655f0703da",
+      "sample_battle_24:self:encounter:1be8e24381544df9",
+      "sample_battle_24:opponent:encounter:759673a9a39eb3f5"
+    ],
+    "command_source": "tests/fixtures/sample_battle_24.mp4#868.0133333333333",
+    "start": 868.0133333333333,
+    "available_at": 954.5266666666666,
+    "basis": "bounded command cycle, all four original active actors each resolve exactly once; saved accepted stream",
+    "scope": "local action membership; absolute game turn numbering and queue modifier state separate"
+  },
+  "source_context": {
+    "path": ".cache/battles/sample_battle_24/diagnosis/b24-reviewed-context-20261101-v1/contexts-119376ea8122799a-attempt-1.jsonl",
+    "sha256": "40c16ff3398e4537b04b94263eff70b34756f207caf1f3d6cdc2e7ec505c156e"
+  },
+  "note": "Curated field selection from saved evidence; no new recognition; unknown Iron Ball is not absent."
+}

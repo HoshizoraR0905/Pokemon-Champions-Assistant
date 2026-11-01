@@ -1,0 +1,1691 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-01",
+  "policy": "user-iron-ball-last-resort-v1",
+  "interpretation": "default inference preference, not proof of item absence; no probability prior",
+  "detailed_inference": {
+    "path": ".cache/battles/sample_battle_24/diagnosis/speed-order-audit-v1/audit-iron-ball-last-resort-v4.json",
+    "sha256": "e66425d28aae999245781bb2f00ca8e57d190126a7dbe86d640be65efec1a3c6"
+  },
+  "preserved_previous_results": {
+    ".cache/battles/sample_battle_24/diagnosis/speed-order-audit-v1/audit.json": "f04b192637b159af09c7b1140e567961598f0f3496be86e373d5aaddc78b53ef",
+    ".cache/battles/sample_battle_24/diagnosis/speed-order-audit-v1/initial-audit.json": "f629ab23caa6a5110ffdd8921fd0c817234f49c49e392f731a41b9465eeaf2a2",
+    ".cache/battles/sample_battle_24/diagnosis/speed-order-audit-v1/audit-iron-ball-last-resort-v1.json": "e8ed1799a4eabb55df3793ae19f8abadb1153f8d4269cc966c1b039d26d03ff4",
+    ".cache/battles/sample_battle_24/diagnosis/speed-order-audit-v1/audit-iron-ball-last-resort-v2.json": "923793e7695f9543631547cf9d30e1e424e26cf6ad47bb140c75f92edc5d3f91",
+    ".cache/battles/sample_battle_24/diagnosis/speed-order-audit-v1/audit-v4.json": "c70488e8ff0eb00347b5a06812bb958bf27e2e1d8b412a0dc97f10bb825733b3",
+    ".cache/battles/sample_battle_24/diagnosis/speed-order-audit-v1/audit-iron-ball-last-resort-v3.json": "c777eaf603d098e15ecb6c0749ab0ccf166e1a7043ce1eb7f8b3180c849a39e7",
+    ".cache/battles/sample_battle_24/diagnosis/speed-order-audit-v1/audit-v2.json": "678054a6890aa68ea8bb09b5b4000d5bdba8877153ea4653de8986bc675b87d9",
+    ".cache/battles/sample_battle_24/diagnosis/speed-order-audit-v1/audit-v3.json": "9bf63214513d829dfa89db9ab5dccffccf809de7f30662a8f84ba6a0d72bbfdf"
+  },
+  "sources": {
+    ".cache/battles/sample_battle_24/diagnosis/b24-reviewed-context-20261101-v1/traces/7c3ffb267920ed10/trace.json": "16dad4adfa64e768c3b000ff8c594bbd16d97f4a27ae4344205ee9faeb8b976a",
+    ".cache/battles/sample_battle_24/diagnosis/b24-reviewed-context-20261101-v1/contexts-119376ea8122799a-attempt-1.jsonl": "40c16ff3398e4537b04b94263eff70b34756f207caf1f3d6cdc2e7ec505c156e",
+    ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/replay.json": "9c986812e6913aa8947248135c713cf95e737cfa4bfda710fd1b0fb1699a99be",
+    ".cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/video-only.json": "508217fb2508c4fcfcde31f20d80fa82f17c67a6d1157b82eaefce6239040ca8"
+  },
+  "source_code": {
+    "scripts/audit_b24_speed.py": "f00f725d7a089ac7fa58c17b761d42ba83b787f9fa3b857eb46e04397d11cca2",
+    "battle_evidence/inference_integration.py": "49ece6c497ea151791270d53d51d227553cfd1d44423f767dc63dc10c2a29655",
+    "battle_evidence/speed_preference.py": "09731ff69f7c0d490009a71b1cf49d2e38a146517712be1fc6a4a06e15b930fe",
+    "battle_evidence/configuration_domain.py": "a50e5fd31343d2ee881ab1d38d65e0f6a5477ea8a2539e773e915ba8ad642e56",
+    "battle_evidence/team_items.py": "20416b8ddceaadd9e0e0c6f2df3e704bd5660ef587dc001398f6e6c804beb9d6",
+    "battle_evidence/constraint_trace.py": "0bb4ba4562f9e9d329dfa09080ef62d7f14a6fc9e91efad5ce9fdf83d0b898b8",
+    "speed_order/mechanics.py": "540e953aab119b67d5a7f6a6853cefa6a1c72fe3088bc9704705deed3d776b30"
+  },
+  "candidate_outcomes": {
+    "different or uncertain priority": 18,
+    "uncertified action-cycle membership": 10,
+    "valid but not narrowing": 1,
+    "valid and numerically informative": 1
+  },
+  "roster": [
+    {
+      "name": "班基拉斯",
+      "native": "pokeapi:species:248",
+      "before": {
+        "values": [
+          72,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          121,
+          122,
+          123,
+          124
+        ],
+        "minimum": 72,
+        "maximum": 124,
+        "hull": [
+          72,
+          124
+        ],
+        "count": 44,
+        "has_gaps": true,
+        "intervals": [
+          [
+            72,
+            72
+          ],
+          [
+            81,
+            119
+          ],
+          [
+            121,
+            124
+          ]
+        ]
+      },
+      "after": {
+        "values": [
+          72
+        ],
+        "minimum": 72,
+        "maximum": 72,
+        "hull": [
+          72,
+          72
+        ],
+        "count": 1,
+        "has_gaps": false,
+        "intervals": [
+          [
+            72,
+            72
+          ]
+        ]
+      },
+      "policy": {
+        "id": "user-iron-ball-last-resort-v1",
+        "kind": "default inference preference; not observed item absence",
+        "non_iron_ball_feasible": true,
+        "iron_ball_fallback_necessary": false,
+        "explicit_iron_ball": false,
+        "observed_current_item": null,
+        "speculative_iron_ball_eligible": true,
+        "iron_ball_fallback_needed_by_order": false,
+        "selected": "non-Iron-Ball",
+        "speed_sp_zero_required": false
+      },
+      "speed_SP": {
+        "values": [
+          0
+        ],
+        "minimum": 0,
+        "maximum": 0,
+        "hull": [
+          0,
+          0
+        ],
+        "count": 1,
+        "has_gaps": false,
+        "intervals": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "speed_alignment_factors": [
+        "0.9"
+      ],
+      "global_alignment_patterns": [
+        {
+          "increase": "attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "defense",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "speed"
+        }
+      ],
+      "source_constraints": [
+        {
+          "event_ids": [
+            "event:b04c832694bde680a01262e4",
+            "event:5785e44cdf6b514c0d4a86d5"
+          ],
+          "command_source": "tests/fixtures/sample_battle_24.mp4#868.0133333333333"
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "name": "怪颚龙",
+      "native": "pokeapi:species:697",
+      "before": {
+        "values": [
+          81,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          132,
+          133,
+          134,
+          135
+        ],
+        "minimum": 81,
+        "maximum": 135,
+        "hull": [
+          81,
+          135
+        ],
+        "count": 45,
+        "has_gaps": true,
+        "intervals": [
+          [
+            81,
+            81
+          ],
+          [
+            91,
+            130
+          ],
+          [
+            132,
+            135
+          ]
+        ]
+      },
+      "after": {
+        "values": [
+          81,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          132,
+          133,
+          134,
+          135
+        ],
+        "minimum": 81,
+        "maximum": 135,
+        "hull": [
+          81,
+          135
+        ],
+        "count": 45,
+        "has_gaps": true,
+        "intervals": [
+          [
+            81,
+            81
+          ],
+          [
+            91,
+            130
+          ],
+          [
+            132,
+            135
+          ]
+        ]
+      },
+      "policy": {
+        "id": "user-iron-ball-last-resort-v1",
+        "non_iron_ball_feasible": true,
+        "iron_ball_fallback_necessary": false,
+        "selected": "non-Iron-Ball; no admissible Speed comparisons",
+        "kind": "inference preference; not proof of item absence"
+      },
+      "speed_SP": {
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "minimum": 0,
+        "maximum": 32,
+        "hull": [
+          0,
+          32
+        ],
+        "count": 33,
+        "has_gaps": false,
+        "intervals": [
+          [
+            0,
+            32
+          ]
+        ]
+      },
+      "speed_alignment_factors": [
+        "0.9",
+        "1.0",
+        "1.1"
+      ],
+      "global_alignment_patterns": [
+        {
+          "increase": null,
+          "decrease": null
+        },
+        {
+          "increase": "attack",
+          "decrease": "defense"
+        },
+        {
+          "increase": "attack",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "attack",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "defense",
+          "decrease": "attack"
+        },
+        {
+          "increase": "defense",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "defense",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "defense",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "attack"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "defense"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "attack"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "defense"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "speed"
+        },
+        {
+          "increase": "speed",
+          "decrease": "attack"
+        },
+        {
+          "increase": "speed",
+          "decrease": "defense"
+        },
+        {
+          "increase": "speed",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "speed",
+          "decrease": "special_defense"
+        }
+      ],
+      "source_constraints": [],
+      "blockers": []
+    },
+    {
+      "name": "喷火驼",
+      "native": "pokeapi:species:323",
+      "before": {
+        "values": [
+          54,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          99,
+          100,
+          101
+        ],
+        "minimum": 54,
+        "maximum": 101,
+        "hull": [
+          54,
+          101
+        ],
+        "count": 42,
+        "has_gaps": true,
+        "intervals": [
+          [
+            54,
+            54
+          ],
+          [
+            60,
+            97
+          ],
+          [
+            99,
+            101
+          ]
+        ]
+      },
+      "after": {
+        "values": [
+          54,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          99,
+          100,
+          101
+        ],
+        "minimum": 54,
+        "maximum": 101,
+        "hull": [
+          54,
+          101
+        ],
+        "count": 42,
+        "has_gaps": true,
+        "intervals": [
+          [
+            54,
+            54
+          ],
+          [
+            60,
+            97
+          ],
+          [
+            99,
+            101
+          ]
+        ]
+      },
+      "policy": {
+        "id": "user-iron-ball-last-resort-v1",
+        "non_iron_ball_feasible": true,
+        "iron_ball_fallback_necessary": false,
+        "selected": "non-Iron-Ball; no admissible Speed comparisons",
+        "kind": "inference preference; not proof of item absence"
+      },
+      "speed_SP": {
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "minimum": 0,
+        "maximum": 32,
+        "hull": [
+          0,
+          32
+        ],
+        "count": 33,
+        "has_gaps": false,
+        "intervals": [
+          [
+            0,
+            32
+          ]
+        ]
+      },
+      "speed_alignment_factors": [
+        "0.9",
+        "1.0",
+        "1.1"
+      ],
+      "global_alignment_patterns": [
+        {
+          "increase": null,
+          "decrease": null
+        },
+        {
+          "increase": "attack",
+          "decrease": "defense"
+        },
+        {
+          "increase": "attack",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "attack",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "defense",
+          "decrease": "attack"
+        },
+        {
+          "increase": "defense",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "defense",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "defense",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "attack"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "defense"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "attack"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "defense"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "speed"
+        },
+        {
+          "increase": "speed",
+          "decrease": "attack"
+        },
+        {
+          "increase": "speed",
+          "decrease": "defense"
+        },
+        {
+          "increase": "speed",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "speed",
+          "decrease": "special_defense"
+        }
+      ],
+      "source_constraints": [],
+      "blockers": []
+    },
+    {
+      "name": "轰擂金刚猩",
+      "native": "pokeapi:species:812",
+      "before": {
+        "values": [
+          94,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150
+        ],
+        "minimum": 94,
+        "maximum": 150,
+        "hull": [
+          94,
+          150
+        ],
+        "count": 46,
+        "has_gaps": true,
+        "intervals": [
+          [
+            94,
+            94
+          ],
+          [
+            105,
+            141
+          ],
+          [
+            143,
+            150
+          ]
+        ]
+      },
+      "after": {
+        "values": [
+          94,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150
+        ],
+        "minimum": 94,
+        "maximum": 150,
+        "hull": [
+          94,
+          150
+        ],
+        "count": 46,
+        "has_gaps": true,
+        "intervals": [
+          [
+            94,
+            94
+          ],
+          [
+            105,
+            141
+          ],
+          [
+            143,
+            150
+          ]
+        ]
+      },
+      "policy": {
+        "id": "user-iron-ball-last-resort-v1",
+        "non_iron_ball_feasible": true,
+        "iron_ball_fallback_necessary": false,
+        "selected": "non-Iron-Ball; no admissible Speed comparisons",
+        "kind": "inference preference; not proof of item absence"
+      },
+      "speed_SP": {
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "minimum": 0,
+        "maximum": 32,
+        "hull": [
+          0,
+          32
+        ],
+        "count": 33,
+        "has_gaps": false,
+        "intervals": [
+          [
+            0,
+            32
+          ]
+        ]
+      },
+      "speed_alignment_factors": [
+        "0.9",
+        "1.0",
+        "1.1"
+      ],
+      "global_alignment_patterns": [
+        {
+          "increase": null,
+          "decrease": null
+        },
+        {
+          "increase": "attack",
+          "decrease": "defense"
+        },
+        {
+          "increase": "attack",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "attack",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "defense",
+          "decrease": "attack"
+        },
+        {
+          "increase": "defense",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "defense",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "defense",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "attack"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "defense"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "attack"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "defense"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "speed"
+        },
+        {
+          "increase": "speed",
+          "decrease": "attack"
+        },
+        {
+          "increase": "speed",
+          "decrease": "defense"
+        },
+        {
+          "increase": "speed",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "speed",
+          "decrease": "special_defense"
+        }
+      ],
+      "source_constraints": [],
+      "blockers": []
+    },
+    {
+      "name": "大钢蛇",
+      "native": "pokeapi:species:208",
+      "before": {
+        "values": [
+          45,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          88,
+          89,
+          90
+        ],
+        "minimum": 45,
+        "maximum": 90,
+        "hull": [
+          45,
+          90
+        ],
+        "count": 41,
+        "has_gaps": true,
+        "intervals": [
+          [
+            45,
+            45
+          ],
+          [
+            50,
+            86
+          ],
+          [
+            88,
+            90
+          ]
+        ]
+      },
+      "after": {
+        "values": [
+          45,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          88,
+          89,
+          90
+        ],
+        "minimum": 45,
+        "maximum": 90,
+        "hull": [
+          45,
+          90
+        ],
+        "count": 41,
+        "has_gaps": true,
+        "intervals": [
+          [
+            45,
+            45
+          ],
+          [
+            50,
+            86
+          ],
+          [
+            88,
+            90
+          ]
+        ]
+      },
+      "policy": {
+        "id": "user-iron-ball-last-resort-v1",
+        "kind": "default inference preference; not observed item absence",
+        "non_iron_ball_feasible": true,
+        "iron_ball_fallback_necessary": false,
+        "explicit_iron_ball": false,
+        "observed_current_item": null,
+        "speculative_iron_ball_eligible": true,
+        "iron_ball_fallback_needed_by_order": false,
+        "selected": "non-Iron-Ball",
+        "speed_sp_zero_required": false
+      },
+      "speed_SP": {
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "minimum": 0,
+        "maximum": 32,
+        "hull": [
+          0,
+          32
+        ],
+        "count": 33,
+        "has_gaps": false,
+        "intervals": [
+          [
+            0,
+            32
+          ]
+        ]
+      },
+      "speed_alignment_factors": [
+        "0.9",
+        "1.0",
+        "1.1"
+      ],
+      "global_alignment_patterns": [
+        {
+          "increase": null,
+          "decrease": null
+        },
+        {
+          "increase": "attack",
+          "decrease": "defense"
+        },
+        {
+          "increase": "attack",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "attack",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "defense",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "defense",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "defense",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "defense"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "defense"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "speed"
+        },
+        {
+          "increase": "speed",
+          "decrease": "defense"
+        },
+        {
+          "increase": "speed",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "speed",
+          "decrease": "special_defense"
+        }
+      ],
+      "source_constraints": [
+        {
+          "event_ids": [
+            "event:19a6c23b0dca455b28ab998e",
+            "event:df786c1b0e0ecc8541068975"
+          ],
+          "command_source": "tests/fixtures/sample_battle_24.mp4#868.0133333333333"
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "name": "智挥猩",
+      "native": "pokeapi:species:765",
+      "before": {
+        "values": [
+          72,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          121,
+          122,
+          123
+        ],
+        "minimum": 72,
+        "maximum": 123,
+        "hull": [
+          72,
+          123
+        ],
+        "count": 44,
+        "has_gaps": true,
+        "intervals": [
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            119
+          ],
+          [
+            121,
+            123
+          ]
+        ]
+      },
+      "after": {
+        "values": [
+          72,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          121,
+          122,
+          123
+        ],
+        "minimum": 72,
+        "maximum": 123,
+        "hull": [
+          72,
+          123
+        ],
+        "count": 44,
+        "has_gaps": true,
+        "intervals": [
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            119
+          ],
+          [
+            121,
+            123
+          ]
+        ]
+      },
+      "policy": {
+        "id": "user-iron-ball-last-resort-v1",
+        "non_iron_ball_feasible": true,
+        "iron_ball_fallback_necessary": false,
+        "selected": "non-Iron-Ball; no admissible Speed comparisons",
+        "kind": "inference preference; not proof of item absence"
+      },
+      "speed_SP": {
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "minimum": 0,
+        "maximum": 32,
+        "hull": [
+          0,
+          32
+        ],
+        "count": 33,
+        "has_gaps": false,
+        "intervals": [
+          [
+            0,
+            32
+          ]
+        ]
+      },
+      "speed_alignment_factors": [
+        "0.9",
+        "1.0",
+        "1.1"
+      ],
+      "global_alignment_patterns": [
+        {
+          "increase": null,
+          "decrease": null
+        },
+        {
+          "increase": "attack",
+          "decrease": "defense"
+        },
+        {
+          "increase": "attack",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "attack",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "defense",
+          "decrease": "attack"
+        },
+        {
+          "increase": "defense",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "defense",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "defense",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "attack"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "defense"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "special_defense"
+        },
+        {
+          "increase": "special_attack",
+          "decrease": "speed"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "attack"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "defense"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "special_defense",
+          "decrease": "speed"
+        },
+        {
+          "increase": "speed",
+          "decrease": "attack"
+        },
+        {
+          "increase": "speed",
+          "decrease": "defense"
+        },
+        {
+          "increase": "speed",
+          "decrease": "special_attack"
+        },
+        {
+          "increase": "speed",
+          "decrease": "special_defense"
+        }
+      ],
+      "source_constraints": [],
+      "blockers": []
+    }
+  ],
+  "item_clause": {
+    "joint_completion_exists": true,
+    "hypothetical_iron_ball_holders": [],
+    "current_possession_is_not_original_ownership": true
+  },
+  "validation": {
+    "targeted": {
+      "passed": 142,
+      "seconds": 16.55,
+      "command": ".venv/bin/python -m pytest -q tests/test_speed_preference.py tests/test_inference_integration.py tests/test_constraint_trace.py tests/test_configuration_domain.py tests/test_speed_order.py tests/test_b24_evaluation.py -m 'not local_artifacts'"
+    },
+    "speed_replay_regressions": {
+      "passed": 121,
+      "deselected": 8,
+      "seconds": 1.61,
+      "command": ".venv/bin/python -m pytest -q tests/test_speed_inference.py tests/test_speed_replay.py tests/test_speed_replay_projection.py tests/test_speed_replay_extension.py tests/test_team_speed_context.py -m 'not local_artifacts'"
+    },
+    "note": "Overlapping suites are not summed as unique tests",
+    "frozen_and_historical_verify": "passed",
+    "unrestricted_domain_used": false,
+    "recognition_or_production_cli_rerun": false,
+    "committed_or_pushed": false,
+    "git_diff_check": "passed",
+    "identical_saved_audit_republication": "passed"
+  }
+}

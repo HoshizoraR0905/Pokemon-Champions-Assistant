@@ -1,0 +1,46 @@
+{
+  "checked_unique_files": 175,
+  "preserved_prior_trace_json_outputs": 62,
+  "issues": [],
+  "battles": {
+    "20": {
+      "trace": ".cache/battles/sample_battle_20/diagnosis/focused-repair-20261101-v1/traces/4096614f9dd58fc5/trace.json",
+      "aliases": {},
+      "repairs": 1,
+      "source_conflicts": 13,
+      "inference_contradictions": 0
+    },
+    "21": {
+      "trace": ".cache/battles/sample_battle_21/diagnosis/focused-repair-20261101-v1/traces/796831f1660d395b/trace.json",
+      "aliases": {
+        "sample_battle_21:self:encounter:47284d42682f9642": "sample_battle_21:self:encounter:7bb69bd50827b335",
+        "sample_battle_21:opponent:encounter:8c8e06a289acb7f8": "sample_battle_21:opponent:encounter:91d36e50fc00a60f"
+      },
+      "repairs": 1,
+      "source_conflicts": 2,
+      "inference_contradictions": 0
+    },
+    "22": {
+      "trace": ".cache/battles/sample_battle_22/diagnosis/focused-repair-20261101-v1/traces/a6fb41577cd12dd0/trace.json",
+      "aliases": {
+        "sample_battle_22:opponent:encounter:1efc511d2d254d17": "sample_battle_22:opponent:encounter:9f83b0d8e2d66b0e",
+        "sample_battle_22:opponent:encounter:09edb388d36073d3": "sample_battle_22:opponent:encounter:9a2e99a27bfb75ce",
+        "sample_battle_22:self:encounter:cddd4f82f09160aa": "sample_battle_22:self:encounter:a8b6c4247cef8311",
+        "sample_battle_22:opponent:encounter:ada26cd86ace72ee": "sample_battle_22:opponent:encounter:953d14c88dcaadc1"
+      },
+      "repairs": 1,
+      "source_conflicts": 2,
+      "inference_contradictions": 0
+    },
+    "23": {
+      "trace": ".cache/battles/sample_battle_23/diagnosis/focused-repair-20261101-v1/traces/3295f0e02ca6fab8/trace.json",
+      "aliases": {
+        "sample_battle_23:opponent:encounter:fc33d523176fa46c": "sample_battle_23:opponent:encounter:c11de1e8665ea33e"
+      },
+      "repairs": 1,
+      "source_conflicts": 1,
+      "inference_contradictions": 0
+    }
+  },
+  "scope": "Source identities/seals and declared completed stage outputs; not a repeat of every historical artifact guard or recognition accuracy evaluation"
+}

@@ -54,3 +54,49 @@ def evidence_allows(evidence,*,item,ability,move,attack_event_id):
         if expected and type(evidence.get('hp_before')) is int and evidence.get('hp_before')==evidence.get('hp_after'):
             return item!='Life Orb'
     return True
+
+
+def absence_constraint(evidence):
+    """Conservative negative evidence, with an explicit game/UI rule identity.
+
+    A missing OCR reading is not an observed absent display. The caller supplies
+    independently supported conditions; this function does not infer coverage.
+    User-reviewed UI rules are identified separately from executable references.
+    """
+    result=dict(status='unresolved',exclude_current_life_orb=False,
+                constraint=None,reasons=[],sources=evidence.get('sources',[]),
+                rule=evidence.get('rule'))
+    if not result['sources']:
+        result['reasons'].append('negative_evidence_sources_missing');return result
+    if evidence.get('loss_displayed') is True:
+        result['status']='rejected';result['reasons'].append('life_orb_loss_displayed');return result
+    for key in ('successful_hit','resolution_complete','not_protected','not_immune'):
+        if evidence.get(key) is not True:
+            result['status']='rejected' if evidence.get(key) is False else 'unresolved'
+            result['reasons'].append(key+'_not_established');return result
+    if evidence.get('multi_hit') is True and evidence.get('multi_hit_complete') is not True:
+        result['reasons'].append('multi_hit_completion_not_established');return result
+    if evidence.get('ability')=='Magic Guard' and evidence.get('ability_active') is not False:
+        result['status']='rejected';result['reasons'].append('magic_guard_suppression');return result
+    if (evidence.get('ability')=='Sheer Force' and evidence.get('ability_active') is not False
+            and evidence.get('sheer_force_boosted') is True):
+        result['status']='rejected';result['reasons'].append('sheer_force_suppression');return result
+    for key in ('item_active','item_history_clear','after_move_hook_reached',
+                'display_window_complete','loss_displayed'):
+        required=False if key=='loss_displayed' else True
+        if evidence.get(key) is not required:
+            result['reasons'].append(key+'_not_established')
+    if result['reasons']:return result
+    if (evidence.get('ability')=='Sheer Force' and evidence.get('ability_active') is not False
+            and evidence.get('sheer_force_boosted') is not False):
+        result.update(status='conditional',constraint='not Life Orb OR Sheer Force suppresses recoil')
+        result['reasons'].append('sheer_force_move_effect_unresolved');return result
+    if (evidence.get('magic_guard_excluded') is not True
+            or evidence.get('sheer_force_suppression_excluded') is not True):
+        result.update(status='conditional',constraint='not Life Orb OR applicable recoil suppression')
+        result['reasons'].append('suppressing_ability_not_excluded');return result
+    if not evidence.get('rule',{}).get('accepted_ui_guarantee'):
+        result.update(status='conditional',constraint='not Life Orb conditional on the recoil/UI reference')
+        result['reasons'].append('champions_ui_guarantee_not_established');return result
+    result.update(status='supported',exclude_current_life_orb=True,constraint='current item != Life Orb')
+    return result

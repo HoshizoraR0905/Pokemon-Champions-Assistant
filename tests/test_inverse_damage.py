@@ -108,7 +108,7 @@ def test_unknown_relevant_inputs_are_not_neutral(path):
 
 
 def test_unsupported_and_evidence_only_profile():
-    o=observation();o['input']['move']='Knock Off'
+    o=observation();o['input']['move']='Gyro Ball'
     assert infer([o])['status']=='unsupported'
     o=observation();o['input']['profile']='champions-evidence-only-v1'
     assert infer_attack_stat(observations=[o],candidate_stats=[100])['status']=='unsupported'

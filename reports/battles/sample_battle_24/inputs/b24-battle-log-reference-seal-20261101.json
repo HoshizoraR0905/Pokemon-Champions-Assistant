@@ -1,0 +1,6 @@
+{
+  "reference": "reports/battles/sample_battle_24/inputs/b24-battle-log-reference-20261101.json",
+  "sha256": "d80837cb3fa81bb22e910223e38be009315ac71c00b27ded2c8b7080780c6014",
+  "row_count": 119,
+  "predictions_not_consulted": true
+}

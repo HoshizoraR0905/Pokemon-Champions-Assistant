@@ -3,6 +3,53 @@ from copy import deepcopy
 from speed_inference.domains import digest
 
 
+def certify_saved_cycle(records, cycle, end, contexts):
+    """Certify a bounded local cycle from four original move opportunities.
+
+    Deliberately narrow: switches, missing/prevented actions, repeated actors,
+    coverage gaps and residual-before-action sequences require further evidence.
+    Proximity in seconds never supplies a boundary or membership proof.
+    """
+    accepted={'applied_candidate','applied_confirmed','applied_partial','recorded_observation'}
+    rows=[r for r in records if cycle['start']<=r['event'].get('attributes',{}).get('observation_time',0)<end]
+    moves=[r for r in rows if r['event']['event_type']=='move_execution' and r.get('application_status') in accepted]
+    reasons=[]
+    if end==float('inf'):reasons.append('next command boundary unavailable')
+    if not cycle.get('source_id'):reasons.append('command source unavailable')
+    for r in moves:
+        e=r.get('bindings',{}).get('resolved_event') or r['event']
+        if r.get('reason')=='move_revelation_only' and (
+            e.get('attributes',{}).get('source_region_type')!='battle_message'
+            or '使出' not in e.get('original_text','')):
+            reasons.append('move revelation lacks live execution message semantics')
+    pids=[r.get('bindings',{}).get('actor',{}).get('pokemon_instance_id') for r in moves]
+    if len(moves)!=4 or len(set(pids))!=4 or None in pids:reasons.append('four unique original move opportunities not resolved')
+    if moves:
+        view=contexts.get(moves[0]['event']['event_id'],{})
+        initial={pid for side in view.get('sides',{}).values() for pid in side.get('active_slots',{}).values()}
+        # Reuse the original opportunity snapshot consumed by
+        # tracking.hp_causes.grassy_recovery_context when it was saved.
+        markers=[r for r in rows if r['event']['event_type']=='phase_observation'
+            and r['event'].get('attributes',{}).get('resolution_cycle_start')
+            and r.get('bindings',{}).get('resolution_active_instance_ids')]
+        before=[r for r in markers if r['event']['attributes']['observation_time']<=moves[0]['event']['attributes']['observation_time']]
+        if before:initial=set(before[-1]['bindings']['resolution_active_instance_ids'])
+        if any(r['event']['attributes']['observation_time']>moves[0]['event']['attributes']['observation_time'] for r in markers):
+            reasons.append('additional original resolution boundary inside provisional cycle')
+        if initial!=set(pids):reasons.append('original active occupants do not match resolved actions')
+    for r in rows:
+        e=r['event'];a=e.get('attributes',{});kind=e['event_type']
+        if kind in {'switch_out','send_out','coverage_observation'}:reasons.append('switch, replacement or coverage gap inside cycle')
+        if kind=='move_execution' and r.get('application_status') not in accepted:reasons.append('unaccepted action inside cycle')
+        if moves and (a.get('timing')=='turn_end' or a.get('end_of_turn_resolution_id') or a.get('phase')=='end_of_turn') and a.get('observation_time',0)<moves[-1]['event']['attributes']['observation_time']:
+            reasons.append('residual boundary precedes final move')
+    return dict(status='unresolved' if reasons else 'certified_local_membership',
+        reasons=sorted(set(reasons)),action_event_ids=[r['event']['event_id'] for r in moves],
+        original_opportunities=pids,command_source=cycle.get('source_id'),start=cycle['start'],available_at=end if end!=float('inf') else None,
+        basis='bounded command cycle, all four original active actors each resolve exactly once; saved accepted stream',
+        scope='local action membership; absolute game turn numbering and queue modifier state separate')
+
+
 class TurnReconstruction:
     def __init__(self,battle_id):
         self.battle_id=battle_id;self.turns=[];self.current=None;self.windows=[];self.window=None

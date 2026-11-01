@@ -1,0 +1,57 @@
+{
+  "id": "hidden-constraints-b20-b23-20261031-v1",
+  "version": 1,
+  "battle_ids": ["sample_battle_20", "sample_battle_21", "sample_battle_22", "sample_battle_23"],
+  "no_statistical_priors": true,
+  "item_clause": {
+    "applicability": "User explicitly confirms all four recordings are ranked doubles with no duplicate items across all six roster members.",
+    "ownership": "Only confirmed original equipment supports unconditional cross-team exclusions. Current, consumed, lost and transferred possession remain separate.",
+    "existing_rule": "champions-reviewed-item-clause-v1",
+    "official_corroboration": {
+      "url": "https://news.pokemon-home.com/ja/page/816.html",
+      "retrieved_on": "2026-10-31",
+      "revision_id": null,
+      "page_update": "2026-09-09",
+      "game": "Pokémon Champions",
+      "regulation": "M-C",
+      "local_snapshot": ".cache/m345a/rules/official-mc.html",
+      "snapshot_retrieved_on": "2026-10-23",
+      "snapshot_sha256": "bc60bdc8fb1b7b4b8a89820a51e90281f7e59c9809cec18e38027f2f56854c0d",
+      "license": "Official Pokémon notice; attribution/link; local evidence only",
+      "scope_limit": "The source corroborates the clause; the user's confirmation establishes applicability here. Do not infer recording regulation from a filename or analysis date."
+    }
+  },
+  "life_orb_absence": {
+    "id": "user-reviewed-b20-b23-life-orb-20261031",
+    "verification": "user_specified_experiment_rule",
+    "accepted_ui_guarantee": true,
+    "rule": "Successful damaging attack, no Protect or immunity, resolution completed and no displayed Life Orb HP loss: exclude current Life Orb if Magic Guard and applicable Sheer Force suppression are excluded.",
+    "uncertainty": "Unread OCR windows do not certify absent display. Current-ability, item-history and multi-hit-completion uncertainty remain explicit. A visually reviewed sampled window is scoped to those saved frames and the user-defined UI rule.",
+    "independently_certified_champions_ui": false,
+    "executable_reference": "damage/data/item-classification-v1.json: Life Orb; pinned Showdown Champions inherited item callback",
+    "corroboration": [
+      {
+        "url": "https://wiki.52poke.com/wiki/生命宝珠",
+        "revision_ids_seen_in_web_views": [2622416, 2635482],
+        "retrieved_on": "2026-10-31",
+        "applicability": "General item description corroborates multi-hit recoil timing and suppression; does not independently establish Champions UI display coverage.",
+        "snapshot": "Metadata assertion only; cached web views returned differing revisions and fixed-link access returned HTTP 403. No runtime network use.",
+        "attribution": "52Poké contributors",
+        "license": "CC BY-NC-SA 3.0"
+      },
+      {
+        "url": "https://wiki.52poke.com/wiki/魔法防守",
+        "revision_id": null,
+        "retrieved_on": "2026-10-31",
+        "applicability": "Article includes Champions ability wording; no newly certified game-specific display guarantee.",
+        "attribution": "52Poké contributors",
+        "license": "CC BY-NC-SA 3.0"
+      }
+    ]
+  },
+  "numerical_profiles": {
+    "stats": "knowledge.stat_feasibility.champions_attainable_stats; existing pinned Champions SP/alignment model",
+    "damage_and_speed": "showdown-champions-reference-v1",
+    "limits": "Pinned executable reference is distinct from independently verified game behavior. No neutral filling of unknown stages, status, items, abilities or defender statistics. No new Defense/HP solver."
+  }
+}

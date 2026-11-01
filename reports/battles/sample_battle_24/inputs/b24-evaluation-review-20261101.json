@@ -1,0 +1,103 @@
+{
+  "battle_id": "sample_battle_24",
+  "version": "independent-review-and-derived-context-v1",
+  "profile_id": "sample_team_team7_20261021",
+  "own_roster": {
+    "battle_id": "sample_battle_24",
+    "species_ids": [
+      3,
+      6,
+      279,
+      445,
+      861,
+      1018
+    ],
+    "matches_team7": true,
+    "reviewer": "agent independent source-pixel complete six-member roster and visible held items",
+    "image": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/frames/000041.png",
+    "sha256": "c2bef34d5d3534b7079a74921cd98717330ba2e162fe8d2d8447d5ead2f8b239",
+    "observation_time": 20.003333333333334
+  },
+  "opponent_roster": {
+    "species_ids": [
+      248,
+      697,
+      323,
+      812,
+      208,
+      765
+    ],
+    "preview_order_verified": true,
+    "source": {
+      "image": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/frames/000041.png",
+      "sha256": "c2bef34d5d3534b7079a74921cd98717330ba2e162fe8d2d8447d5ead2f8b239",
+      "timestamp": 20.003333333333334
+    },
+    "reviewer": "agent source pixels, no expected opposing composition"
+  },
+  "confirmed_self_selection": {
+    "species_ids": [
+      861,
+      445,
+      279,
+      1018
+    ],
+    "order": [
+      861,
+      445,
+      279,
+      1018
+    ],
+    "source": {
+      "image": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/frames/000161.png",
+      "sha256": "13d28ab195184cb45ace93f8c6900602c61f9e085becb5711fea90f910611983",
+      "timestamp": 80.01333333333334
+    }
+  },
+  "opening": {
+    "event_id": "event:1ff50f41588206ea17877edf",
+    "covers_start": true,
+    "reviewer": "agent reviewed matchmaking, complete selection, ready screen and source opening send-outs",
+    "sources": [
+      {
+        "image": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/frames/000001.png",
+        "sha256": "74de3488726c7fa26e1220d5a41cad0203434d8257e494edc88360f1b1cc37ce",
+        "timestamp": 0.0
+      },
+      {
+        "image": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/frames/000161.png",
+        "sha256": "13d28ab195184cb45ace93f8c6900602c61f9e085becb5711fea90f910611983",
+        "timestamp": 80.01333333333334
+      },
+      {
+        "image": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/event-driven/fresh-b24-20261101-v1/frames/000041.png",
+        "sha256": "c2bef34d5d3534b7079a74921cd98717330ba2e162fe8d2d8447d5ead2f8b239",
+        "timestamp": 20.003333333333334
+      }
+    ]
+  },
+  "initial_full_hp_rule": {
+    "verified": true,
+    "species_ids": [
+      1018
+    ],
+    "maximum": 194,
+    "confirmed_by": "fresh full battle and exact Team7 profile; first entry only; independent Battle Log194→167 corroborates",
+    "scope": "derive initial full HP; no HUD fabrication or automatic return healing"
+  },
+  "ability_field_reference": {
+    "pokeapi:ability:45": {
+      "weather": "sandstorm",
+      "rule": "52poke-Champions-Sand-Stream-20261101-v1",
+      "sources": [
+        "https://wiki.52poke.com/index.php?title=扬沙（特性）&oldid=2561804"
+      ],
+      "retrieved": "2026-11-01",
+      "applicability": "Champions explicit activation; no mere native-ability assumption",
+      "duration": "unknown without certified turn boundaries/held-item context"
+    }
+  },
+  "diagnostic_hp_projection": true,
+  "baseline_quality_seal": "/Users/yyi/Pokemon-Champions-Assistant/.cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/baseline-quality-seal.json",
+  "limits": "Independent log used only for evaluation/corroboration; no missed messages or expected opponent builds injected into original accepted receipts. Source-verified opt-in Sand Stream deduction and verified initial full HP are explicitly derived."
+}

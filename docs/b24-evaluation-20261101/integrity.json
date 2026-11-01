@@ -1,0 +1,24 @@
+{
+  "checked_files": 15062,
+  "mismatches": [],
+  "movie_sha256": "c9f0c3504215a1da8b23a9592e12d2737588d3e0a975a33d15a2710295394299",
+  "movie_matches": true,
+  "frozen_baseline_and_reference_verified": true,
+  "current_outputs": {
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/species-812-trace.md": "21f6b03f7be24127200a70801de5aaa3b894e9bf47f318af70ec262599926f04",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/species-323-trace.md": "644c0c2766472e5e77e6d48cf8153391f2c46adf8a7cfdce8fbcfbc55214b9d9",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/metrics.json": "0beb853fa557ed0e211232de065a459f77eba796f3f412838ad91afe7d14bbca",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/effect-cases.json": "5a71966779b015ce8bf1f3a98e43df9600120488a38570a08fa86df070b2f822",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/deferred.json": "bff2ff55063a205360ca7edfe929fa1a3a8e747941c2043902bab135a92adbbf",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/species-208-trace.md": "1578a3e30c021ff452849bd2995e9a71620c43c0ad9640c1ee705e3edc6b8388",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/species-765-trace.md": "175c2f93380322481241dd629ff0c414cf71fdc22c2d6f5dc0a9743cde28a105",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/stat-domains.json": "fd05448ff25b78feee5d3b9edd113c7901989d9ca015c1ef5db96dc3626fa65d",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/species-248-trace.md": "231484616615df5c42df5d3519cf876e3196c43ca2d59f6126c4df3c2e579371",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/entity-cases.json": "38fb05571d1e279b2bd2abe143b7d21343f42fcb0646118eb70eb56976993d5b",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/hp-cases.json": "32b9453a33f74e2b0eda4ef3a1cf20214870acd6a974ae94f3a9b8961a8aeefd",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/species-697-trace.md": "c7fa8b6f617162e509ccb688fe56938d55092ac9d220297b5ea3db392c5e4cc7",
+    ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final/damage-cases.json": "ac6b9dd7020a77a41c7dd08ab5f13526970b27f7dac234d4cd213c0842b97cfe"
+  },
+  "trace": ".cache/battles/sample_battle_24/diagnosis/b24-reviewed-context-20261101-v1/traces/7c3ffb267920ed10/trace.json",
+  "trace_sha256": "16dad4adfa64e768c3b000ff8c594bbd16d97f4a27ae4344205ee9faeb8b976a"
+}

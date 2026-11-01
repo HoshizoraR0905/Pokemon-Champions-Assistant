@@ -12,18 +12,26 @@ PROFILES={'champions-evidence-only-v1','showdown-champions-reference-v1'}
 # Closed audited allowlist: other moves cannot accidentally use ordinary power.
 DIRECT=set('Body Slam|Double-Edge|Quick Attack|Extreme Speed|Flamethrower|Fire Blast|Heat Wave|Fire Punch|Flare Blitz|Waterfall|Surf|Hydro Pump|Scald|Liquidation|Thunderbolt|Thunder|Thunder Punch|Volt Switch|Ice Beam|Ice Punch|Ice Fang|Blizzard|Psychic|Psyshock|Shadow Ball|Shadow Claw|Dark Pulse|Crunch|Bite|Dragon Claw|Dragon Pulse|Draco Meteor|Earthquake|Earth Power|Bulldoze|Rock Slide|Stone Edge|Power Gem|Close Combat|Superpower|Aura Sphere|Focus Blast|Flash Cannon|Iron Head|Bullet Punch|Meteor Mash|Moonblast|Dazzling Gleam|Play Rough|Energy Ball|Leaf Blade|Leaf Storm|Giga Drain|Sludge Bomb|Sludge Wave|Poison Jab|Bug Buzz|X-Scissor|U-turn|Air Slash|Air Cutter|Brave Bird|Hurricane|Hyper Voice|Hyper Beam|Armor Cannon|Sacred Sword|Body Press|Facade'.split('|'))
 DIRECT.update({'Fake Out', 'Foul Play', 'Psystrike'})
+DIRECT.add('Hammer Arm')  # B22: connected damage; Speed drop is a later state event.
+DIRECT.update({'Wood Hammer','Grassy Glide','Shadow Sneak','Dual Wingbeat','Zap Cannon','Darkest Lariat'})
+DIRECT.update({'High Horsepower','Spirit Break','Weather Ball','Electro Shot','Psychic Fangs','Knock Off','Heavy Slam'})
 FIXED={'Seismic Toss','Night Shade'}
 AT_ABILITIES=set('none|Adaptability|Technician|Huge Power|Pure Power|Guts|Sniper|Overgrow|Blaze|Torrent|Swarm|Tough Claws|Iron Fist|Strong Jaw|Mega Launcher|Sharpness|Aerilate|Pixilate|Refrigerate|Mold Breaker|Teravolt|Turboblaze|Pressure|Frisk'.split('|'))
 DF_ABILITIES=set('none|Levitate|Flash Fire|Water Absorb|Volt Absorb|Lightning Rod|Sap Sipper|Thick Fat|Heatproof|Fur Coat|Filter|Solid Rock|Multiscale|Marvel Scale|Grass Pelt|Shell Armor|Battle Armor|Pressure|Frisk'.split('|'))
 # These callbacks affect accuracy, order or post-hit damage, not this connected
 # hit's damage. Contact retaliation remains separate HP-event evidence.
 AT_ABILITIES.update({'No Guard','Static','Lightning Rod','Rough Skin','Prankster','Intimidate','Stamina'})
+AT_ABILITIES.update({'Unnerve','Contrary','Competitive','Cute Charm','Marvel Scale'})
+AT_ABILITIES.update({'Grassy Surge','Electric Surge','Surge Surfer','Corrosion','Toxic Debris','Clear Body','Rock Head','Reckless'})
+AT_ABILITIES.update({'Flash Fire','Weak Armor'})
+AT_ABILITIES.update({'Sand Stream','Sand Force'})
+DF_ABILITIES.update({'Sand Stream','Sand Force'})
 DF_ABILITIES.update({'No Guard','Static','Rough Skin','Prankster','Intimidate','Stamina'})
 TYPE_ITEMS=dict(zip('Silk Scarf|Charcoal|Mystic Water|Magnet|Miracle Seed|Never-Melt Ice|Black Belt|Poison Barb|Soft Sand|Sharp Beak|Twisted Spoon|Silver Powder|Hard Stone|Spell Tag|Dragon Fang|Black Glasses|Metal Coat|Fairy Feather'.split('|'),'Normal Fire Water Electric Grass Ice Fighting Poison Ground Flying Psychic Bug Rock Ghost Dragon Dark Steel Fairy'.split()))
 BERRIES=dict(zip('Chilan Berry|Occa Berry|Passho Berry|Wacan Berry|Rindo Berry|Yache Berry|Chople Berry|Kebia Berry|Shuca Berry|Coba Berry|Payapa Berry|Tanga Berry|Charti Berry|Kasib Berry|Haban Berry|Colbur Berry|Babiri Berry|Roseli Berry'.split('|'),'Normal Fire Water Electric Grass Ice Fighting Poison Ground Flying Psychic Bug Rock Ghost Dragon Dark Steel Fairy'.split()))
 ITEMS={'none','Life Orb','Expert Belt','Muscle Band','Wise Glasses','Leftovers','Sitrus Berry','White Herb'}|set(TYPE_ITEMS)|set(BERRIES)
 STAT_NAMES={'attack','defense','special_attack','special_defense','speed'}
-MON_KEYS={'identity','form','level','stats','stat_basis','stages','current_hp','maximum_hp','ability','item','status','other_effects'}
+MON_KEYS={'identity','form','level','stats','stat_basis','stages','current_hp','maximum_hp','ability','item','status','other_effects','metronome_count','low_hp_ability_active'}
 FIELD_KEYS={'format','weather','terrain','critical','reflect','light_screen','aurora_veil','targets_hit','attacker_grounded','defender_grounded','helping_hand','friend_guard','other_effects'}
 
 
@@ -86,7 +94,9 @@ def prepare_mon(value,path):
     choice(ability,path+'.ability',(AT_ABILITIES if path=='attacker' else DF_ABILITIES)|neutral_ability_names())
     form_id=identity['canonical_id']
     handler=hit_handler(item,form_id,path)
-    if handler=='unresolved':raise Diagnostic('unsupported',path+'.item','Item mechanic/history lacks an audited connected-hit handler')
+    if item=='Metronome' and path=='attacker':
+        integer(value.get('metronome_count'),path+'.metronome_count',0,5)
+    elif handler=='unresolved':raise Diagnostic('unsupported',path+'.item','Item mechanic/history lacks an audited connected-hit handler')
     if handler=='current_form_stone' and not candidate_applicable(item,form_id):raise Diagnostic('unsupported',path+'.item','Species/form incompatible Mega stone')
     status=choice(value.get('status'),path+'.status',{'none','burn','poison','toxic','paralysis','sleep','freeze'})
     absent_other(value.get('other_effects'),path+'.other_effects')
@@ -107,7 +117,7 @@ def calculate(request):
         identities={},distribution=None,applied_modifiers=[],trace=[],assumptions=[],unresolved_inputs=[],unsupported_mechanics=[],provenance={})
     try:
         json.dumps(request,allow_nan=False)
-        object_keys(request,'request',{'profile','mode','attacker','defender','move','field'})
+        object_keys(request,'request',{'profile','mode','attacker','defender','move','field','hit_index'})
         if request.get('mode','exact')!='exact':raise Diagnostic('invalid_input','mode','Use calculate_scenarios for explicit alternatives')
         profile=choice(request.get('profile'),'profile',PROFILES)
         kb,data,manifest=database();result['provenance']=dict(knowledge_snapshot=kb.snapshot_id,damage_data=manifest['files'],oracle=manifest['oracle'],verification='provisional community reference')
@@ -116,7 +126,11 @@ def calculate(request):
         if not move:raise Diagnostic('unsupported','move','No definition in pinned Champions-reference data')
         name=move['name'];category=move['category'];typ=move['type']
         if category=='Status':raise Diagnostic('unsupported','move','Status move is not direct damage')
-        if move.get('multihit'):raise Diagnostic('unsupported','move','Multi-hit joint randomness and between-hit effects are not implemented')
+        if move.get('multihit'):
+            if name!='Dual Wingbeat' or type(request.get('hit_index')) is not int or request['hit_index'] not in (1,2):
+                raise Diagnostic('unsupported','move','Dual Wingbeat requires explicit hit_index 1/2 and independently supplied per-hit state; no aggregate substitution')
+            result['hit_context']=dict(index=request['hit_index'],count=2,damage_unit='one_hit')
+        elif 'hit_index' in request:raise Diagnostic('invalid_input','hit_index','Only the audited Dual Wingbeat per-hit handler accepts hit_index')
         if name not in DIRECT|FIXED:raise Diagnostic('unsupported','move','Exceptional or unaudited move; never substitute its ordinary base power')
         for role,mon,handlers in [('attacker',attacker,AT_ABILITIES),('defender',defender,DF_ABILITIES)]:
             if mon['ability'] in handlers:continue
@@ -125,7 +139,7 @@ def calculate(request):
             result['trace'].append(dict(role=role,ability_audit=audit))
             result['assumptions'].append(mon['ability']+': action-time state supplied explicitly; entry/residual/reflection effects are not simulated by this direct-hit calculator.')
         local=kb.facts['moves'].get(mref['canonical_id'])
-        if local and (local['type']!=typ or local['category']!=category or (str(local['power']).isdigit() and name not in FIXED and int(local['power'])!=move['basePower'])):raise Diagnostic('conflicting_input','move','Pinned local Champions catalog and reference definition disagree')
+        if local and (local['type']!=typ or local['category']!=category or (str(local['power']).isdigit() and name not in (FIXED|{'Heavy Slam'}) and int(local['power'])!=move['basePower'])):raise Diagnostic('conflicting_input','move','Pinned local Champions catalog and reference definition disagree')
         field=request.get('field');object_keys(field,'field',FIELD_KEYS)
         absent_other(field.get('other_effects'),'field.other_effects')
         weather=choice(field.get('weather'),'field.weather',{'none','sun','rain','sand','snow'});terrain=choice(field.get('terrain'),'field.terrain',{'none','electric','grassy','psychic','misty'});fmt=choice(field.get('format'),'field.format',{'singles','doubles'})
@@ -142,13 +156,14 @@ def calculate(request):
         result['assumptions']=['Conditional on this hit connecting, supplied critical flag, and explicit absence of unlisted effects; no accuracy/critical-chance inference.','Actual stats are unmodified and supplied by caller; no EV/IV/nature/SP or ability legality inferred.','Current form is supplied, not an evolution event; no automatic stat construction.', 'Rolls are potential direct damage; hp_loss_rolls separately caps damage at supplied current HP. Recoil, healing and post-hit effects are outside this one-hit distribution.']
         if defender['input'].get('current_hp') is None:result['assumptions'].append('Defender current HP unknown: damage distribution valid but KO probability unavailable unless required by ability.')
         aa=attacker['ability'];da=defender['ability'];ai=attacker['item'];di=defender['item'];mods=result['applied_modifiers']
+        if aa=='Flash Fire' and typ=='Fire':raise Diagnostic('incomplete_input','attacker.ability','Flash Fire Fire-move activation branch not supplied')
         if aa in {'Mold Breaker','Teravolt','Turboblaze'}:da='none';mods.append(dict(stage='ability',name='defender ability ignored',reference_rule=aa))
         if da in {'Shell Armor','Battle Armor'} and critical:
             critical=False;mods.append(dict(stage='critical',name=da,effect='prevents_critical'))
         converted={'Aerilate':'Flying','Pixilate':'Fairy','Refrigerate':'Ice','Galvanize':'Electric'}
-        ate=aa in converted and typ=='Normal'
+        if name=='Weather Ball':typ={'none':'Normal','sun':'Fire','rain':'Water','sand':'Rock','snow':'Ice'}[weather]
+        ate=aa in converted and typ=='Normal' and name!='Weather Ball'
         if ate:typ=converted[aa]
-        if ai=='Normal Gem' and typ=='Normal':raise Diagnostic('unsupported','attacker.item','Normal Gem activation/consumption handler not implemented')
         result['trace'].append(dict(move_type=typ,category=category,source_move=move))
         def grounded(side,mon):
             supplied=boolean(field.get(side+'_grounded'),'field.'+side+'_grounded')
@@ -172,7 +187,23 @@ def calculate(request):
         if name in FIXED:
             result.update(status='exact_reference',distribution=distribution([attacker['input']['level']],defender['input'].get('maximum_hp'),defender['input'].get('current_hp')));result['trace'].append(dict(handler='fixed_level_damage',randomness='deterministic; ordinary damage rolls inapplicable'));return result
         power=move['basePower'];bp=[]
+        if name=='Weather Ball':power*=2 if weather!='none' else 1
+        if name=='Heavy Slam':
+            result['trace'].append(dict(catalog_power_representation={'local':local.get('power') if local else None,'reference':move['basePower'],'meaning':'variable-power sentinels; use audited current-weight handler'}))
+            weights=[]
+            for role,mon in [('attacker',attacker),('defender',defender)]:
+                raw=kb.facts['pokemon'].get(mon['identity']['canonical_id'],{}).get('weight_kg')
+                if raw is None or raw<=0:raise Diagnostic('incomplete_input',role+'.identity','Verified current-form weight unavailable for Heavy Slam')
+                weights.append(Fraction(str(raw)))
+            power=next((p for ratio,p in [(5,120),(4,100),(3,80),(2,60)] if weights[0]>=ratio*weights[1]),40)
+            result['trace'].append(dict(handler='Heavy Slam',current_form_weights_kg=[str(w) for w in weights],base_power=power,source='existing pinned KnowledgeBase current-form weight facts'))
+        if name=='Electro Shot':result['assumptions'].append('Connected hit uses supplied post-charge stat stages; the charge boost is a separate state transition and is not applied again.')
         def push(stage,items,label,value):items.append(value);mods.append(dict(stage=stage,name=label,fixed_point=value,denominator=4096))
+        if name=='Knock Off' and di!='none':
+            from .items import rule
+            item_rule=rule(di)
+            if item_rule is None:raise Diagnostic('unsupported','defender.item','Knock Off removability lacks audited item contract')
+            if item_rule['forward_coverage']!='current_form_stone':push('power',bp,'Knock Off removable held item',6144)
         if name=='Facade' and attacker['status'] in {'burn','paralysis','poison','toxic'}:push('power',bp,'Facade',8192)
         if field['helping_hand']:push('power',bp,'Helping Hand',6144)
         if ag and (terrain,typ) in {('electric','Electric'),('grassy','Grass'),('psychic','Psychic')}:push('power',bp,terrain,5325)
@@ -180,8 +211,11 @@ def calculate(request):
         flags=move.get('flags',{})
         if (aa=='Technician' and power<=60) or any(aa==a and flags.get(f) for a,f in [('Mega Launcher','pulse'),('Strong Jaw','bite'),('Sharpness','slicing')]):push('power',bp,aa,6144)
         if aa=='Tough Claws' and flags.get('contact'):push('power',bp,aa,5325)
+        if aa=='Sand Force' and weather=='sand' and typ in {'Rock','Ground','Steel'}:push('power',bp,aa,5325)
+        if aa=='Reckless' and move.get('recoil'):push('power',bp,aa,4915)
         if ate or aa=='Iron Fist' and flags.get('punch'):push('power',bp,aa,4915)
         if TYPE_ITEMS.get(ai)==typ:push('power',bp,ai,4915)
+        elif ai=='Normal Gem' and typ=='Normal':push('power',bp,ai,5325)
         elif ai=='Muscle Band' and category=='Physical' or ai=='Wise Glasses' and category=='Special':push('power',bp,ai,4505)
         power=max(1,poke_round(power*chain_mods(bp)))
         selector=select_stats(name,category)
@@ -191,15 +225,23 @@ def calculate(request):
         astage=attack_source['input']['stages'].get(atstat);dstage=defender['input']['stages'].get(dfstat)
         # Critical may ignore a known disadvantageous stage, never an unknown one.
         integer(astage,attack_path+'.stages.'+atstat,-6,6)
-        if name!='Sacred Sword':integer(dstage,'defender.stages.'+dfstat,-6,6)
+        ignore_defensive_stage=name in {'Sacred Sword','Darkest Lariat'}
+        if not ignore_defensive_stage:integer(dstage,'defender.stages.'+dfstat,-6,6)
         attack=effective(attack_source,atstat,attack_path,critical and astage<0)
-        defense=effective(defender,dfstat,'defender',(critical and dstage>0) or name=='Sacred Sword')
+        defense=effective(defender,dfstat,'defender',ignore_defensive_stage or (critical and dstage>0))
         am=[];dm=[]
         if ai=='Light Ball' and effect_applicable(ai,attacker['identity']['canonical_id']) and atstat in {'attack','special_attack'} and selector['offensive_owner']=='attacker':push('attack',am,ai,8192)
         if aa=='Guts' and attacker['status']!='none' and category=='Physical':push('attack',am,aa,6144)
         elif aa in {'Overgrow','Blaze','Torrent','Swarm'} and typ=={'Overgrow':'Grass','Blaze':'Fire','Torrent':'Water','Swarm':'Bug'}[aa]:
-            hp=integer(attacker['input'].get('current_hp'),'attacker.current_hp');maximum=integer(attacker['input'].get('maximum_hp'),'attacker.maximum_hp')
-            if hp*3<=maximum:push('attack',am,aa,6144)
+            if 'low_hp_ability_active' in attacker['input']:
+                low=boolean(attacker['input']['low_hp_ability_active'],'attacker.low_hp_ability_active')
+                hp=attacker['input'].get('current_hp');maximum=attacker['input'].get('maximum_hp')
+                if hp is not None and maximum is not None and low!=(hp*3<=maximum):
+                    raise Diagnostic('conflicting_input','attacker.low_hp_ability_active','Threshold evidence conflicts with supplied absolute HP')
+            else:
+                hp=integer(attacker['input'].get('current_hp'),'attacker.current_hp');maximum=integer(attacker['input'].get('maximum_hp'),'attacker.maximum_hp')
+                low=hp*3<=maximum
+            if low:push('attack',am,aa,6144)
         elif aa in {'Huge Power','Pure Power'} and category=='Physical':push('attack',am,aa,8192)
         if da=='Thick Fat' and typ in {'Fire','Ice'} or da=='Heatproof' and typ=='Fire':push('attack',am,da,2048)
         attack=max(1,poke_round(attack*chain_mods(am)))%65536
@@ -219,7 +261,7 @@ def calculate(request):
         if stab!=4096:mods.append(dict(stage='after_random',name='STAB',fixed_point=stab,denominator=4096))
         if effectiveness!=1:mods.append(dict(stage='after_stab',name='type_effectiveness',numerator=effectiveness.numerator,denominator=effectiveness.denominator))
         final=[]
-        if not critical and (field['aurora_veil'] or field['reflect'] and category=='Physical' or field['light_screen'] and category=='Special'):push('final',final,'screen',2732 if fmt=='doubles' else 2048)
+        if name!='Psychic Fangs' and not critical and (field['aurora_veil'] or field['reflect'] and category=='Physical' or field['light_screen'] and category=='Special'):push('final',final,'screen',2732 if fmt=='doubles' else 2048)
         if aa=='Sniper' and critical:push('final',final,aa,6144)
         if da=='Multiscale':
             hp=integer(defender['input'].get('current_hp'),'defender.current_hp');maximum=integer(defender['input'].get('maximum_hp'),'defender.maximum_hp')
@@ -228,7 +270,9 @@ def calculate(request):
         if field['friend_guard']:push('final',final,'Friend Guard',3072)
         if ai=='Expert Belt' and effectiveness>1:push('final',final,ai,4915)
         elif ai=='Life Orb':push('final',final,ai,5324)
-        if BERRIES.get(di)==typ and (effectiveness>1 or typ=='Normal'):push('final',final,di,2048)
+        elif ai=='Metronome':
+            push('final',final,ai,[4096,4915,5734,6553,7372,8192][attacker['input']['metronome_count']])
+        if BERRIES.get(di)==typ and (effectiveness>1 or typ=='Normal') and aa!='Unnerve':push('final',final,di,2048)
         burned=attacker['status']=='burn' and category=='Physical' and aa!='Guts' and name!='Facade'
         if burned:mods.append(dict(stage='after_type',name='burn',numerator=1,denominator=2))
         values,steps=rolls(base,stab,effectiveness,burned,chain_mods(final))

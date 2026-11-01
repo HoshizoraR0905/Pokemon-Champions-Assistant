@@ -68,6 +68,16 @@ def recognize_hud(recognizer,frame):
 def preview_rows(result,battle_id):
     rows=[]
     for mon in result.pokemon:
+        if mon.slot.startswith('own_team_'):
+            row=int(mon.slot.rsplit('_',1)[1]);resolution=mon.species.resolution
+            rows.append(dict(battle_id=battle_id,side='self',preview_row=row,
+                member_occurrence=f'{battle_id}:self:preview:{row}',
+                species_id=resolution.species_id if resolution else None,
+                species=asdict(mon.species),
+                status='resolved' if resolution and resolution.species_id else 'unresolved',
+                evidence={**result.capture_metadata,'source':result.source,'timestamp':result.timestamp},
+                active_slot=None,nickname=None,persistent_instance_id=None))
+            continue
         if not mon.slot.startswith('opponent_team_'):continue
         icon=mon.icon;row=int(mon.slot.rsplit('_',1)[1])
         rows.append(dict(battle_id=battle_id,side='opponent',preview_row=row,

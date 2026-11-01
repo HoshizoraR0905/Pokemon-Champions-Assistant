@@ -1,0 +1,1583 @@
+{
+  "classification": "curated compact projection of saved accepted evidence, not independent OCR ground truth",
+  "cases": [
+    {
+      "battle": 20,
+      "source_projection": ".cache/battles/sample_battle_20/fresh-benchmark/fresh-b20-postfix-v1/hp-resolutions.json",
+      "sha256": "86659bdee45a95d55be6bf930bc3aad3af6609e6a5f00a927b0c0910dbbe334b",
+      "records": [
+        {
+          "event": {
+            "event_id": "event:f7bd2e13f1162b336912cc9a",
+            "event_type": "send_out",
+            "original_text": "上吧！铝钢桥龙！",
+            "attributes": {
+              "observation_time": 443.5083333333333
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:59946827db8714f488f78dc3",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 448.0083333333333,
+              "hp": {
+                "value": null,
+                "confidence": 1.0,
+                "raw_text": "194/94"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:f6d47a18c306182fa1b0d577",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 448.5083333333333,
+              "hp": {
+                "value": {
+                  "current": 168,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "168/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:96a6e022e20f00246c381684",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 449.0083333333333,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:283f160ead26385395fb249d",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 449.5083333333333,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:1dad2069efbda5409e078486",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 450.0083333333333,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:66d50c7bf97ba02ebddbc676",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 450.51,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:de37f3af62a7c2371be6a261",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 451.01,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:79b4b4a29240ffee2e6fa131",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 451.51,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:f531ccb221d2f4cd24daf71e",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 452.01,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:6e8067cc67b4a7b7a8ab5cec",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 452.51,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:43e495fa17c3e05071da005a",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 453.01,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:4fc5208d5f59f73a51693fa3",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 453.51,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:d6a2b47e6c50f77b9bb01474",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 454.01,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:b4261476e168a802e939ecd3",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 454.51,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:60cb4b8a335a81a61a8c8481",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 455.01,
+              "hp": {
+                "value": {
+                  "current": 152,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "152/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:cd9d2a0c74b149e76e9cff30",
+            "event_type": "move_execution",
+            "attributes": {
+              "observation_time": 447.0083333333333
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_20:opponent:encounter:bb18a1534a4d21bf",
+              "basis": "explicit_instance_id"
+            }
+          },
+          "application_status": "applied_partial"
+        }
+      ],
+      "projection": {
+        "episodes": [
+          {
+            "episode_id": "event:cd9d2a0c74b149e76e9cff30:hp:sample_battle_20:self:encounter:5357dbf77ecbff3a",
+            "source_event_id": "event:cd9d2a0c74b149e76e9cff30",
+            "source_event": {
+              "event_id": "event:cd9d2a0c74b149e76e9cff30",
+              "time": 447.0083333333333,
+              "event_type": "move_execution"
+            },
+            "actor_instance_id": "sample_battle_20:opponent:encounter:bb18a1534a4d21bf",
+            "target_instance_id": "sample_battle_20:self:encounter:5357dbf77ecbff3a",
+            "cause": {
+              "kind": "move",
+              "source": {
+                "canonical_id": "pokeapi:move:408",
+                "kind": "move",
+                "name": "力量宝石",
+                "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+              }
+            },
+            "source_move": {
+              "canonical_id": "pokeapi:move:408",
+              "kind": "move",
+              "name": "力量宝石",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "before": null,
+            "after": 152,
+            "delta": null,
+            "attribution_status": "ambiguous",
+            "complete_endpoints": false,
+            "reasons": [
+              "pre_action_hp_missing"
+            ],
+            "resolution_end": {
+              "event_id": "event:d2367e3ba52b653ae50c5db4",
+              "time": 455.51,
+              "event_type": "move_execution"
+            },
+            "endpoints": {
+              "before": null,
+              "after": {
+                "event_id": "event:60cb4b8a335a81a61a8c8481",
+                "time": 455.01,
+                "event_type": "hud_observation"
+              }
+            },
+            "components": [
+              {
+                "before": null,
+                "after": 152,
+                "delta": null,
+                "reasons": [
+                  "pre_action_hp_missing"
+                ],
+                "complete_endpoints": false,
+                "baseline_basis": "unknown",
+                "valid": true,
+                "endpoints": {
+                  "before": null,
+                  "after": {
+                    "event_id": "event:60cb4b8a335a81a61a8c8481",
+                    "time": 455.01,
+                    "event_type": "hud_observation"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "contexts": {
+        "event:cd9d2a0c74b149e76e9cff30": {
+          "pokemon": {
+            "sample_battle_20:self:encounter:5357dbf77ecbff3a": {
+              "known_configuration": {
+                "configuration_instance_id": "own_team_6",
+                "team_id": "sample_team_team7_20261021",
+                "fields": {
+                  "hp": {
+                    "value": 194
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "battle": 21,
+      "source_projection": ".cache/battles/sample_battle_21/fresh-benchmark/fresh-b21-context-v1/hp-resolutions.json",
+      "sha256": "9649f960c637c3105b3fe1452979f9c8a44b685f0a3fa4794fce4d19fed2a6d6",
+      "records": [
+        {
+          "event": {
+            "event_id": "event:1923fa85af0cc4dae0fc3137",
+            "event_type": "send_out",
+            "original_text": "上吧！铝钢桥龙！",
+            "attributes": {
+              "observation_time": 229.52166666666668
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:9949ca60c9c499df57bfd7ee",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 244.025,
+              "hp": {
+                "value": {
+                  "current": 189,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "189/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:29fcca09d7e8bf641a57afaf",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 244.525,
+              "hp": {
+                "value": {
+                  "current": 169,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "169/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:18faef3b2a744f782232b418",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 245.025,
+              "hp": {
+                "value": {
+                  "current": 168,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "168/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:09999568bbc236e012196eaa",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 245.50833333333333,
+              "hp": {
+                "value": {
+                  "current": 168,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "168/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:8c134f1d72939df0927311b5",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 246.025,
+              "hp": {
+                "value": {
+                  "current": 168,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "168/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:5722200adf2b183e829e670d",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 246.525,
+              "hp": {
+                "value": {
+                  "current": 168,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "168/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:cbe41d50079ba86a49430aa8",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 247.025,
+              "hp": {
+                "value": {
+                  "current": 168,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "168/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:a8d194ca60a726d773662190",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 247.525,
+              "hp": {
+                "value": {
+                  "current": 168,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "168/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:7a1efff05bab39a216601260",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 248.025,
+              "hp": {
+                "value": {
+                  "current": 168,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "168/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:b7c6a90bfda3bbb3dbc4ed1e",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 248.525,
+              "hp": {
+                "value": {
+                  "current": 168,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "168/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:393af1006e1888959a70a8fe",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 249.025,
+              "hp": {
+                "value": {
+                  "current": 168,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "168/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:3f21176e1fc5368eb2ed948d",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 249.525,
+              "hp": {
+                "value": null,
+                "confidence": 0.0,
+                "raw_text": "/194/"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:997fe35bb9e0966fa53874b7",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 250.00833333333333,
+              "hp": {
+                "value": {
+                  "current": 174,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "174/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:fb0ffe06d768bca13fa68f1f",
+            "event_type": "move_execution",
+            "attributes": {
+              "observation_time": 241.52333333333334
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_21:opponent:encounter:4adb8c1aecada18d",
+              "basis": "explicit_instance_id"
+            }
+          },
+          "application_status": "applied_partial"
+        }
+      ],
+      "projection": {
+        "episodes": [
+          {
+            "episode_id": "event:fb0ffe06d768bca13fa68f1f:hp:sample_battle_21:self:encounter:8da0c8381a7b4b3f:down",
+            "source_event_id": "event:fb0ffe06d768bca13fa68f1f",
+            "source_event": {
+              "event_id": "event:fb0ffe06d768bca13fa68f1f",
+              "time": 241.52333333333334,
+              "event_type": "move_execution"
+            },
+            "actor_instance_id": "sample_battle_21:opponent:encounter:4adb8c1aecada18d",
+            "target_instance_id": "sample_battle_21:self:encounter:8da0c8381a7b4b3f",
+            "cause": {
+              "kind": "move",
+              "source": {
+                "canonical_id": "pokeapi:move:58",
+                "kind": "move",
+                "name": "冰冻光束",
+                "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+              }
+            },
+            "source_move": {
+              "canonical_id": "pokeapi:move:58",
+              "kind": "move",
+              "name": "冰冻光束",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "before": null,
+            "after": 168,
+            "delta": null,
+            "attribution_status": "ambiguous",
+            "complete_endpoints": false,
+            "reasons": [
+              "pre_action_hp_missing"
+            ],
+            "resolution_end": {
+              "event_id": "event:997fe35bb9e0966fa53874b7",
+              "time": 250.00833333333333,
+              "event_type": "hud_observation"
+            },
+            "endpoints": {
+              "before": null,
+              "after": {
+                "event_id": "event:393af1006e1888959a70a8fe",
+                "time": 249.025,
+                "event_type": "hud_observation"
+              }
+            },
+            "components": [
+              {
+                "before": null,
+                "after": 168,
+                "delta": null,
+                "reasons": [
+                  "pre_action_hp_missing"
+                ],
+                "complete_endpoints": false,
+                "baseline_basis": "unknown",
+                "valid": true,
+                "endpoints": {
+                  "before": null,
+                  "after": {
+                    "event_id": "event:393af1006e1888959a70a8fe",
+                    "time": 249.025,
+                    "event_type": "hud_observation"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "contexts": {
+        "event:fb0ffe06d768bca13fa68f1f": {
+          "pokemon": {
+            "sample_battle_21:self:encounter:8da0c8381a7b4b3f": {
+              "known_configuration": {
+                "configuration_instance_id": "own_team_6",
+                "team_id": "sample_team_team7_20261021",
+                "fields": {
+                  "hp": {
+                    "value": 194
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "battle": 22,
+      "source_projection": ".cache/battles/sample_battle_22/diagnosis/b22-followup-validation-v4/projection-with-hits.json",
+      "sha256": "0aa576137f6bddd1e64d85f46703d3c6de7212a715a542aa5d8ebae453fc0d73",
+      "records": [
+        {
+          "event": {
+            "event_id": "event:50f0ed512a834690973906c8",
+            "event_type": "send_out",
+            "original_text": "上吧！铝钢桥龙！",
+            "attributes": {
+              "observation_time": 359.02666666666664
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:314e1912be78868bf34f8965",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 377.53,
+              "hp": {
+                "value": {
+                  "current": 188,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "188/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:0172f42a3d2ffe82084a4486",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 378.03,
+              "hp": {
+                "value": {
+                  "current": 178,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "178/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:3aeb74cc45aff2f16002e073",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 378.53,
+              "hp": {
+                "value": {
+                  "current": 178,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "178/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:7f42c2b9916a889e514b0571",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 384.5316666666667,
+              "hp": {
+                "value": {
+                  "current": 178,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "178/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:ab3e2d281937c3d0f2e13ea7",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 385.0316666666667,
+              "hp": {
+                "value": {
+                  "current": 178,
+                  "maximum": 194
+                },
+                "confidence": 1.0,
+                "raw_text": "178/194"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:120e130c29debfd55865e573",
+            "event_type": "move_execution",
+            "attributes": {
+              "observation_time": 372.03
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_22:opponent:encounter:9a2e99a27bfb75ce",
+              "basis": "explicit_instance_id"
+            }
+          },
+          "application_status": "applied_partial"
+        }
+      ],
+      "projection": {
+        "episodes": [
+          {
+            "episode_id": "event:120e130c29debfd55865e573:hp:sample_battle_22:self:encounter:2f79a788a9f65246",
+            "source_event_id": "event:120e130c29debfd55865e573",
+            "source_event": {
+              "event_id": "event:120e130c29debfd55865e573",
+              "time": 372.03,
+              "event_type": "move_execution"
+            },
+            "actor_instance_id": "sample_battle_22:opponent:encounter:9a2e99a27bfb75ce",
+            "target_instance_id": "sample_battle_22:self:encounter:2f79a788a9f65246",
+            "cause": {
+              "kind": "move",
+              "source": {
+                "canonical_id": "pokeapi:move:157",
+                "kind": "move",
+                "name": "岩崩",
+                "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+              }
+            },
+            "source_move": {
+              "canonical_id": "pokeapi:move:157",
+              "kind": "move",
+              "name": "岩崩",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "before": null,
+            "after": 178,
+            "delta": null,
+            "attribution_status": "ambiguous",
+            "complete_endpoints": false,
+            "reasons": [
+              "pre_action_hp_missing"
+            ],
+            "resolution_end": {
+              "event_id": "event:36f8aa80c19b330275befddc",
+              "time": 385.5316666666667,
+              "event_type": "item_activation"
+            },
+            "endpoints": {
+              "before": null,
+              "after": {
+                "event_id": "event:ab3e2d281937c3d0f2e13ea7",
+                "time": 385.0316666666667,
+                "event_type": "hud_observation"
+              }
+            },
+            "components": [
+              {
+                "before": null,
+                "after": 178,
+                "delta": null,
+                "reasons": [
+                  "pre_action_hp_missing"
+                ],
+                "complete_endpoints": false,
+                "baseline_basis": "unknown",
+                "valid": true,
+                "endpoints": {
+                  "before": null,
+                  "after": {
+                    "event_id": "event:ab3e2d281937c3d0f2e13ea7",
+                    "time": 385.0316666666667,
+                    "event_type": "hud_observation"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "contexts": {
+        "event:120e130c29debfd55865e573": {
+          "pokemon": {
+            "sample_battle_22:self:encounter:2f79a788a9f65246": {
+              "known_configuration": {
+                "configuration_instance_id": "own_team_6",
+                "team_id": "sample_team_team7_20261021",
+                "fields": {
+                  "hp": {
+                    "value": 194
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "battle": 23,
+      "source_projection": ".cache/battles/sample_battle_23/fresh-benchmark/mega-b23-20261030-v1/hp-resolutions.json",
+      "sha256": "be3a1ef8ed3f36bcc7d8fdd0c97eccad3c4d56f12253ad2025305efec06c6926",
+      "records": [
+        {
+          "event": {
+            "event_id": "event:9ce5a4adfa41d89b6ee85725",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 252.51,
+              "hp": {
+                "value": {
+                  "current": 159,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "159/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:ce9611ff0eea2c3d357b6edf",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 253.01,
+              "hp": {
+                "value": {
+                  "current": 99,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "99/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:14d0a6d91053a42f3d8546b9",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 253.51,
+              "hp": {
+                "value": {
+                  "current": 97,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "97/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:22639659d7f4fd819416c193",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 254.01,
+              "hp": {
+                "value": {
+                  "current": 97,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "97/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:f43c86f04b67ce53bfadc45f",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 255.01,
+              "hp": {
+                "value": {
+                  "current": 97,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "97/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:84a29184febbbf54763b9ae2",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 255.51,
+              "hp": {
+                "value": {
+                  "current": 97,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "97/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:d505658dcc839bf4995f4f66",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 256.01,
+              "hp": {
+                "value": {
+                  "current": 97,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "97/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:381d4f3e78572bfc9c246869",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 256.51,
+              "hp": {
+                "value": {
+                  "current": 97,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "97/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:7c0274ab3e0faec336109994",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 257.01,
+              "hp": {
+                "value": {
+                  "current": 97,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "97/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:02bb0489c593ba5425af7f7c",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 257.51,
+              "hp": {
+                "value": {
+                  "current": 97,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "97/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:d382501c7c0689b5e225b78e",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 258.01,
+              "hp": {
+                "value": {
+                  "current": 97,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "97/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:14cd3d078886e87ad353230d",
+            "event_type": "hud_observation",
+            "original_text": "HUD reading",
+            "attributes": {
+              "observation_time": 261.51,
+              "hp": {
+                "value": {
+                  "current": 97,
+                  "maximum": 201
+                },
+                "confidence": 1.0,
+                "raw_text": "97/201"
+              }
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "applied_candidate"
+        },
+        {
+          "event": {
+            "event_id": "event:9c03d766c56080a5024f8072",
+            "event_type": "hp_change",
+            "original_text": "长毛巨魔\n受到了灼伤的伤害！",
+            "attributes": {
+              "observation_time": 261.51
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402"
+            }
+          },
+          "application_status": "recorded_observation"
+        },
+        {
+          "event": {
+            "event_id": "event:67b00b7f768441876d74e81f",
+            "event_type": "move_execution",
+            "attributes": {
+              "observation_time": 250.00833333333333
+            }
+          },
+          "bindings": {
+            "actor": {
+              "pokemon_instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e",
+              "basis": "explicit_instance_id"
+            }
+          },
+          "application_status": "applied_partial"
+        }
+      ],
+      "projection": {
+        "episodes": [
+          {
+            "episode_id": "event:67b00b7f768441876d74e81f:hp:sample_battle_23:self:encounter:83d24e88c9557402",
+            "source_event_id": "event:67b00b7f768441876d74e81f",
+            "source_event": {
+              "event_id": "event:67b00b7f768441876d74e81f",
+              "time": 250.00833333333333,
+              "event_type": "move_execution"
+            },
+            "actor_instance_id": "sample_battle_23:opponent:encounter:c11de1e8665ea33e",
+            "target_instance_id": "sample_battle_23:self:encounter:83d24e88c9557402",
+            "cause": {
+              "kind": "move",
+              "source": {
+                "canonical_id": "pokeapi:move:394",
+                "kind": "move",
+                "name": "闪焰冲锋",
+                "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+              }
+            },
+            "source_move": {
+              "canonical_id": "pokeapi:move:394",
+              "kind": "move",
+              "name": "闪焰冲锋",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "before": 181,
+            "after": 97,
+            "delta": null,
+            "attribution_status": "ambiguous",
+            "complete_endpoints": false,
+            "reasons": [
+              "final_visible_plateau_unresolved"
+            ],
+            "resolution_end": {
+              "event_id": "event:9c03d766c56080a5024f8072",
+              "time": 261.51,
+              "event_type": "hp_change"
+            },
+            "endpoints": {
+              "before": {
+                "event_id": "event:269a14ada7875307f426e820",
+                "time": 220.50333333333333,
+                "event_type": "hud_observation"
+              },
+              "after": {
+                "event_id": "event:14cd3d078886e87ad353230d",
+                "time": 261.51,
+                "event_type": "hud_observation"
+              }
+            },
+            "components": [
+              {
+                "before": 181,
+                "after": 97,
+                "delta": null,
+                "reasons": [
+                  "final_visible_plateau_unresolved"
+                ],
+                "complete_endpoints": false,
+                "baseline_basis": "pre_source_observation",
+                "valid": true,
+                "endpoints": {
+                  "before": {
+                    "event_id": "event:269a14ada7875307f426e820",
+                    "time": 220.50333333333333,
+                    "event_type": "hud_observation"
+                  },
+                  "after": {
+                    "event_id": "event:14cd3d078886e87ad353230d",
+                    "time": 261.51,
+                    "event_type": "hud_observation"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "contexts": {}
+    }
+  ]
+}

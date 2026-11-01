@@ -1,0 +1,46 @@
+{
+  "retrieved": "2026-11-01",
+  "method": "bounded browser page checks; oldid from page permanent link; complete new HTML snapshots not captured",
+  "license": "52Poké contributors; CC BY-NC-SA 3.0",
+  "articles": [
+    {
+      "title": "灵魂冲击（招式）",
+      "url": "https://wiki.52poke.com/wiki/灵魂冲击（招式）",
+      "revision_id": 2554119,
+      "retrieved": "2026-11-01",
+      "applicability": "general move category; physical Spirit Break, corroborates no Prankster priority bonus"
+    },
+    {
+      "title": "恶作剧之心（特性）",
+      "url": "https://wiki.52poke.com/wiki/恶作剧之心（特性）",
+      "revision_id": 2618394,
+      "retrieved": "2026-11-01",
+      "applicability": "Champions-specific description: raises Status move priority by one"
+    },
+    {
+      "title": "黑色铁球（道具）",
+      "url": "https://wiki.52poke.com/wiki/黑色铁球（道具）",
+      "revision_id": 2622419,
+      "retrieved": "2026-11-01",
+      "applicability": "Champions-specific item description: effective Speed is halved; not evidence of actual held item"
+    },
+    {
+      "title": "班基拉斯/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/班基拉斯/Champions招式表",
+      "revision_id": 2608693,
+      "retrieved": "2026-11-01",
+      "applicability": "Champions learnset headings checked; 咒术 appears in Ghost/Status row; no equipped-slot or probability conclusion"
+    }
+  ],
+  "failed_fetches": [
+    {
+      "url": "https://wiki.52poke.com/wiki/诅咒（招式）",
+      "reason": "timeout"
+    },
+    {
+      "url": "https://wiki.52poke.com/index.php?oldid=2554119&title=灵魂冲击（招式）",
+      "reason": "403 fetching permalink; revision recovered from link"
+    }
+  ],
+  "runtime": "No new imported knowledge; pinned local executable definitions remain authoritative for reference calculations"
+}

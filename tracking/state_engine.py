@@ -278,6 +278,7 @@ class StateEngine:
         team=self._side(state,side)
         pid=event.attributes.get(role+'_instance_id') or (ref or {}).get('pokemon_instance_id')
         if pid:
+            pid=state.knowledge.get('instance_aliases',{}).get(pid,pid)
             if pid not in state.pokemon:raise Deferred('unobserved_explicit_instance')
             p=state.pokemon[pid]
             if p.side_id!=side:raise Contradiction('instance_side_conflict')
@@ -288,10 +289,10 @@ class StateEngine:
         matches=[state.pokemon[i] for i in team.party_instance_ids if state.pokemon[i].species.known
                  and state.pokemon[i].species.value.get('species_id')==ref['species_id']]
         if sending:
-            from .identity_ledger import ditto_return
-            returned=ditto_return(state,event,matches)
+            from .identity_ledger import ditto_return,unique_roster_return
+            returned=ditto_return(state,event,matches) or unique_roster_return(state,event,matches)
             if returned:
-                p,proof=returned;basis='ditto_unique_observed_roster_and_departure'
+                p,proof=returned;basis=proof['policy']
                 record.bindings['persistent_continuity']=proof
             elif len(matches)==1 and team.party_complete.known and team.party_complete.value:
                 p=matches[0];basis='unique_species_in_verified_complete_party'
@@ -310,11 +311,14 @@ class StateEngine:
             matches=[p for p in matches if p.pokemon_instance_id in team.active_slots.values()]
             if len(matches)!=1:raise Deferred('ambiguous_or_missing_active_instance')
             p=matches[0];basis='unique_current_active_species_on_observed_side'
-        if ref.get('canonical_identity') and p.current_variant.known and p.current_variant.value!=ref['canonical_identity']:
+        if not sending and ref.get('canonical_identity') and p.current_variant.known and p.current_variant.value!=ref['canonical_identity']:
             raise Contradiction('variant_conflict_without_transformation')
         record.bindings[role]={'pokemon_instance_id':p.pokemon_instance_id,'basis':basis};return p
 
     def _transition(self,state,e,record):
+        if e.event_type=='send_out':
+            from .initial_conditions import opening
+            opening(self,state,e)
         if e.event_type=='command_checkpoint':
             from .command_reconciliation import transition
             return transition(self,state,e,record)
@@ -346,6 +350,8 @@ class StateEngine:
                 start=a.get('start');end=a.get('observation_time')
                 if not all(type(t) in (int,float) and math.isfinite(t) for t in (start,end)) or not 0<=start<=end:raise Contradiction('invalid_coverage_interval')
                 if a.get('status')!='gap':raise Deferred('unsupported_coverage_assertion')
+                from .initial_conditions import coverage_gap
+                coverage_gap(state,e)
                 state.observations.append(dict(kind='coverage_gap',start=start,end=end,side=e.side,fields=deepcopy(a.get('fields',[])),evidence=evidence_link(e)))
                 return True
             from .reliability import visual_transition
@@ -460,6 +466,7 @@ class StateEngine:
                     and state.pokemon[pid].species.value.get('species_id')==holder.get('species_id')]
                 if len(sources)==1:observation['source_instance_id']=sources[0]
             p.hp.observations.append(observation);state.observations.append(deepcopy(observation));return True
+        existing_ids=set(state.pokemon) if kind=='send_out' else None
         p=self._resolve(state,e,record,sending=kind=='send_out',allow_identity_change=kind=='transformation')
         team=state.sides[p.side_id]
         from .knowledge_grounding import ground_event
@@ -467,6 +474,7 @@ class StateEngine:
         if kind in {'protection_attempt','protection_outcome','mechanic_observation','mechanic_reset','type_change','ability_attempt'}:
             return False
         if kind=='send_out':
+            from .initial_conditions import entering
             if p.fainted.known and p.fainted.value:raise Contradiction('send_out_of_fainted_instance')
             if p.pokemon_instance_id in team.active_slots.values():raise Contradiction('already_active_instance')
             slot=a.get('slot')
@@ -478,11 +486,15 @@ class StateEngine:
             if state.knowledge.get('active_continuity_v1'):
                 from .active_continuity import enter,placed
                 enter(state,p,e,record,slot=slot);placed(state,p,e,record,slot)
+            entering(self,state,p,e,fresh=p.pokemon_instance_id not in existing_ids,
+                continuity=p.pokemon_instance_id in existing_ids)
             team.active_slots[slot]=p.pokemon_instance_id
             if slot in team.vacant_slots:team.vacant_slots.remove(slot)
             self._assign(p,'location',{'kind':'active','slot':slot},e);self._assign(p,'fainted',False,e)
             from .knowledge_grounding import bind_attached_profile
             bind_attached_profile(state,p,e)
+            from .initial_conditions import initialize_full_hp
+            initialize_full_hp(state,p,e,fresh=p.pokemon_instance_id not in existing_ids)
         elif kind in {'switch_out','faint'}:
             slots=[s for s,i in team.active_slots.items() if i==p.pokemon_instance_id]
             if state.knowledge.get('active_continuity_v1'):
@@ -498,6 +510,10 @@ class StateEngine:
             if kind=='switch_out':
                 from .transformation import end
                 end(p,e)
+                if state.knowledge.get('neutral_opening_established'):
+                    for stage in p.stages.values():
+                        stage.value=fact(0,dict(rule='ordinary_switch_stage_reset_reference',**evidence_link(e)),'derived')
+                        stage.interval=fact([0,0],dict(rule='ordinary_switch_stage_reset_reference',**evidence_link(e)),'derived')
             if (kind=='switch_out' and a.get('cause')=='eject_button'
                     and (a.get('item_consumption_rule') or {}).get('consumed_on_explicit_withdrawal')):
                 consumed=deepcopy(e);consumed.event_type='item_change'
@@ -533,6 +549,8 @@ class StateEngine:
         elif kind=='move_execution':
             ref=e.canonical_references.get('move')
             if not ref:raise Deferred('move_identity_unknown')
+            if state.knowledge.get('neutral_opening_established') and ref.get('canonical_id')=='pokeapi:move:226':
+                state.knowledge['pending_stage_transfer']=dict(event_id=e.event_id,side=p.side_id,reason='Baton Pass inheritance requires dedicated transition')
             execution={'event_id':e.event_id,'move':deepcopy(ref),'evidence':evidence_link(e)}
             # Contextual M2.1 target associations are retained as candidates,
             # never used to apply HP or secondary effects.
@@ -554,7 +572,11 @@ class StateEngine:
                 if not isinstance(value,dict) or set(value)!={'current','maximum'} or any(not isinstance(v,int) or isinstance(v,bool) for v in value.values()) or not 0<=value['current']<=value['maximum']:
                     raise Contradiction('invalid_observed_pp')
                 p.moves.pp[ref['canonical_id']]=fact(value,evidence_link(e))
-        elif kind=='stat_change':self._stats(p,e)
+        elif kind=='stat_change':
+            if state.knowledge.get('neutral_opening_established') and e.attributes.get('stages') is None:
+                from .initial_conditions import quantified_stage_event
+                e=quantified_stage_event(e)
+            self._stats(p,e)
         elif kind=='status_change':self._status(p,e)
         elif kind=='ability_activation':
             ref=e.canonical_references.get('ability')
@@ -564,6 +586,8 @@ class StateEngine:
                 self._consistent_fact(p.ability,'current',ref,e)
             p.ability.revealed.append({'ability':deepcopy(ref),'activation':True,'evidence':evidence_link(e)})
             if ref.get('canonical_id')==IMPOSTER:begin(state,p,e,record,trigger='imposter')
+            from .initial_conditions import activated_field
+            activated_field(self,state,e,record)
         elif kind=='ability_change':
             if 'suppressed' in a:
                 if not isinstance(a['suppressed'],bool):raise Contradiction('invalid_ability_suppression')
@@ -736,6 +760,12 @@ class StateEngine:
         update_stats(state,p,e)
 
     def _field_event(self,state,e):
+        # Older saved parser versions classified this explicit activation as a
+        # passive observation. Upgrade the transition, preserving source IDs.
+        if (e.event_type=='side_condition_change' and e.attributes.get('change')=='observe'
+                and __import__('re').fullmatch(r'(反射壁|光墙)使(我方|对手|对方)的(?:物理|特殊)抗性提高了[！!。.]?', ''.join(e.original_text.split()))):
+            e=deepcopy(e);e.attributes['change']='start'
+            e.attributes['legacy_activation_normalization']='explicit_screen_activation_v1'
         a=e.attributes;kind=e.event_type
         if kind=='weather_change':
             name=a.get('weather')

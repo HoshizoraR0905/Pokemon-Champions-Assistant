@@ -1,0 +1,975 @@
+{
+  "classification": "curated real accepted two-hit HP resolution; no new recognition",
+  "sources": {
+    ".cache/battles/sample_battle_22/diagnosis/hidden-integration-20261101-v1/contexts-8b8cde918b8a1c1d-attempt-1.jsonl": "4024a61f2cac36e22739e38a8f8a3acf9711b966aaf2b48a5d02413057acde7b",
+    ".cache/battles/sample_battle_22/diagnosis/b22-followup-validation-v4/projection-with-hits.json": "0aa576137f6bddd1e64d85f46703d3c6de7212a715a542aa5d8ebae453fc0d73"
+  },
+  "episode": {
+    "episode_id": "event:7660e24568ad4b208a0c26c2:hp:sample_battle_22:self:encounter:cddd4f82f09160aa",
+    "source_event_id": "event:7660e24568ad4b208a0c26c2",
+    "actor_instance_id": "sample_battle_22:opponent:encounter:09edb388d36073d3",
+    "target_instance_id": "sample_battle_22:self:encounter:cddd4f82f09160aa",
+    "source_move": {
+      "canonical_id": "pokeapi:move:814",
+      "kind": "move",
+      "name": "双翼",
+      "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+    },
+    "attribution_status": "supported",
+    "complete_endpoints": true,
+    "unit": "absolute",
+    "before": 72,
+    "after": 27,
+    "delta": -45,
+    "critical_hit": null,
+    "hit_resolution": {
+      "per_hit_status": "supported",
+      "per_hit_damage": [
+        21,
+        24
+      ],
+      "hits": [
+        {
+          "critical_hit": null
+        },
+        {
+          "critical_hit": null
+        }
+      ]
+    }
+  },
+  "context": {
+    "field": {
+      "weather": {
+        "active": {
+          "value": true,
+          "knowledge": "observed"
+        },
+        "kind": {
+          "value": "rain",
+          "knowledge": "observed"
+        },
+        "duration": {
+          "remaining": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "expires_at_turn": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "timing": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "modifiers": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "last_tick": {
+            "value": null,
+            "knowledge": "unknown"
+          }
+        },
+        "initiated_by": {
+          "value": {
+            "event_id": "event:bd961f63586c61e84fcf720d",
+            "turn": null
+          },
+          "knowledge": "observed"
+        }
+      },
+      "terrain": {
+        "active": {
+          "value": false,
+          "knowledge": "derived"
+        },
+        "kind": {
+          "value": "none",
+          "knowledge": "derived"
+        },
+        "duration": {
+          "remaining": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "expires_at_turn": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "timing": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "modifiers": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "last_tick": {
+            "value": null,
+            "knowledge": "unknown"
+          }
+        },
+        "initiated_by": {
+          "value": null,
+          "knowledge": "unknown"
+        }
+      },
+      "trick_room": {
+        "active": {
+          "value": false,
+          "knowledge": "derived"
+        },
+        "kind": {
+          "value": null,
+          "knowledge": "unknown"
+        },
+        "duration": {
+          "remaining": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "expires_at_turn": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "timing": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "modifiers": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "last_tick": {
+            "value": null,
+            "knowledge": "unknown"
+          }
+        },
+        "initiated_by": {
+          "value": null,
+          "knowledge": "unknown"
+        }
+      }
+    },
+    "sides": {
+      "self": {
+        "conditions": {
+          "tailwind": {
+            "active": {
+              "value": false,
+              "knowledge": "derived"
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown"
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown"
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown"
+            }
+          },
+          "reflect": {
+            "active": {
+              "value": true,
+              "knowledge": "observed"
+            },
+            "kind": {
+              "value": "reflect",
+              "knowledge": "observed"
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown"
+              }
+            },
+            "initiated_by": {
+              "value": {
+                "event_id": "event:24fcead57ed8af2b6dd58d7b",
+                "turn": null
+              },
+              "knowledge": "observed"
+            }
+          },
+          "light_screen": {
+            "active": {
+              "value": true,
+              "knowledge": "observed"
+            },
+            "kind": {
+              "value": "light_screen",
+              "knowledge": "observed"
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown"
+              }
+            },
+            "initiated_by": {
+              "value": {
+                "event_id": "event:ef5a8cec1f9a9cd58ede3228",
+                "turn": null
+              },
+              "knowledge": "observed"
+            }
+          },
+          "aurora_veil": {
+            "active": {
+              "value": false,
+              "knowledge": "derived"
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown"
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown"
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown"
+            }
+          },
+          "wide_guard": {
+            "active": {
+              "value": true,
+              "knowledge": "observed"
+            },
+            "kind": {
+              "value": "wide_guard",
+              "knowledge": "observed"
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown"
+              }
+            },
+            "initiated_by": {
+              "value": {
+                "event_id": "event:a3fc4c11b0d2695b2f98a0b5",
+                "turn": null
+              },
+              "knowledge": "observed"
+            }
+          }
+        }
+      },
+      "opponent": {
+        "conditions": {
+          "tailwind": {
+            "active": {
+              "value": true,
+              "knowledge": "observed"
+            },
+            "kind": {
+              "value": "tailwind",
+              "knowledge": "observed"
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown"
+              }
+            },
+            "initiated_by": {
+              "value": {
+                "event_id": "event:51008f03df31732a4cbf9dfb",
+                "turn": null
+              },
+              "knowledge": "observed"
+            }
+          },
+          "reflect": {
+            "active": {
+              "value": false,
+              "knowledge": "derived"
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown"
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown"
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown"
+            }
+          },
+          "light_screen": {
+            "active": {
+              "value": false,
+              "knowledge": "derived"
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown"
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown"
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown"
+            }
+          },
+          "aurora_veil": {
+            "active": {
+              "value": false,
+              "knowledge": "derived"
+            },
+            "kind": {
+              "value": null,
+              "knowledge": "unknown"
+            },
+            "duration": {
+              "remaining": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "expires_at_turn": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "timing": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "modifiers": {
+                "value": null,
+                "knowledge": "unknown"
+              },
+              "last_tick": {
+                "value": null,
+                "knowledge": "unknown"
+              }
+            },
+            "initiated_by": {
+              "value": null,
+              "knowledge": "unknown"
+            }
+          }
+        }
+      }
+    },
+    "pokemon": {
+      "sample_battle_22:opponent:encounter:09edb388d36073d3": {
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:142",
+            "kind": "species",
+            "name": "化石翼龙",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 142,
+            "pokemon_id": null,
+            "form_id": null,
+            "canonical_identity": null,
+            "identity_status": "species_only"
+          },
+          "knowledge": "observed"
+        },
+        "variant": {
+          "value": null,
+          "knowledge": "unknown"
+        },
+        "stages": {
+          "attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "special_attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "special_defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "accuracy": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "evasion": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          }
+        },
+        "status": {
+          "value": "none",
+          "knowledge": "derived"
+        },
+        "ability": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:ability:127",
+              "kind": "ability",
+              "name": "紧张感",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "knowledge": "observed"
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown"
+          }
+        },
+        "item": {
+          "identity": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "has_item": {
+            "value": null,
+            "knowledge": "unknown"
+          }
+        },
+        "hp": {
+          "current": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "maximum": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "displayed_percent": {
+            "value": 43,
+            "knowledge": "observed"
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "unit": {
+            "value": "displayed_percent",
+            "knowledge": "observed"
+          }
+        },
+        "side": "opponent",
+        "mechanics": {
+          "battle_stats": {
+            "current": {}
+          }
+        }
+      },
+      "sample_battle_22:self:encounter:cddd4f82f09160aa": {
+        "species": {
+          "value": {
+            "canonical_id": "pokeapi:species:279",
+            "kind": "species",
+            "name": "大嘴鸥",
+            "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5",
+            "species_id": 279,
+            "pokemon_id": 279,
+            "form_id": null,
+            "canonical_identity": "pokeapi:pokemon:279",
+            "identity_status": "resolved_unique"
+          },
+          "knowledge": "observed"
+        },
+        "variant": {
+          "value": "pokeapi:pokemon:279",
+          "knowledge": "observed"
+        },
+        "stages": {
+          "attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "special_attack": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "special_defense": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "speed": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "accuracy": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          },
+          "evasion": {
+            "value": {
+              "value": 0,
+              "knowledge": "derived"
+            },
+            "interval": {
+              "value": [
+                0,
+                0
+              ],
+              "knowledge": "derived"
+            }
+          }
+        },
+        "status": {
+          "value": "none",
+          "knowledge": "derived"
+        },
+        "ability": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:ability:2",
+              "kind": "ability",
+              "name": "降雨",
+              "knowledge_snapshot": "27b5fac46d4b8d5805476f4fd1d491efab1c8ae49e2b15e63cae8dfd6a0f16c5"
+            },
+            "knowledge": "observed"
+          },
+          "suppressed": {
+            "value": null,
+            "knowledge": "unknown"
+          }
+        },
+        "item": {
+          "identity": {
+            "value": {
+              "canonical_id": "pokeapi:item:135",
+              "name": "文柚果"
+            },
+            "knowledge": "observed"
+          },
+          "status": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "has_item": {
+            "value": null,
+            "knowledge": "unknown"
+          }
+        },
+        "hp": {
+          "current": {
+            "value": 72,
+            "knowledge": "observed"
+          },
+          "maximum": {
+            "value": 164,
+            "knowledge": "observed"
+          },
+          "displayed_percent": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "percent_interval": {
+            "value": null,
+            "knowledge": "unknown"
+          },
+          "unit": {
+            "value": "absolute",
+            "knowledge": "observed"
+          }
+        },
+        "side": "self",
+        "mechanics": {
+          "battle_stats": {
+            "current": {
+              "hp": {
+                "value": 164,
+                "knowledge": "derived"
+              },
+              "attack": {
+                "value": 63,
+                "knowledge": "derived"
+              },
+              "defense": {
+                "value": 121,
+                "knowledge": "derived"
+              },
+              "special_attack": {
+                "value": 115,
+                "knowledge": "derived"
+              },
+              "special_defense": {
+                "value": 132,
+                "knowledge": "derived"
+              },
+              "speed": {
+                "value": 91,
+                "knowledge": "derived"
+              },
+              "canonical_variant": {
+                "value": "pokeapi:pokemon:279",
+                "knowledge": "derived"
+              },
+              "form_verified": {
+                "value": true,
+                "knowledge": "derived"
+              },
+              "stat_basis": {
+                "value": "unmodified_form_separate_from_stages",
+                "knowledge": "derived"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "native": "pokeapi:species:142",
+  "initial": {
+    "values": [
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172
+    ],
+    "minimum": 112,
+    "maximum": 172,
+    "hull": [
+      112,
+      172
+    ],
+    "count": 60,
+    "has_gaps": true,
+    "intervals": [
+      [
+        112,
+        163
+      ],
+      [
+        165,
+        172
+      ]
+    ]
+  }
+}

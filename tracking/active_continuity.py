@@ -42,10 +42,12 @@ def enter(state,p,event,record,*,slot=None,observed=False):
         # underlying persistent instance is now independently reconciled.
         ep.update(encounter_id=encounter_id,continuity_evidence=deepcopy(scoped_return),
             episode_id=stable_id(state.battle_id,'active-entry:'+event.event_id+':'+encounter_id))
+        state.knowledge.setdefault('instance_aliases',{})[encounter_id]=p.pokemon_instance_id
     if previous and supported:
         from .battle_state import HPState,Fact
         # Old readings remain evidence, rather than the current episode's HP.
-        if not scoped_return:p.hp=HPState(observations=deepcopy(p.hp.observations))
+        # A new on-field episode does not heal or erase a persistent member's HP.
+        # Its prior numeric facts and observation history remain authoritative.
         for stage in p.stages.values():
             stage.value=Fact(provenance=[evidence_link(event)]);stage.interval=Fact(provenance=[evidence_link(event)])
     if not observed:

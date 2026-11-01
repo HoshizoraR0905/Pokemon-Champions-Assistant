@@ -44,6 +44,47 @@ def ditto_return(state,event,matches):
     return p,proof
 
 
+def unique_roster_return(state,event,matches):
+    """One species-clause team member, with a separate observed return episode.
+
+    species_id is shared across regional/gender forms. Use original identity,
+    never a temporary Transform appearance. Source event IDs remain unchanged.
+    """
+    sid=(event.actor or {}).get('species_id')
+    if not sid or len(matches)!=1 or event.side not in state.sides:return None
+    p=matches[0]
+    trainer=state.sides[event.side].trainer
+    named=event.attributes.get('trainer_display_text')
+    if named and trainer.get('status')=='accepted' and alias_key(named)!=alias_key(trainer.get('display_name','')):return None
+    if p.location.value!=dict(kind='bench',slot=None) or p.fainted.value is True:return None
+    rows={}
+    for row in state.knowledge.get('identity_ledger',{}).get('roster',[]):
+        if (row.get('side')==event.side and row.get('battle_id')==state.battle_id
+                and row.get('status')=='resolved' and row.get('species_id')):
+            # Later unreadable preview sightings do not retract established
+            # roster facts. Conflicting resolved identities still block a join.
+            rows.setdefault(row.get('preview_row'),[]).append(row)
+    profile=state.knowledge.get('verified_team_profile') if event.side=='self' else None
+    if profile:
+        reviewed=profile['roster_review']
+        if event.attributes.get('observation_time',-1)<reviewed['observation_time']:return None
+        species=reviewed['species_ids'];proof_roster=deepcopy(reviewed)
+    else:
+        if set(rows)!=set(range(1,7)) or not all(all(r.get('status')=='resolved' and r.get('species_id') for r in group)
+            and len({r['species_id'] for r in group})==1 for group in rows.values()):return None
+        species=[group[0]['species_id'] for group in rows.values()]
+        proof_roster=[deepcopy(group[0]['evidence']) for group in rows.values()]
+    if len(species)!=6 or len(set(species))!=6 or species.count(sid)!=1:return None
+    previous=next((ep for ep in reversed(state.knowledge.get('active_entry_episodes',[])) if ep['instance_id']==p.pokemon_instance_id),None)
+    if not previous or (previous.get('departure') or {}).get('reason')!='switch_out':return None
+    from .state_engine import evidence_link
+    proof=dict(policy='unique_species_clause_team_member_v1',species_id=sid,instance_id=p.pokemon_instance_id,
+        previous_episode_id=previous['episode_id'],roster_evidence=proof_roster,
+        departure=deepcopy(previous['departure']),return_evidence=evidence_link(event))
+    state.knowledge.setdefault('identity_ledger',{}).setdefault('persistent_returns',[]).append(deepcopy(proof))
+    return p,proof
+
+
 def preview_semantics(value):
     """Keep identities/status/candidate membership, not matching pixel jitter.
 

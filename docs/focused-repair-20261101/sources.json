@@ -1,0 +1,67 @@
+{
+  "retrieved": "2026-11-01",
+  "applicable_game": "Pokemon Champions",
+  "articles": [
+    {
+      "title": "轰擂金刚猩/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/轰擂金刚猩/Champions招式表",
+      "revision_id": 2619404,
+      "scope": "Wood Hammer120 / Grassy Glide55; Champions membership, no equipped-slot inference",
+      "license": "CC BY-NC-SA 3.0, 52Poké contributors",
+      "method": "scoped web retrieval; article headings and table rows checked"
+    },
+    {
+      "title": "苍炎刃鬼/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/苍炎刃鬼/Champions招式表",
+      "revision_id": 2611744,
+      "scope": "Shadow Sneak40; Champions membership",
+      "license": "CC BY-NC-SA 3.0, 52Poké contributors",
+      "method": "scoped web retrieval; article headings and table rows checked"
+    },
+    {
+      "title": "化石翼龙/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/化石翼龙/Champions招式表",
+      "revision_id": 2608736,
+      "scope": "Dual Wingbeat40; Champions membership",
+      "license": "CC BY-NC-SA 3.0, 52Poké contributors",
+      "method": "scoped web retrieval; article headings and table rows checked"
+    },
+    {
+      "title": "雷丘/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/雷丘/Champions招式表",
+      "revision_id": 2608716,
+      "scope": "Zap Cannon120; form headings remain significant",
+      "license": "CC BY-NC-SA 3.0, 52Poké contributors",
+      "method": "scoped web retrieval; article headings and table rows checked"
+    },
+    {
+      "title": "炽焰咆哮虎/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/炽焰咆哮虎/Champions招式表",
+      "revision_id": 2611712,
+      "scope": "Darkest Lariat85; fullwidth ＤＤ in page",
+      "license": "CC BY-NC-SA 3.0, 52Poké contributors",
+      "method": "scoped web retrieval; article headings and table rows checked"
+    },
+    {
+      "title": "电气制造者（特性）",
+      "url": "https://wiki.52poke.com/wiki/电气制造者（特性）",
+      "revision_id": 2595458,
+      "scope": "Champions-specific description; Mega Raichu X Electric Surge",
+      "license": "CC BY-NC-SA 3.0, 52Poké contributors",
+      "method": "scoped web retrieval; article headings and table rows checked"
+    }
+  ],
+  "runtime": "Existing versioned local KnowledgeBase and pinned Champions damage catalog; no live network dependency or new importer",
+  "limits": "Learnability supplies possibility only, no slots or probabilities. Exact arithmetic is provisional pinned executable reference, not independent Champions certification.",
+  "local": {
+    "damage/engine.py": {
+      "sha256": "155c01c3f48ba9cd718c9173cced3c6019acd95534a21c7924bc9a6b463d4339"
+    },
+    "scripts/damage_focused_oracle.cjs": {
+      "sha256": "0dea21f3ae2089b1040a14e3416c952693b4371f5bd068a19f05f63558b6a09c"
+    },
+    ".cache/m31/oracle/node_modules/@smogon/calc/package.json": {
+      "sha256": "bcae3ec722d55294af0d8932057c4dde7ca4e71b5558ba07984c788498d4fcf8"
+    }
+  }
+}

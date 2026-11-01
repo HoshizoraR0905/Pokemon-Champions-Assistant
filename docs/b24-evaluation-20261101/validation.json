@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-01",
+  "final_integrated": {
+    "passed": 241,
+    "deselected": 1,
+    "seconds": 63.77,
+    "selection": "not local_artifacts",
+    "log": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/final-regressions.log"
+  },
+  "earlier_broader": {
+    "passed": 1163,
+    "deselected": 4,
+    "seconds": 1031.26,
+    "timing": "before final empty-slot and compound-stage fixes"
+  },
+  "notes": "Overlapping selections; not unique test totals. Arithmetic oracle comparisons are pinned executable-reference checks, not independent Champions certification."
+}

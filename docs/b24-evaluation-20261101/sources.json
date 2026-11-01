@@ -1,0 +1,141 @@
+{
+  "retrieved": "2026-11-01",
+  "articles": [
+    {
+      "title": "长毛巨魔/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/%E9%95%BF%E6%AF%9B%E5%B7%A8%E9%AD%94/Champions%E6%8B%9B%E5%BC%8F%E8%A1%A8",
+      "revision_id": 2611700,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/长毛巨魔-Champions招式表.html",
+      "sha256": "546851bad9a9f4be579acd09297dad1ed6098a0d5871c4c2bd9edae73c9b3e28",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Champions learnability only; no move-slot or probability claim"
+    },
+    {
+      "title": "铝钢桥龙/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/%E9%93%9D%E9%92%A2%E6%A1%A5%E9%BE%99/Champions%E6%8B%9B%E5%BC%8F%E8%A1%A8",
+      "revision_id": 2619470,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/铝钢桥龙-Champions招式表.html",
+      "sha256": "0b8264ab6f4a2832d618ec04b664a51b1f12d65cdddefb9cf88491cdf397f554",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Champions learnability only; no move-slot or probability claim"
+    },
+    {
+      "title": "大嘴鸥/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/%E5%A4%A7%E5%98%B4%E9%B8%A5/Champions%E6%8B%9B%E5%BC%8F%E8%A1%A8",
+      "revision_id": 2608694,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/大嘴鸥-Champions招式表.html",
+      "sha256": "6d07356c4692888750ff6ca144c6149164fa241d35d1ab6ea04b2cd09ef00c26",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Champions learnability only; no move-slot or probability claim"
+    },
+    {
+      "title": "班基拉斯/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/%E7%8F%AD%E5%9F%BA%E6%8B%89%E6%96%AF/Champions%E6%8B%9B%E5%BC%8F%E8%A1%A8",
+      "revision_id": 2608693,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/班基拉斯-Champions招式表.html",
+      "sha256": "e123973b2f0d9dac88ec3c47cae11d7b0e5d6fc9be84e195cd7595391e47c79f",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Champions learnability only; no move-slot or probability claim"
+    },
+    {
+      "title": "大钢蛇/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/%E5%A4%A7%E9%92%A2%E8%9B%87/Champions%E6%8B%9B%E5%BC%8F%E8%A1%A8",
+      "revision_id": 2608688,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/大钢蛇-Champions招式表.html",
+      "sha256": "919fbd8ebf46a5fad5ac1b2d6f51c4caa1871089c32f63c1ad2d2900a9b4d7d6",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Champions learnability only; no move-slot or probability claim"
+    },
+    {
+      "title": "怪颚龙/Champions招式表",
+      "url": "https://wiki.52poke.com/wiki/%E6%80%AA%E9%A2%9A%E9%BE%99/Champions%E6%8B%9B%E5%BC%8F%E8%A1%A8",
+      "revision_id": 2610171,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/怪颚龙-Champions招式表.html",
+      "sha256": "d9c0323665550c981916ad6bfa8b8680807eab313e214cd9c908bbc691238fb1",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Champions learnability only; no move-slot or probability claim"
+    },
+    {
+      "title": "重磅冲撞（招式）",
+      "url": "https://wiki.52poke.com/wiki/%E9%87%8D%E7%A3%85%E5%86%B2%E6%92%9E%EF%BC%88%E6%8B%9B%E5%BC%8F%EF%BC%89",
+      "revision_id": 2554370,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/重磅冲撞（招式）.html",
+      "sha256": "c1da5c6f0c7448a249555adc7d6d4afd3034334562235024ed78163625ccf472",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Mechanics corroboration; applicability conditional on pinned Champions implementation"
+    },
+    {
+      "title": "拍落（招式）",
+      "url": "https://wiki.52poke.com/wiki/%E6%8B%8D%E8%90%BD%EF%BC%88%E6%8B%9B%E5%BC%8F%EF%BC%89",
+      "revision_id": 2531743,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/拍落（招式）.html",
+      "sha256": "10d4c2ff656052e0decb6d033a2f9e136e94599a2d0f4529494e1b60d666a469",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Mechanics corroboration; applicability conditional on pinned Champions implementation"
+    },
+    {
+      "title": "精神之牙（招式）",
+      "url": "https://wiki.52poke.com/wiki/%E7%B2%BE%E7%A5%9E%E4%B9%8B%E7%89%99%EF%BC%88%E6%8B%9B%E5%BC%8F%EF%BC%89",
+      "revision_id": 2564243,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/精神之牙（招式）.html",
+      "sha256": "92f9526b3e8066a517cc2075f6fe60d05f06c02ab7427e942fae1a8c45f06e6c",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Mechanics corroboration; applicability conditional on pinned Champions implementation"
+    },
+    {
+      "title": "气象球（招式）",
+      "url": "https://wiki.52poke.com/wiki/%E6%B0%94%E8%B1%A1%E7%90%83%EF%BC%88%E6%8B%9B%E5%BC%8F%EF%BC%89",
+      "revision_id": 2576477,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/气象球（招式）.html",
+      "sha256": "9bbfd61ad554a7f90c64beee1b27daa3d7083e5869474c80f42c420d5bff1c06",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Mechanics corroboration; applicability conditional on pinned Champions implementation"
+    },
+    {
+      "title": "电光束（招式）",
+      "url": "https://wiki.52poke.com/wiki/%E7%94%B5%E5%85%89%E6%9D%9F%EF%BC%88%E6%8B%9B%E5%BC%8F%EF%BC%89",
+      "revision_id": 2489232,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/电光束（招式）.html",
+      "sha256": "70e69b87a7f9e048f8d1b45ce8bb96c422de056ce7e0a5069fa1d338906cb44f",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Mechanics corroboration; applicability conditional on pinned Champions implementation"
+    },
+    {
+      "title": "沙之力（特性）",
+      "url": "https://wiki.52poke.com/wiki/%E6%B2%99%E4%B9%8B%E5%8A%9B%EF%BC%88%E7%89%B9%E6%80%A7%EF%BC%89",
+      "revision_id": 2620229,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/沙之力（特性）.html",
+      "sha256": "a424cfb7aa3c266f2eaf7d3d883fc508546b32b28973a37157224832dd9bc882",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Mechanics corroboration; applicability conditional on pinned Champions implementation"
+    },
+    {
+      "title": "扬沙（特性）",
+      "url": "https://wiki.52poke.com/wiki/%E6%89%AC%E6%B2%99%EF%BC%88%E7%89%B9%E6%80%A7%EF%BC%89",
+      "revision_id": 2561804,
+      "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/扬沙（特性）.html",
+      "sha256": "98f5446a44d99784d20f3af6225d723e14cda576da86c55d8c4d3e0658037925",
+      "retrieved": "2026-11-01",
+      "license": "52Poké contributors; CC BY-NC-SA 3.0",
+      "scope": "Mechanics corroboration; applicability conditional on pinned Champions implementation"
+    }
+  ],
+  "learnset_table_review": {
+    "path": ".cache/battles/sample_battle_24/evaluation/fresh-b24-20261101-v1/source-reference/learnset-row-review.json",
+    "sha256": "5c4fdaffafe11b40c028ad017ac3a22aa343e4b6d07093e0a64ab12440f8fc65"
+  },
+  "runtime": "Pinned local KnowledgeBase and Champions calc0.12.0; no live lookup",
+  "scope": "Learnability is possibility only; generic move descriptions corroborate the pinned executable reference, not independent Champions certification"
+}

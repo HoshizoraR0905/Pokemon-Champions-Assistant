@@ -6,12 +6,15 @@ from pathlib import Path
 from .core import ACTOR_KEYS, MOVES, REFERENCE, effective_speed, knowledge, name
 from .contracts import require_evidence
 
-AUDITED_MOVES = MOVES | {'Fake Out', 'Grassy Glide', 'Giga Drain', 'Draining Kiss'}
+# Curse has ordinary priority in the pinned reference. As with other moves,
+# action effects must be supplied explicitly; this does not simulate its boosts.
+AUDITED_MOVES = MOVES | {'Fake Out', 'Grassy Glide', 'Giga Drain', 'Draining Kiss', 'Curse'}
 PRIORITY_ABILITIES = {'Prankster', 'Gale Wings', 'Triage'}
 # These have no Speed or queue-order effect in the pinned reference subset.
 NEUTRAL_ABILITIES = PRIORITY_ABILITIES | {
     'Stall', 'Infiltrator', 'Tough Claws', 'Drought', 'Solar Power',
     'Static', 'Lightning Rod', 'Thick Fat', 'Drizzle', 'Sand Stream', 'Snow Warning',
+    'Unnerve', 'Contrary', 'Competitive', 'Cute Charm', 'Marvel Scale',
 }
 HEAL_MOVES = {'Recover', 'Roost', 'Giga Drain', 'Draining Kiss'}
 UNAVAILABLE_ITEMS = {'Custap Berry', 'Lagging Tail', 'Full Incense'}
