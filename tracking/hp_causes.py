@@ -142,8 +142,16 @@ def enrich(engine, records):
                               if events[j]['event_id'] in (evidence_ids or [events[i]['event_id']])])
 
     for pid, mon in engine.state.pokemon.items():
-        numeric = [o for o in mon.hp.observations if 'unit' in o]
-        for o in numeric:
+        from .evidence_history import EvidenceDict, export
+        numeric = [(i,o) for i,o in enumerate(mon.hp.observations) if 'unit' in o]
+        for observation_index, o in numeric:
+            # Baselines/unchanged readings have no causal window to reconsider.
+            # Nonzero changes still need late named-recipient backfilling.
+            if isinstance(o, EvidenceDict):
+                if not o.get('delta') and o.get('attribution_reasons') == ['no_numeric_change_or_baseline']:
+                    continue
+                o = export(o)
+                mon.hp.observations[observation_index] = o
             o.update(cause=None, cause_event_ids=[], candidate_causes=[], attribution_status='unknown',
                      attribution_reasons=[])
             o.pop('source_instance_id', None)

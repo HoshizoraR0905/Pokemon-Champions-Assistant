@@ -1,6 +1,6 @@
 """Read-only evidence contract for future adapters, deliberately disconnected from M3."""
 from copy import deepcopy
-from dataclasses import asdict
+from .evidence_history import export as asdict
 import math
 
 

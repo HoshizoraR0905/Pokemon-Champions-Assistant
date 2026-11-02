@@ -4,7 +4,6 @@ Episode records never establish biological continuity from a species match.
 Existing explicit instance evidence / verified complete parties own that decision.
 """
 from copy import deepcopy
-from dataclasses import asdict
 from battle_events.schema import stable_id
 
 
@@ -77,10 +76,11 @@ def placed(state,p,event,record,slot):
 
 def depart(state,p,event,record,slots):
     from .state_engine import evidence_link
+    from .evidence_history import freeze
     ep=current_episode(state,p.pokemon_instance_id)
-    departure=dict(reason=event.event_type,event_id=event.event_id,timestamp=event.attributes.get('observation_time'),
+    departure=freeze(dict(reason=event.event_type,event_id=event.event_id,timestamp=event.attributes.get('observation_time'),
         slot=slots[0] if len(slots)==1 else None,evidence=evidence_link(event),
-        historical_hp=asdict(p.hp),historical_status=asdict(p.major_status),historical_moves=deepcopy(p.moves.executed))
+        historical_hp=p.hp,historical_status=p.major_status,historical_moves=p.moves.executed))
     if ep:
         ep['departure']=deepcopy(departure);record.bindings['active_episode_id']=ep['episode_id']
         if ep.get('hud_binding',{}).get('status') in {'pending','expired'}:

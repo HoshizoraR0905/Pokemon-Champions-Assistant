@@ -1,5 +1,5 @@
 """M2.2 evidence-backed state; unknown differs from zero, false and absence."""
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, field
 from typing import Any
 
 KNOWLEDGE = {'unknown','observed','derived','conflicting','hypothesis'}
@@ -155,9 +155,14 @@ class BattleState:
     knowledge: dict = field(default_factory=dict)
 
     def to_dict(self):
-        result = asdict(self)
+        from .evidence_history import export
+        result = export(self)
         if not self.knowledge: result.pop("knowledge")
         return result
+
+    def compact_export(self):
+        from .evidence_history import compact_export
+        return compact_export(self)
 
 
 def fact(value, provenance, knowledge='observed'):

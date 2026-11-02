@@ -2,7 +2,6 @@
 from copy import deepcopy
 from dataclasses import dataclass, field, asdict
 import hashlib
-import json
 import math
 from battle_events.schema import BattleEvent, Evidence
 from .battle_state import (BattleState, PokemonState, Fact, Effect, Duration, fact,
@@ -57,7 +56,10 @@ def event_from_dict(value):
 
 
 def hash_state(state):
-    return hashlib.sha256(json.dumps(state.to_dict(),sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
+    from dataclasses import fields
+    from .evidence_history import canonical
+    value={f.name:getattr(state,f.name) for f in fields(state) if f.name!='knowledge' or state.knowledge}
+    return hashlib.sha256(canonical(value)).hexdigest()
 
 
 def evidence_link(event):
@@ -92,6 +94,8 @@ class StateEngine:
         self.mechanic_registry=mechanic_registry or MechanicRegistry()
         self._validate_initial()
         self.mechanic_registry.initialize(self.initial)
+        from .evidence_history import seal_state
+        seal_state(self.initial)
         self.state=deepcopy(self.initial)
 
     def _validate_initial(self):
@@ -115,25 +119,27 @@ class StateEngine:
                 if stage.value.known and (not isinstance(stage.value.value,int) or not -6<=stage.value.value<=6):raise ValueError('Invalid initial stage')
 
     def apply(self,event,*,sequence=None):
+        from .evidence_history import export
         event=event_from_dict(event) if isinstance(event,dict) else deepcopy(event)
         payload=event.to_dict();key=ordering(event,sequence)
         existing=next((r for r in self.history if r.event['event_id']==event.event_id),None)
         if existing:
             if existing.event!=payload or (sequence is not None and existing.ordering!=key):
                 raise ValueError('Same event ID has different payload/order; use correct()')
-            return deepcopy(existing)  # Exactly idempotent, including retracted IDs.
+            return EventRecord(**export(existing))  # Detached, including retracted IDs.
         record=EventRecord(payload,len(self.history),key)
         self.history.append(record);self.replay()
-        return deepcopy(record)
+        return EventRecord(**export(record))
 
     def correct(self,event_id,replacement,*,sequence=None,reason):
+        from .evidence_history import export
         record=next(r for r in self.history if r.event['event_id']==event_id)
         replacement=event_from_dict(replacement) if isinstance(replacement,dict) else deepcopy(replacement)
         if replacement.event_id!=event_id:raise ValueError('Correction preserves the logical event ID')
         record.revisions.append({'event':deepcopy(record.event),'ordering':deepcopy(record.ordering),
                                  'retracted':record.retracted,'reason':reason})
         record.event=replacement.to_dict();record.ordering=ordering(replacement,sequence);record.retracted=False
-        self.replay();return deepcopy(record)
+        self.replay();return EventRecord(**export(record))
 
     def retract(self,event_id,*,reason):
         record=next(r for r in self.history if r.event['event_id']==event_id)
@@ -142,6 +148,7 @@ class StateEngine:
         record.retracted=True;self.replay()
 
     def replay(self, *, snapshot_callback=None, _confusion_bindings=None):
+        from .evidence_history import seal_state
         if (snapshot_callback is not None and _confusion_bindings is None and any(
                 not r.retracted and r.event['attributes'].get('requires_confusion_context') for r in self.history)):
             # Resolve any HP-backed correction before publishing final snapshots;
@@ -192,6 +199,7 @@ class StateEngine:
                     record.application_status='applied_partial'
                     record.reason='move_revelation_only'
                     processed.append(record)
+                    seal_state(self.state)
                     record.state_hash=hash_state(self.state)
                     if snapshot_callback is not None:snapshot_callback(record,self.state)
                     continue
@@ -219,6 +227,7 @@ class StateEngine:
                 bind_recipient(self.state,event,record)
             if event.event_type in {'hud_observation','hp_change','effectiveness'}:
                 enrich(self,processed)
+            seal_state(self.state)
             record.state_hash=hash_state(self.state)
             if snapshot_callback is not None:
                 snapshot_callback(record,self.state)
@@ -243,8 +252,9 @@ class StateEngine:
         return action_resolutions(self, **options)
 
     def to_dict(self):
+        from .evidence_history import export
         return {'schema_version':2,'policy':asdict(self.policy),'mechanic_rules':self.mechanic_rules.to_dict(),'mechanic_handlers':[h.mechanic_id for h in self.mechanic_registry.handlers],'initial_state':self.initial.to_dict(),
-                'history':[asdict(r) for r in self.history],'state':self.state.to_dict(),'state_hash':hash_state(self.state)}
+                'history':[export(r) for r in self.history],'state':self.state.to_dict(),'state_hash':hash_state(self.state)}
 
     @classmethod
     def from_dict(cls,value,*,mechanic_registry=None):

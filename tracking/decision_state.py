@@ -1,5 +1,5 @@
 """Compact knowledge-state projection; no history scan or hidden belief inference."""
-from dataclasses import asdict
+from .evidence_history import export as asdict
 from copy import deepcopy
 from fractions import Fraction
 from .battle_state import Fact
